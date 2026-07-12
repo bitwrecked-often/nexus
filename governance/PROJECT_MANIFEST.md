@@ -197,3 +197,102 @@ This project has moved from experimentation to infrastructure when actions have 
 The intended public signal is:
 
 > This is a small community project with professional control over identity, behavior, evidence, and rollback.
+
+## Failure-Aware Engineering
+
+Local mod tools operate in messy environments. Reliability must cover wrong paths, unsupported game versions, conflicting mods, restricted permissions, interrupted writes, damaged backups, unusual Windows settings, and modified packages—not only the successful path.
+
+### Trust Boundaries
+
+Each solution must identify the boundaries relevant to its behavior:
+
+- reviewed source versus downloaded or repacked archive;
+- packaged modlet versus installed modlet;
+- user-selected game/server directory versus discovered default path;
+- owned mod directory versus the rest of `Mods` and the game installation;
+- live configuration versus backups;
+- this tool versus other installed mods and security software;
+- standard-user permissions versus elevated execution;
+- diagnostic evidence versus private machine or server data.
+
+Review path traversal, symbolic links and junctions, target substitution, malformed XML, partial copies, damaged backups, and misleading official-package identity where applicable. Do not claim cloud-service threats or controls that do not apply to a local mod package.
+
+### Critical Flows And Failure Modes
+
+For every state-changing flow—install, reinstall, tune, backup, cap change, restore, remove, and package—record proportionate failure analysis:
+
+```text
+Flow step -> Failure -> Detection -> User impact -> State changed
+          -> Mitigation -> Recovery -> Test evidence
+```
+
+Prioritize failures with meaningful likelihood or impact. At minimum consider wrong target, insufficient permission, locked file, disk/write failure, game or server running, invalid XML, interrupted operation, conflicting mod, damaged backup, and unsafe deletion scope.
+
+### Operational State Model
+
+Front ends and diagnostics must use explicit states rather than optimistic messages. Applicable states include:
+
+```text
+Not inspected
+Ready
+Installed and verified
+Installed but different
+Conflict suspected
+Unsupported game structure
+Backup available
+Restore unsafe
+Partial operation detected
+Removal verified
+```
+
+Each implemented state must define detection, permitted actions, blocked actions, user wording, recorded evidence, and recovery. A success message requires read-back verification.
+
+### Reliability Promises
+
+The baseline targets are:
+
+- no writes or deletions outside declared owned targets;
+- sensitive configuration writes require a validated backup;
+- successful writes require read-back verification;
+- failed operations preserve the prior state or expose a detected partial state;
+- removal targets only the owned mod folder;
+- unsupported structures fail before modification;
+- release archives pass offline inspection;
+- identical controlled inputs should produce identical release artifacts;
+- no compatibility claim advances beyond its evidence.
+
+These are engineering targets, not guarantees until corresponding tests pass.
+
+## Proportionate Safe Rollout
+
+Use progressive exposure for private and public testing:
+
+```text
+maintainer sandbox
+-> one trusted tester
+-> small varied tester group
+-> release candidate
+-> verified Nexus upload
+-> observation window
+-> prior Nexus file archived
+```
+
+Each stage must define entry evidence, scenarios, stop conditions, rollback trigger, and owner approval. A new Nexus upload must be downloaded or inspected as served before the prior file is hidden or archived.
+
+### Emergency And Hotfix Path
+
+Urgency does not erase safety. Define which conditions require distribution to pause, a user warning, rollback, or a patch release. Identity, scope safety, XML validation, archive inspection, rollback evidence, and owner approval may not be skipped. Record a concise, blameless incident note for any release-impacting failure and add the missing safeguard or test.
+
+## Windows Tool Quality
+
+For PowerShell and Windows front ends:
+
+- use PowerShell-native confirmation and `ShouldProcess`/`-WhatIf` semantics where practical for maintainer or command-line state changes;
+- distinguish recoverable from terminating errors and return meaningful exit status;
+- run PSScriptAnalyzer in CI with documented, narrow suppressions;
+- preserve XML strings and numeric values independently of user locale;
+- test non-ASCII and special-character paths, restricted permissions, Windows PowerShell 5.1, supported display scaling, and package extraction paths;
+- provide keyboard operation, logical focus, accessible names, visible focus, high contrast, non-color status cues, and screen-reader-readable errors;
+- combine automated accessibility inspection with a short manual keyboard and Narrator/assistive-technology check for release candidates.
+
+Accessibility and unusual-environment results must be recorded as evidence, not assumed from control choice alone.

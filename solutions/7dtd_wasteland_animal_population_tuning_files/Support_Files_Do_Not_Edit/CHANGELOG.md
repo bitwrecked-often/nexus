@@ -24,6 +24,8 @@ Development status: feature development based on the immutable `v4.0.1` release.
 - Expanded the next-AI packet into ordered implementation slices covering upgrade recovery, lifecycle, security reporting, reproducible builds, provenance, traceability, and operational limits.
 - Added GitHub repository health guidance distinguishing policy, automation, review, release, platform, and field evidence.
 - Added a bounded next-AI GitHub-health slice for community files, ownership, issue/PR intake, CI, settings audit, branch/tag protection recommendations, and owner-controlled publication.
+- Added proportionate Microsoft-inspired guidance for local threat boundaries, critical-flow failure analysis, explicit tool states, measurable reliability targets, progressive Nexus rollout, hotfix handling, and blameless incident learning.
+- Added next-AI slices for PowerShell safety analysis, unusual Windows environments, and accessibility evidence including keyboard, high-contrast, scaling, and screen-reader checks.
 
 ### Nexus No-Scripts Edition
 

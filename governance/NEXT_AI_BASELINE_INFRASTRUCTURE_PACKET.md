@@ -240,7 +240,50 @@ Workflow actions:
 
 Pass condition: GitHub's repository front door exposes the project's license, ownership, contribution, conduct, security, issue, PR, and validation paths; all platform settings are evidence-labeled; and no AI-only action is mistaken for owner approval or live-game proof.
 
-### Slice 12: Final Audit
+### Slice 12: Model Threats, Failures, And Tool State
+
+Goal: make local failure and misuse behavior explicit without importing irrelevant cloud-scale controls.
+
+Actions:
+
+1. Create a concise threat model for downloaded package identity, paths, owned directories, XML, backups, junctions/symlinks, other mods, privileges, and diagnostics.
+2. Create failure-mode records for install, reinstall, tune, backup/cap change, restore, remove, and packaging.
+3. Define the operational state model used by the front end and diagnostics.
+4. Map each important threat or failure to prevention, detection, recovery, and a test or explicit unverified status.
+5. Verify deletion and restoration cannot escape the intended game instance and owned paths.
+
+Pass condition: every state-changing flow has a bounded target, failure detection, recovery behavior, and evidence route.
+
+### Slice 13: Harden Windows And PowerShell Behavior
+
+Goal: make the helper tooling predictable across supported Windows conditions and usable without a mouse.
+
+Actions:
+
+1. Run PSScriptAnalyzer in CI and document any narrow suppression.
+2. Add `ShouldProcess`/`-WhatIf` and confirmation semantics where appropriate for command-line or maintainer state changes.
+3. Standardize terminating versus recoverable errors, exit codes, and stable error identifiers.
+4. Test non-ASCII and special-character paths, XML encoding, locale-sensitive numeric handling, restricted permissions, and Windows PowerShell 5.1.
+5. Test keyboard-only operation, tab order, visible focus, accessible control names, high contrast, display scaling, non-color status, and screen-reader-readable errors.
+6. Record automated accessibility inspection plus a manual keyboard and Narrator/assistive-technology release check.
+
+Pass condition: supported Windows scenarios and accessibility behaviors have recorded evidence, and destructive or sensitive command-line actions can be previewed where practical.
+
+### Slice 14: Define Rollout, Hotfix, And Learning
+
+Goal: control exposure and learn from field failures.
+
+Actions:
+
+1. Define entry, observation, stop, rollback, and owner-approval conditions for sandbox, single tester, varied private group, release candidate, Nexus upload, and archive transition.
+2. Require inspection of the newly served Nexus file before archiving the prior one.
+3. Define emergency pause, warning, rollback, roll-forward, and patch-release criteria.
+4. Identify safety checks that may never be skipped during a hotfix.
+5. Add a concise blameless incident-learning template covering impact, detection, contributing conditions, correction, prevention, tests, and documentation.
+
+Pass condition: normal and emergency releases have bounded authority, stop conditions, recovery, and retained learning.
+
+### Slice 15: Final Audit
 
 Goal: prove the new infrastructure did not damage the baseline.
 
@@ -468,6 +511,24 @@ Create and maintain:
 - an evidence-labeled audit of branch/tag protection, rulesets, security features, merge settings, and release immutability.
 
 Keep five kinds of proof distinct: committed policy, automation result, review history, release identity, and field validation. A mature repository turns as much policy as practical into enforced checks while leaving publication and compatibility approval with the owner.
+
+### 17. Threat And Failure Contract
+
+Maintain a proportionate local threat model, critical-flow failure analysis, and operational state model. Cover package substitution, unsafe paths, junctions/symlinks, malformed XML, partial writes, permission failures, conflicts, damaged backups, and diagnostic privacy where applicable.
+
+Every meaningful failure record must identify detection, impact, whether state changed, mitigation, recovery, and test evidence. Success requires read-back verification; unknown or partial state must never be presented as success.
+
+### 18. Safe Rollout And Incident Contract
+
+Use progressive exposure from maintainer sandbox through private testing and release candidate to a verified Nexus upload. Define observation windows, stop conditions, rollback triggers, and owner approval. Verify the served new file before archiving the previous one.
+
+For hotfixes, never skip identity, scope-safety, XML validation, archive inspection, rollback evidence, or owner approval. Use blameless incident records to convert failures into safeguards and regression tests.
+
+### 19. Windows And Accessibility Contract
+
+Use PSScriptAnalyzer, meaningful PowerShell error semantics, and preview/confirmation behavior where practical. Test supported PowerShell versions, encoding, locale, unusual paths, restricted permissions, keyboard access, accessible names, high contrast, scaling, non-color status cues, and screen-reader-readable errors.
+
+Treat accessibility and environment compatibility as test evidence, not an assumption.
 
 ## Engineering Standards
 
