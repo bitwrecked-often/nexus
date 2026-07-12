@@ -19,6 +19,7 @@ Development status: feature development based on the immutable `v4.0.1` release.
 - Defined the front end as an operational safety layer with validation, preview, backup, verification, restore, removal, and privacy-safe diagnostics.
 - Added an anonymized private field-test process and evidence classification model.
 - Expanded the solutions standard so packages are derived from recorded field behavior and tested as distributed artifacts.
+- Added a bounded next-AI implementation packet for CI, release manifests, version enforcement, package smoke tests, compatibility evidence, conflict inventory, and release acceptance records.
 
 ### Nexus No-Scripts Edition
 
