@@ -1,0 +1,181 @@
+7DTD WASTELAND ANIMAL POPULATION TUNING
+REQUIREMENTS, INSTALLATION, AND SUPPORT GUIDE
+
+1. WHAT THIS DOWNLOAD IS
+
+This is the scanner-friendly Nexus no-scripts edition. The game-facing payload
+is three readable XML files. It changes Wasteland open-world animal selection
+and Wasteland animal spawn-route values through the normal 7 Days to Die modlet
+system.
+
+It does not modify the game executable, Data\Config, saves, the registry, or
+network settings. It does not include an installer or tuning interface.
+
+2. REQUIREMENTS
+
+Required:
+
+  - 7 Days to Die with the supported 3.0-era entitygroups.xml and spawning.xml
+    structure
+  - Permission to create or update the game/server Mods folder
+  - Enough familiarity with the file manager to copy one complete folder
+  - Game or server shutdown during installation and removal
+
+Tested baseline:
+
+  - Windows 11
+  - Steam installation
+  - The 7 Days to Die 3.0-era build recorded in the release documentation
+
+Not established by the current test record:
+
+  - Console editions
+  - Older Alpha-era releases
+  - Overhaul compatibility
+  - Every non-Steam layout or mod manager
+
+No additional runtime, framework, administrator account, script permission, or
+internet connection is required by the modlet itself.
+
+3. BEFORE INSTALLING
+
+  - Back up saves or server data you care about.
+  - Stop the game or server completely.
+  - Check for other mods that alter EnemyAnimalsWasteland,
+    EnemyAnimalsWastelandNight, or wasteland spawn entries in spawning.xml.
+  - Use the Easy Anti-Cheat setting required by your play mode or server.
+
+4. MANUAL INSTALLATION
+
+Extract the archive first. Do not run the mod from inside the zip.
+
+Copy this complete folder:
+
+  BitWrecked_7DTD_WastelandAnimalPopulationTuning
+
+into:
+
+  <7 Days To Die>\Mods\
+
+Create Mods if it does not already exist. The correct result is:
+
+  <7 Days To Die>\Mods\BitWrecked_7DTD_WastelandAnimalPopulationTuning\ModInfo.xml
+  <7 Days To Die>\Mods\BitWrecked_7DTD_WastelandAnimalPopulationTuning\Config\entitygroups.xml
+  <7 Days To Die>\Mods\BitWrecked_7DTD_WastelandAnimalPopulationTuning\Config\spawning.xml
+
+Avoid an extra nested folder. This is incorrect:
+
+  ...\BitWrecked_7DTD_WastelandAnimalPopulationTuning\
+      BitWrecked_7DTD_WastelandAnimalPopulationTuning\ModInfo.xml
+
+5. WHERE TO INSTALL
+
+Single-player:
+
+  Install in the Mods folder of the game running the world.
+
+Peer-hosted multiplayer:
+
+  Install on the host computer. Joining players do not control host spawns.
+
+Dedicated server:
+
+  Install in the dedicated server's Mods folder while the server is stopped.
+  The server operator controls its EAC policy and restart procedure.
+
+Joining another server:
+
+  Ask the server owner to install the mod. A local install cannot change the
+  remote server's Wasteland population rules.
+
+6. FIRST-START VERIFICATION
+
+  1. Start the game or server.
+  2. Watch the startup console or log for the Bit Wrecked mod name.
+  3. Confirm there are no red XML/XPath errors naming ModInfo.xml,
+     entitygroups.xml, or spawning.xml.
+  4. If an error occurs, stop the game/server and remove the mod folder before
+     further play.
+
+Gameplay population is probabilistic. A short visit with few encounters is not
+proof that installation succeeded or failed. Startup XML status is the first
+technical check; controlled observation over time is the gameplay check.
+
+7. SETTINGS IN THIS EDITION
+
+This archive contains the fixed values stored in Config\entitygroups.xml and
+Config\spawning.xml. It does not generate personalized settings.
+
+Interactive checkboxes, sliders, automatic XML scanning, automatic backup, cap
+lifting, and cap restoration are not included in this no-scripts edition. Do not
+expect buttons or a launcher after extraction.
+
+8. CONFLICTS
+
+Another mod may conflict or combine with this one if it changes:
+
+  - EnemyAnimalsWasteland
+  - EnemyAnimalsWastelandNight
+  - wasteland biome spawn routes
+  - the same entitygroups.xml probability attributes
+  - the same spawning.xml maxcount or respawndelay attributes
+
+Load order and patch behavior can affect the final values. Overhauls are not
+guaranteed compatible. When diagnosing behavior, test with other spawn-changing
+mods removed from a disposable or backed-up environment.
+
+9. REMOVAL AND ROLLBACK
+
+Stop the game or server. Delete only:
+
+  <7 Days To Die>\Mods\BitWrecked_7DTD_WastelandAnimalPopulationTuning
+
+This no-scripts edition does not edit serverconfig.xml, so it creates no animal-
+cap backup and requires no separate cap restoration. Start the game/server and
+check for normal startup.
+
+10. TROUBLESHOOTING
+
+Mod does not appear to load:
+
+  - Confirm ModInfo.xml is directly inside the named mod folder.
+  - Confirm the archive was extracted.
+  - Confirm installation was made in the game/server instance actually running.
+  - Check the startup log.
+
+XML or XPath error:
+
+  - Remove the mod and confirm the game starts normally.
+  - Record the exact game version and error text.
+  - The game XML may differ from the supported baseline.
+
+Unexpected animal behavior:
+
+  - Record the game version, package version, play mode, biome, observation time,
+    and other spawn/gameplay mods.
+  - Distinguish POI sleepers and quest spawns from open-world biome spawns.
+  - Remember that weighted random selection varies between observations.
+
+11. USEFUL SUPPORT REPORT
+
+Include:
+
+  - exact game version/build
+  - mod version from ModInfo.xml
+  - single-player, peer host, or dedicated server
+  - installation path with private account names removed
+  - other spawn or overhaul mods
+  - expected and observed behavior
+  - exact XML error text or a privacy-checked log excerpt
+  - whether removal restored normal startup
+
+Do not publish account details, IP addresses, machine names, save files, or other
+private information.
+
+12. SCOPE
+
+The mod targets Wasteland open-world animal routes. It does not intentionally
+change POI sleeper placement, quest-triggered spawns, blood moon hordes, zombie
+spawn rates, other biomes, or worlds hosted by someone else.
+
+Unofficial fan mod. GPL-3.0-or-later. Provided without warranty.

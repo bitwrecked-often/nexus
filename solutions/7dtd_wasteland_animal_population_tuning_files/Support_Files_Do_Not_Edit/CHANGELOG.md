@@ -20,6 +20,14 @@ Development status: feature development based on the immutable `v4.0.1` release.
 - Added an anonymized private field-test process and evidence classification model.
 - Expanded the solutions standard so packages are derived from recorded field behavior and tested as distributed artifacts.
 
+### Nexus No-Scripts Edition
+
+- Added a package-specific first-read manual that describes only files and features present in the no-scripts archive.
+- Added a complete requirements, manual installation, multiplayer, verification, conflict, removal, troubleshooting, and privacy-safe support guide.
+- Clarified that the no-scripts edition contains fixed XML values and does not include interactive tuning or server-cap controls.
+- Added deterministic no-scripts archive construction to the validation harness.
+- Added archive checks for required documentation, required modlet files, prohibited executable-style extensions, and references to absent package paths.
+
 ### Release Guardrails
 
 - Preserve the published 4.0.1 archives and source tag unchanged.

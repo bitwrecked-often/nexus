@@ -9,6 +9,7 @@ param(
     [string]$ModFolder = "",
     [string]$ZipPath = "",
     [string]$VortexZipPath = "",
+    [string]$NexusNoScriptsZipPath = "",
     [switch]$RebuildZip
 )
 
@@ -40,6 +41,9 @@ if ([string]::IsNullOrWhiteSpace($ZipPath)) {
 }
 if ([string]::IsNullOrWhiteSpace($VortexZipPath)) {
     $VortexZipPath = Join-Path $releaseRoot "Upload_To_Nexus\7DTD_WastelandAnimalPopulationTuning_VortexModlet.zip"
+}
+if ([string]::IsNullOrWhiteSpace($NexusNoScriptsZipPath)) {
+    $NexusNoScriptsZipPath = Join-Path $releaseRoot "Upload_To_Nexus\7DTD_WastelandAnimalPopulationTuning_Nexus_NoScripts.zip"
 }
 
 function Assert-File {
@@ -81,6 +85,9 @@ $modFolderName = Split-Path -Leaf $ModFolder
 $readmeFirstPath = Join-Path $releaseRoot "README_FIRST.txt"
 $changelogPath = Join-Path $sourceRoot "CHANGELOG.md"
 $logoPath = Join-Path $sourceRoot "Assets\bit-wrecked-channel-avatar.png"
+$nexusNoScriptsDocsPath = Join-Path $sourceRoot "Nexus_NoScripts"
+$nexusNoScriptsReadmePath = Join-Path $nexusNoScriptsDocsPath "README_FIRST.txt"
+$nexusNoScriptsRequirementsPath = Join-Path $nexusNoScriptsDocsPath "REQUIREMENTS_AND_INSTALL.txt"
 $liveEntityGroupsPath = Join-Path $GameRoot "Data\Config\entitygroups.xml"
 $liveSpawningPath = Join-Path $GameRoot "Data\Config\spawning.xml"
 $packageSourceFiles = @(
@@ -105,6 +112,26 @@ Assert-File $modSpawningConfigPath
 Assert-File $readmeFirstPath
 Assert-File $changelogPath
 Assert-File $logoPath
+Assert-File $nexusNoScriptsReadmePath
+Assert-File $nexusNoScriptsRequirementsPath
+
+Write-Host "Checking no-scripts documentation..."
+$noScriptsDocumentation = (Get-Content -LiteralPath $nexusNoScriptsReadmePath -Raw) + "`n" +
+    (Get-Content -LiteralPath $nexusNoScriptsRequirementsPath -Raw)
+$forbiddenNoScriptsInstructions = @(
+    "7DTD_WastelandAnimalTuning.bat",
+    "Support_Files_Do_Not_Edit"
+)
+foreach ($forbiddenInstruction in $forbiddenNoScriptsInstructions) {
+    if ($noScriptsDocumentation -match [regex]::Escape($forbiddenInstruction)) {
+        throw "No-scripts documentation references unavailable feature or path: $forbiddenInstruction"
+    }
+}
+foreach ($requiredInstruction in @("manual", "Mods", "ModInfo.xml", "remove")) {
+    if ($noScriptsDocumentation -notmatch [regex]::Escape($requiredInstruction)) {
+        throw "No-scripts documentation is missing required guidance: $requiredInstruction"
+    }
+}
 
 Write-Host "Parsing XML..."
 $modInfoXml = Load-Xml $modInfoPath
@@ -278,6 +305,31 @@ if ($RebuildZip) {
         Remove-Item -LiteralPath $VortexZipPath
     }
     Compress-Archive -Path $ModFolder -DestinationPath $VortexZipPath
+
+    Write-Host "Rebuilding Nexus no-scripts zip..."
+    $noScriptsZipFolder = Split-Path -Parent $NexusNoScriptsZipPath
+    if (-not (Test-Path -LiteralPath $noScriptsZipFolder -PathType Container)) {
+        New-Item -ItemType Directory -Path $noScriptsZipFolder -Force | Out-Null
+    }
+    if (Test-Path -LiteralPath $NexusNoScriptsZipPath) {
+        Remove-Item -LiteralPath $NexusNoScriptsZipPath
+    }
+    $noScriptsStagingRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("7dtd_wasteland_tuning_noscripts_" + [guid]::NewGuid().ToString("N"))
+    try {
+        New-Item -ItemType Directory -Path $noScriptsStagingRoot -Force | Out-Null
+        Copy-Item -LiteralPath $ModFolder -Destination $noScriptsStagingRoot -Recurse -Force
+        Copy-Item -LiteralPath $nexusNoScriptsReadmePath -Destination $noScriptsStagingRoot -Force
+        Copy-Item -LiteralPath $nexusNoScriptsRequirementsPath -Destination $noScriptsStagingRoot -Force
+        foreach ($documentName in @("RELEASE_NOTES.md", "CHANGELOG.md", "LICENSE_NOTICE.md", "LICENSE.txt", "LEGAL_AND_USE.md")) {
+            Copy-Item -LiteralPath (Join-Path $sourceRoot $documentName) -Destination $noScriptsStagingRoot -Force
+        }
+        Compress-Archive -Path (Join-Path $noScriptsStagingRoot "*") -DestinationPath $NexusNoScriptsZipPath
+    }
+    finally {
+        if (Test-Path -LiteralPath $noScriptsStagingRoot) {
+            Remove-SafeTempFolder -Path $noScriptsStagingRoot
+        }
+    }
 }
 
 Write-Host "Checking full package zip shape..."
@@ -441,6 +493,56 @@ try {
 }
 finally {
     $vortexZip.Dispose()
+}
+
+Write-Host "Checking Nexus no-scripts zip shape and instructions..."
+Assert-File $NexusNoScriptsZipPath
+$noScriptsZip = [System.IO.Compression.ZipFile]::OpenRead((Resolve-Path -LiteralPath $NexusNoScriptsZipPath).Path)
+try {
+    $requiredNoScriptsEntries = @(
+        "README_FIRST.txt",
+        "REQUIREMENTS_AND_INSTALL.txt",
+        "RELEASE_NOTES.md",
+        "CHANGELOG.md",
+        "LICENSE_NOTICE.md",
+        "LICENSE.txt",
+        "LEGAL_AND_USE.md",
+        "$modFolderName/ModInfo.xml",
+        "$modFolderName/Config/entitygroups.xml",
+        "$modFolderName/Config/spawning.xml"
+    )
+    $forbiddenNoScriptsExtensions = @(".ps1", ".bat", ".cmd", ".exe", ".dll", ".vbs", ".js", ".jar", ".msi", ".scr")
+    $noScriptsEntryNames = @{}
+    foreach ($entry in $noScriptsZip.Entries) {
+        $normalizedName = $entry.FullName -replace "\\", "/"
+        $noScriptsEntryNames[$normalizedName] = $true
+        $extension = [System.IO.Path]::GetExtension($normalizedName).ToLowerInvariant()
+        if ($forbiddenNoScriptsExtensions -contains $extension) {
+            throw "Nexus no-scripts zip contains forbidden executable-style file: $normalizedName"
+        }
+    }
+    foreach ($entryName in $requiredNoScriptsEntries) {
+        if (-not $noScriptsEntryNames.ContainsKey($entryName)) {
+            throw "Nexus no-scripts zip missing entry: $entryName"
+        }
+    }
+
+    $archiveReadmeEntry = $noScriptsZip.GetEntry("README_FIRST.txt")
+    $reader = New-Object System.IO.StreamReader($archiveReadmeEntry.Open())
+    try {
+        $archiveReadme = $reader.ReadToEnd()
+    }
+    finally {
+        $reader.Dispose()
+    }
+    foreach ($forbiddenInstruction in $forbiddenNoScriptsInstructions) {
+        if ($archiveReadme -match [regex]::Escape($forbiddenInstruction)) {
+            throw "Packaged no-scripts README references unavailable feature or path: $forbiddenInstruction"
+        }
+    }
+}
+finally {
+    $noScriptsZip.Dispose()
 }
 
 Write-Host "PASS: 7DTD 3.0 Wasteland Animal Population Tuning modlet is valid for this live install."
