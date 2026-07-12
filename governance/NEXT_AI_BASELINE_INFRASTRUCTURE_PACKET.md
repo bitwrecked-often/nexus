@@ -204,7 +204,43 @@ Actions:
 
 Pass condition: automation can prepare evidence but cannot invent approval, support status, or publication.
 
-### Slice 11: Final Audit
+### Slice 11: Establish GitHub Repository Health
+
+Goal: make repository intent visible and enforceable without importing unnecessary large-project ceremony.
+
+Repository-file actions:
+
+1. Add a root GitHub-recognizable license file consistent with the existing GPL-3.0-or-later package license.
+2. Add `SECURITY.md` with a private reporting route, supported-version scope, acknowledgment expectations, and instructions not to disclose sensitive details publicly.
+3. Add a concise `CONTRIBUTING.md` covering branch/PR workflow, testing, documentation, privacy, licensing, and owner approval.
+4. Add a proportionate `CODE_OF_CONDUCT.md` and enforcement/contact route without inventing an organization or committee.
+5. Add `.github/PULL_REQUEST_TEMPLATE.md` with purpose, effects, compatibility assumptions, tests, rollback, risk, and release-impact fields.
+6. Add structured issue forms for bugs and compatibility reports with privacy warnings and required environment/version details.
+7. Add `CODEOWNERS` assigning actual known ownership only; do not invent reviewers or teams.
+8. Add the least-privilege offline validation workflow from Slice 9.
+9. Add documentation explaining the chosen merge strategy and release path.
+
+GitHub-setting audit actions:
+
+1. Inspect, but do not assume, current rulesets, branch protection, tag protection, merge settings, security features, and release immutability.
+2. Record each setting as verified enabled, verified disabled, unavailable, or unknown.
+3. Recommend a `main` ruleset requiring pull requests and successful validation, blocking force pushes and deletion, and applying to administrators unless the owner explicitly chooses a documented emergency bypass.
+4. Recommend protection for `v*` release tags against rewriting or deletion.
+5. Recommend one normal merge strategy; squash merge is a reasonable default for this small repository, but the owner must choose.
+6. Recommend secret scanning, push protection, Dependabot/security alerts, and immutable releases where available and proportionate.
+7. Do not mutate repository settings without explicit owner authorization.
+
+Workflow actions:
+
+1. Use pull requests for material changes intended for `main`.
+2. Keep `develop/4.1.0` as development evidence until release acceptance is complete.
+3. Ensure CI status is visible on the pull request.
+4. Keep live-game validation separate from offline CI and record it in the release acceptance evidence.
+5. Connect official release artifacts to their exact source commit, tag, checksums, and provenance.
+
+Pass condition: GitHub's repository front door exposes the project's license, ownership, contribution, conduct, security, issue, PR, and validation paths; all platform settings are evidence-labeled; and no AI-only action is mistaken for owner approval or live-game proof.
+
+### Slice 12: Final Audit
 
 Goal: prove the new infrastructure did not damage the baseline.
 
@@ -419,6 +455,19 @@ Every material safety, compatibility, integrity, and rollback promise must have 
 ### 15. Operational Limits
 
 Document allowed ranges, hard blocks, warnings, and tested limits for high-load features. Do not invent performance thresholds. Identify which limits protect correctness, which protect recoverability, and which are conservative field guidance.
+
+### 16. GitHub Repository Health Contract
+
+Create and maintain:
+
+- root license, security, contribution, and conduct files;
+- pull-request and privacy-safe issue templates;
+- actual ownership declarations;
+- offline CI as a required release signal;
+- a documented merge and release workflow;
+- an evidence-labeled audit of branch/tag protection, rulesets, security features, merge settings, and release immutability.
+
+Keep five kinds of proof distinct: committed policy, automation result, review history, release identity, and field validation. A mature repository turns as much policy as practical into enforced checks while leaving publication and compatibility approval with the owner.
 
 ## Engineering Standards
 

@@ -131,6 +131,65 @@ Governance defines the gates. Solutions provide the implementation and evidence.
 
 Put the smallest useful instruction first and deeper evidence behind it. Completeness does not mean forcing every player to read every technical detail. It means every important fact exists at the right layer and remains consistent across layers.
 
+## GitHub Repository Health
+
+Repository health is part of the product's evidence surface. Policies written in prose express intent; GitHub controls, pull requests, checks, releases, and community files demonstrate that the intent is practiced.
+
+The repository should make these facts visible from its front door:
+
+- purpose, current lifecycle state, and supported scope;
+- open-source license recognized at repository root;
+- contribution and conduct expectations appropriate to the project's size;
+- private security-reporting route and supported-version policy;
+- ownership and review responsibility;
+- issue and compatibility-report intake that protects private data;
+- pull-request evidence for material changes;
+- required offline validation before changes reach `main`;
+- protected release branches and `v*` tags where GitHub capabilities permit;
+- official releases connected to source, checksums, and provenance;
+- an explicit distinction between repository evidence and claims that still require live-game testing.
+
+For a small owner-led project, lightweight controls are appropriate. One accountable owner approval may be sufficient. The project should not copy large-organization ceremony, but it should preserve the mature pattern that support level, ownership, checks, and evidence are explicit.
+
+### Evidence Versus Inference
+
+Use these distinctions during repository-health reviews:
+
+- **Policy evidence:** a committed document states the intended rule.
+- **Automation evidence:** a check demonstrates that a technical rule passed.
+- **Review evidence:** a pull request records scope, discussion, approval, and status checks.
+- **Release evidence:** an immutable tag/release connects source to published artifacts.
+- **Platform evidence:** GitHub settings enforce branch, tag, security, or merge policy.
+- **Field evidence:** testing proves behavior in the supported game environment.
+
+Never report a policy as enforcement, a successful CI run as live-game compatibility, or an uninspected GitHub setting as enabled. Unknown settings remain unknown until verified.
+
+### Recommended Delivery Path
+
+```text
+development branch
+        |
+        v
+pull request + offline CI
+        |
+        v
+owner review + release acceptance
+        |
+        v
+protected main + protected version tag
+        |
+        v
+release artifacts + checksums + provenance
+        |
+        v
+manual live-game evidence and Nexus approval
+        |
+        v
+new Nexus file verified before prior file is archived
+```
+
+Automation may prepare and prove artifacts. It must not publish to Nexus, approve its own release, hide an older file, or convert unknown compatibility into a supported claim.
+
 ## Definition Of Infrastructure
 
 This project has moved from experimentation to infrastructure when actions have visible state, predictable results, bounded effects, tested recovery, and enough evidence to explain what happened under ordinary field conditions.

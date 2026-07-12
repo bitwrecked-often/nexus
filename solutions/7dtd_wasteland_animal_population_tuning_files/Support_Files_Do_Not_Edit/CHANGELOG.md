@@ -22,6 +22,8 @@ Development status: feature development based on the immutable `v4.0.1` release.
 - Added a bounded next-AI implementation packet for CI, release manifests, version enforcement, package smoke tests, compatibility evidence, conflict inventory, and release acceptance records.
 - Added a project manifest defining twelve reliability facets, separate vendor/customer views, and three consistent release-documentation layers.
 - Expanded the next-AI packet into ordered implementation slices covering upgrade recovery, lifecycle, security reporting, reproducible builds, provenance, traceability, and operational limits.
+- Added GitHub repository health guidance distinguishing policy, automation, review, release, platform, and field evidence.
+- Added a bounded next-AI GitHub-health slice for community files, ownership, issue/PR intake, CI, settings audit, branch/tag protection recommendations, and owner-controlled publication.
 
 ### Nexus No-Scripts Edition
 
