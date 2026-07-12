@@ -13,6 +13,13 @@ Development status: feature development based on the immutable `v4.0.1` release.
 
 - Record new backward-compatible features here as they are implemented and verified.
 
+### Repository Infrastructure
+
+- Added repository-wide AI governance for privacy, release immutability, semantic versioning, evidence, safety, and publication authority.
+- Defined the front end as an operational safety layer with validation, preview, backup, verification, restore, removal, and privacy-safe diagnostics.
+- Added an anonymized private field-test process and evidence classification model.
+- Expanded the solutions standard so packages are derived from recorded field behavior and tested as distributed artifacts.
+
 ### Release Guardrails
 
 - Preserve the published 4.0.1 archives and source tag unchanged.

@@ -1,8 +1,23 @@
 # Solutions Index
 
-This folder holds reusable answer packets for common gameplay/modding questions.
+This folder holds field-derived answer packets and releasable mod solutions for common gameplay and modding needs.
 
 Use these docs when answering players, preparing Qwen32 prompts, or rebuilding a known fix into a clean modlet.
+
+## Field-to-Solution Standard
+
+Each solution should preserve the path from real-world need to supportable package:
+
+1. State the player or server problem in observable terms.
+2. Identify the live game files and version used as the baseline.
+3. Separate verified behavior from observations and inference.
+4. Implement the smallest readable mod change that addresses the need.
+5. Put operational safety in front of risky actions: validation, preview, backup, verification, restore, and removal.
+6. Test the packaged artifact, not only the source tree.
+7. Document compatibility, consequences, known issues, and rollback.
+8. Promote privately tested work to public release only through the repository governance and release process.
+
+A solution is not considered complete merely because it works once. It should remain understandable, testable, reversible, and supportable under ordinary field conditions.
 
 ## Current Solutions
 
