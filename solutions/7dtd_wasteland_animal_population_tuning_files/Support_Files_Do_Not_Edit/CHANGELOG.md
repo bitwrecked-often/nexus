@@ -5,6 +5,21 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 This changelog tracks public upload versions. It separates gameplay XML changes from installer, packaging, documentation, and publishing changes.
 
+## Version 4.1.0 - Unreleased
+
+Development status: feature development based on the immutable `v4.0.1` release.
+
+### Planned Changes
+
+- Record new backward-compatible features here as they are implemented and verified.
+
+### Release Guardrails
+
+- Preserve the published 4.0.1 archives and source tag unchanged.
+- Replace `Unreleased` with the publication date only after validation succeeds.
+- Rebuild and verify all release archives before publishing the Nexus file.
+- Update `VERSION`, `ModInfo.xml`, package metadata, release notes, and archive metadata together.
+
 ## Version 4.0.1 - 2026-07-07
 
 Public upload status: scale retune and documentation update.
