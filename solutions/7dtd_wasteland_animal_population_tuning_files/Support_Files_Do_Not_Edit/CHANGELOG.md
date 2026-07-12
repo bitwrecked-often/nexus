@@ -20,6 +20,8 @@ Development status: feature development based on the immutable `v4.0.1` release.
 - Added an anonymized private field-test process and evidence classification model.
 - Expanded the solutions standard so packages are derived from recorded field behavior and tested as distributed artifacts.
 - Added a bounded next-AI implementation packet for CI, release manifests, version enforcement, package smoke tests, compatibility evidence, conflict inventory, and release acceptance records.
+- Added a project manifest defining twelve reliability facets, separate vendor/customer views, and three consistent release-documentation layers.
+- Expanded the next-AI packet into ordered implementation slices covering upgrade recovery, lifecycle, security reporting, reproducible builds, provenance, traceability, and operational limits.
 
 ### Nexus No-Scripts Edition
 

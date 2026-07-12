@@ -4,6 +4,8 @@ This repository is used only to develop, validate, package, and publish open-sou
 
 These instructions apply to the entire repository.
 
+The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet.
+
 ## Repository Model
 
 The repository has two cooperating layers:
