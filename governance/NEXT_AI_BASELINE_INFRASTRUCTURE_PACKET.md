@@ -16,9 +16,10 @@ Read these files completely before making changes:
 4. `RELEASING.md`
 5. `governance/PRIVATE_TEST_PROGRAM.md`
 6. `governance/PROJECT_MANIFEST.md`
-7. `solutions/README.md`
-8. This packet
-9. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
+7. `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`
+8. `solutions/README.md`
+9. This packet
+10. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
 
 Active solution root:
 
@@ -42,6 +43,8 @@ Support_Files_Do_Not_Edit/Nexus_NoScripts/
 - Nexus support may inspect this repository. Do not commit private tester data, credentials, machine identifiers, or internal conversation transcripts.
 
 Confirm the branch and clean working tree before starting. If unexpected user changes exist, preserve them and report any overlap.
+
+The deep-audit addendum contains the current dependency order and confirmed repository defects. Follow its slices first; use this packet as the detailed requirement catalog. Do not implement duplicated files or workflows merely because both documents mention them.
 
 ## Governing Intent
 

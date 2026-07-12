@@ -4,7 +4,7 @@ This repository is used only to develop, validate, package, and publish open-sou
 
 These instructions apply to the entire repository.
 
-The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet.
+The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet. For `4.1.0` baseline work, also read `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md` before running packaging or validation commands.
 
 ## Repository Model
 
@@ -42,7 +42,7 @@ Every material mod change must identify:
 - rollback behavior;
 - known limitations or unresolved observations.
 
-Record public changes in the solution changelog. Record incomplete work under an Unreleased heading. Field-test reports must be anonymized and must not contain tester identities.
+Record player-visible payload, package, compatibility, install, and support changes in the applicable solution changelog. Record repository governance and maintainer-infrastructure changes in `governance/CHANGELOG.md`. Record incomplete work under an Unreleased heading. Field-test reports must be anonymized and must not contain tester identities.
 
 ## Front-End Standard
 

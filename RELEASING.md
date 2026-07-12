@@ -1,6 +1,6 @@
 # Release Process
 
-This repository uses semantic versioning and Git tags to keep published Nexus releases reproducible.
+This repository uses semantic versioning and Git tags to keep published Nexus releases identifiable and traceable. Reproducibility, source correspondence, and served-file identity require separate release evidence.
 
 ## Version Sources
 

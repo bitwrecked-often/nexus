@@ -6,7 +6,7 @@ This is an open-source workshop for creating, testing, packaging, and publishing
 
 ### Governance
 
-`AGENTS.md`, `VERSION`, `RELEASING.md`, and `governance/` define how humans and AI handle versioning, safety, evidence, private testing, and publication. Published releases remain reproducible and immutable.
+`AGENTS.md`, `VERSION`, `RELEASING.md`, and `governance/` define how humans and AI handle versioning, safety, evidence, private testing, and publication. Historical release artifacts remain immutable. Reproducibility and source correspondence must be proven separately for each release.
 
 ### Solutions
 

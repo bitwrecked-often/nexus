@@ -95,6 +95,8 @@ The customer view must make operation predictable:
 
 Neither audience should need to reverse-engineer documentation written for the other.
 
+`Vendor` and `customer` are documentation lenses. They do not claim a contractual Nexus partnership, certification, endorsement, paid relationship, or warranty.
+
 ## Three Views Of One Truth
 
 Every public release should present the same facts through three layers:
@@ -104,6 +106,37 @@ Every public release should present the same facts through three layers:
 3. **Machine-readable manifest and release evidence** — identity, policy, archive inventory, checksums, test results, and provenance.
 
 Automation must check that these layers agree on identity, requirements, behavior, and available features.
+
+## Artifact Truth And Usefulness
+
+Every public artifact is its own product contract. Its name, description, documentation, payload, behavior, license, and support status must agree.
+
+- A package must not advertise controls, files, automation, or outcomes it does not contain.
+- A gameplay package must provide the advertised gameplay outcome on its supported baseline, or identify itself honestly as a baseline, template, source, or documentation artifact.
+- Full helper, no-scripts, modlet-only, source, and publishing editions may have different capabilities and policies; model them separately.
+- Validate packaged content against authoritative staged source byte-for-byte.
+- Preserve historical defects as evidence, but never use them as the contract for a new release.
+- Reproducibility and provenance are evidence claims. Immutability alone does not prove either.
+
+## Multi-Solution Identity
+
+This repository may contain many mods. Each solution owns its version, lifecycle, compatibility, Nexus identity, artifacts, evidence, and release manifest. Repository governance and schema versions are separate from mod versions.
+
+Shared indexes and validators locate and check solution manifests; they do not become a competing global product version. Future branch and tag conventions must avoid collisions across solutions while explicitly grandfathering existing historical identities.
+
+## Documentation Authority
+
+Classify documents as authoritative current source, generated mirror, historical evidence, or retired. Define precedence and generate or validate duplicated facts.
+
+Current filesystem, Git, and artifact evidence overrides a stale handoff statement. Contradictions must be recorded and resolved from evidence or owner direction, not silently harmonized by an AI.
+
+Keep governance/infrastructure history separate from the player-facing solution changelog. Players need payload, packaging, compatibility, install, upgrade, support, and known-issue changes; maintainers need process and governance history.
+
+## Safe Inputs And Evidence
+
+Use minimal synthetic or explicitly redistributable fixtures in source control. Do not commit commercial game binaries, full proprietary configuration files, saves, extracted game assets, server data, private tester communications, or raw logs containing identifying paths unless redistribution and privacy authority are explicitly documented.
+
+Retained evidence should identify source commit, tool/test version, environment classification, result, date, and revalidation trigger. Sanitize usernames, machine names, IP addresses, tokens, and unrelated file paths.
 
 ## Repository Shape
 
