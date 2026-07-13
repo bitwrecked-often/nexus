@@ -110,7 +110,9 @@ GNU GPLv3, GNU's GPL application guide, and the GNU GPL FAQ were reviewed on 202
 
 Apply the license/source/provenance gate independently to every edition, including no-scripts and Vortex. The historical Vortex license defect remains preserved evidence, not permission to repeat it. If object code is introduced later, review and test the Corresponding Source method before release.
 
-The avatar is the only non-document, non-code asset in the provisional allowlist. Repository history alone does not prove its ownership, license, or preferred editable source. Q15 asks whether the owner holds its copyright; license/source classification must follow before the avatar can pass. README/changelog license scope and consolidation of `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` essentials into `README_FIRST.txt` also remain open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No Q14 candidate build is authorized before those GPL/provenance decisions.
+The avatar is the only non-document, non-code asset in the provisional allowlist. Q15 records the owner's attestation that Bit Wrecked owns the exact PNG with SHA-256 `6131A56A3C966EDE04B3E0A60D5EDCA3D4CB24D69425012BB2C0686D50E88562`; the same bytes occur in the immutable historical FullPackage. Repository history and public YouTube use are context, not the license grant. Q16 asks whether the avatar itself should be GPL-3.0-or-later. Its preferred editable source and brand/trademark treatment remain open.
+
+README/changelog license scope and consolidation of `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` essentials into `README_FIRST.txt` also remain open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No Q14 candidate build is authorized before those GPL/provenance decisions.
 
 ## Confirmed Historical Evidence
 

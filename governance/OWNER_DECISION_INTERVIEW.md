@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q15
+- Current question: Q16
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -623,7 +623,7 @@ Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
 - Keep checksum, full inventory, source-commit mapping, build evidence, publishing assets, validation tools, and other maintainer material outside the customer ZIP.
 - Review any future compiled or object-code addition separately for Corresponding Source obligations; Q14 approves only the present source-form package shape.
 - Treat “official project release” language as provenance and support clarification, never as a restriction on copying, modifying, or redistributing under GPL-3.0-or-later.
-- Do not alter the frozen runtime or build a candidate yet. Q15 begins the avatar provenance decision; plain-language notice consolidation remains open afterward.
+- Do not alter the frozen runtime or build a candidate yet. Q15 resolves avatar ownership; Q16 and later decisions must close its remaining license/source treatment and the plain-language notice consolidation.
 
 Decision state: accepted with copyleft-completeness conditions; avatar provenance and plain-language notice consolidation remain open
 
@@ -632,6 +632,41 @@ Decision state: accepted with copyleft-completeness conditions; avatar provenanc
 Question:
 
 > Do you own the copyright to the small Bit Wrecked avatar used by the GUI?
+
+Answer: yes
+
+Owner statement (normalized for readability):
+
+> Bit Wrecked owns it. The Bit Wrecked YouTube presence is open in the workspace now.
+
+Originating evidence:
+
+- The owner explicitly attests that Bit Wrecked owns the avatar copyright.
+- The exact file is `Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png`, SHA-256 `6131A56A3C966EDE04B3E0A60D5EDCA3D4CB24D69425012BB2C0686D50E88562`, 14,833 bytes, 256 by 256 pixels.
+- Read-only inspection confirms the same byte-identical avatar is present in the immutable historical FullPackage archive.
+- Git records when the file was committed, but that commit alone did not prove copyright ownership; the owner's Q15 statement supplies the recorded ownership attestation.
+- The owner reports that the Bit Wrecked YouTube presence is open in the workspace for review. No exact channel URL or independent platform verification is retained by this decision, and public display would not by itself establish a redistribution license.
+
+Governing ideals:
+
+- Tie ownership decisions to the exact bytes they cover.
+- Separate owner attestation, public brand use, copyright license, trademark treatment, and preferred editable source instead of treating them as interchangeable.
+- Do not infer missing asset rights from a filename, Git author, website, or public profile.
+
+Decision consequence:
+
+- Record Bit Wrecked as the owner-attested copyright holder for the fingerprinted PNG in `governance/ASSET_PROVENANCE.md`.
+- Treat the same bytes in the historical FullPackage as covered by the ownership attestation without modifying that immutable archive.
+- Do not yet mark the avatar distributable in the `4.1.0` candidate. Q15 establishes ownership only; Q16 must decide its copyright license, and a later record must identify its preferred editable source and brand/trademark treatment.
+- Do not treat the YouTube presence as a license grant, an endorsement, or proof of an exact public URL until separately recorded and verified.
+
+Decision state: accepted; ownership resolved by owner attestation, license and preferred-source classification pending
+
+### Q16 — Avatar Copyright License
+
+Question:
+
+> Should the avatar image itself be released under GPL-3.0-or-later with the package?
 
 Answer: pending
 

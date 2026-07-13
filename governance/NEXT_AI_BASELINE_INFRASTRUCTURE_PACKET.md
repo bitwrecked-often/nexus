@@ -16,7 +16,9 @@ Use the owner's preparation-dominant sequence: finish and reconcile the baseline
 
 Q12 locks the primary customer ZIP to three top-level items: `README_FIRST.txt`, `7DTD_WastelandAnimalTuning.bat`, and `Support_Files_Do_Not_Edit/`. Build it from an exact allowlist; never stage `Upload_To_Nexus`, publishing-only assets, candidate archives, validators, or raw maintainer evidence into the customer download. Q13 also excludes `Support_Files_Do_Not_Edit/Advanced_CommandLine` from the casual-player ZIP while retaining it in repository source.
 
-Q14 provisionally accepts the nine-file internal allowlist recorded in `PROJECT_MANIFEST.md` and `OWNER_DECISION_INTERVIEW.md`, subject to GPL-3.0-or-later completeness. Preserve the editable BAT, PowerShell, and XML source, full GPL text, applicable copyright/SPDX/modification/no-warranty notices, changelog, and—only after provenance is established—the GUI avatar. Each edition must independently expose its applicable license and exact source/provenance route. A repository-only license is insufficient for an otherwise incomplete customer ZIP, and origin/support wording must not narrow GPL permissions. The official allowlist and folder names are build/support policy, not downstream redistribution restrictions. Q15 asks whether the owner holds the avatar copyright; its license/preferred-source record, README/changelog license scope, and the separate plain-language license/use document consolidation remain open. Do not stage or build the Q14 candidate until those decisions are recorded.
+Q14 provisionally accepts the nine-file internal allowlist recorded in `PROJECT_MANIFEST.md` and `OWNER_DECISION_INTERVIEW.md`, subject to GPL-3.0-or-later completeness. Preserve the editable BAT, PowerShell, and XML source, full GPL text, applicable copyright/SPDX/modification/no-warranty notices, changelog, and—only after provenance is established—the GUI avatar. Each edition must independently expose its applicable license and exact source/provenance route. A repository-only license is insufficient for an otherwise incomplete customer ZIP, and origin/support wording must not narrow GPL permissions. The official allowlist and folder names are build/support policy, not downstream redistribution restrictions.
+
+Q15 records the owner's attestation that Bit Wrecked owns the exact avatar fingerprinted in `ASSET_PROVENANCE.md`; its presence in Git or on YouTube is context, not the license grant. Q16 asks whether its copyright should be licensed under GPL-3.0-or-later. Preferred editable source, brand/trademark treatment, README/changelog license scope, and the separate plain-language license/use document consolidation remain open. Do not stage or build the Q14 candidate until those decisions are recorded.
 
 ## Start Here
 
@@ -29,9 +31,11 @@ Read these files completely before making changes:
 5. `governance/PRIVATE_TEST_PROGRAM.md`
 6. `governance/PROJECT_MANIFEST.md`
 7. `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`
-8. `solutions/README.md`
-9. This packet
-10. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
+8. `governance/OWNER_DECISION_INTERVIEW.md`
+9. `governance/ASSET_PROVENANCE.md`
+10. `solutions/README.md`
+11. This packet
+12. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
 
 Active solution root:
 

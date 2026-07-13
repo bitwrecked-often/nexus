@@ -157,6 +157,8 @@ Minimal packaging must remove customer-irrelevant material without removing the 
 - review each excluded build, packaging, or maintainer file against the GPL definition of Corresponding Source rather than assuming that every repository file belongs in—or outside—the customer archive;
 - if a future edition distributes object code, add and validate a GPL-compliant corresponding-source path before publication.
 
+Record every distributed non-code asset in `ASSET_PROVENANCE.md`. Ownership, public use as a brand, copyright license, trademark treatment, and preferred editable source are separate fields; evidence for one must not be silently treated as evidence for the others.
+
 For the Q14 primary `4.1.0` package, the provisionally accepted source-form allowlist is:
 
 ```text
@@ -171,7 +173,7 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
 ```
 
-The executable portion is readable source form, but the nine-file set is not final until the avatar's ownership and license are recorded. Q15 asks the owner to establish the first part of that provenance. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` also remain open. Q14 authorizes planning and validation rules, not a candidate build or a runtime change.
+The executable portion is readable source form. Q15 records the owner's attestation that Bit Wrecked owns the exact avatar already present in source and the historical full archive, but the nine-file set is not final until its license and preferred editable source are recorded. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` also remain open. Q14 authorizes planning and validation rules, not a candidate build or a runtime change.
 
 ### Wrapper As A Composable Feature-Set Boundary
 
