@@ -485,6 +485,19 @@ Reframed question:
 
 > Should the optional no-scripts ZIP contain only the three-file modlet, one concise self-contained README, and `LICENSE.txt`, with checksum/inventory evidence kept outside the ZIP?
 
+Response to first reframing: not answered; withdrawn after the owner clarified the target with a screenshot
+
+Second scope correction:
+
+- The screenshot shows the solution workspace/outer package: `Support_Files_Do_Not_Edit`, `README_FIRST.txt`, `7DTD_WastelandAnimalTuning.bat`, and `Upload_To_Nexus`.
+- The owner is asking to simplify the primary full-package extraction surface, not deciding the no-scripts product label in this question.
+- Read-only inspection confirms the registered historical FullPackage ZIP already excludes `Upload_To_Nexus` and logically presents three top-level items: the README, launcher, and support folder.
+- Its support folder still contains publishing covers, validators, QA/build material, advanced tools, and maintainer documents in addition to true launcher dependencies. Any deeper trim needs an exact dependency allowlist so QA-approved behavior is preserved.
+
+Current reframed question:
+
+> Should the primary `4.1.0` customer ZIP expose exactly `README_FIRST.txt`, `7DTD_WastelandAnimalTuning.bat`, and `Support_Files_Do_Not_Edit` at its top level, while forbidding `Upload_To_Nexus` and other maintainer-only root content?
+
 Answer: pending
 
 Consequence: pending
