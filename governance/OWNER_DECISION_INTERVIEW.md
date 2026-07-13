@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q5
+- Current question: Q6
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -188,6 +188,39 @@ Supersedes: the withdrawn Q4 question; Q2 mutually exclusive-package consequence
 Question:
 
 > Should the wrapper's composition engine be usable without opening the graphical interface?
+
+Answer: yes, with scope qualification
+
+Owner qualification (normalized for readability):
+
+> The engine can likely already be used that way, but there is no tooling for it yet. This product was made for the casual gamer and should stay that way. New integration features can be added later.
+
+Originating implementation evidence:
+
+- Composition behavior already exists in named PowerShell functions, but those functions share one script with WinForms construction and operational code.
+- The repository has no documented command-line interface, module contract, integration manifest, compatibility policy, or tests establishing a supported headless product surface.
+
+Governing ideals:
+
+- Preserve a clean extension seam without making casual players carry modder-oriented complexity.
+- Separate an architectural capability from a supported, documented product claim.
+- Add future features incrementally after the reliable player baseline exists.
+
+Decision consequence:
+
+- Isolate the composition core so maintainers and automated tests can invoke it without opening WinForms.
+- Keep the graphical wrapper as the primary supported `4.1.0` player experience and optimize its wording and flow for casual gamers.
+- Do not make a public CLI, module API, plug-in SDK, or modder integration tool a `4.1.0` release requirement.
+- Label any non-GUI attachment surface as internal or experimental until it has an explicit input/output contract, compatibility scope, documentation, and tests.
+- Later releases may add integration tooling without changing the accepted composition model.
+
+Decision state: accepted; callable core required, public integration tooling deferred
+
+### Q6 — Scanner-Friendly Edition
+
+Question:
+
+> Should the scanner-friendly no-scripts package remain a supported `4.1.0` download alongside the graphical wrapper?
 
 Answer: pending
 

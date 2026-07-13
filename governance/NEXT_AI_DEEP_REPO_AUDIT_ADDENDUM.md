@@ -166,7 +166,7 @@ A public artifact must produce its advertised outcome. On the matching baseline,
 
 The current GUI script mixes UI construction, game discovery, tuning logic, XML generation, install/remove, server configuration, backup/restore, and validation in one file of roughly 2,500 lines.
 
-Preserve its confirmed composition behavior: independently selected animal levels are reconciled through shared-density and pressure-route rules, then emitted as one `entitygroups.xml` and `spawning.xml` pair. Extraction must not turn these feature inputs into mutually exclusive artifacts. The pending Q5 decision governs whether the extracted composition core becomes a supported non-GUI attachment surface; current source structure alone does not prove a stable integration API.
+Preserve its confirmed composition behavior: independently selected animal levels are reconciled through shared-density and pressure-route rules, then emitted as one `entitygroups.xml` and `spawning.xml` pair. Extraction must not turn these feature inputs into mutually exclusive artifacts. Q5 requires a callable non-GUI core for maintainability and future reuse, but explicitly defers a supported public CLI, API, SDK, or integration tool. Current source structure alone does not prove a stable integration surface.
 
 Extract or isolate:
 
@@ -178,7 +178,7 @@ Extract or isolate:
 - package construction and inspection;
 - WinForms presentation/event binding.
 
-The core must be runnable without opening the GUI. Add synthetic fixtures, deterministic clock/path injection where needed, and a single local test entry point shared by maintainers and CI.
+The core must be runnable without opening the GUI. Add synthetic fixtures, deterministic clock/path injection where needed, and a single local test entry point shared by maintainers and CI. Keep the casual-gamer GUI as the primary `4.1.0` product surface; do not expand this slice into public integration tooling.
 
 ### Slice F: Fail-Closed Preflight And Authoritative Verification
 

@@ -128,6 +128,8 @@ When a solution accepts independently selectable feature inputs, treat its wrapp
 - feature inputs, resolution rules, generated payloads, and evidence remain traceable without reverse engineering;
 - generated XML is a composed result and must not be mislabeled as though it always came from one exclusive preset;
 - every user-facing and modder-facing entry point must use the same authoritative composition rules;
+- a testable non-GUI core is not automatically a supported public CLI, API, SDK, or integration product;
+- the casual-player interface may remain the primary supported experience while modder tooling matures separately;
 - downstream reuse does not guarantee compatibility, vendor endorsement, official-project status, or upstream support for a modified package.
 
 ## Multi-Solution Identity
