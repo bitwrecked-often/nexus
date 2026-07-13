@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q3
+- Current question: Q4
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -94,6 +94,40 @@ Decision state: accepted; packaging shape remains open
 Question:
 
 > Should all no-scripts presets be bundled into one Nexus download, rather than published as separate downloadable files?
+
+Answer: yes
+
+Owner qualification:
+
+> The bundled presets can also give modders something to attach as a pipeline for feature sets.
+
+Originating observation:
+
+- Separate downloads fragment discovery, versioning, documentation, and chain of custody.
+- A single code-free bundle can expose several readable XML outcomes and their derivation in one reviewed artifact.
+
+Governing ideals:
+
+- Keep the customer choice simple while making the underlying method reusable research.
+- Treat presets as transparent feature-set definitions, not opaque finished blobs.
+- Preserve one versioned evidence chain across player and modder uses.
+
+Decision consequence:
+
+- Publish the no-scripts preset collection as one versioned Nexus download.
+- Give every preset a stable ID, readable name, exact effect, source definition, generated payload, and evidence link.
+- Include a player-facing selection/install layer and a separate modder-facing feature-set/index layer in the same artifact.
+- The modder layer must explain how preset definitions flow into generated XML without requiring reverse engineering.
+- Validation must prove that documentation and generated payloads correspond to the same preset definitions.
+- The bundle must avoid making a user install every preset at once.
+
+Decision state: accepted; composition rules remain open
+
+### Q4 — Player Preset Exclusivity
+
+Question:
+
+> Should ordinary players install exactly one preset at a time, even though modders may reuse preset definitions in broader feature-set pipelines?
 
 Answer: pending
 

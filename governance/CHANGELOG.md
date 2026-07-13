@@ -10,3 +10,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Started a durable, branching yes/no owner-decision interview to reach implementation-ready shape awareness without relying on conversational memory.
 - Recorded the first owner product decision: the no-scripts edition must provide meaningful tuning rather than a vanilla no-op, with an explicit chain-of-custody standard for ideals and decisions.
 - Recorded that the no-scripts product will offer multiple clearly labeled, mutually exclusive preset choices rather than impose one fixed play style.
+- Recorded one bundled no-scripts preset library serving both player selection and a transparent, traceable modder feature-set pipeline.

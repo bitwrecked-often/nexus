@@ -118,6 +118,16 @@ Every public artifact is its own product contract. Its name, description, docume
 - Preserve historical defects as evidence, but never use them as the contract for a new release.
 - Reproducibility and provenance are evidence claims. Immutability alone does not prove either.
 
+### Presets As A Feature-Set Pipeline
+
+When a no-code artifact bundles presets, preserve both uses without mixing their instructions:
+
+- players receive clearly labeled, ready-made outcomes with a safe selection/install path;
+- modders receive stable preset IDs, source definitions, generated payloads, derivation rules, and evidence links that can feed broader feature-set work;
+- generated XML must remain traceable to one authoritative preset definition;
+- documentation must distinguish a supported player preset from an extensible modder input;
+- reuse does not make a modified downstream package an official release.
+
 ## Multi-Solution Identity
 
 This repository may contain many mods. Each solution owns its version, lifecycle, compatibility, Nexus identity, artifacts, evidence, and release manifest. Repository governance and schema versions are separate from mod versions.
