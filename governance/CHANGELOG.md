@@ -12,3 +12,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Retained the Q2-Q3 preset-package interpretation as superseded reasoning rather than silently rewriting the decision history.
 - Corrected the product model from mutually exclusive preset packages to one reusable wrapper that composes independent feature inputs into a coherent modlet and can attach to broader modder workflows.
 - Recorded that the composition core must remain callable without WinForms while the casual-gamer GUI stays the primary `4.1.0` experience and public integration tooling remains deferred.
+- Retained a supported no-scripts `4.1.0` edition as a complete static-inspection surface for mod intent, while classifying Nexus scanner behavior as artifact-specific evidence rather than assumed platform policy.

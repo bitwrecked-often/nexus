@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q6
+- Current question: Q7
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -221,6 +221,45 @@ Decision state: accepted; callable core required, public integration tooling def
 Question:
 
 > Should the scanner-friendly no-scripts package remain a supported `4.1.0` download alongside the graphical wrapper?
+
+Answer: yes
+
+Owner rationale (normalized for readability):
+
+> Nexus uses the no-scripts package to scan the mod's intent.
+
+Evidence classification:
+
+- This is owner-reported operational workflow evidence for this project.
+- It is not, by itself, independent verification of Nexus policy, scanner implementation, review outcome, or future platform behavior.
+
+Originating repository evidence:
+
+- The historical no-scripts edition packages readable XML and documentation without executable-style helper files.
+- `NEXUS_UPLOAD_NOTES_NO_SCRIPTS.md` already treats that edition as the scanner-friendly Nexus path when script scanning is a concern.
+- The deep audit found that the historical archive's documentation and vanilla-equivalent payload are not an acceptable `4.1.0` product contract.
+
+Governing ideals:
+
+- Make gameplay intent statically inspectable to a distributor or reviewer.
+- Give every supported download a complete, truthful, useful product contract.
+- Distinguish project experience from independently verified platform policy.
+
+Decision consequence:
+
+- Retain the no-scripts edition as a supported `4.1.0` product alongside the casual-player graphical wrapper.
+- Its readable XML, plain-language outcome, requirements, install, verification, removal, license, identity, and support boundaries must agree.
+- It must provide meaningful behavior under Q1 and must not advertise GUI, cap-management, or automation features it does not contain.
+- Enforce an exact scanner-friendly file allowlist and publish an inventory/checksum so intent can be assessed without executing code.
+- Record actual Nexus handling as dated release evidence; do not claim universal or permanent scanner acceptance before that evidence exists.
+
+Decision state: accepted; Nexus file placement remains open
+
+### Q7 — Primary Nexus File
+
+Question:
+
+> Should the scanner-friendly no-scripts package be the primary Nexus file for `4.1.0`?
 
 Answer: pending
 

@@ -118,6 +118,17 @@ Every public artifact is its own product contract. Its name, description, docume
 - Preserve historical defects as evidence, but never use them as the contract for a new release.
 - Reproducibility and provenance are evidence claims. Immutability alone does not prove either.
 
+### Scanner-Friendly Inspection Surface
+
+When a supported no-scripts edition exists so a distributor or reviewer can inspect gameplay intent:
+
+- its intended changes must be understandable from readable payloads and plain-language documentation without executing code;
+- it must contain no executable-style files and must not instruct users to run controls, scripts, or paths absent from that edition;
+- its outcome, requirements, identity, license, installation, verification, removal, and support boundaries must form a complete product contract;
+- an exact file allowlist, archive inventory, source comparison, and checksum must support static review;
+- scanner friendliness does not excuse a vanilla no-op, misleading outcome, or incomplete player package;
+- platform handling must be recorded as dated evidence for the specific artifact, not generalized into an undocumented permanent policy.
+
 ### Wrapper As A Composable Feature-Set Boundary
 
 When a solution accepts independently selectable feature inputs, treat its wrapper as the composition boundary rather than recasting its outputs as mutually exclusive preset packages:
