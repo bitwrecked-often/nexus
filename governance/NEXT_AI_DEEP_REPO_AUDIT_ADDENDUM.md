@@ -44,8 +44,8 @@ Record these in an owner-decision register. Block dependent release work until a
 The active owner-decision register is `governance/OWNER_DECISION_INTERVIEW.md`. Do not ask the owner to repeat decisions already recorded there.
 
 1. **No-scripts product value — partially resolved by Q1-Q4:** provide meaningful behavior, understandable feature choices in one non-fragmented Nexus distribution, and preserve the wrapper as the reusable composition boundary. The exact scanner-friendly representation and tuning values remain open. The AI must not select them or reintroduce mutually exclusive preset-package assumptions.
-2. **Active editions — partially resolved by Q5-Q7:** retain the casual-player graphical-wrapper product as the primary Nexus file and the scanner-friendly no-scripts product as a supported optional file for `4.1.0`. Exact archive layout and the status of modlet-only/Vortex remain open.
-3. **Mod-manager claim:** decide whether to test and support Vortex specifically or rename the unverified variant to generic `ModletOnly`.
+2. **Active editions — resolved by Q5-Q8:** retain the casual-player graphical-wrapper product as the primary Nexus file, scanner-friendly no-scripts as a supported optional file, and an artifact-scoped Vortex-supported edition for `4.1.0`. Exact archive layout remains implementation work.
+3. **Mod-manager claim — resolved by Q8:** retain explicit Vortex support, conditional on a concise successful import/install/enable/verify/disable/remove audit against the exact candidate. A failed or unavailable audit blocks only the Vortex edition unless it exposes a shared defect.
 4. **Artifact retention:** decide whether future release archives are committed under an immutable ledger, attached only to GitHub releases, or both.
 5. **Repository lifecycle:** define whether `main` means release-accepted source or Nexus-served source, and place merge/tag/upload/served-file verification accordingly.
 6. **Authority identities:** identify the actual maintainer, release owner, Nexus account owner, CODEOWNER, and private security contact. Do not invent a team or committee.
@@ -250,7 +250,7 @@ Refactor packaging before use:
 
 Every distributed edition must carry or clearly expose its applicable license, official source/support URL, version/variant identity, and unofficial-mod notice.
 
-Known issue: the modlet-only/Vortex XML says `See LICENSE.txt`, but its archive omits that file. Do not advertise verified Vortex behavior while its support remains unverified.
+Known issue: the historical modlet-only/Vortex XML says `See LICENSE.txt`, but its archive omits that file. Q8 retains Vortex as a `4.1.0` support goal, not a verified claim. Correct the candidate and complete the versioned Vortex audit before marking that edition publishable; preserve the historical archive unchanged.
 
 Create an asset/component provenance inventory covering source/tool, author/owner, creation date when known, license/redistribution rights, trademarks/branding, alt text, crop/safe-area intent, and which artifact should contain it. Do not imply Nexus, Microsoft, Broadcom, the game developer, or any other vendor endorses the project.
 

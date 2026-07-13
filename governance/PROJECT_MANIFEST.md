@@ -114,6 +114,7 @@ Every public artifact is its own product contract. Its name, description, docume
 - A package must not advertise controls, files, automation, or outcomes it does not contain.
 - A gameplay package must provide the advertised gameplay outcome on its supported baseline, or identify itself honestly as a baseline, template, source, or documentation artifact.
 - Full helper, no-scripts, modlet-only, source, and publishing editions may have different capabilities and policies; model them separately.
+- An edition named for a third-party manager makes an integration claim and must pass a versioned install, enable, verification, disable, and removal audit before publication.
 - Validate packaged content against authoritative staged source byte-for-byte.
 - Preserve historical defects as evidence, but never use them as the contract for a new release.
 - Reproducibility and provenance are evidence claims. Immutability alone does not prove either.

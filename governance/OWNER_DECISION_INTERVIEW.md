@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q8
+- Current question: Q9
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -310,6 +310,40 @@ Decision state: accepted; graphical wrapper primary, no-scripts optional
 Question:
 
 > Should `4.1.0` explicitly support Vortex, which would require successful Vortex installation and removal testing before release?
+
+Answer: yes
+
+Owner qualification (normalized for readability):
+
+> The Vortex path should be supportable, and its audit should be quick.
+
+Originating repository evidence:
+
+- A historical archive is named `VortexModlet`, but the repository contains no retained successful Vortex install/remove evidence.
+- That historical archive omits the `LICENSE.txt` referenced by its XML and cannot serve as a passing `4.1.0` fixture.
+- The modlet payload is small enough for a bounded integration audit, but small size does not prove manager behavior.
+
+Governing ideals:
+
+- A named third-party integration is a testable support claim.
+- Keep acceptance checks proportional, repeatable, and artifact-specific.
+- Speed should come from a narrow test matrix, not from lowering the evidence bar.
+
+Decision consequence:
+
+- Retain an explicitly Vortex-supported `4.1.0` edition rather than silently renaming it to generic `ModletOnly`.
+- Before that edition becomes publishable, record the Vortex version, game build, candidate artifact hash, and a successful import/install, enable, installed-inventory verification, game recognition/load, disable, removal, and owned-leftover check.
+- Correct its license/package-contract defect and validate the exact archive served to the tester.
+- Keep the audit concise through a written checklist and reusable evidence template; do not invent unnecessary automation around Vortex.
+- If the Vortex audit fails or cannot be performed, block the Vortex edition and its compatibility claim. Other editions remain governed by their own gates unless the failure reveals a shared defect.
+
+Decision state: accepted; Vortex support retained, integration evidence pending
+
+### Q9 — Safe Server-Cap Controls
+
+Question:
+
+> Should cap-lifting controls stay disabled until the exact active `serverconfig.xml` is identified and a verified backup can be made?
 
 Answer: pending
 
