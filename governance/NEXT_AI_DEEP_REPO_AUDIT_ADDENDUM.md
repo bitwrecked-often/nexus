@@ -42,6 +42,20 @@ Owner-reported QA completion is an owner attestation. Do not invent its scenario
 
 Work slices E-H and behavior-changing work in Slice L are deferred beyond this frozen baseline. Slices A-D, I-K, M-N, and documentation/evidence-only portions of Slice L remain in scope only where they do not change runtime or gameplay behavior.
 
+### Planning Gate Before Candidate Execution
+
+The owner's operating model is preparation-dominant: `95% preparation / 5% execution`. Treat that ratio as direction, not a fabricated measurement. Do not create or promote the `4.1.0` candidate until these planning outputs agree:
+
+1. authoritative QA-baseline identity, source commit, and fingerprint;
+2. per-solution manifest and per-edition product contracts;
+3. exact source-to-stage mappings and file allowlists;
+4. requirements and install, verify, remove, recovery, and support instructions;
+5. version, filename, archive-root, GitHub, and Nexus metadata map;
+6. validation, acceptance, evidence, rollback, and served-file verification checklists;
+7. artifact lifecycle and retention decision, including the still-open Q10.
+
+After owner acceptance of the planning set, use one controlled candidate/promotion cycle. Temporary reproducibility builds may be compared without promotion, but only one artifact may be promoted for a release identity. A failed check returns to planning or owner review and does not authorize technical payload changes.
+
 ## Confirmed Historical Evidence
 
 The committed historical archives are immutable inputs to future audits:

@@ -12,6 +12,8 @@ The owner has declared the current technical package QA-complete and frozen for 
 
 Current work is limited to non-behavioral release infrastructure: identity/version metadata, documentation, licensing, manifests, artifact quarantine, safe staging/packaging, non-mutating validation, checksums/provenance, evidence, GitHub health, and release controls. Read `governance/OWNER_DECISION_INTERVIEW.md` and the scope override in `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md` before selecting a task.
 
+Use the owner's preparation-dominant sequence: finish and reconcile the baseline identity, manifests, instructions, edition allowlists, version map, acceptance checklist, and evidence templates before candidate execution. Do not repeatedly rebuild by trial and error. After the planning gate is approved, perform one controlled candidate/promotion cycle; no build step grants publication authority.
+
 ## Start Here
 
 Read these files completely before making changes:

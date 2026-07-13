@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q10
+- Current question: Q11
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -386,6 +386,35 @@ Supersedes for `4.1.0`: Q5's current core-isolation consequence and technical im
 Question:
 
 > Should final `4.1.0` release ZIPs be committed to this repository as immutable evidence as well as uploaded to release services?
+
+Answer: deferred; the owner did not choose an artifact-storage policy
+
+Owner planning direction (normalized for readability):
+
+> This stage is a copy of what works. We can make the new `4.1.0` package after the manifest and instructions are complete. For us, the work is 95% preparation and 5% execution.
+
+Interpretation:
+
+- `95% preparation / 5% execution` is a governing workflow heuristic, not a measured effort promise.
+- The technical baseline stays frozen while its identity, manifests, instructions, package contracts, validation evidence, and release controls are prepared.
+- The final candidate should be produced in one controlled execution phase after the planning gate, not through trial-and-error changes to the package.
+- This response does not answer whether final ZIPs belong in Git. Q10 remains open and no retention policy is inferred.
+
+Decision consequence:
+
+- Do not build, upload, publish, or archive a Nexus file during the planning stage.
+- Complete and reconcile the authoritative solution manifest, per-edition contents, version map, requirements, install/verify/remove instructions, allowlists, acceptance checklist, and evidence templates first.
+- Identify the exact QA-approved baseline before it is copied into guarded `4.1.0` staging.
+- After planning approval, execute one controlled candidate/promotion cycle, validate it against the completed manifests, and retain the resulting hashes and evidence.
+- A failed check returns the work to planning or owner review; it does not authorize modification of frozen technical behavior.
+
+Decision state: accepted preparation-first sequence; Q10 artifact retention still pending
+
+### Q11 — QA Baseline Identity
+
+Question:
+
+> Is the current solution folder on `develop/4.1.0` the authoritative QA-approved technical baseline for the eventual `4.1.0` candidate?
 
 Answer: pending
 

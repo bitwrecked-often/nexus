@@ -178,6 +178,17 @@ An audit or recommendation does not authorize technical change. When the owner i
 - if validation reveals a potential release blocker, stop and report the evidence before changing the accepted baseline;
 - require explicit owner authority to reopen runtime, gameplay, UI, install, removal, or configuration behavior.
 
+## Preparation-Dominant Release Work
+
+Treat `95% preparation / 5% execution` as an operating heuristic: settle identity, scope, instructions, artifact contracts, acceptance evidence, and authority before producing a release candidate.
+
+- identify and fingerprint the exact QA-approved baseline before staging;
+- complete the authoritative manifest, edition inventories, version map, requirements, install/verify/remove guidance, allowlists, and acceptance checklist before the candidate build;
+- use read-only or dry-run checks to resolve planning defects without repeatedly mutating artifacts;
+- perform one controlled candidate/promotion cycle after the planning gate, with any reproducibility comparison confined to temporary candidates and only one artifact promoted per identity;
+- return failed checks to planning or owner review instead of patching a frozen baseline by inference;
+- keep build, publication, and prior-file archival as separately authorized events.
+
 ## Safe Inputs And Evidence
 
 Use minimal synthetic or explicitly redistributable fixtures in source control. Do not commit commercial game binaries, full proprietary configuration files, saves, extracted game assets, server data, private tester communications, or raw logs containing identifying paths unless redistribution and privacy authority are explicitly documented.
