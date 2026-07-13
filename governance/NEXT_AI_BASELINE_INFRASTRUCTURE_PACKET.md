@@ -42,10 +42,11 @@ Read these files completely before making changes:
 6. `governance/PROJECT_MANIFEST.md`
 7. `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`
 8. `governance/OWNER_DECISION_INTERVIEW.md`
-9. `governance/ASSET_PROVENANCE.md`
-10. `solutions/README.md`
-11. This packet
-12. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
+9. `governance/EXECUTION_PLAN.md`
+10. `governance/ASSET_PROVENANCE.md`
+11. `solutions/README.md`
+12. This packet
+13. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
 
 Active solution root:
 
@@ -71,7 +72,7 @@ Support_Files_Do_Not_Edit/Nexus_NoScripts/
 
 Confirm the branch and clean working tree before starting. If unexpected user changes exist, preserve them and report any overlap.
 
-The deep-audit addendum contains the current dependency order and confirmed repository defects. Follow its slices first; use this packet as the detailed requirement catalog. Do not implement duplicated files or workflows merely because both documents mention them.
+The deep-audit addendum contains the dependency order and confirmed repository defects. `governance/EXECUTION_PLAN.md` identifies the single current phase within that order; use this packet as the detailed requirement catalog. Do not implement duplicated files or workflows merely because both documents mention them.
 
 ## Governing Intent
 

@@ -456,6 +456,8 @@ current explicit user authorization
 
 Current filesystem, Git, and artifact evidence overrides stale handoff assertions. Record contradictions; do not resolve material product or authority questions by guessing.
 
+Use `governance/EXECUTION_PLAN.md` as the short execution router after applying this precedence. Keep no more than one phase active, synchronize it with the live session planner at phase boundaries, and return here and to the detailed packet for requirements. Planner status never creates authority that the governing documents withhold.
+
 ## Final Report Requirements
 
 For every completed slice report:

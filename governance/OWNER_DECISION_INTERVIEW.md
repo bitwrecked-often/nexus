@@ -960,4 +960,4 @@ Keep this record concise enough to read and complete enough to reconstruct the d
 
 ## Routing
 
-Future AIs must read this file after `PROJECT_MANIFEST.md` and `NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`, before selecting implementation work or asking the owner to repeat a recorded decision.
+Future AIs must read this file after `PROJECT_MANIFEST.md` and `NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`, then consult `EXECUTION_PLAN.md` before selecting implementation work or asking the owner to repeat a recorded decision.

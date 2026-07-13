@@ -4,7 +4,7 @@ This repository is used only to develop, validate, package, and publish open-sou
 
 These instructions apply to the entire repository.
 
-The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet. For `4.1.0` baseline work, also read `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md` and `governance/OWNER_DECISION_INTERVIEW.md` before running packaging or validation commands.
+The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet. For `4.1.0` baseline work, also read `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md` and `governance/OWNER_DECISION_INTERVIEW.md`, then use `governance/EXECUTION_PLAN.md` to select the single current phase before running packaging or validation commands.
 
 Before adding, removing, licensing, or packaging an image or branding asset, read `governance/ASSET_PROVENANCE.md`. An owner statement, repository commit, public profile, and license grant are different evidence and must remain distinguishable.
 
@@ -28,6 +28,7 @@ Governance controls how a solution may advance. A solution supplies the implemen
 - Keep `VERSION`, mod metadata, package metadata, release notes, changelog, archive names, and Nexus metadata consistent at release time.
 - Make the smallest safe change. Do not mix unrelated cleanup with a feature or fix.
 - Keep owner decisions at owner altitude. Use evidence and established project policy for reversible implementation mechanics such as staging paths, checksum placement, and byte-preserving channel transfer. Ask the owner only when a choice materially changes product behavior, customer promises, rights/license scope, public identity, external publication, irreversible state, or accepted release risk.
+- Keep the live session planner and `governance/EXECUTION_PLAN.md` synchronized at phase boundaries. The plan routes work; it does not override evidence, governing policy, or publication authority.
 - Prefer readable source and deterministic packaging. Do not introduce hidden downloaders, telemetry, registry persistence, services, scheduled tasks, startup entries, obfuscation, or unexplained binaries.
 - Treat GPL-3.0-or-later compliance as an artifact gate, not merely a repository label. Every distributed edition must carry the full applicable license, preserve copyright, license, modification, and no-warranty notices, and include or provide the exact corresponding source by a GPL-compliant method. When an edition is distributed as BAT, PowerShell, and XML source, keep that preferred editable source in the archive. Do not add restrictions on use, copying, modification, or redistribution; provenance language may distinguish an official project release from a modified version but must not narrow GPL permissions.
 - Do not infer ownership or license coverage for images, branding, documentation, or other non-code material. Record the copyright holder, license, redistribution authority, and preferred editable source for each distributed asset before treating it as part of a GPL-covered release.
