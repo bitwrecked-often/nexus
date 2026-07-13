@@ -82,7 +82,35 @@ Support_Files_Do_Not_Edit/
 
 Use an exact allowlist. `Upload_To_Nexus`, release candidates, publishing-only assets, validators, raw QA/build material, and maintainer-only root content must never enter the customer ZIP. Use a normal non-password-protected ZIP with no nested archives. Validate the extracted launcher/support relative paths.
 
-Q13 excludes `Support_Files_Do_Not_Edit/Advanced_CommandLine` from the primary casual-player ZIP because neither the root launcher nor GUI invokes it. Retain those files as repository source/maintainer material; do not advertise the advanced command-line path as a primary-package feature. Q14 decides the remaining exact internal allowlist.
+Q13 excludes `Support_Files_Do_Not_Edit/Advanced_CommandLine` from the primary casual-player ZIP because neither the root launcher nor GUI invokes it. Retain those files as repository source/maintainer material; do not advertise the advanced command-line path as a primary-package feature.
+
+### Copyleft-Complete Internal Allowlist Shaped By Q14
+
+Q14 provisionally accepts this source-form primary-package allowlist for planning:
+
+```text
+README_FIRST.txt
+7DTD_WastelandAnimalTuning.bat
+Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml
+Support_Files_Do_Not_Edit/LICENSE.txt
+Support_Files_Do_Not_Edit/CHANGELOG.md
+Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
+```
+
+The owner qualified the minimal package with the project's GNU GPL character. The archive therefore remains minimal only by excluding customer-irrelevant material; it must not remove editable source or GPL freedoms. Preserve the complete GPL text and applicable copyright, SPDX/license, modification, and no-warranty notices. Provide an exact official public source/version route, keep plain-language summaries subordinate to the GPL, and do not turn official-origin, layout, folder-name, or support wording into an additional restriction on copying, modifying, repackaging, or sharing.
+
+GNU GPLv3, GNU's GPL application guide, and the GNU GPL FAQ were reviewed on 2026-07-12:
+
+- <https://www.gnu.org/licenses/gpl-3.0.en.html>
+- <https://www.gnu.org/licenses/gpl-howto.html>
+- <https://www.gnu.org/licenses/gpl-faq.html>
+
+Apply the license/source/provenance gate independently to every edition, including no-scripts and Vortex. The historical Vortex license defect remains preserved evidence, not permission to repeat it. If object code is introduced later, review and test the Corresponding Source method before release.
+
+The avatar is the only non-document, non-code asset in the provisional allowlist. Repository history alone does not prove its ownership, license, or preferred editable source. Q15 asks whether the owner holds its copyright; license/source classification must follow before the avatar can pass. README/changelog license scope and consolidation of `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` essentials into `README_FIRST.txt` also remain open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No Q14 candidate build is authorized before those GPL/provenance decisions.
 
 ## Confirmed Historical Evidence
 

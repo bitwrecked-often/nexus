@@ -143,6 +143,36 @@ Build customer downloads from exact allowlists rather than repository folders:
 - test the staged archive as extracted, including relative-path dependencies and the first-run customer journey;
 - treat the exact layout as a project design justified by vendor guidance, not as a Nexus-mandated structure or endorsement.
 
+### Copyleft-Complete Minimal Packaging
+
+Minimal packaging must remove customer-irrelevant material without removing the freedoms or source promised by GPL-3.0-or-later:
+
+- treat license compliance as a per-edition release gate; a license file elsewhere in the repository does not make an incomplete download acceptable;
+- retain the preferred editable form of the distributed work. For the current primary package, that means the BAT launcher, PowerShell GUI source, and XML modlet source—not only generated output;
+- include the complete applicable GPL text in every distributed edition and preserve applicable copyright, SPDX/license, modification, and no-warranty notices;
+- identify the exact public source version and official project source/support location in release-facing documentation and external evidence;
+- keep plain-language summaries faithful to the GPL and subordinate to the full license text;
+- do not add restrictions on use, copying, modification, or redistribution. Origin, trademark, and support wording may distinguish official releases from downstream modifications, but must not withdraw GPL permissions;
+- treat official archive names, folder names, allowlists, and support boundaries as project build/test policy—not conditions that downstream recipients must preserve when exercising GPL rights;
+- review each excluded build, packaging, or maintainer file against the GPL definition of Corresponding Source rather than assuming that every repository file belongs in—or outside—the customer archive;
+- if a future edition distributes object code, add and validate a GPL-compliant corresponding-source path before publication.
+
+For the Q14 primary `4.1.0` package, the provisionally accepted source-form allowlist is:
+
+```text
+README_FIRST.txt
+7DTD_WastelandAnimalTuning.bat
+Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml
+Support_Files_Do_Not_Edit/LICENSE.txt
+Support_Files_Do_Not_Edit/CHANGELOG.md
+Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
+```
+
+The executable portion is readable source form, but the nine-file set is not final until the avatar's ownership and license are recorded. Q15 asks the owner to establish the first part of that provenance. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` also remain open. Q14 authorizes planning and validation rules, not a candidate build or a runtime change.
+
 ### Wrapper As A Composable Feature-Set Boundary
 
 When a solution accepts independently selectable feature inputs, treat its wrapper as the composition boundary rather than recasting its outputs as mutually exclusive preset packages:

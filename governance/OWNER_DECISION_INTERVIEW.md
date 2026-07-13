@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q14
+- Current question: Q15
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -566,6 +566,72 @@ Decision state: accepted; advanced command-line tools excluded from primary ZIP
 Question:
 
 > Should the primary ZIP contain only the launcher, concise README, GUI script, source modlet, GPL license, changelog, and small avatar used by the GUI?
+
+Answer: yes, subject to GPL-3.0-or-later completeness
+
+Owner qualification (normalized for readability):
+
+> Keep the package lean for the casual player, but remember that it is GNU-licensed. The package and process must preserve that character as well.
+
+Originating repository evidence:
+
+- The proposed nine-file set contains the actual editable program: the BAT launcher, PowerShell GUI source, and three XML modlet source files. The primary package does not distribute compiled EXE or DLL object code in place of that source.
+- The full GPLv3 text is already present as `Support_Files_Do_Not_Edit/LICENSE.txt`.
+- The launcher, GUI, and XML files carry copyright and `SPDX-License-Identifier: GPL-3.0-or-later` notices; the GUI also carries a no-warranty notice.
+- The small avatar is loaded by the GUI, and the GUI tells users that the changelog is beside the tool. Both are therefore part of the intended primary-package contract, subject to the open licensing/provenance gates.
+- `README_FIRST.txt` currently names GPL-3.0-or-later but does not provide the public source location or an exact source-version route. `ModInfo.xml` also has an empty `Website` value.
+- `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` contain plain-language licensing, no-warranty, and unofficial-origin guidance, but Q14 otherwise excludes them from the customer allowlist.
+- The advanced command-line files, validation/build tools, publishing artwork, upload notes, and maintainer documents are not invoked by the primary launcher/GUI path and remain available as repository source.
+- The avatar's Git history identifies when it entered the repository, but the repository does not record its creator, copyright holder, license, or whether the PNG is its preferred editable source. Git authorship is not evidence of copyright ownership.
+
+Official GNU evidence reviewed on 2026-07-12:
+
+- [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) defines source code as the preferred form for modification; its source-conveyance terms require preservation of applicable notices and a copy of the license, and its object-code terms require Corresponding Source by an allowed method.
+- [GNU's GPL application guide](https://www.gnu.org/licenses/gpl-howto.html) recommends clear per-file copyright/license notices and including the full GPL with the program.
+- [GNU's GPL FAQ](https://www.gnu.org/licenses/gpl-faq.html) explains why explicit notices should travel with source files rather than relying only on a repository-level license.
+
+Governing ideals:
+
+- Minimal means low-friction for the player, not source-stripped or rights-stripped.
+- Open source is part of the product contract: recipients must be able to inspect, copy, change, and share the work under the GPL.
+- Each downloadable edition must stand on its own for license, identity, source, and provenance; a repository license must not be used to excuse a deficient ZIP.
+- Origin and support statements may prevent confusion about which copy is an official project release, but they must not create additional restrictions on GPL-granted activity.
+- The official nine-file allowlist and `Support_Files_Do_Not_Edit` name govern this project's supported build; recipients remain free to modify, rename, repackage, and redistribute under the GPL.
+- Legal/compliance review is a release gate and evidence discipline, not a warranty or a claim of legal advice.
+
+Decision consequence:
+
+- Accept the following provisional primary-package file allowlist for planning:
+
+```text
+README_FIRST.txt
+7DTD_WastelandAnimalTuning.bat
+Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml
+Support_Files_Do_Not_Edit/LICENSE.txt
+Support_Files_Do_Not_Edit/CHANGELOG.md
+Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
+```
+
+- Preserve the preferred editable BAT, PowerShell, and XML source, the complete GPL text, applicable copyright/SPDX/no-warranty notices, and the changelog's modification history in the staged package.
+- Give the primary README an exact official public source/version route and a faithful plain-language statement of GPL freedoms, redistribution duties, and no warranty before the allowlist can pass.
+- Block final inclusion of the avatar until its ownership, license, and preferred editable source are recorded. If those cannot be established, remove or replace it through an owner-approved non-runtime-breaking package decision.
+- State the license scope for the README and changelog. Do not copy `LEGAL_AND_USE.md` wording about cheats, unrelated files, or required removal instructions into the slim package as conditions on downstream GPL redistribution; official-project publishing and support standards must be labeled as such.
+- Apply the same stand-alone license/source/provenance gate to the no-scripts and Vortex editions; do not rely on a license located only in another ZIP or elsewhere in the repository.
+- Keep checksum, full inventory, source-commit mapping, build evidence, publishing assets, validation tools, and other maintainer material outside the customer ZIP.
+- Review any future compiled or object-code addition separately for Corresponding Source obligations; Q14 approves only the present source-form package shape.
+- Treat “official project release” language as provenance and support clarification, never as a restriction on copying, modifying, or redistributing under GPL-3.0-or-later.
+- Do not alter the frozen runtime or build a candidate yet. Q15 begins the avatar provenance decision; plain-language notice consolidation remains open afterward.
+
+Decision state: accepted with copyleft-completeness conditions; avatar provenance and plain-language notice consolidation remain open
+
+### Q15 — Avatar Ownership
+
+Question:
+
+> Do you own the copyright to the small Bit Wrecked avatar used by the GUI?
 
 Answer: pending
 
