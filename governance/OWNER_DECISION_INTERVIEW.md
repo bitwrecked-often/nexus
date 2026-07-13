@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q13
+- Current question: Q14
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -532,6 +532,40 @@ Decision state: accepted; three-item customer root locked, internal support allo
 Question:
 
 > Should the advanced command-line installer and uninstaller be excluded from the primary casual-player ZIP?
+
+Answer: yes, with a casual-player scope qualification
+
+Owner rationale (normalized for readability):
+
+> The package is mainly for the casual gamer, so its contents should respect that point of view.
+
+Originating repository evidence:
+
+- `Support_Files_Do_Not_Edit/Advanced_CommandLine` contains five installer/uninstaller files totaling 7,879 uncompressed bytes in the historical FullPackage.
+- The root launcher invokes the WinForms PowerShell tool; neither the launcher nor that GUI invokes the advanced command-line installer/uninstaller.
+- Removing the advanced directory from staging therefore does not change the accepted graphical workflow.
+
+Governing ideals:
+
+- The primary package should optimize for its primary audience instead of presenting every maintainer capability at once.
+- Advanced paths should be intentionally supported and documented, not shipped merely because they exist in source.
+- Preserve source availability without turning source inventory into customer inventory.
+
+Decision consequence:
+
+- Exclude `Support_Files_Do_Not_Edit/Advanced_CommandLine` from the primary `4.1.0` customer ZIP.
+- Retain the advanced files in the open-source repository as source/maintainer material.
+- Do not advertise command-line installation or removal as a primary-package capability.
+- A future separately supported tool/source artifact may include them only after its own package contract and tests are approved.
+- Validate that excluding them does not change root-launcher startup, GUI install/verify/remove behavior, or shipped documentation truth.
+
+Decision state: accepted; advanced command-line tools excluded from primary ZIP
+
+### Q14 — Primary ZIP Internal Allowlist
+
+Question:
+
+> Should the primary ZIP contain only the launcher, concise README, GUI script, source modlet, GPL license, changelog, and small avatar used by the GUI?
 
 Answer: pending
 

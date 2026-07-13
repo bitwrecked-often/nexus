@@ -80,7 +80,9 @@ README_FIRST.txt
 Support_Files_Do_Not_Edit/
 ```
 
-Use an exact allowlist. `Upload_To_Nexus`, release candidates, publishing-only assets, validators, raw QA/build material, and maintainer-only root content must never enter the customer ZIP. Use a normal non-password-protected ZIP with no nested archives. Validate the extracted launcher/support relative paths. Q13 decides whether the advanced command-line tools remain a supported primary-package component; do not infer that answer.
+Use an exact allowlist. `Upload_To_Nexus`, release candidates, publishing-only assets, validators, raw QA/build material, and maintainer-only root content must never enter the customer ZIP. Use a normal non-password-protected ZIP with no nested archives. Validate the extracted launcher/support relative paths.
+
+Q13 excludes `Support_Files_Do_Not_Edit/Advanced_CommandLine` from the primary casual-player ZIP because neither the root launcher nor GUI invokes it. Retain those files as repository source/maintainer material; do not advertise the advanced command-line path as a primary-package feature. Q14 decides the remaining exact internal allowlist.
 
 ## Confirmed Historical Evidence
 

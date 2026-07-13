@@ -19,3 +19,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Established a preparation-dominant planning gate: identify the QA baseline and complete manifests, instructions, allowlists, version mapping, and acceptance evidence before one controlled `4.1.0` candidate/promotion cycle.
 - Anchored the current solution tree as the owner-QA-approved `4.1.0` technical baseline copied from immutable `v4.0.1` parent lineage while preserving the historical source/artifact provenance exception.
 - Applied current Nexus guidance to lock a minimal three-item customer archive root with an exact allowlist, excluding upload, publishing, validation, and maintainer-only root material without claiming a vendor-mandated layout.
+- Excluded the unused advanced command-line installer/uninstaller from the primary casual-player ZIP while retaining it as open repository source for possible future separately contracted tooling.
