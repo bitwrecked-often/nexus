@@ -215,7 +215,21 @@ Requirements:
 - preserve the release attachment and Nexus-served artifact references in the durable record after publication;
 - treat presence in `final-upload/` as technical readiness only. It does not grant merge, tag, GitHub Release, Nexus upload, or prior-file archival authority.
 
-Q21 decides whether one checksum-verified staged byte sequence must be used unchanged for both GitHub and Nexus.
+Q21 was withdrawn from the owner interview as an implementation detail; the safe default is one checksum-verified staged byte sequence used unchanged for both GitHub and Nexus.
+
+### Owner-Altitude Decision Boundary
+
+Do not turn ordinary release engineering into an owner questionnaire. Once product shape, rights, customer promises, and authority are known, apply established policy to reversible mechanics and record the result.
+
+Owner direction is required when a choice materially changes:
+
+- gameplay/runtime behavior or supported feature set;
+- customer-visible promises, compatibility, or support scope;
+- copyright/license scope, public identity, or attribution;
+- destructive, irreversible, public, or external state;
+- accepted safety/recovery risk or release authority.
+
+Engineering may decide and verify staging paths, evidence filenames, deterministic ordering, checksum formats, safe temporary storage, and other reversible implementation details. Default to the identical checksum-verified final ZIP across GitHub Releases and Nexus. If a channel technically requires different bytes, create an explicitly named variant with its own inventory, checksum, provenance, and claims; never silently repack after promotion.
 
 ### Wrapper As A Composable Feature-Set Boundary
 

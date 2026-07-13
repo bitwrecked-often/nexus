@@ -20,10 +20,10 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 ## Status
 
-- Interview state: active
-- Shape awareness: not yet assessed
-- Current question: Q21
-- Implementation authority: not granted by this interview alone
+- Interview state: closed for primary baseline preparation
+- Shape awareness: threshold met for primary `4.1.0` preparation; open release gates listed below
+- Current question: none
+- Implementation authority: existing non-behavioral preparation scope only; not expanded by closure
 - Nexus publication authority: not granted
 
 ## Decisions
@@ -891,9 +891,52 @@ Question:
 
 > Should the same checksum-verified ZIP from `final-upload/` be uploaded unchanged to both GitHub Releases and Nexus?
 
-Answer: pending
+Owner response: withdrawn from the owner interview as implementation-level detail
 
-Consequence: pending
+Owner observation:
+
+> We are way in the weeds on this.
+
+Interpretation:
+
+- The interview had crossed from material product/authority choices into reversible release mechanics.
+- Q20 already establishes one explicit final-upload stage so the publishable bytes are known.
+- Byte-preserving reuse of that promoted artifact is the safest implementation default and does not need another owner decision.
+
+Implementation consequence:
+
+- Use the identical checksum-verified ZIP from `final-upload/` for GitHub Releases and Nexus by default.
+- If a channel technically requires different bytes, stop silent promotion: create a separately named variant with its own contract, inventory, checksum, provenance, and channel-specific justification.
+- Do not ask the owner to choose routine staging, checksum, path, or evidence mechanics when established project policy and reversible engineering can resolve them.
+- Continue to ask for explicit authority before tagging, creating a GitHub Release, uploading to Nexus, or archiving a prior Nexus file.
+
+Decision state: owner question withdrawn; safe implementation default established from Q20 and chain-of-custody policy
+
+## Shape Awareness Assessment
+
+The interview has enough shape for non-behavioral baseline preparation. It does not approve a release.
+
+Resolved for the primary `4.1.0` baseline:
+
+- immutable `v4.0.1` parent and owner-QA-approved `4.1.0` source baseline;
+- frozen runtime/gameplay/GUI/install behavior;
+- casual-player-first primary product and exact eight-file archive allowlist;
+- GPL-3.0-or-later source/documentation treatment and user-first public-surface order;
+- avatar exclusion with Bit Wrecked legal/technical identity retained;
+- future artifact retention, candidate/final-upload promotion boundary, and durable evidence model;
+- AI, owner, and Nexus publication authority boundaries.
+
+Explicit remaining gates, not invitations to infer:
+
+- capture the required per-file SHA-256 fingerprint before editing solution documentation or metadata;
+- reconcile the optional no-scripts edition's meaningful-outcome requirement with the frozen payload; block that edition rather than invent tuning values or alter behavior;
+- complete the exact-candidate Vortex audit before claiming Vortex support;
+- implement and validate the approved README, manifest, version, allowlist, staging, evidence, and repository-health controls;
+- resolve repository-wide governance-document license scope and any real GitHub settings/authority choices only when their implementation slice requires them;
+- obtain explicit owner approval before candidate promotion into any public release action.
+
+Further owner questions must cross the owner-altitude boundary above. Ordinary implementation details belong in the work packet, code review, and evidence—not a continuing interview.
+
 
 ## Decision Chain-Of-Custody Standard
 

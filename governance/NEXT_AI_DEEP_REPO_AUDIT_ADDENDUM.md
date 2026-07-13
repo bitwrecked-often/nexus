@@ -131,7 +131,9 @@ Q18 establishes a public-surface priority: user clarity/safety first, applicable
 
 Q19 licenses `README_FIRST.txt` and `CHANGELOG.md` under `GPL-3.0-or-later`. Their plain text/Markdown is preferred editable source. Preserve/add explicit copyright/SPDX notices and the complete GPL; keep this grant scoped to the two solution documents rather than inferring a repository-wide documentation license.
 
-Q20 resolves Q10: future final ZIPs remain outside Git history as GitHub Release attachments while committed checksums, inventories, provenance, and release references preserve their evidence. Use an ignored `dist/<solution-id>/<version>/` tree with separate candidate, final-upload, and evidence stages. Only exact validated upload ZIPs may enter `final-upload/`; historical committed archives remain immutable and grandfathered. Q21 asks whether the same staged bytes must serve both GitHub and Nexus. No candidate build or release action is authorized by the storage-policy decision alone.
+Q20 resolves Q10: future final ZIPs remain outside Git history as GitHub Release attachments while committed checksums, inventories, provenance, and release references preserve their evidence. Use an ignored `dist/<solution-id>/<version>/` tree with separate candidate, final-upload, and evidence stages. Only exact validated upload ZIPs may enter `final-upload/`; historical committed archives remain immutable and grandfathered. No candidate build or release action is authorized by the storage-policy decision alone.
+
+The owner closed the interview at Q21 because cross-channel byte identity is an implementation detail, not an owner-level product choice. Default to the same checksum-verified promoted ZIP for GitHub and Nexus. If channel constraints require different bytes, define a separately named and evidenced variant. Shape awareness is sufficient for primary non-behavioral preparation; do not continue micro-interviewing. The unresolved no-scripts outcome, Vortex audit, baseline fingerprint, repository-wide license scope, live GitHub settings, and publication authority remain explicit gates as routed by the decision log.
 
 ## Confirmed Historical Evidence
 

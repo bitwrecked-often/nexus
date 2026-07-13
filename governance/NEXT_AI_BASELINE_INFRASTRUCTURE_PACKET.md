@@ -28,7 +28,7 @@ Q19 licenses both `README_FIRST.txt` and `CHANGELOG.md` under `GPL-3.0-or-later`
 
 Q20 resolves Q10: future final ZIPs stay out of Git history and become GitHub Release attachments, while committed checksums, inventories, provenance, and release references preserve chain of custody. Use an ignored `dist/<solution-id>/<version>/` tree with separate `candidate/`, `final-upload/`, and `evidence/` directories. `final-upload/` must contain only the exact validated ZIPs intended for external upload. Historical committed ZIPs remain grandfathered and immutable. Do not create a candidate, release, or upload merely because the storage policy is decided.
 
-Q21 asks whether the identical checksum-verified staged ZIP must be uploaded unchanged to GitHub Releases and Nexus.
+The owner closed the interview at Q21 because cross-channel byte identity was too implementation-specific. The shape-awareness threshold is met for primary baseline preparation. Use the same checksum-verified promoted ZIP across GitHub and Nexus by default; if a channel requires different bytes, create an explicit variant rather than silently repacking. Do not continue the yes/no interview for reversible mechanics. Escalate only material product, rights, public-identity, publication, irreversible-state, or risk-acceptance choices listed in `OWNER_DECISION_INTERVIEW.md`.
 
 ## Start Here
 
