@@ -1,0 +1,58 @@
+name: Offline validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - "develop/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate repository and release contracts
+    runs-on: windows-2022
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out the full repository history
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Confirm the validation runtime
+        shell: pwsh
+        run: |
+          if ($PSVersionTable.PSEdition -cne "Core" -or $PSVersionTable.PSVersion -lt [version]"7.4") {
+              throw "Offline validation requires PowerShell 7.4 or later."
+          }
+          git --version
+          $PSVersionTable.PSVersion.ToString()
+
+      - name: Run offline validation
+        shell: pwsh
+        run: ./tests/release/Invoke-OfflineTests.ps1
+
+      - name: Reject whitespace errors
+        shell: pwsh
+        run: |
+          if ("${{ github.event_name }}" -ceq "pull_request") {
+              git diff --check "${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
+          }
+          elseif ("${{ github.event_name }}" -ceq "push" -and "${{ github.event.before }}" -notmatch "^0+$") {
+              git diff --check "${{ github.event.before }}..${{ github.sha }}"
+          }
+          else {
+              git diff-tree --check --root --no-commit-id -r "${{ github.sha }}"
+          }
+          if ($LASTEXITCODE -ne 0) {
+              throw "Whitespace validation failed."
+          }

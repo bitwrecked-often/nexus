@@ -2,7 +2,7 @@
 
 This folder holds field-derived answer packets and releasable mod solutions for common gameplay and modding needs.
 
-Use these docs when answering players, preparing Qwen32 prompts, or rebuilding a known fix into a clean modlet.
+Use these documents when answering players, reviewing a package, or rebuilding a known fix into a clean modlet.
 
 ## Field-to-Solution Standard
 
@@ -23,11 +23,12 @@ A solution is not considered complete merely because it works once. It should re
 
 | Solution | Use When |
 | --- | --- |
-| `7dtd_wasteland_animal_population_tuning.md` | Someone wants Wasteland animal roll weights tuned without removing animals, especially for Windows 11 / Steam / current 7DTD 3.0-era installs. |
+| `7dtd_wasteland_animal_population_tuning.md` | Someone needs the current Wasteland animal density/mix solution, its Windows wrapper, exact package contract, or `4.1.0` release status. |
 
 ## Routing Rules
 
-- Treat each solution as an explanation layer, not the live payload.
+- Treat each solution overview as a checked routing layer, not the live payload or release authority.
+- Use the solution's machine-readable release manifest for current identity and edition contracts.
 - Verify live XML before claiming exact current values.
 - Prefer a modlet for sharing with other players.
 - Use direct `Data/Config` edits only for local DEV testing or when the user explicitly chooses that route.

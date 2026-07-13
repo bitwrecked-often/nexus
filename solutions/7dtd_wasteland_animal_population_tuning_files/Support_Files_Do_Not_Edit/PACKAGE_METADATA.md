@@ -1,5 +1,8 @@
 # 7DTD 3.0 Wasteland Animal Population Tuning - Package Metadata
 
+> Status: Historical `4.0.1` maintainer record. It is not current `4.1.0`
+> release authority. Use `../release-manifest.json` and the repository truth map.
+
 This file is for maintainers, repository routing, and AI assistants. It is not required reading for players.
 
 ## Document Control

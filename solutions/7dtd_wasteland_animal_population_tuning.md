@@ -1,159 +1,99 @@
 # 7DTD 3.0 Wasteland Animal Population Tuning
 
-Date: 2026-07-05
-Status: Verified reusable solution packet
-Scope: Wasteland open-world animal roll weighting
-Version: 2.0.0
+- Intended version: `4.1.0`
+- Lifecycle: Development / Unreleased
+- Primary audience: casual Windows players
+- Primary edition: `windows-gui`
+- Runtime mod ID: `BitWrecked_7DTD_WastelandAnimalPopulationTuning`
+- License: `GPL-3.0-or-later`
 
-## Intent
+## Current Product Contract
 
-Provide a Windows 11 / Steam / 7 Days to Die 3.0-era XML modlet that lets users tune Wasteland animal roll weights without removing animals from the game.
+This solution uses one readable Windows wrapper to compose selected Wasteland
+animal tuning inputs into one XML modlet. The primary package provides the BAT
+launcher, PowerShell GUI source, modlet XML source, first-read guide, changelog,
+and complete GPL text.
 
-This is population tuning, not direct spawn-timer editing. The live `spawning.xml` routes Wasteland animal rolls to entity groups, and this solution changes the weighted choices inside those groups.
+The owner has accepted the current runtime, gameplay, GUI, install/remove,
+animal-cap, backup/restore, and XML behavior as the QA-frozen technical baseline
+for copy-forward preparation. `4.1.0` work is limited to release identity,
+documentation, licensing, exact packaging, non-mutating validation, and evidence
+unless the owner explicitly reopens technical behavior.
 
-## Product Files
+## Authoritative Files
 
-Package root:
+- Release and edition contract:
+  `7dtd_wasteland_animal_population_tuning_files/release-manifest.json`
+- Customer first-read guide:
+  `7dtd_wasteland_animal_population_tuning_files/README_FIRST.txt`
+- Player/release history:
+  `7dtd_wasteland_animal_population_tuning_files/Support_Files_Do_Not_Edit/CHANGELOG.md`
+- Frozen technical payload root:
+  `7dtd_wasteland_animal_population_tuning_files/`
+- Baseline evidence:
+  `../evidence/baselines/7dtd_wasteland_animal_population_tuning/4.1.0/`
 
-```text
-_game_dev_ai_tracking/solutions/7dtd_wasteland_animal_population_tuning_files/
-```
+Legacy package metadata, technical manifests, release notes, upload notes, and
+the three committed ZIPs are `4.0.1` historical evidence. They do not define the
+new package.
 
-Full Windows package:
+## Primary Package Shape
 
-```text
-Upload_To_Nexus/7DTD_WastelandAnimalPopulationTuning_FullPackage.zip
-```
-
-Changelog:
-
-```text
-CHANGELOG.md
-```
-
-Vortex / mod-manager package:
-
-```text
-Upload_To_Nexus/7DTD_WastelandAnimalPopulationTuning_VortexModlet.zip
-```
-
-Modlet folder:
-
-```text
-BitWrecked_7DTD_WastelandAnimalPopulationTuning/
-+-- ModInfo.xml
-+-- Config/
-    +-- entitygroups.xml
-```
-
-## Vortex Shape
-
-Vortex-style installs should receive the modlet-only zip. It must contain the modlet folder at archive root, with `ModInfo.xml` directly inside:
+The primary `windows-gui` edition is built only from the eight exact mappings in
+the release manifest. Its extracted root contains:
 
 ```text
-BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml
-BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml
+README_FIRST.txt
+7DTD_WastelandAnimalTuning.bat
+Support_Files_Do_Not_Edit/
 ```
 
-Do not wrap the Vortex package in the GUI installer folder.
+The support folder contains only the GUI PowerShell source, three modlet XML
+files, complete GPL text, and changelog. Assets, advanced command-line tools,
+the legacy validator, publishing material, raw QA records, upload notes, and
+historical archives are excluded.
 
-## Live Evidence
+## Supported Claims
 
-Verified live `Data/Config/entitygroups.xml` uses this shape:
+- Owner-observed environment: Windows 11 with a Steam client installation.
+- Target: the retained 7DTD 3.0-era XML shape.
+- Exact tested game build: not retained; therefore unverified in release data.
+- Dedicated server, non-Steam Windows, Linux, console, Vortex, EAC, overhaul,
+  and overlapping-mod compatibility: not claimed without separate evidence.
 
-```xml
-<e n="animalDireWolf" p="2" />
-```
+The actual game modlet is XML-only. The customer package also contains readable
+BAT and PowerShell source for the wrapper. It uses no network or telemetry and
+does not patch the game executable, directly edit `Data/Config`, or edit saves.
 
-Correct XPath target shape:
+## Safe Offline Check
 
-```text
-/e[@n='animalDireWolf']/@p
-```
-
-Do not drift this package to:
-
-```text
-/entity[@name='animalDireWolf']/@prob
-```
-
-## Live Wasteland Animal Baseline
-
-Verified groups:
-
-```text
-EnemyAnimalsWasteland
-EnemyAnimalsWastelandNight
-```
-
-Verified animal weights:
-
-```text
-Dire wolf: day 2, night 4
-Snake: day 10
-Zombie bear: day 5, night 10
-Zombie dog: day 15
-Zombie vulture: day 5
-```
-
-## ModInfo.xml
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<xml>
-  <Name value="BitWrecked_7DTD_WastelandAnimalPopulationTuning"/>
-  <DisplayName value="7DTD 3.0 Wasteland Animal Population Tuning"/>
-  <Description value="Adjusts Wasteland animal roll weights without removing animals from the game."/>
-  <Author value="Bit Wrecked"/>
-  <Version value="2.0.0"/>
-  <Website value=""/>
-</xml>
-```
-
-## Validation
-
-Run from the game root:
+From the repository root, use PowerShell 7.4 or later:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File _game_dev_ai_tracking\solutions\7dtd_wasteland_animal_population_tuning_files\Support_Files_Do_Not_Edit\validate_and_package.ps1 -RebuildZip
+pwsh -NoProfile -File tools/release/Invoke-NexusPackage.ps1 `
+  -ManifestPath solutions/7dtd_wasteland_animal_population_tuning_files/release-manifest.json `
+  -Action Validate
 ```
 
-Expected result:
+This check is offline and read-only. It does not launch the GUI, read a game
+installation, rebuild a ZIP, stage a candidate, promote a file, or publish.
 
-```text
-PASS: 7DTD 3.0 Wasteland Animal Population Tuning modlet is valid for this live install.
-```
+Never run the legacy validator's `-RebuildZip` mode. Its historical defaults
+target the three immutable `4.0.1` artifact paths.
 
-The harness checks:
+## Optional Editions
 
-- modlet folder shape
-- XML parse
-- `ModInfo.xml` metadata
-- live Wasteland spawn routes
-- patch XPath matches live `Data/Config/entitygroups.xml`
-- locked `e/n/p` XPath shape
-- full package zip contents
-- Vortex modlet zip contents
+- `no-scripts` is deferred because its frozen XML is vanilla-equivalent while a
+  supported tuning edition must provide a meaningful, accurately described
+  outcome.
+- `vortex` is blocked until a GPL-complete exact candidate passes a recorded
+  Vortex install-through-removal audit.
 
-## Player-Facing Summary
+Neither optional edition may borrow the primary GUI package's capabilities or
+support state.
 
-Use this wording:
+## Publication Boundary
 
-```text
-This is a small XML-only 7 Days to Die modlet for Windows 11 / Steam / current 3.0-era installs. It lets you tune Wasteland animal roll weights. Animals stay in the game; selected animals just roll less or more often.
-
-Normal users should download the full package, read README_FIRST.txt, and run 7DTD_WastelandAnimalTuning.bat. The full package keeps technical files inside Support_Files_Do_Not_Edit. Vortex users should use the VortexModlet zip.
-```
-
-## Limits
-
-This changes Wasteland open-world animal rolls.
-
-It does not change:
-
-- POI sleeper animals
-- quest-triggered spawns
-- blood moon hordes
-- zombie spawn rates
-- other biomes
-- someone else's multiplayer server unless installed server-side
+Repository validation and staging do not authorize a tag, GitHub Release, Nexus
+upload, served-file change, or archival of `4.0.1`. Those remain explicit owner
+actions after the release-readiness review.

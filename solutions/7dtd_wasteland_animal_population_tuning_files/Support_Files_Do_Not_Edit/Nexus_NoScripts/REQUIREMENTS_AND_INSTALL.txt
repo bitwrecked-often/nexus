@@ -1,6 +1,11 @@
 7DTD WASTELAND ANIMAL POPULATION TUNING
 REQUIREMENTS, INSTALLATION, AND SUPPORT GUIDE
 
+STATUS: BLOCKED 4.1.0 DRAFT - NOT A CURRENT DOWNLOAD CONTRACT
+
+Do not publish or package this guide until the optional edition has a meaningful
+owner-authorized tuning outcome and matching evidence.
+
 1. WHAT THIS DOWNLOAD IS
 
 This is the scanner-friendly Nexus no-scripts edition. The game-facing payload

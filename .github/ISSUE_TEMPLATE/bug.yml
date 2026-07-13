@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a reproducible problem with an official package or repository tool.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post saves, server files, credentials, IP addresses, private messages, or raw logs containing usernames and machine paths. Share only the smallest sanitized evidence needed.
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition or surface
+      options:
+        - Nexus-served package (give the version below)
+        - 4.0.1 historical source or repository artifact
+        - 4.1.0 development source
+        - Repository validation or packaging tool
+        - No-scripts blocked draft
+        - Vortex blocked draft
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version or source commit
+      placeholder: 4.0.1, 4.1.0, or a commit hash
+    validations:
+      required: true
+  - type: input
+    id: game_build
+    attributes:
+      label: Game version/build, if known
+      description: Leave blank rather than guessing.
+  - type: dropdown
+    id: install_mode
+    attributes:
+      label: Install mode
+      options:
+        - Windows graphical wrapper
+        - Manual mod-folder copy
+        - Dedicated server
+        - Vortex or another mod manager
+        - Repository-only check
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use the smallest repeatable sequence and remove private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result and exact error text
+    validations:
+      required: true
+  - type: textarea
+    id: removal
+    attributes:
+      label: Removal or recovery result
+      description: Say whether state changed and whether removal/restore worked.
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant mods or sanitized evidence
+      description: Optional. Do not upload private or proprietary files.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed credentials, identities, private messages, IP addresses, machine names, and unrelated local paths.
+          required: true

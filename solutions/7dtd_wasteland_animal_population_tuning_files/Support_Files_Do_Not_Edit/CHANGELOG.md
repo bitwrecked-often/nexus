@@ -7,40 +7,61 @@ This changelog tracks public upload versions. It separates gameplay XML changes 
 
 ## Version 4.1.0 - Unreleased
 
-Development status: feature development based on the immutable `v4.0.1` release.
+Development status: non-behavioral preparation based on the owner-approved,
+QA-frozen `4.0.1` technical baseline. No `4.1.0` candidate has been built.
 
-### Planned Changes
+### Gameplay And Tool Behavior
 
-- Record new backward-compatible features here as they are implemented and verified.
+- No runtime, gameplay tuning, GUI control, install/remove, Scan Values, animal
+  cap, backup, restore, or modlet behavior change from the frozen baseline.
+- Updated release-facing version and source identity to `4.1.0` without changing
+  the accepted technical behavior.
 
-### Repository Infrastructure
+### Primary Customer Package
 
-- Added repository-wide AI governance for privacy, release immutability, semantic versioning, evidence, safety, and publication authority.
-- Defined the front end as an operational safety layer with validation, preview, backup, verification, restore, removal, and privacy-safe diagnostics.
-- Added an anonymized private field-test process and evidence classification model.
-- Expanded the solutions standard so packages are derived from recorded field behavior and tested as distributed artifacts.
-- Added a bounded next-AI implementation packet for CI, release manifests, version enforcement, package smoke tests, compatibility evidence, conflict inventory, and release acceptance records.
-- Added a project manifest defining twelve reliability facets, separate vendor/customer views, and three consistent release-documentation layers.
-- Expanded the next-AI packet into ordered implementation slices covering upgrade recovery, lifecycle, security reporting, reproducible builds, provenance, traceability, and operational limits.
-- Added GitHub repository health guidance distinguishing policy, automation, review, release, platform, and field evidence.
-- Added a bounded next-AI GitHub-health slice for community files, ownership, issue/PR intake, CI, settings audit, branch/tag protection recommendations, and owner-controlled publication.
-- Added proportionate Microsoft-inspired guidance for local threat boundaries, critical-flow failure analysis, explicit tool states, measurable reliability targets, progressive Nexus rollout, hotfix handling, and blameless incident learning.
-- Added next-AI slices for PowerShell safety analysis, unusual Windows environments, and accessibility evidence including keyboard, high-contrast, scaling, and screen-reader checks.
+- Defined the graphical Windows package as the primary casual-player file.
+- Reduced that package to an exact eight-file source-form allowlist: the first
+  README, BAT launcher, PowerShell GUI source, three modlet XML files, complete
+  GPL text, and this changelog.
+- Excluded the optional avatar, advanced command-line tools, validator,
+  publishing art/copy, raw QA material, and upload notes from the customer ZIP.
+- Kept `Support_Files_Do_Not_Edit` as a simple customer cue while clarifying that
+  it does not limit GPL modification or redistribution rights.
+- Added concise requirements, install, verification, removal, cap-restore,
+  security/privacy, license, source, and unofficial-origin guidance to the first
+  README.
+- Licensed the first README and this changelog under `GPL-3.0-or-later` and kept
+  the complete license beside the editable BAT, PowerShell, XML, and text source.
 
-### Nexus No-Scripts Edition
+### Identity, Packaging, And Evidence
 
-- Added a package-specific first-read manual that describes only files and features present in the no-scripts archive.
-- Added a complete requirements, manual installation, multiplayer, verification, conflict, removal, troubleshooting, and privacy-safe support guide.
-- Clarified that the no-scripts edition contains fixed XML values and does not include interactive tuning or server-cap controls.
-- Added deterministic no-scripts archive construction to the validation harness.
-- Added archive checks for required documentation, required modlet files, prohibited executable-style extensions, and references to absent package paths.
+- Added one machine-readable release manifest for version, runtime identity,
+  edition roles, exact package paths, compatibility evidence, operational
+  effects, security facts, protected historical artifacts, and release gates.
+- Reserved a versioned primary filename:
+  `7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip`.
+- Added manifest-driven offline validation and an explicit ignored source-stage
+  action that cannot write to the historical upload folder or final-upload stage.
+- Preserved the three committed `4.0.1` ZIPs byte-for-byte and registered their
+  existing SHA-256 hashes as protected historical evidence.
+- Kept generated `4.1.0` ZIPs out of Git history; candidate construction,
+  technical promotion, and publication remain separate gates.
 
-### Release Guardrails
+### Optional Editions
 
-- Preserve the published 4.0.1 archives and source tag unchanged.
-- Replace `Unreleased` with the publication date only after validation succeeds.
-- Rebuild and verify all release archives before publishing the Nexus file.
-- Update `VERSION`, `ModInfo.xml`, package metadata, release notes, and archive metadata together.
+- Deferred the no-scripts edition because the frozen static XML is
+  vanilla-equivalent while its intended product contract requires a meaningful
+  documented tuning outcome. No values or support claim were invented.
+- Blocked the Vortex edition until a GPL-complete exact candidate passes a
+  recorded import, enable, recognition, disable, and removal audit.
+
+### Upgrade And Removal Notes
+
+- Existing users may use Reinstall Mod after selecting their desired tuning.
+- Remove Mod deletes only the named Bit Wrecked mod folder. It does not restore
+  `serverconfig.xml`; use Restore Cap separately if Brutal Science changed it.
+- Publication date and served-file identity remain unset until an exact candidate
+  is approved, uploaded, and verified.
 
 ## Version 4.0.1 - 2026-07-07
 

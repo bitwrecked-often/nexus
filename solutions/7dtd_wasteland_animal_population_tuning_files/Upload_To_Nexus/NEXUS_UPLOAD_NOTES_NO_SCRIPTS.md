@@ -1,5 +1,9 @@
 # Nexus Upload Notes - No-Scripts Package
 
+> Status: Retired historical scanner-response note. The current owner decision
+> makes the graphical Windows package primary and keeps no-scripts blocked as an
+> optional edition. Do not use the recommendation below for `4.1.0`.
+
 This package is the scanner-friendly Nexus upload variant.
 
 Contents:

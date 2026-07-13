@@ -15,6 +15,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+if ($RebuildZip) {
+    throw "Legacy -RebuildZip is disabled because its defaults target immutable 4.0.1 archives. Use tools/release/Invoke-NexusPackage.ps1 from the repository root."
+}
+
 $scriptRoot = $PSScriptRoot
 $scriptRootName = Split-Path -Leaf $scriptRoot
 if ($scriptRootName -eq "Support_Files_Do_Not_Edit") {

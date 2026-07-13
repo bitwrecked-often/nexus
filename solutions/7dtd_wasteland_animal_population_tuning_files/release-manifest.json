@@ -1,0 +1,382 @@
+{
+  "$schema": "../../governance/schemas/solution-release-manifest.schema.json",
+  "schemaVersion": 1,
+  "solution": {
+    "id": "7dtd_wasteland_animal_population_tuning",
+    "displayName": "7DTD 3.0 Wasteland Animal Population Tuning",
+    "author": "Bit Wrecked",
+    "officialRepository": "https://github.com/bitwrecked-often/nexus",
+    "sourceRoot": "solutions/7dtd_wasteland_animal_population_tuning_files",
+    "runtimeModId": "BitWrecked_7DTD_WastelandAnimalPopulationTuning",
+    "installedFolder": "BitWrecked_7DTD_WastelandAnimalPopulationTuning"
+  },
+  "release": {
+    "intendedVersion": "4.1.0",
+    "workspaceVersion": "4.1.0-dev",
+    "channel": "development",
+    "lifecycle": "development",
+    "publicationState": "unreleased",
+    "branch": "develop/4.1.0",
+    "releaseSourceCommit": null,
+    "releaseTag": null,
+    "approvedForPublication": false,
+    "approvalRecord": null
+  },
+  "lineage": {
+    "workingParent": {
+      "version": "4.0.1",
+      "tag": "v4.0.1",
+      "commit": "c90f5f7f27d84343b95971a54486b88aa1022c00",
+      "state": "immutable-historical"
+    },
+    "sourceBaseline": {
+      "commit": "b3c3551c0c5bfc8d24c68d3036da4c8045a90b54",
+      "tree": "010454d19b10f46c71d9150335905766b946176e",
+      "fileCount": 32,
+      "acceptanceBasis": "owner-qa-attestation",
+      "record": "evidence/baselines/7dtd_wasteland_animal_population_tuning/4.1.0/BASELINE_RECORD.md",
+      "checksums": "evidence/baselines/7dtd_wasteland_animal_population_tuning/4.1.0/SOURCE_SHA256SUMS.txt"
+    }
+  },
+  "technicalFreeze": {
+    "baselineCommit": "b3c3551c0c5bfc8d24c68d3036da4c8045a90b54",
+    "unchangedPaths": [
+      "7DTD_WastelandAnimalTuning.bat",
+      "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml",
+      "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml",
+      "Support_Files_Do_Not_Edit/LICENSE.txt"
+    ],
+    "metadataProjections": [
+      {
+        "type": "powershell-package-version",
+        "path": "Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1",
+        "fromVersion": "4.0.1",
+        "toVersion": "4.1.0",
+        "fromWebsite": null,
+        "toWebsite": null
+      },
+      {
+        "type": "mod-info-version-website",
+        "path": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml",
+        "fromVersion": "4.0.1",
+        "toVersion": "4.1.0",
+        "fromWebsite": "",
+        "toWebsite": "https://github.com/bitwrecked-often/nexus"
+      }
+    ]
+  },
+  "compatibility": {
+    "game": {
+      "name": "7 Days to Die",
+      "targetLabel": "7DTD 3.0",
+      "retainedDescription": "3.0-era",
+      "exactTestedBuild": null,
+      "evidence": "unverified"
+    },
+    "environments": [
+      {
+        "id": "windows-11-steam-client",
+        "evidence": "observed",
+        "basis": "Owner QA attestation and retained historical documentation; detailed test artifacts and the exact game build are not retained."
+      },
+      {
+        "id": "windows-dedicated-server",
+        "evidence": "unverified",
+        "basis": null
+      },
+      {
+        "id": "non-steam-windows",
+        "evidence": "unverified",
+        "basis": null
+      },
+      {
+        "id": "linux",
+        "evidence": "unverified",
+        "basis": null
+      },
+      {
+        "id": "console",
+        "evidence": "unsupported",
+        "basis": "The package requires the Windows BAT and WinForms PowerShell environment."
+      },
+      {
+        "id": "vortex",
+        "evidence": "unverified",
+        "basis": null
+      }
+    ]
+  },
+  "license": {
+    "expression": "GPL-3.0-or-later",
+    "fullTextSource": "Support_Files_Do_Not_Edit/LICENSE.txt",
+    "primaryStagePath": "Support_Files_Do_Not_Edit/LICENSE.txt",
+    "customerDocuments": [
+      "README_FIRST.txt",
+      "Support_Files_Do_Not_Edit/CHANGELOG.md"
+    ],
+    "officialSourceRepository": "https://github.com/bitwrecked-often/nexus",
+    "baselineSourceUrl": "https://github.com/bitwrecked-often/nexus/tree/b3c3551c0c5bfc8d24c68d3036da4c8045a90b54/solutions/7dtd_wasteland_animal_population_tuning_files",
+    "releaseSourceUrl": null
+  },
+  "distribution": {
+    "candidateStage": "dist/7dtd_wasteland_animal_population_tuning/4.1.0/candidate",
+    "finalUploadStage": "dist/7dtd_wasteland_animal_population_tuning/4.1.0/final-upload",
+    "workingEvidenceStage": "dist/7dtd_wasteland_animal_population_tuning/4.1.0/evidence",
+    "durableEvidenceRoot": "evidence/releases/7dtd_wasteland_animal_population_tuning/4.1.0",
+    "stagingBytePolicy": "clean-head-git-blob-bytes",
+    "generatedArtifactsTrackedByGit": false,
+    "overwriteFinalArtifact": false,
+    "historicalArchivesAreBuildTargets": false
+  },
+  "operations": {
+    "reads": [
+      "selected game root and 7DaysToDie.exe presence",
+      "Data/Config/entitygroups.xml",
+      "Data/Config/spawning.xml",
+      "Mods/BitWrecked_7DTD_WastelandAnimalPopulationTuning",
+      "serverconfig.xml only when cap status, change, or restore is requested",
+      "serverconfig.BitWreckedAnimalCapBackup-*.xml only when cap restore is requested"
+    ],
+    "writes": [
+      "Mods/BitWrecked_7DTD_WastelandAnimalPopulationTuning",
+      "serverconfig.xml only after the user confirms optional cap management"
+    ],
+    "backsUp": [
+      "serverconfig.BitWreckedAnimalCapBackup-YYYYMMDD-HHMMSS.xml before an optional cap change"
+    ],
+    "deletes": [
+      "Mods/BitWrecked_7DTD_WastelandAnimalPopulationTuning when the user chooses Remove Mod"
+    ],
+    "neverTouches": [
+      "game executable bytes",
+      "Data/Config source files",
+      "save or world files",
+      "Windows registry",
+      "services, scheduled tasks, or startup entries"
+    ]
+  },
+  "runtimeFacts": {
+    "basis": "frozen-source-inspection",
+    "networkUsed": false,
+    "telemetryUsed": false,
+    "elevationRequested": false,
+    "userWritePermissionRequired": true,
+    "bundledCompiledCode": false,
+    "bundledExecutableBinary": false,
+    "scriptsIncluded": true,
+    "processLocalExecutionPolicyBypass": true,
+    "externalProcesses": [
+      {
+        "name": "powershell.exe",
+        "purpose": "Launch the local WinForms PowerShell tool from the BAT file.",
+        "automatic": true
+      },
+      {
+        "name": "explorer.exe",
+        "purpose": "Open the selected Mods folder after an explicit user action.",
+        "automatic": false
+      }
+    ]
+  },
+  "versionSurfaces": [
+    {
+      "type": "plain-exact",
+      "scope": "repository",
+      "path": "VERSION",
+      "developmentValue": "4.1.0-dev",
+      "candidateValue": "4.1.0"
+    },
+    {
+      "type": "mod-info-xml",
+      "scope": "solution",
+      "path": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml",
+      "developmentValue": "4.1.0",
+      "candidateValue": "4.1.0"
+    },
+    {
+      "type": "powershell-package-version",
+      "scope": "solution",
+      "path": "Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1",
+      "developmentValue": "4.1.0",
+      "candidateValue": "4.1.0"
+    },
+    {
+      "type": "readme-version-line",
+      "scope": "solution",
+      "path": "README_FIRST.txt",
+      "developmentValue": "Version 4.1.0",
+      "candidateValue": "Version 4.1.0"
+    },
+    {
+      "type": "changelog-heading",
+      "scope": "solution",
+      "path": "Support_Files_Do_Not_Edit/CHANGELOG.md",
+      "developmentValue": "## Version 4.1.0 - Unreleased",
+      "candidateValue": null
+    }
+  ],
+  "editions": [
+    {
+      "id": "windows-gui",
+      "role": "primary",
+      "state": "development",
+      "publishable": false,
+      "plannedFilename": "7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip",
+      "sha256": null,
+      "archiveRootEntries": [
+        "README_FIRST.txt",
+        "7DTD_WastelandAnimalTuning.bat",
+        "Support_Files_Do_Not_Edit"
+      ],
+      "rejectUnlistedFiles": true,
+      "sourceToStage": [
+        {
+          "source": "README_FIRST.txt",
+          "stage": "README_FIRST.txt",
+          "kind": "text"
+        },
+        {
+          "source": "7DTD_WastelandAnimalTuning.bat",
+          "stage": "7DTD_WastelandAnimalTuning.bat",
+          "kind": "batch"
+        },
+        {
+          "source": "Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1",
+          "stage": "Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1",
+          "kind": "powershell"
+        },
+        {
+          "source": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml",
+          "stage": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml",
+          "kind": "modinfo"
+        },
+        {
+          "source": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml",
+          "stage": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml",
+          "kind": "config-xml"
+        },
+        {
+          "source": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml",
+          "stage": "Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml",
+          "kind": "config-xml"
+        },
+        {
+          "source": "Support_Files_Do_Not_Edit/LICENSE.txt",
+          "stage": "Support_Files_Do_Not_Edit/LICENSE.txt",
+          "kind": "license"
+        },
+        {
+          "source": "Support_Files_Do_Not_Edit/CHANGELOG.md",
+          "stage": "Support_Files_Do_Not_Edit/CHANGELOG.md",
+          "kind": "text"
+        }
+      ],
+    "capabilities": [
+      "graphical-animal-selection-and-tuning",
+      "modlet-install-reinstall-and-remove",
+      "installed-versus-selected-value-scan",
+      "optional-server-animal-cap-backup-change-and-restore"
+    ],
+    "requiredCapabilities": [],
+      "exclusions": [
+        "direct-game-data-config-edit",
+        "game-executable-patching",
+        "save-or-world-edit",
+        "registry-persistence",
+        "service-or-scheduled-task",
+        "hidden-downloader-or-updater",
+        "avatar-and-publishing-art",
+        "maintainer-packaging-tools",
+        "advanced-command-line-tools"
+      ],
+      "requiredGates": [
+        "identity-and-version-projections",
+        "readme-license-source-and-safety-contract",
+        "exact-eight-file-candidate",
+        "staged-byte-smoke-and-archive-validation",
+        "checksum-inventory-and-provenance",
+        "owner-release-acceptance"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "no-scripts",
+      "role": "optional",
+      "state": "blocked",
+      "publishable": false,
+      "plannedFilename": "7DTD_WastelandAnimalPopulationTuning-4.1.0-no-scripts.zip",
+      "sha256": null,
+      "archiveRootEntries": [],
+      "rejectUnlistedFiles": true,
+      "sourceToStage": [],
+    "capabilities": [],
+    "requiredCapabilities": [
+      "static-intent-inspection",
+      "manual-installation"
+    ],
+      "exclusions": [
+        "graphical-controls",
+        "automatic-installation",
+        "scan-values",
+        "server-cap-controls",
+        "backup-or-restore-automation"
+      ],
+      "requiredGates": [
+        "meaningful-static-outcome",
+        "exact-no-scripts-allowlist-and-document-contract",
+        "license-source-inventory-and-checksum",
+        "exact-candidate-manual-install-verify-remove"
+      ],
+      "blockers": [
+        "The frozen static XML is vanilla-equivalent on the matching baseline.",
+        "No owner-authorized meaningful static outcome and retained evidence currently exist."
+      ]
+    },
+    {
+      "id": "vortex",
+      "role": "optional",
+      "state": "blocked",
+      "publishable": false,
+      "plannedFilename": "7DTD_WastelandAnimalPopulationTuning-4.1.0-vortex.zip",
+      "sha256": null,
+      "archiveRootEntries": [],
+      "rejectUnlistedFiles": true,
+      "sourceToStage": [],
+    "capabilities": [],
+    "requiredCapabilities": [
+      "vortex-import-install-enable-disable-and-remove",
+      "game-recognition"
+      ],
+      "exclusions": [
+        "graphical-controls",
+        "server-cap-controls"
+      ],
+      "requiredGates": [
+        "complete-license-and-source-route",
+        "candidate-hash-vortex-version-and-game-build-record",
+        "import-install-enable-recognize-disable-remove-audit"
+      ],
+      "blockers": [
+        "No exact 4.1.0 candidate lifecycle audit exists.",
+        "The historical Vortex archive is not GPL-complete and is not a valid candidate fixture."
+      ]
+    }
+  ],
+  "protectedArtifacts": [
+    {
+      "path": "solutions/7dtd_wasteland_animal_population_tuning_files/Upload_To_Nexus/7DTD_WastelandAnimalPopulationTuning_FullPackage.zip",
+      "sha256": "52E32D5CC0A0E8D073BB421AEB2BB681D744FEE0F9E5985551EEDB15F8B96901",
+      "state": "immutable-historical"
+    },
+    {
+      "path": "solutions/7dtd_wasteland_animal_population_tuning_files/Upload_To_Nexus/7DTD_WastelandAnimalPopulationTuning_Nexus_NoScripts.zip",
+      "sha256": "96F0796845DBE53773B445C364CB66A46CD046C1519ED778BFDE3BD066008DA5",
+      "state": "immutable-historical"
+    },
+    {
+      "path": "solutions/7dtd_wasteland_animal_population_tuning_files/Upload_To_Nexus/7DTD_WastelandAnimalPopulationTuning_VortexModlet.zip",
+      "sha256": "BC64A2F71B09395D62DF3BC6482C5299756F063C10C87B454D7850548BC25485",
+      "state": "immutable-historical"
+    }
+  ]
+}

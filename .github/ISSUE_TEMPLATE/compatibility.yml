@@ -1,0 +1,67 @@
+name: Compatibility observation
+description: Share bounded evidence about an environment without creating an automatic support claim.
+title: "[Compatibility]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A report is evidence for review, not automatic proof of support. Do not post private or proprietary material.
+  - type: input
+    id: package
+    attributes:
+      label: Exact filename or edition, version, and checksum if available
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Exact game version/build, if known
+      description: Leave blank rather than guessing.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Windows Steam client
+        - Windows dedicated server
+        - Non-Steam Windows
+        - Linux or Proton
+        - Vortex
+        - Other mod manager
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Install mode and relevant configuration
+      description: Do not include account, machine, server, or save identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario and steps performed
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Observed result
+    validations:
+      required: true
+  - type: textarea
+    id: removal
+    attributes:
+      label: Disable/removal/restore result
+    validations:
+      required: true
+  - type: checkboxes
+    id: classification
+    attributes:
+      label: Evidence confirmation
+      options:
+        - label: I understand this observation may require reproduction before it can be classified as verified.
+          required: true
+        - label: I removed private, identifying, and proprietary material.
+          required: true

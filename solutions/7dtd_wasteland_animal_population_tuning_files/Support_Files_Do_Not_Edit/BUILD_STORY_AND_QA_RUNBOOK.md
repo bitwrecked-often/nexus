@@ -1,5 +1,10 @@
 # 7DTD Wasteland Animal Population Tuning - Build Story And QA Runbook
 
+> Status: Historical maintainer narrative and QA context. It is excluded from
+> the `4.1.0` customer ZIP and is not proof that a current release gate passed.
+> Do not execute commands from this historical file. Use the repository-root
+> `tools/release/Invoke-NexusPackage.ps1` entry point for current validation.
+
 Copyright (C) 2026 Bit Wrecked
 SPDX-License-Identifier: GPL-3.0-or-later
 

@@ -15,7 +15,7 @@ Add-Type -AssemblyName System.Drawing
 
 $packageRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $sourceMod = Join-Path $packageRoot "BitWrecked_7DTD_WastelandAnimalPopulationTuning"
-$script:PackageVersion = "4.0.1"
+$script:PackageVersion = "4.1.0"
 $script:BrutalScienceAnimalCap = 999
 
 function Get-DefaultGameRoot {

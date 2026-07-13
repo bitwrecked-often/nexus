@@ -2,9 +2,12 @@
 
 ## Purpose And Scope
 
-This file is the reconciled current-truth map for `4.1.0` preparation as of 2026-07-12. It tells maintainers and AIs which identity and documents may drive work, which are projections, and which are historical or blocked.
+This file is the reconciled current-truth map for `4.1.0` preparation, opened on
+2026-07-12 and updated through the current P2 implementation. It tells
+maintainers and AIs which identity and documents may drive work, which are
+projections, and which are historical or blocked.
 
-It is not the future per-solution release manifest and does not prove a release, compatibility result, GitHub setting, or Nexus state. P2 must create the machine-readable manifest from this bounded map and then validate projections against it.
+It does not prove a release, compatibility result, GitHub setting, or Nexus state. The machine-readable per-solution manifest created in P2 now owns the bounded package contract derived from this map; projections must validate against it.
 
 ## Evidence Classes
 
@@ -19,12 +22,12 @@ It is not the future per-solution release manifest and does not prove a release,
 | Fact | Current value | Authority and projection rule |
 | --- | --- | --- |
 | Repository solution ID | `7dtd_wasteland_animal_population_tuning` | Existing solution slug accepted for the P2 manifest and `dist/` routing; do not invent another alias |
-| Canonical display name | `7DTD 3.0 Wasteland Animal Population Tuning` | Recorded owner/product identity; future manifest owns the release projection |
-| Game-facing mod ID | `BitWrecked_7DTD_WastelandAnimalPopulationTuning` | `ModInfo.xml` is runtime authority; future manifest must equal it |
+| Canonical display name | `7DTD 3.0 Wasteland Animal Population Tuning` | Recorded owner/product identity; the release manifest owns the release projection |
+| Game-facing mod ID | `BitWrecked_7DTD_WastelandAnimalPopulationTuning` | `ModInfo.xml` is runtime authority; the release manifest must equal it |
 | Installed mod folder | `BitWrecked_7DTD_WastelandAnimalPopulationTuning` | Frozen technical behavior and Q17; must equal the runtime ID for `4.1.0` |
 | Author / official upstream identity | `Bit Wrecked` | Q17 and existing copyright/author metadata |
 | Game-target label | `7DTD 3.0` / current retained evidence described as `3.0-era` | Separate from package SemVer; exact build is unverified until evidence exists |
-| Intended package version | `4.1.0` | Owner decision and active development line; future per-solution manifest owns it |
+| Intended package version | `4.1.0` | Owner decision and active development line; the per-solution release manifest owns it |
 | Active workspace projection | `4.1.0-dev` | Root `VERSION` is a checked development projection, not permanent multi-solution authority |
 | Lifecycle state | `Development` / `Unreleased` | `EXECUTION_PLAN.md` owns workflow phase; it is not a release claim |
 | Working parent | `v4.0.1` at `c90f5f7f27d84343b95971a54486b88aa1022c00` | Immutable historical release lineage; not a reproducibility claim |
@@ -37,7 +40,7 @@ It is not the future per-solution release manifest and does not prove a release,
 | Candidate stage | `dist/7dtd_wasteland_animal_population_tuning/4.1.0/candidate/` | Ignored working output; contains candidates only |
 | Final-upload stage | `dist/7dtd_wasteland_animal_population_tuning/4.1.0/final-upload/` | Ignored technical-promotion output; never implies publication authority |
 
-The future per-solution manifest owns package version, lifecycle intent, edition IDs and roles, exact allowlists, capabilities, exclusions, filenames, and source-baseline reference. Root `VERSION`, `ModInfo.xml` version/display fields, GUI version text, README, changelog heading, package metadata, release notes, evidence reports, and Nexus draft copy are generated or validated projections. `ModInfo.xml` remains the authority for the runtime ID. A tag, GitHub Release, and Nexus served-file evidence prove their own external states only after authorized publication.
+The per-solution release manifest owns package version, lifecycle intent, edition IDs and roles, exact allowlists, capabilities, exclusions, filenames, and source-baseline reference. Root `VERSION`, `ModInfo.xml` version/display fields, GUI version text, README, changelog heading, package metadata, release notes, evidence reports, and Nexus draft copy are generated or validated projections. `ModInfo.xml` remains the authority for the runtime ID. A tag, GitHub Release, and Nexus served-file evidence prove their own external states only after authorized publication.
 
 ## Edition State
 
@@ -76,13 +79,13 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 | `governance/CHANGELOG.md` | Historical evidence | Governance/infrastructure history, not product behavior |
 | Root `README.md` | Controlled projection | Repository front door; validate against governance |
 | Root `VERSION` | Controlled projection | Active-workspace development label while one solution is active |
-| `RELEASING.md` | Authoritative current source, bounded | General process; unresolved public ordering creates no merge/tag/upload authority |
-| `solutions/README.md` | Controlled projection, stale | Index only; must stop routing users to the obsolete overview |
-| `solutions/7dtd_wasteland_animal_population_tuning.md` | Retired/stale | Obsolete version-2 explanation and dangerous legacy rebuild route; never use for `4.1.0` |
+| `RELEASING.md` | Authoritative current source, bounded | Separates validation, staging, candidate construction, technical promotion, and later authorized public actions |
+| `solutions/README.md` | Controlled projection | Current solution index; routes identity and edition truth to the manifest |
+| `solutions/7dtd_wasteland_animal_population_tuning.md` | Controlled projection | Current concise solution overview; contains no rebuild authority |
 | Frozen BAT, GUI PS1, and modlet XML at the anchored tree | Authoritative current source | Owner-approved technical behavior only; release identity fields remain controlled projections to update in P2 |
-| Primary `README_FIRST.txt` | Blocked draft | Intended customer quick guide and accepted ZIP file; currently a `4.0.1` document missing Q18/Q19 treatment |
-| Solution `CHANGELOG.md` | Authoritative history plus blocked `4.1.0` draft | Historical release entries remain; current section must become concise player/package truth |
-| `PACKAGE_METADATA.md` and `TECHNICAL_FILE_MANIFEST.md` | Historical evidence; retire as authority | Legacy `4.0.1` routing/inventory; replace current authority with manifest-driven views |
+| Primary `README_FIRST.txt` | Controlled projection | Current customer quick guide and accepted ZIP file; validated against the manifest and GPL/source contract |
+| Solution `CHANGELOG.md` | Authoritative history plus controlled current projection | Historical release entries remain; the `4.1.0` section records player/package truth only |
+| `PACKAGE_METADATA.md` and `TECHNICAL_FILE_MANIFEST.md` | Historical evidence; retired as authority | Visible historical banners prevent current routing; the manifest owns the current contract |
 | `README_WINDOWS.md`, `RELEASE_NOTES.md`, `PUBLISHING_SEO.md`, and `BUILD_STORY_AND_QA_RUNBOOK.md` | Historical or maintainer reference | Excluded from the primary ZIP; do not reuse cross-edition claims without validation |
 | `LICENSE.txt` | Authoritative current source | Complete applicable GPL text; preserve verbatim in every supported edition |
 | `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` | Maintainer reference | Excluded from primary ZIP; do not turn project publishing preferences into added GPL restrictions |
@@ -91,7 +94,13 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 | Three `Upload_To_Nexus/*.zip` files and their internal documents | Historical evidence | Immutable legacy artifacts with known defects; never current truth |
 | Baseline evidence under `evidence/baselines/.../4.1.0/` | Historical evidence | Exact before-state and provenance boundary for later diffs |
 
-## Contradiction Register
+`governance/GITHUB_REPOSITORY_HEALTH.md` is the controlled status view for committed repository-health controls and unverified live GitHub settings. It cannot prove service enforcement.
+
+## P1 Before-State Contradiction Register
+
+The following rows preserve the defects found before P2. They are historical
+findings, not a claim that each defect still exists. Use the P2 disposition table
+immediately below for current status.
 
 | ID | Contradiction | Scope and disposition |
 | --- | --- | --- |
@@ -109,6 +118,32 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 | TRUTH-012 | Raw Git blobs, Windows checkout bytes, and `git archive` output can differ in newline representation | Primary P2 integrity gate: add explicit attributes/staged-byte policy and validate the digest domain used for candidates |
 | TRUTH-013 | Root/governance document licensing is not selected by Q19 | Separate rights decision; does not block the GPL-complete primary solution artifact |
 
-## P1 Closure Rule
+## P2 Disposition Record
+
+This table records what the P2 implementation changed without erasing the original contradictions or converting deferred gates into claims.
+
+| ID | P2 status | Durable disposition |
+| --- | --- | --- |
+| TRUTH-001 | Resolved offline | The schema-validated per-solution manifest owns release and edition contracts. |
+| TRUTH-002 | Resolved offline | README, GUI version text, and `ModInfo.xml` project `4.1.0`; technical validation limits GUI and metadata edits to declared non-behavioral substitutions. |
+| TRUTH-003 | Resolved offline | The solution changelog now contains bounded player/package truth; governance work stays in `governance/CHANGELOG.md`. |
+| TRUTH-004 | Resolved offline | The solution index and overview now route current work to the manifest and safe validator. |
+| TRUTH-005 | Resolved offline | Conflicting legacy documents are visibly historical, retired, or blocked and are excluded from the primary allowlist. |
+| TRUTH-006 | Resolved offline | Legacy rebuild mode fails closed; the new entry point validates by default and can stage only the exact primary allowlist under ignored `dist/`. |
+| TRUTH-007 | Resolved offline | Compatibility statements distinguish owner-observed Windows use from unverified or unsupported environments and do not invent an exact game build. |
+| TRUTH-008 | Bounded/partial | Customer and runtime metadata route to the official repository without claiming a nonexistent release. Exact release-source projection remains a candidate/release gate. |
+| TRUTH-009 | Still blocked | No-scripts remains non-publishable pending an owner-authorized meaningful static outcome. |
+| TRUTH-010 | Still blocked | Vortex remains non-publishable pending an exact-candidate lifecycle and GPL-completeness audit. |
+| TRUTH-011 | Bounded/partial | `RELEASING.md` separates technical phases from owner-authorized public actions. Main lifecycle, merge method, merge/tag order, and exact future tag naming remain owner gates. |
+| TRUTH-012 | Resolved for development staging | Attributes declare LF source bytes and P2 staging uses exact clean-`HEAD` Git blob bytes. Binding that commit to P3 approval and the release tag remains a P3/P4 gate. |
+| TRUTH-013 | Still open, non-blocking | Root/governance license scope remains an explicit owner rights decision. |
+
+Additional P3/P4 gate: all content that will enter the ZIP, including the final
+README/changelog version, date, and state, must be frozen before candidate
+construction. The actual source commit, tag resolution, approvals, artifact
+hashes, and served URLs belong in generated acceptance/provenance evidence; the
+committed manifest must not require an impossible self-referential commit SHA.
+
+## Satisfied Historical P1 Closure Rule
 
 P1 is complete when the raw-blob fingerprint validates, this registry is routed to future AIs, the historical ZIP hashes still match, and every contradiction is either assigned to P2, isolated to an optional edition, or held at a later owner/publication gate. P1 completion does not mean the release is ready; it makes P2 safe to begin without rewriting technical behavior by inference.

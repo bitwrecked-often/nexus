@@ -1,6 +1,10 @@
 # Nexus Mod Workshop
 
-This is an open-source workshop for creating, testing, packaging, and publishing Nexus mods. It is intentionally organized as infrastructure rather than a loose collection of experiments.
+This repository is a workshop for creating, testing, packaging, and publishing
+open-source Nexus mod solutions. Root and governance-document license scope is
+recorded separately instead of being inferred from the solution license. The
+workshop is intentionally organized as infrastructure rather than a loose
+collection of experiments.
 
 ## Two-Layer Structure
 
@@ -15,3 +19,23 @@ This is an open-source workshop for creating, testing, packaging, and publishing
 The governing principle is simple: private observations become structured evidence; structured evidence becomes a tested solution; only an explicitly approved solution becomes a public release.
 
 Current development version: see `VERSION`.
+
+## Current 4.1.0 Route
+
+- Current execution phase: `governance/EXECUTION_PLAN.md`
+- Reconciled authority and blocker map: `governance/REPOSITORY_TRUTH_MAP.md`
+- Repository-health controls and live-setting boundaries:
+  `governance/GITHUB_REPOSITORY_HEALTH.md`
+- Contribution and privacy boundary: `CONTRIBUTING.md`
+- Active solution contract:
+  `solutions/7dtd_wasteland_animal_population_tuning_files/release-manifest.json`
+- Safe offline check (PowerShell 7.4 or later):
+
+```powershell
+pwsh -NoProfile -File tools/release/Invoke-NexusPackage.ps1 `
+  -ManifestPath solutions/7dtd_wasteland_animal_population_tuning_files/release-manifest.json `
+  -Action Validate
+```
+
+The default check is offline and read-only. It does not launch the mod tool,
+read a game installation, build or stage a candidate, publish, or change Nexus.

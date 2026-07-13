@@ -1,6 +1,12 @@
 7DTD WASTELAND ANIMAL POPULATION TUNING
 NEXUS NO-SCRIPTS EDITION
 
+STATUS: BLOCKED 4.1.0 DRAFT - NOT A CURRENT DOWNLOAD CONTRACT
+
+The frozen static XML is vanilla-equivalent on the matching baseline. This
+optional edition is deferred until it can provide a meaningful, accurately
+documented outcome without changing the owner-approved technical baseline.
+
 PLEASE READ BEFORE INSTALLING
 
 This edition contains a fixed XML-only 7 Days to Die modlet. It has no installer,

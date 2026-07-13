@@ -1,5 +1,9 @@
 # 7DTD 3.0 Wasteland Animal Population Tuning - Technical File Manifest
 
+> Status: Historical `4.0.1` package inventory. Do not use its layouts, archive
+> paths, or rebuild instructions for `4.1.0`. The current exact contract is in
+> `../release-manifest.json`.
+
 This file is for proofing, review, and internal AI routing. It explains every shipped file at a technical level.
 
 ## Package Policy
