@@ -15,3 +15,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Retained a supported no-scripts `4.1.0` edition as a complete static-inspection surface for mod intent, while classifying Nexus scanner behavior as artifact-specific evidence rather than assumed platform policy.
 - Set the graphical wrapper as the planned primary Nexus file and the no-scripts edition as a fully supported optional inspection/code-free file, without granting publication authority.
 - Retained explicit Vortex support as an artifact-scoped `4.1.0` goal gated by a concise, versioned install-through-removal audit of the exact candidate.
+- Recorded the owner's QA-complete baseline freeze, withdrew the technical cap-design question, and limited remaining `4.1.0` work to non-behavioral release infrastructure and evidence.

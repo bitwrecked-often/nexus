@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q9
+- Current question: Q10
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -216,6 +216,12 @@ Decision consequence:
 
 Decision state: accepted; callable core required, public integration tooling deferred
 
+Later scope correction from Q9:
+
+- The architectural preference for a callable core remains useful future direction.
+- Isolating or refactoring that core is not authorized technical work for the frozen `4.1.0` baseline.
+- Existing composition behavior may be documented and exercised through non-mutating validation; technical extraction requires a later owner decision.
+
 ### Q6 — Scanner-Friendly Edition
 
 Question:
@@ -341,9 +347,45 @@ Decision state: accepted; Vortex support retained, integration evidence pending
 
 ### Q9 — Safe Server-Cap Controls
 
-Question:
+Withdrawn question:
 
 > Should cap-lifting controls stay disabled until the exact active `serverconfig.xml` is identified and a verified backup can be made?
+
+Answer: not applicable to the frozen `4.1.0` technical baseline
+
+Owner scope correction (normalized for readability):
+
+> We do not need to change anything technical in the package. I already completed QA on it.
+
+Evidence classification:
+
+- QA completion is an owner attestation and establishes the owner's acceptance of the current technical baseline.
+- The interview does not currently contain a test matrix, environment fingerprint, date, detailed results, or retained QA artifacts. Those specifics remain unverified and must not be invented.
+- Earlier code-audit findings remain documented observations and future-hardening candidates; they do not grant authority to redesign an owner-accepted package.
+
+Governing ideals:
+
+- An audit identifies facts and risks; it does not silently expand implementation authority.
+- Preserve a QA-accepted baseline unless the owner explicitly reopens its technical scope.
+- Distinguish owner acceptance, source inspection, and retained test evidence.
+
+Decision consequence:
+
+- Freeze `4.1.0` runtime and gameplay behavior: do not refactor the GUI, composition/tuning logic, XML-generation behavior, install/remove behavior, cap-management behavior, or modlet behavior.
+- Continue only non-behavioral release work: identity/version metadata, documentation, licensing, manifests, inventories, checksums, safe staging/packaging infrastructure, non-mutating validation, evidence capture, and release controls.
+- Q9 makes no new design choice about cap behavior; the question is withdrawn because it presumed technical change authority that is not in scope.
+- Validation may document the accepted package as it exists. If it exposes a release-blocking mismatch, stop and report it rather than editing the package without separate owner authorization.
+- Preserve technical audit findings as deferred backlog for a later feature or hardening release.
+
+Decision state: accepted scope correction; technical package frozen for `4.1.0`
+
+Supersedes for `4.1.0`: Q5's current core-isolation consequence and technical implementation directives in the work packets. It does not erase their reasoning or authorize unsupported release claims.
+
+### Q10 — Release Archive Retention
+
+Question:
+
+> Should final `4.1.0` release ZIPs be committed to this repository as immutable evidence as well as uploaded to release services?
 
 Answer: pending
 

@@ -19,6 +19,29 @@ Before making implementation changes:
 - Do **not** choose tuning values, replace the accepted wrapper-composition model with a fixed or mutually exclusive preset model, choose support duration, select a private security contact, define merge policy, or take a Nexus publication action for the owner.
 - Do **not** commit commercial game binaries, full proprietary game configuration files, saves, logs with private paths, server data, or extracted game assets.
 
+## Owner Scope Override: Frozen `4.1.0` Technical Baseline
+
+On 2026-07-12, the owner stated that package QA is complete and no further technical package changes are needed for the `4.1.0` baseline. This current direction overrides technical implementation language later in this addendum and in the older work packet.
+
+Treat the following as frozen unless the owner explicitly reopens scope:
+
+- graphical interface behavior and layout;
+- composition, tuning, density, route, and XML-generation logic;
+- modlet gameplay behavior and values;
+- install, reinstall, verify, remove, cap-update, backup, and restore behavior;
+- runtime extraction, module/API/CLI work, and new integration tooling.
+
+The remaining authorized baseline work is non-behavioral release infrastructure:
+
+- identity and version metadata, documentation, licensing, and package-specific capability statements;
+- historical-artifact quarantine and candidate staging that never overwrites a published artifact;
+- exact inventories, checksums, provenance, manifests, and reproducible packaging controls;
+- non-mutating validation, test/evidence capture, GitHub health, release gates, and Nexus handoff material.
+
+Owner-reported QA completion is an owner attestation. Do not invent its scenarios, environment, date, or results. Existing code-audit findings remain observations and future backlog. If a read-only check finds a release-blocking mismatch, report it and request authority; do not modify technical behavior by inference.
+
+Work slices E-H and behavior-changing work in Slice L are deferred beyond this frozen baseline. Slices A-D, I-K, M-N, and documentation/evidence-only portions of Slice L remain in scope only where they do not change runtime or gameplay behavior.
+
 ## Confirmed Historical Evidence
 
 The committed historical archives are immutable inputs to future audits:
@@ -49,8 +72,8 @@ The active owner-decision register is `governance/OWNER_DECISION_INTERVIEW.md`. 
 4. **Artifact retention:** decide whether future release archives are committed under an immutable ledger, attached only to GitHub releases, or both.
 5. **Repository lifecycle:** define whether `main` means release-accepted source or Nexus-served source, and place merge/tag/upload/served-file verification accordingly.
 6. **Authority identities:** identify the actual maintainer, release owner, Nexus account owner, CODEOWNER, and private security contact. Do not invent a team or committee.
-7. **Server configuration scope:** decide whether cap editing supports only a root `serverconfig.xml`, permits explicit selection of an active config, or is removed from unsupported play modes.
-8. **Existing user modifications:** decide whether reinstall/remove preserves, backs up, refuses, or explicitly replaces modified/unknown files inside the owned mod directory.
+7. **Server configuration scope — deferred by Q9:** do not redesign cap editing for the frozen baseline. Document only the existing behavior and owner-attested QA scope unless a release blocker reopens the decision.
+8. **Existing user modifications — deferred by Q9:** do not redesign reinstall/remove behavior for the frozen baseline. Preserve the audit observation as future backlog and document current behavior without inventing guarantees.
 
 ## Canonical Vocabulary
 
@@ -166,7 +189,7 @@ A public artifact must produce its advertised outcome. On the matching baseline,
 
 The current GUI script mixes UI construction, game discovery, tuning logic, XML generation, install/remove, server configuration, backup/restore, and validation in one file of roughly 2,500 lines.
 
-Preserve its confirmed composition behavior: independently selected animal levels are reconciled through shared-density and pressure-route rules, then emitted as one `entitygroups.xml` and `spawning.xml` pair. Extraction must not turn these feature inputs into mutually exclusive artifacts. Q5 requires a callable non-GUI core for maintainability and future reuse, but explicitly defers a supported public CLI, API, SDK, or integration tool. Current source structure alone does not prove a stable integration surface.
+Preserve its confirmed composition behavior: independently selected animal levels are reconciled through shared-density and pressure-route rules, then emitted as one `entitygroups.xml` and `spawning.xml` pair. Extraction must not turn these feature inputs into mutually exclusive artifacts. Q5 records a future preference for a callable non-GUI core; Q9 freezes the `4.1.0` technical baseline and defers extraction. Current source structure alone does not prove a stable integration surface.
 
 Extract or isolate:
 
@@ -178,7 +201,7 @@ Extract or isolate:
 - package construction and inspection;
 - WinForms presentation/event binding.
 
-The core must be runnable without opening the GUI. Add synthetic fixtures, deterministic clock/path injection where needed, and a single local test entry point shared by maintainers and CI. Keep the casual-gamer GUI as the primary `4.1.0` product surface; do not expand this slice into public integration tooling.
+Future hardening should make the core runnable without opening the GUI and add synthetic fixtures, deterministic clock/path injection where needed, and a shared local test entry point. Do not perform that refactor in the frozen `4.1.0` baseline. Non-mutating validation may exercise existing seams without changing the package. Keep the casual-gamer GUI as the primary product surface.
 
 ### Slice F: Fail-Closed Preflight And Authoritative Verification
 

@@ -167,6 +167,17 @@ This record exists so users, reviewers, and other makers can study the method, r
 
 If a later decision changes an earlier one, retain both and link the superseding relationship. Do not rewrite history to make the final path look inevitable.
 
+## Owner-Accepted Baseline Freeze
+
+An audit or recommendation does not authorize technical change. When the owner identifies a package as QA-complete and freezes its technical baseline:
+
+- record the owner's attestation and distinguish it from retained, reproducible test evidence;
+- state exactly which behavior and payload are frozen and which release-support work remains authorized;
+- permit documentation, identity, licensing, manifests, checksums, non-mutating validation, safe packaging, and evidence work without treating them as gameplay redesign;
+- retain technical findings as observations or future backlog rather than silently implementing them;
+- if validation reveals a potential release blocker, stop and report the evidence before changing the accepted baseline;
+- require explicit owner authority to reopen runtime, gameplay, UI, install, removal, or configuration behavior.
+
 ## Safe Inputs And Evidence
 
 Use minimal synthetic or explicitly redistributable fixtures in source control. Do not commit commercial game binaries, full proprietary configuration files, saves, extracted game assets, server data, private tester communications, or raw logs containing identifying paths unless redistribution and privacy authority are explicitly documented.

@@ -6,6 +6,12 @@ Strengthen the Nexus mod workshop baseline so reliability, evidence, reversibili
 
 This is infrastructure work for the backward-compatible `4.1.0` development line. Do not add speculative gameplay features during this assignment.
 
+### Current Owner Scope Override — 2026-07-12
+
+The owner has declared the current technical package QA-complete and frozen for the `4.1.0` baseline. Do not refactor or alter runtime, gameplay, GUI, install/remove, cap-management, or modlet behavior while executing this packet. Technical hardening tasks in this older packet are retained as future backlog, not current authority.
+
+Current work is limited to non-behavioral release infrastructure: identity/version metadata, documentation, licensing, manifests, artifact quarantine, safe staging/packaging, non-mutating validation, checksums/provenance, evidence, GitHub health, and release controls. Read `governance/OWNER_DECISION_INTERVIEW.md` and the scope override in `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md` before selecting a task.
+
 ## Start Here
 
 Read these files completely before making changes:
