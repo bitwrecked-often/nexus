@@ -46,7 +46,7 @@ Work slices E-H and behavior-changing work in Slice L are deferred beyond this f
 
 The owner's operating model is preparation-dominant: `95% preparation / 5% execution`. Treat that ratio as direction, not a fabricated measurement. Do not create or promote the `4.1.0` candidate until these planning outputs agree:
 
-1. authoritative QA-baseline identity, source commit, and fingerprint;
+1. authoritative QA-baseline identity, source commit, and fingerprint — anchored by Q11 to commit `b3c3551c0c5bfc8d24c68d3036da4c8045a90b54` and solution Git tree `010454d19b10f46c71d9150335905766b946176e`; a per-file SHA-256 manifest is still required;
 2. per-solution manifest and per-edition product contracts;
 3. exact source-to-stage mappings and file allowlists;
 4. requirements and install, verify, remove, recovery, and support instructions;
@@ -55,6 +55,14 @@ The owner's operating model is preparation-dominant: `95% preparation / 5% execu
 7. artifact lifecycle and retention decision, including the still-open Q10.
 
 After owner acceptance of the planning set, use one controlled candidate/promotion cycle. Temporary reproducibility builds may be compared without promotion, but only one artifact may be promoted for a release identity. A failed check returns to planning or owner review and does not authorize technical payload changes.
+
+### Baseline Lineage Established By Q11
+
+- `v4.0.1` remains the immutable authoritative parent release that the owner reports as working.
+- The solution tree at commit `b3c3551c0c5bfc8d24c68d3036da4c8045a90b54` is the authoritative owner-QA-approved technical baseline copied forward for `4.1.0` planning.
+- Its Git tree ID is `010454d19b10f46c71d9150335905766b946176e`; record per-file SHA-256 before authorized solution documentation or metadata changes begin.
+- New staging, archives, and release identity must use `4.1.0` paths and names. Never overwrite a `4.0.1` artifact or move its tag.
+- Parent authority is not a reproducibility claim. Preserve the known tagged-source/full-archive GUI mismatch in every provenance record.
 
 ## Confirmed Historical Evidence
 

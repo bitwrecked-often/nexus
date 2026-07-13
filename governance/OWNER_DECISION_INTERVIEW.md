@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q11
+- Current question: Q12
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -59,6 +59,11 @@ Decision consequence:
 - Release evidence must link this decision to implementation, tests, packaged files, and user-facing wording.
 
 Decision state: accepted; dependent design remains open
+
+Later baseline resolution from Q9 and Q11:
+
+- The existing QA-approved technical behavior and tuning values are frozen for `4.1.0`; the AI has no remaining authority to choose or change them.
+- Q12 addresses the truthful documentation role of the unchanged no-scripts payload without reopening technical scope.
 
 ### Q2 — No-Scripts Choice Without Code
 
@@ -415,6 +420,47 @@ Decision state: accepted preparation-first sequence; Q10 artifact retention stil
 Question:
 
 > Is the current solution folder on `develop/4.1.0` the authoritative QA-approved technical baseline for the eventual `4.1.0` candidate?
+
+Answer: yes
+
+Owner lineage direction (normalized for readability):
+
+> `4.1.0` should be a copy forward for the next version. `4.0.1` stays intact as the authoritative parent that works.
+
+Repository anchor at owner confirmation:
+
+- Commit: `b3c3551c0c5bfc8d24c68d3036da4c8045a90b54`
+- Solution Git tree: `010454d19b10f46c71d9150335905766b946176e`
+- Solution working tree: clean
+- Parent release identity: immutable `v4.0.1`
+
+Evidence qualification:
+
+- The Git tree ID anchors the confirmed repository snapshot but does not replace the planned per-file SHA-256 baseline manifest.
+- `4.0.1` parent authority does not erase the recorded mismatch between its tagged GUI source and published full-package GUI script. Do not claim retroactive source equality or reproducibility.
+
+Governing ideals:
+
+- Copy a known-good parent into a new identity; never mutate the parent in place.
+- Keep product lineage, source identity, artifact identity, and reproducibility as separate evidence claims.
+- Make the exact handoff point inspectable before documentation or packaging work begins.
+
+Decision consequence:
+
+- Treat the solution tree anchored above as the authoritative owner-QA-approved technical baseline for `4.1.0` preparation.
+- Preserve the `v4.0.1` tag and all registered `4.0.1` archives byte-for-byte as the working parent record.
+- Create future `4.1.0` staging and artifacts under new identities; never overwrite or repurpose a `4.0.1` path.
+- Produce a per-file SHA-256 baseline inventory that distinguishes frozen technical inputs from authorized release metadata and documentation work.
+- Record `v4.0.1` as parent lineage while carrying its known provenance exception forward honestly.
+- This baseline decision does not authorize candidate construction, publication, or archival of the served parent file.
+
+Decision state: accepted; exact QA baseline and parent lineage established
+
+### Q12 — No-Scripts Product Truth
+
+Question:
+
+> Should the unchanged no-scripts file be documented as an inspection/template artifact rather than as a ready-to-play tuned mod?
 
 Answer: pending
 

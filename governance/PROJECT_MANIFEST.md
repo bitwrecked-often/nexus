@@ -183,6 +183,7 @@ An audit or recommendation does not authorize technical change. When the owner i
 Treat `95% preparation / 5% execution` as an operating heuristic: settle identity, scope, instructions, artifact contracts, acceptance evidence, and authority before producing a release candidate.
 
 - identify and fingerprint the exact QA-approved baseline before staging;
+- distinguish the immutable parent release, the owner-approved working baseline, and the new candidate identity;
 - complete the authoritative manifest, edition inventories, version map, requirements, install/verify/remove guidance, allowlists, and acceptance checklist before the candidate build;
 - use read-only or dry-run checks to resolve planning defects without repeatedly mutating artifacts;
 - perform one controlled candidate/promotion cycle after the planning gate, with any reproducibility comparison confined to temporary candidates and only one artifact promoted per identity;

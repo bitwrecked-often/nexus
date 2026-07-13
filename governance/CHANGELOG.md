@@ -17,3 +17,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Retained explicit Vortex support as an artifact-scoped `4.1.0` goal gated by a concise, versioned install-through-removal audit of the exact candidate.
 - Recorded the owner's QA-complete baseline freeze, withdrew the technical cap-design question, and limited remaining `4.1.0` work to non-behavioral release infrastructure and evidence.
 - Established a preparation-dominant planning gate: identify the QA baseline and complete manifests, instructions, allowlists, version mapping, and acceptance evidence before one controlled `4.1.0` candidate/promotion cycle.
+- Anchored the current solution tree as the owner-QA-approved `4.1.0` technical baseline copied from immutable `v4.0.1` parent lineage while preserving the historical source/artifact provenance exception.

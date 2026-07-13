@@ -40,6 +40,7 @@ solutions/7dtd_wasteland_animal_population_tuning_files/
 - The public baseline is preserved by annotated Git tag `v4.0.1`.
 - Development occurs on `develop/4.1.0`.
 - Root `VERSION` is `4.1.0-dev`.
+- Q11 anchors the owner-QA-approved solution baseline at commit `b3c3551c0c5bfc8d24c68d3036da4c8045a90b54`, solution Git tree `010454d19b10f46c71d9150335905766b946176e`; capture a per-file SHA-256 manifest before authorized solution-file preparation.
 - The published `4.0.1` archives are historical artifacts and must remain byte-for-byte unchanged during this assignment.
 - The no-scripts `4.1.0` source manuals are under:
 
