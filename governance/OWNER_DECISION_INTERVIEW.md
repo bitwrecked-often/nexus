@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q17
+- Current question: Q18
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -703,14 +703,52 @@ Decision consequence:
 - Do not yet remove or rename `Bit Wrecked` copyright notices, author metadata, window/status text, backup names, mod folder/ID, or install paths. Those span legal provenance and technical identity, and Q16 does not authorize changing them.
 - Ask Q17 to distinguish removal of optional decorative branding from a broader de-branding/white-label change that would reopen the frozen technical baseline.
 - Do not build a candidate until the remaining package/license decisions are complete.
+- Later result: Q17 preserves the existing Bit Wrecked identity and technical identifiers for `4.1.0`; only the optional avatar is removed.
 
-Decision state: accepted for avatar exclusion; supersedes the avatar portion of Q14, broader personalization scope pending
+Decision state: accepted for avatar exclusion; supersedes the avatar portion of Q14, broader personalization resolved by Q17
 
 ### Q17 — Portable Identity Boundary
 
 Question:
 
 > Should `4.1.0` remove only the optional avatar while preserving its existing Bit Wrecked names, copyright notices, and technical identifiers?
+
+Answer: qualified yes
+
+Owner response:
+
+> I think so.
+
+Originating repository evidence:
+
+- `Bit Wrecked` appears in copyright notices in the BAT, PowerShell, and XML source; those notices are legal provenance, not optional decoration.
+- `BitWrecked_7DTD_WastelandAnimalPopulationTuning` is the source folder, `ModInfo.xml` name, installed folder, verification/removal target, and player-facing manual path.
+- `BitWrecked` also namespaces server-configuration backup filenames and the lookup/restore messages that find those backups.
+- The GUI window title and visible brand label use `Bit Wrecked`, while the optional avatar is loaded independently.
+- Renaming these identifiers would change install, verify, remove, recovery, upgrade, and support identity. It would not be a packaging-only trim.
+
+Governing ideals:
+
+- Preserve authorship and legal chain of custody even when the implementation is freely reusable.
+- Stable owned identifiers protect upgrade, removal, and recovery boundaries.
+- GPL portability means downstream recipients may adapt and rebrand their versions; it does not require the official upstream release to erase its origin.
+- A tentative answer may govern a conservative baseline when the reversible choice preserves the accepted technical package and the more expansive choice can be designed later.
+
+Decision consequence:
+
+- Preserve all existing Bit Wrecked copyright notices, author metadata, GUI text, mod/folder identifiers, install/remove targets, backup names, diagnostics, and official-release provenance in `4.1.0`.
+- Remove only the optional avatar from primary candidate staging, as established by Q16. Do not edit the GUI to close the cosmetic gap during this frozen baseline.
+- Describe the official eight-file allowlist as a supported upstream build contract, not a restriction on downstream GPL modification, renaming, or redistribution.
+- Keep domain-neutral naming, configurable branding, and white-label packaging as future feature work. It requires an explicit product contract, version decision, namespace/migration plan, and tests; Q17 does not authorize it for `4.1.0`.
+- If the owner later reverses this qualified answer, retain Q17 and record the superseding decision rather than silently rewriting history.
+
+Decision state: accepted with owner uncertainty; preserve current identity for `4.1.0`, defer broader de-branding
+
+### Q18 — Plain-Language GPL Notice
+
+Question:
+
+> Should `README_FIRST.txt` carry the single plain-language GPL, source, no-warranty, and unofficial-origin notice while `LICENSE.txt` and the source-file notices remain intact?
 
 Answer: pending
 

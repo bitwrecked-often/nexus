@@ -20,7 +20,9 @@ Q14 shaped the internal source-form allowlist subject to GPL-3.0-or-later comple
 
 The resulting exact primary allowlist contains eight files: root README and launcher; GUI PowerShell source; three modlet XML source files; full GPL text; and changelog. Preserve applicable copyright/SPDX/modification/no-warranty notices. Each edition must independently expose its applicable license and exact source/provenance route. A repository-only license is insufficient for an otherwise incomplete customer ZIP, and origin/support wording must not narrow GPL permissions. The official allowlist and folder names are build/support policy, not downstream redistribution restrictions.
 
-Q17 decides whether portability stops at the optional decorative avatar while existing Bit Wrecked names, copyright, and technical identifiers remain, or whether the owner intends a broader identity change that would reopen the frozen baseline. README/changelog license scope and the separate plain-language license/use document consolidation also remain open. Do not stage or build the candidate until those decisions are recorded.
+Q17 resolves the portable identity boundary for `4.1.0`: remove only the optional avatar and preserve existing Bit Wrecked copyright, author metadata, GUI text, mod/folder identifiers, install/remove targets, backup names, diagnostics, and official-release provenance. Do not mistake open-source reuse for an instruction to anonymize the supported upstream package. A configurable-brand or white-label derivative is future feature work, not current authority.
+
+Q18 asks whether `README_FIRST.txt` should become the one plain-language GPL/source/no-warranty/unofficial-origin notice while the full `LICENSE.txt` and per-file notices remain. README/changelog license scope also remains open. Do not stage or build the candidate until those GPL documentation decisions are recorded.
 
 ## Start Here
 

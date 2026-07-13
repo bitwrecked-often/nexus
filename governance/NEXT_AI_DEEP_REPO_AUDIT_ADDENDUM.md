@@ -125,9 +125,9 @@ Support_Files_Do_Not_Edit/LICENSE.txt
 Support_Files_Do_Not_Edit/CHANGELOG.md
 ```
 
-The GUI already tolerates the missing image. Q17 decides whether existing Bit Wrecked text, legal provenance, and technical identifiers remain frozen or a broader de-branding scope is intended.
+The GUI already tolerates the missing image. Q17 preserves existing Bit Wrecked text, legal provenance, mod/folder IDs, install/remove targets, backup names, and diagnostics for `4.1.0`. That qualified decision keeps the QA-frozen technical identity stable while GPL source remains reusable downstream. Configurable branding or a domain-neutral/white-label derivative is future feature work requiring its own migration and tests.
 
-README/changelog license scope and consolidation of `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` essentials into `README_FIRST.txt` also remain open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No candidate build is authorized before those identity and GPL decisions.
+Q18 asks whether to consolidate the customer-relevant essentials from `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` into `README_FIRST.txt` while preserving the full GPL and source-file notices. README/changelog license scope also remains open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No candidate build is authorized before those GPL decisions.
 
 ## Confirmed Historical Evidence
 

@@ -174,7 +174,7 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 
 The executable portion is readable source form. Q16 supersedes Q14's planned avatar inclusion and removes that optional decorative personalization from the future primary customer ZIP so the package can move more cleanly between domains. The avatar remains intact in repository history and the immutable `4.0.1` archive. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` remain open. The allowlist authorizes planning and validation rules, not a candidate build or a runtime change.
 
-Cross-domain portability does not silently erase authorship, copyright notices, stable technical identifiers, or official-release provenance. Q17 decides whether `4.1.0` portability stops at removing the optional avatar or reopens the frozen identity/UI scope.
+Cross-domain portability does not silently erase authorship, copyright notices, stable technical identifiers, or official-release provenance. Q17 locks the `4.1.0` boundary: remove only the optional avatar while preserving existing Bit Wrecked legal identity, UI text, mod/folder IDs, install/remove targets, backup names, and diagnostics. Portability comes from readable GPL source and a reusable boundary, not from presenting the official package as anonymous. A domain-neutral or white-label derivative is future feature work with its own identity, migration, tests, and owner approval.
 
 ### Wrapper As A Composable Feature-Set Boundary
 

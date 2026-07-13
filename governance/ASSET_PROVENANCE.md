@@ -38,7 +38,7 @@ A Git commit proves repository history, not copyright ownership. Public display 
 | Public identity context | Owner reports that the Bit Wrecked YouTube presence is open in the workspace for review; exact URL and identity match not yet retained as evidence |
 | Copyright license | Not selected by Q16; exclusion from `4.1.0` does not revoke or reinterpret rights already conveyed with historical copies |
 | Preferred editable source | Not required for the primary `4.1.0` gate while excluded; still unrecorded for any future redistribution |
-| Brand/trademark treatment | Decorative avatar excluded by Q16; broader Bit Wrecked identity boundary pending Q17 |
+| Brand/trademark treatment | Decorative avatar excluded by Q16; Q17 preserves existing Bit Wrecked official-package identity while broader configurable/white-label branding is deferred |
 | Planned distribution | Excluded from the primary `4.1.0` ZIP by Q16; retained as repository source and historical evidence |
 | Release status | Not a `4.1.0` customer artifact; must pass license/source review if reintroduced later |
 
