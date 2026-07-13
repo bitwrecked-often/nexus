@@ -118,15 +118,17 @@ Every public artifact is its own product contract. Its name, description, docume
 - Preserve historical defects as evidence, but never use them as the contract for a new release.
 - Reproducibility and provenance are evidence claims. Immutability alone does not prove either.
 
-### Presets As A Feature-Set Pipeline
+### Wrapper As A Composable Feature-Set Boundary
 
-When a no-code artifact bundles presets, preserve both uses without mixing their instructions:
+When a solution accepts independently selectable feature inputs, treat its wrapper as the composition boundary rather than recasting its outputs as mutually exclusive preset packages:
 
-- players receive clearly labeled, ready-made outcomes with a safe selection/install path;
-- modders receive stable preset IDs, source definitions, generated payloads, derivation rules, and evidence links that can feed broader feature-set work;
-- generated XML must remain traceable to one authoritative preset definition;
-- documentation must distinguish a supported player preset from an extensible modder input;
-- reuse does not make a modified downstream package an official release.
+- players receive understandable controls or ready-made choices with a safe generation, installation, verification, and removal path;
+- modders can use the wrapper as-is and attach it to broader feature-set work through a documented boundary;
+- the wrapper resolves shared values and interactions before emitting one coherent installed result;
+- feature inputs, resolution rules, generated payloads, and evidence remain traceable without reverse engineering;
+- generated XML is a composed result and must not be mislabeled as though it always came from one exclusive preset;
+- every user-facing and modder-facing entry point must use the same authoritative composition rules;
+- downstream reuse does not guarantee compatibility, vendor endorsement, official-project status, or upstream support for a modified package.
 
 ## Multi-Solution Identity
 

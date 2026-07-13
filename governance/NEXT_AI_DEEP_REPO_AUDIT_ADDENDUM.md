@@ -16,7 +16,7 @@ Before making implementation changes:
 - Do **not** modify, regenerate, rename, or silently repair the `v4.0.1` archives.
 - Do **not** describe `v4.0.1` as reproducible from its tag. The full archive contains a different GUI script from the tagged source.
 - Do **not** use the current no-scripts archive as a passing fixture for new documentation rules. Preserve it as historical evidence with known defects.
-- Do **not** choose a fixed no-scripts gameplay preset, support duration, private security contact, merge policy, or Nexus publication action for the owner.
+- Do **not** choose tuning values, replace the accepted wrapper-composition model with a fixed or mutually exclusive preset model, choose support duration, select a private security contact, define merge policy, or take a Nexus publication action for the owner.
 - Do **not** commit commercial game binaries, full proprietary game configuration files, saves, logs with private paths, server data, or extracted game assets.
 
 ## Confirmed Historical Evidence
@@ -43,7 +43,7 @@ Record these in an owner-decision register. Block dependent release work until a
 
 The active owner-decision register is `governance/OWNER_DECISION_INTERVIEW.md`. Do not ask the owner to repeat decisions already recorded there.
 
-1. **No-scripts product value:** choose a meaningful fixed preset, several clearly named mutually exclusive presets, or an honestly labeled vanilla baseline/template. The AI must not select tuning values.
+1. **No-scripts product value — partially resolved by Q1-Q4:** provide meaningful behavior, understandable feature choices in one non-fragmented Nexus distribution, and preserve the wrapper as the reusable composition boundary. The exact scanner-friendly representation and tuning values remain open. The AI must not select them or reintroduce mutually exclusive preset-package assumptions.
 2. **Active editions:** decide whether `FullPackage`, no-scripts, and modlet-only/Vortex remain supported `4.1.0` products or whether any become historical/source-only.
 3. **Mod-manager claim:** decide whether to test and support Vortex specifically or rename the unverified variant to generic `ModletOnly`.
 4. **Artifact retention:** decide whether future release archives are committed under an immutable ledger, attached only to GitHub releases, or both.
@@ -69,6 +69,14 @@ verified | observed | inferred | unverified
 ```
 
 Each compatibility/evidence record should include the evidence date, game build or fingerprint, test ID, source commit, environment classification, and revalidation trigger. `Expected` may be explanatory prose but is not evidence maturity.
+
+Composition vocabulary:
+
+```text
+feature input -> wrapper/composer -> resolution rule -> generated modlet
+```
+
+The feature input expresses an independently selectable intent. The wrapper/composer reads the supported baseline and combines selected inputs. Resolution rules reconcile shared values and interactions. The generated modlet is the coherent output, not the reusable architecture itself.
 
 Artifact lifecycle:
 
@@ -152,11 +160,13 @@ For each edition record:
 - install, upgrade, remove, and support disposition;
 - source/support URL, license, and unofficial status.
 
-A public artifact must produce its advertised outcome. On the matching baseline, the current no-scripts and modlet-only XML reassert vanilla values and have no intended tuning effect. This must become an explicit owner decision and tested product contract.
+A public artifact must produce its advertised outcome. On the matching baseline, the current no-scripts and modlet-only XML reassert vanilla values and have no intended tuning effect. Q1 requires meaningful behavior, while Q4 establishes the wrapper/composer rather than mutually exclusive preset packages as the reusable model. Exact scanner-friendly representation and tuning values remain owner decisions and tested product-contract work.
 
 ### Slice E: Create Testable Architecture
 
 The current GUI script mixes UI construction, game discovery, tuning logic, XML generation, install/remove, server configuration, backup/restore, and validation in one file of roughly 2,500 lines.
+
+Preserve its confirmed composition behavior: independently selected animal levels are reconciled through shared-density and pressure-route rules, then emitted as one `entitygroups.xml` and `spawning.xml` pair. Extraction must not turn these feature inputs into mutually exclusive artifacts. The pending Q5 decision governs whether the extracted composition core becomes a supported non-GUI attachment surface; current source structure alone does not prove a stable integration API.
 
 Extract or isolate:
 

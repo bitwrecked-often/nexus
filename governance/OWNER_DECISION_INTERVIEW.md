@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q4
+- Current question: Q5
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -55,7 +55,7 @@ Decision consequence:
 
 - The `4.1.0` scanner-friendly main download must deliver an observable, intentionally selected tuning outcome.
 - It must not be shipped as a vanilla no-op while presented as active tuning.
-- The exact preset shape and values remain undecided and require subsequent owner answers and field evidence.
+- The exact feature-choice shape and tuning values remain undecided and require subsequent owner answers and field evidence.
 - Release evidence must link this decision to implementation, tests, packaged files, and user-facing wording.
 
 Decision state: accepted; dependent design remains open
@@ -88,6 +88,12 @@ Decision consequence:
 - Exact preset count, values, names, and archive layout remain open.
 
 Decision state: accepted; packaging shape remains open
+
+Later interpretation correction:
+
+- The owner accepted multiple understandable choices, but the word `preset` led the AI to infer separate, mutually exclusive package outputs.
+- Source review and Q4 established that the existing tool already composes independent feature choices through one wrapper.
+- The mutually exclusive-package and conflicting-preset consequences above are retained as reasoning history but superseded by Q4. Q2 does not require separate prebuilt modlets.
 
 ### Q3 — One Download Or Separate Downloads
 
@@ -123,11 +129,65 @@ Decision consequence:
 
 Decision state: accepted; composition rules remain open
 
-### Q4 — Player Preset Exclusivity
+Later interpretation correction:
+
+- The one-download answer remains accepted: the related scanner-friendly choices should not be fragmented across separate Nexus files.
+- The inferred `preset collection`, separate preset index, and one-preset-at-a-time mechanics were too literal and are superseded by Q4.
+- The durable modder requirement is reuse of the wrapper and its composition method. The exact scanner-friendly representation remains open.
+
+### Q4 — Reusable Wrapper Boundary
+
+Withdrawn question:
+
+> Should ordinary players install exactly one preset at a time, even though modders may reuse preset definitions in broader feature-set pipelines?
+
+Answer: withdrawn without an owner decision
+
+Withdrawal reason:
+
+- The question treated generated choices as separate preset packages and imposed an exclusivity model that was neither present in the source nor intended by the owner.
+- It was stopped before answer and therefore grants no product or implementation authority.
+
+Replacement question established by owner clarification:
+
+> Should modders be able to use the wrapper as-is and attach it to other feature-set work?
+
+Answer: yes
+
+Owner clarification (normalized for readability):
+
+> The tool was set up as a wrapper. Modders should be able to use it as-is and bolt it onto whatever.
+
+Originating implementation evidence:
+
+- `7DTD_WastelandAnimalPopulationTuning_Tool.ps1` accepts independently selected animal levels rather than requiring one global preset.
+- `Get-DensityLevelFromAnimalLevels` resolves shared density from the combined selection.
+- `Get-PressureSpawnRoutes` adds routes only for selected features that require them.
+- `Write-InstalledAnimalConfig` and `Write-InstalledSpawningConfig` emit one resolved `entitygroups.xml` and `spawning.xml` pair into one installed modlet.
+
+Governing ideals:
+
+- Keep the composition mechanism useful without requiring a modder to dismantle or reverse-engineer it.
+- Resolve interacting feature choices at one documented boundary so the installed result remains coherent.
+- Make reuse explicit while keeping compatibility and official-support claims evidence-based.
+
+Decision consequence:
+
+- Treat the wrapper/composer, not a mutually exclusive preset package, as the reusable architecture boundary.
+- Preserve independently selectable feature inputs and deterministic resolution into one coherent modlet output.
+- Document the inputs, composition rules, generated outputs, attachment boundary, and validation expectations for modders.
+- Do not imply that `bolt it onto whatever` guarantees compatibility with every downstream mod. Downstream combinations require their own evidence and are not automatically official project releases.
+- Q4 supersedes Q2's mutually exclusive-package inference and Q3's separate preset-layer inference; it does not supersede their accepted goals of understandable choice and one non-fragmented Nexus distribution.
+
+Decision state: accepted; attachment interface shape remains open
+
+Supersedes: the withdrawn Q4 question; Q2 mutually exclusive-package consequence; Q3 separate preset-layer consequence
+
+### Q5 — Headless Composition Boundary
 
 Question:
 
-> Should ordinary players install exactly one preset at a time, even though modders may reuse preset definitions in broader feature-set pipelines?
+> Should the wrapper's composition engine be usable without opening the graphical interface?
 
 Answer: pending
 
