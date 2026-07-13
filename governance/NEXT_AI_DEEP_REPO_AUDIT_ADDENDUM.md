@@ -127,7 +127,9 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 
 The GUI already tolerates the missing image. Q17 preserves existing Bit Wrecked text, legal provenance, mod/folder IDs, install/remove targets, backup names, and diagnostics for `4.1.0`. That qualified decision keeps the QA-frozen technical identity stable while GPL source remains reusable downstream. Configurable branding or a domain-neutral/white-label derivative is future feature work requiring its own migration and tests.
 
-Q18 asks whether to consolidate the customer-relevant essentials from `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` into `README_FIRST.txt` while preserving the full GPL and source-file notices. README/changelog license scope also remains open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No candidate build is authorized before those GPL decisions.
+Q18 establishes a public-surface priority: user clarity/safety first, applicable legal/vendor/industry obligations second, and restrained project identification in the remaining surface. Consolidate the customer-relevant essentials from `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` into `README_FIRST.txt` while preserving the full GPL and source-file notices. Keep the separate documents in repository source and do not copy their publishing guardrails into a customer notice as additional GPL redistribution conditions.
+
+Q19 asks whether the README and changelog themselves should be GPL-3.0-or-later. No candidate build is authorized before that documentation scope and later planning gates are resolved.
 
 ## Confirmed Historical Evidence
 

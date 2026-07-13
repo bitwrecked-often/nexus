@@ -22,7 +22,9 @@ The resulting exact primary allowlist contains eight files: root README and laun
 
 Q17 resolves the portable identity boundary for `4.1.0`: remove only the optional avatar and preserve existing Bit Wrecked copyright, author metadata, GUI text, mod/folder identifiers, install/remove targets, backup names, diagnostics, and official-release provenance. Do not mistake open-source reuse for an instruction to anonymize the supported upstream package. A configurable-brand or white-label derivative is future feature work, not current authority.
 
-Q18 asks whether `README_FIRST.txt` should become the one plain-language GPL/source/no-warranty/unofficial-origin notice while the full `LICENSE.txt` and per-file notices remain. README/changelog license scope also remains open. Do not stage or build the candidate until those GPL documentation decisions are recorded.
+Q18 establishes the customer-surface order: respect user clarity and safety first, applicable GPL/Nexus/industry obligations second, and restrained Bit Wrecked identity in the remaining surface. Make `README_FIRST.txt` the one plain-language GPL/source/no-warranty/unofficial-origin notice while the full `LICENSE.txt` and per-file notices remain intact. Keep `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` in repository source, not the primary customer ZIP, and do not import their publishing guardrails as downstream license restrictions.
+
+Q19 asks whether the README and changelog themselves should be GPL-3.0-or-later. Do not stage or build the candidate until that documentation scope and later planning gates are recorded.
 
 ## Start Here
 

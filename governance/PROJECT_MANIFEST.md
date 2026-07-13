@@ -107,6 +107,16 @@ Every public release should present the same facts through three layers:
 
 Automation must check that these layers agree on identity, requirements, behavior, and available features.
 
+### Public Surface Priority
+
+When space, attention, or complexity compete, present information in this order:
+
+1. **Respect the user** — purpose, requirements, safe operation, verification, removal, recovery, and help in plain language.
+2. **Respect the field** — applicable GPL, Nexus/vendor, security, archive, evidence, and ecosystem obligations stated accurately and proportionately.
+3. **Identify the source** — authorship, official-project identity, support route, and restrained branding in the surface that remains.
+
+This is a presentation hierarchy, not a hierarchy of legal authority. Mandatory copyright/license notices, artifact identity, and safety warnings remain. Branding must not crowd out operation or compliance, while user-friendliness must not hide material risks or license duties.
+
 ## Artifact Truth And Usefulness
 
 Every public artifact is its own product contract. Its name, description, documentation, payload, behavior, license, and support status must agree.
@@ -175,6 +185,8 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 The executable portion is readable source form. Q16 supersedes Q14's planned avatar inclusion and removes that optional decorative personalization from the future primary customer ZIP so the package can move more cleanly between domains. The avatar remains intact in repository history and the immutable `4.0.1` archive. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` remain open. The allowlist authorizes planning and validation rules, not a candidate build or a runtime change.
 
 Cross-domain portability does not silently erase authorship, copyright notices, stable technical identifiers, or official-release provenance. Q17 locks the `4.1.0` boundary: remove only the optional avatar while preserving existing Bit Wrecked legal identity, UI text, mod/folder IDs, install/remove targets, backup names, and diagnostics. Portability comes from readable GPL source and a reusable boundary, not from presenting the official package as anonymous. A domain-neutral or white-label derivative is future feature work with its own identity, migration, tests, and owner approval.
+
+Q18 applies the public-surface priority to the primary README: one concise customer document carries the plain-language GPL freedoms and duties, exact source route, no-warranty statement, and unofficial-origin notice. The complete `LICENSE.txt` and source-file notices remain authoritative and intact. Separate maintainer-oriented legal/use notes stay in the repository rather than increasing customer-package friction.
 
 ### Wrapper As A Composable Feature-Set Boundary
 

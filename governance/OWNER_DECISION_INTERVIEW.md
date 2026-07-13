@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q18
+- Current question: Q19
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -749,6 +749,51 @@ Decision state: accepted with owner uncertainty; preserve current identity for `
 Question:
 
 > Should `README_FIRST.txt` carry the single plain-language GPL, source, no-warranty, and unofficial-origin notice while `LICENSE.txt` and the source-file notices remain intact?
+
+Answer: qualified yes
+
+Owner priority (normalized for readability):
+
+> Respect the users first, then the industry, then place the identifier on whatever surface is left.
+
+Originating repository evidence:
+
+- The current primary README gives launch and feature guidance but only one license-identifier line, no exact public source route, and a short unofficial-mod statement.
+- `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` repeat useful GPL, no-warranty, and origin guidance alongside maintainer/publishing guardrails that should not become extra downstream restrictions.
+- The accepted eight-file customer allowlist includes `README_FIRST.txt` and the complete `LICENSE.txt`, but excludes those two separate explanatory documents.
+- The BAT, PowerShell, and XML files retain their copyright/SPDX notices independently of the README.
+
+Governing ideals:
+
+- A casual player should encounter the shortest safe path before legal mechanics or promotion.
+- Industry and GPL obligations must be complete and accurate without making the customer reverse-engineer maintainer documents.
+- Project identity should remain discoverable and trustworthy without occupying the surface needed for operation, safety, or rights.
+- Plain-language summaries explain the contract; they do not replace or modify the full GPL text.
+
+Decision consequence:
+
+- Make `README_FIRST.txt` the single plain-language customer notice for the primary ZIP. Keep the full `Support_Files_Do_Not_Edit/LICENSE.txt` and all source-file notices intact.
+- Structure the README in this presentation order:
+
+```text
+user: purpose -> requirements -> launch/use -> safety -> verify/remove/help
+field: executable/source disclosure -> GPL freedoms/duties -> exact source version
+       -> no warranty -> unofficial-mod/vendor boundary
+identity: concise Bit Wrecked authorship and official source/support route
+```
+
+- Keep `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` as repository/source material, not customer-package files. Merge only accurate customer-relevant substance; do not import restrictions on downstream GPL use, modification, sale, repackaging, or redistribution.
+- State that `Support_Files_Do_Not_Edit` is an operational cue for casual users, not a limitation on GPL modification rights.
+- Validate the README against the exact eight-file archive so it mentions no excluded avatar, maintainer tool, advanced CLI, or absent document.
+- Do not modify the frozen solution documentation yet; apply this approved content contract only after the required per-file QA-baseline fingerprint and remaining planning decisions are complete.
+
+Decision state: accepted with user-first presentation qualification; exact documentation license scope remains open
+
+### Q19 — Documentation License Scope
+
+Question:
+
+> Should `README_FIRST.txt` and `CHANGELOG.md` themselves be GPL-3.0-or-later with the rest of the primary package?
 
 Answer: pending
 
