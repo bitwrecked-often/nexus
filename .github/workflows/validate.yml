@@ -39,7 +39,19 @@ jobs:
 
       - name: Run offline validation
         shell: pwsh
-        run: ./tests/release/Invoke-OfflineTests.ps1
+        run: |
+          $output = @(& pwsh -NoProfile -File ./tests/release/Invoke-OfflineTests.ps1 2>&1 | ForEach-Object { "$_" })
+          $exitCode = $LASTEXITCODE
+          $output | ForEach-Object { Write-Host $_ }
+          if ($exitCode -ne 0) {
+              $diagnostic = @($output | Where-Object { $_ -match '^(FAIL:|  )' } | Select-Object -Last 20)
+              if ($diagnostic.Count -eq 0) {
+                  $diagnostic = @($output | Select-Object -Last 20)
+              }
+              $message = ($diagnostic -join "`n").Replace("%", "%25").Replace("`r", "%0D").Replace("`n", "%0A")
+              Write-Host "::error title=Offline validation failed::$message"
+              exit $exitCode
+          }
 
       - name: Reject whitespace errors
         shell: pwsh
