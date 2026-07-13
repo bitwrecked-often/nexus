@@ -132,6 +132,14 @@ Current filesystem, Git, and artifact evidence overrides a stale handoff stateme
 
 Keep governance/infrastructure history separate from the player-facing solution changelog. Players need payload, packaging, compatibility, install, upgrade, support, and known-issue changes; maintainers need process and governance history.
 
+## Chain Of Custody For Ideals
+
+Preserve how important product and engineering decisions formed. A decision record should connect the original field observation or risk to the governing ideal, owner answer, implementation, tests, artifact, and eventual release claim.
+
+This record exists so users, reviewers, and other makers can study the method, reproduce the reasoning, challenge assumptions, and adapt the work without relying on oral history. Show enough work to make the project useful research while excluding private conversations, tester identities, machine data, and irrelevant personal material.
+
+If a later decision changes an earlier one, retain both and link the superseding relationship. Do not rewrite history to make the final path look inevitable.
+
 ## Safe Inputs And Evidence
 
 Use minimal synthetic or explicitly redistributable fixtures in source control. Do not commit commercial game binaries, full proprietary configuration files, saves, extracted game assets, server data, private tester communications, or raw logs containing identifying paths unless redistribution and privacy authority are explicitly documented.
