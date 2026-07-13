@@ -257,13 +257,31 @@ Decision state: accepted; Nexus file placement remains open
 
 ### Q7 — Primary Nexus File
 
-Question:
+Original question:
 
 > Should the scanner-friendly no-scripts package be the primary Nexus file for `4.1.0`?
+
+Owner response: undecided
+
+Owner observation (normalized for readability):
+
+> Making the no-scripts edition primary seems like extra product surface.
+
+Clarification:
+
+- Q6 already keeps both editions supported.
+- `Primary` only decides which edition Nexus presents as the obvious/default player path; it does not remove the other edition.
+- The accepted casual-gamer focus points toward the graphical wrapper, while no-scripts can remain available for static inspection and users who prefer a code-free package.
+
+Reframed question:
+
+> Should the graphical wrapper be the primary Nexus file, with no-scripts offered as a supported optional file?
 
 Answer: pending
 
 Consequence: pending
+
+Decision state: pending; no placement authority inferred from uncertainty
 
 ## Decision Chain-Of-Custody Standard
 
