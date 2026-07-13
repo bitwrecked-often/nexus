@@ -86,7 +86,7 @@ Q13 excludes `Support_Files_Do_Not_Edit/Advanced_CommandLine` from the primary c
 
 ### Copyleft-Complete Internal Allowlist Shaped By Q14
 
-Q14 provisionally accepts this source-form primary-package allowlist for planning:
+Q14 originally provisionally accepted this source-form primary-package allowlist for planning. Its avatar entry is preserved here as decision history and superseded by Q16:
 
 ```text
 README_FIRST.txt
@@ -110,9 +110,24 @@ GNU GPLv3, GNU's GPL application guide, and the GNU GPL FAQ were reviewed on 202
 
 Apply the license/source/provenance gate independently to every edition, including no-scripts and Vortex. The historical Vortex license defect remains preserved evidence, not permission to repeat it. If object code is introduced later, review and test the Corresponding Source method before release.
 
-The avatar is the only non-document, non-code asset in the provisional allowlist. Q15 records the owner's attestation that Bit Wrecked owns the exact PNG with SHA-256 `6131A56A3C966EDE04B3E0A60D5EDCA3D4CB24D69425012BB2C0686D50E88562`; the same bytes occur in the immutable historical FullPackage. Repository history and public YouTube use are context, not the license grant. Q16 asks whether the avatar itself should be GPL-3.0-or-later. Its preferred editable source and brand/trademark treatment remain open.
+Q15 records the owner's attestation that Bit Wrecked owns the exact avatar PNG with SHA-256 `6131A56A3C966EDE04B3E0A60D5EDCA3D4CB24D69425012BB2C0686D50E88562`; the same bytes occur in the immutable historical FullPackage. Repository history and public YouTube use are context, not the license grant. Q16 supersedes the avatar portion of Q14 and excludes the optional PNG from the future primary `4.1.0` ZIP for cross-domain portability. Preserve the repository source and historical archive unchanged; do not attempt to revoke or reinterpret rights already conveyed with historical copies.
 
-README/changelog license scope and consolidation of `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` essentials into `README_FIRST.txt` also remain open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No Q14 candidate build is authorized before those GPL/provenance decisions.
+The current primary allowlist is therefore exactly:
+
+```text
+README_FIRST.txt
+7DTD_WastelandAnimalTuning.bat
+Support_Files_Do_Not_Edit/7DTD_WastelandAnimalPopulationTuning_Tool.ps1
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/ModInfo.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/entitygroups.xml
+Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml
+Support_Files_Do_Not_Edit/LICENSE.txt
+Support_Files_Do_Not_Edit/CHANGELOG.md
+```
+
+The GUI already tolerates the missing image. Q17 decides whether existing Bit Wrecked text, legal provenance, and technical identifiers remain frozen or a broader de-branding scope is intended.
+
+README/changelog license scope and consolidation of `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` essentials into `README_FIRST.txt` also remain open. Do not copy `LEGAL_AND_USE.md` publishing guardrails into a customer notice as additional GPL redistribution conditions. No candidate build is authorized before those identity and GPL decisions.
 
 ## Confirmed Historical Evidence
 

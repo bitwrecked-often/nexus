@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q16
+- Current question: Q17
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -624,8 +624,9 @@ Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
 - Review any future compiled or object-code addition separately for Corresponding Source obligations; Q14 approves only the present source-form package shape.
 - Treat “official project release” language as provenance and support clarification, never as a restriction on copying, modifying, or redistributing under GPL-3.0-or-later.
 - Do not alter the frozen runtime or build a candidate yet. Q15 resolves avatar ownership; Q16 and later decisions must close its remaining license/source treatment and the plain-language notice consolidation.
+- Later result: Q16 selected Q14's removal branch for the avatar, so the current primary allowlist has eight files. Preserve this nine-file proposal as the decision path, not the current package contract.
 
-Decision state: accepted with copyleft-completeness conditions; avatar provenance and plain-language notice consolidation remain open
+Decision state: accepted with copyleft-completeness conditions; avatar portion superseded by Q16, plain-language notice consolidation remains open
 
 ### Q15 — Avatar Ownership
 
@@ -659,14 +660,57 @@ Decision consequence:
 - Treat the same bytes in the historical FullPackage as covered by the ownership attestation without modifying that immutable archive.
 - Do not yet mark the avatar distributable in the `4.1.0` candidate. Q15 establishes ownership only; Q16 must decide its copyright license, and a later record must identify its preferred editable source and brand/trademark treatment.
 - Do not treat the YouTube presence as a license grant, an endorsement, or proof of an exact public URL until separately recorded and verified.
+- Later result: Q16 excludes the avatar from the future primary `4.1.0` ZIP instead of selecting a new license. Its license/preferred-source questions no longer block that edition but remain required before any future redistribution.
 
-Decision state: accepted; ownership resolved by owner attestation, license and preferred-source classification pending
+Decision state: accepted; ownership resolved by owner attestation, primary-package inclusion superseded by Q16
 
-### Q16 — Avatar Copyright License
+### Q16 — Cross-Domain Avatar Boundary
+
+Original question:
+
+> Should the avatar image itself be released under GPL-3.0-or-later with the package?
+
+Owner response: not answered; asked whether the image could instead be fixed or removed
+
+Clarifying evidence:
+
+- The GUI loads the PNG only inside a `Test-Path` condition. If it is absent, no picture control is created and the tool continues to launch.
+- The visible `Bit Wrecked` text and title are separate from the image, so omitting the PNG removes the decorative avatar without making the package anonymous.
+- Creating or editing a replacement image would introduce a new asset fingerprint, provenance record, license/source decision, and visual-QA surface.
+
+Reframed question:
+
+> Should we remove the optional avatar from the `4.1.0` primary ZIP while retaining the existing text branding?
+
+Answer: yes to removing the avatar, with a cross-domain portability qualification; the breadth of retained personalization remains open
+
+Owner rationale (normalized for readability):
+
+> If we do this correctly, remove personalization so the package flows between domains.
+
+Governing ideals:
+
+- Portable infrastructure separates reusable behavior from unnecessary decorative personalization.
+- The smallest safe baseline change uses the GUI's existing optional-asset path instead of redesigning or rewriting the QA-frozen tool.
+- Portability must not be confused with erasing legal provenance, breaking stable paths, or silently creating an unbranded/white-label product.
+
+Decision consequence:
+
+- Remove `Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png` from the future primary `4.1.0` customer ZIP allowlist, reducing it from nine files to eight.
+- Keep the source PNG, ownership record, and immutable historical FullPackage unchanged. Do not edit or replace the image for this baseline.
+- Validate the primary candidate rejects the avatar and all other non-allowlisted images.
+- Do not treat the unanswered original GPL-license question as a license grant or revocation. Exclusion from `4.1.0` does not alter rights already conveyed with any historical copy.
+- Do not yet remove or rename `Bit Wrecked` copyright notices, author metadata, window/status text, backup names, mod folder/ID, or install paths. Those span legal provenance and technical identity, and Q16 does not authorize changing them.
+- Ask Q17 to distinguish removal of optional decorative branding from a broader de-branding/white-label change that would reopen the frozen technical baseline.
+- Do not build a candidate until the remaining package/license decisions are complete.
+
+Decision state: accepted for avatar exclusion; supersedes the avatar portion of Q14, broader personalization scope pending
+
+### Q17 — Portable Identity Boundary
 
 Question:
 
-> Should the avatar image itself be released under GPL-3.0-or-later with the package?
+> Should `4.1.0` remove only the optional avatar while preserving its existing Bit Wrecked names, copyright notices, and technical identifiers?
 
 Answer: pending
 

@@ -159,7 +159,7 @@ Minimal packaging must remove customer-irrelevant material without removing the 
 
 Record every distributed non-code asset in `ASSET_PROVENANCE.md`. Ownership, public use as a brand, copyright license, trademark treatment, and preferred editable source are separate fields; evidence for one must not be silently treated as evidence for the others.
 
-For the Q14 primary `4.1.0` package, the provisionally accepted source-form allowlist is:
+For the Q14/Q16 primary `4.1.0` package, the accepted eight-file source-form allowlist is:
 
 ```text
 README_FIRST.txt
@@ -170,10 +170,11 @@ Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config
 Support_Files_Do_Not_Edit/BitWrecked_7DTD_WastelandAnimalPopulationTuning/Config/spawning.xml
 Support_Files_Do_Not_Edit/LICENSE.txt
 Support_Files_Do_Not_Edit/CHANGELOG.md
-Support_Files_Do_Not_Edit/Assets/bit-wrecked-channel-avatar.png
 ```
 
-The executable portion is readable source form. Q15 records the owner's attestation that Bit Wrecked owns the exact avatar already present in source and the historical full archive, but the nine-file set is not final until its license and preferred editable source are recorded. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` also remain open. Q14 authorizes planning and validation rules, not a candidate build or a runtime change.
+The executable portion is readable source form. Q16 supersedes Q14's planned avatar inclusion and removes that optional decorative personalization from the future primary customer ZIP so the package can move more cleanly between domains. The avatar remains intact in repository history and the immutable `4.0.1` archive. The README/changelog license scope and plain-language license/use notice consolidation into `README_FIRST.txt` remain open. The allowlist authorizes planning and validation rules, not a candidate build or a runtime change.
+
+Cross-domain portability does not silently erase authorship, copyright notices, stable technical identifiers, or official-release provenance. Q17 decides whether `4.1.0` portability stops at removing the optional avatar or reopens the frozen identity/UI scope.
 
 ### Wrapper As A Composable Feature-Set Boundary
 

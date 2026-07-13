@@ -36,11 +36,11 @@ A Git commit proves repository history, not copyright ownership. Public display 
 | Copyright holder | Bit Wrecked — owner attestation recorded by Q15 on 2026-07-12 |
 | Ownership evidence | Explicit owner answer in `OWNER_DECISION_INTERVIEW.md`; Git history is corroborating identity/history only |
 | Public identity context | Owner reports that the Bit Wrecked YouTube presence is open in the workspace for review; exact URL and identity match not yet retained as evidence |
-| Copyright license | Pending Q16 |
-| Preferred editable source | Pending owner record; do not assume the PNG is or is not the preferred form |
-| Brand/trademark treatment | Pending; keep separate from the copyright license |
-| Planned distribution | Provisional member of the primary `4.1.0` ZIP allowlist |
-| Release status | Blocked until copyright license and preferred editable source are recorded |
+| Copyright license | Not selected by Q16; exclusion from `4.1.0` does not revoke or reinterpret rights already conveyed with historical copies |
+| Preferred editable source | Not required for the primary `4.1.0` gate while excluded; still unrecorded for any future redistribution |
+| Brand/trademark treatment | Decorative avatar excluded by Q16; broader Bit Wrecked identity boundary pending Q17 |
+| Planned distribution | Excluded from the primary `4.1.0` ZIP by Q16; retained as repository source and historical evidence |
+| Release status | Not a `4.1.0` customer artifact; must pass license/source review if reintroduced later |
 
 ## Validation Rule
 
