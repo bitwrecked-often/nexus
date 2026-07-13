@@ -42,11 +42,12 @@ Read these files completely before making changes:
 6. `governance/PROJECT_MANIFEST.md`
 7. `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`
 8. `governance/OWNER_DECISION_INTERVIEW.md`
-9. `governance/EXECUTION_PLAN.md`
-10. `governance/ASSET_PROVENANCE.md`
-11. `solutions/README.md`
-12. This packet
-13. The active solution's `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, `CHANGELOG.md`, and validation script
+9. `governance/REPOSITORY_TRUTH_MAP.md`
+10. `governance/EXECUTION_PLAN.md`
+11. `governance/ASSET_PROVENANCE.md`
+12. `solutions/README.md`
+13. This packet
+14. The active solution's current manifest and checked projections; treat legacy `PACKAGE_METADATA.md`, `TECHNICAL_FILE_MANIFEST.md`, release notes, and upload notes according to the truth map
 
 Active solution root:
 

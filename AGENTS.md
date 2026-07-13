@@ -4,7 +4,7 @@ This repository is used only to develop, validate, package, and publish open-sou
 
 These instructions apply to the entire repository.
 
-The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet. For `4.1.0` baseline work, also read `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md` and `governance/OWNER_DECISION_INTERVIEW.md`, then use `governance/EXECUTION_PLAN.md` to select the single current phase before running packaging or validation commands.
+The enduring project principles and vendor/customer views are defined in `governance/PROJECT_MANIFEST.md`. Read it before designing repository-wide infrastructure or a public release packet. For `4.1.0` baseline work, also read `governance/NEXT_AI_DEEP_REPO_AUDIT_ADDENDUM.md`, `governance/OWNER_DECISION_INTERVIEW.md`, and `governance/REPOSITORY_TRUTH_MAP.md`, then use `governance/EXECUTION_PLAN.md` to select the single current phase before running packaging or validation commands.
 
 Before adding, removing, licensing, or packaging an image or branding asset, read `governance/ASSET_PROVENANCE.md`. An owner statement, repository commit, public profile, and license grant are different evidence and must remain distinguishable.
 

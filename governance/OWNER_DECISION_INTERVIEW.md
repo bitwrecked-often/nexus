@@ -63,7 +63,7 @@ Decision state: accepted; dependent design remains open
 Later baseline resolution from Q9 and Q11:
 
 - The existing QA-approved technical behavior and tuning values are frozen for `4.1.0`; the AI has no remaining authority to choose or change them.
-- Q12 addresses the truthful documentation role of the unchanged no-scripts payload without reopening technical scope.
+- Q12's original no-scripts question was withdrawn and replaced by the primary ZIP-shape decision. Q7 later made the graphical wrapper primary and no-scripts optional. Because the frozen static payload remains vanilla-equivalent, the execution plan blocks or defers that optional edition rather than claiming Q12 resolved its outcome.
 
 ### Q2 — No-Scripts Choice Without Code
 

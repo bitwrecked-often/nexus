@@ -447,9 +447,12 @@ When repository sources conflict, apply:
 current explicit user authorization
 -> AGENTS.md
 -> PROJECT_MANIFEST.md
+-> recorded decisions in OWNER_DECISION_INTERVIEW.md
 -> current repository/release policy
 -> active per-solution manifest
+-> REPOSITORY_TRUTH_MAP.md until its facts are projected into that manifest
 -> this deep-audit addendum
+-> EXECUTION_PLAN.md for routing only
 -> bounded work packet
 -> historical documentation
 ```
