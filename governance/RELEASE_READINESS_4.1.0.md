@@ -16,7 +16,7 @@ this planning set.
 | Solution | `7DTD 3.0 Wasteland Animal Population Tuning` |
 | Version | `4.1.0` (`4.1.0-dev` workspace projection) |
 | Edition | `windows-gui` primary |
-| Development source | `develop/4.1.0` commit `789f7c8ebc29eea72d27d05b31626eee729a60b4` |
+| Package-preparation checkpoint | `develop/4.1.0` commit `789f7c8ebc29eea72d27d05b31626eee729a60b4` |
 | Planned filename | `7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip` |
 | Runtime mod/folder ID | `BitWrecked_7DTD_WastelandAnimalPopulationTuning` |
 | License | `GPL-3.0-or-later` |
@@ -48,6 +48,8 @@ validator, raw QA material, and historical ZIPs are excluded.
 ## Guarantees Proven Offline
 
 - Full offline gate: `25 passed, 0 failed` on commit `789f7c8`.
+- GitHub-hosted `windows-2022` validation and whitespace checks passed for
+  commit `29bcb4b` in [run 29234918528](https://github.com/bitwrecked-often/nexus/actions/runs/29234918528).
 - All 32 raw Git blobs in the owner-approved source baseline match their SHA-256
   record.
 - Frozen BAT, XML tuning, and GPL bytes are unchanged.
@@ -92,8 +94,8 @@ evidence.
   and no owner-authorized meaningful static outcome exists.
 - `vortex` remains blocked pending a GPL-complete exact candidate and a recorded
   import-through-removal audit.
-- First GitHub Actions execution is pending after push; workflow presence is not
-  a passing-run claim.
+- The passing GitHub Actions run proves the repository's offline workflow on its
+  hosted runner; it does not prove live-game or Nexus behavior.
 - Root/governance license scope, private security/conduct contacts, `CODEOWNERS`,
   and unverified live GitHub protection settings remain separate honest gates.
 - Main-branch lifecycle, merge method, merge/tag order, and exact future tag

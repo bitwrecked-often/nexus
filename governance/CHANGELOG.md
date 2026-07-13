@@ -35,3 +35,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Aligned the `4.1.0` customer guide, package metadata projections, solution changelog, routing documents, and historical-document banners without changing the frozen launcher or XML behavior.
 - Added repository hygiene, privacy-aware contribution and issue intake, evidence templates, offline tests, and a least-privilege full-SHA-pinned Windows validation workflow while recording that committed controls do not prove live GitHub settings.
 - Completed the non-behavioral infrastructure gate at `25 passed, 0 failed` and opened a concise owner-facing `4.1.0` readiness review without constructing or authorizing a candidate.
+- Recorded the first hosted CI chain of custody: two unwaived diagnostic failures followed by a passing full offline/whitespace run after isolating the suite in a dedicated PowerShell process and preserving captured failure output.

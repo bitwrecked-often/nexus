@@ -45,7 +45,7 @@ The following items require repository-owner or GitHub service evidence. They mu
 
 | Live control | Current evidence state | Required confirmation |
 | --- | --- | --- |
-| First GitHub Actions run | Pending | Link and commit SHA for a passing run of `Offline validation` |
+| GitHub Actions validation | Passed for commit `29bcb4b85e6ea4dae3c21c614740c702279ed3f9` on 2026-07-13 UTC | [Offline validation run 29234918528](https://github.com/bitwrecked-often/nexus/actions/runs/29234918528) |
 | Default-branch ruleset and required check | Unverified | Export, screenshot, or settings record after the first green run |
 | Force-push and branch-deletion protection | Unverified | Ruleset evidence |
 | Repository visibility/default branch | Observed public with default branch `main` at `2026-07-13T07:31Z` | Recheck before a release-sensitive policy change |
@@ -64,6 +64,18 @@ The following items require repository-owner or GitHub service evidence. They mu
 - `CODEOWNERS` waits for an authorized GitHub user or team mapping.
 
 These are honest gates, not omissions to disguise. None blocks offline preparation of the GPL-complete primary solution package.
+
+## CI Run Chain Of Custody
+
+| Run | Commit | Result | Disposition |
+| --- | --- | --- | --- |
+| [29234506647](https://github.com/bitwrecked-often/nexus/actions/runs/29234506647) | `cb23a18` | Failed | Direct host-process execution exited during offline validation; public API exposed no detailed log. No gate was waived. |
+| [29234726482](https://github.com/bitwrecked-often/nexus/actions/runs/29234726482) | `b94cd01` | Failed | Per-check annotations did not capture the unexpected outer-process exit. The workflow was changed to isolate the suite and capture its exit/output. |
+| [29234918528](https://github.com/bitwrecked-often/nexus/actions/runs/29234918528) | `29bcb4b` | Passed | Dedicated PowerShell child completed the full offline suite; whitespace validation also passed. |
+
+The isolated runner invocation is the retained CI contract. Earlier failures are
+kept here so a future maintainer can see why the workflow shape changed instead
+of mistaking diagnostic evolution for a waived test.
 
 ## Reference Basis
 
