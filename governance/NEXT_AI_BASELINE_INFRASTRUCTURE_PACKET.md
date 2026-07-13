@@ -26,7 +26,9 @@ Q18 establishes the customer-surface order: respect user clarity and safety firs
 
 Q19 licenses both `README_FIRST.txt` and `CHANGELOG.md` under `GPL-3.0-or-later`. Their plain text/Markdown is the preferred editable source. Preserve/add explicit Bit Wrecked copyright and SPDX notices, keep the complete GPL in the artifact, and require distributed modifications to remain GPL and be identified. This decision does not silently license every governance file.
 
-Q20 reopens Q10 with a concrete artifact-storage policy: decide whether future final ZIPs stay out of Git history as GitHub Release attachments while committed checksums, inventories, and provenance preserve chain of custody. Do not infer the answer or create a release.
+Q20 resolves Q10: future final ZIPs stay out of Git history and become GitHub Release attachments, while committed checksums, inventories, provenance, and release references preserve chain of custody. Use an ignored `dist/<solution-id>/<version>/` tree with separate `candidate/`, `final-upload/`, and `evidence/` directories. `final-upload/` must contain only the exact validated ZIPs intended for external upload. Historical committed ZIPs remain grandfathered and immutable. Do not create a candidate, release, or upload merely because the storage policy is decided.
+
+Q21 asks whether the identical checksum-verified staged ZIP must be uploaded unchanged to GitHub Releases and Nexus.
 
 ## Start Here
 

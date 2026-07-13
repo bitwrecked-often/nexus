@@ -52,7 +52,7 @@ The owner's operating model is preparation-dominant: `95% preparation / 5% execu
 4. requirements and install, verify, remove, recovery, and support instructions;
 5. version, filename, archive-root, GitHub, and Nexus metadata map;
 6. validation, acceptance, evidence, rollback, and served-file verification checklists;
-7. artifact lifecycle and retention decision, including the still-open Q10.
+7. artifact lifecycle and retention implementation conforming to Q20's resolved storage policy.
 
 After owner acceptance of the planning set, use one controlled candidate/promotion cycle. Temporary reproducibility builds may be compared without promotion, but only one artifact may be promoted for a release identity. A failed check returns to planning or owner review and does not authorize technical payload changes.
 
@@ -131,7 +131,7 @@ Q18 establishes a public-surface priority: user clarity/safety first, applicable
 
 Q19 licenses `README_FIRST.txt` and `CHANGELOG.md` under `GPL-3.0-or-later`. Their plain text/Markdown is preferred editable source. Preserve/add explicit copyright/SPDX notices and the complete GPL; keep this grant scoped to the two solution documents rather than inferring a repository-wide documentation license.
 
-Q20 reframes unresolved Q10: decide whether future final ZIPs remain outside Git history as GitHub Release attachments while committed checksums, inventories, and provenance preserve their evidence. Historical committed archives remain immutable regardless of that answer. No candidate build or release action is authorized by the storage-policy decision alone.
+Q20 resolves Q10: future final ZIPs remain outside Git history as GitHub Release attachments while committed checksums, inventories, provenance, and release references preserve their evidence. Use an ignored `dist/<solution-id>/<version>/` tree with separate candidate, final-upload, and evidence stages. Only exact validated upload ZIPs may enter `final-upload/`; historical committed archives remain immutable and grandfathered. Q21 asks whether the same staged bytes must serve both GitHub and Nexus. No candidate build or release action is authorized by the storage-policy decision alone.
 
 ## Confirmed Historical Evidence
 

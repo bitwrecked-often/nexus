@@ -22,6 +22,7 @@ Governance controls how a solution may advance. A solution supplies the implemen
 - Treat all repository content as potentially visible to Nexus staff and future users.
 - Never add credentials, personal tester information, private conversations, machine identifiers, save files, or unrelated material.
 - Preserve published releases. Never rewrite or move an existing release tag or silently replace a released artifact.
+- Treat the committed `4.0.1` ZIPs as grandfathered immutable evidence. Future final ZIPs must stay out of Git history, be promoted only into an ignored versioned `final-upload` stage, and be attached to GitHub Releases after approval; commit their checksums, inventories, provenance, and release references instead of the archive bytes.
 - Work on the active development branch. Keep `main` representative of published, supportable content.
 - Follow semantic versioning. Backward-compatible features increment MINOR; compatible fixes increment PATCH; breaking changes increment MAJOR.
 - Keep `VERSION`, mod metadata, package metadata, release notes, changelog, archive names, and Nexus metadata consistent at release time.

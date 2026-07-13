@@ -190,6 +190,33 @@ Q18 applies the public-surface priority to the primary README: one concise custo
 
 Q19 licenses both primary customer documents—`README_FIRST.txt` and `CHANGELOG.md`—under `GPL-3.0-or-later`. Their text/Markdown files are their preferred editable source. Carry explicit Bit Wrecked copyright and SPDX notices in both, preserve the complete GPL in the artifact, and require downstream distributed modifications to retain the license and identify changes. This decision is scoped to those solution documents; it does not silently select a license for every governance or repository file.
 
+### Final-Upload Promotion Boundary
+
+Future final archives are release outputs, not source-controlled inputs. Preserve the committed `4.0.1` ZIPs as grandfathered immutable evidence, but do not commit new generated ZIPs to Git history.
+
+Use this logical ignored layout after the planning gate:
+
+```text
+dist/<solution-id>/<version>/
+|-- candidate/       temporary build and reproducibility outputs
+|-- final-upload/    only the exact files approved for upload
+`-- evidence/        generated checksums, inventories, and provenance
+```
+
+Requirements:
+
+- generate the version/solution directories from authoritative manifest identity rather than hand-typed aliases;
+- keep all of `dist/` ignored by Git and prohibit builds from targeting committed historical paths;
+- clear or reject stale/mixed-version content before candidate construction;
+- validate candidates completely before atomic promotion into `final-upload/`;
+- allow only versioned, variant-qualified, checksum-recorded publishable archives in `final-upload/`; never place tools, logs, notes, source folders, or historical ZIPs there;
+- treat `dist/.../evidence/` as ignored working output; copy only a sanitized durable release record to tracked `evidence/releases/<solution-id>/<version>/`;
+- commit that checksum/inventory/provenance record and attach approved final ZIPs to the corresponding GitHub Release instead of committing the ZIP bytes;
+- preserve the release attachment and Nexus-served artifact references in the durable record after publication;
+- treat presence in `final-upload/` as technical readiness only. It does not grant merge, tag, GitHub Release, Nexus upload, or prior-file archival authority.
+
+Q21 decides whether one checksum-verified staged byte sequence must be used unchanged for both GitHub and Nexus.
+
 ### Wrapper As A Composable Feature-Set Boundary
 
 When a solution accepts independently selectable feature inputs, treat its wrapper as the composition boundary rather than recasting its outputs as mutually exclusive preset packages:

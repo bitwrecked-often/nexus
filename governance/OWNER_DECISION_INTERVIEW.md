@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q20
+- Current question: Q21
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -403,7 +403,7 @@ Interpretation:
 - `95% preparation / 5% execution` is a governing workflow heuristic, not a measured effort promise.
 - The technical baseline stays frozen while its identity, manifests, instructions, package contracts, validation evidence, and release controls are prepared.
 - The final candidate should be produced in one controlled execution phase after the planning gate, not through trial-and-error changes to the package.
-- This response does not answer whether final ZIPs belong in Git. Q10 remains open and no retention policy is inferred.
+- At Q10, this response did not answer whether final ZIPs belong in Git, so no retention policy was inferred until Q20.
 
 Decision consequence:
 
@@ -412,8 +412,9 @@ Decision consequence:
 - Identify the exact QA-approved baseline before it is copied into guarded `4.1.0` staging.
 - After planning approval, execute one controlled candidate/promotion cycle, validate it against the completed manifests, and retain the resulting hashes and evidence.
 - A failed check returns the work to planning or owner review; it does not authorize modification of frozen technical behavior.
+- Later result: Q20 keeps future final ZIPs out of Git history, uses an ignored versioned final-upload stage, and commits their evidence instead. The historical committed ZIPs remain grandfathered and immutable.
 
-Decision state: accepted preparation-first sequence; Q10 artifact retention still pending
+Decision state: accepted preparation-first sequence; artifact retention later resolved by Q20
 
 ### Q11 — QA Baseline Identity
 
@@ -840,6 +841,55 @@ Relationship to Q10: this reframes the still-unanswered release-archive retentio
 Question:
 
 > Should future final ZIPs stay out of Git history and be attached to GitHub releases, while Git retains their checksums, inventories, and provenance records?
+
+Answer: yes, with a dedicated final-upload staging boundary
+
+Owner rationale (normalized for readability):
+
+> Make a spot only for the final upload so we know exactly what we are putting up. Treat it as a stage.
+
+Originating repository evidence:
+
+- The three `4.0.1` ZIPs are committed historical artifacts and must remain byte-identical.
+- The current packaging script defaults to those historical paths and can delete/replace them, so a separate output boundary is required before any future build.
+- Generated ZIPs are binary release outputs. Repeatedly committing them enlarges Git history while providing less useful review detail than source, checksums, inventories, and provenance.
+- This repository may contain multiple solutions, so an unversioned shared upload folder can mix products, variants, or releases.
+
+Governing ideals:
+
+- Make the publication set physically obvious: the final-upload stage contains exactly what is intended for external upload and nothing else.
+- Keep source control focused on reviewable source and durable evidence while release services carry immutable distribution bytes.
+- Separate development, candidate, publishable, and published states so a file cannot become public merely by existing.
+- Preserve historical exceptions without repeating their unsafe layout.
+
+Decision consequence:
+
+- Grandfather the committed `4.0.1` ZIPs as immutable historical evidence. Do not move, rebuild, delete, or retroactively apply Q20 to them.
+- Keep future generated/final ZIPs out of Git history and attach owner-approved final artifacts to the corresponding GitHub Release.
+- Use this versioned, Git-ignored logical layout:
+
+```text
+dist/<solution-id>/<version>/
+|-- candidate/
+|-- final-upload/
+`-- evidence/
+```
+
+- Put only exact, versioned, variant-qualified, fully validated publishable ZIPs in `final-upload/`. Keep checksums, inventories, provenance, logs, and tools outside that folder so its contents answer “what will be uploaded?” without interpretation.
+- Generate the path from authoritative solution/version identity, reject stale or mixed content, validate before atomic promotion, and refuse to overwrite an already promoted final artifact.
+- Generate working evidence under the ignored `dist/.../evidence/` directory, then commit its sanitized durable release record under `evidence/releases/<solution-id>/<version>/` without copying ZIP bytes into Git.
+- The durable record must cover checksums, inventory, source/tag, build, approval, GitHub attachment, and Nexus-served references.
+- Add the entire generated `dist/` tree to `.gitignore` during the authorized repository-hygiene slice; do not create a candidate or final ZIP during the interview.
+- Treat a file in `final-upload/` as technically publishable, not publication-authorized. Merge, tag, GitHub Release, Nexus upload, and prior-file archival remain explicit owner actions.
+- Q20 resolves and supersedes Q10's deferred storage question.
+
+Decision state: accepted; future ZIPs are release attachments promoted through an ignored final-upload stage, historical committed ZIPs grandfathered
+
+### Q21 — Cross-Channel Byte Identity
+
+Question:
+
+> Should the same checksum-verified ZIP from `final-upload/` be uploaded unchanged to both GitHub Releases and Nexus?
 
 Answer: pending
 
