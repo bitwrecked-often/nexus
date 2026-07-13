@@ -41,6 +41,8 @@ The historical no-scripts archive also has a known documentation defect: it lack
 
 Record these in an owner-decision register. Block dependent release work until answered.
 
+The active owner-decision register is `governance/OWNER_DECISION_INTERVIEW.md`. Do not ask the owner to repeat decisions already recorded there.
+
 1. **No-scripts product value:** choose a meaningful fixed preset, several clearly named mutually exclusive presets, or an honestly labeled vanilla baseline/template. The AI must not select tuning values.
 2. **Active editions:** decide whether `FullPackage`, no-scripts, and modlet-only/Vortex remain supported `4.1.0` products or whether any become historical/source-only.
 3. **Mod-manager claim:** decide whether to test and support Vortex specifically or rename the unverified variant to generic `ModletOnly`.
