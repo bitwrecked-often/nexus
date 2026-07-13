@@ -458,9 +458,32 @@ Decision state: accepted; exact QA baseline and parent lineage established
 
 ### Q12 — No-Scripts Product Truth
 
-Question:
+Original question:
 
 > Should the unchanged no-scripts file be documented as an inspection/template artifact rather than as a ready-to-play tuned mod?
+
+Owner response: undecided; requested a smaller artifact-focused framing
+
+Owner observation (normalized for readability):
+
+> Can we trim this? Everything a player or reviewer really needs should be inside the ZIP.
+
+Read-only package observation:
+
+- The historical no-scripts archive contains the three-file modlet payload plus `CHANGELOG.md`, `LEGAL_AND_USE.md`, `LICENSE_NOTICE.md`, `LICENSE.txt`, `NEXUS_UPLOAD_NOTES_NO_SCRIPTS.md`, `README_FIRST.txt`, and `RELEASE_NOTES.md`.
+- `NEXUS_UPLOAD_NOTES_NO_SCRIPTS.md` is maintainer-facing and does not belong in a minimal player/reviewer artifact.
+- Its README refers to `REQUIREMENTS_AND_INSTALL.txt`, but that guide is absent from the historical archive.
+- The three runtime files are `ModInfo.xml`, `Config/entitygroups.xml`, and `Config/spawning.xml`.
+
+Clarified boundary:
+
+- The future optional ZIP can carry its complete install/review contract in one concise README plus the applicable license and modlet payload.
+- The archive checksum and authoritative external inventory must remain outside the ZIP so a reviewer can verify the ZIP itself.
+- `4.0.1` remains unchanged; trimming applies only to the future `4.1.0` artifact contract.
+
+Reframed question:
+
+> Should the optional no-scripts ZIP contain only the three-file modlet, one concise self-contained README, and `LICENSE.txt`, with checksum/inventory evidence kept outside the ZIP?
 
 Answer: pending
 
