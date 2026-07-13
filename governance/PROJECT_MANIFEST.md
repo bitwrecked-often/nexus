@@ -127,6 +127,7 @@ When a supported no-scripts edition exists so a distributor or reviewer can insp
 - its outcome, requirements, identity, license, installation, verification, removal, and support boundaries must form a complete product contract;
 - an exact file allowlist, archive inventory, source comparison, and checksum must support static review;
 - scanner friendliness does not excuse a vanilla no-op, misleading outcome, or incomplete player package;
+- optional Nexus placement does not reduce support obligations, while the primary file should match the primary customer journey;
 - platform handling must be recorded as dated evidence for the specific artifact, not generalized into an undocumented permanent policy.
 
 ### Wrapper As A Composable Feature-Set Boundary

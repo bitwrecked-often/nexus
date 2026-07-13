@@ -44,7 +44,7 @@ Record these in an owner-decision register. Block dependent release work until a
 The active owner-decision register is `governance/OWNER_DECISION_INTERVIEW.md`. Do not ask the owner to repeat decisions already recorded there.
 
 1. **No-scripts product value — partially resolved by Q1-Q4:** provide meaningful behavior, understandable feature choices in one non-fragmented Nexus distribution, and preserve the wrapper as the reusable composition boundary. The exact scanner-friendly representation and tuning values remain open. The AI must not select them or reintroduce mutually exclusive preset-package assumptions.
-2. **Active editions — partially resolved by Q5-Q6:** retain the casual-player graphical-wrapper product and scanner-friendly no-scripts product for `4.1.0`. The exact archive layout and the status of modlet-only/Vortex remain open.
+2. **Active editions — partially resolved by Q5-Q7:** retain the casual-player graphical-wrapper product as the primary Nexus file and the scanner-friendly no-scripts product as a supported optional file for `4.1.0`. Exact archive layout and the status of modlet-only/Vortex remain open.
 3. **Mod-manager claim:** decide whether to test and support Vortex specifically or rename the unverified variant to generic `ModletOnly`.
 4. **Artifact retention:** decide whether future release archives are committed under an immutable ledger, attached only to GitHub releases, or both.
 5. **Repository lifecycle:** define whether `main` means release-accepted source or Nexus-served source, and place merge/tag/upload/served-file verification accordingly.

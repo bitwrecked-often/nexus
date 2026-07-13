@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q7
+- Current question: Q8
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -253,7 +253,7 @@ Decision consequence:
 - Enforce an exact scanner-friendly file allowlist and publish an inventory/checksum so intent can be assessed without executing code.
 - Record actual Nexus handling as dated release evidence; do not claim universal or permanent scanner acceptance before that evidence exists.
 
-Decision state: accepted; Nexus file placement remains open
+Decision state: accepted; Nexus file placement resolved by Q7
 
 ### Q7 — Primary Nexus File
 
@@ -277,11 +277,43 @@ Reframed question:
 
 > Should the graphical wrapper be the primary Nexus file, with no-scripts offered as a supported optional file?
 
+Answer to reframed question: yes
+
+Owner confirmation (normalized for readability):
+
+> Yes, that layout is preferred.
+
+Originating observations:
+
+- Q5 establishes the graphical wrapper as the casual-gamer product experience.
+- Q6 retains no-scripts as a supported static-inspection and code-free edition.
+- Making the inspection edition primary felt like unnecessary product emphasis when the graphical wrapper is the intended default experience.
+
+Governing ideals:
+
+- The primary file should match the primary customer journey.
+- Progressive disclosure should keep one obvious path without hiding valid alternatives.
+- Optional placement must not weaken an artifact's truth, testing, or support contract.
+
+Decision consequence:
+
+- Present the graphical wrapper package as the primary/main Nexus file for `4.1.0`.
+- Present the no-scripts package as a clearly labeled, supported optional file for static inspection and code-free installation.
+- Keep version, gameplay intent, compatibility scope, source identity, and release evidence synchronized while documenting each edition's distinct capabilities.
+- Do not describe the optional no-scripts file as containing graphical, automation, or server-cap controls.
+- This decision governs planned file placement but does not authorize upload, publication, or archival of an older Nexus file.
+
+Decision state: accepted; graphical wrapper primary, no-scripts optional
+
+### Q8 — Explicit Vortex Support
+
+Question:
+
+> Should `4.1.0` explicitly support Vortex, which would require successful Vortex installation and removal testing before release?
+
 Answer: pending
 
 Consequence: pending
-
-Decision state: pending; no placement authority inferred from uncertainty
 
 ## Decision Chain-Of-Custody Standard
 
