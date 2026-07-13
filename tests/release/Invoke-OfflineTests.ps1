@@ -34,6 +34,11 @@ function Invoke-OfflineCheck {
     catch {
         Write-Host "FAIL: $Name"
         Write-Host "  $($_.Exception.Message)"
+        if ($env:GITHUB_ACTIONS -ceq "true") {
+            $title = $Name.Replace("%", "%25").Replace(":", "%3A").Replace(",", "%2C").Replace("`r", "%0D").Replace("`n", "%0A")
+            $message = $_.Exception.Message.Replace("%", "%25").Replace("`r", "%0D").Replace("`n", "%0A")
+            Write-Host "::error title=$title::$message"
+        }
         $script:Failed++
     }
 }
