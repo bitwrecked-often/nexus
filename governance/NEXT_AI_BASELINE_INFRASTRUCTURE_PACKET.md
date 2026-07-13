@@ -24,7 +24,9 @@ Q17 resolves the portable identity boundary for `4.1.0`: remove only the optiona
 
 Q18 establishes the customer-surface order: respect user clarity and safety first, applicable GPL/Nexus/industry obligations second, and restrained Bit Wrecked identity in the remaining surface. Make `README_FIRST.txt` the one plain-language GPL/source/no-warranty/unofficial-origin notice while the full `LICENSE.txt` and per-file notices remain intact. Keep `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` in repository source, not the primary customer ZIP, and do not import their publishing guardrails as downstream license restrictions.
 
-Q19 asks whether the README and changelog themselves should be GPL-3.0-or-later. Do not stage or build the candidate until that documentation scope and later planning gates are recorded.
+Q19 licenses both `README_FIRST.txt` and `CHANGELOG.md` under `GPL-3.0-or-later`. Their plain text/Markdown is the preferred editable source. Preserve/add explicit Bit Wrecked copyright and SPDX notices, keep the complete GPL in the artifact, and require distributed modifications to remain GPL and be identified. This decision does not silently license every governance file.
+
+Q20 reopens Q10 with a concrete artifact-storage policy: decide whether future final ZIPs stay out of Git history as GitHub Release attachments while committed checksums, inventories, and provenance preserve chain of custody. Do not infer the answer or create a release.
 
 ## Start Here
 

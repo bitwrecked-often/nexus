@@ -129,7 +129,9 @@ The GUI already tolerates the missing image. Q17 preserves existing Bit Wrecked 
 
 Q18 establishes a public-surface priority: user clarity/safety first, applicable legal/vendor/industry obligations second, and restrained project identification in the remaining surface. Consolidate the customer-relevant essentials from `LICENSE_NOTICE.md` and `LEGAL_AND_USE.md` into `README_FIRST.txt` while preserving the full GPL and source-file notices. Keep the separate documents in repository source and do not copy their publishing guardrails into a customer notice as additional GPL redistribution conditions.
 
-Q19 asks whether the README and changelog themselves should be GPL-3.0-or-later. No candidate build is authorized before that documentation scope and later planning gates are resolved.
+Q19 licenses `README_FIRST.txt` and `CHANGELOG.md` under `GPL-3.0-or-later`. Their plain text/Markdown is preferred editable source. Preserve/add explicit copyright/SPDX notices and the complete GPL; keep this grant scoped to the two solution documents rather than inferring a repository-wide documentation license.
+
+Q20 reframes unresolved Q10: decide whether future final ZIPs remain outside Git history as GitHub Release attachments while committed checksums, inventories, and provenance preserve their evidence. Historical committed archives remain immutable regardless of that answer. No candidate build or release action is authorized by the storage-policy decision alone.
 
 ## Confirmed Historical Evidence
 

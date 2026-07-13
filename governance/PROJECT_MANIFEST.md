@@ -188,6 +188,8 @@ Cross-domain portability does not silently erase authorship, copyright notices, 
 
 Q18 applies the public-surface priority to the primary README: one concise customer document carries the plain-language GPL freedoms and duties, exact source route, no-warranty statement, and unofficial-origin notice. The complete `LICENSE.txt` and source-file notices remain authoritative and intact. Separate maintainer-oriented legal/use notes stay in the repository rather than increasing customer-package friction.
 
+Q19 licenses both primary customer documents—`README_FIRST.txt` and `CHANGELOG.md`—under `GPL-3.0-or-later`. Their text/Markdown files are their preferred editable source. Carry explicit Bit Wrecked copyright and SPDX notices in both, preserve the complete GPL in the artifact, and require downstream distributed modifications to retain the license and identify changes. This decision is scoped to those solution documents; it does not silently select a license for every governance or repository file.
+
 ### Wrapper As A Composable Feature-Set Boundary
 
 When a solution accepts independently selectable feature inputs, treat its wrapper as the composition boundary rather than recasting its outputs as mutually exclusive preset packages:

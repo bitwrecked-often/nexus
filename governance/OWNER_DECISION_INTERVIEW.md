@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q19
+- Current question: Q20
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -786,14 +786,60 @@ identity: concise Bit Wrecked authorship and official source/support route
 - State that `Support_Files_Do_Not_Edit` is an operational cue for casual users, not a limitation on GPL modification rights.
 - Validate the README against the exact eight-file archive so it mentions no excluded avatar, maintainer tool, advanced CLI, or absent document.
 - Do not modify the frozen solution documentation yet; apply this approved content contract only after the required per-file QA-baseline fingerprint and remaining planning decisions are complete.
+- Later result: Q19 licenses both the README and changelog under `GPL-3.0-or-later`.
 
-Decision state: accepted with user-first presentation qualification; exact documentation license scope remains open
+Decision state: accepted with user-first presentation qualification; documentation license scope resolved by Q19
 
 ### Q19 — Documentation License Scope
 
 Question:
 
 > Should `README_FIRST.txt` and `CHANGELOG.md` themselves be GPL-3.0-or-later with the rest of the primary package?
+
+Answer: yes
+
+Owner response:
+
+> Yes.
+
+Originating repository and field evidence:
+
+- `CHANGELOG.md` already carries `Copyright (C) 2026 Bit Wrecked` and `SPDX-License-Identifier: GPL-3.0-or-later`.
+- `README_FIRST.txt` currently states `License: GPL-3.0-or-later` but lacks an equally explicit copyright/SPDX notice.
+- Both files are distributed in plain text/Markdown, their preferred editable forms, so recipients do not need a separate documentation-source offer.
+- Official GNU guidance reviewed on 2026-07-12 identifies GPL version 3 as the latest GNU GPL; OSI approved GPLv3, and SPDX recognizes `GPL-3.0-or-later` as the current unambiguous identifier.
+
+Official references:
+
+- <https://www.gnu.org/licenses/>
+- <https://opensource.org/blog/osi-board-approves-gpl-v3-and-lgpl-v3>
+- <https://spdx.org/licenses/>
+
+Governing ideals:
+
+- Give modders the same study, adaptation, and redistribution freedom for the operational documentation as for the scripts and XML it explains.
+- Use one recognized license expression across a small integrated package instead of introducing needless license boundaries.
+- Preserve authorship and modification history without restricting legitimate downstream reuse.
+- Keep the license grant precisely scoped; an answer about two customer documents must not silently license unrelated governance material.
+
+Decision consequence:
+
+- License `README_FIRST.txt` and `Support_Files_Do_Not_Edit/CHANGELOG.md` under `GPL-3.0-or-later` in the `4.1.0` source and staged customer package.
+- Preserve the changelog's existing copyright/SPDX notice and add an equivalent concise notice to the README during the authorized documentation-preparation slice.
+- Keep the complete `LICENSE.txt` in the primary ZIP. Treat the text and Markdown files themselves as their preferred editable source.
+- State that downstream recipients may copy, modify, redistribute, and charge for copies under the GPL, must preserve applicable notices/license freedoms, and must mark distributed modifications without representing them as official Bit Wrecked releases.
+- Apply Q19 only to these solution documents. Root/governance-document license scope remains a separate repository decision.
+- Do not edit the solution files until the required QA-baseline per-file fingerprint is captured; Q19 supplies content authority, not permission to skip the planning gate.
+
+Decision state: accepted; primary README and changelog license scope resolved as GPL-3.0-or-later
+
+### Q20 — Future Release Artifact Storage
+
+Relationship to Q10: this reframes the still-unanswered release-archive retention decision with one concrete, recommended policy.
+
+Question:
+
+> Should future final ZIPs stay out of Git history and be attached to GitHub releases, while Git retains their checksums, inventories, and provenance records?
 
 Answer: pending
 
