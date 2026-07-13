@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q2
+- Current question: Q3
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -65,6 +65,35 @@ Decision state: accepted; dependent design remains open
 Question:
 
 > Should the no-scripts download give users multiple clearly labeled preset choices, instead of one fixed tuning preset?
+
+Answer: yes
+
+Originating observation:
+
+- A single fixed preset would make the download useful but would choose one play style for every no-scripts user.
+- The no-scripts edition cannot use interactive controls to personalize XML after download.
+
+Governing ideals:
+
+- Meaningful behavior should not remove player choice.
+- Scanner-friendly packaging should remain readable and code-free.
+- Choices must be understandable before files are copied.
+
+Decision consequence:
+
+- The no-scripts product will provide multiple clearly labeled tuning presets.
+- Every preset must state its intended effect, exact payload identity, install path, compatibility evidence, conflicts, and removal path.
+- Presets must be mutually exclusive unless a future composition model is explicitly designed and tested.
+- Packaging must prevent or clearly detect accidental simultaneous installation of conflicting presets.
+- Exact preset count, values, names, and archive layout remain open.
+
+Decision state: accepted; packaging shape remains open
+
+### Q3 — One Download Or Separate Downloads
+
+Question:
+
+> Should all no-scripts presets be bundled into one Nexus download, rather than published as separate downloadable files?
 
 Answer: pending
 

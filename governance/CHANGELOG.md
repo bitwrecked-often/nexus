@@ -9,3 +9,4 @@ This changelog records repository-governance, evidence, build-pipeline, and main
 - Added the 2026-07-12 deep repository audit addendum with historical artifact hashes, known provenance exceptions, owner decision gates, multi-solution identity, and dependency-ordered correction slices.
 - Started a durable, branching yes/no owner-decision interview to reach implementation-ready shape awareness without relying on conversational memory.
 - Recorded the first owner product decision: the no-scripts edition must provide meaningful tuning rather than a vanilla no-op, with an explicit chain-of-custody standard for ideals and decisions.
+- Recorded that the no-scripts product will offer multiple clearly labeled, mutually exclusive preset choices rather than impose one fixed play style.
