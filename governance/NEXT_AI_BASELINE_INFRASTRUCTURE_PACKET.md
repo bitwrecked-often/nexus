@@ -14,6 +14,8 @@ Current work is limited to non-behavioral release infrastructure: identity/versi
 
 Use the owner's preparation-dominant sequence: finish and reconcile the baseline identity, manifests, instructions, edition allowlists, version map, acceptance checklist, and evidence templates before candidate execution. Do not repeatedly rebuild by trial and error. After the planning gate is approved, perform one controlled candidate/promotion cycle; no build step grants publication authority.
 
+Q12 locks the primary customer ZIP to three top-level items: `README_FIRST.txt`, `7DTD_WastelandAnimalTuning.bat`, and `Support_Files_Do_Not_Edit/`. Build it from an exact allowlist; never stage `Upload_To_Nexus`, publishing-only assets, candidate archives, validators, or raw maintainer evidence into the customer download. The internal support-folder allowlist remains subject to recorded owner decisions, including Q13.
+
 ## Start Here
 
 Read these files completely before making changes:

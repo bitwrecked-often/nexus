@@ -131,6 +131,17 @@ When a supported no-scripts edition exists so a distributor or reviewer can insp
 - optional Nexus placement does not reduce support obligations, while the primary file should match the primary customer journey;
 - platform handling must be recorded as dated evidence for the specific artifact, not generalized into an undocumented permanent policy.
 
+### Minimal Customer Archive Surface
+
+Build customer downloads from exact allowlists rather than repository folders:
+
+- expose the smallest understandable top level that preserves supported operation;
+- keep publishing assets, upload notes, validators, raw QA/build material, candidate archives, and maintainer metadata in the repository or release evidence, not the customer package;
+- include only runtime/UI dependencies, applicable licensing, and user-facing instructions/support material;
+- use a standard non-password-protected archive with no nested archives;
+- test the staged archive as extracted, including relative-path dependencies and the first-run customer journey;
+- treat the exact layout as a project design justified by vendor guidance, not as a Nexus-mandated structure or endorsement.
+
 ### Wrapper As A Composable Feature-Set Boundary
 
 When a solution accepts independently selectable feature inputs, treat its wrapper as the composition boundary rather than recasting its outputs as mutually exclusive preset packages:

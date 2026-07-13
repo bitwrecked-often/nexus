@@ -64,6 +64,24 @@ After owner acceptance of the planning set, use one controlled candidate/promoti
 - New staging, archives, and release identity must use `4.1.0` paths and names. Never overwrite a `4.0.1` artifact or move its tag.
 - Parent authority is not a reproducibility claim. Preserve the known tagged-source/full-archive GUI mismatch in every provenance record.
 
+### Vendor-Filtered Customer Packaging Established By Q12
+
+Current official Nexus guidance reviewed on 2026-07-12 requires functional and accurately described submissions, recommends concise instructions for non-technical users, scans/previews archive contents, and rejects nested archives. Sources:
+
+- <https://help.nexusmods.com/article/28-file-submission-guidelines>
+- <https://help.nexusmods.com/article/117-why-has-my-mod-been-quarantined>
+- <https://help.nexusmods.com/article/136-best-practices-for-mod-authors>
+
+Nexus does not prescribe this project's exact three-item root. Q12 applies the vendor guidance proportionately by locking the primary `4.1.0` customer archive root to:
+
+```text
+README_FIRST.txt
+7DTD_WastelandAnimalTuning.bat
+Support_Files_Do_Not_Edit/
+```
+
+Use an exact allowlist. `Upload_To_Nexus`, release candidates, publishing-only assets, validators, raw QA/build material, and maintainer-only root content must never enter the customer ZIP. Use a normal non-password-protected ZIP with no nested archives. Validate the extracted launcher/support relative paths. Q13 decides whether the advanced command-line tools remain a supported primary-package component; do not infer that answer.
+
 ## Confirmed Historical Evidence
 
 The committed historical archives are immutable inputs to future audits:

@@ -22,7 +22,7 @@ Target: reach at least 85% shape awareness before implementation begins. Shape a
 
 - Interview state: active
 - Shape awareness: not yet assessed
-- Current question: Q12
+- Current question: Q13
 - Implementation authority: not granted by this interview alone
 - Nexus publication authority: not granted
 
@@ -497,6 +497,41 @@ Second scope correction:
 Current reframed question:
 
 > Should the primary `4.1.0` customer ZIP expose exactly `README_FIRST.txt`, `7DTD_WastelandAnimalTuning.bat`, and `Support_Files_Do_Not_Edit` at its top level, while forbidding `Upload_To_Nexus` and other maintainer-only root content?
+
+Answer: yes, conditional on industry practice filtered through practical Nexus requirements
+
+Owner qualification (normalized for readability):
+
+> Use that shape if it is wise under industry standards, filtered through the healthy reality of our vendor.
+
+Current vendor evidence reviewed on 2026-07-12:
+
+- [Nexus Mods File Submission Guidelines](https://help.nexusmods.com/article/28-file-submission-guidelines) require files to be functional with caveats/requirements presented to users, and require names, descriptions, and capability claims to be accurate and supportable.
+- [Nexus Mods quarantine guidance](https://help.nexusmods.com/article/117-why-has-my-mod-been-quarantined) recommends ZIP or 7z, explains that uploads are previewed/scanned, rejects nested archives, and notes that separate Nexus files are preferable to archives inside archives.
+- [Nexus Mods Best Practices for Mod Authors](https://help.nexusmods.com/article/136-best-practices-for-mod-authors) recommends concise installation instructions, clear version identity, and explicit descriptions for optional files, with a focus on non-technical users.
+
+Evidence interpretation:
+
+- Nexus does not mandate exactly three top-level items. That layout is this project's proportionate application of the vendor's functional, accurate, understandable, and scan-friendly expectations.
+- A small exact allowlist reduces customer ambiguity and reviewer noise without changing the QA-approved runtime.
+- This decision does not claim Nexus certification, endorsement, guaranteed scan acceptance, or a universal mod-packaging standard.
+
+Decision consequence:
+
+- Lock the primary `4.1.0` customer archive root to `README_FIRST.txt`, `7DTD_WastelandAnimalTuning.bat`, and `Support_Files_Do_Not_Edit`.
+- Forbid `Upload_To_Nexus`, candidate archives, publishing-only assets, raw QA/build material, and other maintainer-only root content from the customer ZIP.
+- Build the customer archive from an exact allowlist using a normal, non-password-protected ZIP with no nested archives.
+- Keep the root README short and sufficient for a casual player to launch, understand requirements, verify operation, and find removal/support guidance.
+- Validate that the launcher and support folder remain adjacent and that every shipped internal file is either a runtime/UI dependency, applicable license, or user-facing support document.
+- Preserve all `4.0.1` artifacts unchanged. Apply this enforced staging contract only to the future `4.1.0` candidate.
+
+Decision state: accepted; three-item customer root locked, internal support allowlist remains open
+
+### Q13 — Advanced Command-Line Tools
+
+Question:
+
+> Should the advanced command-line installer and uninstaller be excluded from the primary casual-player ZIP?
 
 Answer: pending
 
