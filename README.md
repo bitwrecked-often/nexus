@@ -23,6 +23,7 @@ Current development version: see `VERSION`.
 ## Current 4.1.0 Route
 
 - Current execution phase: `governance/EXECUTION_PLAN.md`
+- Current owner review: `governance/RELEASE_READINESS_4.1.0.md`
 - Reconciled authority and blocker map: `governance/REPOSITORY_TRUTH_MAP.md`
 - Repository-health controls and live-setting boundaries:
   `governance/GITHUB_REPOSITORY_HEALTH.md`

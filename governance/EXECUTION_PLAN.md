@@ -28,8 +28,8 @@ Status meanings:
 | --- | --- | --- | --- | --- |
 | P0 | Establish owner-level product shape and release boundaries | Complete | Recorded scope, package allowlist, identity, GPL, staging, retention, and authority decisions | `OWNER_DECISION_INTERVIEW.md` is closed for primary-baseline preparation and no material owner question remains open for P1 |
 | P1 | Fingerprint the frozen baseline and reconcile current truth | Complete | Per-file SHA-256 baseline record, document-authority map, version/identity map, and contradiction register | Baseline is recorded before any solution-file edit; historical ZIP hashes still match; contradictions are resolved or explicitly bounded |
-| P2 | Implement non-behavioral release infrastructure | Active | Approved documentation/metadata alignment, exact edition allowlists, ignored staging, non-mutating validation, evidence templates, and proportionate repository-health controls | Offline checks pass; package behavior is unchanged; historical artifacts remain byte-identical; optional editions cannot borrow unsupported claims |
-| P3 | Present release-readiness review | Pending | One concise owner-facing report of guarantees, evidence, deferred live checks, blockers, and exact proposed candidate contents | Planning set agrees across player, vendor/support, and machine-readable views; remaining owner gates are explicit |
+| P2 | Implement non-behavioral release infrastructure | Complete | Approved documentation/metadata alignment, exact edition allowlists, ignored staging, non-mutating validation, evidence templates, and proportionate repository-health controls | Offline checks pass; package behavior is unchanged; historical artifacts remain byte-identical; optional editions cannot borrow unsupported claims |
+| P3 | Present release-readiness review | Active | One concise owner-facing report of guarantees, evidence, deferred live checks, blockers, and exact proposed candidate contents | Planning set agrees across player, vendor/support, and machine-readable views; remaining owner gates are explicit; owner accepts the planning set |
 | P4 | Build and promote one `4.1.0` candidate | Pending | One validated candidate promoted to the ignored `final-upload` stage with external checksum, inventory, provenance, and acceptance evidence | Owner accepts the planning gate; exact candidate passes every applicable check; publication remains separately authorized |
 
 ## Gate Register
@@ -53,6 +53,7 @@ Append only concise phase transitions here. Detailed governance changes remain i
 | --- | --- | --- |
 | 2026-07-12 | Planner established; P0 closed and P1 made active | `governance/OWNER_DECISION_INTERVIEW.md`; initial planner commit |
 | 2026-07-12 | P1 completed; P2 made active | `governance/REPOSITORY_TRUTH_MAP.md`; tracked baseline record and 32-file SHA-256 manifest |
+| 2026-07-12 | P2 completed; P3 made active | Commit `789f7c8`; full offline gate `25 passed, 0 failed`; `governance/RELEASE_READINESS_4.1.0.md` |
 
 ## Routing And Precedence
 
