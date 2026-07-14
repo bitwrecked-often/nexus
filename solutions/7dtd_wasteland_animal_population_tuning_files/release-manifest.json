@@ -12,10 +12,10 @@
   },
   "release": {
     "intendedVersion": "4.1.0",
-    "workspaceVersion": "4.1.0-dev",
-    "channel": "development",
-    "lifecycle": "development",
-    "publicationState": "unreleased",
+    "workspaceVersion": "4.1.0",
+    "channel": "release-candidate",
+    "lifecycle": "release-candidate",
+    "publicationState": "candidate",
     "branch": "develop/4.1.0",
     "releaseSourceCommit": null,
     "releaseTag": null,
@@ -124,6 +124,12 @@
     "workingEvidenceStage": "dist/7dtd_wasteland_animal_population_tuning/4.1.0/evidence",
     "durableEvidenceRoot": "evidence/releases/7dtd_wasteland_animal_population_tuning/4.1.0",
     "stagingBytePolicy": "clean-head-git-blob-bytes",
+    "archiveFormat": "zip",
+    "archiveCompression": "store",
+    "archiveEntryOrder": "ordinal-stage-path",
+    "archiveTimestampUtc": "2000-01-01T00:00:00Z",
+    "archivePathSeparator": "forward-slash",
+    "reproducibilityBuildCount": 2,
     "generatedArtifactsTrackedByGit": false,
     "overwriteFinalArtifact": false,
     "historicalArchivesAreBuildTargets": false
@@ -212,14 +218,14 @@
       "scope": "solution",
       "path": "Support_Files_Do_Not_Edit/CHANGELOG.md",
       "developmentValue": "## Version 4.1.0 - Unreleased",
-      "candidateValue": null
+      "candidateValue": "## Version 4.1.0"
     }
   ],
   "editions": [
     {
       "id": "windows-gui",
       "role": "primary",
-      "state": "development",
+      "state": "candidate",
       "publishable": false,
       "plannedFilename": "7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip",
       "sha256": null,

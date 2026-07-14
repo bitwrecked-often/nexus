@@ -2,10 +2,11 @@
 
 ## Purpose
 
-This is the repository-health status for the current `4.1.0` preparation
-working tree (`develop/4.1.0`, P2 active). No `4.1.0` candidate or publication
-exists. It separates controls proved by tracked files from dated GitHub
-observations and service results that cannot be inferred from the checkout.
+This is the repository-health status for the current `4.1.0` candidate-source
+working tree (`develop/4.1.0`, P4 active). No `4.1.0` candidate ZIP has been
+built or promoted, and no publication exists. It separates controls proved by
+tracked files from dated GitHub observations and service results that cannot be
+inferred from the checkout.
 
 The repository is the source of preparation policy and evidence. It is not, by itself, proof that a GitHub rule is enabled, a workflow has passed on GitHub, or a Nexus artifact has been accepted.
 
@@ -15,12 +16,13 @@ The repository is the source of preparation policy and evidence. It is not, by i
 | --- | --- | --- |
 | Text and binary integrity | LF and binary classifications are explicit; editor defaults match the frozen-source byte convention | `.gitattributes`; `.editorconfig` |
 | Generated and private material | Designated release output, private/raw evidence paths, local-game paths, common secret-file patterns, logs, and new archives are ignored; ignore rules are not a substitute for review or push protection | `.gitignore` |
-| Release identity | One schema-validated manifest owns solution identity, version intent, editions, exact package mappings, freeze rules, and historical artifacts | `solutions/7dtd_wasteland_animal_population_tuning_files/release-manifest.json` |
+| Release identity | One schema-validated manifest owns solution identity, candidate lifecycle intent, editions, exact package mappings, deterministic archive rules, freeze rules, and historical artifacts | `solutions/7dtd_wasteland_animal_population_tuning_files/release-manifest.json` |
 | Historical integrity | The 32-file raw-Git baseline and three legacy ZIP hashes are checked without rebuilding or rewriting them | `evidence/baselines/`; `tests/release/Invoke-OfflineTests.ps1` |
 | Package preparation | Validation is read-only by default; staging uses exact clean-`HEAD` Git blob bytes and atomically places the tree plus working evidence under ignored output, separate from candidate construction, approval, final-upload promotion, or publication | `tools/release/`; `RELEASING.md` |
+| P4 transaction | Release policy reserves `PreparePrimary` as the sole atomic technical P4 path; diagnostic `StagePrimary` is mutually exclusive, and neither action grants public authority | `RELEASING.md`; release manifest and schema |
 | Optional editions | No-scripts and Vortex remain machine-blocked until their independent evidence gates are satisfied | Release manifest and schema |
 | Contributor intake | Contribution and issue-form files request effects, evidence maturity, privacy-safe diagnostics, rollback, and publication boundaries; GitHub presentation still requires the files on the default branch | `CONTRIBUTING.md`; `.github/` templates |
-| Continuous integration | One least-privilege Windows workflow runs the offline checks and whitespace check with a full-SHA-pinned checkout action | `.github/workflows/validate.yml` |
+| Continuous integration | One least-privilege Windows workflow runs read-only contract checks plus guarded disposable staging/package/GUI-smoke integration fixtures, then a whitespace check, with a full-SHA-pinned checkout action | `.github/workflows/validate.yml`; `tests/release/Invoke-OfflineTests.ps1` |
 
 The workflow uses a fixed GitHub-hosted runner label and read-only repository
 permission. Checkout uses the ephemeral read-only `GITHUB_TOKEN` but does not
@@ -37,7 +39,17 @@ pwsh -NoProfile -File tests/release/Invoke-OfflineTests.ps1
 git diff --check
 ```
 
-These checks do not launch the product GUI, edit a game installation, rebuild a historical ZIP, promote a candidate, or contact Nexus.
+The suite never edits a game installation, rebuilds a historical ZIP, writes
+the checkout's real candidate path, uses the network, contacts Nexus, or
+publishes. It does exercise the packaged GUI smoke path and build/promote two
+byte-identical test ZIPs inside an owned system-temp clone. Those outputs are
+machine-classified as disposable fixtures, use only `dist/.test-fixtures/`,
+carry no candidate authority, consume no owner-authorized candidate cycle, and
+are deleted with the clone.
+
+The passing hosted run below predates the candidate-source transition. It proves
+the P3 preparation checkpoint only; the P4 source must earn its own validation
+evidence before candidate construction.
 
 ## Live State Not Yet Proven
 

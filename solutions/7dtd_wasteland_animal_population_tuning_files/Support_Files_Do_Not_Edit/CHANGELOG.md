@@ -5,10 +5,10 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 This changelog tracks public upload versions. It separates gameplay XML changes from installer, packaging, documentation, and publishing changes.
 
-## Version 4.1.0 - Unreleased
+## Version 4.1.0
 
-Development status: non-behavioral preparation based on the owner-approved,
-QA-frozen `4.0.1` technical baseline. No `4.1.0` candidate has been built.
+This is a non-behavioral packaging and documentation release based on the
+owner-approved, QA-frozen `4.0.1` technical baseline.
 
 ### Gameplay And Tool Behavior
 
@@ -60,8 +60,9 @@ QA-frozen `4.0.1` technical baseline. No `4.1.0` candidate has been built.
 - Existing users may use Reinstall Mod after selecting their desired tuning.
 - Remove Mod deletes only the named Bit Wrecked mod folder. It does not restore
   `serverconfig.xml`; use Restore Cap separately if Brutal Science changed it.
-- Publication date and served-file identity remain unset until an exact candidate
-  is approved, uploaded, and verified.
+- Release evidence records the source commit and exact artifact checksum.
+  Publication date and served-file identity are added there only after
+  publication.
 
 ## Version 4.0.1 - 2026-07-07
 

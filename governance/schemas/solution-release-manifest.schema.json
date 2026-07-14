@@ -230,7 +230,7 @@
         },
         "workspaceVersion": {
           "type": "string",
-          "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)-dev$"
+          "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-dev)?$"
         },
         "channel": {
           "enum": [
@@ -479,6 +479,12 @@
         "workingEvidenceStage",
         "durableEvidenceRoot",
         "stagingBytePolicy",
+        "archiveFormat",
+        "archiveCompression",
+        "archiveEntryOrder",
+        "archiveTimestampUtc",
+        "archivePathSeparator",
+        "reproducibilityBuildCount",
         "generatedArtifactsTrackedByGit",
         "overwriteFinalArtifact",
         "historicalArchivesAreBuildTargets"
@@ -498,6 +504,24 @@
         },
         "stagingBytePolicy": {
           "const": "clean-head-git-blob-bytes"
+        },
+        "archiveFormat": {
+          "const": "zip"
+        },
+        "archiveCompression": {
+          "const": "store"
+        },
+        "archiveEntryOrder": {
+          "const": "ordinal-stage-path"
+        },
+        "archiveTimestampUtc": {
+          "const": "2000-01-01T00:00:00Z"
+        },
+        "archivePathSeparator": {
+          "const": "forward-slash"
+        },
+        "reproducibilityBuildCount": {
+          "const": 2
         },
         "generatedArtifactsTrackedByGit": {
           "const": false

@@ -2,25 +2,28 @@
 
 ## Decision Summary
 
-The `4.1.0` primary Windows graphical package is ready for owner review before
-candidate work. Repository preparation is complete and validated. No real
-candidate has been staged or built, and no publication action has occurred.
+The owner accepted this planning set on 2026-07-13 and authorized one
+technical-only P4 `PreparePrimary` cycle for the `4.1.0` primary Windows
+graphical package. Repository preparation is complete and validated. No real
+candidate has been staged, built, or promoted, and no publication action has
+occurred.
 
-This review authorizes nothing by itself. P4 begins only after the owner accepts
-this planning set.
+This acceptance authorizes only candidate preparation and technical promotion
+through the guarded P4 path. It does not authorize merge to `main`, a tag,
+GitHub Release, Nexus upload, served-file change, or archival of `4.0.1`.
 
 ## Exact Identity
 
 | Fact | Prepared value |
 | --- | --- |
 | Solution | `7DTD 3.0 Wasteland Animal Population Tuning` |
-| Version | `4.1.0` (`4.1.0-dev` workspace projection) |
+| Version | `4.1.0` (candidate-source workspace projection) |
 | Edition | `windows-gui` primary |
 | Package-preparation checkpoint | `develop/4.1.0` commit `789f7c8ebc29eea72d27d05b31626eee729a60b4` |
 | Planned filename | `7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip` |
 | Runtime mod/folder ID | `BitWrecked_7DTD_WastelandAnimalPopulationTuning` |
 | License | `GPL-3.0-or-later` |
-| Current lifecycle | Development; unreleased; non-publishable |
+| Current lifecycle | Release candidate; candidate source; non-publishable and unpublished |
 
 The actual future release-source commit must be recorded in generated
 acceptance/provenance evidence after all in-archive projections are finalized.
@@ -56,11 +59,18 @@ validator, raw QA material, and historical ZIPs are excluded.
 - GUI and `ModInfo.xml` differ from the baseline only by the declared `4.1.0`
   version and official-repository metadata substitutions.
 - The exact eight-file mapping, edition set, version surfaces, GPL routes,
-  development state, and historical-artifact registry are machine-enforced.
+  P3 development state, and historical-artifact registry were machine-enforced
+  before owner acceptance. The candidate profile must pass before P4 mutates
+  output.
 - A disposable clean clone completed real primary staging from raw clean-`HEAD`
   Git blob bytes using one atomic version-root move.
 - That staging test produced only the exact tree and working evidence: no ZIP,
   no `final-upload`, no work debris, and no changed historical artifact.
+- A separate guarded integration fixture exercises two deterministic ZIP
+  builds, raw-container inspection, short-path packaged GUI smoke, evidence
+  binding, and atomic test promotion only under a disposable clone's
+  `dist/.test-fixtures/` namespace. Its receipts explicitly carry no candidate
+  authority and the clone is removed afterward.
 - Reparse-path, traversal, dirty-tree, stale-output, repeat-run, false-public-state,
   swapped-file, invented-hash, and redirected-historical-registry cases fail
   closed.
@@ -100,13 +110,13 @@ evidence.
   and unverified live GitHub protection settings remain separate honest gates.
 - Main-branch lifecycle, merge method, merge/tag order, and exact future tag
   naming require an owner decision before public release work.
-- Final in-archive changelog date/state and any other release projections must be
-  frozen before the one candidate build.
+- The in-archive changelog now uses release-neutral `4.1.0` wording so an
+  external publication date or served-file result cannot require repacking.
 
-## Owner Gate And Next Controlled Slice
+## Authorized Technical Slice
 
-Owner acceptance of this review permits P4 to prepare one exact `windows-gui`
-candidate cycle. P4 must:
+The owner accepted this review and permits one exact `windows-gui` P4 cycle.
+No P4 mutation has occurred yet. The guarded `PreparePrimary` path must:
 
 1. finalize and freeze all in-archive release projections;
 2. stage exact bytes from the clean approved source commit;
@@ -114,6 +124,11 @@ candidate cycle. P4 must:
 4. compare digests, extract, inspect, and validate the exact archive;
 5. record checksum, sorted inventory, provenance, rollback, and acceptance;
 6. promote only the accepted ZIP to ignored `final-upload`.
+
+Disposable integration fixtures do not satisfy or consume this authorized
+cycle. The tool permits their classification only inside the test harness's
+owned system-temp clone, routes them away from the real candidate path, and
+records `ownerCandidateCycleConsumed: false`.
 
 Even a successful P4 does not authorize merge to `main`, a tag, GitHub Release,
 Nexus upload, served-file change, or hiding/archiving `4.0.1`.

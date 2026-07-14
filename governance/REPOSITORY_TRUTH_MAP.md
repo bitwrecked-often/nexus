@@ -3,11 +3,12 @@
 ## Purpose And Scope
 
 This file is the reconciled current-truth map for `4.1.0` preparation, opened on
-2026-07-12 and updated through the current P2 implementation. It tells
+2026-07-12 and updated through the 2026-07-13 P3 acceptance and P4
+candidate-source transition. It tells
 maintainers and AIs which identity and documents may drive work, which are
 projections, and which are historical or blocked.
 
-It does not prove a release, compatibility result, GitHub setting, or Nexus state. The machine-readable per-solution manifest created in P2 now owns the bounded package contract derived from this map; projections must validate against it.
+It does not prove that a candidate ZIP exists, a release occurred, a compatibility result passed, a GitHub setting is enabled, or Nexus state changed. The machine-readable per-solution manifest created in P2 now owns the bounded package contract derived from this map; projections must validate against it.
 
 ## Evidence Classes
 
@@ -27,12 +28,12 @@ It does not prove a release, compatibility result, GitHub setting, or Nexus stat
 | Installed mod folder | `BitWrecked_7DTD_WastelandAnimalPopulationTuning` | Frozen technical behavior and Q17; must equal the runtime ID for `4.1.0` |
 | Author / official upstream identity | `Bit Wrecked` | Q17 and existing copyright/author metadata |
 | Game-target label | `7DTD 3.0` / current retained evidence described as `3.0-era` | Separate from package SemVer; exact build is unverified until evidence exists |
-| Intended package version | `4.1.0` | Owner decision and active development line; the per-solution release manifest owns it |
-| Active workspace projection | `4.1.0-dev` | Root `VERSION` is a checked development projection, not permanent multi-solution authority |
-| Lifecycle state | `Development` / `Unreleased` | `EXECUTION_PLAN.md` owns workflow phase; it is not a release claim |
+| Intended package version | `4.1.0` | Owner decision and active release-candidate line; the per-solution release manifest owns it |
+| Active workspace projection | `4.1.0` | Root `VERSION` is the checked candidate-source projection, not permanent multi-solution authority |
+| Lifecycle state | `Release Candidate` / `Candidate` | Owner accepted P3 and authorized one technical-only P4 cycle; no candidate ZIP or publication exists |
 | Working parent | `v4.0.1` at `c90f5f7f27d84343b95971a54486b88aa1022c00` | Immutable historical release lineage; not a reproducibility claim |
 | QA-approved copy-forward baseline | Commit `b3c3551c0c5bfc8d24c68d3036da4c8045a90b54`, solution tree `010454d19b10f46c71d9150335905766b946176e` | `BASELINE_RECORD.md` and raw-blob checksums are the durable before-state |
-| Development branch | `develop/4.1.0` | Workflow projection; publication still requires a separate approved release identity |
+| Active branch | `develop/4.1.0` | Candidate-source workflow projection; publication still requires a separate approved release identity |
 | Official source repository | `https://github.com/bitwrecked-often/nexus` | Repository origin; exact release/commit route must be projected into release-facing docs |
 | Primary edition ID | `windows-gui` | Graphical casual-player package; legacy `FullPackage` is a historical alias, not its new contract |
 | Optional static edition ID | `no-scripts` | Blocked/deferred until it has a truthful meaningful outcome without violating the frozen baseline |
@@ -40,13 +41,13 @@ It does not prove a release, compatibility result, GitHub setting, or Nexus stat
 | Candidate stage | `dist/7dtd_wasteland_animal_population_tuning/4.1.0/candidate/` | Ignored working output; contains candidates only |
 | Final-upload stage | `dist/7dtd_wasteland_animal_population_tuning/4.1.0/final-upload/` | Ignored technical-promotion output; never implies publication authority |
 
-The per-solution release manifest owns package version, lifecycle intent, edition IDs and roles, exact allowlists, capabilities, exclusions, filenames, and source-baseline reference. Root `VERSION`, `ModInfo.xml` version/display fields, GUI version text, README, changelog heading, package metadata, release notes, evidence reports, and Nexus draft copy are generated or validated projections. `ModInfo.xml` remains the authority for the runtime ID. A tag, GitHub Release, and Nexus served-file evidence prove their own external states only after authorized publication.
+The per-solution release manifest owns package version, lifecycle intent, edition IDs and roles, exact allowlists, capabilities, exclusions, filenames, deterministic archive policy, and source-baseline reference. Root `VERSION`, `ModInfo.xml` version/display fields, GUI version text, README, changelog heading, evidence reports, and future Nexus draft copy are generated or validated projections. Historical package metadata and release notes are not current projections. `ModInfo.xml` remains the authority for the runtime ID. A tag, GitHub Release, and Nexus served-file evidence prove their own external states only after authorized publication.
 
 ## Edition State
 
 | Edition | Role | Current state | Contract boundary |
 | --- | --- | --- | --- |
-| `windows-gui` | Primary casual-player Nexus file | Development; authorized for non-behavioral preparation | Exactly the accepted eight files; three visible root entries; existing BAT/PowerShell/XML behavior frozen |
+| `windows-gui` | Primary casual-player Nexus file | Candidate source; non-publishable; no ZIP built | Exactly the accepted eight files; three visible root entries; existing BAT/PowerShell/XML behavior frozen |
 | `no-scripts` | Optional readable static-inspection/manual-install file | Blocked/deferred | Must not advertise meaningful tuning while shipping vanilla-equivalent XML; do not invent preset values or borrow GUI/cap capabilities |
 | `vortex` | Optional Vortex-supported modlet | Blocked | Requires exact-candidate import, enable, recognition, disable, removal, identity, license, and source-route evidence |
 | Legacy three ZIPs | Historical `4.0.1` evidence | Immutable | Validate only against legacy facts and registered hashes; never use as build destinations or new-edition fixtures |
@@ -78,7 +79,7 @@ Support_Files_Do_Not_Edit/CHANGELOG.md
 | `governance/ASSET_PROVENANCE.md` | Authoritative current source | Asset ownership/provenance status and redistribution gate |
 | `governance/CHANGELOG.md` | Historical evidence | Governance/infrastructure history, not product behavior |
 | Root `README.md` | Controlled projection | Repository front door; validate against governance |
-| Root `VERSION` | Controlled projection | Active-workspace development label while one solution is active |
+| Root `VERSION` | Controlled projection | Active-workspace candidate-source label while one solution is active |
 | `RELEASING.md` | Authoritative current source, bounded | Separates validation, staging, candidate construction, technical promotion, and later authorized public actions |
 | `solutions/README.md` | Controlled projection | Current solution index; routes identity and edition truth to the manifest |
 | `solutions/7dtd_wasteland_animal_population_tuning.md` | Controlled projection | Current concise solution overview; contains no rebuild authority |
@@ -135,14 +136,29 @@ This table records what the P2 implementation changed without erasing the origin
 | TRUTH-009 | Still blocked | No-scripts remains non-publishable pending an owner-authorized meaningful static outcome. |
 | TRUTH-010 | Still blocked | Vortex remains non-publishable pending an exact-candidate lifecycle and GPL-completeness audit. |
 | TRUTH-011 | Bounded/partial | `RELEASING.md` separates technical phases from owner-authorized public actions. Main lifecycle, merge method, merge/tag order, and exact future tag naming remain owner gates. |
-| TRUTH-012 | Resolved for development staging | Attributes declare LF source bytes and P2 staging uses exact clean-`HEAD` Git blob bytes. Binding that commit to P3 approval and the release tag remains a P3/P4 gate. |
+| TRUTH-012 | Resolved for development staging | Attributes declare LF source bytes and P2 staging uses exact clean-`HEAD` Git blob bytes. P4 must bind the candidate source commit to generated evidence; tag binding remains a later public-release gate. |
 | TRUTH-013 | Still open, non-blocking | Root/governance license scope remains an explicit owner rights decision. |
 
-Additional P3/P4 gate: all content that will enter the ZIP, including the final
-README/changelog version, date, and state, must be frozen before candidate
-construction. The actual source commit, tag resolution, approvals, artifact
-hashes, and served URLs belong in generated acceptance/provenance evidence; the
-committed manifest must not require an impossible self-referential commit SHA.
+The P4 candidate-source projection freezes all content that can enter the ZIP.
+The changelog uses release-neutral wording rather than embedding an unknown
+publication date or served state. The actual source commit, tag resolution,
+approvals, artifact hashes, and served URLs belong in generated
+acceptance/provenance evidence; the committed manifest must not require an
+impossible self-referential commit SHA.
+
+## P3/P4 Transition Record
+
+- On 2026-07-13 the owner accepted the P3 planning set and authorized one
+  technical-only `PreparePrimary` cycle.
+- The candidate-source tuple is workspace version `4.1.0`, channel and lifecycle
+  `release-candidate`, and publication state `candidate`.
+- The primary edition state is `candidate`, with `publishable: false` and no
+  artifact hash. `releaseSourceCommit`, tag, publication approval, and exact
+  release-source URL remain unset.
+- The archive contract is stored ZIP entries, ordinal stage-path order, `/`
+  separators, timestamp `2000-01-01T00:00:00Z`, and two reproducibility builds.
+- No candidate ZIP has been staged, built, promoted, published, or served. P4
+  evidence must prove each technical transition before the plan can close.
 
 ## Satisfied Historical P1 Closure Rule
 

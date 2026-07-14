@@ -18,12 +18,12 @@ collection of experiments.
 
 The governing principle is simple: private observations become structured evidence; structured evidence becomes a tested solution; only an explicitly approved solution becomes a public release.
 
-Current development version: see `VERSION`.
+Current active version projection: see `VERSION`.
 
 ## Current 4.1.0 Route
 
 - Current execution phase: `governance/EXECUTION_PLAN.md`
-- Current owner review: `governance/RELEASE_READINESS_4.1.0.md`
+- Accepted release-readiness review: `governance/RELEASE_READINESS_4.1.0.md`
 - Reconciled authority and blocker map: `governance/REPOSITORY_TRUTH_MAP.md`
 - Repository-health controls and live-setting boundaries:
   `governance/GITHUB_REPOSITORY_HEALTH.md`
@@ -40,3 +40,11 @@ pwsh -NoProfile -File tools/release/Invoke-NexusPackage.ps1 `
 
 The default check is offline and read-only. It does not launch the mod tool,
 read a game installation, build or stage a candidate, publish, or change Nexus.
+P4 is technically authorized, but no candidate ZIP has been built or promoted.
+
+The broader repository test suite also uses owned system-temp clones. Its
+source-staging fixture uses a production-shaped path but creates no ZIP or
+`final-upload`; its package/GUI-smoke fixture is routed to the guarded
+`dist/.test-fixtures/` namespace. Both clones are deleted after the check, carry
+no candidate authority, and do not consume the one authorized P4 candidate
+cycle.

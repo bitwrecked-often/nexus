@@ -1,7 +1,7 @@
 # 7DTD 3.0 Wasteland Animal Population Tuning
 
 - Intended version: `4.1.0`
-- Lifecycle: Development / Unreleased
+- Lifecycle: Release Candidate / Unpublished
 - Primary audience: casual Windows players
 - Primary edition: `windows-gui`
 - Runtime mod ID: `BitWrecked_7DTD_WastelandAnimalPopulationTuning`
@@ -39,8 +39,9 @@ new package.
 
 ## Primary Package Shape
 
-The primary `windows-gui` edition is built only from the eight exact mappings in
-the release manifest. Its extracted root contains:
+The primary `windows-gui` edition is defined by the eight exact mappings in the
+release manifest. No candidate ZIP has been built or promoted. Its eventual
+extracted root contains:
 
 ```text
 README_FIRST.txt
@@ -94,6 +95,7 @@ support state.
 
 ## Publication Boundary
 
-Repository validation and staging do not authorize a tag, GitHub Release, Nexus
-upload, served-file change, or archival of `4.0.1`. Those remain explicit owner
-actions after the release-readiness review.
+The owner authorized one technical-only P4 candidate/promotion cycle. Repository
+validation, candidate preparation, and technical readiness do not authorize a
+tag, GitHub Release, Nexus upload, served-file change, or archival of `4.0.1`.
+Those remain separate explicit owner actions.

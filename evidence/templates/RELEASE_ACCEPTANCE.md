@@ -9,6 +9,7 @@ served-file result.
 - Solution ID:
 - Version:
 - Edition:
+- Execution class: `candidate` (disposable test fixtures are ineligible)
 - Lifecycle/channel:
 - Source commit:
 - Release tag, if created:
@@ -48,10 +49,25 @@ served-file result.
 - Rollback result:
 - Stop or rollback trigger:
 
-## Approval And Publication
+## Candidate Authorization And Technical Promotion
 
-- Approved for candidate construction by:
-- Candidate approval date:
+- Planning set accepted:
+- Candidate-construction authorization record:
+- Execution-plan SHA-256:
+- Accepted readiness record:
+- Accepted readiness SHA-256:
+- Candidate-construction authorization date:
+- Owner candidate cycle consumed:
+- Candidate built and validated:
+- Candidate promoted to `final-upload`:
+- Technically ready:
+- Technical acceptance date:
+
+Technical readiness is not publication approval.
+
+## Publication
+
+- Publication authorized: no / yes with record
 - Approved for publication by:
 - Publication approval date:
 - GitHub Release URL:
