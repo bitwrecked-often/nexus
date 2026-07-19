@@ -5,67 +5,163 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 This changelog tracks public upload versions. It separates gameplay XML changes from installer, packaging, documentation, and publishing changes.
 
-## Version 4.1.0
+## Version 4.1.1 - GUI Clarity Review
 
-This is a non-behavioral packaging and documentation release based on the
-owner-approved, QA-frozen `4.0.1` technical baseline.
+Development status: owner-approved release-ready build. All three 4.1.1 upload
+archives were rebuilt and validated on 2026-07-18. Not uploaded, tagged, or
+published.
 
-### Gameplay And Tool Behavior
+This is a major GUI clarity and presentation update built on the unchanged
+4.0.1 gameplay/XML foundation.
+
+- Clarified that `Choose Game Folder` selects the main 7 Days to Die folder,
+  not its `Mods` subfolder, and does not run the mod.
+- Renamed `Compare Values` to `Validate Current Game Settings`. It freshly reads
+  configuration without modifying game, mod, or server settings; when the user
+  enables Persistent log, its displayed report is written to that chosen file.
+- Removed `Next:` action instructions from validation results so the report
+  returns only the detected state and comparison information.
+- Added a labeled global-limit history to Brutal Science validation: game
+  default, newest backed-up setting, current setting, and selected test result.
+- Mirrored validation results into the Layered Reasoning Log as deduplicated
+  `VALIDATION` entries; repeated checks add only new or changed report lines.
+- Kept logging memory-only by default and added an opt-in `Persistent log`
+  checkbox with an independent Windows `Choose Log File` dialog. The GUI warns
+  that runtime history clears on restart; opted-in files receive the visible
+  session history and subsequent entries through an independent user-selected
+  text path, without reusing or altering game/mod path selections.
+- Added an explicit persistent-file consent dialog. File selection requires the
+  prominent dark-red, yellow-outlined Comic Sans confirmation button labeled
+  `I want to write a log file to my computer`; Cancel keeps runtime-only logging.
+- Added pre-write summaries for every actionable animal/global-limit setting
+  combination, with original blunt systems-programmer Easter-egg humor built by
+  a weighted context-aware fragment generator instead of complete canned quips.
+  Clean `CONFIRM` data and generated `EASTER EGG` lines are logged separately,
+  once per exact combination per session.
+- Tuned generated asides to recognize each combination's intent with comfortable,
+  wry, almost-judgmental humor that remains constructive rather than dismissive.
+- Added real-time positive, cautious-negative, neutral, and surprised weighting
+  based on count, average intensity, level diversity, and Brutal Science. Full
+  replies are assembled locally from reusable fragments with no network calls;
+  an offline reply-simulation switch supports distribution and tone review.
+- Calibrated low-intensity choices toward neutral-positive reactions and shifted
+  increasingly extreme combinations toward surprised/cautious responses. The
+  offline simulator now runs 500 rolls per representative case and reports tone
+  distributions plus samples.
+- Added a second weighted local generator for validation-time gameplay judgment.
+  It derives a difficulty rating and blunt opinion from animal intensity,
+  selection breadth, and global-cap pressure; complete responses are assembled
+  at runtime rather than stored as canned lines. The assessment is cached per
+  exact state and mirrored into the Layered Reasoning Log through validation.
+- Centered the complete validation area. The button and its label are centered,
+  with the dynamic selection summary centered on a separate line above it to
+  prevent rendering overlap.
+- Defined the global-limit apply/restore states, animal selection, and the difference
+  between restoring server settings and removing mod files directly in the GUI.
+- Labeled the visible cap control
+  `Raise Animal Spawn Cap - Brutal Science` and removed
+  its separate Restore button. Checked uses `Apply Limit Cap Only`; after the
+  cap changes, unchecking exposes `Restore Global Limit Only` on the bottom
+  action using the newest saved previous value.
+- Added the normal game animal spawn limit of `50` to the GUI label, tooltips,
+  validation report, stress-test confirmation, and restore confirmation while
+  preserving backup-based restore for customized prior values.
+- Clarified that `MaxSpawnedAnimals` is a global game/server limit across all
+  biomes; only the mod's separate XML route tuning is Wasteland-specific.
+- Allowed the cap setting to run as a standalone `Apply Limit Cap Only` action
+  without selecting animals or installing/changing Wasteland XML mod files.
+- Reduced the standalone `Apply Limit Cap Only` label from 10-point to
+  8-point for a cleaner fit.
+- Added default/current/result global-limit tracking to the visible selection
+  summary whenever Brutal Science is checked; validation reports retain the
+  same comparison.
+- Renamed `Mods Folder` to `Open Mods Folder` and centered the five animal-table
+  headings over their columns.
+- Changed the no-selection primary action from `Select Animals` to
+  `Check any Box Above to Install Here..`.
+- Removed the redundant idle `No changes selected.` note while retaining active
+  animal-selection summaries.
+- Removed redundant global-limit wording from the centered selection summary;
+  detailed cap values remain available in validation, confirmations, and logs.
+- Added a large upward-looking no-selection indicator that changes back to the
+  normal action arrow after animals are selected.
+- Simplified active Install/Reinstall styling to a centered gray button with a
+  green outline and subtle iridescent highlight, without a separate circle.
+- Added a translucent molded-plastic treatment with layered gloss, subtle
+  lower-edge depth, and a small pixel-art paw/glint signature.
+- Moved supplemental folder, validation, table-column, animal-selection,
+  Brutal Science, restore, remove, and Mods-folder explanations into targeted
+  long-lived tooltips and tightened the now-cleaner layout.
+- Tuned tooltips to appear after 200 ms, close after four seconds, and move
+  between controls with a 50 ms reshow delay.
+- Enabled lightweight native fade-in/fade-out animation for tooltips.
+- Added lightweight three-frame chat-style text streaming to every explanatory
+  tooltip; the complete wrapped message remains visible before fading out.
+- Added completed tooltip explanations to the Layered Reasoning Log as indexed `TIP`
+  entries. Each unique explanation is recorded only once per session, so
+  repeated hovers do not clutter the log.
+- Formalized the sidebar as `Layered Reasoning Log / Recent Actions`: verified
+  facts and file effects lead, gameplay consequences follow, and weighted
+  generated commentary comes last. Persistent saves use a matching default
+  filename while remaining explicit opt-in behavior.
+- Fully routed animal-row `TIP` entries by animal and table column. Entries now
+  identify Action, Current, or Result instead of using an ambiguous displayed
+  value such as `day 2 / night 4` as their source name.
+- Removed repetitive tooltips from animal checkboxes/names, level sliders, and
+  the matching All controls; retained routed Action, Current, and Result help.
+- Removed the redundant animal-selection section heading and reclaimed its
+  vertical spacing, reducing the window height by 30 pixels.
+- Changed the master label to `All` and moved its checkbox, shared slider, and
+  `Custom` action into the first normal table row directly above Dire wolf.
+- Unchecking `All` now clears every individual animal choice
+  while leaving the independent Brutal Science selection unchanged.
+- Added installed-state-aware animal removal. Unchecked installed animals show
+  `Uninstall` with their default result; single and multiple removal-only actions
+  are named clearly, mixed confirmations list removals, and removing the final
+  tuned animals removes generated mod XML and the empty mod folder, returning
+  the game's effective XML configuration to defaults.
+- Fixed single-animal removal naming so the bottom action shows the complete
+  animal name instead of treating it as a scalar character sequence.
+- Added a centered list of pending uninstall animals above the bottom action and
+  reduced the multi-object action label from 10-point to 6-point.
+- Replaced the generic multi-animal removal label with a compact two-line
+  `Remove Only:` action that lists every pending animal directly on the button.
+- Reworded per-animal removal as `Uninstall`. The bottom action now reads
+  `Uninstall Mod -` followed by affected animals, and confirmations state that
+  unchecked installed animals return to game-default values.
+- Removed the redundant centered selection-summary wording above validation;
+  affected animals remain named directly on the bottom action.
+- Aligned the grouped checkbox with the individual animal checkboxes below it.
+- Horizontally aligned the grouped slider track with the animal sliders below.
+- Lowered the grouped slider into the grouped-selection row and moved its
+  `Custom` value clear of the aligned slider.
+- Raised the grouped slider five pixels for final row alignment.
+- Removed the grouped-slider artifact beside the `Animal` heading and shifted
+  the `Action` heading three pixels left.
+- Shifted the `Current` and `Result` headings three pixels left for matching
+  column alignment.
+- Replaced the clipped single-line status area with a full-height right-side
+  activity console. It records timestamped task starts, choices, cancellations,
+  results, and failures, auto-follows new entries, and wraps long entries within
+  the narrower pane with vertical scrolling.
+- Made the activity console collapsed by default with a slim side-mounted debug
+  arrow; expanding and collapsing preserves the complete session history.
+- Converted the open console into a draggable split partition. The arrow snaps
+  it open at approximately half the main GUI width or closed, its divider can
+  be pulled sideways, and resizing the open window gives additional width to
+  the activity-log side while preserving the main GUI width.
+- Replaced the activity pane's resizing rounded border with a stable single
+  border to prevent repeated outline trails while expanding or dragging it.
+- No gameplay tuning, XML generation, install/remove, animal-cap, backup, or
+  restore behavior changed.
+
+## Version 4.1.0 - DEV GUI Review
 
 - No runtime, gameplay tuning, XML generation, install/remove, animal cap,
-  backup, restore, or modlet behavior change from the accepted baseline.
+  backup, restore, or modlet behavior changed.
 - Refined GUI labels, inline cap guidance, tooltips, and accessible descriptions
   so folder selection, value comparison, mod removal, cap restoration, and
   animal selection describe their existing behavior directly.
-- Updated release-facing version and source identity to `4.1.0` without changing
-  the accepted technical behavior.
-
-### Primary Customer Package
-
-- Defined the graphical Windows package as the primary casual-player file.
-- Reduced that package to an exact eight-file source-form allowlist: the first
-  README, BAT launcher, PowerShell GUI source, three modlet XML files, complete
-  GPL text, and this changelog.
-- Excluded the optional avatar, advanced command-line tools, validator,
-  publishing art/copy, raw QA material, and upload notes from the customer ZIP.
-- Kept `Support_Files_Do_Not_Edit` as a simple customer cue while clarifying that
-  it does not limit GPL modification or redistribution rights.
-- Added concise requirements, install, verification, removal, cap-restore,
-  security/privacy, license, source, and unofficial-origin guidance to the first
-  README.
-- Licensed the first README and this changelog under `GPL-3.0-or-later` and kept
-  the complete license beside the editable BAT, PowerShell, XML, and text source.
-
-### Identity, Packaging, And Evidence
-
-- Added one machine-readable release manifest for version, runtime identity,
-  edition roles, exact package paths, compatibility evidence, operational
-  effects, security facts, protected historical artifacts, and release gates.
-- Reserved a versioned primary filename:
-  `7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip`.
-- Added manifest-driven offline validation and an explicit ignored source-stage
-  action that cannot write to the historical upload folder or final-upload stage.
-- Preserved the three committed `4.0.1` ZIPs byte-for-byte and registered their
-  existing SHA-256 hashes as protected historical evidence.
-- Kept generated `4.1.0` ZIPs out of Git history; candidate construction,
-  technical promotion, and publication remain separate gates.
-
-### Optional Editions
-
-- Deferred the no-scripts edition because the frozen static XML is
-  vanilla-equivalent while its intended product contract requires a meaningful
-  documented tuning outcome. No values or support claim were invented.
-- Blocked the Vortex edition until a GPL-complete exact candidate passes a
-  recorded import, enable, recognition, disable, and removal audit.
-
-### Upgrade And Removal Notes
-
-- Existing users may use Reinstall Mod after selecting their desired tuning.
-- Remove Mod deletes only the named Bit Wrecked mod folder. It does not restore
-  `serverconfig.xml`; use Restore Cap separately if Brutal Science changed it.
-- Release evidence records the source commit and exact artifact checksum.
-  Publication date and served-file identity are added there only after
-  publication.
 
 ## Version 4.0.1 - 2026-07-07
 
@@ -95,7 +191,9 @@ Public upload status: scale retune and documentation update.
 ### Documentation
 
 - Clarified that `Default` installed writes live vanilla Wasteland animal baseline values and should feel like no mod for the tuned routes.
-- Clarified that `Remove Mod` is the true untouched comparison state.
+- Clarified at that stage that `Remove Mod` deletes the generated modlet. Current
+  wording additionally states the resulting effective XML/default behavior and
+  separates it from serverconfig.xml restoration.
 - Clarified that `Brutal Science` lifts a global animal cap and does not create animals by itself.
 - Added warning that vanilla despawn/timer/cleanup behavior still exists, but Dense/Absurd plus a lifted cap can build serious pressure over time.
 

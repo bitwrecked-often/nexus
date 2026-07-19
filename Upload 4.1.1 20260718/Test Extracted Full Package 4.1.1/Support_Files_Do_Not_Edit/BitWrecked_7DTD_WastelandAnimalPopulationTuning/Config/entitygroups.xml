@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  7DTD 3.0 Wasteland Animal Population Tuning XML patch
+  Copyright (C) 2026 Bit Wrecked
+  SPDX-License-Identifier: GPL-3.0-or-later
+  See LICENSE.txt for details.
+-->
+<configs>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/e[@n='animalSnake']/@p">10</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/e[@n='animalZombieVulture']/@p">5</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/e[@n='animalZombieDog']/@p">15</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/e[@n='animalZombieBear']/@p">5</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/e[@n='animalDireWolf']/@p">2</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/e[@n='none']/@p">50</set>
+
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/e[@n='animalDireWolf']/@p">4</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/e[@n='animalZombieBear']/@p">10</set>
+  <set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWastelandNight']/e[@n='none']/@p">60</set>
+</configs>

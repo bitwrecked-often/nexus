@@ -15,7 +15,7 @@ Add-Type -AssemblyName System.Drawing
 
 $packageRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $sourceMod = Join-Path $packageRoot "BitWrecked_7DTD_WastelandAnimalPopulationTuning"
-$script:PackageVersion = "4.1.0"
+$script:PackageVersion = "4.0.1"
 $script:BrutalScienceAnimalCap = 999
 
 function Get-DefaultGameRoot {
@@ -1284,7 +1284,7 @@ $toolTip = New-Object System.Windows.Forms.ToolTip
 
 $pathShell = New-Object System.Windows.Forms.Panel
 $pathShell.Location = New-Object System.Drawing.Point(27, 180)
-$pathShell.Size = New-Object System.Drawing.Size(414, 34)
+$pathShell.Size = New-Object System.Drawing.Size(438, 34)
 $pathShell.BackColor = [System.Drawing.Color]::White
 $form.Controls.Add($pathShell)
 Enable-RoundedBorder $pathShell 16 (New-Color 208 208 202)
@@ -1293,25 +1293,19 @@ $pathBox = New-Object System.Windows.Forms.TextBox
 $pathBox.BorderStyle = [System.Windows.Forms.BorderStyle]::None
 $pathBox.BackColor = [System.Drawing.Color]::White
 $pathBox.Location = New-Object System.Drawing.Point(13, 9)
-$pathBox.Size = New-Object System.Drawing.Size(386, 20)
+$pathBox.Size = New-Object System.Drawing.Size(410, 20)
 $pathBox.Text = Get-DefaultGameRoot
-$pathBox.AccessibleName = "7 Days to Die game folder"
-$pathBox.AccessibleDescription = "The game folder used for comparison, installation, removal, and optional animal-cap actions. Clicking the field does not run the mod."
 $pathShell.Controls.Add($pathBox)
-$toolTip.SetToolTip($pathBox, "Game folder used by the tool. Clicking or editing this field does not run the mod.")
 
 $browseButton = New-Object System.Windows.Forms.Button
-$browseButton.Text = "Choose Game Folder"
-$browseButton.Font = New-Object System.Drawing.Font("Segoe UI", 8)
+$browseButton.Text = "Browse"
 $browseButton.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $browseButton.FlatAppearance.BorderSize = 0
 $browseButton.BackColor = [System.Drawing.Color]::White
 $browseButton.ForeColor = New-Color 38 38 36
 $browseButton.Cursor = [System.Windows.Forms.Cursors]::Hand
-$browseButton.Location = New-Object System.Drawing.Point(454, 178)
-$browseButton.Size = New-Object System.Drawing.Size(140, 36)
-$browseButton.AccessibleName = "Choose game folder"
-$browseButton.AccessibleDescription = "Open a folder chooser for the 7 Days to Die game folder. This does not run the mod."
+$browseButton.Location = New-Object System.Drawing.Point(478, 178)
+$browseButton.Size = New-Object System.Drawing.Size(116, 36)
 $browseButton.Add_Click({
     $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
     $dialog.Description = "Select your 7 Days to Die game folder"
@@ -1325,7 +1319,6 @@ $browseButton.Add_Click({
 })
 $form.Controls.Add($browseButton)
 Enable-RoundedBorder $browseButton 18 (New-Color 208 208 202)
-$toolTip.SetToolTip($browseButton, "Choose the 7 Days to Die game folder. This does not run the mod.")
 
 $tuningPanel = New-Object System.Windows.Forms.Panel
 $tuningPanel.Location = New-Object System.Drawing.Point(27, 230)
@@ -1335,7 +1328,7 @@ $form.Controls.Add($tuningPanel)
 Enable-RoundedBorder $tuningPanel 16 (New-Color 226 224 218)
 
 $tuningTitle = New-Object System.Windows.Forms.Label
-$tuningTitle.Text = "Select animals to tune"
+$tuningTitle.Text = "Animals"
 $tuningTitle.Font = New-Object System.Drawing.Font("Segoe UI Semibold", 9, [System.Drawing.FontStyle]::Bold)
 $tuningTitle.ForeColor = New-Color 38 38 36
 $tuningTitle.AutoSize = $true
@@ -1351,7 +1344,6 @@ $masterCheck.Location = New-Object System.Drawing.Point(18, 45)
 $masterCheck.Size = New-Object System.Drawing.Size(118, 24)
 $masterCheck.Checked = $false
 $tuningPanel.Controls.Add($masterCheck)
-$toolTip.SetToolTip($masterCheck, "Apply one shared tuning level to every listed animal.")
 
 $masterTrack = New-Object System.Windows.Forms.TrackBar
 $masterTrack.Minimum = 0
@@ -1444,7 +1436,7 @@ $choiceImpact.Visible = $true
 $tuningPanel.Controls.Add($choiceImpact)
 
 $scanButton = New-Object System.Windows.Forms.Button
-$scanButton.Text = "Compare Values"
+$scanButton.Text = "Check"
 $scanButton.Font = New-Object System.Drawing.Font("Segoe UI", 8)
 $scanButton.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $scanButton.FlatAppearance.BorderSize = 0
@@ -1453,11 +1445,9 @@ $scanButton.ForeColor = New-Color 38 38 36
 $scanButton.Cursor = [System.Windows.Forms.Cursors]::Hand
 $scanButton.Location = New-Object System.Drawing.Point(418, 236)
 $scanButton.Size = New-Object System.Drawing.Size(116, 30)
-$scanButton.AccessibleName = "Compare current and selected values"
-$scanButton.AccessibleDescription = "Open a fresh read-only comparison report. This does not change files or refresh the visible table."
 $tuningPanel.Controls.Add($scanButton)
 Enable-RoundedBorder $scanButton 15 (New-Color 208 208 202)
-$toolTip.SetToolTip($scanButton, "Open a fresh read-only comparison report. The visible table is not changed.")
+$toolTip.SetToolTip($scanButton, "Read-only audit. Compares installed XML with current choices.")
 
 $capPanel = New-Object System.Windows.Forms.Panel
 $capPanel.Location = New-Object System.Drawing.Point(27, 528)
@@ -1467,19 +1457,18 @@ $form.Controls.Add($capPanel)
 Enable-RoundedBorder $capPanel 16 (New-Color 226 224 218)
 
 $capCheck = New-Object System.Windows.Forms.CheckBox
-$capCheck.Text = "Brutal Science"
+$capCheck.Text = "Brutal Science: lift animal cap"
 $capCheck.Font = New-Object System.Drawing.Font("Segoe UI Semibold", 9, [System.Drawing.FontStyle]::Bold)
 $capCheck.ForeColor = New-Color 130 45 35
 $capCheck.AutoSize = $false
 $capCheck.Location = New-Object System.Drawing.Point(16, 10)
 $capCheck.Size = New-Object System.Drawing.Size(270, 24)
 $capCheck.Checked = $false
-$capCheck.AccessibleDescription = "Optional stress test. After confirmation, back up serverconfig.xml and raise MaxSpawnedAnimals to 999. This does not create animals."
 $capPanel.Controls.Add($capCheck)
-$toolTip.SetToolTip($capCheck, "Optional stress test. Backs up serverconfig.xml, then raises the animal cap to 999. It does not create animals.")
+$toolTip.SetToolTip($capCheck, "Optional serverconfig.xml edit. Backs up first, then sets MaxSpawnedAnimals to 999.")
 
 $restoreCapButton = New-Object System.Windows.Forms.Button
-$restoreCapButton.Text = "Restore Cap"
+$restoreCapButton.Text = "Restore"
 $restoreCapButton.Font = New-Object System.Drawing.Font("Segoe UI", 8)
 $restoreCapButton.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $restoreCapButton.FlatAppearance.BorderSize = 0
@@ -1489,13 +1478,12 @@ $restoreCapButton.Cursor = [System.Windows.Forms.Cursors]::Hand
 $restoreCapButton.Location = New-Object System.Drawing.Point(430, 8)
 $restoreCapButton.Size = New-Object System.Drawing.Size(110, 24)
 $restoreCapButton.Enabled = $false
-$restoreCapButton.AccessibleDescription = "Restore serverconfig.xml from the newest Bit Wrecked animal-cap backup. This does not remove the mod or force a game-default value."
 $capPanel.Controls.Add($restoreCapButton)
 Enable-RoundedBorder $restoreCapButton 12 (New-Color 208 208 202)
-$toolTip.SetToolTip($restoreCapButton, "Restore the previous animal cap from the newest backup. Does not remove the mod.")
+$toolTip.SetToolTip($restoreCapButton, "Restore the newest animal-cap backup.")
 
 $capWarning = New-Object System.Windows.Forms.Label
-$capWarning.Text = "Stress test: backs up serverconfig.xml, then raises the animal cap to 999.`nRestore Cap uses the newest backup; Remove Mod is separate."
+$capWarning.Text = "Sets MaxSpawnedAnimals to 999. This removes a safety rail.`nExpect breakage if hardware, server, or choices cannot keep up."
 $capWarning.Font = New-Object System.Drawing.Font("Segoe UI", 8)
 $capWarning.ForeColor = New-Color 82 82 78
 $capWarning.Location = New-Object System.Drawing.Point(37, 34)
@@ -1531,7 +1519,7 @@ Set-RoundedRegion $actionDot 13
 $actionDot.BringToFront()
 
 $removeButton = New-Object System.Windows.Forms.Button
-$removeButton.Text = "Remove Mod"
+$removeButton.Text = "Remove"
 $removeButton.Font = New-Object System.Drawing.Font("Segoe UI", 9)
 $removeButton.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $removeButton.FlatAppearance.BorderSize = 0
@@ -1542,7 +1530,6 @@ $removeButton.Location = New-Object System.Drawing.Point(249, 623)
 $removeButton.Size = New-Object System.Drawing.Size(112, 42)
 $form.Controls.Add($removeButton)
 Enable-RoundedBorder $removeButton 21 (New-Color 208 208 202)
-$toolTip.SetToolTip($removeButton, "Remove this mod from the game's Mods folder. Does not restore the animal cap.")
 
 $openFolderButton = New-Object System.Windows.Forms.Button
 $openFolderButton.Text = "Mods Folder"
@@ -1556,7 +1543,6 @@ $openFolderButton.Location = New-Object System.Drawing.Point(371, 623)
 $openFolderButton.Size = New-Object System.Drawing.Size(130, 42)
 $form.Controls.Add($openFolderButton)
 Enable-RoundedBorder $openFolderButton 21 (New-Color 208 208 202)
-$toolTip.SetToolTip($openFolderButton, "Open the game's Mods folder in Windows Explorer.")
 
 $closeButton = New-Object System.Windows.Forms.Button
 $closeButton.Text = "Close"
@@ -1794,7 +1780,6 @@ function Refresh-AnimalChoices {
             $check.Location = New-Object System.Drawing.Point(22, $y)
             $check.Size = New-Object System.Drawing.Size(118, 22)
             $animalRowsPanel.Controls.Add($check)
-$toolTip.SetToolTip($check, "Include $displayName in the next install or reinstall.")
 
             $track = New-Object System.Windows.Forms.TrackBar
             $track.Tag = $entity
@@ -2433,19 +2418,19 @@ $scanButton.Add_Click({
         $scanReport = New-ScanValuesReport -GameRoot $pathBox.Text -AnimalLevels $effectiveLevels -IncludeBrutalScienceCap ([bool]$capCheck.Checked)
 
         if ($scanReport.State -eq "Current") {
-            Set-Status $status "Comparison complete: XML is current." ([System.Drawing.Color]::DarkGreen)
+            Set-Status $status "Check complete: XML is current." ([System.Drawing.Color]::DarkGreen)
         }
         elseif ($scanReport.State -eq "Missing") {
-            Set-Status $status "Comparison complete: not installed." ([System.Drawing.Color]::DarkOrange)
+            Set-Status $status "Check complete: not installed." ([System.Drawing.Color]::DarkOrange)
         }
         else {
-            Set-Status $status "Comparison complete: XML differs from choices." ([System.Drawing.Color]::DarkOrange)
+            Set-Status $status "Check complete: XML differs from choices." ([System.Drawing.Color]::DarkOrange)
         }
 
         Show-ReadOnlyReportDialog -Owner $form -Title $scanReport.Title -Text $scanReport.Text
     }
     catch {
-        Set-Status $status "Comparison failed: $($_.Exception.Message)" ([System.Drawing.Color]::Firebrick)
+        Set-Status $status "Scan failed: $($_.Exception.Message)" ([System.Drawing.Color]::Firebrick)
     }
 })
 
@@ -2458,7 +2443,7 @@ $removeButton.Add_Click({
         if (Test-ModInstalled $pathBox.Text) {
             $choice = [System.Windows.Forms.MessageBox]::Show(
                 "Remove 7DTD 3.0 Wasteland Animal Population Tuning from Mods?",
-                "Remove Mod",
+                "Remove",
                 [System.Windows.Forms.MessageBoxButtons]::YesNo,
                 [System.Windows.Forms.MessageBoxIcon]::Warning
             )

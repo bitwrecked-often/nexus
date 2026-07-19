@@ -5,68 +5,6 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 This changelog tracks public upload versions. It separates gameplay XML changes from installer, packaging, documentation, and publishing changes.
 
-## Version 4.1.0
-
-This is a non-behavioral packaging and documentation release based on the
-owner-approved, QA-frozen `4.0.1` technical baseline.
-
-### Gameplay And Tool Behavior
-
-- No runtime, gameplay tuning, XML generation, install/remove, animal cap,
-  backup, restore, or modlet behavior change from the accepted baseline.
-- Refined GUI labels, inline cap guidance, tooltips, and accessible descriptions
-  so folder selection, value comparison, mod removal, cap restoration, and
-  animal selection describe their existing behavior directly.
-- Updated release-facing version and source identity to `4.1.0` without changing
-  the accepted technical behavior.
-
-### Primary Customer Package
-
-- Defined the graphical Windows package as the primary casual-player file.
-- Reduced that package to an exact eight-file source-form allowlist: the first
-  README, BAT launcher, PowerShell GUI source, three modlet XML files, complete
-  GPL text, and this changelog.
-- Excluded the optional avatar, advanced command-line tools, validator,
-  publishing art/copy, raw QA material, and upload notes from the customer ZIP.
-- Kept `Support_Files_Do_Not_Edit` as a simple customer cue while clarifying that
-  it does not limit GPL modification or redistribution rights.
-- Added concise requirements, install, verification, removal, cap-restore,
-  security/privacy, license, source, and unofficial-origin guidance to the first
-  README.
-- Licensed the first README and this changelog under `GPL-3.0-or-later` and kept
-  the complete license beside the editable BAT, PowerShell, XML, and text source.
-
-### Identity, Packaging, And Evidence
-
-- Added one machine-readable release manifest for version, runtime identity,
-  edition roles, exact package paths, compatibility evidence, operational
-  effects, security facts, protected historical artifacts, and release gates.
-- Reserved a versioned primary filename:
-  `7DTD_WastelandAnimalPopulationTuning-4.1.0-windows-gui.zip`.
-- Added manifest-driven offline validation and an explicit ignored source-stage
-  action that cannot write to the historical upload folder or final-upload stage.
-- Preserved the three committed `4.0.1` ZIPs byte-for-byte and registered their
-  existing SHA-256 hashes as protected historical evidence.
-- Kept generated `4.1.0` ZIPs out of Git history; candidate construction,
-  technical promotion, and publication remain separate gates.
-
-### Optional Editions
-
-- Deferred the no-scripts edition because the frozen static XML is
-  vanilla-equivalent while its intended product contract requires a meaningful
-  documented tuning outcome. No values or support claim were invented.
-- Blocked the Vortex edition until a GPL-complete exact candidate passes a
-  recorded import, enable, recognition, disable, and removal audit.
-
-### Upgrade And Removal Notes
-
-- Existing users may use Reinstall Mod after selecting their desired tuning.
-- Remove Mod deletes only the named Bit Wrecked mod folder. It does not restore
-  `serverconfig.xml`; use Restore Cap separately if Brutal Science changed it.
-- Release evidence records the source commit and exact artifact checksum.
-  Publication date and served-file identity are added there only after
-  publication.
-
 ## Version 4.0.1 - 2026-07-07
 
 Public upload status: scale retune and documentation update.
