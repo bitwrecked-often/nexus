@@ -1,0 +1,864 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bitwrecked-often/nexus/blob/develop/4.1.0/governance/schemas/solution-release-manifest.schema.json",
+  "title": "Nexus Solution Release Manifest",
+  "description": "Repository-local identity, edition, packaging, and evidence contract for one Nexus solution.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "solution",
+    "release",
+    "lineage",
+    "technicalFreeze",
+    "compatibility",
+    "license",
+    "distribution",
+    "operations",
+    "runtimeFacts",
+    "versionSurfaces",
+    "editions",
+    "protectedArtifacts"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "solution": {
+      "$ref": "#/$defs/solution"
+    },
+    "release": {
+      "$ref": "#/$defs/release"
+    },
+    "lineage": {
+      "$ref": "#/$defs/lineage"
+    },
+    "compatibility": {
+      "$ref": "#/$defs/compatibility"
+    },
+    "license": {
+      "$ref": "#/$defs/license"
+    },
+    "distribution": {
+      "$ref": "#/$defs/distribution"
+    },
+    "operations": {
+      "$ref": "#/$defs/operations"
+    },
+    "runtimeFacts": {
+      "$ref": "#/$defs/runtimeFacts"
+    },
+    "versionSurfaces": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "$ref": "#/$defs/versionSurface"
+      }
+    },
+    "technicalFreeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "baselineCommit",
+        "unchangedPaths",
+        "metadataProjections"
+      ],
+      "properties": {
+        "baselineCommit": {
+          "$ref": "#/$defs/gitObject"
+        },
+        "unchangedPaths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/relativePath"
+          }
+        },
+        "metadataProjections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "path",
+              "fromVersion",
+              "toVersion",
+              "fromWebsite",
+              "toWebsite"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "powershell-package-version",
+                  "mod-info-version-website"
+                ]
+              },
+              "path": {
+                "$ref": "#/$defs/relativePath"
+              },
+              "fromVersion": {
+                "$ref": "#/$defs/semver"
+              },
+              "toVersion": {
+                "$ref": "#/$defs/semver"
+              },
+              "fromWebsite": {
+                "$ref": "#/$defs/nullableString"
+              },
+              "toWebsite": {
+                "$ref": "#/$defs/nullableString"
+              }
+            }
+          }
+        }
+      }
+    },
+    "editions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/edition"
+      }
+    },
+    "protectedArtifacts": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/protectedArtifact"
+      }
+    }
+  },
+  "$defs": {
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "gitObject": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{40}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._/-]+$"
+    },
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stringArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "solution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "author",
+        "officialRepository",
+        "sourceRoot",
+        "runtimeModId",
+        "installedFolder"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "officialRepository": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourceRoot": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "runtimeModId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_]+$"
+        },
+        "installedFolder": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_]+$"
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intendedVersion",
+        "workspaceVersion",
+        "channel",
+        "lifecycle",
+        "publicationState",
+        "branch",
+        "releaseSourceCommit",
+        "releaseTag",
+        "approvedForPublication",
+        "approvalRecord"
+      ],
+      "properties": {
+        "intendedVersion": {
+          "$ref": "#/$defs/semver"
+        },
+        "workspaceVersion": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-dev)?$"
+        },
+        "channel": {
+          "enum": [
+            "development",
+            "private-test",
+            "release-candidate",
+            "public"
+          ]
+        },
+        "lifecycle": {
+          "enum": [
+            "development",
+            "private-test",
+            "release-candidate",
+            "supported",
+            "maintenance",
+            "superseded",
+            "archived"
+          ]
+        },
+        "publicationState": {
+          "enum": [
+            "unreleased",
+            "candidate",
+            "publishable",
+            "published",
+            "superseded",
+            "archived"
+          ]
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "releaseSourceCommit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/gitObject"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "releaseTag": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "approvedForPublication": {
+          "type": "boolean"
+        },
+        "approvalRecord": {
+          "$ref": "#/$defs/nullableString"
+        }
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workingParent",
+        "sourceBaseline"
+      ],
+      "properties": {
+        "workingParent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "version",
+            "tag",
+            "commit",
+            "state"
+          ],
+          "properties": {
+            "version": {
+              "$ref": "#/$defs/semver"
+            },
+            "tag": {
+              "type": "string",
+              "minLength": 1
+            },
+            "commit": {
+              "$ref": "#/$defs/gitObject"
+            },
+            "state": {
+              "const": "immutable-historical"
+            }
+          }
+        },
+        "sourceBaseline": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "commit",
+            "tree",
+            "fileCount",
+            "acceptanceBasis",
+            "record",
+            "checksums"
+          ],
+          "properties": {
+            "commit": {
+              "$ref": "#/$defs/gitObject"
+            },
+            "tree": {
+              "$ref": "#/$defs/gitObject"
+            },
+            "fileCount": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "acceptanceBasis": {
+              "enum": [
+                "owner-qa-attestation",
+                "retained-test-evidence"
+              ]
+            },
+            "record": {
+              "$ref": "#/$defs/relativePath"
+            },
+            "checksums": {
+              "$ref": "#/$defs/relativePath"
+            }
+          }
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "game",
+        "environments"
+      ],
+      "properties": {
+        "game": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "targetLabel",
+            "retainedDescription",
+            "exactTestedBuild",
+            "evidence"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "targetLabel": {
+              "type": "string",
+              "minLength": 1
+            },
+            "retainedDescription": {
+              "type": "string",
+              "minLength": 1
+            },
+            "exactTestedBuild": {
+              "$ref": "#/$defs/nullableString"
+            },
+            "evidence": {
+              "$ref": "#/$defs/evidenceLevel"
+            }
+          }
+        },
+        "environments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "evidence",
+              "basis"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidenceLevel"
+              },
+              "basis": {
+                "$ref": "#/$defs/nullableString"
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidenceLevel": {
+      "enum": [
+        "verified",
+        "observed",
+        "inferred",
+        "unverified",
+        "unsupported"
+      ]
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "expression",
+        "fullTextSource",
+        "primaryStagePath",
+        "customerDocuments",
+        "officialSourceRepository",
+        "baselineSourceUrl",
+        "releaseSourceUrl"
+      ],
+      "properties": {
+        "expression": {
+          "const": "GPL-3.0-or-later"
+        },
+        "fullTextSource": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "primaryStagePath": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "customerDocuments": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "officialSourceRepository": {
+          "type": "string",
+          "format": "uri"
+        },
+        "baselineSourceUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "releaseSourceUrl": {
+          "$ref": "#/$defs/nullableString"
+        }
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidateStage",
+        "finalUploadStage",
+        "workingEvidenceStage",
+        "durableEvidenceRoot",
+        "stagingBytePolicy",
+        "archiveFormat",
+        "archiveCompression",
+        "archiveEntryOrder",
+        "archiveTimestampUtc",
+        "archivePathSeparator",
+        "reproducibilityBuildCount",
+        "generatedArtifactsTrackedByGit",
+        "overwriteFinalArtifact",
+        "historicalArchivesAreBuildTargets"
+      ],
+      "properties": {
+        "candidateStage": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "finalUploadStage": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "workingEvidenceStage": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "durableEvidenceRoot": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "stagingBytePolicy": {
+          "const": "clean-head-git-blob-bytes"
+        },
+        "archiveFormat": {
+          "const": "zip"
+        },
+        "archiveCompression": {
+          "const": "store"
+        },
+        "archiveEntryOrder": {
+          "const": "ordinal-stage-path"
+        },
+        "archiveTimestampUtc": {
+          "const": "2000-01-01T00:00:00Z"
+        },
+        "archivePathSeparator": {
+          "const": "forward-slash"
+        },
+        "reproducibilityBuildCount": {
+          "const": 2
+        },
+        "generatedArtifactsTrackedByGit": {
+          "const": false
+        },
+        "overwriteFinalArtifact": {
+          "const": false
+        },
+        "historicalArchivesAreBuildTargets": {
+          "const": false
+        }
+      }
+    },
+    "operations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reads",
+        "writes",
+        "backsUp",
+        "deletes",
+        "neverTouches"
+      ],
+      "properties": {
+        "reads": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "writes": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "backsUp": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "deletes": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "neverTouches": {
+          "$ref": "#/$defs/stringArray"
+        }
+      }
+    },
+    "runtimeFacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "basis",
+        "networkUsed",
+        "telemetryUsed",
+        "elevationRequested",
+        "userWritePermissionRequired",
+        "bundledCompiledCode",
+        "bundledExecutableBinary",
+        "scriptsIncluded",
+        "processLocalExecutionPolicyBypass",
+        "externalProcesses"
+      ],
+      "properties": {
+        "basis": {
+          "enum": [
+            "frozen-source-inspection",
+            "retained-test-evidence"
+          ]
+        },
+        "networkUsed": {
+          "type": "boolean"
+        },
+        "telemetryUsed": {
+          "type": "boolean"
+        },
+        "elevationRequested": {
+          "type": "boolean"
+        },
+        "userWritePermissionRequired": {
+          "type": "boolean"
+        },
+        "bundledCompiledCode": {
+          "type": "boolean"
+        },
+        "bundledExecutableBinary": {
+          "type": "boolean"
+        },
+        "scriptsIncluded": {
+          "type": "boolean"
+        },
+        "processLocalExecutionPolicyBypass": {
+          "type": "boolean"
+        },
+        "externalProcesses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "purpose",
+              "automatic"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "automatic": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "versionSurface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "scope",
+        "path",
+        "developmentValue",
+        "candidateValue"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "plain-exact",
+            "mod-info-xml",
+            "powershell-package-version",
+            "readme-version-line",
+            "changelog-heading"
+          ]
+        },
+        "scope": {
+          "enum": [
+            "repository",
+            "solution"
+          ]
+        },
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "developmentValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidateValue": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "edition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "role",
+        "state",
+        "publishable",
+        "plannedFilename",
+        "sha256",
+        "archiveRootEntries",
+        "rejectUnlistedFiles",
+        "sourceToStage",
+        "capabilities",
+        "requiredCapabilities",
+        "exclusions",
+        "requiredGates",
+        "blockers"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "role": {
+          "enum": [
+            "primary",
+            "optional"
+          ]
+        },
+        "state": {
+          "enum": [
+            "development",
+            "blocked",
+            "candidate",
+            "publishable",
+            "published",
+            "superseded",
+            "archived"
+          ]
+        },
+        "publishable": {
+          "type": "boolean"
+        },
+        "plannedFilename": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9._-]+\\.zip$"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "archiveRootEntries": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "rejectUnlistedFiles": {
+          "const": true
+        },
+        "sourceToStage": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceToStage"
+          }
+        },
+        "capabilities": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "requiredCapabilities": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "exclusions": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "requiredGates": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "blockers": {
+          "$ref": "#/$defs/stringArray"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "blocked"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "publishable": {
+                "const": false
+              },
+              "blockers": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "windows-gui"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "role": {
+                "const": "primary"
+              },
+              "sourceToStage": {
+                "minItems": 8,
+                "maxItems": 8
+              },
+              "archiveRootEntries": {
+                "minItems": 3,
+                "maxItems": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    "sourceToStage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "stage",
+        "kind"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "stage": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "kind": {
+          "enum": [
+            "text",
+            "batch",
+            "powershell",
+            "modinfo",
+            "config-xml",
+            "license"
+          ]
+        }
+      }
+    },
+    "protectedArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "state"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "state": {
+          "const": "immutable-historical"
+        }
+      }
+    }
+  }
+}

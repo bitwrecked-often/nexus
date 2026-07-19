@@ -1,5 +1,8 @@
 # 7DTD 3.0 Wasteland Animal Population Tuning - Release Notes
 
+> Status: Historical `4.0.1` full-helper release record. It is not shared
+> `4.1.0` documentation and must not be copied into another edition.
+
 Version: 4.0.1
 Release Date: 2026-07-07
 Game Version Target: 7 Days to Die 3.0-era Windows / Steam installs

@@ -1,0 +1,61 @@
+# Generated release workspace. Final ZIPs are release attachments, not Git blobs.
+/dist/
+
+# Local scratch and private evidence.
+/.sandbox/
+/private/
+/evidence/raw/
+/evidence/private/
+/evidence/work/
+/TestResults/
+/coverage/
+/tmp/
+/temp/
+/scratch/
+
+# Secrets and machine-local configuration.
+.env
+.env.*
+!.env.example
+*.local
+*.user
+*.key
+*.pem
+*secrets*.json
+*secrets*.yml
+*secrets*.yaml
+
+# Logs, crash material, and temporary/backup files.
+*.log
+*.dmp
+*.etl
+*.tmp
+*.bak
+*.orig
+*.rej
+serverconfig.BitWreckedAnimalCapBackup-*.xml
+
+# Local game/server material. Synthetic fixtures must use explicit .synthetic names.
+/local-game/
+/game-root/
+/sandbox-game/
+/Mods/
+/Saves/
+/serverconfig.xml
+output_log*.txt
+Player.log
+
+# New archives must be generated under dist/ and kept out of Git history.
+# The three already tracked 4.0.1 ZIPs are grandfathered immutable evidence.
+*.zip
+*.7z
+*.rar
+
+# Editor and operating-system noise.
+.vs/
+.idea/
+.vscode/*.local.*
+*.suo
+.DS_Store
+Thumbs.db
+Desktop.ini

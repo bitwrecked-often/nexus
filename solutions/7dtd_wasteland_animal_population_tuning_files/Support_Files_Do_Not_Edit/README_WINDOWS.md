@@ -1,5 +1,9 @@
 # Recipe: 7DTD 3.0 Wasteland Animal Population Tuning
 
+> Status: Historical expanded `4.0.1` guide retained for reference. The current
+> primary customer contract is `../README_FIRST.txt`. Do not execute commands
+> from this historical guide; use the repository-root release tooling.
+
 Version: 4.0.1
 
 Tune Wasteland animal density and animal mix in 7 Days to Die.

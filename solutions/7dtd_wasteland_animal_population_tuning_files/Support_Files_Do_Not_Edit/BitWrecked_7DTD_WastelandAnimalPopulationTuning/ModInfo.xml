@@ -10,6 +10,6 @@
   <DisplayName value="7DTD 3.0 Wasteland Animal Population Tuning"/>
   <Description value="Tunes Wasteland animal density and animal mix using XML-only spawn and entitygroup patches."/>
   <Author value="Bit Wrecked"/>
-  <Version value="4.0.1"/>
-  <Website value=""/>
+  <Version value="4.1.0"/>
+  <Website value="https://github.com/bitwrecked-often/nexus"/>
 </xml>

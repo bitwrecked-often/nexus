@@ -1,0 +1,25 @@
+# Repository and release-source text is LF-normalized regardless of local Git settings.
+* text=auto eol=lf
+
+*.bat text eol=lf
+*.cmd text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.psd1 text eol=lf
+*.psm1 text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary assets and historical archives must never receive text conversion.
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.webp binary
+*.zip binary
+*.7z binary
+*.rar binary

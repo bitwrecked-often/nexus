@@ -1,5 +1,8 @@
 # 7DTD 3.0 Wasteland Animal Population Tuning - Publishing SEO
 
+> Status: Retired `4.0.1` publishing draft. Do not use it as current Nexus copy;
+> derive future publishing text from the release manifest and readiness record.
+
 Use this text when posting the download on YouTube, GitHub, Facebook, or a mod page.
 
 ## Title

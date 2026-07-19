@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  7DTD 3.0 Wasteland Animal Population Tuning
+  Copyright (C) 2026 Bit Wrecked
+  SPDX-License-Identifier: GPL-3.0-or-later
+  See LICENSE.txt for details.
+-->
+<xml>
+  <Name value="BitWrecked_7DTD_WastelandAnimalPopulationTuning"/>
+  <DisplayName value="7DTD 3.0 Wasteland Animal Population Tuning"/>
+  <Description value="Tunes Wasteland animal density and animal mix using XML-only spawn and entitygroup patches."/>
+  <Author value="Bit Wrecked"/>
+  <Version value="4.1.1"/>
+  <Website value=""/>
+</xml>
