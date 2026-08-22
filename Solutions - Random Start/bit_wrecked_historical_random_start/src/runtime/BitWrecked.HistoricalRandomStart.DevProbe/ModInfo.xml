@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="BitWrecked_HistoricalRandomStart_DEV" />
+  <DisplayName value="Historical Random Start - Alpha 6 Method DEV Probe" />
+  <Description value="Private observation-only spawn lifecycle probe; no gameplay changes." />
+  <Author value="Bit Wrecked" />
+  <Version value="0.0.1.0" />
+  <Website value="" />
+  <SkipWithAntiCheat value="true" />
+</xml>
