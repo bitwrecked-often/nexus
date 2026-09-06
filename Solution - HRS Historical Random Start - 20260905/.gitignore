@@ -1,6 +1,0 @@
-# Local recovery bundles exceed GitHub's per-file size limit and are not part of releases.
-archive/bit_wrecked_offense_weapons_design/recovery_artifacts/root-repository-history.bundle
-archive/bit_wrecked_mod_framework_template/recovery_artifacts/root-repository-history.bundle
-
-# Sanitized QA working runs and ZIP exports are local evidence, not source.
-/qa_runs/

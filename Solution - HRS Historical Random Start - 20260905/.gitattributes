@@ -1,8 +1,0 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-
-# HRS 1.0.1 records and verifies exact release/source bytes. Preserve them
-# across clones while retaining textual diffs for reviewed source and metadata.
-hrs_1.0.1/dev/src/runtime/main/** -text diff
-hrs_1.0.1/dev/verified/main/ModInfo.xml -text diff
-hrs_1.0.1/dev/verified/main/d0163.dll -text -diff
