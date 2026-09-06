@@ -1,0 +1,115 @@
+{
+    "schema":  "hrs-release/v1",
+    "product":  "Historical Random Start",
+    "version":  "1.1.0",
+    "buildId":  "r110",
+    "releaseDate":  "2026-08-31",
+    "sourceCommit":  "767250564ecddf7bade8b8ba9f5448a0d0027ce1",
+    "laneStatus":  "development",
+    "supportedEnvironment":  {
+                                 "game":  "7 Days to Die",
+                                 "gameVersion":  "V3.2 (b9)",
+                                 "world":  "Navezgane",
+                                 "playMode":  "local-single-player",
+                                 "antiCheat":  "disabled",
+                                 "assemblyCSharpMvid":  "229796d0-95ca-4662-b426-1a6f1f1596ed"
+                             },
+    "scope":  {
+                  "approvedSpawnPoints":  [
+                                              {
+                                                  "id":  "NG01",
+                                                  "x":  -1528,
+                                                  "y":  80,
+                                                  "z":  1700,
+                                                  "description":  "Perishton snow city"
+                                              },
+                                              {
+                                                  "id":  "NG02",
+                                                  "x":  -2100,
+                                                  "y":  218,
+                                                  "z":  2100,
+                                                  "description":  "Remote snow edge"
+                                              }
+                                          ],
+                  "selection":  "random-among-approved",
+                  "landing":  "prime-chunk-2s-then-elevated-second-placement-and-grounded-surface-verification",
+                  "nearestTraderRouting":  true,
+                  "starterQuestId":  "quest_whiteRiverCitizen1",
+                  "starterQuestPhase":  1,
+                  "reviewedTraderPlacements":  [
+                                                   {
+                                                       "id":  "TP01",
+                                                       "x":  971,
+                                                       "z":  -1536,
+                                                       "sourceX":  941,
+                                                       "sourceZ":  -1566,
+                                                       "sizeX":  60,
+                                                       "sizeZ":  60
+                                                   },
+                                                   {
+                                                       "id":  "TP02",
+                                                       "x":  -927,
+                                                       "z":  1747,
+                                                       "sourceX":  -957,
+                                                       "sourceZ":  1717,
+                                                       "sizeX":  60,
+                                                       "sizeZ":  60
+                                                   },
+                                                   {
+                                                       "id":  "TP03",
+                                                       "x":  220,
+                                                       "z":  -114,
+                                                       "sourceX":  190,
+                                                       "sourceZ":  -144,
+                                                       "sizeX":  60,
+                                                       "sizeZ":  60
+                                                   },
+                                                   {
+                                                       "id":  "TP04",
+                                                       "x":  -1556,
+                                                       "z":  -1185,
+                                                       "sourceX":  -1586,
+                                                       "sourceZ":  -1215,
+                                                       "sizeX":  60,
+                                                       "sizeZ":  60
+                                                   },
+                                                   {
+                                                       "id":  "TP05",
+                                                       "x":  458,
+                                                       "z":  674,
+                                                       "sourceX":  428,
+                                                       "sourceZ":  644,
+                                                       "sizeX":  60,
+                                                       "sizeZ":  60
+                                                   }
+                                               ],
+                  "oneShotRelocation":  true,
+                  "standardModeUnchanged":  true
+              },
+    "artifacts":  [
+                      {
+                          "path":  "dev/verified/main/d0163.dll",
+                          "bytes":  39936,
+                          "sha256":  "DA32165FA443C3FF17FA7902B851FF437F1892BBA395D22F39167291F0DF0507",
+                          "assemblyName":  "d0163",
+                          "assemblyVersion":  "0.0.0.0"
+                      },
+                      {
+                          "path":  "dev/verified/main/ModInfo.xml",
+                          "bytes":  428,
+                          "sha256":  "D43A8C74EFD1EFA06DD1B44BDD46B995447DEB8EF4E07C3220C7AB10147EE11A"
+                      }
+                  ],
+    "runtimeLog":  {
+                       "prefix":  "[HRS]",
+                       "version":  "1.1.0",
+                       "buildId":  "r110",
+                       "maximumEvents":  32
+                   },
+    "releaseRules":  {
+                         "immutableAfterQaStart":  true,
+                         "promoteExactTestedBytes":  true,
+                         "qaMayRepairCandidate":  false,
+                         "evidenceRequiredForApproval":  true
+                     }
+}

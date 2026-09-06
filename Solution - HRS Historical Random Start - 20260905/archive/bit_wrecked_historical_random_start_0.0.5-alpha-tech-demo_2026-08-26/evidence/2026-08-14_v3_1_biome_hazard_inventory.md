@@ -1,0 +1,181 @@
+# V3.1 Random-Start Biome-Hazard Inventory
+
+Date: 2026-08-14  
+Evidence class: Read-only current-target configuration inspection  
+Purpose: Bound the proposed Random-start safeguard scopes
+
+## Evidence boundary
+
+This record describes the exact locally installed V3.1 target files inspected
+on this date. It does not claim that the files are an untouched Steam baseline,
+does not establish historical Alpha 6 internals, and does not authorize an XML
+edit or runtime buff-removal implementation.
+
+No game process was started. `Data/Config`, saves, worlds, `Mods`, Harmony, and
+game binaries were not changed.
+
+| Current target file | Size (bytes) | SHA-256 |
+| --- | ---: | --- |
+| `Data/Config/biomes.xml` | 107,386 | `9560170A6933483662C2131EE74CB518371308ED73519842FCDAE59CBCD86403` |
+| `Data/Config/buffs.xml` | 1,035,191 | `7D2D707484714CF43A34F7EF80CE45D358EFB3CA173EE5387F6006F3914E7B9E` |
+
+Any hash change invalidates this inventory and requires a fresh review before a
+Random-start safeguard runtime can use the names below.
+
+## Current biome bindings
+
+| Biome | Current biome ID | Main hazard handler | Storm handler |
+| --- | ---: | --- | --- |
+| Snow | 1 | `buffSnow_Hazard` | `buffSnow_Storm` |
+| Burnt Forest | 9 | `buffBurnt_Hazard` | `buffBurnt_Storm` |
+| Desert | 5 | `buffDesert_Hazard` | `buffDesert_Storm` |
+| Wasteland | 8 | `buffWasteland_Hazard` | `buffWasteland_Storm` |
+
+The four biome definitions also retain their own difficulty, lootstage, and
+gamestage values. Those are not biome debuffs and are outside the proposed
+checkbox scope.
+
+## Exact current hazard/storm allowlist
+
+Static inspection found 36 exact handlers/stages/recovery records:
+
+```text
+buffBurnt_Hazard
+buffBurnt_Hazard_Over
+buffBurnt_Hazard_Recover
+buffBurnt_Hazard01
+buffBurnt_Hazard02
+buffBurnt_Storm
+buffBurnt_Storm_Recover01
+buffBurnt_Storm_Stage01
+buffBurnt_Storm_Stage02
+buffDesert_Hazard
+buffDesert_Hazard_Over
+buffDesert_Hazard_Recover
+buffDesert_Hazard01
+buffDesert_Hazard02
+buffDesert_Storm
+buffDesert_Storm_Recover01
+buffDesert_Storm_Stage01
+buffDesert_Storm_Stage02
+buffSnow_Hazard
+buffSnow_Hazard_Over
+buffSnow_Hazard_Recover
+buffSnow_Hazard01
+buffSnow_Hazard02
+buffSnow_Storm
+buffSnow_Storm_Recover01
+buffSnow_Storm_Stage01
+buffSnow_Storm_Stage02
+buffWasteland_Hazard
+buffWasteland_Hazard_Over
+buffWasteland_Hazard_Recover
+buffWasteland_Hazard01
+buffWasteland_Hazard02
+buffWasteland_Storm
+buffWasteland_Storm_Recover01
+buffWasteland_Storm_Stage01
+buffWasteland_Storm_Stage02
+```
+
+A future runtime may not discover or remove arbitrary names by broad prefix at
+runtime. It must use a reviewed exact allowlist tied to the configuration
+fingerprint and include the related timers/screen-effect cleanup in its staged
+test contract.
+
+## Explicit exclusions
+
+The proposed checkboxes do not authorize removal or modification of:
+
+- `buffBiomeProgressionCheck` or biome badge/progression state;
+- `buffElementCold`, `buffElementFreezing`, or general temperature survival;
+- lootstage, gamestage, biome difficulty, weather visuals, or ambient world
+  presentation;
+- radiation, fire, cold, or weather damage from non-biome sources;
+- enemy, fall, collision, hunger, thirst, infection, quest, XP, or ordinary
+  player damage; or
+- another player's buffs or any global biome definition.
+
+This distinction lets the player keep the dangerous Random location while
+removing only the resolved initial family or all four reviewed unavoidable
+hazard/storm countdowns.
+
+## Native setting and historical context
+
+The current menu definition exposes one sandbox option named
+`BiomeProgression`, and each of the four main hazard buffs requires that game
+stat. This is a native whole-world switch, not a per-character or per-biome
+permission. The future helper must read and respect it but must not silently
+write it. Native off means no custom suppressor is needed; native on still
+requires the narrow per-character gate.
+
+The official Fun Pimps V2.0 development discussion describes the lethal
+progression feature as biome hazards, identifies a game-wide off option, and
+later explains that turning it off removes biome debuffs while cosmetic
+weather remains:
+
+- [V2.0-2.4 Storms Brewing Dev Diary, page 2](https://community.thefunpimps.com/threads/v2-0-2-4-storms-brewing-dev-diary.42281/page-2)
+- [V2.0-2.4 Storms Brewing Dev Diary, page 17](https://community.thefunpimps.com/threads/v2-0-2-4-storms-brewing-dev-diary.42281/page-17)
+
+That supports treating the current progression-style hazard system as modern
+and optional for this old-style start experience. It does not prove that every
+environmental or temperature mechanic was absent from Alpha 6, so player copy
+must not make that broader claim.
+
+## Runtime design consequence
+
+The default Random-start scope is `None`: both safeguard checkboxes begin
+unchecked and no zero-valued mask is written. `ArrivalBiome` resolves after
+the candidate's biome is authoritatively known to either no mask or exactly
+one family bit. `AllDangerousBiomes` resolves to mask `15`, covering the four
+reviewed families. The controls are mutually exclusive, and arbitrary family
+combinations are not valid player choices.
+
+A selected scope can be accepted only after a server-authoritative,
+per-character suppressor proves all of the following on a disposable target:
+
+1. the exact current configuration fingerprint matches;
+2. the character completed a genuine Random start;
+3. only the resolved one-family or all-four exact hazard/storm records are
+   affected;
+4. damaging, timer, recovery, and screen-effect state clean up without a loop;
+5. unrelated game state remains unchanged;
+6. no other player or global world state is affected; and
+7. death, reload, and reconnect preserve only the exact resolved scope, while
+   policy disable and runtime removal restore vanilla behavior.
+
+For `ArrivalBiome`, only a dangerous candidate's resolved family is required;
+an ordinary starting biome resolves no relief. For `AllDangerousBiomes`, all
+four families are required. If any required condition is uncertain, fall back
+before placement. The fallback is not to land the player first and attempt
+cleanup afterward.
+
+## Present decision
+
+GUI/design GO: two default-off, always-editable, mutually exclusive scope
+checkboxes whose future runtime effect is Random-only; Standard ignores them.  
+Runtime NO-GO: no biome suppressor, XML patch, buff mutation, or gameplay claim
+exists yet. The proof belongs to the separately reviewed Phase 1C gate.
+
+## Preview 0.0.6 validation status
+
+Validation is complete for this planning and read-only-preview revision:
+
+- PowerShell 7.6.4 and Windows PowerShell 5.1 parsing passed;
+- BAT and direct PowerShell smoke tests passed;
+- the smoke contract proved two modes, two unchecked and enabled safeguard
+  checkboxes, mutual exclusion in both directions, a clear-to-none path,
+  selection retention under Standard, and zero Standard behavior;
+- visual review of the main form and `How It Works` dialog found no clipping,
+  overlap, duplicate branding, or stray quote graphic;
+- the pure contract suite passed 56/56 in each PowerShell host;
+- all four project JSON files parsed and the static forbidden-operation scan
+  returned no matches;
+- the official Alpha 6 post returned HTTP 200 from `7daystodie.com` and still
+  contained the release heading plus its authored-start and random-spawn
+  evidence; and
+- all 11 monitored live-game hashes remained exact, with zero game or preview
+  processes left running.
+
+Runtime remains unimplemented and NO-GO. These results validate the contract
+and player-facing preview, not biome suppression or any gameplay behavior.

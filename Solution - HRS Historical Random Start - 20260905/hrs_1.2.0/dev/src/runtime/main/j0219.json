@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-09-02T01:23:45.0909969Z",
+  "artifactVersion": "1.2.0",
+  "status": "ReleaseRuntimeSourceBuiltVerified",
+  "aggregateMethod": "SHA256 of UTF-8 ordinal lines path|bytes|sha256 joined by LF; j0219.json excluded",
+  "aggregateSha256": "628B653EC7B1CB088A066B23007D72E9F10E72BBC9953AF9F415EFFDEF3E05AA",
+  "expectedArtifact": {
+    "name": "d0163.dll",
+    "status": "BuiltVerified",
+    "bytes": 39936,
+    "sha256": "5377702596DF1398ED961CFA0D26E8649744B4EA713EF406B304963B5B9DEB6A",
+    "mvid": "e7cc34aa-905a-4e07-a272-d74a9827568e"
+  },
+  "compilerInputs": [
+    "c0140.cs",
+    "c0147.cs",
+    "c0167.cs",
+    "c0181.cs",
+    "c0184.cs",
+    "c0185.cs",
+    "PolicyV1.cs",
+    "ResultV1.cs",
+    "c0213.cs",
+    "c0217.cs",
+    "c0218.cs"
+  ],
+  "entries": [
+    {
+      "path": "c0140.cs",
+      "bytes": 3819,
+      "sha256": "3F025358030E283EBFF200288BA1151C6DB7ADB1FA0613B81FCD49BC870D5B6F"
+    },
+    {
+      "path": "c0147.cs",
+      "bytes": 449,
+      "sha256": "F2284FD1A8A09461ED613D209AC9BD018D992FB000D701061C1E6DAD6189EABF"
+    },
+    {
+      "path": "j0148.json",
+      "bytes": 1343,
+      "sha256": "C3E440CD8FA7FC231798A92E1A9A4658DCFCACACC9264DD46AC6130CCCA038F1"
+    },
+    {
+      "path": "c0167.cs",
+      "bytes": 28229,
+      "sha256": "152A8D3F95E2C9E1F73844B009CB3054D795C06DA2A5B73F450E9853CB9018D4"
+    },
+    {
+      "path": "c0181.cs",
+      "bytes": 4052,
+      "sha256": "B7CE2A4FE7DA856FC68A5921C206A99884CC70563E309629BD59A151AB3214E3"
+    },
+    {
+      "path": "ModInfo.xml",
+      "bytes": 428,
+      "sha256": "81A59FCE042FECAEF13102458517A28385BFC18947219CFD289C672BFB6013E8"
+    },
+    {
+      "path": "c0184.cs",
+      "bytes": 6901,
+      "sha256": "709C707D2D4E339CA27D28C4B51CA7C236BE63D245E2234D7F6DBBEA85F34426"
+    },
+    {
+      "path": "c0185.cs",
+      "bytes": 2303,
+      "sha256": "68199EC8E51C55D99753B66E875CD90BEB5F052405401F28F4DDE05DCAA8E72C"
+    },
+    {
+      "path": "PolicyV1.cs",
+      "bytes": 9386,
+      "sha256": "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+    },
+    {
+      "path": "ResultV1.cs",
+      "bytes": 5504,
+      "sha256": "99E22773EB2D41520AE75653F1D614E4539343826B176597A07AFEE4E69A4568"
+    },
+    {
+      "path": "c0213.cs",
+      "bytes": 8902,
+      "sha256": "610FDAEA17EE5BB278A0D3B2071662260B947CCD484123FC287578975A9F828E"
+    },
+    {
+      "path": "c0217.cs",
+      "bytes": 2265,
+      "sha256": "A5DC0FB82B66635B1699CE7A0953B34086821409CCF52307B748337B82CB7FC1"
+    },
+    {
+      "path": "c0218.cs",
+      "bytes": 5763,
+      "sha256": "0CE8A32CE2959AE22676E5F33184E1D7A04708B9063C9BAFC7524E8B2ADEF5BE"
+    },
+    {
+      "path": "p0228.ps1",
+      "bytes": 21143,
+      "sha256": "796CE81D4AD35261182AA928A4A31CBE40F95859CF192F00E5B0A4516C561CAE"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "hrs-carousel-result/v1",
+  "runId": "3a16335b2e774dcca30efd2d254b11eb",
+  "gameName": "HRS_CAROUSEL_110_001",
+  "status": "COMPLETED",
+  "point": "NG28",
+  "passedPoints": 8,
+  "totalPoints": 8,
+  "reason": "ALL_POINTS_PASSED",
+  "position": { "x": 239.5, "y": 65.25188, "z": 577.5 },
+  "writtenUtc": "2026-08-31T17:23:57.7394635Z"
+}

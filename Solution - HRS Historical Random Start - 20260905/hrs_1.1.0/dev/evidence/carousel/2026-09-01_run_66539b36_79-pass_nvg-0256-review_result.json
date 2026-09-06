@@ -1,0 +1,12 @@
+{
+  "schema": "hrs-carousel-result/v1",
+  "runId": "66539b363e0c47b99933fc23632801b9",
+  "gameName": "HRS_CAROUSEL_110_002",
+  "status": "FAILED",
+  "point": "NVG-0256",
+  "passedPoints": 79,
+  "totalPoints": 569,
+  "reason": "SETTLE_FAILED",
+  "position": { "x": 850, "y": 61.08, "z": 642 },
+  "writtenUtc": "2026-09-01T03:27:12.4858973Z"
+}

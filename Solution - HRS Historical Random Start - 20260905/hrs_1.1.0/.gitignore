@@ -1,0 +1,21 @@
+# Narrow project-source exceptions to the parent game-copy safety rules.
+!src/
+!src/launcher/
+!src/launcher/**
+!src/runtime/
+!src/runtime/main/
+!src/runtime/main/ModInfo.xml
+
+# Generated runtime/manager state and build products are never source.
+ui/HistoricalRandomStart_State/
+out/
+tmp/
+*.dll
+*.pdb
+
+# Screen recordings are local/OneDrive QA evidence. They exceed GitHub's
+# normal blob limit; commit their SHA-256 sidecar manifests, not the MP4 bytes.
+dev/evidence/carousel/video/*.mp4
+
+# The verified release payload is part of the distributable package.
+!dev/verified/main/d0163.dll

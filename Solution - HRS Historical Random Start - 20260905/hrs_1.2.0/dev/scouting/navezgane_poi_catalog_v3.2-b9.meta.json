@@ -1,0 +1,28 @@
+﻿{
+    "schema":  "hrs-navezgane-poi-catalog-v1",
+    "generatedUtc":  "2026-08-31T03:56:24.9521094Z",
+    "gameRoot":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die",
+    "world":  "Navezgane",
+    "totalInstances":  1487,
+    "uniquePrefabs":  704,
+    "countsByBiome":  {
+                          "burnt_forest":  339,
+                          "desert":  297,
+                          "pine_forest":  357,
+                          "snow":  303,
+                          "wasteland":  191
+                      },
+    "inputs":  {
+                   "prefabsXmlSha256":  "B5B1DB520E444DE54970A53D29CBEACFE802B578484060C73E8CD96142345493",
+                   "mapInfoXmlSha256":  "C75DCFF9C490C94956AB9683ABA5D690E997E2EFE5A2DB8B12CF24839EBE10AB",
+                   "biomesPngSha256":  "14181B942D239E20E4B6722FBC3141C05460B4F6A8D97245F4A003642733677A",
+                   "biomesXmlSha256":  "9560170A6933483662C2131EE74CB518371308ED73519842FCDAE59CBCD86403",
+                   "localizationCsvSha256":  "AB543364952D5A22DB8DD7112B38625505F9BCAC3B29F21D1918857D04B1A565"
+               },
+    "output":  {
+                   "file":  "navezgane_poi_catalog_v3.2-b9.csv",
+                   "sha256":  "22E56893CF2C64C18A16E290F736479AF3922EA481880401FC5C7A3C0002216A"
+               },
+    "mutationRule":  "Generated catalog: do not edit rows manually; copy selected references into the scouting ledger.",
+    "evidenceBoundary":  "POI references are catalog data, not approved street anchors or safe-landing proof."
+}

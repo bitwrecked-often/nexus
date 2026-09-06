@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="BitWrecked_HRS_QA_Carousel" />
+  <DisplayName value="HRS 1.1.0 QA Spawn Carousel - NOT FOR RELEASE" />
+  <Description value="One-run QA-only deterministic health check for NG01 through NG12." />
+  <Author value="Bit Wrecked" />
+  <Version value="1.1.0" />
+  <Website value="" />
+  <SkipWithAntiCheat value="true" />
+</xml>

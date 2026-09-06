@@ -1,0 +1,14 @@
+# Narrow project-source exceptions to the parent game-copy safety rules.
+!src/
+!src/launcher/
+!src/launcher/**
+!src/runtime/
+!src/runtime/main/
+!src/runtime/main/ModInfo.xml
+
+# Generated runtime/manager state and build products are never source.
+ui/HistoricalRandomStart_State/
+out/
+tmp/
+*.dll
+*.pdb

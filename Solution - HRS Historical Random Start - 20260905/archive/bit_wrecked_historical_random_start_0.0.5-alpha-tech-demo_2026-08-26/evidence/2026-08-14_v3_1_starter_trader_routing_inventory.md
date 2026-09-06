@@ -1,0 +1,165 @@
+# V3.1 Starter-Trader Routing Inventory
+
+Date: 2026-08-14  
+Evidence class: Read-only current-target XML and managed-API inspection  
+Purpose: Bound nearest-trader continuity after a Random first start
+
+## Evidence boundary
+
+This record describes the exact locally installed V3.1 target inspected on
+this date. It does not claim that the XML files are an untouched Steam
+baseline, does not authorize runtime code, and does not authorize a live XML,
+quest, save, or DLL edit.
+
+No game process was started. `Data/Config`, saves, worlds, `Mods`, Harmony, and
+game binaries were not changed.
+
+| Current target file | Size (bytes) | SHA-256 |
+| --- | ---: | --- |
+| `Data/Config/quests.xml` | 162,762 | `7FA618802E1740E2423A48E947A75955C85E895C79D748987EC503CA01E35383` |
+| `Data/Config/gameevents.xml` | 554,915 | `8DED1313455CE7CED64406E8CA21D1F0F6877D8822484AE998848063B401B0F7` |
+| `7DaysToDie_Data/Managed/Assembly-CSharp.dll` | 11,805,696 | `B13862E30D8B28F42B83FE6A36BF074D155A6C43164E7B0797A6E4F77BD7DEA3` |
+
+Any hash change invalidates this inventory and requires a fresh review before
+runtime implementation.
+
+## Exact current starter quest
+
+The current `<quests>` root names `quest_whiteRiverCitizen1` as
+`starter_quest`. Its XML comment identifies it as White River Citizen 1 —
+Journey to Settlement.
+
+The relevant contract is:
+
+- quest ID: `quest_whiteRiverCitizen1`;
+- unique key: `traderquest`;
+- phase-one objective: `Goto`, ID/tag `trader`;
+- current destination filter: `OnlyBiome` / `pine_forest`;
+- current-POI use: allowed;
+- phase-two objective: `InteractWithNPC` with `use_closest=true`;
+- completion: normal trader turn-in;
+- rewards: `500` XP and one `meleeToolShovelT0StoneShovel`; and
+- shareability: false.
+
+`challenge_group_reward_basics` adds this quest after the basic challenge
+group when the native `TraderToTraderQuestsEnabled` sandbox option permits it.
+The mod must respect that native option and must not manufacture the quest when
+the game intentionally does not add it.
+
+The current pine-forest filter is the continuity problem for a far-away custom
+start: the nearest qualifying pine-forest trader can be much farther away than
+the nearest valid trader in the player's new area.
+
+## Current API path
+
+Read-only metadata and IL inspection found these current-build surfaces:
+
+- `EntityPlayer.QuestAccepted` is a per-player
+  `QuestJournal_QuestEvent(Quest)` event.
+- `QuestJournal.AddQuest(Quest, bool)` starts the quest, adds it to the journal,
+  fires `TriggerQuestAddedEvent(Quest)`, and only then copies the quest's
+  `PositionData` into persistent player data.
+- `ObjectiveGoto.GetPosition(...)` uses the player's current X/Z position,
+  `QuestJournal.GetTraderList(factionID)`, and
+  `DynamicPrefabDecorator.GetClosestPOIToWorldPos(...)`.
+- The XML-provided first pass is `OnlyBiome` / `pine_forest`; if that produces
+  no candidate, the current method attempts a `SameBiome` fallback.
+- `BiomeFilterTypes.AnyBiome` is enum value `0`.
+- `DynamicPrefabDecorator.GetClosestPOIToWorldPos(...)` is public in the
+  inspected assembly.
+- `ObjectiveGoto.SetLocation(Vector3, Vector3)` is public and calls the native
+  finalization path that updates objective position data and its map object.
+- `QuestJournal.RefreshQuest(Quest)` raises the normal quest-changed event.
+
+This creates a promising no-Harmony design window: handle only the exact
+starter quest's accepted event, replace only its destination through the
+native objective path, return, and let `AddQuest` persist the resulting
+position data normally.
+
+This is static feasibility evidence, not runtime proof. Dedicated-server event
+authority, server-to-client objective synchronization, persistent save/reload,
+and clean-client behavior remain unproven.
+
+## Proposed player contract
+
+Standard remains an exact no-op. For a genuinely new character whose Random
+placement has been authoritatively completed:
+
+1. Listen for the native quest-accepted event; do not poll every frame.
+2. Match only active `quest_whiteRiverCitizen1`, phase one, objective ID
+   `trader`.
+3. Choose the closest valid native trader POI to the authoritative player
+   position at quest acceptance. If the quest already exists when placement
+   completes, use the confirmed final placement position.
+4. Search across `AnyBiome`, preserving the game's own trader registry,
+   authored POI data, bounds, and current-world validity checks.
+5. Break an exact distance tie deterministically using a stable current-world
+   candidate key; do not use a reroll.
+6. Set only the destination and refresh/synchronize the normal quest UI.
+7. Verify the map marker, objective destination, save state, and turn-in at the
+   selected trader before marking the route complete.
+
+“Any trader” means a current-world native trader POI that can legally satisfy
+this exact starter quest. It does not mean a vending machine, arbitrary NPC,
+test prefab, missing POI, console target, or invented coordinate.
+
+## Exactly-once route state
+
+The future runtime proposes one bounded per-character CVar:
+
+`bitwrecked_hrs_starter_trader_route_v1`
+
+Its proposed values are:
+
+- `Pending=1` — Random placement completed; exact starter quest not handled;
+- `Reserved=2` — the exact quest event is consumed; never select again;
+- `Completed=3` — nearest valid destination was verified; and
+- `Invalid=4` — malformed or contradictory state; fail closed.
+
+The transition is `Pending -> Reserved -> Completed`. A failure after
+`Reserved` leaves the vanilla quest destination untouched or already restored
+and never retries on reload, reconnect, death, duplicate callbacks, or another
+quest event. Absence means no custom trader-routing authority.
+
+## Explicit non-effects
+
+The route must not:
+
+- delete, abandon, clone, restart, complete, or re-add the quest;
+- alter the quest ID, phase, `StarterQuest` CVar, challenge completion, reward,
+  XP, stone shovel, skill points, trader tier, quest count, or later
+  trader-to-trader quests;
+- alter trader inventory, hours, protection, faction, biome progression, or
+  POI data;
+- move the player a second time;
+- route Standard, existing characters, ordinary respawns, reconnects, or
+  unrelated quests; or
+- edit live XML, world files, saves directly, Harmony, or game DLLs.
+
+If no valid trader can be proven, the event is client-only, synchronization is
+uncertain, the quest is already beyond the destination phase, or any state is
+malformed, leave the native quest untouched and record a sanitized fallback
+reason. Convenience never outranks quest integrity.
+
+## Present decision
+
+GUI/design GO: explain nearest-trader continuity for Random.  
+Runtime NO-GO: no quest event handler, destination mutation, CVar write, or
+gameplay claim exists yet. The route belongs to a separate Phase 1B proof after
+the direct-grounded authored-spawnpoint proof succeeds.
+
+## Planning-packet validation
+
+After the design and preview update on 2026-08-14:
+
+- the launcher script parsed under PowerShell 7 and Windows PowerShell 5.1;
+- the built-in GUI smoke test passed;
+- visual capture confirmed one quote-card logo and no clipped nearest-trader
+  guidance;
+- the existing pure contract suite remained 56/56 in both PowerShell engines;
+- the exact starter-quest XML assertions passed; and
+- all inventoried quest, event, biome, buff, managed-game, executable, and
+  Harmony hashes still matched, with no 7 Days to Die process running.
+
+These checks validate only the planning packet and read-only preview. They are
+not Phase 1B gameplay evidence.

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-08-27T00:00:00.000Z",
+  "artifactVersion": "0.0.5-alpha-tech-demo",
+  "status": "ReleaseRuntimeSourceImplementedUncompiled",
+  "aggregateMethod": "SHA256 of UTF-8 ordinal lines path|bytes|sha256 joined by LF; j0219.json excluded",
+  "aggregateSha256": "7CDDFAF7FF72EAE7DCFF2A862017DB1085025EF49E33F257139B38D757B62B6B",
+  "expectedArtifact": {
+    "name": "d0163.dll",
+    "status": "NotBuilt",
+    "bytes": null,
+    "sha256": null,
+    "mvid": null
+  },
+  "compilerInputs": [
+    "c0140.cs",
+    "c0147.cs",
+    "c0167.cs",
+    "c0181.cs",
+    "c0184.cs",
+    "c0185.cs",
+    "PolicyV1.cs",
+    "ResultV1.cs",
+    "c0213.cs",
+    "c0217.cs",
+    "c0218.cs"
+  ],
+  "entries": [
+    { "path": "c0140.cs", "bytes": 3714, "sha256": "341BED8518E86A6138AEB5A803174FE15AE3231D2EBB7296DF3B6E9D6EABAA34" },
+    { "path": "c0147.cs", "bytes": 434, "sha256": "0723740AE95A4A6279C289D79E24A9EC47AFFF12B96AD80C55A74EAE8061D323" },
+    { "path": "j0148.json", "bytes": 1315, "sha256": "2CE8D17E3272D9FAA583B4AECAFD2A404E68E465017D2C5D68696D5DBDAF16E8" },
+    { "path": "c0167.cs", "bytes": 13967, "sha256": "DC8FBF19A310C4E5FAB3C43B65D842B882F853ABD5F5E4190E2B12EB6BE4C174" },
+    { "path": "c0181.cs", "bytes": 1386, "sha256": "7E4A79DBBCC6B493A7AB9383B86C432A18FB64C5CBB361F20EB4BCBF749E7241" },
+    { "path": "ModInfo.xml", "bytes": 401, "sha256": "B6812606D072B0392DE7643C11EFF8B10C0B3253C24DF16ECDC0D3DD3A1BD355" },
+    { "path": "c0184.cs", "bytes": 6764, "sha256": "133B1D9DA32B127629518746EDC05C3BE4065C09E61E8269D92CF0B75C5CB09F" },
+    { "path": "c0185.cs", "bytes": 1266, "sha256": "83F80E3CA669C07DE5C960758C9A835E38C882A2F5AAA12356560824212C1466" },
+    { "path": "PolicyV1.cs", "bytes": 8850, "sha256": "85109C2D02D7C774B3728863A53EAEA4E86A72EB4100670EDA2200413D6FC0C9" },
+    { "path": "ResultV1.cs", "bytes": 5399, "sha256": "DBE9613D173AE06871319CF91E85525DBBF09417DFCDDF062E94BEBCAFFDB56F" },
+    { "path": "c0213.cs", "bytes": 1878, "sha256": "91F3ACE590FE443854A1E522658AF521E5661FBEE46C11E95AB51DB6F1F606BA" },
+    { "path": "c0217.cs", "bytes": 1654, "sha256": "618383724DB2F1336995BF5AC9C5DB362F74A6202F65D881721AA14A96B84E8F" },
+    { "path": "c0218.cs", "bytes": 5616, "sha256": "5360080FB11396F89E0525F484532722CC27DD927466BCFE08C2EDA22584A9AC" },
+    { "path": "p0228.ps1", "bytes": 8504, "sha256": "2FB609820954CB9EC6AE595BCDB9378CE4F15BE293C0BB3C805CC072F84ED36E" }
+  ]
+}

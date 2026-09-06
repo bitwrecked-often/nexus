@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-08-20T23:55:00Z",
+  "artifactVersion": "0.0.1-dev",
+  "status": "SourceReviewedCompiledExternalOnly",
+  "aggregateMethod": "SHA256 of UTF-8 ordinal lines path|bytes|sha256 joined by LF",
+  "aggregateSha256": "0F283071EE534B44E68679F63AAF5EBF733CDB19145D89A3DDF1732078F7B3B3",
+  "entries": [
+    { "path": "CompatibilityGuard.cs", "bytes": 444, "sha256": "9BA99B67CDD960135F2D97183587EF8EBC4E27DD288A3147E56263CB4F2EF4CB" },
+    { "path": "DuplicateObservationGate.cs", "bytes": 999, "sha256": "9003F27FE262553B4B69B8234F8618806563295F3CF1519A6187EDCA313D9905" },
+    { "path": "ModInfo.xml", "bytes": 404, "sha256": "39CD88B7A0C0D2928B81374399AD77FE28178A67C5B7669FAB3F4FBA5CBCBFC8" },
+    { "path": "ProbeModApi.cs", "bytes": 3952, "sha256": "E42205AA090437E70AB458D2E4D5D4783D15CF9BFB5103863374CE5E7799F4B7" },
+    { "path": "SanitizedGameLog.cs", "bytes": 2907, "sha256": "DBA65FB85286A64753D08479D954EA405F40D828884753E8257A0DDF6A657EF8" },
+    { "path": "SpawnObservation.cs", "bytes": 891, "sha256": "4BB2029BC676A9040E7E3F40634EB83C79FF41EE2442E0FD730BAC6B48959DAA" },
+    { "path": "TargetGuard.cs", "bytes": 3056, "sha256": "A8D843E7A4D1E62B38FCA0FCD2D025DE9D9DB5F7A8405D6C343A9B4D5E625B05" }
+  ]
+}

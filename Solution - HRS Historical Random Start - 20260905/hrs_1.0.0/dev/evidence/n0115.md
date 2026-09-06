@@ -1,0 +1,35 @@
+# Phase 1A Read-Only Reload Observation — Source Amendment
+
+Date: 2026-08-20  
+Decision: Source/static tests PASS; compile/replace/run NO-GO
+
+The owner authorized a narrow source amendment after first-load preflight found
+that the initial marker probe could not observe persistence on reload.
+
+The exact target guard no longer embeds a `NewGame` lifecycle check. After the
+same build, target, local-player, EAC, authority, single-player, world, and
+entity checks pass, the handler now behaves as follows:
+
+- `LoadedGame`: read the marker once, emit one allowlisted Reserved, Completed,
+  Absent, or Invalid reason, and return without writing;
+- `NewGame`: pass the lifecycle gate and retain the original absent-marker,
+  reserve, and immediate read-back behavior; and
+- every other lifecycle: emit `MARKER_LIFECYCLE_REJECTED` and return without a
+  marker write.
+
+Static source tests pass under PowerShell 7 and Windows PowerShell 5.1. They
+prove the branch order is read-only LoadedGame, strict NewGame gate, then
+reservation; there is exactly one marker-write call site and zero relocation
+calls. The pure suite now passes 22/22 in both shells, including reload
+Reserved/Absent/Invalid, death with no marker access, and NewGame consumed-state
+cases.
+
+Amended source aggregate SHA-256:
+`5D23A4791B9B188C661EE1028313F07B3ED375472CE05E64BC664E3F050658C8`
+
+The installed and externally staged DLL remain the prior reviewed build with
+SHA-256
+`FCC012FC8841FC1D7285C108D15EDDC4DD62BED5500B0C3F387F918AFE4F37E3`.
+No compiler ran, no DLL was replaced, the game was not launched, and no Phase
+1A save was created. Compilation of this amended source requires a separate
+explicit authorization.

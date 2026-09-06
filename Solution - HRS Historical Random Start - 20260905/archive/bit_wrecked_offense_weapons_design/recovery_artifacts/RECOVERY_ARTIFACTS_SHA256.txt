@@ -1,0 +1,13 @@
+# Bit Wrecked Mod Framework Template — recovery artifact checksums
+#
+# Generated: 2026-07-19
+# Hash algorithm: SHA-256
+# Format: <sha256><two spaces><filename>
+#
+# Verify each listed artifact before relying on it for recovery.  These three
+# files deliberately live outside the snapshot archive so the archive does
+# not recursively contain itself.
+
+a57b6c98acea824f3b12f6876ee58d550e96186b786a90f74c43763d46cedf6f  bit_wrecked_mod_framework_template_snapshot.zip
+b1cb94d875e262c978eaa1f4907959f7da6b7aab71dd4c1b4830bb839684dd4e  data-config-history.bundle
+8a74d220d4b1f7165f253415e25fca744f5449441da9f4c96cd75b322b5d666b  root-repository-history.bundle

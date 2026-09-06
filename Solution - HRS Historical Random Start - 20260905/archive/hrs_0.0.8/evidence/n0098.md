@@ -1,0 +1,33 @@
+# Phase 1A Observer-Synchronized Relocation — First-Load Preflight
+
+Date: 2026-08-20  
+Decision: Non-launching first-load preflight PASS; launch NO-GO
+
+The owner authorized the observer-synchronized non-launching first-load
+preflight. It confirmed:
+
+- game and server processes closed;
+- exact live and staged payload aggregate
+  `20F9ED74F579DDB462BDBA280F57E7307F76FF2B4D1F5F1EC5B730C843D248D5`;
+- pinned `Assembly-CSharp.dll` hash and MVID
+  `acb580d9-e1ab-497d-a8dc-47e47c1fc300`;
+- EAC disabled in launcher settings;
+- marker-only live probe absent;
+- exact target save absent; and
+- semantic harness passing 7/7.
+
+A fresh aggregate-only baseline was captured at:
+
+`C:\BitWreckedDisposable\HRS_Phase1A\BuildStage\phase1a-observer-synchronized-baseline-2026-08-20.json`
+
+| Protected tree | Files | Bytes | SHA-256 |
+| --- | ---: | ---: | --- |
+| Game managed | 154 | 49,094,936 | `2EA9679D59A7DC759DC4F582A6673B0F2106CE475DA4F7FF998DE907BFCD5C4C` |
+| Foreign Mods | 117 | 21,845,646 | `B56FE9701B98231617DBED2431865CA077AF4B84105C26388496A336D056BD51` |
+| Foreign saves | 12,526 | 5,362,081,455 | `CE3564E1E1BB04F8348A1570D36CA8302641ABCA2EFE509A495C5366FAC1C23D` |
+
+The baseline contains only aggregates and no identities, coordinates, or
+individual semantic values. Nothing was launched or changed in the game/save
+trees during preflight.
+
+Next gate: authorize observer-synchronized Phase 1A relocation first-load launch.

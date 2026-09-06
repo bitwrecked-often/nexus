@@ -1,0 +1,105 @@
+{
+    "schema":  "hrs-release-build/v1",
+    "attempt":  "alpha-core-e4efcb11eee94b4792455be42c8441b1",
+    "createdUtc":  "2026-08-29T01:57:09.557Z",
+    "sourceFiles":  [
+                        "c0140.cs",
+                        "c0147.cs",
+                        "c0167.cs",
+                        "c0181.cs",
+                        "c0184.cs",
+                        "c0185.cs",
+                        "PolicyV1.cs",
+                        "ResultV1.cs",
+                        "c0213.cs",
+                        "c0217.cs",
+                        "c0218.cs"
+                    ],
+    "sourceHashes":  [
+                         {
+                             "path":  "c0140.cs",
+                             "sha256":  "341BED8518E86A6138AEB5A803174FE15AE3231D2EBB7296DF3B6E9D6EABAA34"
+                         },
+                         {
+                             "path":  "c0147.cs",
+                             "sha256":  "0723740AE95A4A6279C289D79E24A9EC47AFFF12B96AD80C55A74EAE8061D323"
+                         },
+                         {
+                             "path":  "c0167.cs",
+                             "sha256":  "485757F49D89E6972E35A7684254C4106EF0CD441FBDD91656A8BFA212CD40F1"
+                         },
+                         {
+                             "path":  "c0181.cs",
+                             "sha256":  "A90A3879E480269180B68431AF07A31A27327F37B135E4495A68930451D2B227"
+                         },
+                         {
+                             "path":  "c0184.cs",
+                             "sha256":  "C495E104BBC4FE5C71E73F51AC0228E58544BC4A9D3F5CFEEB3B11B088360C94"
+                         },
+                         {
+                             "path":  "c0185.cs",
+                             "sha256":  "825D20279CC2E028771B668BF83B18EEA7C7AA9E7EF6A306CE8DAB84AB64DDAE"
+                         },
+                         {
+                             "path":  "PolicyV1.cs",
+                             "sha256":  "F9588F9EBAA5787E78063BF0234A5C9AEDFE451FA9F459D0E4889364301047BC"
+                         },
+                         {
+                             "path":  "ResultV1.cs",
+                             "sha256":  "DBE9613D173AE06871319CF91E85525DBBF09417DFCDDF062E94BEBCAFFDB56F"
+                         },
+                         {
+                             "path":  "c0213.cs",
+                             "sha256":  "35D8BDCB00004E522052BE3DE388E3AEC24E61EB7E139A0EDA6159DFC50117A7"
+                         },
+                         {
+                             "path":  "c0217.cs",
+                             "sha256":  "7F630639ED4E0F1137152FDC83701B371F8A4B7B29DBECFA8FD1F167E96C3C36"
+                         },
+                         {
+                             "path":  "c0218.cs",
+                             "sha256":  "5360080FB11396F89E0525F484532722CC27DD927466BCFE08C2EDA22584A9AC"
+                         }
+                     ],
+    "compiler":  {
+                     "dotnet":  "C:\\Program Files\\dotnet\\dotnet.exe",
+                     "dotnetSha256":  "AB1B71FD3DD71062E074C9FAB8312081A81B7F2B3E0327C48C4D249C8D1A3135",
+                     "csc":  "C:\\Program Files\\dotnet\\sdk\\10.0.400\\Roslyn\\bincore\\csc.dll",
+                     "cscSha256":  "2C196B47E0ADE88940AF111BEAAD6A6EE5FA0DF6152A847E7D3C81059EC15848"
+                 },
+    "references":  [
+                       {
+                           "name":  "mscorlib.dll",
+                           "sha256":  "98C9B62133DB5DD33B22BC6AAB6F28E4F04F5B5BE6559B28BA5C2738241434D0"
+                       },
+                       {
+                           "name":  "netstandard.dll",
+                           "sha256":  "6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5"
+                       },
+                       {
+                           "name":  "System.dll",
+                           "sha256":  "ACE2DD6A7D534B581BF4A9D316E743D64508CA2135DB73DBFF0DDB9365FC454E"
+                       },
+                       {
+                           "name":  "System.Core.dll",
+                           "sha256":  "F1B33EB1AE8522EDCF9BA4C2B85F532D4BAB68BFA2A51527264BB61619BED4EA"
+                       },
+                       {
+                           "name":  "Assembly-CSharp.dll",
+                           "sha256":  "4CA8D6490F34F134A952B1A3547131A8C536610EC28BEDE0D35CBFE93F09715D"
+                       },
+                       {
+                           "name":  "UnityEngine.CoreModule.dll",
+                           "sha256":  "68D360251A7AEA19CBA74626D5E9D55E801C51DDA1F4B153B5BA4825C19C9E35"
+                       },
+                       {
+                           "name":  "LogLibrary.dll",
+                           "sha256":  "A9CC17C698D5586CCE168080ABFD37D61C1F3F2EA8C73487B360164ADC2FB71B"
+                       }
+                   ],
+    "assemblyCSharpMvid":  "326ffd03-1d6d-4efb-a7dc-79201537b1c3",
+    "dllBytes":  38400,
+    "dllSha256":  "394C9EF2C2AAA8E30A7268DFA7A33E1CBED80975A4779C6327F6DAE4A45DF72E",
+    "deterministicDoubleBuild":  true,
+    "candidateRoot":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\_game_dev_ai_tracking\\solutions\\hrs_1.0.0\\dev\\out\\alpha-core-e4efcb11eee94b4792455be42c8441b1"
+}

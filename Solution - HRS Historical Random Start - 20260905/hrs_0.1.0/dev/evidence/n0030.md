@@ -1,0 +1,47 @@
+# Phase 1 Observation — Go/No-Go Review
+
+Date: 2026-08-20  
+Overall decision: Observation implementation PASS; Phase 1A runtime mutation
+remains NO-GO pending its own packet and remaining proof limitations
+
+## Passed on the exact local single-player lane
+
+- Exact build, target, EAC, and authority guards loaded successfully.
+- Authoritative local `NewGame` was distinguished and marked observation-only
+  eligible.
+- `LoadedGame` and `Died` were rejected.
+- A second identical same-process `Died` key was suppressed.
+- Logs were bounded, allowlisted, sanitized, and contained no private paths,
+  identity, address, coordinates, or raw exception data.
+- Build output was deterministic and static/Defender scans passed.
+- Payload hashes remained stable through all runs.
+- Clean removal followed by an ordinary no-probe reload passed.
+- No existing world/save file or foreign Mod was changed by the test workflow.
+
+## Honest limitations
+
+- `EnterMultiplayer` and `JoinMultiplayer` were not exercised. They remain
+  observation-only/unproven and must not gain Phase 1A action authority.
+- Dedicated server, clean-client, and EAC-enabled lanes were not tested and
+  are not supported claims.
+- Duplicate capacity at 128 entries is covered only by pure/static reasoning,
+  not a 129-event runtime test.
+- Teleport classification remains pure/static only because deliberately
+  causing a teleport would violate the no-command/no-Phase-1-mutation boundary.
+- The test did not capture semantic before/after values for position, CVars,
+  quest journal, XP, gamestage, inventory, or health. Source and IL prove no
+  probe write path, and observed behavior was clean, but that is not a complete
+  semantic state-delta trace.
+
+## Promotion boundary
+
+Phase 1 has answered its narrow question for exact local single-player
+`NewGame`: the installed game exposes the authoritative event and the
+observation probe distinguishes it from reload and death without acting.
+
+Phase 1A may proceed only to source/test-packet design for one native authored
+spawnpoint relocation, restricted to exact local single-player `NewGame`.
+Compilation, installation, or execution of any Phase 1A mutating artifact is
+NO-GO until its marker reservation, candidate validation, semantic state
+capture, rollback, and exact owner gates are reviewed. Multiplayer and every
+other lifecycle remain fail-closed.

@@ -1,0 +1,12 @@
+{
+  "schema": "hrs-carousel-result/v1",
+  "runId": "c363809706cc4bb1b24e8812881fd8fe",
+  "gameName": "HRS_CAROUSEL_110_006",
+  "status": "FAILED",
+  "point": "NONE",
+  "passedPoints": 0,
+  "totalPoints": 161,
+  "reason": "ENVIRONMENT_REJECTED",
+  "position": { "x": 0, "y": 0, "z": 0 },
+  "writtenUtc": "2026-09-01T16:47:39.2565792Z"
+}

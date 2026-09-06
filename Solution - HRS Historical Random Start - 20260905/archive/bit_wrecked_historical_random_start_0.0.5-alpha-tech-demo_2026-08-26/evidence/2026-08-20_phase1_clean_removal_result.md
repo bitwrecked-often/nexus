@@ -1,0 +1,28 @@
+# Phase 1 Observation Probe — Clean Removal Result
+
+Date: 2026-08-20  
+Decision: Clean removal/no-probe reload PASS
+
+The exact manifest-verified owned DEV folder was moved intact from live `Mods`
+to:
+
+`C:\BitWreckedDisposable\HRS_Phase1\Backup\BitWrecked_HistoricalRandomStart_DEV.removed-for-test`
+
+Moving rather than deleting preserved byte-for-byte recovery while ensuring the
+game could not load the probe.
+
+## Result
+
+- Live owned DEV folder: absent
+- Recovery folder: present, exactly two files
+- Recovered DLL SHA-256:
+  `7E235FC8A3F22275B4BBE5B7B511678C4147D4EB4F20CF8E5E4BFF5124977C8A`
+- Recovered `ModInfo.xml` SHA-256:
+  `39CD88B7A0C0D2928B81374399AD77FE28178A67C5B7669FAB3F4FBA5CBCBFC8`
+- Disposable target loaded and exited normally
+- `[HRS-P1]` line count: 0
+- BitWrecked load/error pattern count: 0
+- Global metadata content hashes: unchanged
+
+No existing Mod was removed or changed. The tested probe remains recoverable
+externally but is no longer installed.

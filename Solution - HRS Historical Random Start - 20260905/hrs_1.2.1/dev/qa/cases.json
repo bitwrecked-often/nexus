@@ -1,0 +1,305 @@
+{
+    "schema":  "hrs-qa-contract/v1",
+    "releaseVersion":  "1.2.0",
+    "requiredCases":  [
+                          {
+                              "id":  "HRS-QA-001",
+                              "title":  "Package identity",
+                              "requirement":  "Every packaged artifact, version label, runtime identity, and manager pin agrees with rel.json.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "requiredEvidence":  [
+                                                       "release-validation",
+                                                       "package-inventory"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-002",
+                              "title":  "Standard-mode control",
+                              "requirement":  "Standard mode preserves the game\u0027s normal spawn behavior and performs no HRS relocation or trader mutation.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "STANDARD_BYPASS"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "PLACEMENT_CALLED",
+                                                      "TRADER_ROUTE_SELECTED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-003A",
+                              "title":  "Random spawn NG01",
+                              "requirement":  "A fresh Random game may select NG01 and must complete a safe, stable, one-shot relocation.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "NG01",
+                                                     "PLACEMENT_CALLED",
+                                                     "SEMANTIC_UNCHANGED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-003B",
+                              "title":  "Random spawn NG02",
+                              "requirement":  "A fresh Random game may select NG02 and must complete a safe, stable, one-shot relocation.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "NG02",
+                                                     "PLACEMENT_CALLED",
+                                                     "SEMANTIC_UNCHANGED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-004",
+                              "title":  "Nearest trader routing",
+                              "requirement":  "After relocation, the phase-one opening trader objective selects the nearest reviewed Navezgane trader by planar distance.",
+                              "expectedEvents":  [
+                                                     "TRADER_ROUTE_READY",
+                                                     "TRADER_ROUTE_RESERVED",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "TRADER_ROUTE_FALLBACK"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-005",
+                              "title":  "Starter quest continuation",
+                              "requirement":  "quest_whiteRiverCitizen1 phase one points to the selected nearest trader and then continues through vanilla quest progression.",
+                              "expectedEvents":  [
+                                                     "TRADER_ROUTE_QUEST_SEEN",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "TRADER_ROUTE_FALLBACK"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-006",
+                              "title":  "Reload is one-shot",
+                              "requirement":  "Reloading an already relocated character does not perform another relocation or replace completed state.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "PLACEMENT_CALLED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-007",
+                              "title":  "Unsupported environment fails closed",
+                              "requirement":  "Wrong game build, EAC-enabled play, multiplayer, dedicated server, or non-Navezgane context cannot perform relocation.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-008",
+                              "title":  "Removal and rollback",
+                              "requirement":  "Remove from Game removes only verified HRS-owned files, preserves unknown or changed files, and leaves the owned release path absent after a clean removal.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "requiredEvidence":  [
+                                                       "installed-before",
+                                                       "rollback-receipt",
+                                                       "installed-after"
+                              ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-ISOLATION-WASTE",
+                              "title":  "Wasteland-origin cross-biome isolation",
+                              "requirement":  "The completed Wasteland-origin save must retain only Wasteland-family protection while a long-dwell carousel proves native Desert, Snow, and Burnt Forest hazard families remain active, Wasteland remains suppressed, and the completed Trader Joel route is unchanged.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "PLACEMENT_CALLED",
+                                                      "TRADER_ROUTE_SELECTED",
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INITIAL_BIOME_FAILED",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "isolation-carousel-events",
+                                                       "runtime-events",
+                                                       "qa-observation",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-PINE",
+                              "title":  "Pine Forest negative control and trader routing",
+                              "requirement":  "A fresh RandomSafe Navezgane game named HRS_BIOME_120_PINE_001 and forced to approved point NVG-0281 must settle in Pine Forest without God mode, persist Pine Forest as the initial biome, activate no dangerous-biome protection family, and route the opening trader objective to Pine Forest Trader Rekt TP05.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "NVG-0281",
+                                                     "PLACEMENT_CALLED",
+                                                     "CANDIDATE_SURFACE_SETTLED",
+                                                     "INITIAL_BIOME_STORED",
+                                                     "TRADER_ROUTE_READY",
+                                                     "RELOCATION_COMPLETED",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "ARRIVAL_PROTECTION_ENABLED",
+                                                      "INITIAL_BIOME_FAILED",
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "pine-build-record",
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-BURNT",
+                              "title":  "Burnt Forest arrival protection and trader routing",
+                              "requirement":  "A fresh RandomSafe Navezgane game named HRS_BIOME_120_BURNT_001 and forced to approved point NVG-0285 must settle in the Burnt Forest without God mode, persist Burnt Forest as the initial biome, suppress only the Burnt Forest entry hazard, and route the opening trader objective to Burnt Forest Trader Jen TP03.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "NVG-0285",
+                                                     "PLACEMENT_CALLED",
+                                                     "CANDIDATE_SURFACE_SETTLED",
+                                                     "INITIAL_BIOME_STORED",
+                                                     "ARRIVAL_PROTECTION_ENABLED",
+                                                     "TRADER_ROUTE_READY",
+                                                     "RELOCATION_COMPLETED",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INITIAL_BIOME_FAILED",
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "burnt-build-record",
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-DESERT",
+                              "title":  "Desert arrival protection and trader routing",
+                              "requirement":  "A fresh RandomSafe Navezgane game named HRS_BIOME_120_DESERT_002 and forced to approved point NVG-0282 must settle in the Desert without God mode, persist Desert as the initial biome, suppress only the Desert entry hazard, and route the opening trader objective to Desert Trader Bob TP01.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "NVG-0282",
+                                                     "PLACEMENT_CALLED",
+                                                     "CANDIDATE_SURFACE_SETTLED",
+                                                     "INITIAL_BIOME_STORED",
+                                                     "ARRIVAL_PROTECTION_ENABLED",
+                                                     "TRADER_ROUTE_READY",
+                                                     "RELOCATION_COMPLETED",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INITIAL_BIOME_FAILED",
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "desert-build-record",
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-WASTE",
+                              "title":  "Wasteland arrival protection and trader routing",
+                              "requirement":  "A fresh RandomSafe Navezgane game forced to approved point NVG-0286 must settle in the Wasteland without God mode, persist Wasteland as the initial biome, suppress only the Wasteland entry hazard, and route the opening trader objective to Wasteland Trader Joel TP04.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "NVG-0286",
+                                                     "PLACEMENT_CALLED",
+                                                     "CANDIDATE_SURFACE_SETTLED",
+                                                     "INITIAL_BIOME_STORED",
+                                                     "ARRIVAL_PROTECTION_ENABLED",
+                                                     "TRADER_ROUTE_READY",
+                                                     "RELOCATION_COMPLETED",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INITIAL_BIOME_FAILED",
+                                                      "TRADER_ROUTE_FALLBACK",
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "wasteland-build-record",
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation",
+                                                       "installed-after"
+                                                   ],
+                              "status":  "Pending"
+                          }
+                      ]
+}

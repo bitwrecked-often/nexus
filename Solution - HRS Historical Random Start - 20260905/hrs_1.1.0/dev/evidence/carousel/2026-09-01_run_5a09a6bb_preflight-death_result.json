@@ -1,0 +1,12 @@
+{
+  "schema": "hrs-carousel-result/v1",
+  "runId": "5a09a6bb452544988cb9a8b4f77aa63b",
+  "gameName": "HRS_CAROUSEL_110_001",
+  "status": "FAILED",
+  "point": "NONE",
+  "passedPoints": 0,
+  "totalPoints": 576,
+  "reason": "PREFLIGHT_CHANGED",
+  "position": { "x": 317.5934, "y": 58.13673, "z": 501.7752 },
+  "writtenUtc": "2026-09-01T00:32:27.0606788Z"
+}

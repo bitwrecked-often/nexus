@@ -1,0 +1,35 @@
+# Phase 1A Observer-Synchronized Relocation — Wrong-Target Rejection
+
+Date: 2026-08-20  
+Decision: Safety rejection PASS; relocation run invalid/not attempted
+
+The user inadvertently loaded the older similarly named save
+`HRS_Phase1_Test_001` instead of the authorized new-game target
+`HRS_Phase1A_Test_001`.
+
+The sanitized runtime log contains only:
+
+```text
+[HRS-P1A-RELOC] v=0.0.1 build=b14 reason=RELOC_READY
+[HRS-P1A-RELOC] v=0.0.1 build=b14 reason=RELOC_TARGET_REJECTED
+```
+
+No reservation, random selection, placement, observer synchronization,
+verification, semantic comparison, or completion occurred. After normal exit,
+the exact authorized target remained absent.
+
+Post-close aggregate evidence was captured at:
+
+`C:\BitWreckedDisposable\HRS_Phase1A\BuildStage\phase1a-observer-synchronized-post-wrong-target-rejection-2026-08-20.json`
+
+Game-managed and foreign-Mod aggregates remained unchanged. The foreign-saves
+aggregate changed from
+`CE3564E1E1BB04F8348A1570D36CA8302641ABCA2EFE509A495C5366FAC1C23D` to
+`163843D68515F8F9A1A0D6BDEA6B8777E5A48D7C6792738A59E1B998695A4945`
+because the older save was loaded and normally exited. This is outside the
+relocation target and is not attributed to relocation execution.
+
+The game is closed, the installed payload remains in place, and no target reset
+is required because `HRS_Phase1A_Test_001` does not exist.
+
+Next gate: authorize refreshed observer-synchronized Phase 1A first-load preflight.

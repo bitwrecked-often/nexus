@@ -1,0 +1,16 @@
+using System;
+
+namespace BitWrecked.HistoricalRandomStart
+{
+    internal static class CompatibilityGuard
+    {
+        private static readonly Guid ExpectedAssemblyCSharpMvid =
+            new Guid("326ffd03-1d6d-4efb-a7dc-79201537b1c3");
+
+        internal static bool IsCompatible()
+        {
+            return typeof(IModApi).Assembly.ManifestModule.ModuleVersionId ==
+                ExpectedAssemblyCSharpMvid;
+        }
+    }
+}

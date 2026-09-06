@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bit-wrecked.invalid/schemas/phase1-target-allowlist-0.0.1.json",
+  "title": "Historical Random Start Phase 1 private target record",
+  "description": "Schema only. An actual record is private test evidence and must name either one disposable staged target or one exact owner-designated customer-grade lab installation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "recordPurpose",
+    "targetId",
+    "deploymentClass",
+    "gameRootCanonical",
+    "buildStageRootCanonical",
+    "saveRootCanonical",
+    "worldName",
+    "gameName",
+    "worldGuid",
+    "executionType",
+    "eacState",
+    "expectedFingerprint",
+    "backup",
+    "createdUtc",
+    "expiresUtc"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "recordPurpose": {
+      "const": "Phase1Observation"
+    },
+    "targetId": {
+      "type": "string",
+      "pattern": "^BW-HRS-DEV-[A-Z0-9-]{1,32}$",
+      "maxLength": 43
+    },
+    "deploymentClass": {
+      "enum": [
+        "DisposableStagedCopy",
+        "OwnerDesignatedDisposableLiveInstall"
+      ]
+    },
+    "gameRootCanonical": {
+      "type": "string",
+      "pattern": "^[A-Za-z]:\\\\",
+      "maxLength": 260
+    },
+    "buildStageRootCanonical": {
+      "type": "string",
+      "pattern": "^[A-Za-z]:\\\\",
+      "maxLength": 260
+    },
+    "saveRootCanonical": {
+      "type": "string",
+      "pattern": "^[A-Za-z]:\\\\",
+      "maxLength": 260
+    },
+    "worldName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[^\\\\/:*?\"<>|\\u0000-\\u001F]+$"
+    },
+    "gameName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[^\\\\/:*?\"<>|\\u0000-\\u001F]+$"
+    },
+    "worldGuid": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uuid"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "executionType": {
+      "enum": [
+        "LocalSinglePlayer",
+        "ListenServer",
+        "DedicatedServer"
+      ]
+    },
+    "eacState": {
+      "const": "Disabled"
+    },
+    "expectedFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gameDisplayVersion",
+        "steamBuildId",
+        "unityVersion",
+        "assemblyCSharpSha256",
+        "assemblyCSharpMvid"
+      ],
+      "properties": {
+        "gameDisplayVersion": {
+          "const": "V 3.1.0 (b14)"
+        },
+        "steamBuildId": {
+          "const": "24436778"
+        },
+        "unityVersion": {
+          "const": "2022.3.62f2"
+        },
+        "assemblyCSharpSha256": {
+          "const": "B13862E30D8B28F42B83FE6A36BF074D155A6C43164E7B0797A6E4F77BD7DEA3"
+        },
+        "assemblyCSharpMvid": {
+          "const": "acb580d9-e1ab-497d-a8dc-47e47c1fc300"
+        }
+      }
+    },
+    "backup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "backupRootCanonical",
+        "manifestSha256",
+        "createdUtc",
+        "recoverable"
+      ],
+      "properties": {
+        "backupRootCanonical": {
+          "type": "string",
+          "pattern": "^[A-Za-z]:\\\\",
+          "maxLength": 260
+        },
+        "manifestSha256": {
+          "type": "string",
+          "pattern": "^[A-F0-9]{64}$"
+        },
+        "createdUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "recoverable": {
+          "const": true
+        }
+      }
+    },
+    "ownerApproval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approvedForPrivateObservationLab",
+        "approvalScope",
+        "approvedUtc",
+        "ownedModFolderName",
+        "externalBuildStageRequired",
+        "newGameOnly",
+        "protectExistingSavesAndWorlds",
+        "protectExistingMods",
+        "protectProjectWorkspace",
+        "wipeRequiresSeparateApproval",
+        "copyAndLoadRequireExactArtifactApproval"
+      ],
+      "properties": {
+        "approvedForPrivateObservationLab": {
+          "const": true
+        },
+        "approvalScope": {
+          "const": "Phase1ObservationPrivateLab"
+        },
+        "approvedUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ownedModFolderName": {
+          "const": "BitWrecked_HistoricalRandomStart_DEV"
+        },
+        "externalBuildStageRequired": {
+          "const": true
+        },
+        "newGameOnly": {
+          "const": true
+        },
+        "protectExistingSavesAndWorlds": {
+          "const": true
+        },
+        "protectExistingMods": {
+          "const": true
+        },
+        "protectProjectWorkspace": {
+          "const": true
+        },
+        "wipeRequiresSeparateApproval": {
+          "const": true
+        },
+        "copyAndLoadRequireExactArtifactApproval": {
+          "const": true
+        }
+      }
+    },
+    "createdUtc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresUtc": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "deploymentClass": {
+            "const": "OwnerDesignatedDisposableLiveInstall"
+          }
+        },
+        "required": [
+          "deploymentClass"
+        ]
+      },
+      "then": {
+        "required": [
+          "ownerApproval"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "ownerApproval"
+          ]
+        }
+      }
+    }
+  ]
+}

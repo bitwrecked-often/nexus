@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  7DTD 3.0 Wasteland Animal Population Tuning spawn-density patch
+  Copyright (C) 2026 Bit Wrecked
+  SPDX-License-Identifier: GPL-3.0-or-later
+  See LICENSE.txt for details.
+-->
+<configs>
+  <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">1</set>
+  <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@respawndelay">0.9,1.575,1.215,0.9,0.585,0.315</set>
+
+  <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWastelandNight']/@maxcount">1</set>
+  <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWastelandNight']/@respawndelay">0.6,1.05,0.81,0.6,0.39,0.21</set>
+</configs>

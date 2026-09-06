@@ -1,0 +1,6 @@
+{
+  "gameManaged": { "sha256": "AAA" },
+  "foreignMods": { "sha256": "BBB" },
+  "foreignSaves": { "sha256": "CCC" },
+  "target": { "sha256": null }
+}

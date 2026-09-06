@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "recordStatus": "PreBuildPinnedInputs",
+  "artifactName": "BitWrecked.HistoricalRandomStart.DevProbe.dll",
+  "artifactVersion": "0.0.1-dev",
+  "artifactStatus": "NotBuilt",
+  "target": {
+    "gameDisplayVersion": "V 3.1.0 (b14)",
+    "steamBuildId": "24436778",
+    "unityVersion": "2022.3.62f2",
+    "assemblyCSharpMvid": "acb580d9-e1ab-497d-a8dc-47e47c1fc300",
+    "executionArchitecture": "WindowsPlayer x64",
+    "artifactArchitecture": "AnyCPU managed IL",
+    "eacLane": "DisabledOnly"
+  },
+  "compiler": {
+    "name": "Microsoft Roslyn C# Compiler",
+    "version": "5.9.0-1.26379.115",
+    "sha256": "2C196B47E0ADE88940AF111BEAAD6A6EE5FA0DF6152A847E7D3C81059EC15848",
+    "hostPath": "C:\\Program Files\\dotnet\\dotnet.exe",
+    "hostSha256": "AB1B71FD3DD71062E074C9FAB8312081A81B7F2B3E0327C48C4D249C8D1A3135",
+    "origin": "Installed .NET SDK 10.0.400 Roslyn toolchain",
+    "role": "BuildHostOnly",
+    "redistributed": false,
+    "licenseStatus": "Microsoft build-host components; redistribution not planned",
+    "reviewStatus": "Owner-authorized 2026-08-20 after legacy compiler capability mismatch"
+  },
+  "directBuildReferences": [
+    {
+      "name": "Assembly-CSharp.dll",
+      "version": "0.0.0.0",
+      "size": 11805696,
+      "sha256": "B13862E30D8B28F42B83FE6A36BF074D155A6C43164E7B0797A6E4F77BD7DEA3",
+      "origin": "Approved staged 7 Days to Die game copy",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied proprietary binary; no redistribution authorized",
+      "reviewStatus": "Static API signatures inspected; runtime behavior pending"
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll",
+      "version": "0.0.0.0",
+      "size": 1393576,
+      "sha256": "68D360251A7AEA19CBA74626D5E9D55E801C51DDA1F4B153B5BA4825C19C9E35",
+      "origin": "Approved staged 7 Days to Die game copy",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied Unity binary; no redistribution planned",
+      "reviewStatus": "Hash pinned; vulnerability/license review pending before compile"
+    },
+    {
+      "name": "LogLibrary.dll",
+      "version": "0.0.0.0",
+      "size": 10752,
+      "sha256": "A9CC17C698D5586CCE168080ABFD37D61C1F3F2EA8C73487B360164ADC2FB71B",
+      "origin": "Approved staged 7 Days to Die game copy",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied binary; no redistribution authorized",
+      "reviewStatus": "Public logging signatures inspected; runtime output pending"
+    },
+    {
+      "name": "mscorlib.dll",
+      "version": "4.6.57.0",
+      "size": 4631552,
+      "sha256": "98C9B62133DB5DD33B22BC6AAB6F28E4F04F5B5BE6559B28BA5C2738241434D0",
+      "origin": "Approved staged Unity managed profile",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied managed runtime binary; no redistribution planned",
+      "reviewStatus": "Hash pinned; vulnerability/license review pending before compile"
+    },
+    {
+      "name": "netstandard.dll",
+      "version": "2.1.0.0",
+      "size": 90112,
+      "sha256": "6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5",
+      "origin": "Approved staged Unity managed profile",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied managed reference binary; no redistribution planned",
+      "reviewStatus": "Hash pinned; vulnerability/license review pending before compile"
+    },
+    {
+      "name": "System.dll",
+      "version": "4.6.57.0",
+      "size": 2639872,
+      "sha256": "ACE2DD6A7D534B581BF4A9D316E743D64508CA2135DB73DBFF0DDB9365FC454E",
+      "origin": "Approved staged Unity managed profile",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied managed runtime binary; no redistribution planned",
+      "reviewStatus": "Hash pinned; vulnerability/license review pending before compile"
+    },
+    {
+      "name": "System.Core.dll",
+      "version": "4.6.57.0",
+      "size": 1113088,
+      "sha256": "F1B33EB1AE8522EDCF9BA4C2B85F532D4BAB68BFA2A51527264BB61619BED4EA",
+      "origin": "Approved staged Unity managed profile",
+      "role": "CompileReferenceAndRuntimeProvided",
+      "redistributed": false,
+      "licenseStatus": "Game-supplied managed runtime binary; no redistribution planned",
+      "reviewStatus": "Hash pinned; vulnerability/license review pending before compile"
+    }
+  ],
+  "environmentFingerprints": [
+    {
+      "name": "TfpHarmony.dll",
+      "version": "1.1.0.4",
+      "sha256": "71D78B990A29ECC0E0C575227E7933E2BFEDCA802108D8A30E8D9EB91CEC1AC8",
+      "role": "EnvironmentFingerprintOnly",
+      "directRuntimeDependency": false,
+      "redistributed": false
+    },
+    {
+      "name": "0Harmony.dll",
+      "version": "Environment supplied",
+      "sha256": "C349E1A3FD13FA5A9FACC9805A5E160161B14489F46F6BDD38202B8E124F78DF",
+      "role": "EnvironmentFingerprintOnly",
+      "directRuntimeDependency": false,
+      "redistributed": false
+    },
+    {
+      "name": "Mono.Cecil.dll",
+      "version": "Environment supplied",
+      "sha256": "71C8B01208AB37A5164F5BACD69054899DB9FC00F2DA87DBD07DC1EE40FC06A8",
+      "role": "ReadOnlyInspectionOnly",
+      "directRuntimeDependency": false,
+      "redistributed": false
+    }
+  ],
+  "externalPackages": [],
+  "runtimeDownloads": [],
+  "bundledThirdPartyBinaries": [],
+  "review": {
+    "networkVulnerabilityLookupPerformed": false,
+    "status": "Pending before first compile",
+    "rule": "Do not compile, bundle, or claim vulnerability clearance until the exact staged inputs receive a dated review."
+  }
+}

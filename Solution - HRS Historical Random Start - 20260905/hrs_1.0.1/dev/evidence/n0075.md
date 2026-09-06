@@ -1,0 +1,32 @@
+# Phase 1A Marker Probe — First-Load Reservation Failure
+
+Date: 2026-08-20  
+Decision: Immediate marker proof FAIL; relocation remains NO-GO
+
+With corrected metadata, the exact owned probe loaded successfully and emitted
+one sanitized `MARKER_READY`. The owner created the exact disposable
+`Navezgane / HRS_Phase1A_Test_001` target and waited for the normal player/UI
+spawn.
+
+The only subsequent probe result was:
+
+```text
+[HRS-P1A-MARKER] v=0.0.1 build=b14 reason=MARKER_RESERVATION_FAILED
+```
+
+There was no `MARKER_RESERVED_VERIFIED`. Therefore the
+`EntityBuffs.SetCustomVarNetwork(Name, 1, set)` call did not make Reserved
+immediately observable through `HasCustomVar`/`GetCustomVar` on the same
+callback path. No retry or second write occurred.
+
+The user exited normally. Post-exit checks confirm the game is closed, both
+live payload hashes remain exact, and the target contains 69 files. Its
+post-first-load aggregate SHA-256 is:
+
+`BAA595C8CF75D3890B6F47A22A136C5DE13CC3E0C11A539E5CA031101A404A09`
+
+This result does not yet distinguish a fully absent marker from a network write
+that became observable asynchronously or persisted only at save time. The
+amended probe can answer that question on one separately authorized read-only
+`LoadedGame` observation. That reload branch contains no marker write. Until
+then, and regardless of its result, relocation source/build/run remains NO-GO.

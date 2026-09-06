@@ -1,0 +1,14 @@
+# Narrow project-source exceptions to the parent game-copy safety rules.
+!src/
+!src/launcher/
+!src/launcher/**
+!src/runtime/
+!src/runtime/BitWrecked.HistoricalRandomStart/
+!src/runtime/BitWrecked.HistoricalRandomStart/ModInfo.xml
+
+# Generated runtime/manager state and build products are never source.
+Support_Files_Do_Not_Edit/HistoricalRandomStart_State/
+BUILD_OUTPUT/
+TEMP_BUILD_STAGE/
+*.dll
+*.pdb

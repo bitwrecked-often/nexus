@@ -1,0 +1,36 @@
+{
+  "schema": "hrs-carousel-video-evidence/v1",
+  "runId": "c35a7deae9c749e88c275050f8b47f7d",
+  "gameName": "HRS_CAROUSEL_110_001",
+  "scope": "NG04-NG12",
+  "dwellSeconds": 5,
+  "captureTool": "Windows Snipping Tool",
+  "video": {
+    "localPath": "video/HRS_CAROUSEL_110_001_NG04-NG12_c35a7dea.mp4",
+    "bytes": 172150886,
+    "sha256": "D2316E1F2F9A56F846A3EB24F7C5CCA3F26F8CFB687E8DA2C79039E436524D1E",
+    "durationSeconds": 144.7666333,
+    "width": 1912,
+    "height": 1444,
+    "framesPerSecond": 30,
+    "containerHeader": "ftyp-mp42"
+  },
+  "events": {
+    "path": "2026-08-31_run_c35a7dea_events.tsv",
+    "bytes": 4342,
+    "sha256": "BAE8EF256F9C02F1934C63B145DDF031273C4BF8E58330974DBD4A96EB09A105"
+  },
+  "result": {
+    "path": "2026-08-31_run_c35a7dea_result.json",
+    "bytes": 345,
+    "sha256": "8763448DF093EE8A76DD6FFC7EF365C0AE8E492921CC9BFB4F752381427CE795",
+    "status": "COMPLETED",
+    "passedPoints": 9,
+    "totalPoints": 9,
+    "reason": "ALL_POINTS_PASSED"
+  },
+  "storage": {
+    "rawVideoTrackedByGit": false,
+    "reason": "Raw MP4 exceeds GitHub's normal 100 MB blob limit; integrity is committed through this SHA-256 manifest."
+  }
+}

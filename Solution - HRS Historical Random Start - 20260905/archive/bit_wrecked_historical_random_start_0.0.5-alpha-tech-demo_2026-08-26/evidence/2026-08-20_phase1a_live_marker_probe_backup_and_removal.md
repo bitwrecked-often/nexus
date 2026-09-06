@@ -1,0 +1,28 @@
+# Phase 1A Live Marker Probe — Backup and Removal
+
+Date: 2026-08-20  
+Decision: Exact live marker probe removed recoverably; relocation install NO-GO
+
+The owner authorized backup and removal of the exact live marker-only probe:
+
+`Mods\BitWrecked_HistoricalRandomStart_PHASE1A_DEV`
+
+Preflight resolved that exact non-reparse folder beneath the live `Mods`
+directory. The game and server were closed. Its complete inventory was:
+
+| File | Bytes | SHA-256 |
+| --- | ---: | --- |
+| `BitWrecked.HistoricalRandomStart.Phase1A.MarkerProbe.dll` | 8,704 | `C3505D1838B8E2A7114485D0D08C023D3CFE6278FDDBD71D81FCB7D628A3B393` |
+| `ModInfo.xml` | 395 | `0F7B261BDDE9F7F780882F0BB36937C0E20A46AC06EAF27B8A53E4E4E8337657` |
+
+The folder was moved to the recoverable external location:
+
+`C:\BitWreckedDisposable\HRS_Phase1A\Backup\BitWrecked_HistoricalRandomStart_PHASE1A_DEV.pre-relocation-2026-08-20`
+
+The ordinal `path|bytes|sha256` aggregate before and after the move is:
+
+`6920A99751AA6E13BCADE016D95CAC6FB1383F7054577C9062292C932B87C154`
+
+The original live marker folder is absent, the relocation live folder remains
+absent, and the corrected staged relocation payload remains present. No save,
+staged payload, or other Mod was changed.
