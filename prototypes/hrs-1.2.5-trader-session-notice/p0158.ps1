@@ -27,6 +27,7 @@ $verifiedAssemblyCSharpSha256 = 'AA4275991736D276EC75BB4047E45F76E0242AA47D98958
 $unverifiedGameBuildMessage = 'This game build has not been verified with HRS. HRS will try to run. If the required game hooks are unavailable, it will leave the normal start in place.'
 $script:appliedManifest = $null
 $script:appliedPayloadRoot = $null
+$script:launchBlockedUntilApply = $false
 
 Import-Module (Join-Path $launcherRoot 'm0160.psm1') -Force
 Import-Module (Join-Path $launcherRoot 'm0162.psm1') -Force
@@ -571,7 +572,7 @@ function Update-HrsStatus {
 
     $total=0; foreach($biome in $biomes){$total += $weights[$biome]}
     $applyButton.Enabled = (!$randomRadio.Checked -or $selectionCombo.SelectedIndex -ne 2 -or $total -gt 0)
-    $launchButton.Enabled = ($process.Steam -eq 'Running')
+    $launchButton.Enabled = (!$script:launchBlockedUntilApply -and $process.Steam -eq 'Running')
     $uninstallButton.Enabled = $true
     $restoreButton.Enabled = $true
 
@@ -684,6 +685,7 @@ $applyButton.Add_Click({
             return
         }
         $applyConfirmed = $true
+        $script:launchBlockedUntilApply = $true
         $launchButton.Enabled = $false
         Initialize-HrsManagerStorage
 
@@ -845,6 +847,7 @@ $applyButton.Add_Click({
             [System.Windows.Forms.MessageBoxButtons]::OK,
             [System.Windows.Forms.MessageBoxIcon]::Information
         ) | Out-Null
+        $script:launchBlockedUntilApply = $false
         $processAfterApply = Get-HrsProcessState
         $launchButton.Enabled = ($processAfterApply.Game -eq 'Closed' -and $processAfterApply.Steam -eq 'Running')
     }
@@ -1027,6 +1030,14 @@ $uninstallButton.Add_Click({
             [System.Windows.Forms.MessageBoxIcon]::Warning
         ) | Out-Null
     }
+})
+$form.Add_Activated({
+    try {
+        $process = Get-HrsProcessState
+        $launchButton.Enabled = (!$script:launchBlockedUntilApply -and
+            $process.Game -eq 'Closed' -and $process.Steam -eq 'Running')
+    }
+    catch { $launchButton.Enabled = $false }
 })
 $form.Add_Shown({
     Update-HrsStatus

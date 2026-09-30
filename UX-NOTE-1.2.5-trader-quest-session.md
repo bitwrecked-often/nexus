@@ -21,6 +21,7 @@ Add under Install and start:
 - The post-write success popup contains the warning for all Random selection methods, including RandomSafe, and omits it in Standard mode.
 - The popup is legible at 100%, 150%, 200%, and 225% display scaling without clipped text.
 - The popup appears only after a successful policy write and readback. Launch Game stays disabled until it is dismissed; failed writes do not show it.
+- If Steam is closed during Apply, starting Steam and returning to the manager refreshes Launch Game availability after the success popup has been dismissed.
 - The manager continues to save the exact selected biome policy and does not launch the game automatically.
 - The customer ZIP, receipt, and transfer manifest for `1.2.5-qa.002` are not edited; shipping this text requires a new candidate identity.
 
