@@ -23,9 +23,9 @@ Copy these two files from [prototypes/hrs-1.2.5-trader-session-notice](prototype
 | `p0158.ps1` | `dev/ui/p0158.ps1` | Native WinForms manager popup and Launch Game gate. |
 | `README.md` | `README.md` | Player instruction beside Install and start. |
 
-The prototype is based on the frozen 1.2.5 manager, so DEV should merge it with any newer manager changes rather than overwrite those changes. [PROTOTYPE.md](prototypes/hrs-1.2.5-trader-session-notice/PROTOTYPE.md) records its local checks. The last prototype change is commit `537f828`.
+The prototype is based on the frozen 1.2.5 manager, so DEV should merge it with any newer manager changes rather than overwrite those changes. It contains frozen QA release labels, `1.2.5` release-version arguments, verified payload hashes, and a ModInfo version check; DEV must update these against the newly built candidate. Keep the existing major-version compatibility behavior and identify which game build was actually tested. [PROTOTYPE.md](prototypes/hrs-1.2.5-trader-session-notice/PROTOTYPE.md) records its local checks.
 
-The frozen `Solution - HRS Historical Random Start v1.2.5/1.2.5-qa.002.zip` has SHA-256 `90C404EBE1A974448CA85529C1D1274DE6D2429B0A404BBB8E89323584A5966D`. Do not edit that ZIP, its extracted QA package, its receipt, or its transfer manifests. Build a new candidate ID and regenerate its manifests, receipt, file hashes, and transfer archive.
+The frozen `Solution - HRS Historical Random Start v1.2.5/1.2.5-qa.002.zip` has SHA-256 `90C404EBE1A974448CA85529C1D1274DE6D2429B0A404BBB8E89323584A5966D`. Do not edit that ZIP, its extracted QA package, its receipt, or its transfer manifests. The prototype files alone are not runnable. Build a new candidate ID and regenerate its manifests, receipt, file hashes, and transfer archive. Package only intended source and release files; exclude generated local manager state such as `HistoricalRandomStart_State`.
 
 ## Required manager flow
 
@@ -35,7 +35,7 @@ The frozen `Solution - HRS Historical Random Start v1.2.5/1.2.5-qa.002.zip` has 
 4. Keep **Launch Game** disabled while the popup is open. After **OK**, enable it only when the game is closed and Steam is running. If Steam was closed during Apply, returning to the manager after starting Steam must refresh availability.
 5. On a failed write, show the error only, never show **Settings Applied**, and leave Launch Game blocked for that Apply attempt. Do not launch the game automatically.
 
-The companion README carries the same session instruction. The player should continue the opening tasks in that first game session until the Journey to Settlement trader marker appears; simply waiting after launch is not the intended action. The warning applies until the destination marker appears, not until the trader visit is completed. **Settings Applied** confirms the installation and policy, not that a trader has already been assigned in the game. The warning must make that distinction clear to a first-time player. DEV should add this opening-task cue to the prototype popup and README copy during integration.
+The companion README carries the same session instruction. The player should continue the opening tasks in that first game session until the Journey to Settlement trader marker appears; simply waiting after launch is not the intended action. The warning applies until the destination marker appears, not until the trader visit is completed. **Settings Applied** confirms the installation and policy, not that a trader has already been assigned in the game. The prototype popup and README now include this opening-task cue; preserve it during integration.
 
 ## Community design signals and missing expectations
 

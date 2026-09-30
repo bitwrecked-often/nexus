@@ -24,14 +24,16 @@ tested scope. Start the game with anti-cheat disabled and keep its supplied
 4. Enter the **exact Game Name** you will use for a new save. The generated
    world's name can be chosen later in the game; it is not the HRS policy key.
 5. Choose Standard or Random. For Random, choose Any biome, Choose a biome,
-   or Set custom weights. Set optional starting-biome protection independently. Select **Apply Settings**, then launch the game from the manager
-   or Steam.
+   or Set custom weights. Set optional starting-biome protection independently.
+   Select **Apply Settings** and acknowledge **Settings Applied**. Launch from
+   the manager, or use Steam only when it is configured to launch without EAC.
 6. Create the new game with that exact Game Name. You may generate a new world
    or choose an existing supported world.
 
-For Random starts, do not log out until your first trader is assigned. Wait for
-the Journey to Settlement trader marker. Leaving earlier may point the quest to
-Pine Forest when you return. Your random landing remains saved and will not repeat.
+For Random starts, do not log out until your first trader is assigned. Complete
+the opening tasks in the same session and wait for the Journey to Settlement
+trader marker. Leaving earlier may point the quest to Pine Forest when you
+return. Your random landing remains saved and will not repeat.
 
 Standard leaves the usual start alone. Random selects from actual placed POIs
 in the active world, with a five-attempt limit using distinct instances in the

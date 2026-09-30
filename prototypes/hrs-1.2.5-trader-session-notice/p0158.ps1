@@ -814,7 +814,7 @@ $applyButton.Add_Click({
         }
         Update-HrsResultStatus
         $traderSessionNotice = if ($mode -eq 'Standard') { '' } else {
-            "Do not log out until your first trader is assigned. Wait for the Journey to Settlement trader marker. Leaving earlier may send the quest to Pine Forest when you return.`r`n`r`n"
+            "Do not log out until your first trader is assigned. Complete the opening tasks in this session and wait for the Journey to Settlement trader marker. Leaving earlier may send the quest to Pine Forest when you return.`r`n`r`n"
         }
         $historyNotice = if ($historyError) { "Recovery history unavailable: $historyError`r`n`r`n" } else { '' }
         $successText = "Settings applied and verified for: $gameName`r`n$description`r`nStarting-biome protection: $protection`r`n`r`n" +

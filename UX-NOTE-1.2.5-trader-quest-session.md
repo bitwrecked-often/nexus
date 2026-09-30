@@ -6,7 +6,7 @@ The frozen `1.2.5-qa.002.zip` remains unchanged. The user chose a visible notice
 
 Keep the existing pre-write Yes/No confirmation for name and settings. After `Invoke-HrsInstallAndApply` returns with the policy written and read back, show a separate **Settings Applied** popup. For **Random** mode, include this notice; it applies to Any, Chosen, and Weighted selection and to either protection setting.
 
-> Do not log out until your first trader is assigned. Wait for the Journey to Settlement trader marker. Leaving earlier may point the quest to a trader in another biome when you return.
+> Do not log out until your first trader is assigned. Complete the opening tasks in this session and wait for the Journey to Settlement trader marker. Leaving earlier may send the quest to Pine Forest when you return.
 
 The popup should also restate the applied game name, selection, and protection setting. Keep **Launch Game** disabled after the user approves the pre-write confirmation and until the Settings Applied popup closes. If the write fails, show the existing error popup and do not show Settings Applied. In Standard mode, show the success popup without the trader warning. Dismissing the popup returns to the manager, where Launch Game is available when Steam is running.
 
@@ -14,7 +14,7 @@ The popup should also restate the applied game name, selection, and protection s
 
 Add under Install and start:
 
-> In Random mode, do not log out until your first trader is assigned. Wait for the Journey to Settlement trader marker. Leaving earlier may point the quest to a trader in another biome when you return. Your random landing remains one-shot and is not repeated.
+> In Random mode, do not log out until your first trader is assigned. Complete the opening tasks in the same session and wait for the Journey to Settlement trader marker. Leaving earlier may point the quest to Pine Forest when you return. Your random landing remains one-shot and is not repeated.
 
 ## QA acceptance
 
