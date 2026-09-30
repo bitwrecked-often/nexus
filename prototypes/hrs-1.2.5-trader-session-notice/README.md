@@ -29,10 +29,9 @@ tested scope. Start the game with anti-cheat disabled and keep its supplied
 6. Create the new game with that exact Game Name. You may generate a new world
    or choose an existing supported world.
 
-For Random starts, stay in the world until Journey to Settlement assigns a
-trader destination. If you log out before the trader marker appears, the quest
-may point to Pine Forest when you return. Your random landing remains saved and
-will not repeat.
+For Random starts, do not log out until your first trader is assigned. Wait for
+the Journey to Settlement trader marker. Leaving earlier may point the quest to
+Pine Forest when you return. Your random landing remains saved and will not repeat.
 
 Standard leaves the usual start alone. Random selects from actual placed POIs
 in the active world, with a five-attempt limit using distinct instances in the
