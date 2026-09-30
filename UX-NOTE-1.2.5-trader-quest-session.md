@@ -1,6 +1,6 @@
 # UX note for the next HRS candidate: finish the opening trader quest in one session
 
-The frozen `1.2.5-qa.002.zip` remains unchanged. This notice is the fallback if the release decision accepts the known limitation; a repair should be assessed first because the tester encountered it during ordinary play.
+The frozen `1.2.5-qa.002.zip` remains unchanged. The user chose a visible notice as the current mitigation for the known limitation. A working manager and README prototype is in `prototypes/hrs-1.2.5-trader-session-notice` for the next DEV candidate.
 
 ## Manager copy
 
