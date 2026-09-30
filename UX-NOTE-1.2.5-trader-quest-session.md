@@ -28,3 +28,5 @@ Add under Install and start:
 - The customer ZIP, receipt, and transfer manifest for `1.2.5-qa.002` are not edited; shipping this text requires a new candidate identity.
 
 Reason: [QA-FINDING-1.2.5-qa.002-trader-route.md](QA-FINDING-1.2.5-qa.002-trader-route.md).
+
+Public known-issue copy: [KNOWN-ISSUE-1.2.5-trader-route.md](KNOWN-ISSUE-1.2.5-trader-route.md).
