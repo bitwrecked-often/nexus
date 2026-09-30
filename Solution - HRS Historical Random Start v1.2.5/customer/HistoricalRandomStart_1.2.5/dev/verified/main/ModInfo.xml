@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="BitWrecked_HistoricalRandomStart" />
+  <DisplayName value="Historical Random Start" />
+  <Description value="Placed-world random starts with optional arrival protection and active-world opening-trader routing." />
+  <Author value="Bit Wrecked" />
+  <Version value="1.2.5" />
+  <Website value="" />
+  <SkipWithAntiCheat value="true" />
+</xml>

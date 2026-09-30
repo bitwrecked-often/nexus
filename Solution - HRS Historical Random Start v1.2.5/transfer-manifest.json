@@ -1,0 +1,237 @@
+{
+  "schema": "hrs-qa-transfer/v1",
+  "candidateId": "1.2.5-qa.002",
+  "purpose": "Engineering QA transfer; customer ZIP inside is unchanged",
+  "files": [
+    {
+      "path": "1.2.5-qa.002.zip",
+      "bytes": 197889,
+      "sha256": "90C404EBE1A974448CA85529C1D1274DE6D2429B0A404BBB8E89323584A5966D"
+    },
+    {
+      "path": "1.2.5-qa.002.zip.companion.zip",
+      "bytes": 43697,
+      "sha256": "7D3439217BD98A3438B45918C70B8077A047F189D26CF300E744E973E7283053"
+    },
+    {
+      "path": "1.2.5-qa.002.zip.receipt.json",
+      "bytes": 1087,
+      "sha256": "E7C1C71A43A20B68AE3C09E160B7BF9466E725A80D4C4DAF33DD4FCD33201215"
+    },
+    {
+      "path": "QA-WORKFLOW.md",
+      "bytes": 5771,
+      "sha256": "970B5013B8E52D009F4E7558CE3A9F76733C5F2B0040DC7211FFF0397537083C"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 2881,
+      "sha256": "FA95DA0978EB21E0E1F932C69E21027720B61ED6C0B4612EF4299CAB797AC427"
+    },
+    {
+      "path": "context/context-manifest.json",
+      "bytes": 4847,
+      "sha256": "AFB98F0545220EF50E4A175AB4D81E824EA85EBEF3A36ACA10BB0451F10FC7C2"
+    },
+    {
+      "path": "context/qa-workspace.json",
+      "bytes": 80,
+      "sha256": "046EE9054DA694B7E71A42DC76B6D68FD035C36E5E8637630AFE8375F4F221BC"
+    },
+    {
+      "path": "context/dev/builds/1.2.5-qa.002/build-record.json",
+      "bytes": 6696,
+      "sha256": "315D6F77411BDF8257D39F0A88222A94D0F07E6DD8BC3657FEA5A41F2EB5E498"
+    },
+    {
+      "path": "context/dev/qa/cases.json",
+      "bytes": 60874,
+      "sha256": "7A43D01479DDE054DEB8DC8FE0AF538C62225C5C1BEBBF17A1E2F1E880B56EF3"
+    },
+    {
+      "path": "context/dev/qa/rel.json",
+      "bytes": 14628,
+      "sha256": "D10815F7CEEDF6351F7B2A1A7776129CC75FF62BFFA1A7B52F9D840D36354530"
+    },
+    {
+      "path": "context/dev/src/runtime/main/BiomePreference.cs",
+      "bytes": 3455,
+      "sha256": "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0140.cs",
+      "bytes": 3819,
+      "sha256": "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0147.cs",
+      "bytes": 1293,
+      "sha256": "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0167.cs",
+      "bytes": 39423,
+      "sha256": "DF08273BA5607D25147C39BDB3AC85B375A95A9E4EFCEBAE295C126FACB00F71"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0181.cs",
+      "bytes": 5507,
+      "sha256": "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0184.cs",
+      "bytes": 6901,
+      "sha256": "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0185.cs",
+      "bytes": 3531,
+      "sha256": "A6B96DF463A28B747835CC88E6DF4074D0E366E7BA4ACCDAC8B18643A77098AE"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0213.cs",
+      "bytes": 24044,
+      "sha256": "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0217.cs",
+      "bytes": 5593,
+      "sha256": "E85071D444679D88920711120262E7C1683ADFBDC9033E7DA95CBCA446A63D92"
+    },
+    {
+      "path": "context/dev/src/runtime/main/c0218.cs",
+      "bytes": 6069,
+      "sha256": "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+    },
+    {
+      "path": "context/dev/src/runtime/main/PlacedPoiResolver.cs",
+      "bytes": 16709,
+      "sha256": "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+    },
+    {
+      "path": "context/dev/src/runtime/main/PlacedTraderResolver.cs",
+      "bytes": 5143,
+      "sha256": "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+    },
+    {
+      "path": "context/dev/src/runtime/main/PolicyV1.cs",
+      "bytes": 9386,
+      "sha256": "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+    },
+    {
+      "path": "context/dev/src/runtime/main/PolicyV2.cs",
+      "bytes": 8039,
+      "sha256": "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+    },
+    {
+      "path": "context/dev/src/runtime/main/ResultV1.cs",
+      "bytes": 5681,
+      "sha256": "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/LICENSE.md",
+      "bytes": 708,
+      "sha256": "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/package-manifest.json",
+      "bytes": 3010,
+      "sha256": "F07E108A51311EA92498A964710891CC7B0FE604386D26044417004D7CE47623"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/README.md",
+      "bytes": 4260,
+      "sha256": "BD2A9A580D0C8A1634CB257D50C4DE64148B6B0602B3A16B1755596E961AE589"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/START.bat",
+      "bytes": 590,
+      "sha256": "1AEB7B8114DE4C23FB31C6904ED91E7261EA1E06AA157A9B419E26C3C7C4F2ED"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/src/launcher/m0160.psm1",
+      "bytes": 5799,
+      "sha256": "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/src/launcher/m0161.psm1",
+      "bytes": 47103,
+      "sha256": "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/src/launcher/m0162.psm1",
+      "bytes": 23442,
+      "sha256": "9D0AAD4B7995518871B55048BB2D9951A440BB6087683DC8B71DD5D7769E6BD5"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/src/launcher/m0164.psm1",
+      "bytes": 45913,
+      "sha256": "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/src/launcher/m0166.psm1",
+      "bytes": 7230,
+      "sha256": "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/ui/logo.ico",
+      "bytes": 124673,
+      "sha256": "685F03F8B91E09C5B0F32A1DFB005099251A68A3156B189D0DD1AAB20A52331C"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/ui/p0158.ps1",
+      "bytes": 47796,
+      "sha256": "253C9AA2843BC6B8112828D0ED778D5C21BDB8772C9F31E307AF5C8E6E47B8D1"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/verified/main/d0163.dll",
+      "bytes": 76800,
+      "sha256": "D8C73D5A4126D1BC7826C0E507A946B53FA3F79E6DD3053E90F3BB593CF33EF8"
+    },
+    {
+      "path": "customer/HistoricalRandomStart_1.2.5/dev/verified/main/ModInfo.xml",
+      "bytes": 412,
+      "sha256": "A17E85688E8341369892801DB2BBEE06842D7358EEE25B47A2D07E31557F9DAE"
+    },
+    {
+      "path": "tools/candidate-registry.json",
+      "bytes": 3668,
+      "sha256": "DE79316FDFACB305E1FEA17E31537A1032F46661D2C00CE853E1E8D8C85F6053"
+    },
+    {
+      "path": "tools/Complete-HrsQaCycle.ps1",
+      "bytes": 8206,
+      "sha256": "9DB51C2305260FF53F48209C11269F5C764379FF8EDA96B015A3F27A906D8553"
+    },
+    {
+      "path": "tools/Export-HrsQaRun.ps1",
+      "bytes": 13411,
+      "sha256": "A0AC65FAD74AAC067EF78A732A4E79C6CF8AE88663F3F13A304A968F14514AE3"
+    },
+    {
+      "path": "tools/HrsIdentity.ps1",
+      "bytes": 12144,
+      "sha256": "7958E148D05BF481F696B3F9D8D6D01B4137AF2B0789764A84070B1E65EE9496"
+    },
+    {
+      "path": "tools/HrsQaTools.psm1",
+      "bytes": 57125,
+      "sha256": "B7FB2A73CA7F315F0757C8ABEEB8A0B9826D602C0FA02097A18116C0080DED3C"
+    },
+    {
+      "path": "tools/Record-HrsQaObservation.ps1",
+      "bytes": 7476,
+      "sha256": "F9EF59FF33222D11DE5F954E6D5F0256D6C87EC9DA4F42D52EC4F79BC5062977"
+    },
+    {
+      "path": "tools/Start-HrsQaRun.ps1",
+      "bytes": 4617,
+      "sha256": "25C46EE0E37266C3AA25AAC4CA447B3233A2E9D90D513AE60BD475DD0B08200C"
+    },
+    {
+      "path": "tools/Test-HrsRelease.ps1",
+      "bytes": 972,
+      "sha256": "10FA6C183A6544F9223F50E666D52DD43ABA50761313D5B57F0D0E88A71DFAEB"
+    }
+  ]
+}
