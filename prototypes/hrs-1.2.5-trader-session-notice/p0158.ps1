@@ -274,7 +274,7 @@ $biomeNote.ForeColor = [System.Drawing.Color]::FromArgb(70,70,70)
 $form.Controls.Add($biomeNote)
 
 $sessionNotice = New-Object System.Windows.Forms.Label
-$sessionNotice.Text = 'Random start notice: Finish the starter tasks and Journey to Settlement trader visit before leaving the world. If you log out first, the trader quest may point to Pine Forest when you return.'
+$sessionNotice.Text = 'Random start notice: Stay in the world until Journey to Settlement assigns a trader destination. If you log out before the trader marker appears, it may point to Pine Forest when you return.'
 $sessionNotice.AutoSize = $true
 $sessionNotice.MaximumSize = New-Object System.Drawing.Size(550,0)
 $sessionNotice.ForeColor = [System.Drawing.Color]::FromArgb(110,55,15)
@@ -682,7 +682,7 @@ $applyButton.Add_Click({
         $protection = if ($mode -eq 'RandomSafe') { 'On' } else { 'Off' }
         $gameBuildNotice = Get-HrsGameBuildNotice
         $traderSessionNotice = if ($mode -eq 'Standard') { '' } else {
-            "Finish the starter tasks and talk to the opening trader before leaving the world. Logging out earlier may send the trader quest to Pine Forest when you return.`r`n`r`n"
+            "Stay in the world until Journey to Settlement shows a trader destination. Logging out before the trader marker appears may send the quest to Pine Forest when you return.`r`n`r`n"
         }
         $confirmationText = "New game name: $gameName`r`n$description`r`nStarting-biome protection: $protection`r`n`r`n$traderSessionNotice" +
             "If no safe start is available, use the normal start.`r`nChanging settings does not give an already started character another HRS start.`r`nThe game will not launch automatically.`r`n$gameBuildNotice"
