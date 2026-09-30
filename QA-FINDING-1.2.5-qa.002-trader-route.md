@@ -32,4 +32,6 @@ The manager history does show an earlier apply snapshot at 19:26:02, shortly bef
 
 Current mitigation: the user chose a visible Random-mode UX notice and public known-issue text, while leaving the runtime repair deferred. The working manager and README prototype is in `prototypes/hrs-1.2.5-trader-session-notice` for the next DEV candidate. The issue remains open; if DEV later repairs it, use the existing saved route marker with session-scoped listener cleanup and re-test no logout, world exit/re-entry before the quest, and interaction with other mods. Any repair or customer UX change requires a new candidate and QA identity.
 
+The user selected a post-write **Settings Applied** popup for the manager notice. It appears only after `Invoke-HrsInstallAndApply` returns from its verified policy write, and Launch Game is held disabled until the popup closes. The existing pre-write Yes/No confirmation remains for approval.
+
 The user clarified the intended session boundary: the trader visit itself need not be completed before logout; the destination only needs to be assigned. The public and manager notice now says to stay until the Journey to Settlement trader marker appears. A logout after `TRADER_ROUTE_COMPLETED` but before visiting the trader should be checked once to confirm that the assigned objective survives re-entry.

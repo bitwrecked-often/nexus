@@ -273,14 +273,6 @@ $biomeNote.Location = New-Object System.Drawing.Point(27,410)
 $biomeNote.ForeColor = [System.Drawing.Color]::FromArgb(70,70,70)
 $form.Controls.Add($biomeNote)
 
-$sessionNotice = New-Object System.Windows.Forms.Label
-$sessionNotice.Text = 'Random start notice: Do not log out until your first trader is assigned. Wait for the Journey to Settlement trader marker. Leaving earlier may point the quest to Pine Forest when you return.'
-$sessionNotice.AutoSize = $true
-$sessionNotice.MaximumSize = New-Object System.Drawing.Size(550,0)
-$sessionNotice.ForeColor = [System.Drawing.Color]::FromArgb(110,55,15)
-$sessionNotice.Visible = $false
-$form.Controls.Add($sessionNotice)
-
 $applyButton = New-Object System.Windows.Forms.Button
 $applyButton.Text = 'Apply Settings'
 $applyButton.Size = New-Object System.Drawing.Size(120,38)
@@ -345,7 +337,6 @@ function Update-HrsBiomePreview {
     $isRandom = $randomRadio.Checked
     $biomeGroup.Enabled = $isRandom
     $biomeProtectCheck.Enabled = $isRandom
-    $sessionNotice.Visible = $isRandom
     $chosenCombo.Visible = $isRandom -and $selectionCombo.SelectedIndex -eq 1
     $editWeights.Visible = $isRandom -and $selectionCombo.SelectedIndex -eq 2
     $total = 0
@@ -551,7 +542,7 @@ function Initialize-HrsBiomeLayout {
     $gameNameBox.MaxLength=64
     $gameNameHelp.Text='Must exactly match the game name in 7 Days to Die. Changing settings will not trigger a second start for an already started character.'
     $row=0
-    foreach($c in @($title,$version,$status,$gameLabel,$gameNameBox,$gameNameHelp,$modes,$biomeGroup,$biomeProtectCheck,$biomeNote,$sessionNotice,$actions,$resultStatus,$details)) {
+    foreach($c in @($title,$version,$status,$gameLabel,$gameNameBox,$gameNameHelp,$modes,$biomeGroup,$biomeProtectCheck,$biomeNote,$actions,$resultStatus,$details)) {
         $c.Dock='Top';$c.Margin=New-Object Windows.Forms.Padding(3,3,3,8)
         if($c -is [Windows.Forms.Label]) { $c.AutoSize=$true; $c.MaximumSize=New-Object Drawing.Size(570,0) }
         $c.TabIndex=$row
@@ -655,6 +646,8 @@ function Initialize-HrsManagerStorage {
 
 $applyButton.Add_Click({
     $applyConfirmed = $false
+    $applySucceeded = $false
+    $successText = ''
     try {
         $process = Get-HrsProcessState
         if ($process.Game -ne 'Closed') {
@@ -681,10 +674,7 @@ $applyButton.Add_Click({
         $description = Get-HrsFormDescription
         $protection = if ($mode -eq 'RandomSafe') { 'On' } else { 'Off' }
         $gameBuildNotice = Get-HrsGameBuildNotice
-        $traderSessionNotice = if ($mode -eq 'Standard') { '' } else {
-            "Do not log out until your first trader is assigned. Wait for the Journey to Settlement trader marker. Leaving earlier may send the quest to Pine Forest when you return.`r`n`r`n"
-        }
-        $confirmationText = "New game name: $gameName`r`n$description`r`nStarting-biome protection: $protection`r`n`r`n$traderSessionNotice" +
+        $confirmationText = "New game name: $gameName`r`n$description`r`nStarting-biome protection: $protection`r`n`r`n" +
             "If no safe start is available, use the normal start.`r`nChanging settings does not give an already started character another HRS start.`r`nThe game will not launch automatically.`r`n$gameBuildNotice"
         $confirm = [Windows.Forms.MessageBox]::Show($form,
             $confirmationText,
@@ -694,6 +684,7 @@ $applyButton.Add_Click({
             return
         }
         $applyConfirmed = $true
+        $launchButton.Enabled = $false
         Initialize-HrsManagerStorage
 
         if (-not $useDevCandidate) {
@@ -820,6 +811,14 @@ $applyButton.Add_Click({
             $status.Text = "Settings applied for $gameName; recovery history unavailable: $historyError"
         }
         Update-HrsResultStatus
+        $traderSessionNotice = if ($mode -eq 'Standard') { '' } else {
+            "Do not log out until your first trader is assigned. Wait for the Journey to Settlement trader marker. Leaving earlier may send the quest to Pine Forest when you return.`r`n`r`n"
+        }
+        $historyNotice = if ($historyError) { "Recovery history unavailable: $historyError`r`n`r`n" } else { '' }
+        $successText = "Settings applied and verified for: $gameName`r`n$description`r`nStarting-biome protection: $protection`r`n`r`n" +
+            "$traderSessionNotice$historyNotice" +
+            'Click OK, then use Launch Game when Steam is running.'
+        $applySucceeded = $true
     }
     catch {
         $applyError = $_.Exception.Message
@@ -837,6 +836,17 @@ $applyButton.Add_Click({
             [System.Windows.Forms.MessageBoxButtons]::OK,
             [System.Windows.Forms.MessageBoxIcon]::Warning
         ) | Out-Null
+    }
+    if ($applySucceeded) {
+        [System.Windows.Forms.MessageBox]::Show(
+            $form,
+            $successText,
+            'Historical Random Start - Settings Applied',
+            [System.Windows.Forms.MessageBoxButtons]::OK,
+            [System.Windows.Forms.MessageBoxIcon]::Information
+        ) | Out-Null
+        $processAfterApply = Get-HrsProcessState
+        $launchButton.Enabled = ($processAfterApply.Game -eq 'Closed' -and $processAfterApply.Steam -eq 'Running')
     }
 })
 
