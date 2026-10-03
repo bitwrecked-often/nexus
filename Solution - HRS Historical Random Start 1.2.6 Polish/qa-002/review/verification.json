@@ -1,0 +1,539 @@
+{
+    "schema":  "hrs-qa002-package-verification/v1",
+    "status":  "Pass",
+    "completedUtc":  "2026-10-03T20:00:12.0021493Z",
+    "candidateId":  "1.2.6-qa.002",
+    "sourceSha256":  "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+    "customerManagerSha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3",
+    "recipeSha256":  "D809E4B45A7B419C8EFBDEF75280DA153235B366A31B8EF05A09C9229F038D7E",
+    "controlsSha256":  "9FAE344A0A9CEF75C2A4B18402DB2D8AAE2666C169181E878398CFFF4CD39D63",
+    "powerShellVersion":  "5.1.26100.9549",
+    "archivePath":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip",
+    "archiveSha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5",
+    "archiveBytes":  208801,
+    "receiptSha256":  "26E28374D4451C0425625BB93F5F7607CF1FF79E38A2BF143B1B62D17C32C3DA",
+    "companionSha256":  "2CDF9275656DF05F7136892FD4975EB267EFE361381211F21FA1F8CB854FC8AB",
+    "contextManifestSha256":  "4022A803186EC3C20B827A6347D29F3B389A52BC6C4EFC65FF1C2D4F8E31ECE5",
+    "packageManifestSha256":  "07D61DE6D4E5DE680AB0799D6701818077B885160B4F36DC7C293A63ED13AEB1",
+    "buildRecordSha256":  "D0A4BF534D275A39DBD0A4D531E91EC5E7C72AD39640EA30B90819C27A582FDE",
+    "releaseRecordSha256":  "F138A69A0939763A4C71B7B390F487DD2191659AEE44CF0105D425F4D03EF364",
+    "contractSha256":  "3D28F561964317BA6EFAD0B0A80F812A899A3FBBE5179B8D24B52E0B55F68D76",
+    "runtimeSha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B",
+    "modInfoSha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3",
+    "workspacePath":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002",
+    "customerFileCount":  12,
+    "archiveFileCount":  13,
+    "independentQaPending":  41,
+    "managerRequiredChecks":  17,
+    "sourceGate":  "source-release-gate.json",
+    "extractedGate":  "extracted-release-gate.json",
+    "protectedFiles":  "protected-after.json",
+    "installedEnvironment":  {
+                                 "observedUtc":  "2026-10-03T19:52:51.0515895Z",
+                                 "installedGameRoot":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die",
+                                 "installedAssemblySha256":  "FCEEC27300FFD3A1F97B097E43B60F3B07597F441E7ECBC6E1B59EEBB234C705",
+                                 "qualifiedTargetAssemblySha256":  "AA4275991736D276EC75BB4047E45F76E0242AA47D9895890F3761098D4CC146",
+                                 "exactQaEnvironmentMatches":  false,
+                                 "disposition":  "Packaging retains authenticated qualified b17 inputs; current installed build is not compatibility or independent-QA evidence."
+                             },
+    "installedAssemblyUnchanged":  true,
+    "ownedInstalledModUnchanged":  true,
+    "checks":  [
+                   "source-manager-exact-approved-sha",
+                   "current-contracts-select-qa002",
+                   "origin-archive-registry-receipt-and-manifest-identity-",
+                   "registered-candidate-awaits-independent-qa",
+                   "isolated-workspace-exact-archive-and-trees",
+                   "copied-transport-byte-identity-",
+                   "copied-transport-byte-identity-.receipt.json",
+                   "copied-transport-byte-identity-.companion.zip",
+                   "companion-candidate-context-identity",
+                   "customer-allowlist-twelve-files",
+                   "archive-twelve-files-plus-package-manifest",
+                   "customer-has-no-external-graphics-source-or-recipe-dependencies",
+                   "extracted-customer-exact-file-count",
+                   "source-export-transformation-seams",
+                   "customer-manager-only-candidate-header-qa-branch-and-label-transform",
+                   "customer-verified-branch-and-qa-label",
+                   "authenticated-archive-manifest-entry-LICENSE.md",
+                   "archive-and-extraction-byte-identity-LICENSE.md",
+                   "unchanged-customer-source-byte-identity-LICENSE.md",
+                   "authenticated-archive-manifest-entry-README.md",
+                   "archive-and-extraction-byte-identity-README.md",
+                   "unchanged-customer-source-byte-identity-README.md",
+                   "authenticated-archive-manifest-entry-START.bat",
+                   "archive-and-extraction-byte-identity-START.bat",
+                   "unchanged-customer-source-byte-identity-START.bat",
+                   "authenticated-archive-manifest-entry-dev/src/launcher/m0160.psm1",
+                   "archive-and-extraction-byte-identity-dev/src/launcher/m0160.psm1",
+                   "unchanged-customer-source-byte-identity-dev/src/launcher/m0160.psm1",
+                   "authenticated-archive-manifest-entry-dev/src/launcher/m0161.psm1",
+                   "archive-and-extraction-byte-identity-dev/src/launcher/m0161.psm1",
+                   "unchanged-customer-source-byte-identity-dev/src/launcher/m0161.psm1",
+                   "authenticated-archive-manifest-entry-dev/src/launcher/m0162.psm1",
+                   "archive-and-extraction-byte-identity-dev/src/launcher/m0162.psm1",
+                   "unchanged-customer-source-byte-identity-dev/src/launcher/m0162.psm1",
+                   "authenticated-archive-manifest-entry-dev/src/launcher/m0164.psm1",
+                   "archive-and-extraction-byte-identity-dev/src/launcher/m0164.psm1",
+                   "unchanged-customer-source-byte-identity-dev/src/launcher/m0164.psm1",
+                   "authenticated-archive-manifest-entry-dev/src/launcher/m0166.psm1",
+                   "archive-and-extraction-byte-identity-dev/src/launcher/m0166.psm1",
+                   "unchanged-customer-source-byte-identity-dev/src/launcher/m0166.psm1",
+                   "authenticated-archive-manifest-entry-dev/ui/p0158.ps1",
+                   "archive-and-extraction-byte-identity-dev/ui/p0158.ps1",
+                   "authenticated-archive-manifest-entry-dev/verified/main/d0163.dll",
+                   "archive-and-extraction-byte-identity-dev/verified/main/d0163.dll",
+                   "unchanged-customer-source-byte-identity-dev/verified/main/d0163.dll",
+                   "authenticated-archive-manifest-entry-dev/verified/main/ModInfo.xml",
+                   "archive-and-extraction-byte-identity-dev/verified/main/ModInfo.xml",
+                   "unchanged-customer-source-byte-identity-dev/verified/main/ModInfo.xml",
+                   "authenticated-archive-manifest-entry-dev/ui/logo.ico",
+                   "archive-and-extraction-byte-identity-dev/ui/logo.ico",
+                   "unchanged-customer-source-byte-identity-dev/ui/logo.ico",
+                   "customer-embedded-design-source-sha-bindings",
+                   "exact-embedded-literal-hrsDesignRecipeJson",
+                   "customer-actual-embedded-recipe-matches-quiet-source",
+                   "exact-embedded-literal-hrsDesignControlsSource",
+                   "customer-actual-embedded-csharp-matches-native-source",
+                   "approved-trader-session-warning-preserved-verbatim",
+                   "customer-privacy-localUserPaths-LICENSE.md",
+                   "customer-privacy-email-LICENSE.md",
+                   "customer-privacy-credentialMarkers-LICENSE.md",
+                   "customer-privacy-localUserPaths-README.md",
+                   "customer-privacy-email-README.md",
+                   "customer-privacy-credentialMarkers-README.md",
+                   "customer-privacy-localUserPaths-START.bat",
+                   "customer-privacy-email-START.bat",
+                   "customer-privacy-credentialMarkers-START.bat",
+                   "customer-privacy-localUserPaths-dev/src/launcher/m0160.psm1",
+                   "customer-privacy-email-dev/src/launcher/m0160.psm1",
+                   "customer-privacy-credentialMarkers-dev/src/launcher/m0160.psm1",
+                   "customer-privacy-localUserPaths-dev/src/launcher/m0161.psm1",
+                   "customer-privacy-email-dev/src/launcher/m0161.psm1",
+                   "customer-privacy-credentialMarkers-dev/src/launcher/m0161.psm1",
+                   "customer-privacy-localUserPaths-dev/src/launcher/m0162.psm1",
+                   "customer-privacy-email-dev/src/launcher/m0162.psm1",
+                   "customer-privacy-credentialMarkers-dev/src/launcher/m0162.psm1",
+                   "customer-privacy-localUserPaths-dev/src/launcher/m0164.psm1",
+                   "customer-privacy-email-dev/src/launcher/m0164.psm1",
+                   "customer-privacy-credentialMarkers-dev/src/launcher/m0164.psm1",
+                   "customer-privacy-localUserPaths-dev/src/launcher/m0166.psm1",
+                   "customer-privacy-email-dev/src/launcher/m0166.psm1",
+                   "customer-privacy-credentialMarkers-dev/src/launcher/m0166.psm1",
+                   "customer-privacy-localUserPaths-dev/ui/p0158.ps1",
+                   "customer-privacy-email-dev/ui/p0158.ps1",
+                   "customer-privacy-credentialMarkers-dev/ui/p0158.ps1",
+                   "customer-privacy-localUserPaths-dev/verified/main/ModInfo.xml",
+                   "customer-privacy-email-dev/verified/main/ModInfo.xml",
+                   "customer-privacy-credentialMarkers-dev/verified/main/ModInfo.xml",
+                   "customer-privacy-localUserPaths-package-manifest.json",
+                   "customer-privacy-email-package-manifest.json",
+                   "customer-privacy-credentialMarkers-package-manifest.json",
+                   "independent-manager-case-retains-ten-checks-and-adds-seven-presentation-checks",
+                   "all-forty-one-independent-qa-cases-remain-pending",
+                   "independent-qa-case-ids-and-order-preserved",
+                   "source-and-frozen-context-contract-byte-identity-dev/qa/rel.json",
+                   "source-and-frozen-context-contract-byte-identity-dev/qa/cases.json",
+                   "frozen-build-record-receipt-and-release-binding",
+                   "registry-exactly-one-added-record",
+                   "prior-registry-record-unchanged-0",
+                   "prior-registry-record-unchanged-1",
+                   "prior-registry-record-unchanged-2",
+                   "prior-registry-record-unchanged-3",
+                   "prior-registry-record-unchanged-4",
+                   "prior-registry-record-unchanged-5",
+                   "prior-registry-record-unchanged-6",
+                   "prior-registry-record-unchanged-7",
+                   "registry-only-addition-is-exported-qa002",
+                   "installed-game-assembly-matches-read-only-observation",
+                   "source-release-gate-ready-with-zero-errors",
+                   "extracted-release-gate-ready-with-zero-errors",
+                   "batch-argument-path-has-no-expansion-or-quote-characters",
+                   "batch-argument-path-has-no-expansion-or-quote-characters",
+                   "batch-argument-path-has-no-expansion-or-quote-characters",
+                   "actual-extracted-start-bat-and-native-manager-weights-smoke",
+                   "native-manager-and-weights-captures-outside-customer",
+                   "native-capture-decodes-as-image",
+                   "native-manager-and-weights-captures-outside-customer",
+                   "native-capture-decodes-as-image",
+                   "extracted-customer-files-and-directories-unchanged-by-smoke",
+                   "inert-game-root-unchanged-with-no-mod-install-or-launch",
+                   "real-installed-game-assembly-and-owned-mod-tree-unchanged",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip.receipt.json",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip.companion.zip",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\1.2.6-qa.002.zip",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\1.2.6-qa.002.zip.receipt.json",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\1.2.6-qa.002.zip.companion.zip",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidate-registry.json",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\rel.json",
+                   "read-only-verification-transport-contract-registry-unchanged-C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\cases.json",
+                   "preserved-checkpoint-byte-identity-CURRENT_RELEASE.json",
+                   "preserved-checkpoint-byte-identity-qa_cycle/candidates/1.2.5-qa.002.zip",
+                   "preserved-checkpoint-byte-identity-qa_cycle/candidates/1.2.5-qa.002.zip.receipt.json",
+                   "preserved-checkpoint-byte-identity-qa_cycle/candidates/1.2.5-qa.002.zip.companion.zip",
+                   "preserved-checkpoint-byte-identity-qa_cycle/candidates/1.2.6-qa.001.zip",
+                   "preserved-checkpoint-byte-identity-qa_cycle/candidates/1.2.6-qa.001.zip.receipt.json",
+                   "preserved-checkpoint-byte-identity-qa_cycle/candidates/1.2.6-qa.001.zip.companion.zip",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/dev/builds/1.2.6-qa.001/build-record.json",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/dev/verified/main/d0163.dll",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/dev/verified/main/ModInfo.xml",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/dev/ui/p0158.ps1",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/dev/ui/logo.ico",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/README.md",
+                   "preserved-checkpoint-byte-identity-hrs_1.2.6/START.bat",
+                   "fourteen-protected-checkpoint-files-unchanged"
+               ],
+    "checkCount":  144,
+    "commands":  [
+                     {
+                         "command":  "Test-HrsQaRelease",
+                         "laneRoot":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6",
+                         "report":  "source-release-gate.json"
+                     },
+                     {
+                         "command":  "Test-HrsQaRelease",
+                         "laneRoot":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\context",
+                         "report":  "extracted-release-gate.json"
+                     },
+                     {
+                         "fileName":  "C:\\WINDOWS\\system32\\cmd.exe",
+                         "arguments":  "/d /s /c \"\"C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\customer\\HistoricalRandomStart_1.2.6\\START.bat\" -SmokeTest -GameRootOverride \"C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-package-smoke-826c4e3af3f445e983d60a93f8ac87cf\" -ScreenshotPath \"C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\ux-polish\\qa002-packaging\\customer-manager.png\"\"",
+                         "workingDirectory":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\customer\\HistoricalRandomStart_1.2.6",
+                         "exitCode":  0,
+                         "stdout":  "PASS: real manager controls and selection binding (no install/launch)\r\n",
+                         "stderr":  ""
+                     }
+                 ],
+    "files":  [
+                  {
+                      "path":  "LICENSE.md",
+                      "sourceSha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919",
+                      "archiveSha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919",
+                      "extractedSha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                  },
+                  {
+                      "path":  "README.md",
+                      "sourceSha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39",
+                      "archiveSha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39",
+                      "extractedSha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39"
+                  },
+                  {
+                      "path":  "START.bat",
+                      "sourceSha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194",
+                      "archiveSha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194",
+                      "extractedSha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0160.psm1",
+                      "sourceSha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020",
+                      "archiveSha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020",
+                      "extractedSha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0161.psm1",
+                      "sourceSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                      "archiveSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                      "extractedSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0162.psm1",
+                      "sourceSha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952",
+                      "archiveSha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952",
+                      "extractedSha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0164.psm1",
+                      "sourceSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                      "archiveSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                      "extractedSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0166.psm1",
+                      "sourceSha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E",
+                      "archiveSha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E",
+                      "extractedSha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                  },
+                  {
+                      "path":  "dev/ui/p0158.ps1",
+                      "sourceSha256":  "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+                      "archiveSha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3",
+                      "extractedSha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3"
+                  },
+                  {
+                      "path":  "dev/verified/main/d0163.dll",
+                      "sourceSha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B",
+                      "archiveSha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B",
+                      "extractedSha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B"
+                  },
+                  {
+                      "path":  "dev/verified/main/ModInfo.xml",
+                      "sourceSha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3",
+                      "archiveSha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3",
+                      "extractedSha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3"
+                  },
+                  {
+                      "path":  "dev/ui/logo.ico",
+                      "sourceSha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F",
+                      "archiveSha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F",
+                      "extractedSha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                  }
+              ],
+    "privacyScannedFiles":  [
+                                "LICENSE.md",
+                                "README.md",
+                                "START.bat",
+                                "dev/src/launcher/m0160.psm1",
+                                "dev/src/launcher/m0161.psm1",
+                                "dev/src/launcher/m0162.psm1",
+                                "dev/src/launcher/m0164.psm1",
+                                "dev/src/launcher/m0166.psm1",
+                                "dev/ui/p0158.ps1",
+                                "dev/verified/main/ModInfo.xml",
+                                "package-manifest.json"
+                            ],
+    "privacyPatterns":  {
+                            "localUserPaths":  "(?i)(?:[A-Z]:[\\\\/]+Users[\\\\/]+|/Users/|/home/)[^\\s\"\u0027\u003c\u003e]+",
+                            "email":  "(?i)[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}",
+                            "credentialMarkers":  "(?i)(?:sk-[A-Za-z0-9]{16,}|gh[pousr]_[A-Za-z0-9]{20,}|Bearer\\s+[A-Za-z0-9._-]{12,}|(?:api[_-]?key|password|client[_-]?secret|access[_-]?token)\\s*[:=]\\s*[\"\u0027]?[A-Za-z0-9/+_.-]{8,})"
+                        },
+    "readOnlyFiles":  [
+                          {
+                              "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip",
+                              "sha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip.receipt.json",
+                              "sha256":  "26E28374D4451C0425625BB93F5F7607CF1FF79E38A2BF143B1B62D17C32C3DA"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidates\\1.2.6-qa.002.zip.companion.zip",
+                              "sha256":  "2CDF9275656DF05F7136892FD4975EB267EFE361381211F21FA1F8CB854FC8AB"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\1.2.6-qa.002.zip",
+                              "sha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\1.2.6-qa.002.zip.receipt.json",
+                              "sha256":  "26E28374D4451C0425625BB93F5F7607CF1FF79E38A2BF143B1B62D17C32C3DA"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-review-10b0f6bf84f07\\qa-002\\1.2.6-qa.002.zip.companion.zip",
+                              "sha256":  "2CDF9275656DF05F7136892FD4975EB267EFE361381211F21FA1F8CB854FC8AB"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\qa_cycle\\candidate-registry.json",
+                              "sha256":  "869471C09E57FF29A8B9064173E5620462400A1C6BA19D0436F2C2C82FB87605"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\rel.json",
+                              "sha256":  "F138A69A0939763A4C71B7B390F487DD2191659AEE44CF0105D425F4D03EF364"
+                          },
+                          {
+                              "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\cases.json",
+                              "sha256":  "3D28F561964317BA6EFAD0B0A80F812A899A3FBBE5179B8D24B52E0B55F68D76"
+                          }
+                      ],
+    "customerBefore":  {
+                           "exists":  true,
+                           "directories":  [
+                                               "dev",
+                                               "dev/src",
+                                               "dev/src/launcher",
+                                               "dev/ui",
+                                               "dev/verified",
+                                               "dev/verified/main"
+                                           ],
+                           "files":  [
+                                         {
+                                             "path":  "dev/src/launcher/m0160.psm1",
+                                             "bytes":  5799,
+                                             "sha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020"
+                                         },
+                                         {
+                                             "path":  "dev/src/launcher/m0161.psm1",
+                                             "bytes":  47103,
+                                             "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                                         },
+                                         {
+                                             "path":  "dev/src/launcher/m0162.psm1",
+                                             "bytes":  23442,
+                                             "sha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952"
+                                         },
+                                         {
+                                             "path":  "dev/src/launcher/m0164.psm1",
+                                             "bytes":  45913,
+                                             "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                                         },
+                                         {
+                                             "path":  "dev/src/launcher/m0166.psm1",
+                                             "bytes":  7230,
+                                             "sha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                                         },
+                                         {
+                                             "path":  "dev/ui/logo.ico",
+                                             "bytes":  125633,
+                                             "sha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                                         },
+                                         {
+                                             "path":  "dev/ui/p0158.ps1",
+                                             "bytes":  102769,
+                                             "sha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3"
+                                         },
+                                         {
+                                             "path":  "dev/verified/main/d0163.dll",
+                                             "bytes":  76800,
+                                             "sha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B"
+                                         },
+                                         {
+                                             "path":  "dev/verified/main/ModInfo.xml",
+                                             "bytes":  412,
+                                             "sha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3"
+                                         },
+                                         {
+                                             "path":  "LICENSE.md",
+                                             "bytes":  708,
+                                             "sha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                                         },
+                                         {
+                                             "path":  "package-manifest.json",
+                                             "bytes":  3011,
+                                             "sha256":  "07D61DE6D4E5DE680AB0799D6701818077B885160B4F36DC7C293A63ED13AEB1"
+                                         },
+                                         {
+                                             "path":  "README.md",
+                                             "bytes":  5143,
+                                             "sha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39"
+                                         },
+                                         {
+                                             "path":  "START.bat",
+                                             "bytes":  553,
+                                             "sha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194"
+                                         }
+                                     ]
+                       },
+    "customerAfter":  {
+                          "exists":  true,
+                          "directories":  [
+                                              "dev",
+                                              "dev/src",
+                                              "dev/src/launcher",
+                                              "dev/ui",
+                                              "dev/verified",
+                                              "dev/verified/main"
+                                          ],
+                          "files":  [
+                                        {
+                                            "path":  "dev/src/launcher/m0160.psm1",
+                                            "bytes":  5799,
+                                            "sha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020"
+                                        },
+                                        {
+                                            "path":  "dev/src/launcher/m0161.psm1",
+                                            "bytes":  47103,
+                                            "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                                        },
+                                        {
+                                            "path":  "dev/src/launcher/m0162.psm1",
+                                            "bytes":  23442,
+                                            "sha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952"
+                                        },
+                                        {
+                                            "path":  "dev/src/launcher/m0164.psm1",
+                                            "bytes":  45913,
+                                            "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                                        },
+                                        {
+                                            "path":  "dev/src/launcher/m0166.psm1",
+                                            "bytes":  7230,
+                                            "sha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                                        },
+                                        {
+                                            "path":  "dev/ui/logo.ico",
+                                            "bytes":  125633,
+                                            "sha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                                        },
+                                        {
+                                            "path":  "dev/ui/p0158.ps1",
+                                            "bytes":  102769,
+                                            "sha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3"
+                                        },
+                                        {
+                                            "path":  "dev/verified/main/d0163.dll",
+                                            "bytes":  76800,
+                                            "sha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B"
+                                        },
+                                        {
+                                            "path":  "dev/verified/main/ModInfo.xml",
+                                            "bytes":  412,
+                                            "sha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3"
+                                        },
+                                        {
+                                            "path":  "LICENSE.md",
+                                            "bytes":  708,
+                                            "sha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                                        },
+                                        {
+                                            "path":  "package-manifest.json",
+                                            "bytes":  3011,
+                                            "sha256":  "07D61DE6D4E5DE680AB0799D6701818077B885160B4F36DC7C293A63ED13AEB1"
+                                        },
+                                        {
+                                            "path":  "README.md",
+                                            "bytes":  5143,
+                                            "sha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39"
+                                        },
+                                        {
+                                            "path":  "START.bat",
+                                            "bytes":  553,
+                                            "sha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194"
+                                        }
+                                    ]
+                      },
+    "inertGameFixture":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs126-qa002-package-smoke-826c4e3af3f445e983d60a93f8ac87cf",
+    "gameBefore":  {
+                       "exists":  true,
+                       "directories":  [
+
+                                       ],
+                       "files":  [
+                                     {
+                                         "path":  "7DaysToDie.exe",
+                                         "bytes":  0,
+                                         "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                     }
+                                 ]
+                   },
+    "gameAfter":  {
+                      "exists":  true,
+                      "directories":  [
+
+                                      ],
+                      "files":  [
+                                    {
+                                        "path":  "7DaysToDie.exe",
+                                        "bytes":  0,
+                                        "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                    }
+                                ]
+                  },
+    "captures":  [
+                     {
+                         "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\ux-polish\\qa002-packaging\\customer-manager.png",
+                         "sha256":  "51F750284FB3F7AEB7134F11826E9B71CAD2642D33ABD79C2C35F0135C7186C3"
+                     },
+                     {
+                         "path":  "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.6\\dev\\qa\\ux-polish\\qa002-packaging\\customer-manager-weights.png",
+                         "sha256":  "324BBD2C18A5788B4CF416769C9B4570B28BA1652EBDE03E69527C7416918F41"
+                     }
+                 ],
+    "verifierSha256":  "648DC5B7FD9396175F13EF8C0B4DFEDDF85B16E0058B21058F9F6136D32CC958",
+    "method":  "Authenticates frozen customer ZIP and companion, verifies an independent extraction, then exercises actual extracted START.bat with an inert temporary game root; all file/contract/registry boundaries remain read-only.",
+    "limitations":  [
+                        "Mechanical package verification is not independent gameplay QA.",
+                        "Installed game differs from the qualified b17 target; no compatibility result is inferred.",
+                        "Actual display scaling, OS high contrast, Narrator and popup review remain independent QA checks.",
+                        "Publication has not been performed."
+                    ]
+}

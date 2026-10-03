@@ -1,0 +1,138 @@
+{
+  "schema": "hrs-manager-design-review/v1",
+  "reviewedOn": "2026-10-03",
+  "status": "Pass",
+  "scope": "Read-only final integration review; report write only",
+  "beforeSourceSha256": "5161ED60A0F65020327BCA2F6AF6CC998A50EDA6C89C2BA17F0F6681D2F35896",
+  "reviewedSourceSha256": "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+  "callbackComparisons": [
+    {
+      "name": "applyButton",
+      "unchanged": true
+    },
+    {
+      "name": "launchButton",
+      "unchanged": true
+    },
+    {
+      "name": "restoreButton",
+      "unchanged": true
+    },
+    {
+      "name": "uninstallButton",
+      "unchanged": true
+    }
+  ],
+  "backendFunctionComparisons": [
+    {
+      "name": "Get-HrsFormSelection",
+      "unchanged": true
+    },
+    {
+      "name": "Get-HrsFormDescription",
+      "unchanged": true
+    },
+    {
+      "name": "Set-HrsFormFromPolicy",
+      "unchanged": true
+    },
+    {
+      "name": "Test-HrsFormMatchesPolicy",
+      "unchanged": true
+    },
+    {
+      "name": "Get-HrsPreviousSettingsPlan",
+      "unchanged": true
+    },
+    {
+      "name": "Get-HrsNameHelp",
+      "unchanged": true
+    },
+    {
+      "name": "Update-HrsStatus",
+      "unchanged": true
+    },
+    {
+      "name": "Update-HrsResultStatus",
+      "unchanged": true
+    },
+    {
+      "name": "Get-HrsGameBuildNotice",
+      "unchanged": true
+    },
+    {
+      "name": "Initialize-HrsManagerStorage",
+      "unchanged": true
+    }
+  ],
+  "visualCapturesInspected": [
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/preview-chosen-100.png",
+      "sha256": "D99525DD87B5C14E6DAD97A593D6237F05451678E3F074E6D674580EE5A6AFA0",
+      "method": "Native capture viewed visually"
+    },
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/preview-weights-editor-100.png",
+      "sha256": "324BBD2C18A5788B4CF416769C9B4570B28BA1652EBDE03E69527C7416918F41",
+      "method": "Native capture viewed visually"
+    },
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/preview-narrow-actions-100.png",
+      "sha256": "3FB2644CF48AAE05AD9E06C6DEB8265F3CE960BF1CA05D54A0E4923A4604A05A",
+      "method": "Native capture viewed visually"
+    },
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/preview-actions-225.png",
+      "sha256": "46FF7B9260FB87DB57E64FC4ABDDE187509C0D8676D3D58F136F8BE588B3259B",
+      "method": "Native capture viewed visually"
+    }
+  ],
+  "presentationEvidence": [
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/presentation-checks-100.json",
+      "sha256": "AC42FFD7BC65AE9390DBD2BD9C406FEFE42341C673183BFFB29A4615BFAB39A0",
+      "sourceSha256": "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+      "status": "Pass",
+      "checkCount": 87,
+      "syntheticScale": 1
+    },
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/presentation-checks-150.json",
+      "sha256": "EC51EE846AF8CBBBF26596C8F58D5ED7098386290A1BB7D28E13DD1B1E0DF2E8",
+      "sourceSha256": "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+      "status": "Pass",
+      "checkCount": 66,
+      "syntheticScale": 1.5
+    },
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/presentation-checks-200.json",
+      "sha256": "6F553DA149DDE0EAC6C672C8A634D915F5A90B2E999B9FAC466EBAA4F9745476",
+      "sourceSha256": "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+      "status": "Pass",
+      "checkCount": 66,
+      "syntheticScale": 2
+    },
+    {
+      "path": "hrs_1.2.6/dev/qa/ux-polish/design-integration/presentation-checks-225.json",
+      "sha256": "5546C0D0CC2F4BE1B1053B8426DA8FA4BE33B179B3090BCF814F40EB44FAC19E",
+      "sourceSha256": "7843AA09AC7C0AC336497BD2BEEE083B9582A6885028B31351E61DB06DD0731A",
+      "status": "Pass",
+      "checkCount": 66,
+      "syntheticScale": 2.25
+    }
+  ],
+  "findings": [
+    "Quiet recipe is applied to actual manager and weights dialog with picture-only logo, short copy, outlined white Apply and rounded surfaces.",
+    "SurfacePanel padding is zero where nested layouts own recipe padding; explicit panel heights contain all laid-out rows.",
+    "Maximized windows are excluded from automatic fitting. Native scrolling reaches actions, maintenance and details in the source-bound narrow layout checks.",
+    "The four action callback bodies and ten backend/state functions retain their exact AST extent text. Native confirmations, acknowledgement, trader warning and Launch safeguards remain preserved."
+  ],
+  "materialOpenFindings": [],
+  "limitations": [
+    "Form.Scale changes geometry while font points remain the same; the 150%, 200% and 225% captures verify synthetic layout and scrolling, not actual Windows DPI typography.",
+    "Forced high-contrast rendering is simulated; actual OS high-contrast themes and assistive technology operation still need operator review.",
+    "This source/visual review does not establish independent customer gameplay QA or release approval.",
+    "The earlier preview-narrow-details-link-clipped-100.png records a resolved pre-final failure and was excluded from final visual evidence."
+  ],
+  "preservationMethod": "PowerShell AST parse and exact ordinal text equality against preserved manager-before.ps1; native PNG visual inspection and matching-hash presentation evidence."
+}

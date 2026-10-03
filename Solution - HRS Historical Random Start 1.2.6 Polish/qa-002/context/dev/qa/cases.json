@@ -1,0 +1,1035 @@
+{
+    "schema":  "hrs-qa-contract/v1",
+    "releaseVersion":  "1.2.6",
+    "candidateId":  "1.2.6-qa.002",
+    "requiredCases":  [
+                          {
+                              "id":  "HRS-QA-001",
+                              "title":  "Customer package identity",
+                              "requirement":  "Install the exact extracted candidate with the manager; match environment, installed hashes and ownership.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "release-validation",
+                                                       "package-inventory",
+                                                       "installed-after",
+                                                       "environment",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "fresh-install-verified",
+                                                     "game-environment-matches"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-002",
+                              "title":  "Standard-mode control",
+                              "requirement":  "Fresh named Standard save keeps the ordinary start and does not mutate trader routing.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "STANDARD_BYPASS"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "POI_ATTEMPT_SELECTED",
+                                                      "PLACEMENT_CALLED",
+                                                      "TRADER_ROUTE_SELECTED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "standard-spawn-unchanged"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-003A",
+                              "title":  "Navezgane placed-world landing",
+                              "requirement":  "Fresh Random Navezgane save lands safely at an approved placed prefab, with matching dynamic identity.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_ATTEMPT_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "fresh-character",
+                                                     "safe-ground-landing",
+                                                     "semantic-state-preserved"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Any"
+                          },
+                          {
+                              "id":  "HRS-QA-003B",
+                              "title":  "Random Gen placed-world landing",
+                              "requirement":  "Fresh Random save on a generated world of at least 8K lands safely at an approved placed prefab, with matching dynamic identity.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_ATTEMPT_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "fresh-character",
+                                                     "safe-ground-landing",
+                                                     "semantic-state-preserved"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Any"
+                          },
+                          {
+                              "id":  "HRS-QA-004",
+                              "title":  "Placed trader route",
+                              "requirement":  "From a fresh landing, follow the marker to the logged real placed trader, in the final biome or the recorded cross-biome fallback.",
+                              "expectedEvents":  [
+                                                     "POI_ATTEMPT_SELECTED",
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "POI_LANDING_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "real-placed-trader-reached",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "requiresPlacedTrader":  true
+                          },
+                          {
+                              "id":  "HRS-QA-005",
+                              "title":  "Intro and ordinary work",
+                              "requirement":  "Finish or retry the intro with the real trader and accept ordinary Tier 1 work.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "intro-quest-completed-or-reoffered",
+                                                     "vanilla-jobs-resume"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-006",
+                              "title":  "One-shot reload",
+                              "requirement":  "After a fresh-process Continue, preserve the landing and quest without another HRS placement.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "POI_ATTEMPT_SELECTED",
+                                                      "PLACEMENT_CALLED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "reload-no-relocation",
+                                                     "quest-state-preserved"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-007",
+                              "title":  "Arrival protection boundary",
+                              "requirement":  "Compare protection off/on, protected reload, and a later biome hazard with disposable saves.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "protection-off-hazards-active",
+                                                     "protection-on-starting-family",
+                                                     "protection-restored-on-reload",
+                                                     "later-biome-hazards-active"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-008",
+                              "title":  "Owned removal",
+                              "requirement":  "Remove only HRS-owned files while preserving saves, settings and unrelated mods.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "rollback-receipt",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "owned-removal",
+                                                     "unrelated-files-preserved",
+                                                     "saves-preserved"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-009",
+                              "title":  "Owned upgrade",
+                              "requirement":  "Upgrade an owned prior installation and verify exact candidate hashes and preserved user state.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "installed-before",
+                                                       "installed-after",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "owned-upgrade",
+                                                     "candidate-hashes-match",
+                                                     "saves-preserved"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-010",
+                              "title":  "Manager identity rejection",
+                              "requirement":  "A disposable altered package and unknown install footprint are rejected without overwriting game files.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "installed-before",
+                                                       "installed-after",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "tampered-package-blocked",
+                                                     "unknown-install-blocked"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-011",
+                              "title":  "Exact Game Name guard",
+                              "requirement":  "Starting a different fresh Game Name leaves a safe vanilla start with no HRS placement.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY",
+                                                     "GAME_NAME_MISMATCH"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "POI_ATTEMPT_SELECTED",
+                                                      "PLACEMENT_CALLED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "name-mismatch-no-warp"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Forest",
+                              "title":  "Chosen Forest in Navezgane",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "3"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-BurntForest",
+                              "title":  "Chosen BurntForest in Navezgane",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "9"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Desert",
+                              "title":  "Chosen Desert in Navezgane",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "5"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Snow",
+                              "title":  "Chosen Snow in Navezgane",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "1"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Wasteland",
+                              "title":  "Chosen Wasteland in Navezgane",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "8"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Weighted-Mixed",
+                              "title":  "Weighted Mixed in Navezgane",
+                              "requirement":  "Use a distinct fresh exact Game Name for this weight fixture. Record configured weights and eligible/selected/final biome. This run covers only its named fixture.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "weighted-Mixed"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "Mixed"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Weighted-ZeroExclusion",
+                              "title":  "Weighted ZeroExclusion in Navezgane",
+                              "requirement":  "Use a distinct fresh exact Game Name for this weight fixture. Record configured weights and eligible/selected/final biome. This run covers only its named fixture.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "weighted-ZeroExclusion"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "ZeroExclusion"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Weighted-SinglePositive",
+                              "title":  "Weighted SinglePositive in Navezgane",
+                              "requirement":  "Use a distinct fresh exact Game Name for this weight fixture. Record configured weights and eligible/selected/final biome. This run covers only its named fixture.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "weighted-SinglePositive"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "Navezgane",
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "SinglePositive"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Navezgane-Respawn",
+                              "title":  "Respawn and changed preference in Navezgane",
+                              "requirement":  "After a completed start, change the preference, reload, then die/respawn. No second HRS draw or placement.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "BIOME_SELECTED",
+                                                      "POI_ATTEMPT_SELECTED",
+                                                      "PLACEMENT_CALLED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "reload-no-relocation",
+                                                     "respawn-no-relocation",
+                                                     "changed-preference-no-second-start"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Forest",
+                              "title":  "Chosen Forest in RandomGen",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "3"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-BurntForest",
+                              "title":  "Chosen BurntForest in RandomGen",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "9"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Desert",
+                              "title":  "Chosen Desert in RandomGen",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "5"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Snow",
+                              "title":  "Chosen Snow in RandomGen",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "1"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Wasteland",
+                              "title":  "Chosen Wasteland in RandomGen",
+                              "requirement":  "Choose this biome for a fresh exact Game Name. If absent, record Blocked and the absent-biome case; do not invent a successful arrival.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "chosen-biome-arrival",
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "safe-ground-landing",
+                                                     "trader-marker-usable"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Chosen",
+                              "expectedChosenBiome":  "8"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Weighted-Mixed",
+                              "title":  "Weighted Mixed in RandomGen",
+                              "requirement":  "Use a distinct fresh exact Game Name for this weight fixture. Record configured weights and eligible/selected/final biome. This run covers only its named fixture.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "weighted-Mixed"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "Mixed"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Weighted-ZeroExclusion",
+                              "title":  "Weighted ZeroExclusion in RandomGen",
+                              "requirement":  "Use a distinct fresh exact Game Name for this weight fixture. Record configured weights and eligible/selected/final biome. This run covers only its named fixture.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "weighted-ZeroExclusion"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "ZeroExclusion"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Weighted-SinglePositive",
+                              "title":  "Weighted SinglePositive in RandomGen",
+                              "requirement":  "Use a distinct fresh exact Game Name for this weight fixture. Record configured weights and eligible/selected/final biome. This run covers only its named fixture.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "requested-eligible-selected-completed-recorded",
+                                                     "weighted-SinglePositive"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedWorldCategory":  "RandomGen",
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "SinglePositive"
+                          },
+                          {
+                              "id":  "HRS-BIOME-RandomGen-Respawn",
+                              "title":  "Respawn and changed preference in RandomGen",
+                              "requirement":  "After a completed start, change the preference, reload, then die/respawn. No second HRS draw or placement.",
+                              "expectedEvents":  [
+                                                     "RUNTIME_READY"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "BIOME_SELECTED",
+                                                      "POI_ATTEMPT_SELECTED",
+                                                      "PLACEMENT_CALLED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "reload-no-relocation",
+                                                     "respawn-no-relocation",
+                                                     "changed-preference-no-second-start"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Weighted-AbsentRenormalized",
+                              "title":  "Weighted absent eligible biome",
+                              "requirement":  "On a suitable Navezgane or Random Gen world, give positive weight to a biome absent from the placed-POI eligible pool and another positive weight to an eligible biome. Record the eligible set, draw and safe arrival in one distinct run; if no suitable world is available, record Blocked.",
+                              "expectedEvents":  [
+                                                     "BIOME_SELECTED",
+                                                     "POI_LANDING_COMPLETED",
+                                                     "RELOCATION_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "absent-biome-excluded",
+                                                     "requested-eligible-selected-completed-recorded"
+                                                 ],
+                              "status":  "Pending",
+                              "requiresPlacedIdentity":  true,
+                              "expectedSelection":  "Weighted",
+                              "expectedWeightFixture":  "AbsentRenormalized"
+                          },
+                          {
+                              "id":  "HRS-BIOME-REQUESTED_BIOME_ABSENT",
+                              "title":  "Safe fallback: REQUESTED_BIOME_ABSENT",
+                              "requirement":  "On a suitable disposable world, observe this exact terminal reason and the ordinary-start fallback. Record missing fixture as Blocked, never as Pass. Preserve absent versus reserved marker semantics.",
+                              "expectedEvents":  [
+                                                     "REQUESTED_BIOME_ABSENT"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "RELOCATION_COMPLETED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "ordinary-start-preserved",
+                                                     "failure-not-completed",
+                                                     "no-redraw-on-reload"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-WEIGHTED_POOL_EMPTY",
+                              "title":  "Safe fallback: WEIGHTED_POOL_EMPTY",
+                              "requirement":  "On a suitable disposable world, observe this exact terminal reason and the ordinary-start fallback. Record missing fixture as Blocked, never as Pass. Preserve absent versus reserved marker semantics.",
+                              "expectedEvents":  [
+                                                     "WEIGHTED_POOL_EMPTY"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "RELOCATION_COMPLETED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "ordinary-start-preserved",
+                                                     "failure-not-completed",
+                                                     "no-redraw-on-reload"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-POI_SAFETY_EXHAUSTED",
+                              "title":  "Safe fallback: POI_SAFETY_EXHAUSTED",
+                              "requirement":  "On a suitable disposable world, observe this exact terminal reason and the ordinary-start fallback. Record missing fixture as Blocked, never as Pass. Preserve absent versus reserved marker semantics.",
+                              "expectedEvents":  [
+                                                     "POI_SAFETY_EXHAUSTED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "RELOCATION_COMPLETED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "ordinary-start-preserved",
+                                                     "failure-not-completed",
+                                                     "no-redraw-on-reload"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-TRADER_POOL_EMPTY",
+                              "title":  "Safe fallback: TRADER_POOL_EMPTY",
+                              "requirement":  "On a suitable disposable world, observe this exact terminal reason and the ordinary-start fallback. Record missing fixture as Blocked, never as Pass. Preserve absent versus reserved marker semantics.",
+                              "expectedEvents":  [
+                                                     "TRADER_POOL_EMPTY"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "RELOCATION_COMPLETED"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "result-summary",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "ordinary-start-preserved",
+                                                     "failure-not-completed",
+                                                     "no-redraw-on-reload"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-BIOME-Manager",
+                              "title":  "Saved biome selection, native presentation and accessibility",
+                              "requirement":  "Open the extracted customer START.bat. Check saved selection, cancel/commit weight edits, exact confirmation, rounded outlined actions, the weights dialog, visible focus and disabled states, and Tab/Space/Enter/Escape. At actual 100/150/200/225 percent Windows display scaling, verify narrow and maximized scroll reachability, OS High Contrast, Narrator control names and states, and native confirmation and Settings Applied popup readability.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "saved-selection-restored",
+                                                     "weight-cancel-discarded",
+                                                     "weight-switch-retained",
+                                                     "all-zero-blocked",
+                                                     "confirmation-before-mutation",
+                                                     "keyboard-access",
+                                                     "scaling-100",
+                                                     "scaling-150",
+                                                     "scaling-200",
+                                                     "scaling-225",
+                                                     "rounded-actions-readable",
+                                                     "weights-dialog-readable",
+                                                     "focus-disabled-readable",
+                                                     "os-high-contrast",
+                                                     "narrator-controls",
+                                                     "scroll-reachability",
+                                                     "native-popups-readable"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-TRADER-NOTICE",
+                              "title":  "Post-Apply trader-session notice",
+                              "requirement":  "From the extracted manager, verify the saved policy precedes Settings Applied. Random Any, Chosen, and Weighted show the first-session warning; Standard omits it. Launch stays disabled until OK and requires running Steam.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "qa-observation",
+                                                       "installed-after"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "policy-readback-before-popup",
+                                                     "random-any-notice",
+                                                     "random-chosen-notice",
+                                                     "random-weighted-notice",
+                                                     "standard-omits-notice",
+                                                     "launch-gate"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-TRADER-FIRST-SESSION",
+                              "title":  "Uninterrupted first trader assignment",
+                              "requirement":  "In a fresh Random save, complete opening tasks in the same session until Journey to Settlement assigns a trader marker. Record the route decision before any logout; the trader visit can occur later.",
+                              "expectedEvents":  [
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "opening-tasks-same-session",
+                                                     "destination-marker-before-logout",
+                                                     "route-completed"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-TRADER-EARLY-LOGOUT",
+                              "title":  "Known early-logout route limitation",
+                              "requirement":  "In a separate disposable Random save, exit before trader assignment and return. Record whether the landing persists and which destination appears; a Pine Forest marker is the documented known limitation, not proof that the runtime issue is repaired.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "logout-before-assignment",
+                                                     "landing-persists-on-return",
+                                                     "return-destination-recorded"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-TRADER-POST-ASSIGNMENT",
+                              "title":  "Trader marker survives return before visit",
+                              "requirement":  "After assignment but before visiting the trader, exit and return. Verify the same assigned destination remains. A lost marker blocks release.",
+                              "expectedEvents":  [
+
+                                                 ],
+                              "forbiddenEvents":  [
+
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "assignment-before-logout",
+                                                     "same-marker-on-return"
+                                                 ],
+                              "status":  "Pending"
+                          },
+                          {
+                              "id":  "HRS-QA-TRADER-CROSS-BIOME",
+                              "title":  "Legitimate cross-biome trader fallback",
+                              "requirement":  "In a world with no usable trader in the landing biome, verify the logged route selects a real placed trader in another biome. Record a missing natural fixture as Blocked.",
+                              "expectedEvents":  [
+                                                     "TRADER_ROUTE_SELECTED",
+                                                     "TRADER_ROUTE_COMPLETED"
+                                                 ],
+                              "forbiddenEvents":  [
+                                                      "INTERNAL_FAILURE"
+                                                  ],
+                              "requiredEvidence":  [
+                                                       "runtime-events",
+                                                       "qa-observation"
+                                                   ],
+                              "requiredChecks":  [
+                                                     "local-trader-unavailable",
+                                                     "placed-cross-biome-trader",
+                                                     "marker-matches-selected-trader"
+                                                 ],
+                              "status":  "Pending"
+                          }
+                      ]
+}
