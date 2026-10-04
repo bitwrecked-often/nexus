@@ -1,0 +1,472 @@
+{
+    "schema":  "hrs-ui-preview-summary/v1",
+    "previewOnly":  true,
+    "releaseQualified":  false,
+    "derivedFromCandidateId":  "1.2.6-qa.002",
+    "requestedChange":  "Compact header/copy, amber/green apply-state badges and clear button availability; omit manual Restore and give Uninstall the same enabled text treatment as Apply.",
+    "entryPoint":  "HistoricalRandomStart_1.2.6/START.bat",
+    "changes":  {
+                    "titleSizeBeforePt":  23,
+                    "logoSizeBefore":  32,
+                    "header":  "Logo, bounded title and release label in one vertically centered row. Title wraps at minimum width.",
+                    "titleWidth":  "Bound to remaining header cell width after logo, release and margins.",
+                    "logoSizeAfter":  28,
+                    "titleSizeAfterPt":  16,
+                    "spacing":  {
+                                    "choiceRowMarginBefore":  8,
+                                    "lastChoiceNoteMargin":  0,
+                                    "comboMargin":  8,
+                                    "rowAfter":  8,
+                                    "biomePaddingBefore":  12,
+                                    "biomePaddingAfter":  8,
+                                    "framePaddingBefore":  12,
+                                    "framePaddingAfter":  8,
+                                    "contentPaddingAfter":  20,
+                                    "choiceRowMarginAfter":  4,
+                                    "rowBefore":  12,
+                                    "contentPaddingBefore":  28
+                                },
+                    "chosenBiomeNote":  "Hidden and cleared for Choose a biome; its AutoSize row collapses.",
+                    "protectionNote":  "Removed from the main layout, reclaiming its row and bottom margin.",
+                    "gameNameNote":  "Removed from the main layout, reclaiming its row and bottom margin.",
+                    "biomeHeading":  "Removed from the choices row list; the selection dropdown is now the first row.",
+                    "anyBiomeNote":  "Hidden and cleared for Any biome; its AutoSize row collapses.",
+                    "weightedBottomComment":  "Removed selectionNote from choices layout; weightSummary and Edit weights remain.",
+                    "applyReminder":  "Hide nextAction when blank or exactly Apply settings to use this start.; its AutoSize row collapses.",
+                    "pendingStatus":  {
+                                          "placement":  "Immediately after Apply Settings in the actions flow",
+                                          "fontSizePt":  8,
+                                          "text":  "Changes not applied.",
+                                          "visibility":  "Only for Changes not applied.; green Changes applied. replaces it for the Settings ready. source state.",
+                                          "style":  "Native StatusBadge; soft amber fill/border and dark amber text with a small dot.",
+                                          "statePanel":  "Collapses when no full-size message remains."
+                                      },
+                    "buttonStates":  {
+                                         "enabledBorder":  "#85877F",
+                                         "disabledFill":  "#F4F4F1",
+                                         "disabledBorder":  "#E3E3DE",
+                                         "disabledText":  "#73756F",
+                                         "scope":  "All styled native OutlineButton controls; button dimensions, event handlers and enabled logic unchanged.",
+                                         "highContrast":  "Original system colors retained.",
+                                         "implementation":  "Disabled-color override applied to baseline controls source before Add-Type; upstream generated source and recipe hashes remain provenance identifiers."
+                                     },
+                    "applyStateHighlight":  {
+                                                "component":  "BitWrecked.NativeGraphics.V1.StatusBadge",
+                                                "fontSizePt":  8,
+                                                "placement":  "Immediately beside Apply Settings; reviewed at normal and minimum width.",
+                                                "pending":  {
+                                                                "text":  "Changes not applied.",
+                                                                "sourceStatus":  "Changes not applied.",
+                                                                "fill":  "#FFF6E6",
+                                                                "border":  "#E6C994",
+                                                                "textColor":  "#805A21",
+                                                                "accent":  "#AE7119"
+                                                            },
+                                                "applied":  {
+                                                                "text":  "Changes applied.",
+                                                                "sourceStatus":  "Settings ready.",
+                                                                "fill":  "#EDF6EF",
+                                                                "border":  "#B7D3BE",
+                                                                "textColor":  "#316D41",
+                                                                "accent":  "#3F7D50"
+                                                            },
+                                                "contract":  "Applied uses the existing verified, matching-policy and acknowledged state. Saved settings alone, progress, errors and notices do not show success.",
+                                                "accessibility":  "Readable state text; native UIAutomation exposes Changes not applied. with visible bounds. System high-contrast colors retained."
+                                            },
+                    "manualRestore":  {
+                                          "previewUx":  "Restore detached from rebuilt layout, hidden and excluded from keyboard navigation; Uninstall is the sole maintenance action.",
+                                          "preserved":  "Restore object and callback remain dormant in prototype so existing references stay valid. Core launcher modules, local history and automatic Apply-failure byte recovery are unchanged.",
+                                          "documentation":  "Inherited customer README still describes Restore; DEV must update release documentation to match the simplified UX."
+                                      },
+                    "uninstallButtonAvailability":  {
+                                                        "roleBefore":  "Quiet",
+                                                        "roleAfter":  "Secondary",
+                                                        "enabled":  "Normal form text and existing stronger outline, consistent with Apply.",
+                                                        "disabled":  "Inherited muted disabled text/fill/border remain.",
+                                                        "scope":  "Presentation only; ownership checks, confirmation, handler, enabled gates and high-contrast behavior are unchanged."
+                                                    }
+                },
+    "checks":  {
+                   "frozenCandidateIdentity":  "Unchanged",
+                   "actual200PercentMinimumWidthHeader":  "Pass",
+                   "actual300PercentSecondaryHeader":  "Previous revision passed; spacing revision reviewed at actual200% only.",
+                   "powershellParse":  "Pass",
+                   "candidateManagerSha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3",
+                   "candidateZipSha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5",
+                   "actual200PercentNormalHeader":  "Pass",
+                   "previewManagerSha256":  "BF1275FC94CF7CFD40E6F080C7821DE2DCAA50C8651A82E09ED2602515B395B6",
+                   "independentVisualAndSourceReview":  "Pass: revision14 one-line role change independently reviewed; enabled/disabled rendering and presentation refresh preserve action gates and high contrast. Native round64 image reviewed at200%.",
+                   "fileComparison":  [
+                                          {
+                                              "path":  "LICENSE.md",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "package-manifest.json",
+                                              "identical":  false
+                                          },
+                                          {
+                                              "path":  "README.md",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "START.bat",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/src/launcher/m0160.psm1",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/src/launcher/m0161.psm1",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/src/launcher/m0162.psm1",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/src/launcher/m0164.psm1",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/src/launcher/m0166.psm1",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/ui/logo.ico",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/ui/p0158.ps1",
+                                              "identical":  false
+                                          },
+                                          {
+                                              "path":  "dev/verified/main/d0163.dll",
+                                              "identical":  true
+                                          },
+                                          {
+                                              "path":  "dev/verified/main/ModInfo.xml",
+                                              "identical":  true
+                                          }
+                                      ],
+                   "reviewedLayouts":  [
+                                           "Any",
+                                           "Chosen",
+                                           "Weighted",
+                                           "Weighted at minimum width"
+                                       ],
+                   "changedFunctions":  [
+                                            "Update-HrsBiomePreview",
+                                            "Update-HrsTextWidths",
+                                            "Initialize-HrsBiomeLayout",
+                                            "Update-HrsStatus",
+                                            "Update-HrsStatusPresentation",
+                                            "Set-HrsButtonStyle",
+                                            "Update-HrsPresentationColors"
+                                        ],
+                   "actionCallbacks":  "Existing callbacks unchanged. Manual Restore has no visible/keyboard-accessible control in the rebuilt preview layout.",
+                   "chosenNoteRemovedActual200":  "Pass: note absent and a full line reclaimed in round17.",
+                   "reclaimedPhysicalPixelsAt200":  46,
+                   "protectionNoteRemovedActual200":  "Pass: absent in round18, all controls fit at the same normal size.",
+                   "protectionNoteReclaimedPhysicalPixelsAt200":  98,
+                   "gameNameNoteRemovedActual200":  "Pass: explanatory note absent and row reclaimed in round19.",
+                   "biomeHeadingRemovedActual200":  "Pass: heading absent, row collapsed and dropdown accessibility names retained in round20.",
+                   "anyNoteRemovedActual200":  "Pass: actual Any selection has no explanatory note or reserved row in round23.",
+                   "weightedCommentRemovedStatsRetainedActual200":  "Pass: bottom comment absent, all five percentage stats visible in round26.",
+                   "applyReminderRemovedActual200":  "Pass: requested hint absent and row collapsed in real Weighted view, round32.",
+                   "nextActionCaptureScope":  "Rounds27-29 show preliminary detachment; scoped final visibility implementation is captured in rounds30-32.",
+                   "inlinePendingNormalAndNarrowActual200":  "Pass: rounds38/40/45 show small status beside Apply; Launch wraps at narrow width.",
+                   "errorProgressPresentation":  "Source reviewed: Saved settings, progress, errors and notices remain in the primary area; badge hidden. No live Apply executed.",
+                   "pendingStatusCaptureScope":  "Rounds33-35 show superseded assumption of removal. User clarified inline status; accepted design is captured in rounds36-45.",
+                   "buttonAvailabilityActual200":  "Round48: enabled Apply and Edit weights use stronger outlines; disabled Launch and Restore are flat with light outlines. Native UIAutomation confirms Apply enabled and Launch disabled.",
+                   "buttonActionTestScope":  "Visual/read-only checks only; Apply Settings, Launch Game, Restore and Uninstall were not invoked.",
+                   "observedButtonStates":  {
+                                                "applySettings":  true,
+                                                "launchGame":  false,
+                                                "manualRestorePresent":  false,
+                                                "uninstallMod":  true
+                                            },
+                   "highlightedPendingActual200And300":  "Pass: round51 actual300%; rounds52/54/58 actual200%. At minimum width badge stays beside Apply. UIAutomation shows pending text, Apply enabled, Launch disabled.",
+                   "highlightedAppliedVisualFixture":  "Appearance only: round55 uses actual manager controls with Settings ready/Launch state simulated and all four action callbacks emptied. Not an Apply/readback or runtime QA pass.",
+                   "uninstallOnlyActual200":  "Pass: native round61 shows sole Uninstall maintenance action. UIAutomation finds no Restore element and confirms Uninstall visible/enabled. No game action was invoked.",
+                   "uninstallButtonAvailabilityActual200":  "Pass: round64 native screenshot shows dark enabled Uninstall text; UIAutomation confirms it is visible/enabled. Disabled rendering is inherited; no uninstall was invoked."
+               },
+    "screenshots":  [
+                        "screenshots/round-01-header-300-secondary.png",
+                        "screenshots/round-02-header-200-normal.png",
+                        "screenshots/round-03-header-200-narrow.png",
+                        "screenshots/round-04-header-200-restored.png",
+                        "screenshots/round-05-inline-release-200-normal.png",
+                        "screenshots/round-06-inline-release-200-narrow.png",
+                        "screenshots/round-07-spacing-200-chosen.png",
+                        "screenshots/round-08-focus-home-attempt.png",
+                        "screenshots/round-09-focus-end-attempt.png",
+                        "screenshots/round-10-open-selection.png",
+                        "screenshots/round-11-spacing-200-any.png",
+                        "screenshots/round-12-open-selection.png",
+                        "screenshots/round-13-spacing-200-weighted.png",
+                        "screenshots/round-14-spacing-200-weighted-settled.png",
+                        "screenshots/round-15-spacing-200-narrow.png",
+                        "screenshots/round-16-spacing-200-final.png",
+                        "screenshots/round-17-chosen-note-removed.png",
+                        "screenshots/round-18-protection-note-removed.png",
+                        "screenshots/round-19-game-name-note-removed.png",
+                        "screenshots/round-20-biome-heading-removed.png",
+                        "screenshots/round-21-any-note-ready.png",
+                        "screenshots/round-22-any-selection-open.png",
+                        "screenshots/round-23-any-note-removed.png",
+                        "screenshots/round-24-weights-note-ready.png",
+                        "screenshots/round-25-weighted-selection-open.png",
+                        "screenshots/round-26-weights-note-removed.png",
+                        "screenshots/round-27-next-action-ready.png",
+                        "screenshots/round-28-next-action-selection-open.png",
+                        "screenshots/round-29-next-action-note-removed.png",
+                        "screenshots/round-30-next-action-scoped-ready.png",
+                        "screenshots/round-31-next-action-scoped-selection.png",
+                        "screenshots/round-32-next-action-note-removed.png",
+                        "screenshots/round-33-pending-status-ready.png",
+                        "screenshots/round-34-pending-status-selection.png",
+                        "screenshots/round-35-pending-status-removed.png",
+                        "screenshots/round-36-inline-status-ready.png",
+                        "screenshots/round-37-inline-status-selection.png",
+                        "screenshots/round-38-inline-status-normal.png",
+                        "screenshots/round-39-inline-status-narrow.png",
+                        "screenshots/round-40-inline-status-narrow-bottom.png",
+                        "screenshots/round-41-inline-status-restored.png",
+                        "screenshots/round-42-inline-status-final.png",
+                        "screenshots/round-43-inline-status-reopened.png",
+                        "screenshots/round-44-inline-status-final-selection.png",
+                        "screenshots/round-45-inline-status-final.png",
+                        "screenshots/round-46-button-states-ready.png",
+                        "screenshots/round-47-button-states-selection.png",
+                        "screenshots/round-48-button-states-weighted.png",
+                        "screenshots/round-49-highlight-ready.png",
+                        "screenshots/round-50-highlight-selection.png",
+                        "screenshots/round-51-highlight-pending.png",
+                        "screenshots/round-52-highlight-pending-200.png",
+                        "screenshots/round-53-highlight-pending-narrow.png",
+                        "screenshots/round-54-highlight-pending-narrow-bottom.png",
+                        "screenshots/round-55-highlight-applied-visual-fixture.png",
+                        "screenshots/round-56-highlight-final-reopened.png",
+                        "screenshots/round-57-highlight-final-selection.png",
+                        "screenshots/round-58-highlight-final-pending.png",
+                        "screenshots/round-59-uninstall-only-ready.png",
+                        "screenshots/round-60-uninstall-only-selection.png",
+                        "screenshots/round-61-uninstall-only-final.png",
+                        "screenshots/round-62-uninstall-enabled-ready.png",
+                        "screenshots/round-63-uninstall-enabled-selection.png",
+                        "screenshots/round-64-uninstall-enabled-final.png"
+                    ],
+    "devIntegration":  [
+                           "Apply titleSize=16,logoSize=28,spacing=8,contentPadding=20 to the upstream native design recipe.",
+                           "Transfer single-row logo/title/release header, bounded text widths, compact frame/choice margins and AutoSize layout into DEV source.",
+                           "Omit gameNameHelp and biomeNote from the main manager layout, plus selectionLabel and selectionNote from choices.",
+                           "Keep weightSummary, Edit weights, meaningful native selection accessibility names, exact Game Name validation and existing action/runtime behavior. The DEV target is native method radios with one validated selection value.",
+                           "Production requirement: project labels, badge colors and availability from explicit operation/readiness state. Revision14 exact-text matching is prototype history. Collapse unused message rows while retaining progress, errors and prerequisites; preserve the omitted redundant Apply reminder.",
+                           "Regenerate the manager and package a new QA candidate. Keep original sizing findings tracked until dedicated acceptance checks pass.",
+                           "Set the enabled button border to #85877F and ordinary disabled colors to fill#F4F4F1, border#E3E3DE, text#73756F in the upstream native controls/design source. Preserve system high-contrast colors, genuine pressed/focus states and all .Enabled gates; regenerate instead of shipping the preview source-string override.",
+                           "Preserve native StatusBadge placement and amber/green palette. Revision14 uses8pt; DEV should use inherited10pt body text and re-review compact layouts. Render Pending/Applied from explicit state, retaining matching-policy, verification and acknowledgement gates. Round55 remains appearance-only simulation.",
+                           "Remove manual Restore previous settings from the customer GUI and clean its dedicated control/callback/status-only references in DEV. Keep ownership-checked Uninstall, automatic failed-Apply transaction rollback, and required policy/revision/history behavior. Update customer README and manual-Restore QA cases for this approved product simplification.",
+                           "Style Uninstall Mod as Secondary, using normal enabled text rather than Quiet muted text. Retain native disabled rendering and all removal checks; apply the same role after system-color refresh.",
+                           "Microsoft review MS-HRS-01 through08: use native vertical method radios and stable dependent controls; one validated selection/status model; batch policy restoration; fix known geometry; larger status text; qualify real keyboard/Narrator/high contrast; align Uninstall ownership availability; add guarded busy presentation while retaining automatic failed-Apply rollback. See microsoftDesignReview for evidence/scope; no radio implementation is claimed.",
+                           "Include user-supplied rounded-display-bezel guidance as scaling/content-protection context, plus Microsoft app geometry and visual-cue guidance. Use consistent role-based geometry/grouping, safe insets and clear availability/focus feedback; do not convert OEM hardware radii into software-control requirements. Preserve current radii until a concrete visual review supports changing them.",
+                           "Include user-supplied XAML animation guidance as interaction design context for the native WinForms recipe. Preserve immediate press/focus and truthful operation feedback; optional bounded paint-only accents respect Windows animation preference and High Contrast. Keep motion independent from readback, acknowledgement and Launch gates; add fixture/capture metadata and instant-fallback checks to future tooling. See microsoftDesignReview.motionAndFeedback; no motion implementation is claimed.",
+                           "NUX-13 through15 complete paperwork requirements: add accessible local Help/README access; apply dev-handoff UI copy contract including conditional fallback and verified/uncertain recovery outcomes; run newcomer usability review; integrate consistent README/release/Nexus/known-issue drafts. See documentationHandoff and the revision2 DEV manifest. Preview manager remains revision14 and unqualified."
+                       ],
+    "existingSizingFindings":  "The three original QA sizing findings remain tracked in QA-REVIEW-1.2.6-qa.002.md.",
+    "previewRevision":  14,
+    "currentPreviewSelection":  "Weighted",
+    "userClarification":  "Use a small status beside Apply Settings.",
+    "latestLayoutEvidence":  "screenshots/round-64-uninstall-enabled-final.png",
+    "historicalScreenshotScope":  "Screenshots through round58 show earlier layouts including Restore. Round55 is a simulated applied state. Rounds59-61 omit Restore but retain the superseded muted Uninstall text. Current layout and availability styling is round64.",
+    "microsoftDesignReview":  {
+                                  "reviewedDate":  "2026-10-04",
+                                  "scope":  "Read-only Microsoft guidance comparison against native preview revision14; no GUI, gameplay, policy, runtime or package source changed during this review.",
+                                  "method":  "Current Windows interaction guidance plus WinForms implementation documentation; Win32 UX guide is legacy Windows7 guidance and applied as principles. Do not require a WinUI migration.",
+                                  "recommendations":  [
+                                                          {
+                                                              "id":  "MS-HRS-01",
+                                                              "kind":  "Design recommendation",
+                                                              "area":  "Biome method selection",
+                                                              "current":  "One dropdown contains Any, Chosen and Weighted.",
+                                                              "recommendation":  "Use three native RadioButton choices in a compact vertical group with its own parent, meaningful accessible name and one selected method. Keep the existing policy values and runtime behavior.",
+                                                              "source":  "https://learn.microsoft.com/en-us/windows/apps/develop/ui/controls/radio-button"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-02",
+                                                              "kind":  "Design recommendation",
+                                                              "area":  "Dependent controls",
+                                                              "current":  "Chosen picker and Edit weights appear/disappear with selection.",
+                                                              "recommendation":  "Prefer keeping picker and Edit weights in stable positions, disabling inactive controls. Open the editor only from its button. If controls remain conditional, explicitly qualify focus/announcement and scroll behavior.",
+                                                              "source":  "https://learn.microsoft.com/en-us/windows/win32/uxguide/ctrl-radio-buttons"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-03",
+                                                              "kind":  "Source risk and engineering recommendation",
+                                                              "area":  "Selection and restoration",
+                                                              "current":  "Several functions read SelectedIndex. Set-HrsFormFromPolicy fires events while fields/weights are being loaded; unknown indices can fall through.",
+                                                              "recommendation":  "Use one validated Any/Chosen/Weighted selection value and one setter/projector. Handle only checked=true, batch policy load, refresh once and reject missing/unknown selections before Apply. A hidden combo is a preview adapter, not a second independently mutable production state.",
+                                                              "source":  "https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-04",
+                                                              "kind":  "Source risk and engineering recommendation",
+                                                              "area":  "Status",
+                                                              "current":  "Badge choice depends on exact English primary status strings.",
+                                                              "recommendation":  "Render text/colors from explicit Pending/Applying/Applied/Blocked state. Retain verified-policy matching, acknowledgement and fresh launch preflight. Copy changes must not select operational state.",
+                                                              "source":  "Local source review: Update-HrsStatusPresentation and Update-HrsStatus"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-05",
+                                                              "kind":  "Confirmed prior QA findings",
+                                                              "area":  "Window geometry",
+                                                              "current":  "Known width drift, work-area overflow and minimum-size scroll failures remain tracked. Compaction screenshots do not qualify their fixes.",
+                                                              "recommendation":  "Preserve outer width on height fits, clamp final outer bounds to the current work area and update scroll extent after layout. Recheck repeated selection changes, real minimum resize and monitor changes.",
+                                                              "source":  "QA-REVIEW-1.2.6-qa.002.md"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-06",
+                                                              "kind":  "Design recommendation",
+                                                              "area":  "Readability and accessibility",
+                                                              "current":  "Body is10pt; apply-state badge is8pt. Native names and high-contrast rendering exist, but live keyboard/Narrator qualification is incomplete.",
+                                                              "recommendation":  "Bring state text to10pt or inherited body size and retain text alongside color. Qualify Tab/arrows/Space/focus, popup Enter/Escape and actual High Contrast/Narrator; preserve the compact layout through spacing.",
+                                                              "source":  "https://learn.microsoft.com/en-us/dotnet/desktop/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-07",
+                                                              "kind":  "Source risk and engineering recommendation",
+                                                              "area":  "Uninstall availability",
+                                                              "current":  "Enabled from HRS folder presence while ownership is verified only on click.",
+                                                              "recommendation":  "Include read-only ownership preflight in availability, explain blocked/unknown state and retain the final ownership/process guard when clicked.",
+                                                              "source":  "Local source review: Update-HrsStatus and uninstallButton.Add_Click"
+                                                          },
+                                                          {
+                                                              "id":  "MS-HRS-08",
+                                                              "kind":  "Operational recommendation; not observed failure",
+                                                              "area":  "Apply processing",
+                                                              "current":  "Progress text is refreshed before synchronous build/install. Only Launch is explicitly disabled at confirmed Apply entry.",
+                                                              "recommendation":  "Use an explicit busy guard during writes and a busy pointer or visible processing indicator. Prevent repeat/conflicting actions; measure duration before introducing background threading. Keep automatic transaction rollback.",
+                                                              "source":  "https://learn.microsoft.com/en-us/windows/win32/uxguide/ctrl-command-buttons"
+                                                          }
+                                                      ],
+                                  "existingStrengths":  [
+                                                            "Native installer method, explicit Apply and separate Launch",
+                                                            "Pending/applied text accompanies color; errors/progress retained",
+                                                            "Launch uses saved-policy matching, verification and acknowledgement",
+                                                            "Uninstall confirmation and ownership guard",
+                                                            "Automatic failed-Apply byte recovery preserved",
+                                                            "Manual Restore omitted from preview UX"
+                                                        ],
+                                  "accessibilityObservation":  "Read-only UIAutomation in this local host reports both ordinary EDIT/radio/checkbox and custom command controls as generic Pane, not keyboard-focusable, with no supported patterns. This is a host/provider qualification gap; not evidence that only custom controls or actual keyboard/Narrator operation are broken. Real accessibility verification is still required.",
+                                  "acceptance":  [
+                                                     "Exactly one method selected; saved Any/Chosen/Weighted restores without changing values",
+                                                     "Mouse and native keyboard navigation agree; Standard/Random is an independent group",
+                                                     "Choosing methods and cancelling editor perform no disk writes and preserve unsaved weights",
+                                                     "Pending/Applied/Blocked rendering comes from state; edited wording does not change gates",
+                                                     "Apply/Uninstall cannot overlap or be submitted repeatedly while a write is active",
+                                                     "All actions are reachable after repeated method changes, genuine minimum-size resize and monitor changes",
+                                                     "State text remains readable at actual supported scales and in High Contrast",
+                                                     "Apply failure recovers prior bytes; successful verification and acknowledgement precede Launch availability"
+                                                 ],
+                                  "implementationStatus":  "Recommendations recorded for DEV; radio buttons are not implemented in revision14.",
+                                  "roundedGeometryAndVisualCues":  {
+                                                                       "userProvidedSource":  "https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/guidance-for-rounded-display-bezels",
+                                                                       "scope":  "Primarily OEM hardware bezel geometry and physical/effective-pixel clipping; relevant principles applied to HRS content protection and scaling. Hardware radius ranges are not HRS software-control requirements.",
+                                                                       "relatedAppGuidance":  [
+                                                                                                  "https://learn.microsoft.com/en-us/windows/apps/design/signature-experiences/geometry",
+                                                                                                  "https://blogs.windows.com/windowsdeveloper/2016/04/07/visual-communication-and-visual-cues/"
+                                                                                              ],
+                                                                       "current":  "Shared8 logical-unit radius across custom surfaces, buttons and badge; scaled painting clamps radii and insets borders/text/focus. No corner intrusion observed in latest normal view. Existing work-area/scroll defects remain separately tracked.",
+                                                                       "principles":  [
+                                                                                          "Use shape, spacing and grouping to communicate which controls belong together and what action follows.",
+                                                                                          "Maintain clear enabled, disabled, hover, pressed and keyboard-focus appearances; roundness alone does not communicate availability.",
+                                                                                          "Keep Pending/Applied wording beside Apply so status is conveyed through text and placement as well as color.",
+                                                                                          "Inset text, focus cues and targets from rounded boundaries; preserve every action in effective working area at supported real scales.",
+                                                                                          "Centralize software geometry and scale it once through the actual host; avoid per-monitor hardcoded radius patches.",
+                                                                                          "Treat Fluent4px standard controls and8px top-level containers as optional software geometry benchmarks. If reviewed later, split ControlRadius and SurfaceRadius tokens; preserve Windows native input behavior."
+                                                                                      ],
+                                                                       "acceptance":  [
+                                                                                          "Same role has the same visual treatment across manager and editor.",
+                                                                                          "Selected radio and its related picker/editor can be identified before interaction.",
+                                                                                          "Every enabled command is visibly actionable; inactive controls retain readable meaning.",
+                                                                                          "Keyboard focus and text stay inside safe insets at normal, minimum and maximized sizes.",
+                                                                                          "Rounding and accents remain coherent in High Contrast and actual100/150/200/225% profiles; mixed-monitor review includes existing300% secondary.",
+                                                                                          "Decorative geometry changes do not change policy, action gates, install recovery or runtime behavior."
+                                                                                      ],
+                                                                       "status":  "Consideration added; existing visual design and preview source are unchanged by this review."
+                                                                   },
+                                  "motionAndFeedback":  {
+                                                            "reviewedDate":  "2026-10-04",
+                                                            "userProvidedSource":  "https://learn.microsoft.com/en-us/windows/apps/develop/motion/xaml-animation",
+                                                            "relatedGuidance":  [
+                                                                                    "https://learn.microsoft.com/en-us/windows/apps/design/signature-experiences/motion",
+                                                                                    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-systemparametersinfow",
+                                                                                    "https://learn.microsoft.com/en-us/windows/win32/uxguide/vis-animations"
+                                                                                ],
+                                                            "sourceScope":  "The supplied library uses Windows Runtime XAML controls, dependency properties and storyboards. Transfer its interaction principles to the existing PowerShell/.NET Framework WinForms host; XAML theme APIs are not a drop-in implementation. The Win32 animation UX guide is legacy Windows7 guidance used only for supporting accessibility/performance principles.",
+                                                            "current":  "OutlineButton paints immediate hover, pressed and keyboard-focus feedback; StatusBadge paints state colors. No animation scheduler or motion recipe is present. Apply runs synchronous work after refreshing progress text. A UI-thread animation timer would pause during that work.",
+                                                            "decision":  "Keep immediate native feedback as the first implementation. Prioritize explicit selection/operation state, busy guarding and the existing geometry fixes. Optional paint-only motion can be evaluated afterward; it is not a release requirement or a gameplay change.",
+                                                            "proposedRecipe":  {
+                                                                                   "statusEffect":  "None by default",
+                                                                                   "feedbackDurationMs":  0,
+                                                                                   "optionalStatusAccentTrialMs":  120,
+                                                                                   "trialScope":  "HRS starting point for a future reviewed experiment, not a Microsoft-mandated duration. Interpolate background/accent paint only; new state text, accessibility information, focus and action gates update immediately. Avoid fading essential text.",
+                                                                                   "layoutAnimation":  false,
+                                                                                   "reducedMotion":  "Respect system client-area animation preference; disabled or unavailable preference means instant rendering.",
+                                                                                   "highContrast":  "Immediate system-color rendering; omit decorative interpolation.",
+                                                                                   "operationalDelayMs":  0
+                                                                               },
+                                                            "hostAdapter":  [
+                                                                                "If optional effects are implemented, query SystemParametersInfoW with SPI_GETCLIENTAREAANIMATION (0x1042), uiParam=0, a marshalled Win32 BOOL output and fWinIni=0. Check the API return value; query failure falls back to instant rendering.",
+                                                                                "Read the preference before effects and refresh when Windows settings change. The manager must not set global Windows animation preferences.",
+                                                                                "Keep effect scheduling bounded and on the UI thread; use elapsed time rather than assumed tick counts. A newer state replaces the prior effect and snaps or retargets to the current state. Disabled/disposed controls and a closed manager cancel pending effects; stop and dispose any timers when idle or closed.",
+                                                                                "Generate the implementation from the upstream native controls/design recipe and update provenance hashes. Those upstream generator inputs are absent in this QA transfer. Do not add XAML dependencies or ship another source-string override for motion."
+                                                                            ],
+                                                            "operationContract":  [
+                                                                                      "Applying feedback begins only when the confirmed write operation starts. Use readable Applying settings... text and an explicit guard against conflicting/repeated commands. Static feedback is valid when animations are disabled.",
+                                                                                      "Animated progress never estimates completion from elapsed time. Report numeric progress only from measured stages; do not add sleeps, artificial delays or nested DoEvents pumping to make effects visible.",
+                                                                                      "Verified installation/readback, matching policy and required confirmation acknowledgement remain the authority for Applied/Launch readiness. Neither an effect ending nor a screenshot of green status establishes successful Apply.",
+                                                                                      "The trader-assignment warning remains readable in the Settings Applied acknowledgement dialog until acknowledged. Motion must not shorten its visibility, auto-dismiss it or substitute for acknowledgement.",
+                                                                                      "Cancelling a visual effect does not cancel an install transaction. Preserve automatic failed-Apply byte recovery. Measure blocking duration before proposing worker-thread changes; a spinner alone cannot make synchronous UI work responsive.",
+                                                                                      "Keep window bounds, row heights, scroll extent and hit targets stable during feedback. Do not animate fit/resize operations while the existing width, work-area and scrolling defects remain open."
+                                                                                  ],
+                                                            "tooling":  [
+                                                                            "Extend the future recipe validator with allowed effect names, bounded finite durations and mandatory instant fallback. Keep motion settings separate from gameplay policy and operational state.",
+                                                                            "Add harmless preview fixtures for Normal/Hover/Pressed/Focused/Disabled and Pending/Applying/Applied/Blocked states, with install, launch and uninstall callbacks neutralized. Label their screenshots as simulated presentation evidence.",
+                                                                            "Record candidate/recipe/control hashes, actual display scale, High Contrast, effective animation preference, selected effect/duration, state identifier, timestamps and fixture/live scope alongside captures.",
+                                                                            "For optional motion, inspect initial, sampled intermediate and settled frames plus rapid state changes. Still images verify appearance; brief human observation or a recording is needed to judge flicker and smoothness.",
+                                                                            "Automation should wait for explicit state and a bounded rendering-settled condition, not fixed sleeps or animation completion as an operation result. Capture a timeout as failure; retain live transaction/readback evidence separately."
+                                                                        ],
+                                                            "acceptance":  [
+                                                                               "Windows animations on/off and preference-query failure produce the same final text, enabled actions and policy; the off/failure paths show the state immediately.",
+                                                                               "Mouse and keyboard receive immediate pressed/focus feedback; disabled controls never appear pressed or accept actions.",
+                                                                               "Rapid input, a new status, disabling a control and closing the window leave no stale effect, idle timer or disposed-control callback.",
+                                                                               "High Contrast and actual supported display scales retain readable text, focus and reachable controls at normal/minimum sizes and on the secondary monitor.",
+                                                                               "Selection and visual fixture exercises perform no disk writes, game launches or uninstall operations.",
+                                                                               "Busy rendering does not permit duplicate/conflicting writes; failure shows the correct state and preserves the existing automatic recovery contract.",
+                                                                               "Real Apply qualification verifies readback and acknowledgement before Launch; visual fixtures never count as that operational pass.",
+                                                                               "Effects add no required wait, moving hit target, window-size drift or flashing. If the optional effect is distracting or stutters in the actual host, retain instant rendering."
+                                                                           ],
+                                                            "independentReview":  "Contract review agrees: preserve immediate feedback, keep optional effects paint-only and separate from operation success, and prioritize busy-state/geometry work.",
+                                                            "implementationStatus":  "Supplemental DEV recipe/tooling recommendations only. Preview revision14, manager source, runtime, package, visual evidence and release qualification are unchanged."
+                                                        }
+                              },
+    "documentationHandoff":  {
+                                 "capturedDate":  "2026-10-04",
+                                 "doctrinePath":  "../../HRS_NATIVE_UX_DOCTRINE.md",
+                                 "doctrineRevision":  2,
+                                 "devManifestPath":  "../../HRS_NATIVE_UX_NEXT_DEV_MANIFEST.md",
+                                 "devManifestRevision":  2,
+                                 "harnessManifestPath":  "../../HRS_QA_HARNESS_ARCHITECTURE_MANIFEST.md",
+                                 "harnessManifestRevision":  3,
+                                 "authority":  "Doctrine and DEV manifest consolidate future implementation instructions. The changes/checks/screenshots fields retain revision14 prototype observations; new production recommendations do not rewrite that evidence.",
+                                 "qualification":  "New candidate required for integration and QA. Frozen qa.002 sizing failure and pending ledger retained; no publication approval or operational pass added.",
+                                 "review":  "Internal/external paperwork consolidated. Explicit-state/10pt recommendations remain distinct from revision14 source. Reachable help, conditional fallback wording, truthful recovery outcomes and one newcomer review are DEV requirements; external drafts need delivered-behavior reconciliation and final release qualification.",
+                                 "paperworkIndexPath":  "../../dev-handoff/hrs-native-ux/START-HERE.md",
+                                 "copyContractPath":  "../../dev-handoff/hrs-native-ux/UI-COPY-CONTRACT.md",
+                                 "newcomerChecklistPath":  "../../dev-handoff/hrs-native-ux/NEWCOMER-USABILITY-CHECKLIST.md",
+                                 "externalDraftsPath":  "../../dev-handoff/hrs-native-ux/external",
+                                 "publicationReady":  false
+                             }
+}

@@ -1,0 +1,105 @@
+﻿{
+    "schema":  "hrs-local-final-review/v1",
+    "candidateId":  "1.2.6-qa.002",
+    "reviewDate":  "2026-10-04",
+    "observedUtc":  "2026-10-04T17:00:56.7179851Z",
+    "reviewBaseCommit":  "d14ca25",
+    "powerShellVersion":  "5.1.26100.9549",
+    "verdict":  "Independent QA sizing failed; DEV corrections required before manager QA Pass",
+    "customerArchiveSha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5",
+    "customerArchiveBytes":  208801,
+    "archiveIdentityValid":  true,
+    "workspaceIdentityValid":  true,
+    "transferFilesChecked":  59,
+    "transferMismatches":  0,
+    "releaseReadyForQa":  true,
+    "releaseGateErrors":  0,
+    "releaseGateWarnings":  0,
+    "powerShellFilesParsed":  13,
+    "powerShellParseFailures":  0,
+    "customerSmoke":  {
+                          "status":  "Pass",
+                          "entryPoint":  "freshly extracted customer START.bat",
+                          "mode":  "SmokeTest",
+                          "scope":  "Real controls, chosen biome, weight save/cancel/all-zero checks, no install or launch",
+                          "syntheticScale":  1,
+                          "screenshots":  [
+                                              "manager-smoke.png",
+                                              "manager-smoke-weights.png"
+                                          ]
+                      },
+    "managerSourceReview":  {
+                                "traderNoticeMatchesHandoff":  true,
+                                "randomOnly":  true,
+                                "postReadbackPopup":  true,
+                                "launchBlockedUntilAcknowledged":  true,
+                                "unappliedChangesBlockLaunch":  true,
+                                "activationRefresh":  true,
+                                "runtimeRepairAdded":  false
+                            },
+    "installedGame":  {
+                          "assemblyCSharpSha256":  "FCEEC27300FFD3A1F97B097E43B60F3B07597F441E7ECBC6E1B59EEBB234C705",
+                          "qualifiedAssemblyCSharpSha256":  "AA4275991736D276EC75BB4047E45F76E0242AA47D9895890F3761098D4CC146",
+                          "exactQualifiedAssembly":  false,
+                          "steamBetaSelection":  "latest_experimental",
+                          "qualification":  "Best-effort environment; not b17 certification",
+                          "gameLaunchedByReview":  false,
+                          "gameFilesWrittenByReview":  false
+                      },
+    "independentQa":  {
+                          "requiredCases":  41,
+                          "pending":  41,
+                          "casesCompletedByThisReview":  0,
+                          "releaseApprovalRecorded":  false,
+                          "failedAttemptsSinceInitialReview":  1
+                      },
+    "changes":  {
+                    "gitattributes":  "Preserve exact bytes in the polished 1.2.6 transfer",
+                    "transportFilesRestored":  24,
+                    "restoration":  "Only newline changes; restored bytes verified against recorded hashes",
+                    "customerArchiveChanged":  false,
+                    "companionArchiveChanged":  false,
+                    "customerLogicChanged":  false
+                },
+    "limitations":  [
+                        "No live placement, quest, reload, upgrade or removal QA performed.",
+                        "Actual Windows scaling100/150/200/225 reviewed with a failed manager sizing attempt. OS High Contrast, Narrator and native Apply popup interaction remain pending.",
+                        "QA ledger and cycle approvals were not altered.",
+                        "manager-comparison.json compares qa.002 with qa.001 and records differences; it does not establish identical callbacks between those candidates."
+                    ],
+    "initialReviewVerdict":  "Ready for independent QA; publication pending",
+    "liveSizingQa":  {
+                         "caseId":  "HRS-BIOME-Manager",
+                         "runId":  "hrsqa-20261004T175350Z-32724833",
+                         "completedUtc":  "2026-10-04T18:27:26.437Z",
+                         "declaredOutcome":  "Fail",
+                         "actualWindowsScales":  [
+                                                     100,
+                                                     150,
+                                                     200,
+                                                     225
+                                                 ],
+                         "successfulRoundCaptures":  63,
+                         "initialLiveCaptures":  1,
+                         "galleryCaptures":  18,
+                         "confirmedFindings":  [
+                                                   "HRS-UX-001",
+                                                   "HRS-UX-002",
+                                                   "HRS-UX-003"
+                                               ],
+                         "automatedAssessment":  "Mismatch",
+                         "unconfirmedManualChecks":  14,
+                         "missingRuntimeEvents":  0,
+                         "forbiddenRuntimeEvents":  0,
+                         "gallery":  "ui-sizing/index.html",
+                         "findings":  "ui-sizing/sizing-findings.json",
+                         "evidenceArchive":  "ui-sizing/manager-sizing-failed-evidence.zip",
+                         "evidenceArchiveSha256":  "3DB464D746203717FE4B2983D5F94B542D3EBF0DE29CCF588A494FD38A0CF2EC",
+                         "primaryScaleRestored":  200,
+                         "secondaryScaleUnchanged":  300,
+                         "installedFilesUnchanged":  true,
+                         "customerArchiveUnchanged":  true,
+                         "gameLaunched":  false,
+                         "candidateProductEdited":  false
+                     }
+}

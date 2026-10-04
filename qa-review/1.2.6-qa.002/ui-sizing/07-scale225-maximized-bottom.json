@@ -1,0 +1,60 @@
+﻿{
+    "schema":  "hrs-ui-sizing-round/v1",
+    "round":  "07-scale225-maximized-bottom",
+    "observedUtc":  "2026-10-04T18:18:44.3032466Z",
+    "action":  "ScrollBottom",
+    "managerPid":  2044,
+    "capturedWindowHandle":  1181544,
+    "coordinates":  "physical-pixels",
+    "windowBounds":  {
+                         "Left":  -18,
+                         "Top":  -18,
+                         "Right":  2579,
+                         "Bottom":  1350
+                     },
+    "clientBounds":  {
+                         "Left":  0,
+                         "Top":  0,
+                         "Right":  2522,
+                         "Bottom":  1280
+                     },
+    "monitor":  {
+                    "Handle":  131957,
+                    "Device":  "\\\\.\\DISPLAY1",
+                    "Bounds":  {
+                                   "Left":  0,
+                                   "Top":  0,
+                                   "Right":  2560,
+                                   "Bottom":  1440
+                               },
+                    "Work":  {
+                                 "Left":  0,
+                                 "Top":  0,
+                                 "Right":  2560,
+                                 "Bottom":  1332
+                             },
+                    "ScalePercent":  225,
+                    "ScaleResult":  0,
+                    "Flags":  1
+                },
+    "windowDpi":  96,
+    "screenshot":  "07-scale225-maximized-bottom.png",
+    "captureWidth":  2560,
+    "captureHeight":  1350,
+    "requestedWidth":  0,
+    "requestedHeight":  0,
+    "keyInput":  "",
+    "clickedControl":  "",
+    "productChecksConfirmed":  [
+
+                               ],
+    "verticalScroll":  {
+                           "cbSize":  28,
+                           "fMask":  23,
+                           "nMin":  0,
+                           "nMax":  1005,
+                           "nPage":  569,
+                           "nPos":  437,
+                           "nTrackPos":  437
+                       }
+}

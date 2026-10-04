@@ -2,6 +2,8 @@
 
 Status: **Ready for DEV integration and live acceptance testing**
 
+Follow-up **2026-10-04**: this is the historical 1.2.5 notice handoff. Its manager/README mitigation is present in 1.2.6-qa.002; live qualification remains governed by the current candidate's cases. Preserve the first-assignment boundary below. Today's further manager work is captured in the [native UX doctrine](HRS_NATIVE_UX_DOCTRINE.md) and [next DEV manifest](HRS_NATIVE_UX_NEXT_DEV_MANIFEST.md).
+
 Baseline: **1.2.5-qa.002**, 7 Days to Die V3.3.0 (b17), Windows PowerShell 5.1
 
 Scope: Add the approved opening-trader session notice to the native manager and customer README. Keep the trader-route runtime behavior unchanged for this candidate unless a separately reviewed repair is approved.

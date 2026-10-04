@@ -1,3 +1,7 @@
 **/HistoricalRandomStart_1.2.4/** -text
 **/biome-selection-prototype/** -text
 "Solution - HRS Historical Random Start v1.2.5/**" -text
+"Solution - HRS Historical Random Start 1.2.6 Polish/**" -text whitespace=cr-at-eol
+prototypes/hrs-1.2.6-compact-header/** -text whitespace=cr-at-eol
+prototypes/hrs-1.2.6-compact-header/compact-header.patch -whitespace
+qa-review/1.2.6-qa.002/** -text whitespace=cr-at-eol

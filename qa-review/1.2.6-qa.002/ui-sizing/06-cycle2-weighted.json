@@ -1,0 +1,60 @@
+﻿{
+    "schema":  "hrs-ui-sizing-round/v1",
+    "round":  "06-cycle2-weighted",
+    "observedUtc":  "2026-10-04T18:17:39.5303016Z",
+    "action":  "Key",
+    "managerPid":  21688,
+    "capturedWindowHandle":  722700,
+    "coordinates":  "physical-pixels",
+    "windowBounds":  {
+                         "Left":  716,
+                         "Top":  114,
+                         "Right":  1591,
+                         "Bottom":  1446
+                     },
+    "clientBounds":  {
+                         "Left":  0,
+                         "Top":  0,
+                         "Right":  825,
+                         "Bottom":  1273
+                     },
+    "monitor":  {
+                    "Handle":  131957,
+                    "Device":  "\\\\.\\DISPLAY1",
+                    "Bounds":  {
+                                   "Left":  0,
+                                   "Top":  0,
+                                   "Right":  2560,
+                                   "Bottom":  1440
+                               },
+                    "Work":  {
+                                 "Left":  0,
+                                 "Top":  0,
+                                 "Right":  2560,
+                                 "Bottom":  1368
+                             },
+                    "ScalePercent":  150,
+                    "ScaleResult":  0,
+                    "Flags":  1
+                },
+    "windowDpi":  96,
+    "screenshot":  "06-cycle2-weighted.png",
+    "captureWidth":  875,
+    "captureHeight":  1326,
+    "requestedWidth":  0,
+    "requestedHeight":  0,
+    "keyInput":  "{HOME}{DOWN}{DOWN}{ENTER}",
+    "clickedControl":  "",
+    "productChecksConfirmed":  [
+
+                               ],
+    "verticalScroll":  {
+                           "cbSize":  28,
+                           "fMask":  23,
+                           "nMin":  0,
+                           "nMax":  891,
+                           "nPage":  849,
+                           "nPos":  0,
+                           "nTrackPos":  0
+                       }
+}

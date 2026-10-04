@@ -1,0 +1,292 @@
+diff --git a/dev/ui/p0158.ps1 b/dev/ui/p0158.ps1
+index 4a20172..5aeef5c 100644
+--- a/dev/ui/p0158.ps1
++++ b/dev/ui/p0158.ps1
+@@ -1,5 +1,5 @@
+-# Candidate 1.2.6-qa.002
+-# HRS 1.2.6 UX development source; differs from frozen 1.2.6-qa.001.
++# Compact header QA preview derived from candidate 1.2.6-qa.002.
++# Unqualified UI preview; integrate the layout and recipe sizes in DEV before release.
+ param([switch] $SmokeTest, [string] $GameRootOverride, [string] $ScreenshotPath, [float] $UiScale=1)
+ 
+ # Bit Wrecked Historical Random Start - Alpha Core Manager
+@@ -442,10 +442,32 @@ namespace BitWrecked.NativeGraphics.V1
+     }
+ }
+ '@
++# END HRS GENERATED NATIVE DESIGN
++# QA preview: the hashes above identify the upstream baseline, before this rendering override.
++# DEV: put these disabled-state colors in the native controls source and regenerate.
++$hrsDisabledButtonBaseline = @'
++                fill = SystemColors.Control;
++                border = SystemColors.GrayText;
++                text = SystemColors.GrayText;
++'@
++$hrsDisabledButtonPreview = @'
++                fill = highContrast ? SystemColors.Control : Color.FromArgb(244, 244, 241);
++                border = highContrast ? SystemColors.GrayText : Color.FromArgb(227, 227, 222);
++                text = highContrast ? SystemColors.GrayText : Color.FromArgb(115, 117, 111);
++'@
++if (!$script:hrsDesignControlsSource.Contains($hrsDisabledButtonBaseline)) {
++    throw 'The button rendering baseline changed; review the QA preview override.'
++}
++$script:hrsDesignControlsSource = $script:hrsDesignControlsSource.Replace($hrsDisabledButtonBaseline, $hrsDisabledButtonPreview)
+ if (-not ('BitWrecked.NativeGraphics.V1.SurfacePanel' -as [type])) {
+     Add-Type -TypeDefinition $script:hrsDesignControlsSource -ReferencedAssemblies System.Drawing,System.Windows.Forms -ErrorAction Stop
+ }
+-# END HRS GENERATED NATIVE DESIGN
++# QA preview layout overrides; the hashes above identify the unchanged upstream sources.
++# DEV: apply these sizes to the upstream design recipe before regenerating the manager.
++$script:hrsDesignRecipe.typography.titleSize = 16
++$script:hrsDesignRecipe.manager.logoSize = 28
++$script:hrsDesignRecipe.geometry.spacing = 8
++$script:hrsDesignRecipe.geometry.contentPadding = 20
+ [System.Windows.Forms.Application]::EnableVisualStyles()
+ 
+ $packageRoot   = Split-Path -Parent $MyInvocation.MyCommand.Path
+@@ -797,11 +819,12 @@ function Update-HrsBiomePreview {
+     if ($null -ne $script:modeNote) { $script:modeNote.Visible = !$isRandom }
+     $chosenCombo.Visible = $isRandom -and $selectionCombo.SelectedIndex -eq 1
+     $editWeights.Visible = $isRandom -and $selectionCombo.SelectedIndex -eq 2
++    $selectionNote.Visible = $isRandom -and $selectionCombo.SelectedIndex -eq 2
+     $total = 0
+     foreach ($biome in $biomes) { $total += [int]$weights[$biome] }
+     if (-not $isRandom) { $selectionNote.Text = 'Keep the usual starting location.' }
+-    elseif ($selectionCombo.SelectedIndex -eq 0) { $selectionNote.Text = $script:hrsDesignRecipe.copy.manager.anyHelp }
+-    elseif ($selectionCombo.SelectedIndex -eq 1) { $selectionNote.Text = $script:hrsDesignRecipe.copy.manager.chosenHelpTemplate.Replace('{biome}',[string]$chosenCombo.SelectedItem) }
++    elseif ($selectionCombo.SelectedIndex -eq 0) { $selectionNote.Text = '' }
++    elseif ($selectionCombo.SelectedIndex -eq 1) { $selectionNote.Text = '' }
+     else { $selectionNote.Text = $script:hrsDesignRecipe.copy.manager.weightedHelp }
+     if ($null -ne $script:weightSummary) {
+         $script:weightSummary.Visible = $isRandom -and $selectionCombo.SelectedIndex -eq 2
+@@ -980,7 +1003,7 @@ function Set-HrsButtonStyle {
+     $Button.UseVisualStyleBackColor = $false
+     $Button.UseMnemonic = $false
+     $Button.FillColor = [Drawing.ColorTranslator]::FromHtml($script:hrsDesignRecipe.palette.buttonFill)
+-    $Button.BorderColor = [Drawing.ColorTranslator]::FromHtml($script:hrsDesignRecipe.palette.border)
++    $Button.BorderColor = [Drawing.Color]::FromArgb(133,135,127)
+     $Button.AccentColor = $script:hrsAccentColor
+     $Button.HoverColor = [Drawing.Color]::FromArgb(241,241,237)
+     $Button.CornerRadius = [float]$script:hrsDesignRecipe.geometry.cornerRadius
+@@ -1000,7 +1023,7 @@ function Update-HrsPresentationColors {
+     $queue.Enqueue($Owner)
+     while ($queue.Count) {
+         $control = $queue.Dequeue()
+-        if ($control -is [BitWrecked.NativeGraphics.V1.SurfacePanel] -or $control -is [BitWrecked.NativeGraphics.V1.OutlineButton]) {
++        if ($control -is [BitWrecked.NativeGraphics.V1.SurfacePanel] -or $control -is [BitWrecked.NativeGraphics.V1.OutlineButton] -or $control -is [BitWrecked.NativeGraphics.V1.StatusBadge]) {
+             $control.PreviewHighContrast = [bool]$ForceHighContrast
+         }
+         if ($control -is [Windows.Forms.Label]) {
+@@ -1032,11 +1055,16 @@ function Update-HrsTextWidths {
+     $script:managerLayoutUpdating = $true
+     try {
+     $available = [Math]::Max(180, $script:managerLayout.ClientSize.Width - $script:managerLayout.Padding.Horizontal - 6)
+-    foreach ($label in @($title,$script:managerIntro,$gameNameHelp,$script:modeNote,$biomeNote,$resultStatus,$script:resultSummary,$details,$status,$script:nextAction)) {
++    foreach ($label in @($script:managerIntro,$gameNameHelp,$script:modeNote,$biomeNote,$resultStatus,$script:resultSummary,$details,$status,$script:nextAction)) {
+         $label.MaximumSize = New-Object Drawing.Size($available,0)
+     }
++    $releaseWidth = $version.GetPreferredSize([Drawing.Size]::Empty).Width + $version.Margin.Horizontal
++    $titleWidth = [Math]::Max(80,$available-$script:managerBrand.Width-$script:managerBrand.Margin.Horizontal-$releaseWidth)
++    $title.MaximumSize = New-Object Drawing.Size($titleWidth,0)
++    $biomeGroup.PerformLayout()
++    $choiceWidth = [Math]::Max(140,$script:biomeChoices.ClientSize.Width-$script:biomeChoices.Padding.Horizontal-6)
+     foreach ($label in @($selectionNote,$script:weightSummary)) {
+-        $label.MaximumSize = New-Object Drawing.Size(([Math]::Max(140,$available-30)),0)
++        $label.MaximumSize = New-Object Drawing.Size($choiceWidth,0)
+     }
+     $script:biomeChoices.PerformLayout()
+     $biomeGroup.Height = $script:biomeChoices.Height
+@@ -1060,6 +1088,29 @@ function Fit-HrsManagerWindow {
+     } finally { $script:managerFitting = $false }
+ }
+ 
++function Update-HrsStatusPresentation {
++    if ($null -eq $script:managerStatePanel) { return }
++    $pendingChanges = $status.Text -ceq 'Changes not applied.'
++    $appliedChanges = $status.Text -ceq 'Settings ready.'
++    $showApplyState = $pendingChanges -or $appliedChanges
++    if ($null -ne $script:applyStatus) {
++        if ($showApplyState) {
++            $script:applyStatus.Text = if ($pendingChanges) { 'Changes not applied.' } else { 'Changes applied.' }
++            $script:applyStatus.AccessibleName = $script:applyStatus.Text.TrimEnd('.')
++            $script:applyStatus.FillColor = [Drawing.ColorTranslator]::FromHtml($(if ($pendingChanges) { '#FFF6E6' } else { '#EDF6EF' }))
++            $script:applyStatus.BorderColor = [Drawing.ColorTranslator]::FromHtml($(if ($pendingChanges) { '#E6C994' } else { '#B7D3BE' }))
++            $script:applyStatus.ForeColor = [Drawing.ColorTranslator]::FromHtml($(if ($pendingChanges) { '#805A21' } else { '#316D41' }))
++            $script:applyStatus.AccentColor = [Drawing.ColorTranslator]::FromHtml($(if ($pendingChanges) { '#AE7119' } else { '#3F7D50' }))
++        }
++        $script:applyStatus.Visible = $showApplyState
++    }
++    $showStatus = ![string]::IsNullOrWhiteSpace($status.Text) -and !$showApplyState
++    $showNext = ![string]::IsNullOrWhiteSpace($script:nextAction.Text) -and $script:nextAction.Text -cne 'Apply settings to use this start.'
++    $status.Visible = $showStatus
++    $script:nextAction.Visible = $showNext
++    $script:managerStatePanel.Visible = $showStatus -or $showNext
++}
++
+ function Initialize-HrsBiomeLayout {
+     $form.SuspendLayout()
+     $recipe = $script:hrsDesignRecipe
+@@ -1081,8 +1132,9 @@ function Initialize-HrsBiomeLayout {
+     $frame.ColumnCount = 1
+     [void]$frame.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::Percent,100)))
+     $frame.AutoSize = $true
++    $frame.AutoSizeMode = 'GrowAndShrink'
+     $frame.Dock = 'Top'
+-    $frame.Padding = New-Object Windows.Forms.Padding(12)
++    $frame.Padding = New-Object Windows.Forms.Padding(8)
+     $form.Controls.Add($frame)
+     $script:managerSurface = New-Object BitWrecked.NativeGraphics.V1.SurfacePanel
+     $surface = $script:managerSurface
+@@ -1099,11 +1151,13 @@ function Initialize-HrsBiomeLayout {
+     $layout.ColumnCount = 1
+     [void]$layout.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::Percent,100)))
+     $layout.AutoSize = $true
++    $layout.AutoSizeMode = 'GrowAndShrink'
+     $layout.Dock = 'Top'
+     $layout.Padding = New-Object Windows.Forms.Padding($padding)
+     $surface.Controls.Add($layout)
+ 
+     $brand = New-Object Windows.Forms.PictureBox
++    $script:managerBrand = $brand
+     $brand.Size = New-Object Drawing.Size([int]$recipe.manager.logoSize,[int]$recipe.manager.logoSize)
+     $brand.BackColor = [Drawing.Color]::Transparent
+     $brand.AccessibleName = 'Bit Wrecked picture-only logo'
+@@ -1114,15 +1168,25 @@ function Initialize-HrsBiomeLayout {
+     $version.Font = New-HrsFont ([Math]::Max(8,([float]$recipe.typography.bodySize-1)))
+     $version.Tag = 'Accent'
+     $header = New-Object Windows.Forms.TableLayoutPanel
+-    $header.ColumnCount = 2
++    $header.ColumnCount = 3
+     $header.AutoSize = $true
++    $header.AutoSizeMode = 'GrowAndShrink'
++    [void]$header.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::AutoSize)))
+     [void]$header.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::Percent,100)))
+     [void]$header.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::AutoSize)))
+-    $version.Dock = 'Right'
++    $header.RowCount = 1
++    [void]$header.RowStyles.Add((New-Object Windows.Forms.RowStyle([Windows.Forms.SizeType]::AutoSize)))
++    $brand.Anchor = 'Left'
++    $title.Anchor = 'Left'
++    $title.TextAlign = [Drawing.ContentAlignment]::MiddleLeft
++    $title.AccessibleName = $title.Text
++    $version.Anchor = 'Right'
+     $version.TextAlign = [Drawing.ContentAlignment]::MiddleRight
+-    $brand.Margin = New-Object Windows.Forms.Padding(0)
++    $brand.Margin = New-Object Windows.Forms.Padding(0,0,10,0)
++    $title.Margin = New-Object Windows.Forms.Padding(0)
+     $version.Margin = New-Object Windows.Forms.Padding(8,0,0,0)
+-    $header.Controls.Add($brand,0,0); $header.Controls.Add($version,1,0)
++    $header.Controls.Add($brand,0,0); $header.Controls.Add($title,1,0)
++    $header.Controls.Add($version,2,0)
+     $script:managerIntro = New-Object Windows.Forms.Label
+     $script:managerIntro.Text = $recipe.copy.manager.intro
+     $script:managerIntro.Tag = 'Muted'
+@@ -1149,6 +1213,7 @@ function Initialize-HrsBiomeLayout {
+     $choices = New-Object Windows.Forms.TableLayoutPanel
+     $script:biomeChoices = $choices
+     $choices.AutoSize = $true; $choices.Dock = 'Top'; $choices.ColumnCount = 1
++    $choices.AutoSizeMode = 'GrowAndShrink'
+     [void]$choices.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::Percent,100)))
+     $choices.Padding = New-Object Windows.Forms.Padding($spacing)
+     $biomeGroup.Controls.Add($choices)
+@@ -1158,12 +1223,18 @@ function Initialize-HrsBiomeLayout {
+     $script:weightSummary = New-Object Windows.Forms.Label
+     $script:weightSummary.AutoSize = $true; $script:weightSummary.Tag = 'Muted'
+     $choiceRow = 0
+-    foreach ($control in @($selectionLabel,$selectionCombo,$chosenCombo,$editWeights,$script:weightSummary,$selectionNote)) {
++    foreach ($control in @($selectionCombo,$chosenCombo,$editWeights,$script:weightSummary)) {
+         $control.Dock = 'Top'
+-        $control.Margin = New-Object Windows.Forms.Padding(0,0,0,8)
++        $control.Margin = New-Object Windows.Forms.Padding(0,0,0,4)
+         $control.TabIndex = $choiceRow
++        $choices.RowCount = $choiceRow+1
++        [void]$choices.RowStyles.Add((New-Object Windows.Forms.RowStyle([Windows.Forms.SizeType]::AutoSize)))
+         $choices.Controls.Add($control,0,$choiceRow); $choiceRow++
+     }
++    # Native combo boxes need a little extra margin beyond their preferred row height.
++    $selectionCombo.Margin = New-Object Windows.Forms.Padding(0,0,0,8)
++    $chosenCombo.Margin = New-Object Windows.Forms.Padding(0,0,0,8)
++    $selectionNote.Margin = New-Object Windows.Forms.Padding(0)
+     $selectionNote.AutoSize = $true; $selectionNote.Tag = 'Muted'
+     $editWeights.Dock = 'None'; $editWeights.Anchor = 'Left'
+     $biomeProtectCheck.Text = 'Starting-biome protection'
+@@ -1175,11 +1246,15 @@ function Initialize-HrsBiomeLayout {
+     $script:nextAction.AutoSize = $true; $script:nextAction.Font = $status.Font
+     $script:nextAction.Tag = 'Muted'; $script:nextAction.AccessibleName = 'Next action'
+     $statePanel = New-Object Windows.Forms.TableLayoutPanel
++    $script:managerStatePanel = $statePanel
+     $statePanel.ColumnCount = 1; $statePanel.AutoSize = $true
++    $statePanel.AutoSizeMode = 'GrowAndShrink'
+     $status.Dock = 'Top'; $script:nextAction.Dock = 'Top'
+     $status.Margin = New-Object Windows.Forms.Padding(0,0,0,5)
+     $script:nextAction.Margin = New-Object Windows.Forms.Padding(0)
+     $statePanel.Controls.Add($status,0,0); $statePanel.Controls.Add($script:nextAction,0,1)
++    $status.Add_TextChanged({ Update-HrsStatusPresentation })
++    $script:nextAction.Add_TextChanged({ Update-HrsStatusPresentation })
+     $script:resultSummary = New-Object Windows.Forms.Label
+     $script:resultSummary.Text = 'Last start: no applied settings.'
+     $script:resultSummary.AutoSize = $true; $script:resultSummary.Tag = 'Muted'
+@@ -1191,17 +1266,26 @@ function Initialize-HrsBiomeLayout {
+         Set-HrsButtonStyle $button Secondary
+     }
+     $applyButton.TabIndex = 0; $launchButton.TabIndex = 1
+-    $actions.Controls.AddRange([Windows.Forms.Control[]]@($applyButton,$launchButton))
++    $script:applyStatus = New-Object BitWrecked.NativeGraphics.V1.StatusBadge
++    $script:applyStatus.Text = 'Changes not applied.'
++    $script:applyStatus.AccessibleName = 'Changes not applied'
++    $script:applyStatus.Font = New-HrsFont 8
++    $script:applyStatus.AutoSize = $true; $script:applyStatus.ShowAccent = $true
++    $script:applyStatus.CornerRadius = [float]$script:hrsDesignRecipe.geometry.cornerRadius
++    $script:applyStatus.Anchor = 'Left'; $script:applyStatus.TabStop = $false
++    $script:applyStatus.Margin = New-Object Windows.Forms.Padding(0,0,($spacing*2),0)
++    $script:applyStatus.Visible = $false
++    $actions.Controls.AddRange([Windows.Forms.Control[]]@($applyButton,$script:applyStatus,$launchButton))
+     $maintenance = New-Object Windows.Forms.FlowLayoutPanel
+     $maintenance.AutoSize = $true; $maintenance.WrapContents = $true
+-    $restoreButton.Text = 'Restore previous settings'
+-    $restoreButton.Size = New-Object Drawing.Size(220,32)
++    # QA preview: omit manual Restore from the UX; preserve automatic Apply recovery.
++    $restoreButton.Visible = $false
++    $restoreButton.TabStop = $false
+     $uninstallButton.Size = New-Object Drawing.Size(140,32)
+-    $restoreButton.Margin = New-Object Windows.Forms.Padding(0,0,$spacing,0)
+     $uninstallButton.Margin = New-Object Windows.Forms.Padding(0)
+-    $restoreButton.TabIndex = 0; $uninstallButton.TabIndex = 1
+-    Set-HrsButtonStyle $restoreButton Quiet; Set-HrsButtonStyle $uninstallButton Quiet
+-    $maintenance.Controls.AddRange([Windows.Forms.Control[]]@($restoreButton,$uninstallButton))
++    $uninstallButton.TabIndex = 0
++    Set-HrsButtonStyle $uninstallButton Secondary
++    [void]$maintenance.Controls.Add($uninstallButton)
+     $script:managerDetails = New-Object Windows.Forms.TableLayoutPanel
+     $script:managerDetails.ColumnCount = 1
+     [void]$script:managerDetails.ColumnStyles.Add((New-Object Windows.Forms.ColumnStyle([Windows.Forms.SizeType]::Percent,100)))
+@@ -1224,16 +1308,18 @@ function Initialize-HrsBiomeLayout {
+         if ($script:managerDetails.Visible) { $form.ScrollControlIntoView($script:managerDetails) } else { $form.ScrollControlIntoView($sender) }
+     })
+     $row = 0
+-    foreach ($control in @($header,$title,$script:managerIntro,$gameLabel,$gameNameBox,$gameNameHelp,$modes,$script:modeNote,$biomeGroup,$biomeProtectCheck,$biomeNote,$statePanel,$actions,$script:resultSummary,$maintenance,$detailsToggle,$script:managerDetails)) {
++    foreach ($control in @($header,$script:managerIntro,$gameLabel,$gameNameBox,$modes,$script:modeNote,$biomeGroup,$biomeProtectCheck,$statePanel,$actions,$script:resultSummary,$maintenance,$detailsToggle,$script:managerDetails)) {
+         $control.Dock = 'Top'
+         $control.Margin = New-Object Windows.Forms.Padding(0,0,0,$spacing)
+         if ($control -is [Windows.Forms.Label]) { $control.AutoSize = $true }
+         $control.TabIndex = $row
+         if (!$control.AccessibleName) { $control.AccessibleName = $control.Text }
++        $layout.RowCount = $row+1
++        [void]$layout.RowStyles.Add((New-Object Windows.Forms.RowStyle([Windows.Forms.SizeType]::AutoSize)))
+         $layout.Controls.Add($control,0,$row); $row++
+     }
+-    $header.Margin = New-Object Windows.Forms.Padding(0,0,0,8)
+-    $title.Margin = New-Object Windows.Forms.Padding(0,0,0,8)
++    $header.Margin = New-Object Windows.Forms.Padding(0,0,0,4)
++    $title.Margin = New-Object Windows.Forms.Padding(0)
+     $gameLabel.Margin = New-Object Windows.Forms.Padding(0,0,0,6)
+     $gameNameBox.Margin = New-Object Windows.Forms.Padding(0,0,0,6)
+     $biomeProtectCheck.Margin = New-Object Windows.Forms.Padding(0,0,0,6)
+@@ -1368,6 +1454,7 @@ function Update-HrsStatus {
+     }
+     $status.Text = if ($script:managerError) { $script:managerError } elseif ($script:managerNotice) { $script:managerNotice } else { $readyText }
+     $script:nextAction.Text = $nextText
++    Update-HrsStatusPresentation
+     Update-HrsTextWidths
+ }
+ 

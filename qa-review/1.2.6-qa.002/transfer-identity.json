@@ -1,0 +1,481 @@
+{
+    "schema":  "hrs-local-transfer-review/v1",
+    "candidateId":  "1.2.6-qa.002",
+    "observedUtc":  "2026-10-04T17:00:55.8743339Z",
+    "checked":  59,
+    "mismatches":  0,
+    "files":  [
+                  {
+                      "path":  "1.2.6-qa.002.zip",
+                      "expectedSha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5",
+                      "actualSha256":  "F578291FBC41E87F2C06C82CB9F4157C7F46BC66B8D2DC0D1D734F63CA385FA5",
+                      "expectedBytes":  208801,
+                      "actualBytes":  208801,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "1.2.6-qa.002.zip.companion.zip",
+                      "expectedSha256":  "2CDF9275656DF05F7136892FD4975EB267EFE361381211F21FA1F8CB854FC8AB",
+                      "actualSha256":  "2CDF9275656DF05F7136892FD4975EB267EFE361381211F21FA1F8CB854FC8AB",
+                      "expectedBytes":  45432,
+                      "actualBytes":  45432,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "1.2.6-qa.002.zip.receipt.json",
+                      "expectedSha256":  "26E28374D4451C0425625BB93F5F7607CF1FF79E38A2BF143B1B62D17C32C3DA",
+                      "actualSha256":  "26E28374D4451C0425625BB93F5F7607CF1FF79E38A2BF143B1B62D17C32C3DA",
+                      "expectedBytes":  1087,
+                      "actualBytes":  1087,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/context-manifest.json",
+                      "expectedSha256":  "4022A803186EC3C20B827A6347D29F3B389A52BC6C4EFC65FF1C2D4F8E31ECE5",
+                      "actualSha256":  "4022A803186EC3C20B827A6347D29F3B389A52BC6C4EFC65FF1C2D4F8E31ECE5",
+                      "expectedBytes":  4847,
+                      "actualBytes":  4847,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/builds/1.2.6-qa.002/build-record.json",
+                      "expectedSha256":  "D0A4BF534D275A39DBD0A4D531E91EC5E7C72AD39640EA30B90819C27A582FDE",
+                      "actualSha256":  "D0A4BF534D275A39DBD0A4D531E91EC5E7C72AD39640EA30B90819C27A582FDE",
+                      "expectedBytes":  6696,
+                      "actualBytes":  6696,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/qa/cases.json",
+                      "expectedSha256":  "3D28F561964317BA6EFAD0B0A80F812A899A3FBBE5179B8D24B52E0B55F68D76",
+                      "actualSha256":  "3D28F561964317BA6EFAD0B0A80F812A899A3FBBE5179B8D24B52E0B55F68D76",
+                      "expectedBytes":  69008,
+                      "actualBytes":  69008,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/qa/rel.json",
+                      "expectedSha256":  "F138A69A0939763A4C71B7B390F487DD2191659AEE44CF0105D425F4D03EF364",
+                      "actualSha256":  "F138A69A0939763A4C71B7B390F487DD2191659AEE44CF0105D425F4D03EF364",
+                      "expectedBytes":  16749,
+                      "actualBytes":  16749,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/BiomePreference.cs",
+                      "expectedSha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+                      "actualSha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+                      "expectedBytes":  3455,
+                      "actualBytes":  3455,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0140.cs",
+                      "expectedSha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224",
+                      "actualSha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224",
+                      "expectedBytes":  3819,
+                      "actualBytes":  3819,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0147.cs",
+                      "expectedSha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7",
+                      "actualSha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7",
+                      "expectedBytes":  1293,
+                      "actualBytes":  1293,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0167.cs",
+                      "expectedSha256":  "DF08273BA5607D25147C39BDB3AC85B375A95A9E4EFCEBAE295C126FACB00F71",
+                      "actualSha256":  "DF08273BA5607D25147C39BDB3AC85B375A95A9E4EFCEBAE295C126FACB00F71",
+                      "expectedBytes":  39423,
+                      "actualBytes":  39423,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0181.cs",
+                      "expectedSha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A",
+                      "actualSha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A",
+                      "expectedBytes":  5507,
+                      "actualBytes":  5507,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0184.cs",
+                      "expectedSha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC",
+                      "actualSha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC",
+                      "expectedBytes":  6901,
+                      "actualBytes":  6901,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0185.cs",
+                      "expectedSha256":  "A6B96DF463A28B747835CC88E6DF4074D0E366E7BA4ACCDAC8B18643A77098AE",
+                      "actualSha256":  "A6B96DF463A28B747835CC88E6DF4074D0E366E7BA4ACCDAC8B18643A77098AE",
+                      "expectedBytes":  3531,
+                      "actualBytes":  3531,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0213.cs",
+                      "expectedSha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2",
+                      "actualSha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2",
+                      "expectedBytes":  24044,
+                      "actualBytes":  24044,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0217.cs",
+                      "expectedSha256":  "16CBA3D46327FC1A3C8E01A961685CDA4908DF3FFA131BB01C8D4AF1CA7A3187",
+                      "actualSha256":  "16CBA3D46327FC1A3C8E01A961685CDA4908DF3FFA131BB01C8D4AF1CA7A3187",
+                      "expectedBytes":  5593,
+                      "actualBytes":  5593,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0218.cs",
+                      "expectedSha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD",
+                      "actualSha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD",
+                      "expectedBytes":  6069,
+                      "actualBytes":  6069,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PlacedPoiResolver.cs",
+                      "expectedSha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0",
+                      "actualSha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0",
+                      "expectedBytes":  16709,
+                      "actualBytes":  16709,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PlacedTraderResolver.cs",
+                      "expectedSha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD",
+                      "actualSha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD",
+                      "expectedBytes":  5143,
+                      "actualBytes":  5143,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PolicyV1.cs",
+                      "expectedSha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+                      "actualSha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+                      "expectedBytes":  9386,
+                      "actualBytes":  9386,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PolicyV2.cs",
+                      "expectedSha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+                      "actualSha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+                      "expectedBytes":  8039,
+                      "actualBytes":  8039,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/ResultV1.cs",
+                      "expectedSha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356",
+                      "actualSha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356",
+                      "expectedBytes":  5681,
+                      "actualBytes":  5681,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "context/qa-workspace.json",
+                      "expectedSha256":  "2CFD1A8A2BF55EDE23CEE148BBABD925C7FE6B7550E09F121B0B55ACC42D9D4E",
+                      "actualSha256":  "2CFD1A8A2BF55EDE23CEE148BBABD925C7FE6B7550E09F121B0B55ACC42D9D4E",
+                      "expectedBytes":  80,
+                      "actualBytes":  80,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/src/launcher/m0160.psm1",
+                      "expectedSha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020",
+                      "actualSha256":  "FC975555AEB5B5F6020FBCD94711A6FFC838246A8F652A8E5F6E02CF2E8CC020",
+                      "expectedBytes":  5799,
+                      "actualBytes":  5799,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/src/launcher/m0161.psm1",
+                      "expectedSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                      "actualSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                      "expectedBytes":  47103,
+                      "actualBytes":  47103,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/src/launcher/m0162.psm1",
+                      "expectedSha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952",
+                      "actualSha256":  "FE7498B861833C8BF454FC4CF4A7F2E51C37AF608EEB2F79554D493A2F07C952",
+                      "expectedBytes":  23442,
+                      "actualBytes":  23442,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/src/launcher/m0164.psm1",
+                      "expectedSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                      "actualSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                      "expectedBytes":  45913,
+                      "actualBytes":  45913,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/src/launcher/m0166.psm1",
+                      "expectedSha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E",
+                      "actualSha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E",
+                      "expectedBytes":  7230,
+                      "actualBytes":  7230,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/ui/logo.ico",
+                      "expectedSha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F",
+                      "actualSha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F",
+                      "expectedBytes":  125633,
+                      "actualBytes":  125633,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/ui/p0158.ps1",
+                      "expectedSha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3",
+                      "actualSha256":  "5886C75BEF29F29E374A0B61D2F323A9FD86A7E3C610D92AF367A4CF7C8D4FA3",
+                      "expectedBytes":  102769,
+                      "actualBytes":  102769,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/verified/main/d0163.dll",
+                      "expectedSha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B",
+                      "actualSha256":  "E5EA99BBD4DBAE122264835CC2090157F3A549C0E6FB379EB5DF5860EEF56D7B",
+                      "expectedBytes":  76800,
+                      "actualBytes":  76800,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/dev/verified/main/ModInfo.xml",
+                      "expectedSha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3",
+                      "actualSha256":  "3D23E282875296A3FD4AEBCF3DE31A9DFE9464737CA361F192AC03C16846A5B3",
+                      "expectedBytes":  412,
+                      "actualBytes":  412,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/LICENSE.md",
+                      "expectedSha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919",
+                      "actualSha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919",
+                      "expectedBytes":  708,
+                      "actualBytes":  708,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/package-manifest.json",
+                      "expectedSha256":  "07D61DE6D4E5DE680AB0799D6701818077B885160B4F36DC7C293A63ED13AEB1",
+                      "actualSha256":  "07D61DE6D4E5DE680AB0799D6701818077B885160B4F36DC7C293A63ED13AEB1",
+                      "expectedBytes":  3011,
+                      "actualBytes":  3011,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/README.md",
+                      "expectedSha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39",
+                      "actualSha256":  "12E21462F8C9A4C44F2BA8E8C569BEB5A5D1432792272EA76969270383C47A39",
+                      "expectedBytes":  5143,
+                      "actualBytes":  5143,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.6/START.bat",
+                      "expectedSha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194",
+                      "actualSha256":  "28AA192898FF872F4AFB8F0F97C4A7053DFF6B7DB6BCD327E555CAFE1F379194",
+                      "expectedBytes":  553,
+                      "actualBytes":  553,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "PACKAGE-IDENTITY.json",
+                      "expectedSha256":  "36A224BE749131864EE7A5A98AC8B999A3703827D5FD0D64B444E3CDB3F2C4A2",
+                      "actualSha256":  "36A224BE749131864EE7A5A98AC8B999A3703827D5FD0D64B444E3CDB3F2C4A2",
+                      "expectedBytes":  1516,
+                      "actualBytes":  1516,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "QA-REVIEW-CHECKLIST.md",
+                      "expectedSha256":  "721454EFE3D76271794CF2F06600B56E30F9E8A12F7813BF187C164AE1B1F08A",
+                      "actualSha256":  "721454EFE3D76271794CF2F06600B56E30F9E8A12F7813BF187C164AE1B1F08A",
+                      "expectedBytes":  4135,
+                      "actualBytes":  4135,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "QA-WORKFLOW.md",
+                      "expectedSha256":  "ABD59549ECEBC3A4C09349B271C41DCDC890C5B18A4ACB5C95FF629AD4C8DE36",
+                      "actualSha256":  "ABD59549ECEBC3A4C09349B271C41DCDC890C5B18A4ACB5C95FF629AD4C8DE36",
+                      "expectedBytes":  1893,
+                      "actualBytes":  1893,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/customer-manager.png",
+                      "expectedSha256":  "51F750284FB3F7AEB7134F11826E9B71CAD2642D33ABD79C2C35F0135C7186C3",
+                      "actualSha256":  "51F750284FB3F7AEB7134F11826E9B71CAD2642D33ABD79C2C35F0135C7186C3",
+                      "expectedBytes":  28295,
+                      "actualBytes":  28295,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/customer-manager-weights.png",
+                      "expectedSha256":  "324BBD2C18A5788B4CF416769C9B4570B28BA1652EBDE03E69527C7416918F41",
+                      "actualSha256":  "324BBD2C18A5788B4CF416769C9B4570B28BA1652EBDE03E69527C7416918F41",
+                      "expectedBytes":  16683,
+                      "actualBytes":  16683,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/extracted-release-gate.json",
+                      "expectedSha256":  "A554254D1AB743B5934ABA1DE5B91EE80A2066647FDE4D2044D8F42035F760C9",
+                      "actualSha256":  "A554254D1AB743B5934ABA1DE5B91EE80A2066647FDE4D2044D8F42035F760C9",
+                      "expectedBytes":  2721,
+                      "actualBytes":  2721,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/installed-environment.json",
+                      "expectedSha256":  "BAAC41236A683F7364B7C0E5046E84FE68D9B26353661183559E53F7D36FDFA7",
+                      "actualSha256":  "BAAC41236A683F7364B7C0E5046E84FE68D9B26353661183559E53F7D36FDFA7",
+                      "expectedBytes":  534,
+                      "actualBytes":  534,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/NEXUS-LISTING-DRAFT.md",
+                      "expectedSha256":  "3BF3DBAE04BB49F7DF19FBEFAA954E854507E2618161716FE29B4848FEB337A9",
+                      "actualSha256":  "3BF3DBAE04BB49F7DF19FBEFAA954E854507E2618161716FE29B4848FEB337A9",
+                      "expectedBytes":  3937,
+                      "actualBytes":  3937,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/qualified-build-reuse-tests.json",
+                      "expectedSha256":  "44994B517314A817E1CA2DDD342EF49FBCEF4BF4ABC9AF1B07BD87B327F14DD1",
+                      "actualSha256":  "44994B517314A817E1CA2DDD342EF49FBCEF4BF4ABC9AF1B07BD87B327F14DD1",
+                      "expectedBytes":  16103,
+                      "actualBytes":  16103,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/RELEASE-NOTES.md",
+                      "expectedSha256":  "9C381DBEB603AC8E692049DF30C3BF92F12C6CDC5E0591E436AAEC1A2E6D4457",
+                      "actualSha256":  "9C381DBEB603AC8E692049DF30C3BF92F12C6CDC5E0591E436AAEC1A2E6D4457",
+                      "expectedBytes":  3229,
+                      "actualBytes":  3229,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/source-integration-checks.json",
+                      "expectedSha256":  "0B515DC49BF1BEEA2D2D698796AD0A1B8626BEC2B7AE98455589A8AE3245B690",
+                      "actualSha256":  "0B515DC49BF1BEEA2D2D698796AD0A1B8626BEC2B7AE98455589A8AE3245B690",
+                      "expectedBytes":  5407,
+                      "actualBytes":  5407,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/source-release-gate.json",
+                      "expectedSha256":  "862220643054D75A4A31AC44B25A894E2DD1BEFA7B738D9A973C0156D7CB4BC2",
+                      "actualSha256":  "862220643054D75A4A31AC44B25A894E2DD1BEFA7B738D9A973C0156D7CB4BC2",
+                      "expectedBytes":  2721,
+                      "actualBytes":  2721,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/source-review.json",
+                      "expectedSha256":  "7C1BFD05135FEE30272686D755F6A9472054B7E7AE21F6DC48E480C212FFF0B5",
+                      "actualSha256":  "7C1BFD05135FEE30272686D755F6A9472054B7E7AE21F6DC48E480C212FFF0B5",
+                      "expectedBytes":  5496,
+                      "actualBytes":  5496,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "review/verification.json",
+                      "expectedSha256":  "CCC2E1F1E4C942284ED0C24606740FECA75DC7D3A637EC8B37F4119EA6518791",
+                      "actualSha256":  "CCC2E1F1E4C942284ED0C24606740FECA75DC7D3A637EC8B37F4119EA6518791",
+                      "expectedBytes":  38986,
+                      "actualBytes":  38986,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "START-HERE.md",
+                      "expectedSha256":  "306C3C5D2DBB5AF49E4D0487D560FB11C8E0BB4D8C57845F90AEBFDE0F621501",
+                      "actualSha256":  "306C3C5D2DBB5AF49E4D0487D560FB11C8E0BB4D8C57845F90AEBFDE0F621501",
+                      "expectedBytes":  4392,
+                      "actualBytes":  4392,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/candidate-registry.json",
+                      "expectedSha256":  "869471C09E57FF29A8B9064173E5620462400A1C6BA19D0436F2C2C82FB87605",
+                      "actualSha256":  "869471C09E57FF29A8B9064173E5620462400A1C6BA19D0436F2C2C82FB87605",
+                      "expectedBytes":  4906,
+                      "actualBytes":  4906,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/Complete-HrsQaCycle.ps1",
+                      "expectedSha256":  "9DB51C2305260FF53F48209C11269F5C764379FF8EDA96B015A3F27A906D8553",
+                      "actualSha256":  "9DB51C2305260FF53F48209C11269F5C764379FF8EDA96B015A3F27A906D8553",
+                      "expectedBytes":  8206,
+                      "actualBytes":  8206,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/Export-HrsQaRun.ps1",
+                      "expectedSha256":  "A0AC65FAD74AAC067EF78A732A4E79C6CF8AE88663F3F13A304A968F14514AE3",
+                      "actualSha256":  "A0AC65FAD74AAC067EF78A732A4E79C6CF8AE88663F3F13A304A968F14514AE3",
+                      "expectedBytes":  13411,
+                      "actualBytes":  13411,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/HrsIdentity.ps1",
+                      "expectedSha256":  "7958E148D05BF481F696B3F9D8D6D01B4137AF2B0789764A84070B1E65EE9496",
+                      "actualSha256":  "7958E148D05BF481F696B3F9D8D6D01B4137AF2B0789764A84070B1E65EE9496",
+                      "expectedBytes":  12144,
+                      "actualBytes":  12144,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/HrsQaTools.psm1",
+                      "expectedSha256":  "B7FB2A73CA7F315F0757C8ABEEB8A0B9826D602C0FA02097A18116C0080DED3C",
+                      "actualSha256":  "B7FB2A73CA7F315F0757C8ABEEB8A0B9826D602C0FA02097A18116C0080DED3C",
+                      "expectedBytes":  57125,
+                      "actualBytes":  57125,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/Record-HrsQaObservation.ps1",
+                      "expectedSha256":  "F9EF59FF33222D11DE5F954E6D5F0256D6C87EC9DA4F42D52EC4F79BC5062977",
+                      "actualSha256":  "F9EF59FF33222D11DE5F954E6D5F0256D6C87EC9DA4F42D52EC4F79BC5062977",
+                      "expectedBytes":  7476,
+                      "actualBytes":  7476,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/Start-HrsQaRun.ps1",
+                      "expectedSha256":  "25C46EE0E37266C3AA25AAC4CA447B3233A2E9D90D513AE60BD475DD0B08200C",
+                      "actualSha256":  "25C46EE0E37266C3AA25AAC4CA447B3233A2E9D90D513AE60BD475DD0B08200C",
+                      "expectedBytes":  4617,
+                      "actualBytes":  4617,
+                      "pass":  true
+                  },
+                  {
+                      "path":  "tools/Test-HrsRelease.ps1",
+                      "expectedSha256":  "10FA6C183A6544F9223F50E666D52DD43ABA50761313D5B57F0D0E88A71DFAEB",
+                      "actualSha256":  "10FA6C183A6544F9223F50E666D52DD43ABA50761313D5B57F0D0E88A71DFAEB",
+                      "expectedBytes":  972,
+                      "actualBytes":  972,
+                      "pass":  true
+                  }
+              ]
+}
