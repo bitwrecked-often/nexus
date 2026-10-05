@@ -1,0 +1,112 @@
+{
+    "schema":  "hrs-guided-human-observation/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "runId":  "hrsqa-20261005T204825Z-8bb9a881",
+    "caseId":  "HRS-BIOME-Manager",
+    "parentStepId":  "review-04",
+    "followupStepId":  "review-04a",
+    "phase":  "TargetedFeatureVisualReview",
+    "operatorReport":  "ah I found where the bug is, only when I click starting-biome protection adn have it on Choose a biome on Wasteland does the Installed files ned verification: DEPLOyMENT_STATIC_FILE_DRIFT",
+    "disposition":  "D01 display condition supported by operator follow-up and source; D08 visibility/default work requested; subsequent keyboard review passed its scoped step",
+    "devTaskId":  "D01",
+    "savedIntent":  {
+                        "gameName":  "Test_Random_Spawn_Wasteland_02",
+                        "mode":  "RandomSafe",
+                        "selection":  "Chosen",
+                        "chosenBiome":  8,
+                        "weights":  null
+                    },
+    "readOnlyObservations":  {
+                                 "filesObservedUtc":  "2026-10-05T21:07:05.8931333Z",
+                                 "dllSha256":  "D8C73D5A4126D1BC7826C0E507A946B53FA3F79E6DD3053E90F3BB593CF33EF8",
+                                 "modInfoSha256":  "A17E85688E8341369892801DB2BBEE06842D7358EEE25B47A2D07E31557F9DAE",
+                                 "policySha256":  "DFFD46A36B9F978822933C4546F96067DD74F511583C4614A5B1B7A5A0936817",
+                                 "matchesCapturedBeforeState":  true,
+                                 "gameRunning":  false,
+                                 "uiObservedUtc":  "2026-10-05T21:07:29.9878756Z",
+                                 "managerProcessId":  26028,
+                                 "uiGameName":  "Test_Random_Spawn_Wasteland_02",
+                                 "rawDiagnosticVisible":  true,
+                                 "helpDialogOpen":  true,
+                                 "keyboardMethodAndEscapeResult":  "Not attested"
+                             },
+    "sourceAnalysis":  {
+                           "checkboxHandler":  "p0158.ps1:2294 calls Update-HrsStatus without RefreshInstallation",
+                           "savedIntentComparison":  "p0158.ps1:1566-1575 compares Game Name, mode and selection arguments",
+                           "displayCondition":  "p0158.ps1:1710-1729 displays cached installation reason for matching saved policy with invalid installation; differing drafts show pending guidance",
+                           "staticInventory":  "m0162.psm1:119 compares installed static file bytes/hashes to the candidate",
+                           "scope":  "Source and saved intent corroborate operator reports. No per-combination capture was supplied for the four-state comparison."
+                       },
+    "formalCaseOutcome":  "Pending",
+    "formalCasePassClaimed":  false,
+    "keyboardTestOutcome":  "Pass for prepared guided step; full formal cases Pending",
+    "fullValidationReady":  false,
+    "expandedDetailsScreenshot":  {
+                                      "recordedUtc":  "2026-10-05T21:12:19.9798759Z",
+                                      "operatorReport":  "also you can see the bug, in part, if you click on game details on the bottom they are exposed there",
+                                      "source":  "User-provided expanded-details crop in this feedback turn",
+                                      "localImagePath":  null,
+                                      "diagnosticLocations":  [
+                                                                  "Main guidance above Apply Settings",
+                                                                  "Expanded Game details Installation line"
+                                                              ],
+                                      "pendingBadge":  "Changes not applied.",
+                                      "launchAppearance":  "Disabled",
+                                      "mainHistory":  "Last start: Random start completed.",
+                                      "detailedHistory":  "Last start for current settings: COMPLETED / RELOCATION_COMPLETED",
+                                      "detailsAssessment":  "Technical diagnostic location is intended under D01; the confusing main guidance remains open",
+                                      "historyAssessment":  "D06 must attribute Current result to saved/applied policy even with unverified installation; screenshot does not establish new candidate gameplay success",
+                                      "operatorHistoryConfusion":  "Not reported",
+                                      "comparisonScope":  "Test 4A compares only the line above Apply; Game details may retain the diagnostic for other draft choices",
+                                      "toggleComparisonCompleted":  false,
+                                      "keyboardChecksCompleted":  false
+                                  },
+    "relatedDevTaskIds":  [
+                              "D01",
+                              "D06",
+                              "D08"
+                          ],
+    "comparisonFollowup":  {
+                               "recordedUtc":  "2026-10-05T21:18:22.6779435Z",
+                               "operatorReport":  "ok so the error is visble in the game details section if you show it, but as for the other biomes, it works fine, even though, technially we dont need that option to show if Forst is picked, as there is no starting biome debuff, so thats extra we dont need.",
+                               "diagnosticComparison":  "Reported other biomes behave normally and diagnostic remains in expanded Game details",
+                               "scope":  "Supports the saved-policy display pattern; individual off/on results for all four combinations were not supplied",
+                               "outcome":  "CompleteWithFinding",
+                               "formalCaseOutcome":  "Pending"
+                           },
+    "forestProtectionUxRequest":  {
+                                      "ownerRequest":  "Omit the protection option when Forest is explicitly chosen",
+                                      "sourceEvidence":  [
+                                                             "PlacedPoiResolver.cs:257-285 maps Forest biome3 with protectionFamily0",
+                                                             "c0167.cs:449-451 requires positive protection family for fresh arrival",
+                                                             "c0167.cs:278-285 restores an existing character protection family only when policy protection is enabled"
+                                                         ],
+                                      "devTaskId":  "D08",
+                                      "rule":  "Hide only for Random / Chosen / Forest; keep Any and Weighted available",
+                                      "retainPreference":  true,
+                                      "preserveExistingCharacterProtection":  true,
+                                      "runtimePolicyChanges":  "None requested",
+                                      "implementationStatus":  "Open DEV work; not implemented in frozen candidate"
+                                  },
+    "ownerProtectionDefaultDecision":  {
+                                           "recordedLocalDate":  "2026-10-05",
+                                           "operatorReport":  "yeah the default should be that checkbox on. The user has to uncheck it for it to be disabled, which for challenge runs is a good option for some folks.",
+                                           "devTaskId":  "D08",
+                                           "defaultWhenNoSavedRandomPreference":  "On",
+                                           "restoredRandomSafe":  "On",
+                                           "restoredRandom":  "Off; preserve explicit opt-out",
+                                           "restoredStandard":  "Keep Standard selected; latent Random preference defaults On because Standard policy does not encode it",
+                                           "inSessionPreference":  "Retain On or Off through Standard, Chosen Forest and selection-method changes",
+                                           "persistenceScope":  "Saved Random policy encodes its protection preference. Saving Standard and reopening cannot restore a separate previous Random preference under the current schema.",
+                                           "sourceEvidence":  [
+                                                                  "p0158.ps1:758-762 constructs checkbox without a Checked assignment",
+                                                                  "p0158.ps1:1064 restores Checked from policy mode RandomSafe",
+                                                                  "p0158.ps1:2269-2271 restores installed saved policy when shown"
+                                                              ],
+                                           "currentFreshDefault":  "Off before policy restoration; source inspection only",
+                                           "policySchemaChanges":  "None requested",
+                                           "implementationStatus":  "Open DEV work; not implemented in frozen candidate",
+                                           "newHumanChecksConfirmed":  0
+                                       },
+    "subsequentKeyboardReview":  "human-review-04.json"
+}

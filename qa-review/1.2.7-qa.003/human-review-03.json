@@ -1,0 +1,22 @@
+{
+    "schema":  "hrs-guided-human-observation/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "runId":  "hrsqa-20261005T204825Z-8bb9a881",
+    "caseId":  "HRS-BIOME-Manager",
+    "stepId":  "review-03",
+    "phase":  "TargetedFeatureVisualReview",
+    "observedUtc":  "2026-10-05T21:04:05.6344333Z",
+    "operatorReport":  "ok that works as expected, no issues there.",
+    "stepOutcome":  "Pass",
+    "allZeroGuard":  "Reported correct: Use Weights disabled with all five zeros",
+    "forestOnlyShare":  "Reported correct: Forest 15, other weights zero, Forest 100 percent share",
+    "draftRetention":  "Reported correct after Use Weights, Any/Custom switch and reopening",
+    "evidenceScope":  "Operator attestation to the prepared test; no screenshot or independent value capture supplied",
+    "formalConfirmedChecks":  [
+                                  "all-zero-blocked",
+                                  "weight-switch-retained"
+                              ],
+    "formalCaseOutcome":  "Pending",
+    "formalCasePassClaimed":  false,
+    "fullValidationReady":  false
+}

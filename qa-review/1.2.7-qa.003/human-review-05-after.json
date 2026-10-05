@@ -1,0 +1,28 @@
+{
+    "schema":  "hrs-qa-native-capture/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "runId":  "hrsqa-20261005T212523Z-2c81bff8",
+    "caseId":  "HRS-UX-GEOMETRY",
+    "observedUtc":  "2026-10-05T21:29:31.0647844Z",
+    "processId":  26028,
+    "title":  "Bit Wrecked - New Player Random Start",
+    "foreground":  false,
+    "left":  1118,
+    "top":  137,
+    "width":  1845,
+    "height":  1899,
+    "workArea":  {
+                     "left":  0,
+                     "top":  0,
+                     "width":  3840,
+                     "height":  2052
+                 },
+    "targetWindowDpi":  96,
+    "dpiQualification":  "Current display only; target-window DPI does not independently establish OS scale or qualify multiple profiles",
+    "captureMethod":  "Actual desktop pixels via CopyFromScreen with physical capture-thread coordinates",
+    "screenshot":  "manager-small-bottom-screen.png",
+    "screenshotSha256":  "E00AED661D3148D8E10F52E09983527C24FD2BE1BE686C670ECA67CBED4F0CCF",
+    "note":  "Manager is not foreground; inspect this direct screen capture for occlusion before using it as layout evidence",
+    "visualReview":  "Direct screen capture inspected: full expanded-details form and main controls readable without covering-window occlusion. This captures a larger current window than the baseline, not the requested reduced viewport.",
+    "minimumStateCaptured":  false
+}

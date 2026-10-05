@@ -1,0 +1,19 @@
+{
+    "schema":  "hrs-guided-human-observation/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "runId":  "hrsqa-20261005T212523Z-2c81bff8",
+    "caseId":  "HRS-UX-GEOMETRY",
+    "stepId":  "review-06",
+    "phase":  "TargetedFeatureVisualReview",
+    "observedUtc":  "2026-10-05T21:44:50.0166848Z",
+    "operatorReport":  "that all looks good, no warping of the gui",
+    "stepOutcome":  "Pass for reported guided step",
+    "observed":  "No visible distortion or progressive narrowing reported through three editor/Cancel returns; current size/profile only",
+    "evidenceScope":  "Operator attestation. After outer bounds are 1845x1899, same as pre-selection reference; no measured baseline after Custom selection and no per-return capture. Screenshot obscured and rejected for visual verification.",
+    "formalConfirmedChecks":  [
+
+                              ],
+    "formalCaseOutcome":  "Pending",
+    "formalCasePassClaimed":  false,
+    "fullValidationReady":  false
+}

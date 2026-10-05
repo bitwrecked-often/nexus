@@ -1,0 +1,30 @@
+{
+    "schema":  "hrs-guided-human-observation/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "runId":  "hrsqa-20261005T204825Z-8bb9a881",
+    "caseId":  "HRS-BIOME-Manager",
+    "stepId":  "review-04",
+    "phase":  "TargetedFeatureVisualReview",
+    "observedUtc":  "2026-10-05T21:24:54.6093779Z",
+    "operatorReport":  "I am unable to click behind the help screen as it is a pop up, This is expected. all other things work fine.",
+    "stepOutcome":  "Pass",
+    "keyboardNavigation":  "Operator reports the prepared Tab/Shift+Tab, radio arrows, protection Space and Help Enter/Escape checks work correctly",
+    "helpModalBehavior":  "Clicking the main window behind Help is blocked as expected for the modal popup",
+    "helpReadabilityAndScroll":  "Reported correct within the prepared step; current display only",
+    "evidenceScope":  "Operator attestation to the prepared guided step; no screenshot supplied. No Narrator, other display profile, detailed content comprehension or full case pass claimed.",
+    "formalConfirmedChecks":  [
+                                  "keyboard-access"
+                              ],
+    "additionalCaseChecks":  [
+                                 {
+                                     "caseId":  "HRS-UX-HELP",
+                                     "runId":  "hrsqa-20261005T210418Z-078e3d5f",
+                                     "confirmedChecks":  [
+                                                             "help-keyboard-reachable"
+                                                         ]
+                                 }
+                             ],
+    "formalCaseOutcome":  "Pending",
+    "formalCasePassClaimed":  false,
+    "fullValidationReady":  false
+}

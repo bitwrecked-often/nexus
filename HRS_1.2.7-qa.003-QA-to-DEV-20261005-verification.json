@@ -1,0 +1,24 @@
+{
+    "schema":  "hrs-dev-transfer-verification/v1",
+    "verifiedUtc":  "2026-10-05T22:28:37.3755003Z",
+    "zip":  "HRS_1.2.7-qa.003-QA-to-DEV-20261005.zip",
+    "sha256":  "BB72B903F9B63A2C65479DB99B94EF90BA86FF84C6CEBBB17B34135E8178263F",
+    "zipBytes":  26889495,
+    "archiveRoundTripFiles":  567,
+    "manifestFilesVerified":  566,
+    "currentHandoffIdentitiesVerified":  26,
+    "canonicalIdentitiesVerified":  21,
+    "currentHandoffLinks":  39,
+    "exactBaselineMembers":  395,
+    "localEvidenceRuns":  6,
+    "mappedPolicyWatchIdentities":  16,
+    "historicalDocumentIdentitiesVerified":  17,
+    "historicalProvenanceArtifactsExplicitlyExcluded":  4,
+    "baselineReferenceGapsRecorded":  27,
+    "taskIdsVerified":  12,
+    "formalCasesStillPending":  46,
+    "paperworkRevision":  20,
+    "failures":  [
+
+                 ]
+}

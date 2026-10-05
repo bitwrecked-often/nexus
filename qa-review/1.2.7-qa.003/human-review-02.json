@@ -1,0 +1,22 @@
+{
+    "schema":  "hrs-guided-human-observation/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "runId":  "hrsqa-20261005T204825Z-8bb9a881",
+    "caseId":  "HRS-BIOME-Manager",
+    "stepId":  "review-02",
+    "phase":  "TargetedFeatureVisualReview",
+    "observedUtc":  "2026-10-05T21:01:01.8353957Z",
+    "operatorReport":  "ok that looks good, cancel did not save the values, changing forest to 15% on its own changed the weights, even though that goes above 100%, that math still works.",
+    "stepOutcome":  "Pass",
+    "scope":  "Weight-editor Cancel and readability reported correct by the operator",
+    "cancelEditsDiscarded":  true,
+    "editorReadability":  "Reported as good",
+    "liveShareRecalculation":  "Reported by operator, exact inputs and shares not captured",
+    "relativeWeightNote":  "Numeric inputs are relative weights, not percentages. Each displayed share is weight divided by total weight; eligibility may change actual runtime odds.",
+    "formalConfirmedChecks":  [
+                                  "weight-cancel-discarded"
+                              ],
+    "formalCaseOutcome":  "Pending",
+    "formalCasePassClaimed":  false,
+    "fullValidationReady":  false
+}

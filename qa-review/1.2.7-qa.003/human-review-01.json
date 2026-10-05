@@ -1,0 +1,32 @@
+{
+  "schema": "hrs-guided-human-observation/v1",
+  "candidateId": "1.2.7-qa.003",
+  "runId": "hrsqa-20261005T204825Z-8bb9a881",
+  "caseId": "HRS-BIOME-Manager",
+  "stepId": "review-01",
+  "phase": "TargetedFeatureVisualReview",
+  "operatorReport": "all looks right except this message here, I dont understand.",
+  "stepOutcome": "Issue",
+  "selectionAndLayout": "Reported as expected by operator; individual states were not separately attested",
+  "statusComprehension": "Operator did not understand the displayed internal diagnostic",
+  "displayedMessage": "Installed files need verification: DEPLOYMENT_STATIC_FILE_DRIFT",
+  "screenshot": {
+    "source": "User-provided cropped image in this feedback turn",
+    "localImagePath": null,
+    "visibleState": "Random, Choose a biome, Wasteland, Edit weights disabled, protection checked, raw drift message",
+    "scope": "The crop does not establish whole-window bounds or all selection variants"
+  },
+  "installedIdentity": {
+    "observedUtc": "2026-10-05T20:56:05.0691158Z",
+    "version": "1.2.5",
+    "dllSha256": "D8C73D5A4126D1BC7826C0E507A946B53FA3F79E6DD3053E90F3BB593CF33EF8",
+    "modInfoSha256": "A17E85688E8341369892801DB2BBEE06842D7358EEE25B47A2D07E31557F9DAE",
+    "matchesCapturedPriorPayload": true,
+    "gameRunning": false
+  },
+  "devTaskId": "D01",
+  "disposition": "Existing DEV task now has direct human comprehension evidence; review-only checks can continue",
+  "formalCaseOutcome": "Pending",
+  "formalCasePassClaimed": false,
+  "fullValidationReady": false
+}

@@ -1,0 +1,334 @@
+{
+    "schema":  "hrs-qa-dev-todo-handoff/v1",
+    "paperworkRevision":  20,
+    "localDate":  "2026-10-05",
+    "product":  "New Player Random Start",
+    "candidateId":  "1.2.7-qa.003",
+    "owner":  "Bit Wrecked",
+    "ownerDecision":  "Finish implementation and remaining release validation on DEV workstation using a newly identified frozen customer package; publication follows required evidence and release-owner approval.",
+    "paperworkComplete":  true,
+    "devTaskCount":  12,
+    "devTaskIds":  [
+                       "D01",
+                       "D02",
+                       "D03",
+                       "D04",
+                       "D05",
+                       "D06",
+                       "D07",
+                       "D08",
+                       "D09",
+                       "D10",
+                       "D11",
+                       "D12"
+                   ],
+    "devTaskStatus":  "Open; not implemented in frozen candidate",
+    "humanBaselinePlanReady":  true,
+    "postDevCorrectionTestingReady":  false,
+    "publicationApproved":  false,
+    "formalQaCases":  46,
+    "formalQaCasesPending":  46,
+    "newHumanTestsPerformedByThisPaperwork":  0,
+    "pathBase":  "Repository root, two directories above this manifest",
+    "textIdentity":  "Raw bytes identify this snapshot. For Markdown/JSON also use UTF-8 without BOM with CRLF/CR normalized to LF; preserve other text and final newline.",
+    "files":  [
+                  {
+                      "path":  "dev-handoff/hrs-1.2.7-qa.003-review/START-HERE.md",
+                      "bytes":  6046,
+                      "sha256":  "96C62571AF26844E7643606A4262D4D3321354FE13ACBD0B99ED42D1CF4040A4",
+                      "canonicalTextSha256":  "96C62571AF26844E7643606A4262D4D3321354FE13ACBD0B99ED42D1CF4040A4"
+                  },
+                  {
+                      "path":  "dev-handoff/hrs-1.2.7-qa.003-review/DEV-TODO.md",
+                      "bytes":  24728,
+                      "sha256":  "F960C5BAB7CBD98737349FCD2325768A473944B861F17CCBAEB8A96E9795DD39",
+                      "canonicalTextSha256":  "F960C5BAB7CBD98737349FCD2325768A473944B861F17CCBAEB8A96E9795DD39"
+                  },
+                  {
+                      "path":  "dev-handoff/hrs-1.2.7-qa.003-review/HUMAN-TEST.md",
+                      "bytes":  23291,
+                      "sha256":  "734D2970C3EF045F9F0BD53587C0A4B963455A32974901CBBF0BDEA78A4F3636",
+                      "canonicalTextSha256":  "734D2970C3EF045F9F0BD53587C0A4B963455A32974901CBBF0BDEA78A4F3636"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/dev-review.json",
+                      "bytes":  32916,
+                      "sha256":  "DC8EAA52B215ED578EBD95EACE7CFA0F55D524622D813C23466E2B559ACDBB11",
+                      "canonicalTextSha256":  "13E9D2E81BFB8A42CBAA68054919D939FE1F0ABC63E35F18BF6A2EE36FE64794"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/intake-review.json",
+                      "bytes":  11820,
+                      "sha256":  "4AE6C0C0CCFB643C07E8B756790B02DECDB4F0C4FB192E0F951B066354F6C79D",
+                      "canonicalTextSha256":  "9D5E801128E5E1AA5ADDAB837415B042F214718786EB72222E43FA5EF860EE57"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/release-validation.json",
+                      "bytes":  2721,
+                      "sha256":  "6A20BCCF13CDB284445F81808A2929B1FA4D8F3D0BC1EE263FC40F6450B439F1",
+                      "canonicalTextSha256":  "B99AAC01C2933590363F3249D32F9910705DA8CB86111FDED29B9E45EEAE8C76"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/manager-smoke.png",
+                      "bytes":  33664,
+                      "sha256":  "C645A8A43A27DB7AC416E70DACE4E1B54FF8DABE9FD6E4A6F717C0C363150EB3"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/manager-smoke-weights.png",
+                      "bytes":  16726,
+                      "sha256":  "4C48517FEABCEFEDC68506B5AB8D1EF045249F226E77E5659C66BAC31E9553CE"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/root-start-native.png",
+                      "bytes":  75299,
+                      "sha256":  "95167AF213E8F24955CC6CB0890AA921F8D141FC748EDD204360B7317EAFAC99"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/root-start-native.json",
+                      "bytes":  1130,
+                      "sha256":  "40C51D0F2627F3E5B7BCFB019E40413D9C5275B27E2660955EC72951ABF1F401",
+                      "canonicalTextSha256":  "97D88023493BCC3502126E8FB38D15052F36FA8FAC776D3B1E23F061335BE4DE"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-01.json",
+                      "bytes":  1534,
+                      "sha256":  "23AEFDB75650203C20165ECB45B186FE5102BC6A9CDCF934C06C3F2B60430DE7",
+                      "canonicalTextSha256":  "23AEFDB75650203C20165ECB45B186FE5102BC6A9CDCF934C06C3F2B60430DE7"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-02.json",
+                      "bytes":  1217,
+                      "sha256":  "EA2B1AB95344AA6AD5B0663921909112481A90ED09D57F3A737BD17E0DA04DC4",
+                      "canonicalTextSha256":  "A3D0D04D8EEC55392C81B223703A154BCC47EB5EC2A02B1CCF8284CA00C2E259"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-03.json",
+                      "bytes":  1103,
+                      "sha256":  "D7F8668369AD6F5926D3E785038D9825D9856F71ECC73B0A58FA8F84437F02E8",
+                      "canonicalTextSha256":  "72ED9CE22DE748DA3AFD218FDB5D79318A535F03A7BA50520E65C129C478D5E1"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-04-diagnostic.json",
+                      "bytes":  9682,
+                      "sha256":  "30CFFA15A862BE74B51B2F3C54D63A2756400F9F6840D9C15D945E0A6C0B7CA5",
+                      "canonicalTextSha256":  "91ACC01EF92F92BE3A7C00688DE8CEB96C810E290D41C55D9C0B20C96EAD8AE4"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-04.json",
+                      "bytes":  1752,
+                      "sha256":  "C4099CEEEA388742E5B6AD43B9EECD90F15FD07BB1799246DD676C9E53289C6D",
+                      "canonicalTextSha256":  "BFF9760D2066A8477FD660F828564F192BB35231F2D53DEA3C4770F050C1A9C9"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-05-before.png",
+                      "bytes":  326629,
+                      "sha256":  "3F37EDEF0DACD1F90AC3E8C0DCEF1015BE03B2ACFD7120A72D4EDEB170175352"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-05-before.json",
+                      "bytes":  1365,
+                      "sha256":  "CEF998F8CE20FAB8F8DC0BECF207B5342523FCDB64C3D82E68B8BC5C0CBC2380",
+                      "canonicalTextSha256":  "09E822E276BCC26780430292BE4C2FEDA10A03E4EAC701AAF434F9639792FD40"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-05.json",
+                      "bytes":  1478,
+                      "sha256":  "DA57B6761FBB77615257BA45F15138FB3724EBD2289D4EE28378DF3CEA1E53FC",
+                      "canonicalTextSha256":  "9948A694C22C18BAC609BB0D54A060C9C7C6D0EFE361B53E9F915B8B51F04510"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-05-after.png",
+                      "bytes":  474948,
+                      "sha256":  "E00AED661D3148D8E10F52E09983527C24FD2BE1BE686C670ECA67CBED4F0CCF"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-05-after.json",
+                      "bytes":  1428,
+                      "sha256":  "28A5E50BA7D2377F494B77EC29CBF14A49E724690F6BF9C187DAC64C2E6436CA",
+                      "canonicalTextSha256":  "7D9315E126585210C33F0F75DC47C013CA0A61C02B13C657F947B54311C29F54"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-06.json",
+                      "bytes":  994,
+                      "sha256":  "06A78E74E39E878ED7EDBCF9C81279AE6FE6052F8D150F82BDEF2881A6EE5DD1",
+                      "canonicalTextSha256":  "8698FA9E77EE65FC3F213798926CA49935CB3B80C650EA80B25E2B30CF1C1A53"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-07.json",
+                      "bytes":  1306,
+                      "sha256":  "5D0B7AA816BC6BAAA97A3BB82C0490ACA3701AD367B4F22D09B7AC83201A8F24",
+                      "canonicalTextSha256":  "EE6D7B8AD84758B2E7DDF3374C7D0ECABC2865228709A705B27E7F48D1D16F5F"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-review-09.json",
+                      "bytes":  26808,
+                      "sha256":  "5BB6DE0BB01D03C3AFE7B0D06D0108B35B2A88D55ADAEFF0ADD96BB07856644F",
+                      "canonicalTextSha256":  "02BCB4C9FD844668B8D620DF1156EA4E13AF13B124EF4C0EFA5EA7AEAB1C1A00"
+                  },
+                  {
+                      "path":  "dev-handoff/hrs-1.2.7-qa.003-review/DEV-WORKSTATION.md",
+                      "bytes":  7121,
+                      "sha256":  "F7FF776CCD2A673C55318ECDF20DBD5A61E479C6CA3A72AD976A3364B2BD179D",
+                      "canonicalTextSha256":  "F7FF776CCD2A673C55318ECDF20DBD5A61E479C6CA3A72AD976A3364B2BD179D"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/human-session-handoff.json",
+                      "bytes":  40001,
+                      "sha256":  "2CC45BF1465B0083526A1D1B3643B39FA45977D2FFD939DBD08469E7305D3179",
+                      "canonicalTextSha256":  "57BE54AE7091832F3A2F4CC13BE169CB0374227EC9DDA10F531564704E8EA272"
+                  },
+                  {
+                      "path":  "qa-review/1.2.7-qa.003/handoff-final-review.json",
+                      "bytes":  4153,
+                      "sha256":  "E68CC3A917ACAAD278C0BD97F9E8956B4185FB613ACF18B5D96AF29D533C6C43",
+                      "canonicalTextSha256":  "CC853DDB409E131DB780A4F4FEB3CC8DF046A2F028907AC12B41D973BD700901"
+                  }
+              ],
+    "frozenArchive":  {
+                          "path":  "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003.zip",
+                          "bytes":  5037729,
+                          "sha256":  "8527F11CAAFF4173AB9880FD906E9E7DF4F6C56E45E2B81098F5688C94B27881",
+                          "checksumProvenance":  "Original DEV ZIP received in repository; no independently published checksum supplied"
+                      },
+    "frozenArchiveMembers":  [
+                                 {
+                                     "archiveMember":  "customer/HistoricalRandomStart_1.2.7/dev/ui/p0158.ps1",
+                                     "bytes":  126235,
+                                     "sha256":  "2774EE84C44DB690985A33DE89B664558F883DA9D0BA2AF4045E8AC7DA498219"
+                                 },
+                                 {
+                                     "archiveMember":  "customer/HistoricalRandomStart_1.2.7/dev/verified/main/d0163.dll",
+                                     "bytes":  77312,
+                                     "sha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB"
+                                 },
+                                 {
+                                     "archiveMember":  "context/dev/qa/cases.json",
+                                     "bytes":  43133,
+                                     "sha256":  "AD72CE62F265D7D1BF740D979CAA756625CBF03E618DFB4775873CDFC12439A4"
+                                 },
+                                 {
+                                     "archiveMember":  "context/dev/qa/rel.json",
+                                     "bytes":  7910,
+                                     "sha256":  "31C9212FCC2E75F9A746DBD618ADE02AA94943586650DA8F7C8FD8B3E85D2643"
+                                 }
+                             ],
+    "preservation":  "Tasks and records are external to the frozen public package. Earlier handoff files, original ZIP, game and case ledger are unchanged by this paperwork.",
+    "liveFilesExcluded":  [
+                              "qa-review/1.2.7-qa.003/root-start.stdout.txt",
+                              "qa-review/1.2.7-qa.003/root-start.stderr.txt"
+                          ],
+    "validation":  {
+                       "documentIdentityEntries":  26,
+                       "frozenArtifactIdentitiesMatched":  4,
+                       "taskIdsComplete":  true,
+                       "workspaceArchiveExampleUsesAdjacentReceipt":  true,
+                       "localMarkdownReferencesResolved":  39,
+                       "fullValidationGateRecorded":  true,
+                       "gameplayBudgetArithmeticVerified":  true,
+                       "canonicalTextIdentitiesVerified":  21
+                   },
+    "targetedFeatureVisualReviewAllowed":  true,
+    "fullValidationAuthorized":  true,
+    "fullValidationReady":  false,
+    "featureVisualAcceptanceRecorded":  false,
+    "plannedFreshSaveScenarios":  21,
+    "fullValidationGate":  "Owner feature/visual acceptance, agreed DEV task dispositions, final verified frozen candidate and qualified gameplay environment; additional sessions, conditional fixtures and retests remain required.",
+    "preparedUpgradeOutcome":  "Pending; prepared before-state evidence lacks complete after-state/save-preservation evidence. Later exploratory monitoring verified qa.003 payloads and successful Apply history, followed by removal; no upgrade case Pass.",
+    "humanReviewStepsObserved":  8,
+    "humanReviewFindingTaskIds":  [
+                                      "D01"
+                                  ],
+    "confirmedManagerChecks":  [
+                                   "weight-cancel-discarded",
+                                   "all-zero-blocked",
+                                   "weight-switch-retained",
+                                   "keyboard-access"
+                               ],
+    "humanDiagnosticFollowupsObserved":  1,
+    "relatedReviewTaskIds":  [
+                                 "D01",
+                                 "D06",
+                                 "D08"
+                             ],
+    "ownerRequestedForestProtectionVisibility":  "Hide Chosen Forest control, retain preference and existing-character protection; DEV implementation pending",
+    "ownerProtectionDefault":  "On when no saved Random preference exists; restore RandomSafe On and explicit Random Off; saved Standard defaults latent Random preference On; retain in-session hidden choices. D08 implementation pending.",
+    "confirmedHelpChecks":  [
+                                "help-keyboard-reachable"
+                            ],
+    "currentGuidedStep":  "Laptop review complete; handoff to DEV workstation",
+    "currentGeometryReview":  "Functional actions reported working at current display; captured window is larger than baseline. Reduced-state evidence pending; no defect or formal geometry pass inferred.",
+    "manualSettingsCheck":  {
+                                "status":  "Owner approved for DEV; implementation pending",
+                                "taskId":  "D12",
+                                "label":  "Check settings",
+                                "ownerApprovalLocalDate":  "2026-10-05",
+                                "ownerInstruction":  "good we can continue with our manifest and dev work, combine this with todays session, and we can continue testing forward now",
+                                "action":  "Explicit fresh validated assessment of policy, exact name, full draft and current installation; read-only, preserve draft and gates",
+                                "preSaveConfigurationSupported":  true,
+                                "saveScanning":  false,
+                                "backgroundPollingAdded":  false,
+                                "newPersistence":  false,
+                                "currentCandidateImplementsButton":  false,
+                                "humanTestsConfirmed":  0
+                            },
+    "todaysSession":  {
+                          "localDate":  "2026-10-05",
+                          "ledger":  "dev-handoff/hrs-1.2.7-qa.003-review/HUMAN-TEST.md#current-guided-session",
+                          "machineReview":  "qa-review/1.2.7-qa.003/dev-review.json",
+                          "observedSteps":  8,
+                          "reportedStepPasses":  [
+                                                     "review-02",
+                                                     "review-03",
+                                                     "review-04",
+                                                     "review-06",
+                                                     "review-07"
+                                                 ],
+                          "activeStep":  "Handoff to DEV workstation",
+                          "activeOutcome":  "Laptop review round complete; remaining qualification on DEV",
+                          "d12Approved":  true,
+                          "newHumanChecksFromThisMerge":  0,
+                          "deferredGuidedSteps":  [
+                                                      "review-05a: Pending reduced viewport evidence",
+                                                      "review-08: Pending native cancellation coverage",
+                                                      "review-10: Deferred; owner declined repeat cancellation"
+                                                  ]
+                      },
+    "acceptedRedrawObservation":  "Restoration works with noticeable unmeasured redraw delay, accepted for this review; D09 assessment note, no animation work requested",
+    "policyTransitionSummary":  {
+                                    "snapshots":  12,
+                                    "successfulApplyHistoryRecords":  6,
+                                    "removalTransitions":  4,
+                                    "allReadsConsistent":  true,
+                                    "allInventoryAssessmentsValid":  true,
+                                    "installedObservations":  7,
+                                    "installedPolicyCounts":  [
+                                                                  1
+                                                              ],
+                                    "removedPolicyCounts":  [
+                                                                0
+                                                            ],
+                                    "readErrors":  0,
+                                    "finalState":  "NotInstalled",
+                                    "finalPolicyCount":  0,
+                                    "watcherStatus":  "Stopped"
+                                },
+    "devWorkstationDecision":  {
+                                   "localDate":  "2026-10-05",
+                                   "ownerInstruction":  "Package the QA folder for transfer to DEV; finish the recorded fixes and event-chain testing on the faster workstation, then prepare a Nexus release",
+                                   "testingLocation":  "DEV workstation",
+                                   "laptopGuiFeedbackRound":  "Complete for bounded owner review; final GUI acceptance follows delivered fixes",
+                                   "finalCustomerQaRequired":  true,
+                                   "newCandidateRequired":  true,
+                                   "eventChainTestingStartedHere":  false,
+                                   "formalCasesPending":  46,
+                                   "publicationApproved":  false,
+                                   "remainingCoverage":  "Final GUI corrections and manual Check settings; saved preference/restoration; confirmation/acknowledgement and operation guards; upgrade/removal/save preservation; display/accessibility/newcomer; qualified gameplay event chains and conditional fixtures",
+                                   "deferred":  "Reduced viewport evidence and native cancellation/dismissal coverage remain for final-candidate validation; repeated cancellation step declined, no additional pass inferred"
+                               },
+    "finalHandoffReview":  {
+                               "status":  "Ready for DEV continuation",
+                               "record":  "qa-review/1.2.7-qa.003/handoff-final-review.json",
+                               "unaddressedMaterialFindings":  0,
+                               "scope":  "Documentation/session and transport completeness, not formal product qualification"
+                           }
+}

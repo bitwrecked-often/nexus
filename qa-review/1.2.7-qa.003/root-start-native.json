@@ -1,0 +1,29 @@
+﻿{
+    "schema":  "hrs-qa-native-capture/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "localDate":  "2026-10-05",
+    "processId":  31064,
+    "title":  "Bit Wrecked - New Player Random Start",
+    "entry":  "root START.bat from independently extracted public ZIP",
+    "capture":  "Actual desktop pixels via CopyFromScreen; capture thread uses physical coordinates",
+    "width":  1458,
+    "height":  1344,
+    "bounds":  {
+                   "Left":  550,
+                   "Top":  0,
+                   "Right":  2008,
+                   "Bottom":  1344
+               },
+    "workArea":  {
+                     "Left":  0,
+                     "Top":  0,
+                     "Right":  2560,
+                     "Bottom":  1344
+                 },
+    "targetWindowDpi":  96,
+    "dpiQualification":  "Current display only. Target-window DPI alone does not establish OS scaling or a multi-scale QA pass.",
+    "applyPerformed":  false,
+    "uninstallPerformed":  false,
+    "gameLaunched":  false,
+    "screenshotSha256":  "95167AF213E8F24955CC6CB0890AA921F8D141FC748EDD204360B7317EAFAC99"
+}
