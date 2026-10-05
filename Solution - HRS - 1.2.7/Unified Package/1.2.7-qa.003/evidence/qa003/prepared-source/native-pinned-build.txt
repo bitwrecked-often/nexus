@@ -1,0 +1,32 @@
+
+
+schema                   : hrs-release-build/v1
+attempt                  : alpha-core-cd9223f8f6254ae6b3a9e6715c5c338f
+createdUtc               : 2026-10-05T05:38:15.613Z
+sourceFiles              : {c0140.cs, c0147.cs, c0167.cs, c0181.cs...}
+sourceHashes             : {@{path=c0140.cs; sha256=999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224}, 
+                           @{path=c0147.cs; sha256=B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7}, 
+                           @{path=c0167.cs; sha256=E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D}, 
+                           @{path=c0181.cs; 
+                           sha256=0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A}...}
+compiler                 : @{dotnet=C:\Program Files\dotnet\dotnet.exe; 
+                           dotnetSha256=21A46F1E5235CF4E844B9DE5429F0E198B9C97A41F0503A66442F1D639CA3EE6; 
+                           csc=C:\Program Files\dotnet\sdk\10.0.401\Roslyn\bincore\csc.dll; 
+                           cscSha256=89C788F615634094CC441593D167D9FBA9A9F049A5D1DDEA87D4FDE222D6F42C}
+references               : {@{name=mscorlib.dll; 
+                           sha256=98C9B62133DB5DD33B22BC6AAB6F28E4F04F5B5BE6559B28BA5C2738241434D0}, 
+                           @{name=netstandard.dll; 
+                           sha256=6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5}, 
+                           @{name=System.dll; 
+                           sha256=ACE2DD6A7D534B581BF4A9D316E743D64508CA2135DB73DBFF0DDB9365FC454E}, 
+                           @{name=System.Core.dll; 
+                           sha256=F1B33EB1AE8522EDCF9BA4C2B85F532D4BAB68BFA2A51527264BB61619BED4EA}...}
+assemblyCSharpMvid       : 7c57b7de-39a1-497d-bf48-8d5d1d4a1ff1
+dllBytes                 : 77312
+dllSha256                : 134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB
+deterministicDoubleBuild : True
+candidateRoot            : <DEV_TEMP>\hrs-public-source-d23017cdffe94333ae145d23c760eac4\hrs_1.2
+                           .7\dev\out\alpha-core-cd9223f8f6254ae6b3a9e6715c5c338f
+
+
+

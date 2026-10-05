@@ -1,0 +1,18 @@
+{
+  "schema": "hrs-review-build-qualification/v1",
+  "status": "Pass",
+  "candidateId": "1.2.7-qa.002",
+  "buildAttempt": "alpha-core-d870ae15f46a4f6ca534d5882c223caa",
+  "buildRecordSha256": "55E8B238F6BB7B97C6E70D7DCC30A2D81AA295D47A4935D77733BBDBC4BC427A",
+  "runtimeSha256": "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB",
+  "runtimeBytes": 77312,
+  "deterministicDoubleBuild": true,
+  "sourceCount": 15,
+  "referenceCount": 8,
+  "managerSha256": "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72",
+  "originalDraft": "before/dev/qa/rel.json",
+  "historicalMetadataReceipt": "../public-name-20261004/metadata-change-verification.json",
+  "activeMetadataQualification": "Fresh complete build includes current ModInfo.xml; the old unchanged-runtime claim remains preserved history.",
+  "completedUtc": "2026-10-05T05:03:38.762353Z",
+  "independentQaPassed": false
+}

@@ -1,0 +1,251 @@
+{
+  "schema": "hrs-release/v1",
+  "product": "New Player Random Start",
+  "version": "1.2.7",
+  "buildId": "r127",
+  "candidateId": "1.2.7-qa.003",
+  "releaseDate": "2026-10-04",
+  "sourceCommit": "1df804f4006a7b6a3864072dda73950db8b8b29b",
+  "laneStatus": "candidate-development",
+  "sourceSnapshot": {
+    "state": "working-tree-snapshot",
+    "runtimeSource": "dev/src/runtime/main",
+    "sourceHashes": [
+      {
+        "path": "c0140.cs",
+        "sha256": "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+      },
+      {
+        "path": "c0147.cs",
+        "sha256": "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+      },
+      {
+        "path": "c0167.cs",
+        "sha256": "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D"
+      },
+      {
+        "path": "c0181.cs",
+        "sha256": "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+      },
+      {
+        "path": "c0184.cs",
+        "sha256": "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+      },
+      {
+        "path": "c0185.cs",
+        "sha256": "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60"
+      },
+      {
+        "path": "PolicyV1.cs",
+        "sha256": "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+      },
+      {
+        "path": "PolicyV2.cs",
+        "sha256": "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+      },
+      {
+        "path": "BiomePreference.cs",
+        "sha256": "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+      },
+      {
+        "path": "ResultV1.cs",
+        "sha256": "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+      },
+      {
+        "path": "c0213.cs",
+        "sha256": "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+      },
+      {
+        "path": "PlacedPoiResolver.cs",
+        "sha256": "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+      },
+      {
+        "path": "PlacedTraderResolver.cs",
+        "sha256": "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+      },
+      {
+        "path": "c0217.cs",
+        "sha256": "FE71D6E8EF7E83928F1BA5C3D7C8E32B2C3F279D12C0D14C1136C8E77A8FFAFB"
+      },
+      {
+        "path": "c0218.cs",
+        "sha256": "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+      }
+    ]
+  },
+  "supportedEnvironment": {
+    "game": "7 Days to Die",
+    "gameVersion": "V3.3.0 (b17)",
+    "playMode": "local-single-player",
+    "antiCheat": "disabled",
+    "assemblyCSharpMvid": "7c57b7de-39a1-497d-bf48-8d5d1d4a1ff1",
+    "assemblyCSharpSha256": "AA4275991736D276EC75BB4047E45F76E0242AA47D9895890F3761098D4CC146",
+    "harmonySha256": "C349E1A3FD13FA5A9FACC9805A5E160161B14489F46F6BDD38202B8E124F78DF"
+  },
+  "compatibility": {
+    "policy": "best-effort-runtime-hooks",
+    "qaRequiresExactTestedBuild": true,
+    "unknownBuildAction": "attempt-required-runtime-hooks",
+    "missingHookAction": "leave-normal-start",
+    "backwardCompatibilityCertified": false
+  },
+  "scope": {
+    "selection": "random-among-placed-world",
+    "approvedPrefabNames": [
+      "hospital_01",
+      "hotel_01",
+      "hotel_02",
+      "hotel_04",
+      "hotel_ostrich",
+      "house_burnt_01",
+      "house_burnt_05",
+      "house_burnt_06",
+      "house_construction_01",
+      "house_construction_03",
+      "house_country_01",
+      "house_modern_02",
+      "house_modern_05",
+      "house_modern_12",
+      "house_modern_17",
+      "house_modern_26",
+      "house_modern_31",
+      "house_old_bungalow_02",
+      "house_old_bungalow_03",
+      "house_old_bungalow_12",
+      "house_old_cottage_01",
+      "house_old_gambrel_03",
+      "house_old_mansard_02",
+      "house_old_mansard_03",
+      "house_old_mansard_04",
+      "house_old_mansard_06",
+      "house_old_mansard_07",
+      "house_old_modular_03",
+      "house_old_pyramid_03",
+      "house_old_pyramid_04",
+      "house_old_ranch_02",
+      "house_old_ranch_03",
+      "house_old_tudor_01",
+      "house_old_tudor_02",
+      "house_old_victorian_01",
+      "house_old_victorian_03",
+      "house_old_victorian_04",
+      "house_old_victorian_05",
+      "house_old_victorian_09",
+      "house_old_victorian_12",
+      "indian_burial_grounds_01",
+      "industrial_business_08",
+      "installation_red_mesa",
+      "junkyard_01",
+      "lodge_01",
+      "lot_country_01",
+      "lot_country_02",
+      "lot_downtown_filler_01",
+      "lot_industrial_01",
+      "lot_industrial_03",
+      "lot_industrial_04",
+      "lot_industrial_05",
+      "lot_industrial_06",
+      "lot_industrial_08",
+      "lot_industrial_09",
+      "lot_industrial_10",
+      "lot_industrial_11",
+      "lot_industrial_14",
+      "lot_vacant_02",
+      "lot_vacant_07",
+      "lot_vacant_08",
+      "mine_01",
+      "motel_02",
+      "motel_05",
+      "nursing_home_01",
+      "office_02",
+      "office_05",
+      "oldwest_business_01",
+      "oldwest_business_02",
+      "oldwest_church",
+      "oldwest_coal_factory",
+      "oldwest_stables",
+      "oldwest_strip_01",
+      "park_01",
+      "park_02",
+      "park_03",
+      "parking_garage_03",
+      "parking_lot_02",
+      "parking_lot_03"
+    ],
+    "biomeSelection": [
+      "Any",
+      "Chosen",
+      "Weighted"
+    ],
+    "policySchema": "hrs-policy/v2",
+    "policyFile": "policy.v2.json",
+    "worldCategories": [
+      "Navezgane",
+      "RandomGen"
+    ],
+    "minimumGeneratedWorldSize": 8192,
+    "maxPoiAttempts": 5,
+    "retryDelaySeconds": 3,
+    "landing": "runtime terrain resolution, clearance and grounded settling",
+    "traderRoutingScope": "same-biome-then-nearest-placed-fallback",
+    "starterQuestId": "quest_whiteRiverCitizen1",
+    "starterQuestPhase": 1,
+    "oneShotRelocation": true,
+    "standardModeUnchanged": true,
+    "managerNotice": {
+      "verifiedPostApplyAcknowledgement": true,
+      "randomFirstSessionWarning": true,
+      "standardWarningOmitted": true,
+      "safeLogoutBoundary": "Journey to Settlement trader marker",
+      "earlyLogoutRouteIssue": "documented-known-issue"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "dev/verified/main/d0163.dll",
+      "bytes": 77312,
+      "sha256": "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB",
+      "assemblyName": "d0163",
+      "assemblyVersion": "0.0.0.0"
+    },
+    {
+      "path": "dev/verified/main/ModInfo.xml",
+      "bytes": 410,
+      "sha256": "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305"
+    }
+  ],
+  "build": {
+    "candidateId": "1.2.7-qa.003",
+    "recordPath": "dev/builds/1.2.7-qa.003/build-record.json",
+    "recordSha256": "017A738D767A67BB409B13C405A6098CB36AAD7D18C3FC32F623F803C07ED8D1",
+    "deterministicDoubleBuild": true,
+    "status": "built-from-current-lane",
+    "reuseProvenance": {
+      "sourceCandidate": "1.2.7-qa.002",
+      "sourceBuildRecordSha256": "55E8B238F6BB7B97C6E70D7DCC30A2D81AA295D47A4935D77733BBDBC4BC427A",
+      "runtimeRebuilt": false,
+      "changedMetadataOnly": [
+        "candidateRoot"
+      ],
+      "reason": "Public path projection of the authenticated native build; runtime and fifteen source hashes are unchanged."
+    }
+  },
+  "package": {
+    "archivePath": "",
+    "archiveSha256": "",
+    "status": "not-exported",
+    "distributionFormat": "unified-public/v1"
+  },
+  "runtimeLog": {
+    "prefix": "[HRS]",
+    "version": "1.2.7",
+    "buildId": "r127",
+    "maximumEvents": 64
+  },
+  "releaseRules": {
+    "immutableAfterQaStart": true,
+    "promoteExactTestedBytes": true,
+    "qaMayRepairCandidate": false,
+    "evidenceRequiredForApproval": true
+  }
+}

@@ -1,0 +1,129 @@
+{
+    "schema":  "hrs-release-build/v1",
+    "attempt":  "alpha-core-b59d6dd2a64a477c95c9be0746a661ed",
+    "createdUtc":  "2026-10-05T03:51:09.349Z",
+    "sourceFiles":  [
+                        "c0140.cs",
+                        "c0147.cs",
+                        "c0167.cs",
+                        "c0181.cs",
+                        "c0184.cs",
+                        "c0185.cs",
+                        "PolicyV1.cs",
+                        "PolicyV2.cs",
+                        "BiomePreference.cs",
+                        "ResultV1.cs",
+                        "c0213.cs",
+                        "PlacedPoiResolver.cs",
+                        "PlacedTraderResolver.cs",
+                        "c0217.cs",
+                        "c0218.cs"
+                    ],
+    "sourceHashes":  [
+                         {
+                             "path":  "c0140.cs",
+                             "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                         },
+                         {
+                             "path":  "c0147.cs",
+                             "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                         },
+                         {
+                             "path":  "c0167.cs",
+                             "sha256":  "DF08273BA5607D25147C39BDB3AC85B375A95A9E4EFCEBAE295C126FACB00F71"
+                         },
+                         {
+                             "path":  "c0181.cs",
+                             "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                         },
+                         {
+                             "path":  "c0184.cs",
+                             "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                         },
+                         {
+                             "path":  "c0185.cs",
+                             "sha256":  "A6B96DF463A28B747835CC88E6DF4074D0E366E7BA4ACCDAC8B18643A77098AE"
+                         },
+                         {
+                             "path":  "PolicyV1.cs",
+                             "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                         },
+                         {
+                             "path":  "PolicyV2.cs",
+                             "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                         },
+                         {
+                             "path":  "BiomePreference.cs",
+                             "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                         },
+                         {
+                             "path":  "ResultV1.cs",
+                             "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                         },
+                         {
+                             "path":  "c0213.cs",
+                             "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                         },
+                         {
+                             "path":  "PlacedPoiResolver.cs",
+                             "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                         },
+                         {
+                             "path":  "PlacedTraderResolver.cs",
+                             "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                         },
+                         {
+                             "path":  "c0217.cs",
+                             "sha256":  "FE71D6E8EF7E83928F1BA5C3D7C8E32B2C3F279D12C0D14C1136C8E77A8FFAFB"
+                         },
+                         {
+                             "path":  "c0218.cs",
+                             "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                         }
+                     ],
+    "compiler":  {
+                     "dotnet":  "C:\\Program Files\\dotnet\\dotnet.exe",
+                     "dotnetSha256":  "21A46F1E5235CF4E844B9DE5429F0E198B9C97A41F0503A66442F1D639CA3EE6",
+                     "csc":  "C:\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\bincore\\csc.dll",
+                     "cscSha256":  "89C788F615634094CC441593D167D9FBA9A9F049A5D1DDEA87D4FDE222D6F42C"
+                 },
+    "references":  [
+                       {
+                           "name":  "mscorlib.dll",
+                           "sha256":  "98C9B62133DB5DD33B22BC6AAB6F28E4F04F5B5BE6559B28BA5C2738241434D0"
+                       },
+                       {
+                           "name":  "netstandard.dll",
+                           "sha256":  "6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5"
+                       },
+                       {
+                           "name":  "System.dll",
+                           "sha256":  "ACE2DD6A7D534B581BF4A9D316E743D64508CA2135DB73DBFF0DDB9365FC454E"
+                       },
+                       {
+                           "name":  "System.Core.dll",
+                           "sha256":  "F1B33EB1AE8522EDCF9BA4C2B85F532D4BAB68BFA2A51527264BB61619BED4EA"
+                       },
+                       {
+                           "name":  "Assembly-CSharp.dll",
+                           "sha256":  "AA4275991736D276EC75BB4047E45F76E0242AA47D9895890F3761098D4CC146"
+                       },
+                       {
+                           "name":  "UnityEngine.CoreModule.dll",
+                           "sha256":  "68D360251A7AEA19CBA74626D5E9D55E801C51DDA1F4B153B5BA4825C19C9E35"
+                       },
+                       {
+                           "name":  "LogLibrary.dll",
+                           "sha256":  "A9CC17C698D5586CCE168080ABFD37D61C1F3F2EA8C73487B360164ADC2FB71B"
+                       },
+                       {
+                           "name":  "0Harmony.dll",
+                           "sha256":  "C349E1A3FD13FA5A9FACC9805A5E160161B14489F46F6BDD38202B8E124F78DF"
+                       }
+                   ],
+    "assemblyCSharpMvid":  "7c57b7de-39a1-497d-bf48-8d5d1d4a1ff1",
+    "dllBytes":  76800,
+    "dllSha256":  "56DE4592317DB1E114BA3C1D5FED4AF8F22DB05D88B1808B3D005479ADAFBD38",
+    "deterministicDoubleBuild":  true,
+    "candidateRoot":  "<DEV_REPO>\\hrs_1.2.7\\dev\\out\\alpha-core-b59d6dd2a64a477c95c9be0746a661ed"
+}

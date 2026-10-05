@@ -1,0 +1,56 @@
+{
+  "schema": "bitwrecked-design-recipe/v1",
+  "id": "bitwrecked-contrast",
+  "name": "Bit Wrecked Contrast",
+  "purpose": "A release-card option inspired by the charcoal, white and lime reference banner.",
+  "targets": ["ReleaseCard"],
+  "palette": {
+    "background": "#171A17",
+    "surface": "#242824",
+    "text": "#F6F7F3",
+    "muted": "#BEC4B9",
+    "border": "#3F483B",
+    "accent": "#B9EA32",
+    "buttonFill": "#FFFFFF"
+  },
+  "typography": {
+    "fontFamily": "Segoe UI",
+    "bodySize": 10,
+    "titleSize": 23
+  },
+  "geometry": {
+    "cornerRadius": 8,
+    "spacing": 12,
+    "contentPadding": 28,
+    "contentWidth": 640,
+    "buttonHeight": 42
+  },
+  "artwork": { "pictureOnlyLogo": true, "imageSource": "supplied-separately" },
+  "invariants": {
+    "shortCopy": true,
+    "explicitStates": true,
+    "preserveBehavior": true,
+    "noAutomaticLaunch": true,
+    "accessibleKeyboard": true,
+    "accentDoesNotConveyState": true
+  },
+  "copy": {
+    "release": {
+      "heading": "UPDATE",
+      "highlight": "1.2.7",
+      "caption": "New Player Random Start",
+      "footer": "7 Days to Die v3.3.0 · Random Player Start",
+      "label": "TECH DEMO / DESIGN STUDY"
+    }
+  },
+  "releaseCard": {
+    "layout": "text-left-art-right",
+    "canvasWidth": 1440,
+    "canvasHeight": 810,
+    "textFraction": 0.56,
+    "margin": 64,
+    "headingSize": 58,
+    "highlightSize": 126,
+    "captionSize": 28
+  }
+}

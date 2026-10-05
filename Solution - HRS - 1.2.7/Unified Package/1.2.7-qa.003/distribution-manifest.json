@@ -1,0 +1,1976 @@
+{
+    "schema":  "hrs-public-distribution-manifest/v1",
+    "candidateId":  "1.2.7-qa.003",
+    "files":  [
+                  {
+                      "path":  "BUILD-FROM-SOURCE.md",
+                      "bytes":  6696,
+                      "sha256":  "36CCDD16B40B0D0B79B85123762B7B1B133A3508EF739D8D3166C7C44CDED214"
+                  },
+                  {
+                      "path":  "context/context-manifest.json",
+                      "bytes":  4846,
+                      "sha256":  "304BF7C1BF3F512B559C3D5ABA4ED7143B8EB20C419B21BB5098D4B57659D6D9"
+                  },
+                  {
+                      "path":  "context/dev/builds/1.2.7-qa.003/build-record.json",
+                      "bytes":  4530,
+                      "sha256":  "017A738D767A67BB409B13C405A6098CB36AAD7D18C3FC32F623F803C07ED8D1"
+                  },
+                  {
+                      "path":  "context/dev/qa/cases.json",
+                      "bytes":  43133,
+                      "sha256":  "AD72CE62F265D7D1BF740D979CAA756625CBF03E618DFB4775873CDFC12439A4"
+                  },
+                  {
+                      "path":  "context/dev/qa/rel.json",
+                      "bytes":  7910,
+                      "sha256":  "31C9212FCC2E75F9A746DBD618ADE02AA94943586650DA8F7C8FD8B3E85D2643"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/BiomePreference.cs",
+                      "bytes":  3455,
+                      "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0140.cs",
+                      "bytes":  3819,
+                      "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0147.cs",
+                      "bytes":  1293,
+                      "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0167.cs",
+                      "bytes":  40386,
+                      "sha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0181.cs",
+                      "bytes":  5507,
+                      "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0184.cs",
+                      "bytes":  6901,
+                      "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0185.cs",
+                      "bytes":  3861,
+                      "sha256":  "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0213.cs",
+                      "bytes":  24044,
+                      "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0217.cs",
+                      "bytes":  5593,
+                      "sha256":  "FE71D6E8EF7E83928F1BA5C3D7C8E32B2C3F279D12C0D14C1136C8E77A8FFAFB"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/c0218.cs",
+                      "bytes":  6069,
+                      "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PlacedPoiResolver.cs",
+                      "bytes":  16709,
+                      "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PlacedTraderResolver.cs",
+                      "bytes":  5143,
+                      "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PolicyV1.cs",
+                      "bytes":  9386,
+                      "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/PolicyV2.cs",
+                      "bytes":  8039,
+                      "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                  },
+                  {
+                      "path":  "context/dev/src/runtime/main/ResultV1.cs",
+                      "bytes":  5681,
+                      "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                  },
+                  {
+                      "path":  "context/qa-workspace.json",
+                      "bytes":  80,
+                      "sha256":  "A23AE36D2AE0686263E96C9D5567D295A39ADBAE1994B2EEC60FD3A20B7761F8"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/src/launcher/m0160.psm1",
+                      "bytes":  5783,
+                      "sha256":  "BBC87CE995B5C7BFBCCD51AC88CDA371CB9497CFE18177DB7753A242EFA3E53E"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/src/launcher/m0161.psm1",
+                      "bytes":  47103,
+                      "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/src/launcher/m0162.psm1",
+                      "bytes":  23442,
+                      "sha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/src/launcher/m0164.psm1",
+                      "bytes":  45913,
+                      "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/src/launcher/m0166.psm1",
+                      "bytes":  7230,
+                      "sha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/ui/logo.ico",
+                      "bytes":  125633,
+                      "sha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/ui/p0158.ps1",
+                      "bytes":  126235,
+                      "sha256":  "2774EE84C44DB690985A33DE89B664558F883DA9D0BA2AF4045E8AC7DA498219"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/verified/main/d0163.dll",
+                      "bytes":  77312,
+                      "sha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/dev/verified/main/ModInfo.xml",
+                      "bytes":  410,
+                      "sha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/LICENSE.md",
+                      "bytes":  708,
+                      "sha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/package-manifest.json",
+                      "bytes":  3277,
+                      "sha256":  "129AA604D9FE53C213A4752F49197805172B9D8961450292AB698A35DD2F60CD"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/README.md",
+                      "bytes":  5890,
+                      "sha256":  "396AF64996D8B4DE724B410773DB8963709DE72F2A03E1979CE9DF6AF7C69CDD"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/release_templates/LICENSE-GPL-3.0-or-later.txt",
+                      "bytes":  35823,
+                      "sha256":  "230184F60BAE2FEAF244F10A8BAC053C8FF33A183BCC365B4D8B876D2B7F4809"
+                  },
+                  {
+                      "path":  "customer/HistoricalRandomStart_1.2.7/START.bat",
+                      "bytes":  553,
+                      "sha256":  "E03E6D7BED13F1FAAA0783C470CDD3AAC28C72A3649B6EC48EB43FF3F0C4347A"
+                  },
+                  {
+                      "path":  "docs/BUILD-FROM-SOURCE.md",
+                      "bytes":  6689,
+                      "sha256":  "EEF23A1790ECB8D66A3203BF993A80F47C3F70632702F047EBB764680A969DCB"
+                  },
+                  {
+                      "path":  "docs/HISTORY.md",
+                      "bytes":  2615,
+                      "sha256":  "4E8BF5D2719CD747EF67AB0FAABC22485CEA75C0D6DDAFBCF557BD2576069141"
+                  },
+                  {
+                      "path":  "docs/LORE.md",
+                      "bytes":  1762,
+                      "sha256":  "B1DF9A68C7C039F15E3529776A77E43935D6A75F966BABBB75E4D63BA86F66D6"
+                  },
+                  {
+                      "path":  "evidence/PUBLIC-CONTENT-MANIFEST.json",
+                      "bytes":  73513,
+                      "sha256":  "79ECE8AF043BAAFF085FED5FBB8A9F41F44445F4781A2863AC8F39B753025151"
+                  },
+                  {
+                      "path":  "evidence/PUBLIC-PROJECTION.json",
+                      "bytes":  224852,
+                      "sha256":  "24B755A2AB7100F3826EDD39D8BE6CBF48F1B990D9DE0BF3E42A924FF2166017"
+                  },
+                  {
+                      "path":  "evidence/qa002/candidate-verification.json",
+                      "bytes":  6774,
+                      "sha256":  "4402FCAAF9F8105FFF08AA26592E89BB49825488F150F09A8F2922B470CEA427"
+                  },
+                  {
+                      "path":  "evidence/qa002/customer-manager-smoke.png",
+                      "bytes":  25282,
+                      "sha256":  "F49573763CDDD84B0295936C91BE61848400DC7AA6CA07E6E04D960664D1899B"
+                  },
+                  {
+                      "path":  "evidence/qa002/customer-smoke-stdout.txt",
+                      "bytes":  71,
+                      "sha256":  "70DC1DD578649029E33AFDAC2CB81FBCA1D956CAC4C34DC8D9104EA9996D8D1A"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/ACCEPTANCE.md",
+                      "bytes":  8025,
+                      "sha256":  "BEBC6D21D735B1B3AD117974AF73618FC7E2484A3252C06DBC8F1733E68768ED"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/embedding-verification.json",
+                      "bytes":  948,
+                      "sha256":  "A8FF8DD1E9197314BDB317E83AD0489CE7374A0EB0FF74B696BB7B7F78313D9A"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/FINDINGS.md",
+                      "bytes":  4586,
+                      "sha256":  "AC14B81D85A5D560C4D4EB32A9C627039D787FC0C89E3079C2F637C734E96932"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-cycled-weighted-100.png",
+                      "bytes":  29847,
+                      "sha256":  "5FDA556727FA2710D8C979B1F0D5B5057BB24DDBCF2D88A5E2AD40E58E7A8091"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-cycled-weighted-150.png",
+                      "bytes":  34791,
+                      "sha256":  "CA82728D95BCEA08EABEE0DF3FD9C5140488E9A733C65AD12E08E626F869F014"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-cycled-weighted-200.png",
+                      "bytes":  37424,
+                      "sha256":  "F1D16C84FBDC84903F270B1392E7B98983FACA76C5075A398AA3E041661AE2D6"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-cycled-weighted-225.png",
+                      "bytes":  37811,
+                      "sha256":  "D119471F163D874FCD703FBE1A8323F0A7875FAA5FB51127213DC5F914A183E0"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-after-dialog-bottom-100.png",
+                      "bytes":  12775,
+                      "sha256":  "6F036CFD7F8D08C118C13628E614D0395214585E6E0E52C1D213B0651CBB33E4"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-after-dialog-bottom-150.png",
+                      "bytes":  17386,
+                      "sha256":  "FEA43F3A97F6E587738497A1A70BC1A28C79D214BA11F571199159D80DD28E8C"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-after-dialog-bottom-200.png",
+                      "bytes":  21168,
+                      "sha256":  "EA28D0B871FE40E2B8A8970F1F2BD295846FB6AB4AC314F613D1B3DC4FD15229"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-after-dialog-bottom-225.png",
+                      "bytes":  22455,
+                      "sha256":  "2B69E1B4E047AD55A12D68F9AAE55EBD788076CE18C5E2E36BB678DA4100B182"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-100.png",
+                      "bytes":  12775,
+                      "sha256":  "6F036CFD7F8D08C118C13628E614D0395214585E6E0E52C1D213B0651CBB33E4"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-150.png",
+                      "bytes":  17386,
+                      "sha256":  "FEA43F3A97F6E587738497A1A70BC1A28C79D214BA11F571199159D80DD28E8C"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-200.png",
+                      "bytes":  21168,
+                      "sha256":  "EA28D0B871FE40E2B8A8970F1F2BD295846FB6AB4AC314F613D1B3DC4FD15229"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-225.png",
+                      "bytes":  22455,
+                      "sha256":  "2B69E1B4E047AD55A12D68F9AAE55EBD788076CE18C5E2E36BB678DA4100B182"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-before-check-100.png",
+                      "bytes":  12775,
+                      "sha256":  "6F036CFD7F8D08C118C13628E614D0395214585E6E0E52C1D213B0651CBB33E4"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-before-check-150.png",
+                      "bytes":  17386,
+                      "sha256":  "FEA43F3A97F6E587738497A1A70BC1A28C79D214BA11F571199159D80DD28E8C"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-before-check-200.png",
+                      "bytes":  21168,
+                      "sha256":  "EA28D0B871FE40E2B8A8970F1F2BD295846FB6AB4AC314F613D1B3DC4FD15229"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-bottom-before-check-225.png",
+                      "bytes":  22455,
+                      "sha256":  "2B69E1B4E047AD55A12D68F9AAE55EBD788076CE18C5E2E36BB678DA4100B182"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-expanded-bottom-100.png",
+                      "bytes":  20002,
+                      "sha256":  "B846CD37D4833972CCECFA94A244C6033377A7E49C5B2B8A47E963C9CD1D7633"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-expanded-bottom-150.png",
+                      "bytes":  31013,
+                      "sha256":  "E40C83FFF24240C3A19CECC77EA9C065D560206C0A1B034D89901F117860CB48"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-expanded-bottom-200.png",
+                      "bytes":  37021,
+                      "sha256":  "AF57F5BC4D115BC5AB8390C44561CA89C0DE36DF041457A47997B8F37FD3078B"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-minimum-expanded-bottom-225.png",
+                      "bytes":  39611,
+                      "sha256":  "7FF75D87CDEA30098B98B5CF3B4F98E32BB2DE595C96814F48DE6E7D55A3A138"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-near-bottom-fitted-100.png",
+                      "bytes":  29847,
+                      "sha256":  "5FDA556727FA2710D8C979B1F0D5B5057BB24DDBCF2D88A5E2AD40E58E7A8091"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-near-bottom-fitted-150.png",
+                      "bytes":  34791,
+                      "sha256":  "CA82728D95BCEA08EABEE0DF3FD9C5140488E9A733C65AD12E08E626F869F014"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-near-bottom-fitted-200.png",
+                      "bytes":  37424,
+                      "sha256":  "F1D16C84FBDC84903F270B1392E7B98983FACA76C5075A398AA3E041661AE2D6"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-near-bottom-fitted-225.png",
+                      "bytes":  37811,
+                      "sha256":  "D119471F163D874FCD703FBE1A8323F0A7875FAA5FB51127213DC5F914A183E0"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-restored-normal-100.png",
+                      "bytes":  30698,
+                      "sha256":  "2D6215D4C8A1227EFC6EF4BE6C724F09AA2B6A0719FAE1E39807F9E4DAC8A975"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-restored-normal-150.png",
+                      "bytes":  34242,
+                      "sha256":  "A4DA16D0333ED123CA74E3BE1CE4A22C144F3701D69B2FA3396DA7CB4FF8B96A"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-restored-normal-200.png",
+                      "bytes":  31626,
+                      "sha256":  "CD6D512748FC0A0EEAE1623BAA351E7D13BA3826CAE993C9B7E5CA93A5BF8668"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/geometry-restored-normal-225.png",
+                      "bytes":  32029,
+                      "sha256":  "C4067D0BA9E567D3C4D94506F9680CAF06D8CFE919A55A4F73EAE2CA9ECBF525"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/verification-100.json",
+                      "bytes":  15630,
+                      "sha256":  "A424FEB7300B9BBBF3DCBF77AE5EAECCC107CA074D83042408CF283F716C3F24"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/verification-150.json",
+                      "bytes":  15655,
+                      "sha256":  "CD8F56E517C55410F7A9115660263B7BFD8738E2B54844682B0ADFF46A8BDA9B"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/verification-200.json",
+                      "bytes":  15655,
+                      "sha256":  "51D7DA722DB1A7B95EFEDDCDADF5CFC5F1D4D8C3006FB70150FE3A7CA9548CED"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/integrated/verification-225.json",
+                      "bytes":  15694,
+                      "sha256":  "4A52ED1936FA4A863FCAFE47162FC85B9CF478798435A530D4DA7CEE09591D63"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/INTEGRATION.md",
+                      "bytes":  3194,
+                      "sha256":  "48AAE842A92BE1A046624F7F0067271E753EDB5DC09102C52A21973F2EDBD01B"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/native-ux126-dev/geometry/verification.json",
+                      "bytes":  6973,
+                      "sha256":  "0632A93ADC1C650667079241B5796FC2498816DB7819A562F7508084569DD934"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa001/build-record.json",
+                      "bytes":  6651,
+                      "sha256":  "1030B5EAE891F56FF97E2710DADECAC0D495F02A60D7C2C888FE0426D58194C7"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa001/cases.json",
+                      "bytes":  81264,
+                      "sha256":  "A40341627EE4223DE55FFE0535AC410F0A9D5EB9C55DB50DAD27BE9702DF8EE8"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa001/ModInfo.xml",
+                      "bytes":  410,
+                      "sha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa001/rel.json",
+                      "bytes":  17638,
+                      "sha256":  "352B32C859E118BCBCC526BF967112C1D01AFC144CF46784FA61B8D634652615"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/QA-REVIEW-1.2.6-qa.002.md",
+                      "bytes":  15261,
+                      "sha256":  "6AF007D6CAAE370942913530326240BE7CAEB822F82502699D6B54EBBC1A6D51"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/06-cycle1-chosen.json",
+                      "bytes":  2118,
+                      "sha256":  "3FA0088B27D4E2A8F985B729EC5EF6D5155BCE1775584BB36F76F42816B5AB2E"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/06-cycle1-weighted.json",
+                      "bytes":  2127,
+                      "sha256":  "51AEEBCB236CD70AEB4CC93EDA0BC094C4794FE6BC901A56A0EF4B32157C37E0"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/06-cycle2-chosen.json",
+                      "bytes":  2117,
+                      "sha256":  "49903D3C9596045A96B52CDE93A55455AB1E4CD219BF0125B40087133200F673"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/06-cycle2-weighted.json",
+                      "bytes":  2127,
+                      "sha256":  "0924EA65C34C25E9C38555A6F2B4F80A86830F7B7483D5F99451D540568A57B4"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/06-scale150-weighted-settled.json",
+                      "bytes":  2127,
+                      "sha256":  "CB7C5F974F360B3F82B99CFE1FA27A2B018FCFA3F418C6F281920A0BDFACC1AD"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/09-minimum-maintenance-geometry.json",
+                      "bytes":  466,
+                      "sha256":  "5025E015F3B9530A4FDDF7214B2CD9822DA7558B79C390B7B13E09AD0262CA4F"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/09-real-drag-top.json",
+                      "bytes":  2099,
+                      "sha256":  "8F1F988789878B11C9EFDEA9403F9DCBFD335BBCE8FA29E3535A4C7713B4163B"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/09-real-drag-wheel-bottom.json",
+                      "bytes":  2123,
+                      "sha256":  "F6C06918958A472B7ADB224D028F14E3B980F4A535615DEDBD7A95721D5A2F2E"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/09-real-drag-wheel-bottom.png",
+                      "bytes":  65059,
+                      "sha256":  "D8C1CCCBC3A36270868901F0A9AC7B7F12D5437BF2321C06E8EE60A9B500C9FF"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/qa-result.json",
+                      "bytes":  2781,
+                      "sha256":  "039D047C02C76C3A721B8707B72C3A27BFC57628106EFDF3BCA8803CDA5F6B3C"
+                  },
+                  {
+                      "path":  "evidence/qa002/history/qa126-sizing-failures/ui-sizing/sizing-findings.json",
+                      "bytes":  16646,
+                      "sha256":  "19FD3A3220B8E07C268DCE328E84F362F9BD6887435BB77D3C77273F01ACDA03"
+                  },
+                  {
+                      "path":  "evidence/qa002/portable-review-inputs.json",
+                      "bytes":  136873,
+                      "sha256":  "E769AE562D02701018E788DF17A2543D6856631B70C494ECD121A5CBCAB3C7B7"
+                  },
+                  {
+                      "path":  "evidence/qa002/public-copy.json",
+                      "bytes":  1814,
+                      "sha256":  "0770EF553EF5C1A5DDB0E4720D8EBE92A22D26315AFC61B4BC9EE374618E0938"
+                  },
+                  {
+                      "path":  "evidence/qa002/public-name/metadata-change-verification.json",
+                      "bytes":  8735,
+                      "sha256":  "70DAF81F56D879840E274A543974B650A2D70F4CB7E1C8C458926F74022C2D5F"
+                  },
+                  {
+                      "path":  "evidence/qa002/public-name/ModInfo.before.xml",
+                      "bytes":  412,
+                      "sha256":  "85EF39A95ECBE2AA22817BB4C30BA470B9D7A5723B6BBAB20C7E02A039D4B33A"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/build-qualification.json",
+                      "bytes":  922,
+                      "sha256":  "2CA64489B35D5B1E891F529D943E59F870BBFE9858F82F3CF9D52D523EB63D3D"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-apply-reject/callback-verified-apply-reject.json",
+                      "bytes":  55814,
+                      "sha256":  "BD53A9111AAC02F5EDFE06C295207C1E998A759BA4E67C095C52DB22E6AF14D1"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-apply-reject/observed-scenarios.json",
+                      "bytes":  55814,
+                      "sha256":  "BD53A9111AAC02F5EDFE06C295207C1E998A759BA4E67C095C52DB22E6AF14D1"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-apply-reject/replay-result.json",
+                      "bytes":  1235,
+                      "sha256":  "604C15B8E8C399A29AC0483192675214EAED5346EDF67358DD0B48D53ED47B04"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-dev/callback-devdispatch.json",
+                      "bytes":  7132,
+                      "sha256":  "265F1E834A23590DBB901924EFA2FA7BF0E4DE007CE019C8F04EA3478C49264B"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-dev/observed-scenarios.json",
+                      "bytes":  7132,
+                      "sha256":  "265F1E834A23590DBB901924EFA2FA7BF0E4DE007CE019C8F04EA3478C49264B"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-dev/replay-result.json",
+                      "bytes":  1167,
+                      "sha256":  "B2DBD3783BE1106CAA3F179904779E1F3777B6CF14D96F9EC4B269C5553F808D"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-editor/callback-verified-editor.json",
+                      "bytes":  9834,
+                      "sha256":  "9A2C9E672BC3F6B465C42886AF45DFA3B9E45B7A8E456B0DD1B17B2AB138FFEF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-editor/observed-scenarios.json",
+                      "bytes":  9834,
+                      "sha256":  "9A2C9E672BC3F6B465C42886AF45DFA3B9E45B7A8E456B0DD1B17B2AB138FFEF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-editor/replay-result.json",
+                      "bytes":  1210,
+                      "sha256":  "2CE2D0C36081AC87F093741C97BE73FB9E289E81118BDA07E2F652E0DA9654A5"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-failure/callback-verified-failure-duringpolicyreadback.json",
+                      "bytes":  4428,
+                      "sha256":  "B6543911CF32D0D4EFA0F27C201985408944F5E84080F5A8FCD98290C2893EFC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-failure/observed-scenarios.json",
+                      "bytes":  4428,
+                      "sha256":  "B6543911CF32D0D4EFA0F27C201985408944F5E84080F5A8FCD98290C2893EFC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-failure/replay-result.json",
+                      "bytes":  1322,
+                      "sha256":  "3744CC4680809DCFBC329C7F6E960524AF06B86BED8CF05A8A74BAD8594ACA31"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-launch/callback-verified-launch.json",
+                      "bytes":  78110,
+                      "sha256":  "837681C7A06602F6C8393670CAD97E3CEC65B1F4955BC6D6A4AD965254E0B4B8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-launch/observed-scenarios.json",
+                      "bytes":  78110,
+                      "sha256":  "837681C7A06602F6C8393670CAD97E3CEC65B1F4955BC6D6A4AD965254E0B4B8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-launch/replay-result.json",
+                      "bytes":  1212,
+                      "sha256":  "600561428C8306E67DD4A025CE2892D9EE1703AFB599A49BDDF27D922EB23D43"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-migration/callback-verified-migration-matrix.json",
+                      "bytes":  17711,
+                      "sha256":  "9A14E58A62AB2C5FCA9374AD5A29C544639C5E5AED3BDB1E46CD96EAFA5C063B"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-migration/observed-scenarios.json",
+                      "bytes":  17711,
+                      "sha256":  "9A14E58A62AB2C5FCA9374AD5A29C544639C5E5AED3BDB1E46CD96EAFA5C063B"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-migration/replay-result.json",
+                      "bytes":  1230,
+                      "sha256":  "9DCAC75AB3D229D45B1AB61077C226EFFD4EEFEF075F07FCE3FAC53BBC25CB59"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-result/callback-verified-result.json",
+                      "bytes":  5743,
+                      "sha256":  "8EA8DD72B8BF8F8F73309CCB9B1BBF37A2D4FB77D5815EBAFEA1D234853A1777"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-result/observed-scenarios.json",
+                      "bytes":  5743,
+                      "sha256":  "8EA8DD72B8BF8F8F73309CCB9B1BBF37A2D4FB77D5815EBAFEA1D234853A1777"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-result/replay-result.json",
+                      "bytes":  1210,
+                      "sha256":  "B6114369E949183CB1370A7D12266C57662C839017F062CF5E97D09CE66AAAA1"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-round2/callback-verified-round2.json",
+                      "bytes":  32845,
+                      "sha256":  "35C545CF4DF375199ECB8EA1458EF608FE7535172BE7179F34F250C5955C8347"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-round2/observed-scenarios.json",
+                      "bytes":  32845,
+                      "sha256":  "35C545CF4DF375199ECB8EA1458EF608FE7535172BE7179F34F250C5955C8347"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-round2/replay-result.json",
+                      "bytes":  1210,
+                      "sha256":  "559B8EFC3DB4CD56C187D79C9BBEA71B7282E5D5F7627F4DE769C04ACCACF33E"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-round2-dev/callback-devdispatch-round2.json",
+                      "bytes":  32593,
+                      "sha256":  "9054F40F251B8F939D2D21383FBEF6E8AB472F53ED301F201A753AEF74AA06A5"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-round2-dev/observed-scenarios.json",
+                      "bytes":  32593,
+                      "sha256":  "9054F40F251B8F939D2D21383FBEF6E8AB472F53ED301F201A753AEF74AA06A5"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-round2-dev/replay-result.json",
+                      "bytes":  1227,
+                      "sha256":  "F8DC8307AAAACF1EF38F9FBD826CDE29EECEB414C91C21207DE0940F3756E17A"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-selection/callback-verified-selection.json",
+                      "bytes":  38663,
+                      "sha256":  "1F27A2E3DC4CE1310D19A90411E95F0C6F770E3D5CEDA4D927B0F4847C6294BC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-selection/observed-scenarios.json",
+                      "bytes":  38663,
+                      "sha256":  "1F27A2E3DC4CE1310D19A90411E95F0C6F770E3D5CEDA4D927B0F4847C6294BC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-selection/replay-result.json",
+                      "bytes":  1222,
+                      "sha256":  "2D165AD8CBFF7B35366D8C893EAE14BFEF9BB6387C2CF50AF3A48DE760965596"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-standard/callback-verified.json",
+                      "bytes":  7216,
+                      "sha256":  "8F835310506319AF1742A0D6FB2857E484B9021316006AF9E10B0D43FDCE9BD5"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-standard/observed-scenarios.json",
+                      "bytes":  7216,
+                      "sha256":  "8F835310506319AF1742A0D6FB2857E484B9021316006AF9E10B0D43FDCE9BD5"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-standard/replay-result.json",
+                      "bytes":  1168,
+                      "sha256":  "3AA75E8FC2FE049623502EFB58A4D8AB8E4399D4D57932D40F7407A824C0AFB6"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-startup/callback-verified-startup.json",
+                      "bytes":  11352,
+                      "sha256":  "7D05C1D42BB33FFA1FB9B5BAE02A8EC039C4B14ED61BEF20BB69D6FC2164A0DD"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-startup/observed-scenarios.json",
+                      "bytes":  11352,
+                      "sha256":  "7D05C1D42BB33FFA1FB9B5BAE02A8EC039C4B14ED61BEF20BB69D6FC2164A0DD"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-startup/replay-result.json",
+                      "bytes":  1214,
+                      "sha256":  "A985B045B25239878CB302A45A4AA4712DD3D5F61A40FFC1CD2C0E59521E2161"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-steam-refresh/callback-verified-steam-refresh.json",
+                      "bytes":  4692,
+                      "sha256":  "4788AB6D9D2EF5BD0AB025B90B7A6FD7E2C03948F4A1D0AAC1FD6FE7F20F6B8F"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-steam-refresh/observed-scenarios.json",
+                      "bytes":  4692,
+                      "sha256":  "4788AB6D9D2EF5BD0AB025B90B7A6FD7E2C03948F4A1D0AAC1FD6FE7F20F6B8F"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-steam-refresh/replay-result.json",
+                      "bytes":  1237,
+                      "sha256":  "11D4C7F6F4115F47BE82C462D2F71EE923AF5CF59D2466AFD5A5608E56303911"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-storage/callback-verified-storage.json",
+                      "bytes":  9612,
+                      "sha256":  "D4E05F20E3C0D091BDA93C3060C9D70F1C2AFC20E3B15F852A6CE00201900418"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-storage/observed-scenarios.json",
+                      "bytes":  9612,
+                      "sha256":  "D4E05F20E3C0D091BDA93C3060C9D70F1C2AFC20E3B15F852A6CE00201900418"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-storage/replay-result.json",
+                      "bytes":  1214,
+                      "sha256":  "69CBC4536236123A16DEA4547A9AB1115003C5F9582008E7A0A7D5F0A7D23B94"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callbacks-verification.json",
+                      "bytes":  73696,
+                      "sha256":  "0770435F6F8BEFD60435735E615D3BEA751F71D9D0C10D8E070D2A99F4DFF52A"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-uncertain-recovery/callback-verified-failure-afterdllcopy-recoveryfailed.json",
+                      "bytes":  4562,
+                      "sha256":  "38E0E77CE0D90B3A32621F4828FAB2A07CFA25AB1ADBBFC76A9751DEE3FA6CAF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-uncertain-recovery/observed-scenarios.json",
+                      "bytes":  4562,
+                      "sha256":  "38E0E77CE0D90B3A32621F4828FAB2A07CFA25AB1ADBBFC76A9751DEE3FA6CAF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-uncertain-recovery/replay-result.json",
+                      "bytes":  1383,
+                      "sha256":  "6F99A5FDC60DC2F863EF4B7B3203E2D07BA1A0EF5D9CC88EA9C0D6AEAAC53135"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-uninstall/callback-verified-uninstall.json",
+                      "bytes":  26758,
+                      "sha256":  "BB9EEBCB3D983115C2EE9E10A91E61E5C1CDCE8CB3FD609CF07E5EECFEAB0411"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-uninstall/observed-scenarios.json",
+                      "bytes":  26758,
+                      "sha256":  "BB9EEBCB3D983115C2EE9E10A91E61E5C1CDCE8CB3FD609CF07E5EECFEAB0411"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-uninstall/replay-result.json",
+                      "bytes":  1222,
+                      "sha256":  "E2BBA0298FC91732065CAE77BBED4245D6A06312001D6158B3E4E2BF48581D31"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/callback-verified-ux-state.json",
+                      "bytes":  53086,
+                      "sha256":  "D3AD33913A8F900C5017FF226785BBF8B88FAB9A0D69DC81D82575E528041930"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/DirtyRevert/chosen-applied-actions.png",
+                      "bytes":  20146,
+                      "sha256":  "330E2749868628293F332B970B39721DC64165C8B9E34B815FC21D4C7B2054FC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/DirtyRevert/chosen-applied-top.png",
+                      "bytes":  24573,
+                      "sha256":  "A0F96D861FD935617B2FEE9B08D00F718EFEC39BC5E65ED3EF82CAA0FB4D5628"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/DirtyRevert/name-dirty-actions.png",
+                      "bytes":  20448,
+                      "sha256":  "15E676815E7596F3EC3B376D35473A508664D31B8BBE7DC408E39814B49D3F34"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/DirtyRevert/name-dirty-top.png",
+                      "bytes":  24551,
+                      "sha256":  "4CEF3DD91A4E057D6D93BBE0BD257142A3A78CFD7CE390904B29A6F639BEB1F1"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/DirtyRevert/name-reverted-actions.png",
+                      "bytes":  20146,
+                      "sha256":  "330E2749868628293F332B970B39721DC64165C8B9E34B815FC21D4C7B2054FC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/DirtyRevert/name-reverted-top.png",
+                      "bytes":  24573,
+                      "sha256":  "A0F96D861FD935617B2FEE9B08D00F718EFEC39BC5E65ED3EF82CAA0FB4D5628"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/FailedApplySticky/apply-failed-actions.png",
+                      "bytes":  29010,
+                      "sha256":  "6F50775EAA6699C74B689D8F0929B78A09884967174705D4D9A3797F5311AE3C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/FailedApplySticky/apply-failed-top.png",
+                      "bytes":  29010,
+                      "sha256":  "6F50775EAA6699C74B689D8F0929B78A09884967174705D4D9A3797F5311AE3C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/FreshValidation/fresh-actions.png",
+                      "bytes":  24388,
+                      "sha256":  "EBDF8ADCD24572A973F9B5B38EC49953B63654A957FAD0492DD0341DCAC967D8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/FreshValidation/fresh-top.png",
+                      "bytes":  24388,
+                      "sha256":  "EBDF8ADCD24572A973F9B5B38EC49953B63654A957FAD0492DD0341DCAC967D8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/observed-scenarios.json",
+                      "bytes":  53086,
+                      "sha256":  "D3AD33913A8F900C5017FF226785BBF8B88FAB9A0D69DC81D82575E528041930"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/replay-result.json",
+                      "bytes":  1217,
+                      "sha256":  "898B557A486900A1AA4875FD7C5D95B1B3C12FEE2B14903A2EF6085370AB57CA"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/installation-and-recovery-errors-actions.png",
+                      "bytes":  26132,
+                      "sha256":  "904117AC20C05D996A8DB6A72569832C3706652634E9D046095D402046E3DE98"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/installation-and-recovery-errors-top.png",
+                      "bytes":  26132,
+                      "sha256":  "904117AC20C05D996A8DB6A72569832C3706652634E9D046095D402046E3DE98"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/result-current-actions.png",
+                      "bytes":  23465,
+                      "sha256":  "EE3CC57E3EE0B9AFBBC3AFE6526A7E36948703169EC05171AEC17A1A64677DE8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/result-current-top.png",
+                      "bytes":  23465,
+                      "sha256":  "EE3CC57E3EE0B9AFBBC3AFE6526A7E36948703169EC05171AEC17A1A64677DE8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/result-stale-actions.png",
+                      "bytes":  23263,
+                      "sha256":  "353A961A17E7C9F54E21CF49CAD2C899E834128B8BEAFD780E02DD996766BDF7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/result-stale-top.png",
+                      "bytes":  23263,
+                      "sha256":  "353A961A17E7C9F54E21CF49CAD2C899E834128B8BEAFD780E02DD996766BDF7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/runtime-unconfirmed-actions.png",
+                      "bytes":  23784,
+                      "sha256":  "29DE5E4DD6460A92A336531B016174B473A1532494E0A6FA99C5BA5A6C4BDE99"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/RevisionFreshness/runtime-unconfirmed-top.png",
+                      "bytes":  23784,
+                      "sha256":  "29DE5E4DD6460A92A336531B016174B473A1532494E0A6FA99C5BA5A6C4BDE99"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/SteamDirtyRefresh/steam-closed-actions.png",
+                      "bytes":  24924,
+                      "sha256":  "FEF6B3033E85F3F3ACD00AB379BA1937B57F9F46D080EFF68D7154709B067ADF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/SteamDirtyRefresh/steam-closed-top.png",
+                      "bytes":  24924,
+                      "sha256":  "FEF6B3033E85F3F3ACD00AB379BA1937B57F9F46D080EFF68D7154709B067ADF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/SteamDirtyRefresh/steam-open-actions.png",
+                      "bytes":  23589,
+                      "sha256":  "2382FF93676119743EA742248EA2B6B212E5A50794DA22168792CE0E65BA124C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/SteamDirtyRefresh/steam-open-top.png",
+                      "bytes":  23589,
+                      "sha256":  "2382FF93676119743EA742248EA2B6B212E5A50794DA22168792CE0E65BA124C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/UninstallState/uninstalled-actions.png",
+                      "bytes":  25810,
+                      "sha256":  "75AB16B8D0B41B771AC24E985AD38CACEB9B2278C71C11A5E6275BF06C673987"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/UninstallState/uninstalled-top.png",
+                      "bytes":  25810,
+                      "sha256":  "75AB16B8D0B41B771AC24E985AD38CACEB9B2278C71C11A5E6275BF06C673987"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/VerifiedReopen/reopened-actions.png",
+                      "bytes":  33254,
+                      "sha256":  "5665BB3EBC0258AA877A0691A78D5015CC9854C36C65E4DAC926665E9B7B34E4"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/VerifiedReopen/reopened-top.png",
+                      "bytes":  33254,
+                      "sha256":  "5665BB3EBC0258AA877A0691A78D5015CC9854C36C65E4DAC926665E9B7B34E4"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/WeightedInactive/weighted-applied-actions.png",
+                      "bytes":  21413,
+                      "sha256":  "07470C2BF25519B54C01E2BABE27A9B427738F2584EEFEBB720BA11DB0567FA7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/WeightedInactive/weighted-applied-top.png",
+                      "bytes":  26080,
+                      "sha256":  "8C360622F3AC0EFAE1E515CFE70EB68DDADA96E9631931BE275B1892A1720799"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/WeightedInactive/weights-edited-actions.png",
+                      "bytes":  34474,
+                      "sha256":  "30A1B33352C1003C9DB23871AB4DD06BC61E0FB9EF9E9B827C967A0E32863627"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state/WeightedInactive/weights-edited-top.png",
+                      "bytes":  34474,
+                      "sha256":  "30A1B33352C1003C9DB23871AB4DD06BC61E0FB9EF9E9B827C967A0E32863627"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/callback-devdispatch-ux-state.json",
+                      "bytes":  52844,
+                      "sha256":  "D1C13D6871E7D68F35FD0D8A7ADB566AAE921324AD534EDAF446F56CBC49A7E2"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/DirtyRevert/chosen-applied-actions.png",
+                      "bytes":  20146,
+                      "sha256":  "330E2749868628293F332B970B39721DC64165C8B9E34B815FC21D4C7B2054FC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/DirtyRevert/chosen-applied-top.png",
+                      "bytes":  24573,
+                      "sha256":  "A0F96D861FD935617B2FEE9B08D00F718EFEC39BC5E65ED3EF82CAA0FB4D5628"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/DirtyRevert/name-dirty-actions.png",
+                      "bytes":  20448,
+                      "sha256":  "15E676815E7596F3EC3B376D35473A508664D31B8BBE7DC408E39814B49D3F34"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/DirtyRevert/name-dirty-top.png",
+                      "bytes":  24551,
+                      "sha256":  "4CEF3DD91A4E057D6D93BBE0BD257142A3A78CFD7CE390904B29A6F639BEB1F1"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/DirtyRevert/name-reverted-actions.png",
+                      "bytes":  20146,
+                      "sha256":  "330E2749868628293F332B970B39721DC64165C8B9E34B815FC21D4C7B2054FC"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/DirtyRevert/name-reverted-top.png",
+                      "bytes":  24573,
+                      "sha256":  "A0F96D861FD935617B2FEE9B08D00F718EFEC39BC5E65ED3EF82CAA0FB4D5628"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/FailedApplySticky/apply-failed-actions.png",
+                      "bytes":  29010,
+                      "sha256":  "6F50775EAA6699C74B689D8F0929B78A09884967174705D4D9A3797F5311AE3C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/FailedApplySticky/apply-failed-top.png",
+                      "bytes":  29010,
+                      "sha256":  "6F50775EAA6699C74B689D8F0929B78A09884967174705D4D9A3797F5311AE3C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/FreshValidation/fresh-actions.png",
+                      "bytes":  24388,
+                      "sha256":  "EBDF8ADCD24572A973F9B5B38EC49953B63654A957FAD0492DD0341DCAC967D8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/FreshValidation/fresh-top.png",
+                      "bytes":  24388,
+                      "sha256":  "EBDF8ADCD24572A973F9B5B38EC49953B63654A957FAD0492DD0341DCAC967D8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/observed-scenarios.json",
+                      "bytes":  52844,
+                      "sha256":  "D1C13D6871E7D68F35FD0D8A7ADB566AAE921324AD534EDAF446F56CBC49A7E2"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/replay-result.json",
+                      "bytes":  1234,
+                      "sha256":  "C7C29E38D45F1250AFCE8B45AFF08AD3A1962F355208DC9EF6A20F517873981C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/installation-and-recovery-errors-actions.png",
+                      "bytes":  26132,
+                      "sha256":  "904117AC20C05D996A8DB6A72569832C3706652634E9D046095D402046E3DE98"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/installation-and-recovery-errors-top.png",
+                      "bytes":  26132,
+                      "sha256":  "904117AC20C05D996A8DB6A72569832C3706652634E9D046095D402046E3DE98"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-current-actions.png",
+                      "bytes":  23465,
+                      "sha256":  "EE3CC57E3EE0B9AFBBC3AFE6526A7E36948703169EC05171AEC17A1A64677DE8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-current-top.png",
+                      "bytes":  23465,
+                      "sha256":  "EE3CC57E3EE0B9AFBBC3AFE6526A7E36948703169EC05171AEC17A1A64677DE8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-stale-actions.png",
+                      "bytes":  23263,
+                      "sha256":  "353A961A17E7C9F54E21CF49CAD2C899E834128B8BEAFD780E02DD996766BDF7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-stale-top.png",
+                      "bytes":  23263,
+                      "sha256":  "353A961A17E7C9F54E21CF49CAD2C899E834128B8BEAFD780E02DD996766BDF7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/runtime-unconfirmed-actions.png",
+                      "bytes":  23784,
+                      "sha256":  "29DE5E4DD6460A92A336531B016174B473A1532494E0A6FA99C5BA5A6C4BDE99"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/runtime-unconfirmed-top.png",
+                      "bytes":  23784,
+                      "sha256":  "29DE5E4DD6460A92A336531B016174B473A1532494E0A6FA99C5BA5A6C4BDE99"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-closed-actions.png",
+                      "bytes":  24924,
+                      "sha256":  "FEF6B3033E85F3F3ACD00AB379BA1937B57F9F46D080EFF68D7154709B067ADF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-closed-top.png",
+                      "bytes":  24924,
+                      "sha256":  "FEF6B3033E85F3F3ACD00AB379BA1937B57F9F46D080EFF68D7154709B067ADF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-open-actions.png",
+                      "bytes":  23589,
+                      "sha256":  "2382FF93676119743EA742248EA2B6B212E5A50794DA22168792CE0E65BA124C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-open-top.png",
+                      "bytes":  23589,
+                      "sha256":  "2382FF93676119743EA742248EA2B6B212E5A50794DA22168792CE0E65BA124C"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/UninstallState/uninstalled-actions.png",
+                      "bytes":  25810,
+                      "sha256":  "75AB16B8D0B41B771AC24E985AD38CACEB9B2278C71C11A5E6275BF06C673987"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/UninstallState/uninstalled-top.png",
+                      "bytes":  25810,
+                      "sha256":  "75AB16B8D0B41B771AC24E985AD38CACEB9B2278C71C11A5E6275BF06C673987"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/VerifiedReopen/reopened-actions.png",
+                      "bytes":  34814,
+                      "sha256":  "523C835D4AED74C48025B64942303F735909261328EBEAF38249D218559ADA0D"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/VerifiedReopen/reopened-top.png",
+                      "bytes":  34814,
+                      "sha256":  "523C835D4AED74C48025B64942303F735909261328EBEAF38249D218559ADA0D"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/WeightedInactive/weighted-applied-actions.png",
+                      "bytes":  21413,
+                      "sha256":  "07470C2BF25519B54C01E2BABE27A9B427738F2584EEFEBB720BA11DB0567FA7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/WeightedInactive/weighted-applied-top.png",
+                      "bytes":  26080,
+                      "sha256":  "8C360622F3AC0EFAE1E515CFE70EB68DDADA96E9631931BE275B1892A1720799"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/WeightedInactive/weights-edited-actions.png",
+                      "bytes":  34467,
+                      "sha256":  "49627B53FC692CBCC7166162894FDF590E884CD56AAB7209A41910DAFB18F387"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/WeightedInactive/weights-edited-top.png",
+                      "bytes":  34467,
+                      "sha256":  "49627B53FC692CBCC7166162894FDF590E884CD56AAB7209A41910DAFB18F387"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/history-preservation.json",
+                      "bytes":  1946310,
+                      "sha256":  "7BB2DA8E5B922238F0BE3A82E070D009094EFC95BC0D679F2574340F1122E7B2"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/history-preservation-first-attempt.json",
+                      "bytes":  1945680,
+                      "sha256":  "09509A8D7A1F22176AAEE5C197333B619D5621FF041EFC20F97B823B0139BFC6"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/compiled-policy-stdout.txt",
+                      "bytes":  81,
+                      "sha256":  "6217B567B769261F64A1484D53B18F48FC2B0EEEDBD09622DA28336F727E3480"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/embedding.json",
+                      "bytes":  623,
+                      "sha256":  "8D3BF7CD009ECAA8F36457ED463282470ACAEAA4F3028BB525029A7F79B38EE2"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/embedding-stdout.txt",
+                      "bytes":  625,
+                      "sha256":  "4C06FA80323E7D7C4F0BACC8F18241CB2B337C4D0DB8E41124EFADC450AC4A8F"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/invalid-writer-stdout.txt",
+                      "bytes":  190,
+                      "sha256":  "D644BB03C0823DA847F8882304178B38C3CEF92D3701800497313D8FABDED4BB"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/parser.json",
+                      "bytes":  3766,
+                      "sha256":  "42A4EDECB0732A2FE680EDA16890EB4A71F1C4AF1FB00588923BA2FE9AC069BD"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/parser-stdout.txt",
+                      "bytes":  3768,
+                      "sha256":  "30C9F1F9F5D348E4ABAEEEA8B572817BF13D4138AD22683779E4896904E6E5CF"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/policy-v2-stdout.txt",
+                      "bytes":  72,
+                      "sha256":  "BB10748158E76C832ED875164FB53CD704FF57B2C7A4846D43A853E89C58BB78"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/verification.json",
+                      "bytes":  19966,
+                      "sha256":  "38F22273D0B82080A786B23AF5EEF1C7C9166A82B48F43AB49329A1A6D7AE081"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/integration-policy/writer-invalid-fixtures.json",
+                      "bytes":  3721,
+                      "sha256":  "3F9D8D2373EBECBABA7B9D93C9FC1743CDEDCC846F95E2E6B4A06AF0DE06297D"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/manager/before-reconstruction.json",
+                      "bytes":  393,
+                      "sha256":  "DF2C0DB3DE8503802C05B634980C0D193C2F220EA17CE94A2D5D261FE75BAD87"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/manager/verification.json",
+                      "bytes":  5489,
+                      "sha256":  "986F8E71A53619FF47D2ED1C9DCB29776BCD1D9AF66F3C76B6E7099D8617964A"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/manager/WORK.md",
+                      "bytes":  3127,
+                      "sha256":  "F7030A264A94F673EAE2454DC652C01E65D198DCF7493F9EF52ED6E543DF4683"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/manager-final/verification.json",
+                      "bytes":  5489,
+                      "sha256":  "D0D5C366C738E90AFADD4012DEC936474FFCE44BF2283150F925911BFDFACD1E"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/native-build-output.json",
+                      "bytes":  2301,
+                      "sha256":  "542DDFBBAFCF75EEB7BDC637C391FD6991ABE88BFE6CBBA2344C1504CCF48A0F"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/parser-before-history-fix.json",
+                      "bytes":  3766,
+                      "sha256":  "974C6F71CDB29FE171CDE3260E450B10B24A325697BBDE5FC2BDDA07498B2B29"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/parser-final.json",
+                      "bytes":  3766,
+                      "sha256":  "8DA01B567DAAE7A8AD5DEB17FD0D8FB38529821A5F1FFC361BF680FC62595D90"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/protected-before.json",
+                      "bytes":  1276240,
+                      "sha256":  "196127111E1D220307EBC29AA0D18F3E717746BA0C193D4208A128E3F6307216"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/QA_RUNBOOK.md",
+                      "bytes":  9766,
+                      "sha256":  "B73CEA9F1DCA1E8EEDFF285CB40BDD4FF013702C53F61029CCE14E9CEB5C0C57"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/qa-plan.md",
+                      "bytes":  8106,
+                      "sha256":  "E40A34DB27EC276F4DBC32B9C8815F792BA822307A4C68C569E6384C6D743D97"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/after-r001/fixture-cases.json",
+                      "bytes":  7263,
+                      "sha256":  "1613B76E1D721394038FB4A96424D1C33811E2DE7D1B40935CD5113926A20541"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/after-r001/verification.json",
+                      "bytes":  17385,
+                      "sha256":  "0EF1B741A889C2C19EDF18386E293C2DA29D568849E7611A7791D813D28EB5F6"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/before-r002/fixture-cases.json",
+                      "bytes":  7984,
+                      "sha256":  "24888BB95F32466AD1CFC1C03070BEA49A794E7B2579920A18FD5A699A9F5112"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/before-r002/verification.json",
+                      "bytes":  18187,
+                      "sha256":  "72B340A895A3A193933315FE73C03C73FAFBC94B4908A0734FEFB1DF4C348B5B"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/before-r003/fixture-cases.json",
+                      "bytes":  7984,
+                      "sha256":  "24888BB95F32466AD1CFC1C03070BEA49A794E7B2579920A18FD5A699A9F5112"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/before-r003/verification.json",
+                      "bytes":  18187,
+                      "sha256":  "8729EFA51ED255870E3586E28BC460E56D2BC9127137D5435155078E68C5B88F"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/comparison.json",
+                      "bytes":  2861,
+                      "sha256":  "1F427587FDF723554D373FAA727D0736211EE33BC37CE827A7879AB9FC1EFFB8"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/runtime/WORK.md",
+                      "bytes":  3929,
+                      "sha256":  "A3EA4F052A7F7C58425E42D52F035E9DD1D8AE2B0B61F343AFD45C18945348D7"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/source-release-gate.json",
+                      "bytes":  2721,
+                      "sha256":  "4005D220A432D224AC25AE9C3DEF6B2BCDFA78EF1514E484456ED5F7CA685F08"
+                  },
+                  {
+                      "path":  "evidence/qa002/review-repairs/WORK.md",
+                      "bytes":  7180,
+                      "sha256":  "5EEEE47F55E637531CA2D065E219F3176F21C116B4CE5B2679F84AF7A5A675F0"
+                  },
+                  {
+                      "path":  "evidence/qa002/top-to-bottom-review/REVIEW.md",
+                      "bytes":  11356,
+                      "sha256":  "F80016E8F277D64B98E46D0814552CF2F1619251AF60C32D4E6648E1EE06BCDD"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/compiled-policy.txt",
+                      "bytes":  81,
+                      "sha256":  "6217B567B769261F64A1484D53B18F48FC2B0EEEDBD09622DA28336F727E3480"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/manager/verification.json",
+                      "bytes":  5489,
+                      "sha256":  "FE29AF041011369D485671DDBB2CABCCA2C635D3F58D36D31F3E0B32F676431D"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/manager-review.txt",
+                      "bytes":  109,
+                      "sha256":  "0A8E853A4CD857282F356C1753EE5B8438E380B3B11E4DFC3134D87B18F2CC01"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/native-design-check.txt",
+                      "bytes":  410,
+                      "sha256":  "D5BA8121BEE36BF0BDB88997CC4F3420F42B793ECB7AE3AB43FAF3978790A1EB"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/native-pinned-build.txt",
+                      "bytes":  2173,
+                      "sha256":  "8929E1D5451A66541AB50DA700E8BCEC3EF3EA4E0ACF35E7A1E7893B6D4DCA72"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/policy-v2.txt",
+                      "bytes":  72,
+                      "sha256":  "BB10748158E76C832ED875164FB53CD704FF57B2C7A4846D43A853E89C58BB78"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/runtime/fixture-build.txt",
+                      "bytes":  420,
+                      "sha256":  "9EE7FAF17E7BE2611B4942C50EC1EBE757730E08DE5A9A5264E903EBBC63283B"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/runtime/fixture-cases.json",
+                      "bytes":  7263,
+                      "sha256":  "1613B76E1D721394038FB4A96424D1C33811E2DE7D1B40935CD5113926A20541"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/runtime/verification.json",
+                      "bytes":  17645,
+                      "sha256":  "75A4BAB6876E25F4F622875BB37B686016D45FE869D1E77DF0F1A90185BFF2E5"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/runtime-review.txt",
+                      "bytes":  216,
+                      "sha256":  "43554C483CFE534D2728001B7DE818525EA518A3EE3CC899E6E23E9F8EA1A0E8"
+                  },
+                  {
+                      "path":  "evidence/qa003/prepared-source/verification.json",
+                      "bytes":  2892,
+                      "sha256":  "EE6E2CD04669E873B74A402ACA05968E2AAE5CDD060F60D2C59CAFBD6C1203CF"
+                  },
+                  {
+                      "path":  "evidence/qa003/tools/legacy-tool-verification.json",
+                      "bytes":  1489,
+                      "sha256":  "4DA5837DC46D61BDF700947AF038D04AA8FA43FD74075426DCCBF0608EE2723D"
+                  },
+                  {
+                      "path":  "evidence/qa003/tools/TOOLS.md",
+                      "bytes":  3450,
+                      "sha256":  "366CF7D158F00F6EE507A53BE81BD19E4A4036C8B8A7D0773EBE49048D3B6DC0"
+                  },
+                  {
+                      "path":  "evidence/qa003/tools/tool-verification.json",
+                      "bytes":  10459,
+                      "sha256":  "7561B899AB7F429FC2854EF6A2C7D34B0586EE6C18AECED96BD3C46276FDEA25"
+                  },
+                  {
+                      "path":  "evidence/README.md",
+                      "bytes":  2346,
+                      "sha256":  "A31ACD7B1A8EEDB3676A8341E38978ADFF79AB0FB5C9E9DA1F6210020EDEFD1C"
+                  },
+                  {
+                      "path":  "history/HOW_THIS_WAS_MADE.md",
+                      "bytes":  6479,
+                      "sha256":  "4EF4929816862FEE31802567800B842E8A7065BD1F76F06784BD1FB92AE67E95"
+                  },
+                  {
+                      "path":  "history/origins/changes.md",
+                      "bytes":  32060,
+                      "sha256":  "F25C1CD09B49FA773F69E5D8953A1C9039043F13A7A74B748678D4371DB84DBE"
+                  },
+                  {
+                      "path":  "history/origins/n0008.md",
+                      "bytes":  68209,
+                      "sha256":  "20EBD0D0CE158F347C6B4889EA9604860FD7A4BF51EFA9DEA92F19BA3052AFA1"
+                  },
+                  {
+                      "path":  "history/origins/n0009.md",
+                      "bytes":  47669,
+                      "sha256":  "18F44B99B5287311A2A0DEF27E0FF22B9FA719C5ED94E8DBA74CE37C9149F716"
+                  },
+                  {
+                      "path":  "history/origins/n0010.md",
+                      "bytes":  41299,
+                      "sha256":  "B82703777E858130C0468908AF02BB6FBD87FFD7DCF36575B577D0710692E77A"
+                  },
+                  {
+                      "path":  "history/origins/n0138.md",
+                      "bytes":  15253,
+                      "sha256":  "74F2A66077057F3DF5F0E6CBA0408C1999453EBDF38D4349FFB252020471E511"
+                  },
+                  {
+                      "path":  "history/origins/n0192.md",
+                      "bytes":  61578,
+                      "sha256":  "14038A2BBCA0B38E7BB218DF4D4F6ADF010CE80E9202EF7EFEBC8AF80B0E5A1E"
+                  },
+                  {
+                      "path":  "history/origins/n0226.md",
+                      "bytes":  21194,
+                      "sha256":  "C033B66B4F11A18CA20343B3AD4BF6D6AEF528AB5DB85C3F700D957154345E73"
+                  },
+                  {
+                      "path":  "history/origins/n0227.md",
+                      "bytes":  33851,
+                      "sha256":  "55DB5AC98F37D7BFF0FF770EEF2DA316580EC4F90DA70E0B18F4D9F111CA20DC"
+                  },
+                  {
+                      "path":  "history/origins/n0230.md",
+                      "bytes":  3031,
+                      "sha256":  "E52B029E591D0319FCEF987B8E489EBE4A058B793B33F4FEE829AC2488CF2DEA"
+                  },
+                  {
+                      "path":  "history/origins/n0231.md",
+                      "bytes":  6303,
+                      "sha256":  "E5A251775DE934893887F8EE7CB5B3C59E342B3D070F149F20F5FB11D7A4F9A8"
+                  },
+                  {
+                      "path":  "history/versions/1.2.4.md",
+                      "bytes":  1821,
+                      "sha256":  "0DADB6FEB6C1D8A9BA45BA525B00E562195C8168568DAA4111E14FA10E98F301"
+                  },
+                  {
+                      "path":  "history/versions/1.2.5.md",
+                      "bytes":  1735,
+                      "sha256":  "EC8BEF9111283E5D327E781C44C7A7607CD0BEBE161E5FDDC7070316FA0B3AB3"
+                  },
+                  {
+                      "path":  "history/versions/BIOME-SELECTION.md",
+                      "bytes":  26485,
+                      "sha256":  "1A817DF5AF2CDB7898BB0CBB52028102765D2F8D6E4273A5FF276D7E9BA881A6"
+                  },
+                  {
+                      "path":  "history/versions/DEV-1.2.7.md",
+                      "bytes":  21378,
+                      "sha256":  "58B2A39305F81319E535EEB7F8AFAAB3E286174E7FF5A5F9351A3B3ED5A99224"
+                  },
+                  {
+                      "path":  "history/versions/NATIVE-UX-1.2.6.md",
+                      "bytes":  59011,
+                      "sha256":  "F070CF66ED2DF84CBC1550992B8FD188A6014AAFBC6D6A25E5E5D7BCE688E809"
+                  },
+                  {
+                      "path":  "history/versions/TRADER-NOTICE.md",
+                      "bytes":  9737,
+                      "sha256":  "3BCA1859510D6F83F5BC5031CCB387D091E2A75D65F10D4CBE7BC19CD8654DE0"
+                  },
+                  {
+                      "path":  "LICENSE.md",
+                      "bytes":  668,
+                      "sha256":  "A203588F65D0E13CD75547346BCAF78D170A4D490BBDC5472AAE4BD39D03EE26"
+                  },
+                  {
+                      "path":  "public-package-receipt.json",
+                      "bytes":  909,
+                      "sha256":  "61BEDD174282758B2020FC50EB5A4D66C6CFC8A1FD9D4152870D5E48DEE3AF54"
+                  },
+                  {
+                      "path":  "QA-RUNBOOK.md",
+                      "bytes":  10759,
+                      "sha256":  "0F8A9A3B4E5FC1E9191AAF62257A50D0F61220D9E9E510BF4AEA492E48CF6B88"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  2136,
+                      "sha256":  "11FE2EBFA596A177D48E7142599A763DE843D176866245E9E41057CE84CEF0FF"
+                  },
+                  {
+                      "path":  "release_templates/LICENSE-GPL-3.0-or-later.txt",
+                      "bytes":  35823,
+                      "sha256":  "230184F60BAE2FEAF244F10A8BAC053C8FF33A183BCC365B4D8B876D2B7F4809"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/BUILD_SETUP_FOUNDATION.md",
+                      "bytes":  11223,
+                      "sha256":  "219CE207F84B157A206C78D9D6CE7FED17B80995AE89453DFE36E15E7D488B30"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/builds/1.2.7-qa.003/build-record.json",
+                      "bytes":  4530,
+                      "sha256":  "017A738D767A67BB409B13C405A6098CB36AAD7D18C3FC32F623F803C07ED8D1"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/qa/cases.json",
+                      "bytes":  43133,
+                      "sha256":  "AD72CE62F265D7D1BF740D979CAA756625CBF03E618DFB4775873CDFC12439A4"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/qa/POLICY_V2_VECTORS.json",
+                      "bytes":  3667,
+                      "sha256":  "A332C6E50F9621E5E6664824B672CC4DA1F61115645B8805E0E9CD1913F398BE"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/qa/rel.json",
+                      "bytes":  7910,
+                      "sha256":  "31C9212FCC2E75F9A746DBD618ADE02AA94943586650DA8F7C8FD8B3E85D2643"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/launcher/m0160.psm1",
+                      "bytes":  5783,
+                      "sha256":  "BBC87CE995B5C7BFBCCD51AC88CDA371CB9497CFE18177DB7753A242EFA3E53E"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/launcher/m0161.psm1",
+                      "bytes":  47103,
+                      "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/launcher/m0162.psm1",
+                      "bytes":  23442,
+                      "sha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/launcher/m0164.psm1",
+                      "bytes":  45913,
+                      "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/launcher/m0166.psm1",
+                      "bytes":  7230,
+                      "sha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/BiomePreference.cs",
+                      "bytes":  3455,
+                      "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0140.cs",
+                      "bytes":  3819,
+                      "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0147.cs",
+                      "bytes":  1293,
+                      "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0167.cs",
+                      "bytes":  40386,
+                      "sha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0181.cs",
+                      "bytes":  5507,
+                      "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0184.cs",
+                      "bytes":  6901,
+                      "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0185.cs",
+                      "bytes":  3861,
+                      "sha256":  "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0213.cs",
+                      "bytes":  24044,
+                      "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0217.cs",
+                      "bytes":  5593,
+                      "sha256":  "FE71D6E8EF7E83928F1BA5C3D7C8E32B2C3F279D12C0D14C1136C8E77A8FFAFB"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/c0218.cs",
+                      "bytes":  6069,
+                      "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/j0148.json",
+                      "bytes":  1343,
+                      "sha256":  "C3E440CD8FA7FC231798A92E1A9A4658DCFCACACC9264DD46AC6130CCCA038F1"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/ModInfo.xml",
+                      "bytes":  410,
+                      "sha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/PlacedPoiResolver.cs",
+                      "bytes":  16709,
+                      "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/PlacedTraderResolver.cs",
+                      "bytes":  5143,
+                      "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/PolicyV1.cs",
+                      "bytes":  9386,
+                      "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/PolicyV2.cs",
+                      "bytes":  8039,
+                      "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/main/ResultV1.cs",
+                      "bytes":  5681,
+                      "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/p0143.ps1",
+                      "bytes":  7664,
+                      "sha256":  "077D4AFD5B3DF0FCE312946602B4D0B51CE9157D54608C107B5AB22D0013CA7D"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/src/runtime/p0143-b17-probe.ps1",
+                      "bytes":  7664,
+                      "sha256":  "077D4AFD5B3DF0FCE312946602B4D0B51CE9157D54608C107B5AB22D0013CA7D"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/PolicyProbe.cs",
+                      "bytes":  822,
+                      "sha256":  "172B2D3BEF7111CCA3F8EA9CDFFADD0A100876C4DFB69A33893BA305F7D2D3EA"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Replay-NativeUxRound2.ps1",
+                      "bytes":  9267,
+                      "sha256":  "73B1535E0D93FC16075D704C94ECC1727248555E87735B93946F17BA1F3243A3"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/RuntimeRepairHarness/Program.cs",
+                      "bytes":  12420,
+                      "sha256":  "ABEAAA9CAF34C4AC8EBC4DB65EF85D2EEFB68B1E5B766D9326CA1DFCFAD01D00"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/RuntimeRepairHarness/RuntimeRepairHarness.csproj",
+                      "bytes":  1236,
+                      "sha256":  "F752E17B5853710E9FE404E7AC4B20A23C3736BC8D2AF404DD3CA5383A4C12D0"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/RuntimeRepairHarness/Stubs.cs",
+                      "bytes":  11470,
+                      "sha256":  "3FFF7C0E6C06E108E19A234D622080D6AF7AC0DF35CA4AA0F78972B7432F8EBC"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-CompiledPolicy.ps1",
+                      "bytes":  1288,
+                      "sha256":  "889ECEABDD37648E1EB25E9E3D2CAE0F0FCE20EDD9107105D62244374FC75077"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-ManagerCallbackWiring.ps1",
+                      "bytes":  89483,
+                      "sha256":  "9A1B27B04B5B0D71C4518488EAC7EF14EB025ABF0F0905ABC7E20E84C15A2268"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-ManagerOwnership.ps1",
+                      "bytes":  4476,
+                      "sha256":  "42F0120C63A73E7136BCB654846485E88528A57F07F198E1A3B262DE3ABD392D"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-ManagerReviewRepairs.ps1",
+                      "bytes":  14950,
+                      "sha256":  "8AE67628757ECF32B808FBE9E5A81F320011F68A04156B719249CA0BCA79119C"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-PolicyInvalidFixtures.ps1",
+                      "bytes":  2903,
+                      "sha256":  "74A3FD83EBDBD517233476C488E08A142B817696D7E5857FF7989387F4A532E1"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-PolicyV2.ps1",
+                      "bytes":  7908,
+                      "sha256":  "A7E078BA093F28D62C5CAA896174A01BEBB9E7E0500D36980D95F50A760D3504"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tests/Test-RuntimeReviewRepairs.ps1",
+                      "bytes":  3368,
+                      "sha256":  "1CD138CD7698D240EBFC8A2BB1B472C5AF2262326481F2D68912CEB6EFE7342D"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/.gitignore",
+                      "bytes":  6,
+                      "sha256":  "89E69901AF2A01ECED6F20F4F85D045F55FF4C1448232B0853FE6DCB42EEC210"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Export-Graphics.ps1",
+                      "bytes":  1063,
+                      "sha256":  "2C5A01B2E834410FB66EB47A6B33B3A373B89DEB19716C716813AAE52FCDADF8"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/NativeControls.cs",
+                      "bytes":  22653,
+                      "sha256":  "7533751906025A9604236CD3DDF1669E953396499E4698965BE52C2CD8B40B69"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/NativeGraphics.psm1",
+                      "bytes":  4837,
+                      "sha256":  "86CB4E7DEF5A1C484D765CB879935B9BF7C48474404BD8E34F92A5CF26A7C3FD"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Open-Workbench.cmd",
+                      "bytes":  172,
+                      "sha256":  "BE8CC576863D1AB2E34E9D35EBAF17B28A218EDFF690F065CB70F4C545C0073B"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Presentation.psm1",
+                      "bytes":  12182,
+                      "sha256":  "70E543BF6FD070E1F4828B4F5BBEF1D4BB2DC4259282696B1109B82D9CA973B1"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/README.md",
+                      "bytes":  9777,
+                      "sha256":  "0E2EF1D595D5533F053584426956E5D883E1AC4B68097DF0CBE9EEF295527C43"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Recipes.psm1",
+                      "bytes":  10144,
+                      "sha256":  "D090EE4FC7312C00ED30EF1557368798B281785F20C6AF0F26E2B5B42D17EDE1"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/recipes/bitwrecked-contrast.json",
+                      "bytes":  1422,
+                      "sha256":  "71692D963064F303233B47C93B9AD9D6BE0D13DE364275CD2751ED491F13F348"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/recipes/bitwrecked-quiet.json",
+                      "bytes":  2789,
+                      "sha256":  "7E80883D7C5E8BE526BAA29A68795E9A55C753E495264E47F46D9A437E5FC16E"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/recipes/README.md",
+                      "bytes":  4454,
+                      "sha256":  "B64F0556AFF62FE18EC0E6F6B2126F99FA20C1ED76D64D9619943C368AC59C51"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Show-GraphicsWorkbench.ps1",
+                      "bytes":  35385,
+                      "sha256":  "C2C6E7D000DE3F20E5D9BD8D35CC95220330CAF92AC114D10063458C123E1C27"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Sync-ManagerDesign.ps1",
+                      "bytes":  7696,
+                      "sha256":  "4EA815B0E2052EE8BC6501333B5A95E968251477FFADE3955917F7BEBB531F61"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/Test-GraphicsTools.ps1",
+                      "bytes":  15946,
+                      "sha256":  "802B807566E87C0CAD3EA19670032423D3DCAA879EADC90F2CC5B945EDFFA8EF"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/tools/NativeGraphics/theme.json",
+                      "bytes":  299,
+                      "sha256":  "0336E0DE117EF7307A0B3EF4CF8F8F8E97666779ED1BBA4BF9FC606B416258B2"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/ui/Assets/bit-wrecked-historical-random-start.png",
+                      "bytes":  1107612,
+                      "sha256":  "B8B8B55F697D0CA8A20860B93BA9DEAAADAF6EE172DDA3A4DF0B09E378DBE66F"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/ui/Assets/i0141.png",
+                      "bytes":  14833,
+                      "sha256":  "6131A56A3C966EDE04B3E0A60D5EDCA3D4CB24D69425012BB2C0686D50E88562"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/ui/logo.ico",
+                      "bytes":  125633,
+                      "sha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/ui/p0158.ps1",
+                      "bytes":  126209,
+                      "sha256":  "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/verified/main/d0163.dll",
+                      "bytes":  77312,
+                      "sha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/dev/verified/main/ModInfo.xml",
+                      "bytes":  410,
+                      "sha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/LANE_README.md",
+                      "bytes":  6237,
+                      "sha256":  "3BD9C21EDA3FDB1FC23AB415BBDF2F5B0A42B814EC789BED45E077C8FBE03045"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/LICENSE.md",
+                      "bytes":  708,
+                      "sha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/README.md",
+                      "bytes":  5890,
+                      "sha256":  "396AF64996D8B4DE724B410773DB8963709DE72F2A03E1979CE9DF6AF7C69CDD"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/release_templates/LICENSE-GPL-3.0-or-later.txt",
+                      "bytes":  35823,
+                      "sha256":  "230184F60BAE2FEAF244F10A8BAC053C8FF33A183BCC365B4D8B876D2B7F4809"
+                  },
+                  {
+                      "path":  "source/hrs_1.2.7/START.bat",
+                      "bytes":  553,
+                      "sha256":  "E03E6D7BED13F1FAAA0783C470CDD3AAC28C72A3649B6EC48EB43FF3F0C4347A"
+                  },
+                  {
+                      "path":  "source/qa_cycle/CANDIDATE_WORKFLOW.md",
+                      "bytes":  8592,
+                      "sha256":  "FEC945445871CE210E13329B3F204BCF6DFAC80B0E83E08A3E5615E0CAB8728B"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Complete-HrsQaCycle.ps1",
+                      "bytes":  8206,
+                      "sha256":  "9DB51C2305260FF53F48209C11269F5C764379FF8EDA96B015A3F27A906D8553"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Export-HrsCandidate.ps1",
+                      "bytes":  12727,
+                      "sha256":  "F138639FB41D4A40C7E3A2DDF66258E37332AF5C2AF859CD3730B0A59C8B27C9"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Export-HrsNavezganePoiCatalog.ps1",
+                      "bytes":  10603,
+                      "sha256":  "C35666A136BDBCA9E7EAA468A7A694D1A973AAF666D7735B8D18D6CC2C399D55"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Export-HrsQaRun.ps1",
+                      "bytes":  13411,
+                      "sha256":  "A0AC65FAD74AAC067EF78A732A4E79C6CF8AE88663F3F13A304A968F14514AE3"
+                  },
+                  {
+                      "path":  "source/qa_cycle/HrsIdentity.ps1",
+                      "bytes":  22750,
+                      "sha256":  "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86"
+                  },
+                  {
+                      "path":  "source/qa_cycle/HrsQaTools.psm1",
+                      "bytes":  57192,
+                      "sha256":  "3F637E9B0D1AB4A91A0505D7B1D063DEC740E2C33FB3C9BDD351701153A2F607"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs123Contract.ps1",
+                      "bytes":  11890,
+                      "sha256":  "892CC4AACCE147E3EA7A589A9FBD4C801B6FAEFA9D43370117634C83788DE541"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs124Baseline.ps1",
+                      "bytes":  4916,
+                      "sha256":  "94D487765C142899547339E3272BDACEA3B84F0E6CEEA0E824A6CCCB07B37888"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs124Contract.ps1",
+                      "bytes":  10376,
+                      "sha256":  "A2E5CD9A20CF5DE6DDD7583E5F8F7856766BABB338D143F310A553EB7A78BEAD"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs125Contract.ps1",
+                      "bytes":  15772,
+                      "sha256":  "72183A17CCC0832A302033D25FC7B11DCF56861E593659B66C28D16ADA6D2CD5"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs126Contract.ps1",
+                      "bytes":  32128,
+                      "sha256":  "DA1B6F079E13CFCE111119D6A70AAD9A373C1B6C744F34AA8C20A33D70FBF8E0"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs127Baseline.ps1",
+                      "bytes":  5712,
+                      "sha256":  "7A765F09EE283B6B3E17767FCE457B05AFFDC927A55A83CD4FFE037294C7D631"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-Hrs127Contract.ps1",
+                      "bytes":  26148,
+                      "sha256":  "6069F9ACB05C9BA3BBC3A0A4B42C6BD8D3F70FE697F530950203BA3E791A781A"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-HrsCycle.ps1",
+                      "bytes":  3379,
+                      "sha256":  "5D53E121E75F568A7463B7D91CECC88831706ABD7F10162279DE3CC6AD91C17D"
+                  },
+                  {
+                      "path":  "source/qa_cycle/New-HrsQaWorkspace.ps1",
+                      "bytes":  5058,
+                      "sha256":  "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA"
+                  },
+                  {
+                      "path":  "source/qa_cycle/README.md",
+                      "bytes":  8411,
+                      "sha256":  "A494FE6F56D559FF3AD2583723C52D713C4290C261AC016BBD1CE1BD09D35469"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Record-HrsQaObservation.ps1",
+                      "bytes":  7476,
+                      "sha256":  "F9EF59FF33222D11DE5F954E6D5F0256D6C87EC9DA4F42D52EC4F79BC5062977"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Start-HrsQaRun.ps1",
+                      "bytes":  4617,
+                      "sha256":  "25C46EE0E37266C3AA25AAC4CA447B3233A2E9D90D513AE60BD475DD0B08200C"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsBiomeObservation.ps1",
+                      "bytes":  7939,
+                      "sha256":  "4F61DB5ECC21D80E47BA4C05EF73EE967D0EAD4C6CCD96425C7962F7C241AB4B"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsCandidateBranding.ps1",
+                      "bytes":  7670,
+                      "sha256":  "608CC1E10E8A906F2EC008D2328B55018E68833F8531E3BDBA6085DE3EEE000B"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsCandidateWorkflow.ps1",
+                      "bytes":  15358,
+                      "sha256":  "E0C97C905F5787D4C7B8818D90211A613A9D622B3B3D2892008F8984E80B64E1"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsCheckoutBytes.ps1",
+                      "bytes":  2604,
+                      "sha256":  "99DFFCB2E77A1766688B6C1124C090EEE2E59DD31E044AB78A9B5DC17BBE6E04"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsPlacedObservation.ps1",
+                      "bytes":  11703,
+                      "sha256":  "178EC287074D8BD225EC3E88A3686297B4A0ABC4052693CFB965C51134C25654"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsPlacedWorldGate.ps1",
+                      "bytes":  6719,
+                      "sha256":  "9667B4E992137B64BA4732F11DADF85FCBAF00E2EE8F70938448F3E3871A3456"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsQaTools.ps1",
+                      "bytes":  17518,
+                      "sha256":  "4D9F78748C84DF885CB8B476E1714247115504528758223EDAA0DEBA2034AEAC"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsRelease.ps1",
+                      "bytes":  972,
+                      "sha256":  "10FA6C183A6544F9223F50E666D52DD43ABA50761313D5B57F0D0E88A71DFAEB"
+                  },
+                  {
+                      "path":  "source/qa_cycle/Test-HrsUnifiedPublicPackage.ps1",
+                      "bytes":  16854,
+                      "sha256":  "C0BD12D3AB5EA4B0E9FE8A399A2DEE6A34C91EB7C2512154C0E1F16664C3CFD7"
+                  },
+                  {
+                      "path":  "source/support/unified-public-20261004/Extend-PublicContent.ps1",
+                      "bytes":  6864,
+                      "sha256":  "DC667A95B5E5D3712E3608580889BF5A89EF7D1DD63EE9E7D955E2EBE8A05CE5"
+                  },
+                  {
+                      "path":  "source/support/unified-public-20261004/Prepare-PublicContent.ps1",
+                      "bytes":  18626,
+                      "sha256":  "930448D73078ADC61CCD42877744DB44B73FCFC33845EC015171300A3E3644AC"
+                  },
+                  {
+                      "path":  "source/support/unified-public-20261004/Verify-PreparedSource.ps1",
+                      "bytes":  4839,
+                      "sha256":  "A30AF1B4F9CDD6BC32E316489E1B94A15B524EB1C4EEDA81C53332E1A6735585"
+                  },
+                  {
+                      "path":  "source/support/unified-public-20261004/Verify-PublicCandidate.ps1",
+                      "bytes":  7895,
+                      "sha256":  "3F49B273373940151C612980DE55B38BDDC7DEB57706F0933C82CFA76C611D64"
+                  },
+                  {
+                      "path":  "START.bat",
+                      "bytes":  106,
+                      "sha256":  "438C628D9B5DFE26FF67B32AE803386ED604BCDDEC6E89D6739494C2703FF5A4"
+                  },
+                  {
+                      "path":  "START-HERE.md",
+                      "bytes":  1285,
+                      "sha256":  "FA3693CB91ED18B81C2FE3B13E84465E25C81E1BFF80D208BC356346D6DA89BA"
+                  },
+                  {
+                      "path":  "tools/Complete-HrsQaCycle.ps1",
+                      "bytes":  8206,
+                      "sha256":  "9DB51C2305260FF53F48209C11269F5C764379FF8EDA96B015A3F27A906D8553"
+                  },
+                  {
+                      "path":  "tools/Export-HrsQaRun.ps1",
+                      "bytes":  13411,
+                      "sha256":  "A0AC65FAD74AAC067EF78A732A4E79C6CF8AE88663F3F13A304A968F14514AE3"
+                  },
+                  {
+                      "path":  "tools/HrsIdentity.ps1",
+                      "bytes":  22750,
+                      "sha256":  "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86"
+                  },
+                  {
+                      "path":  "tools/HrsQaTools.psm1",
+                      "bytes":  57192,
+                      "sha256":  "3F637E9B0D1AB4A91A0505D7B1D063DEC740E2C33FB3C9BDD351701153A2F607"
+                  },
+                  {
+                      "path":  "tools/New-HrsQaWorkspace.ps1",
+                      "bytes":  5058,
+                      "sha256":  "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA"
+                  },
+                  {
+                      "path":  "tools/Record-HrsQaObservation.ps1",
+                      "bytes":  7476,
+                      "sha256":  "F9EF59FF33222D11DE5F954E6D5F0256D6C87EC9DA4F42D52EC4F79BC5062977"
+                  },
+                  {
+                      "path":  "tools/Start-HrsQaRun.ps1",
+                      "bytes":  4617,
+                      "sha256":  "25C46EE0E37266C3AA25AAC4CA447B3233A2E9D90D513AE60BD475DD0B08200C"
+                  },
+                  {
+                      "path":  "tools/Test-HrsRelease.ps1",
+                      "bytes":  972,
+                      "sha256":  "10FA6C183A6544F9223F50E666D52DD43ABA50761313D5B57F0D0E88A71DFAEB"
+                  }
+              ]
+}

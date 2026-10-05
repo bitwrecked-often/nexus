@@ -1,0 +1,363 @@
+{
+    "schema":  "hrs-runtime-review-repairs/v1",
+    "generatedUtc":  "2026-10-05T05:38:22.5113665Z",
+    "method":  "Compile nine exact runtime sources against controlled engine/resolver seams; invoke actual spawn/update and intro-prefix entrypoints, actual markers, semantic snapshot and environment guard.",
+    "scope":  "Isolated DEV source control-flow evidence. No installed game writes, game launch, customer DLL qualification or independent gameplay QA.",
+    "runtimeSourceRoot":  "<DEV_TEMP>\\hrs-public-source-d23017cdffe94333ae145d23c760eac4\\hrs_1.2.7\\dev\\src\\runtime\\main",
+    "sourceHashes":  [
+                         {
+                             "sha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D",
+                             "path":  "c0167.cs"
+                         },
+                         {
+                             "sha256":  "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60",
+                             "path":  "c0185.cs"
+                         },
+                         {
+                             "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2",
+                             "path":  "c0213.cs"
+                         },
+                         {
+                             "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A",
+                             "path":  "c0181.cs"
+                         },
+                         {
+                             "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD",
+                             "path":  "c0218.cs"
+                         },
+                         {
+                             "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+                             "path":  "PolicyV1.cs"
+                         },
+                         {
+                             "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+                             "path":  "PolicyV2.cs"
+                         },
+                         {
+                             "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+                             "path":  "BiomePreference.cs"
+                         },
+                         {
+                             "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356",
+                             "path":  "ResultV1.cs"
+                         }
+                     ],
+    "fixtureHashes":  [
+                          {
+                              "sha256":  "1CD138CD7698D240EBFC8A2BB1B472C5AF2262326481F2D68912CEB6EFE7342D",
+                              "path":  "<DEV_TEMP>\\hrs-public-source-d23017cdffe94333ae145d23c760eac4\\hrs_1.2.7\\dev\\tests\\Test-RuntimeReviewRepairs.ps1"
+                          },
+                          {
+                              "sha256":  "F752E17B5853710E9FE404E7AC4B20A23C3736BC8D2AF404DD3CA5383A4C12D0",
+                              "path":  "<DEV_TEMP>\\hrs-public-source-d23017cdffe94333ae145d23c760eac4\\hrs_1.2.7\\dev\\tests\\RuntimeRepairHarness\\RuntimeRepairHarness.csproj"
+                          },
+                          {
+                              "sha256":  "ABEAAA9CAF34C4AC8EBC4DB65EF85D2EEFB68B1E5B766D9326CA1DFCFAD01D00",
+                              "path":  "<DEV_TEMP>\\hrs-public-source-d23017cdffe94333ae145d23c760eac4\\hrs_1.2.7\\dev\\tests\\RuntimeRepairHarness\\Program.cs"
+                          },
+                          {
+                              "sha256":  "3FFF7C0E6C06E108E19A234D622080D6AF7AC0DF35CA4AA0F78972B7432F8EBC",
+                              "path":  "<DEV_TEMP>\\hrs-public-source-d23017cdffe94333ae145d23c760eac4\\hrs_1.2.7\\dev\\tests\\RuntimeRepairHarness\\Stubs.cs"
+                          }
+                      ],
+    "fixtureDllSha256":  "605BC23A2C8FE902A21860E0ECE1C27567C18EEB19A25DFBB14030B9C1CB9A4B",
+    "fixtureExitCode":  0,
+    "total":  20,
+    "passed":  20,
+    "failed":  0,
+    "cases":  [
+                  {
+                      "scenario":  "PostPlayerMoveFailure",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/PLACEMENT_FAILED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "CANDIDATE_LOAD_RESTORED",
+                                   "PLACEMENT_FAILED"
+                               ]
+                  },
+                  {
+                      "scenario":  "PostObserverMoveFailure",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/PLACEMENT_FAILED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "CANDIDATE_LOAD_RESTORED",
+                                   "PLACEMENT_FAILED"
+                               ]
+                  },
+                  {
+                      "scenario":  "SemanticMismatchRecovery",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/SEMANTIC_CHANGED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "CANDIDATE_LOAD_RESTORED",
+                                   "SEMANTIC_CHANGED"
+                               ]
+                  },
+                  {
+                      "scenario":  "ValidFifthPlacementAndTrader",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "COMPLETED/RELOCATION_COMPLETED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:2:2",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:3:3",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:4:4",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:5:5",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "CANDIDATE_ADJUSTED",
+                                   "CANDIDATE_SURFACE_SETTLED",
+                                   "INITIAL_BIOME_STORED",
+                                   "TRADER_ROUTE_READY",
+                                   "POI_COMPLETED:5",
+                                   "RELOCATION_COMPLETED",
+                                   "TRADER_ROUTE_RESERVED",
+                                   "TRADER_ROUTE_SAME_BIOME",
+                                   "TRADER_SELECTED",
+                                   "TRADER_ROUTE_COMPLETED"
+                               ]
+                  },
+                  {
+                      "scenario":  "FiveUnsafePlacementsFallback",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/POI_SAFETY_EXHAUSTED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:2:2",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:3:3",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:4:4",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "POI_RETRY",
+                                   "POI_ATTEMPT:5:5",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_PRIME_WAIT",
+                                   "CANDIDATE_LOAD_RESTORED",
+                                   "POI_SAFETY_EXHAUSTED"
+                               ]
+                  },
+                  {
+                      "scenario":  "ChangedWorldRecoveryRejected",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/VERIFY_CONTEXT_FAILED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "VERIFY_CONTEXT_FAILED"
+                               ]
+                  },
+                  {
+                      "scenario":  "DifferentWorldSameGuidRecoveryRejected",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/VERIFY_CONTEXT_FAILED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "VERIFY_CONTEXT_FAILED"
+                               ]
+                  },
+                  {
+                      "scenario":  "ReplacementEntitySameIdRejected",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/VERIFY_CONTEXT_FAILED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "VERIFY_CONTEXT_FAILED"
+                               ]
+                  },
+                  {
+                      "scenario":  "SameOwnerContextFailureRestores",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "FAILED/VERIFY_CONTEXT_FAILED",
+                      "logs":  [
+                                   "BIOME_SELECTED",
+                                   "POI_ATTEMPT:1:1",
+                                   "PLACEMENT_DEFERRED",
+                                   "PLACEMENT_CALLED",
+                                   "CANDIDATE_LOAD_REQUESTED",
+                                   "SEMANTIC_UNCHANGED",
+                                   "CANDIDATE_LOAD_RESTORED",
+                                   "VERIFY_CONTEXT_FAILED"
+                               ]
+                  },
+                  {
+                      "scenario":  "ValidIntroQuestFilter",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+                                   "INTRO_ROUTE_FILTER_APPLIED"
+                               ]
+                  },
+                  {
+                      "scenario":  "OtherGameIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "CaseMismatchIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "EacIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "MultiplayerIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "DedicatedIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "IncompatibleIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "UnmarkedIntroQuestUnchanged",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "/",
+                      "logs":  [
+
+                               ]
+                  },
+                  {
+                      "scenario":  "OtherGameFirstSpawnRejected",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "REJECTED/GAME_NAME_MISMATCH",
+                      "logs":  [
+                                   "GAME_NAME_MISMATCH"
+                               ]
+                  },
+                  {
+                      "scenario":  "LoadedUnmarkedCharacterRejected",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "REJECTED/LIFECYCLE_REJECTED",
+                      "logs":  [
+                                   "LIFECYCLE_REJECTED"
+                               ]
+                  },
+                  {
+                      "scenario":  "NormalRespawnRejected",
+                      "pass":  true,
+                      "error":  null,
+                      "result":  "REJECTED/LIFECYCLE_REJECTED",
+                      "logs":  [
+                                   "LIFECYCLE_REJECTED"
+                               ]
+                  }
+              ],
+    "realGameWrites":  0,
+    "independentQaCasesChanged":  0
+}

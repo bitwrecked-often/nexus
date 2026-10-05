@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  Restored <DEV_TEMP>\hrs-public-source-d23017cdffe94333ae145d23c760eac4\hrs_1.2.7\dev\tests\RuntimeRepairHarness\RuntimeRepairHarness.csproj (in 62 ms).
+  RuntimeRepairHarness -> <DEV_REPO>\hrs_1.2.7\dev\qa\unified-public-20261004\prepared-source-r002\runtime\fixture-bin\RuntimeRepairHarness.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.23

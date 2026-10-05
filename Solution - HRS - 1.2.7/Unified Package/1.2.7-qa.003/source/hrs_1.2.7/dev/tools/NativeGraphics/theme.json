@@ -1,0 +1,14 @@
+{
+  "schema": "bitwrecked-native-graphics/v1",
+  "fontFamily": "Segoe UI",
+  "fontSize": 10,
+  "background": "#F8F8F5",
+  "surface": "#FFFFFF",
+  "text": "#242628",
+  "muted": "#5C5E60",
+  "border": "#D8D8D3",
+  "accent": "#AE4014",
+  "cornerRadius": 8,
+  "spacing": 12,
+  "buttonFill": "#FFFFFF"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "mode": "Standard",
+    "selection": "Any",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"Standard\",\"enabled\":false,\"selection\":\"Any\",\"chosenBiome\":0,\"forest\":0,\"burntForest\":0,\"desert\":0,\"snow\":0,\"wasteland\":0,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"744AA689DF5C4E704E792C5DAF7A7B0BA304ECC180BCC29E6DDDE20401733E84\"}",
+    "digest": "744AA689DF5C4E704E792C5DAF7A7B0BA304ECC180BCC29E6DDDE20401733E84"
+  },
+  {
+    "mode": "Random",
+    "selection": "Any",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"Random\",\"enabled\":true,\"selection\":\"Any\",\"chosenBiome\":0,\"forest\":0,\"burntForest\":0,\"desert\":0,\"snow\":0,\"wasteland\":0,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"7EBF4CB3F46DE96D86C40E933ED239B89A1949F2F17E2D00BFDDCFA0C0B9EB5E\"}",
+    "digest": "7EBF4CB3F46DE96D86C40E933ED239B89A1949F2F17E2D00BFDDCFA0C0B9EB5E"
+  },
+  {
+    "mode": "Random",
+    "selection": "Chosen",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"Random\",\"enabled\":true,\"selection\":\"Chosen\",\"chosenBiome\":8,\"forest\":0,\"burntForest\":0,\"desert\":0,\"snow\":0,\"wasteland\":0,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"AE074F29BCE73FB5B42EBBD5E5D692377EE4EC8A3A09EC700FA14DDE104FFAD2\"}",
+    "digest": "AE074F29BCE73FB5B42EBBD5E5D692377EE4EC8A3A09EC700FA14DDE104FFAD2"
+  },
+  {
+    "mode": "Random",
+    "selection": "Weighted",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"Random\",\"enabled\":true,\"selection\":\"Weighted\",\"chosenBiome\":0,\"forest\":10,\"burntForest\":20,\"desert\":20,\"snow\":25,\"wasteland\":25,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"8F10E2418B6AC37E191F5533CCBFA7FB33C6004F5716B3802D2D5B3F7386F720\"}",
+    "digest": "8F10E2418B6AC37E191F5533CCBFA7FB33C6004F5716B3802D2D5B3F7386F720"
+  },
+  {
+    "mode": "RandomSafe",
+    "selection": "Any",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"RandomSafe\",\"enabled\":true,\"selection\":\"Any\",\"chosenBiome\":0,\"forest\":0,\"burntForest\":0,\"desert\":0,\"snow\":0,\"wasteland\":0,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"AE3CC484E00B8F2BF4BB457BA56C0DE74CD6083E6082683FA005F706544E28E9\"}",
+    "digest": "AE3CC484E00B8F2BF4BB457BA56C0DE74CD6083E6082683FA005F706544E28E9"
+  },
+  {
+    "mode": "RandomSafe",
+    "selection": "Chosen",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"RandomSafe\",\"enabled\":true,\"selection\":\"Chosen\",\"chosenBiome\":8,\"forest\":0,\"burntForest\":0,\"desert\":0,\"snow\":0,\"wasteland\":0,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"F13216EDC903CDBC89AA8B488BD21E8309468CC96CA638813746305C06061E79\"}",
+    "digest": "F13216EDC903CDBC89AA8B488BD21E8309468CC96CA638813746305C06061E79"
+  },
+  {
+    "mode": "RandomSafe",
+    "selection": "Weighted",
+    "canonical": "{\"schema\":\"hrs-policy/v2\",\"revision\":2,\"gameName\":\"QA Biomes\",\"mode\":\"RandomSafe\",\"enabled\":true,\"selection\":\"Weighted\",\"chosenBiome\":0,\"forest\":10,\"burntForest\":20,\"desert\":20,\"snow\":25,\"wasteland\":25,\"writtenUtc\":\"2026-09-27T18:00:00.000Z\",\"policyDigest\":\"DDAC53492338C5EB88AB54A295E51094601A95B5E4D0C04DD65A8CBED6EDD154\"}",
+    "digest": "DDAC53492338C5EB88AB54A295E51094601A95B5E4D0C04DD65A8CBED6EDD154"
+  }
+]

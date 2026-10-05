@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>disable</Nullable>
+    <NoWarn>0649</NoWarn>
+    <RuntimeSourceRoot Condition="'$(RuntimeSourceRoot)' == ''">../../src/runtime/main</RuntimeSourceRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Stubs.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/c0167.cs" Link="RuntimeConsumer.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/c0185.cs" Link="PendingPlacement.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/c0213.cs" Link="RuntimeEnvironmentGuard.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/c0181.cs" Link="MarkerStore.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/c0218.cs" Link="SemanticSnapshot.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/PolicyV1.cs" Link="PolicyV1.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/PolicyV2.cs" Link="PolicyV2.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/BiomePreference.cs" Link="BiomePreference.cs" />
+    <Compile Include="$(RuntimeSourceRoot)/ResultV1.cs" Link="ResultV1.cs" />
+  </ItemGroup>
+</Project>
