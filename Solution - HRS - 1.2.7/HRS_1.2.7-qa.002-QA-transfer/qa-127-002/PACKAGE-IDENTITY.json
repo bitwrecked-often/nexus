@@ -1,0 +1,21 @@
+{
+    "schema":  "hrs-qa-review-package/v1",
+    "candidateId":  "1.2.7-qa.002",
+    "releaseVersion":  "1.2.7",
+    "publicName":  "New Player Random Start",
+    "customerZip":  "1.2.7-qa.002.zip",
+    "archiveSha256":  "19A68E47A7667EB5E9DDD9087F89C933A285C4B3116746F36E52D2473F10F276",
+    "archiveBytes":  214638,
+    "receiptSha256":  "97262F711C9D84B2C1BC0DBEFD9D7DE6F79C321059076902F8F2B00779FF02D0",
+    "companionSha256":  "AE93BA455AB0BB82D651020E4C52895FABAA5873D6DA879E9532F64D65F79128",
+    "runtimeSha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB",
+    "sourceManagerSha256":  "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72",
+    "customerManagerSha256":  "0D42EC91296905B61BB49BB9CD00B9E383F09DDE1A4D1D40DDBFEB95CDA1DC3E",
+    "customerFileCount":  13,
+    "releaseRecordSha256":  "82149709D030F84ABC42C448A55D68FF531199CEFF35F4D3F8B5274CD7B62581",
+    "contractSha256":  "079920559517B51C3A96F9232C36DAF9145499AE65087A479C94760AB7599D0D",
+    "independentQaPending":  46,
+    "publicationApproved":  false,
+    "qualification":  "DEV fixtures, compiled source, package verification and simulated geometry are supporting evidence. Actual customer gameplay/display/accessibility/newcomer QA remains Pending.",
+    "distributionRule":  "After independent QA and owner approval, publish the exact customer ZIP unchanged. The outer transfer and review directory are engineering support."
+}

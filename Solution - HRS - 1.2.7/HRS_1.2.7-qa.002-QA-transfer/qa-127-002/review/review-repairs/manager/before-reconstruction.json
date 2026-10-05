@@ -1,0 +1,7 @@
+﻿{
+    "method":  "Exact reverse of own F3/F4 patch; not a contemporaneous pre-edit copy",
+    "expectedSourceSha256":  "387C0B8C536194E7F85B2C935C115A4AEAE3A4BB55DD2D4990E792840463EF65",
+    "reconstructedSha256":  "387C0B8C536194E7F85B2C935C115A4AEAE3A4BB55DD2D4990E792840463EF65",
+    "matched":  true,
+    "reference":  "dev/qa/top-to-bottom-review-20261004/protected-before.json"
+}

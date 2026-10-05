@@ -1,0 +1,116 @@
+﻿{
+    "schema":  "hrs-manager-review-repairs/v1",
+    "status":  "Pass",
+    "completedUtc":  "2026-10-05T04:57:30.8415418Z",
+    "sourceSha256":  "E6CC1E0AFE8E271E6F9DBC8685EC4DDDCB8E9727FDA46758916CA6810D9067D5",
+    "harnessSha256":  "8AE67628757ECF32B808FBE9E5A81F320011F68A04156B719249CA0BCA79119C",
+    "powerShellVersion":  "5.1.26100.9549",
+    "assertionCount":  26,
+    "assertions":  [
+                       {
+                           "name":  "single-discovered-installation-bypasses-picker",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "invalid-folder-warning-then-valid-retry",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "initial-cancel-is-clean",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "cancel-after-invalid-selection-is-clean",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "multiple-installations-preserve-explicit-selection",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "actual-manager-entry-exits-zero-after-cancel",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "actual-launch-callback-records-active-steam-blocker",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "unchanged-steam-blocker-remains-main-status",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "resolved-steam-blocker-clears-main-status-retains-diagnostic",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "resolved-steam-blocker-does-not-mask-new-policy-validation-error",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "same-blocker-recurring-is-reported-again",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "resolved-steam-blocker-does-not-hide-new-game-running-guard",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "GAME_ALREADY_RUNNING-remains-current",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "GAME_ALREADY_RUNNING-resolved-diagnostic-retained",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "GAME_STATE_UNCONFIRMED-remains-current",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "GAME_STATE_UNCONFIRMED-resolved-diagnostic-retained",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "unknown-steam-state-remains-current",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "unknown-steam-state-clears-after-positive-running-check",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "dirty-settings-launch-blocker-remains-current",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "reverting-to-applied-settings-refreshes-main-status",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "failed-apply-latch-and-diagnostic-preserved",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "acknowledgement-blocker-does-not-expire-early",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "acknowledgement-blocker-resolves-after-latch-clears",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "unclassified-process-launch-error-is-not-erased",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "installation-drift-remains-blocked",
+                           "status":  "Pass"
+                       },
+                       {
+                           "name":  "restored-installation-clears-main-blocker-retains-diagnostic",
+                           "status":  "Pass"
+                       }
+                   ],
+    "scope":  "Actual manager selection/status functions and Launch callback; native controls, captured dialogs, inert temp files and controlled read-only dependencies. No Apply, uninstall, game launch or customer QA."
+}

@@ -1,0 +1,20 @@
+﻿[
+    {
+        "name":  "Restore previous settings",
+        "bounds":  "636,750,440,64",
+        "offscreenFlag":  false,
+        "handle":  1049908
+    },
+    {
+        "name":  "Uninstall Mod",
+        "bounds":  "636,814,280,64",
+        "offscreenFlag":  false,
+        "handle":  1179954
+    },
+    {
+        "name":  "Game details",
+        "bounds":  "636,902,654,46",
+        "offscreenFlag":  false,
+        "handle":  6752036
+    }
+]

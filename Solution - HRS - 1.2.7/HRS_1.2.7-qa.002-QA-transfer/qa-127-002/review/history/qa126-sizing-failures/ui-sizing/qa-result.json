@@ -1,0 +1,33 @@
+{
+    "schema":  "hrs-qa-result/v1",
+    "runId":  "hrsqa-20261004T175350Z-32724833",
+    "caseId":  "HRS-BIOME-Manager",
+    "kind":  "QA",
+    "declaredOutcome":  "Fail",
+    "automatedEventAssessment":  "Mismatch",
+    "expectedEventOrderValid":  true,
+    "missingExpectedEvents":  [
+
+                              ],
+    "observedForbiddenEvents":  [
+
+                                ],
+    "observationIssues":  [
+                              "CHECK_NOT_CONFIRMED:weight-cancel-discarded",
+                              "CHECK_NOT_CONFIRMED:weight-switch-retained",
+                              "CHECK_NOT_CONFIRMED:all-zero-blocked",
+                              "CHECK_NOT_CONFIRMED:confirmation-before-mutation",
+                              "CHECK_NOT_CONFIRMED:keyboard-access",
+                              "CHECK_NOT_CONFIRMED:scaling-100",
+                              "CHECK_NOT_CONFIRMED:scaling-150",
+                              "CHECK_NOT_CONFIRMED:scaling-200",
+                              "CHECK_NOT_CONFIRMED:scaling-225",
+                              "CHECK_NOT_CONFIRMED:focus-disabled-readable",
+                              "CHECK_NOT_CONFIRMED:os-high-contrast",
+                              "CHECK_NOT_CONFIRMED:narrator-controls",
+                              "CHECK_NOT_CONFIRMED:scroll-reachability",
+                              "CHECK_NOT_CONFIRMED:native-popups-readable"
+                          ],
+    "notes":  "Live manager sizing attempt failed. Actual Windows monitor scales100/150/200/225 were checked through the frozen customer START.bat; each successful round has a native screenshot and measurements. HRS-UX-001: at150%, equivalent Weighted states narrow1028 to951 to875 pixels through two Chosen/Weighted keyboard cycles with no resize requests. HRS-UX-002: automatic growth retains top114 and puts bottom1446 beyond working-area bottom1368. HRS-UX-003: after actualmouse resizing to880x720 at200%, maximumscroll position571 and extra wheel input leave Restore clipped and Uninstall/Game details below the client. See ui-sizing/index.html and sizing-findings.json. All weights-dialog rows/actions are readable at all four scales. Only three observed manual checks are confirmed. Other manual checks remain unperformed or failed, so the exporter all-check assessment will be Mismatch; this does not report a runtime event failure. No game was launched. Installed policy/result/runtime/ModInfo hashes unchanged. Primary scale restored200%, secondary300%, original maximized layout and savedChosen settings restored. No customer candidate bytes changed. DEV should return a new candidate with sizing corrections before this case can pass.",
+    "completedUtc":  "2026-10-04T18:27:26.437Z"
+}

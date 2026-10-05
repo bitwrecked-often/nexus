@@ -1,0 +1,298 @@
+﻿{
+    "schema":  "hrs-native-geometry-fixture/v1",
+    "verdict":  "Pass",
+    "scope":  "Native manager in inert TEMP game fixture; API-driven native resize; Form.Scale geometry only, not actual Windows DPI qualification",
+    "scaleFactor":  2,
+    "sourceSha256":  "EE2750642C80EBE78EE5627F1AE1003229D9E7FF3B16A8F8EF45EFC894522F3D",
+    "snippetSha256":  "DD22A802B73ACEA537C522104A60BB6C0CF5B80E134DE4A8AC21154A968EE024",
+    "integrated":  true,
+    "checks":  [
+                   "stable-outer-width-0-Any",
+                   "fit-inside-work-area-0-Any",
+                   "no-horizontal-scroll-0-Any",
+                   "stable-outer-width-0-Chosen",
+                   "fit-inside-work-area-0-Chosen",
+                   "no-horizontal-scroll-0-Chosen",
+                   "stable-outer-width-0-Weighted",
+                   "fit-inside-work-area-0-Weighted",
+                   "no-horizontal-scroll-0-Weighted",
+                   "stable-outer-width-0-Chosen",
+                   "fit-inside-work-area-0-Chosen",
+                   "no-horizontal-scroll-0-Chosen",
+                   "stable-outer-width-0-Weighted",
+                   "fit-inside-work-area-0-Weighted",
+                   "no-horizontal-scroll-0-Weighted",
+                   "stable-outer-width-1-Any",
+                   "fit-inside-work-area-1-Any",
+                   "no-horizontal-scroll-1-Any",
+                   "stable-outer-width-1-Chosen",
+                   "fit-inside-work-area-1-Chosen",
+                   "no-horizontal-scroll-1-Chosen",
+                   "stable-outer-width-1-Weighted",
+                   "fit-inside-work-area-1-Weighted",
+                   "no-horizontal-scroll-1-Weighted",
+                   "stable-outer-width-1-Chosen",
+                   "fit-inside-work-area-1-Chosen",
+                   "no-horizontal-scroll-1-Chosen",
+                   "stable-outer-width-1-Weighted",
+                   "fit-inside-work-area-1-Weighted",
+                   "no-horizontal-scroll-1-Weighted",
+                   "fit-near-bottom-is-contained",
+                   "near-bottom-fit-preserves-width",
+                   "native-size-event-marks-user-resize",
+                   "native-minimum-size-respected",
+                   "selection-preserves-user-size-Any",
+                   "selection-preserves-user-size-Chosen",
+                   "selection-preserves-user-size-Weighted",
+                   "selection-preserves-user-size-Any",
+                   "selection-preserves-user-size-Weighted",
+                   "game-details-link-present",
+                   "bottom-scroll-exposes-game-details; top=533; bottom=556; viewport=642",
+                   "bottom-scroll-exposes-uninstall; top=453; bottom=517; viewport=642",
+                   "minimum-reachable-Apply Settings; top=214; bottom=298; viewport=642",
+                   "minimum-reachable-Launch Game; top=306; bottom=390; viewport=642",
+                   "minimum-reachable-Uninstall Mod; top=453; bottom=517; viewport=642",
+                   "minimum-reachable-Game details; top=533; bottom=556; viewport=642",
+                   "expanded-last-text-bottom-reachable",
+                   "weights-cancel-preserves-values",
+                   "weights-return-preserves-minimum-user-size",
+                   "weights-return-bottom-exposes-game-details; top=533; bottom=556; viewport=642",
+                   "weights-return-bottom-exposes-uninstall; top=453; bottom=517; viewport=642",
+                   "restore-user-size-preserved",
+                   "maximize-fit-unchanged",
+                   "maximize-restore-preserves-user-size; wanted={Width=1408, Height=820}; actual={Width=1408, Height=820}; restoreBounds={X=8,Y=8,Width=1408,Height=820}",
+                   "fit-preserves-minimized-window",
+                   "minimize-restore-preserves-user-size"
+               ],
+    "observations":  [
+                         {
+                             "name":  "cycled-weighted",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 299,
+                                                 0,
+                                                 1408,
+                                                 912
+                                             ],
+                             "clientSize":  [
+                                                1375,
+                                                873
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  987,
+                             "scrollPosition":  0,
+                             "maximum":  998,
+                             "largeChange":  873,
+                             "frameHeight":  969,
+                             "layoutHeight":  937,
+                             "surfaceHeight":  937,
+                             "userResized":  false,
+                             "selection":  "Weighted"
+                         },
+                         {
+                             "name":  "near-bottom-fitted",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 10,
+                                                 0,
+                                                 1408,
+                                                 912
+                                             ],
+                             "clientSize":  [
+                                                1375,
+                                                873
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  987,
+                             "scrollPosition":  0,
+                             "maximum":  998,
+                             "largeChange":  873,
+                             "frameHeight":  969,
+                             "layoutHeight":  937,
+                             "surfaceHeight":  937,
+                             "userResized":  false,
+                             "selection":  "Weighted"
+                         },
+                         {
+                             "name":  "minimum-bottom-before-check",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 8,
+                                                 8,
+                                                 864,
+                                                 681
+                                             ],
+                             "clientSize":  [
+                                                831,
+                                                642
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  1079,
+                             "scrollPosition":  -449,
+                             "maximum":  1090,
+                             "largeChange":  642,
+                             "frameHeight":  1061,
+                             "layoutHeight":  1029,
+                             "surfaceHeight":  1029,
+                             "userResized":  true,
+                             "selection":  "Weighted"
+                         },
+                         {
+                             "name":  "minimum-bottom",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 8,
+                                                 8,
+                                                 864,
+                                                 681
+                                             ],
+                             "clientSize":  [
+                                                831,
+                                                642
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  1079,
+                             "scrollPosition":  -449,
+                             "maximum":  1090,
+                             "largeChange":  642,
+                             "frameHeight":  1061,
+                             "layoutHeight":  1029,
+                             "surfaceHeight":  1029,
+                             "userResized":  true,
+                             "selection":  "Weighted"
+                         },
+                         {
+                             "name":  "minimum-expanded-bottom",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 8,
+                                                 8,
+                                                 864,
+                                                 681
+                                             ],
+                             "clientSize":  [
+                                                831,
+                                                642
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  1297,
+                             "scrollPosition":  -667,
+                             "maximum":  1308,
+                             "largeChange":  642,
+                             "frameHeight":  1279,
+                             "layoutHeight":  1247,
+                             "surfaceHeight":  1247,
+                             "userResized":  true,
+                             "selection":  "Weighted"
+                         },
+                         {
+                             "name":  "minimum-after-dialog-bottom",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 8,
+                                                 8,
+                                                 864,
+                                                 681
+                                             ],
+                             "clientSize":  [
+                                                831,
+                                                642
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  1079,
+                             "scrollPosition":  -449,
+                             "maximum":  1090,
+                             "largeChange":  642,
+                             "frameHeight":  1061,
+                             "layoutHeight":  1029,
+                             "surfaceHeight":  1029,
+                             "userResized":  true,
+                             "selection":  "Weighted"
+                         },
+                         {
+                             "name":  "restored-normal",
+                             "scaleFactor":  2,
+                             "outerBounds":  [
+                                                 8,
+                                                 8,
+                                                 1408,
+                                                 820
+                                             ],
+                             "clientSize":  [
+                                                1375,
+                                                781
+                                            ],
+                             "workingArea":  [
+                                                 0,
+                                                 0,
+                                                 1707,
+                                                 912
+                                             ],
+                             "autoScrollMinHeight":  987,
+                             "scrollPosition":  -110,
+                             "maximum":  998,
+                             "largeChange":  781,
+                             "frameHeight":  969,
+                             "layoutHeight":  937,
+                             "surfaceHeight":  937,
+                             "userResized":  true,
+                             "selection":  "Weighted"
+                         }
+                     ],
+    "actualHostWorkingAreas":  [
+                                   {
+                                       "device":  "\\\\.\\DISPLAY1",
+                                       "bounds":  [
+                                                      0,
+                                                      0,
+                                                      1707,
+                                                      960
+                                                  ],
+                                       "workingArea":  [
+                                                           0,
+                                                           0,
+                                                           1707,
+                                                           912
+                                                       ]
+                                   }
+                               ],
+    "unperformed":  [
+                        "physical mouse resize",
+                        "actual 100/150/200/225 percent Windows display profiles",
+                        "secondary 300 percent display",
+                        "High Contrast",
+                        "Narrator",
+                        "gameplay",
+                        "Apply/install/launch/uninstall"
+                    ]
+}

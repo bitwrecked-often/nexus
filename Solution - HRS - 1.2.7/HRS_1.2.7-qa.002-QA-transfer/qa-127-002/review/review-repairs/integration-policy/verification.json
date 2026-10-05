@@ -1,0 +1,318 @@
+{
+    "schema":  "hrs-repair-integration-policy-check/v1",
+    "status":  "Pass",
+    "checkedUtc":  "2026-10-05T05:06:25.0504457Z",
+    "candidateId":  "1.2.7-qa.002",
+    "scope":  "Native DEV policy/codec/integration/syntax checks only; no real game, Apply, customer export or independent QA.",
+    "powerShellEdition":  "Desktop",
+    "powerShellVersion":  "5.1.26100.9549",
+    "runtimeSha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB",
+    "runtimeBytes":  77312,
+    "compiledPolicy":  {
+                           "canonicalVectors":  7,
+                           "tamperRejected":  true,
+                           "actualQualifiedDll":  true
+                       },
+    "policyV2":  {
+                     "assertionCount":  71,
+                     "isolatedInputs":  "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs127-policy-inputs-a716b1909e0041e3919802d67e31437a"
+                 },
+    "invalidWriter":  {
+                          "fixtureCount":  11,
+                          "priorBytesPreserved":  true,
+                          "evidence":  "writer-invalid-fixtures.json"
+                      },
+    "fixedVectors":  {
+                         "sha256":  "A332C6E50F9621E5E6664824B672CC4DA1F61115645B8805E0E9CD1913F398BE",
+                         "cloneSha256":  "A332C6E50F9621E5E6664824B672CC4DA1F61115645B8805E0E9CD1913F398BE",
+                         "unchanged":  true
+                     },
+    "checks":  [
+                   {
+                       "name":  "compiled-policy",
+                       "status":  "Pass",
+                       "executable":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7\\dev\\tests\\Test-CompiledPolicy.ps1"
+                                     ],
+                       "startedUtc":  "2026-10-05T05:06:20.9146499Z",
+                       "completedUtc":  "2026-10-05T05:06:21.2662197Z",
+                       "exitCode":  0,
+                       "stdout":  "compiled-policy-stdout.txt",
+                       "stdoutSha256":  "6217B567B769261F64A1484D53B18F48FC2B0EEEDBD09622DA28336F727E3480"
+                   },
+                   {
+                       "name":  "policy-v2",
+                       "status":  "Pass",
+                       "executable":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs127-policy-inputs-a716b1909e0041e3919802d67e31437a\\dev\\tests\\Test-PolicyV2.ps1"
+                                     ],
+                       "startedUtc":  "2026-10-05T05:06:21.2723063Z",
+                       "completedUtc":  "2026-10-05T05:06:23.0845364Z",
+                       "exitCode":  0,
+                       "stdout":  "policy-v2-stdout.txt",
+                       "stdoutSha256":  "BB10748158E76C832ED875164FB53CD704FF57B2C7A4846D43A853E89C58BB78"
+                   },
+                   {
+                       "name":  "invalid-writer",
+                       "status":  "Pass",
+                       "executable":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "C:\\Users\\mobil\\AppData\\Local\\Temp\\hrs127-policy-inputs-a716b1909e0041e3919802d67e31437a\\dev\\tests\\Test-PolicyInvalidFixtures.ps1",
+                                         "-EvidenceRoot",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7\\dev\\qa\\review-repairs-20261004\\integration-policy"
+                                     ],
+                       "startedUtc":  "2026-10-05T05:06:23.1027420Z",
+                       "completedUtc":  "2026-10-05T05:06:23.9705668Z",
+                       "exitCode":  0,
+                       "stdout":  "invalid-writer-stdout.txt",
+                       "stdoutSha256":  "8F18B67FBA94FC3B8833C3C0044833B4FFE6D02AB082B6EEB4EF295C3C43B655"
+                   },
+                   {
+                       "name":  "embedding",
+                       "status":  "Pass",
+                       "executable":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7\\dev\\qa\\review-repairs-20261004\\integration-policy\\Check-NativeInputs.ps1",
+                                         "-LaneRoot",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7",
+                                         "-Check",
+                                         "Embedding",
+                                         "-ReportPath",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7\\dev\\qa\\review-repairs-20261004\\integration-policy\\embedding.json"
+                                     ],
+                       "startedUtc":  "2026-10-05T05:06:23.9755337Z",
+                       "completedUtc":  "2026-10-05T05:06:24.5513312Z",
+                       "exitCode":  0,
+                       "stdout":  "embedding-stdout.txt",
+                       "stdoutSha256":  "A4EE1278447AA935B1FB642C0FF324AFCFA915FFBCAFBDB511D78520BE665316"
+                   },
+                   {
+                       "name":  "parser",
+                       "status":  "Pass",
+                       "executable":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7\\dev\\qa\\review-repairs-20261004\\integration-policy\\Check-NativeInputs.ps1",
+                                         "-LaneRoot",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7",
+                                         "-Check",
+                                         "Parser",
+                                         "-ReportPath",
+                                         "C:\\Users\\mobil\\OneDrive\\Documents\\GitHub\\QA_fresh\\hrs_1.2.7\\dev\\qa\\review-repairs-20261004\\integration-policy\\parser.json"
+                                     ],
+                       "startedUtc":  "2026-10-05T05:06:24.5706127Z",
+                       "completedUtc":  "2026-10-05T05:06:25.0106996Z",
+                       "exitCode":  0,
+                       "stdout":  "parser-stdout.txt",
+                       "stdoutSha256":  "30C9F1F9F5D348E4ABAEEEA8B572817BF13D4138AD22683779E4896904E6E5CF"
+                   }
+               ],
+    "clonedInputs":  [
+                         {
+                             "path":  "dev/tests/Test-PolicyV2.ps1",
+                             "sha256":  "A7E078BA093F28D62C5CAA896174A01BEBB9E7E0500D36980D95F50A760D3504",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/tests/Test-PolicyInvalidFixtures.ps1",
+                             "sha256":  "74A3FD83EBDBD517233476C488E08A142B817696D7E5857FF7989387F4A532E1",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/tests/PolicyProbe.cs",
+                             "sha256":  "172B2D3BEF7111CCA3F8EA9CDFFADD0A100876C4DFB69A33893BA305F7D2D3EA",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/src/launcher/m0161.psm1",
+                             "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/src/launcher/m0162.psm1",
+                             "sha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/src/launcher/m0164.psm1",
+                             "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/src/runtime/main/PolicyV1.cs",
+                             "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/src/runtime/main/PolicyV2.cs",
+                             "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/src/runtime/main/BiomePreference.cs",
+                             "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+                             "copiedExactly":  true
+                         },
+                         {
+                             "path":  "dev/qa/POLICY_V2_VECTORS.json",
+                             "sha256":  "A332C6E50F9621E5E6664824B672CC4DA1F61115645B8805E0E9CD1913F398BE",
+                             "copiedExactly":  true
+                         }
+                     ],
+    "inputReadback":  [
+                          {
+                              "path":  "dev/tests/Test-PolicyV2.ps1",
+                              "beforeSha256":  "A7E078BA093F28D62C5CAA896174A01BEBB9E7E0500D36980D95F50A760D3504",
+                              "afterSha256":  "A7E078BA093F28D62C5CAA896174A01BEBB9E7E0500D36980D95F50A760D3504",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tests/Test-PolicyInvalidFixtures.ps1",
+                              "beforeSha256":  "74A3FD83EBDBD517233476C488E08A142B817696D7E5857FF7989387F4A532E1",
+                              "afterSha256":  "74A3FD83EBDBD517233476C488E08A142B817696D7E5857FF7989387F4A532E1",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tests/PolicyProbe.cs",
+                              "beforeSha256":  "172B2D3BEF7111CCA3F8EA9CDFFADD0A100876C4DFB69A33893BA305F7D2D3EA",
+                              "afterSha256":  "172B2D3BEF7111CCA3F8EA9CDFFADD0A100876C4DFB69A33893BA305F7D2D3EA",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/src/launcher/m0161.psm1",
+                              "beforeSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                              "afterSha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/src/launcher/m0162.psm1",
+                              "beforeSha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6",
+                              "afterSha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/src/launcher/m0164.psm1",
+                              "beforeSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                              "afterSha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/src/runtime/main/PolicyV1.cs",
+                              "beforeSha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+                              "afterSha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/src/runtime/main/PolicyV2.cs",
+                              "beforeSha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+                              "afterSha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/src/runtime/main/BiomePreference.cs",
+                              "beforeSha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+                              "afterSha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/qa/POLICY_V2_VECTORS.json",
+                              "beforeSha256":  "A332C6E50F9621E5E6664824B672CC4DA1F61115645B8805E0E9CD1913F398BE",
+                              "afterSha256":  "A332C6E50F9621E5E6664824B672CC4DA1F61115645B8805E0E9CD1913F398BE",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tests/Test-CompiledPolicy.ps1",
+                              "beforeSha256":  "889ECEABDD37648E1EB25E9E3D2CAE0F0FCE20EDD9107105D62244374FC75077",
+                              "afterSha256":  "889ECEABDD37648E1EB25E9E3D2CAE0F0FCE20EDD9107105D62244374FC75077",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/verified/main/d0163.dll",
+                              "beforeSha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB",
+                              "afterSha256":  "134F56AE20BAA6E6A53E9802436465DA282D8231A042DC6826D5A07848B057BB",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/verified/main/ModInfo.xml",
+                              "beforeSha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305",
+                              "afterSha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/ui/p0158.ps1",
+                              "beforeSha256":  "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72",
+                              "afterSha256":  "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tools/NativeGraphics/Sync-ManagerDesign.ps1",
+                              "beforeSha256":  "4EA815B0E2052EE8BC6501333B5A95E968251477FFADE3955917F7BEBB531F61",
+                              "afterSha256":  "4EA815B0E2052EE8BC6501333B5A95E968251477FFADE3955917F7BEBB531F61",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tools/NativeGraphics/Recipes.psm1",
+                              "beforeSha256":  "D090EE4FC7312C00ED30EF1557368798B281785F20C6AF0F26E2B5B42D17EDE1",
+                              "afterSha256":  "D090EE4FC7312C00ED30EF1557368798B281785F20C6AF0F26E2B5B42D17EDE1",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tools/NativeGraphics/NativeControls.cs",
+                              "beforeSha256":  "7533751906025A9604236CD3DDF1669E953396499E4698965BE52C2CD8B40B69",
+                              "afterSha256":  "7533751906025A9604236CD3DDF1669E953396499E4698965BE52C2CD8B40B69",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/tools/NativeGraphics/recipes/bitwrecked-quiet.json",
+                              "beforeSha256":  "7E80883D7C5E8BE526BAA29A68795E9A55C753E495264E47F46D9A437E5FC16E",
+                              "afterSha256":  "7E80883D7C5E8BE526BAA29A68795E9A55C753E495264E47F46D9A437E5FC16E",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/qa/cases.json",
+                              "beforeSha256":  "079920559517B51C3A96F9232C36DAF9145499AE65087A479C94760AB7599D0D",
+                              "afterSha256":  "079920559517B51C3A96F9232C36DAF9145499AE65087A479C94760AB7599D0D",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/qa/rel.json",
+                              "beforeSha256":  "82149709D030F84ABC42C448A55D68FF531199CEFF35F4D3F8B5274CD7B62581",
+                              "afterSha256":  "82149709D030F84ABC42C448A55D68FF531199CEFF35F4D3F8B5274CD7B62581",
+                              "unchanged":  true
+                          },
+                          {
+                              "path":  "dev/builds/1.2.7-qa.002/build-record.json",
+                              "beforeSha256":  "55E8B238F6BB7B97C6E70D7DCC30A2D81AA295D47A4935D77733BBDBC4BC427A",
+                              "afterSha256":  "55E8B238F6BB7B97C6E70D7DCC30A2D81AA295D47A4935D77733BBDBC4BC427A",
+                              "unchanged":  true
+                          }
+                      ],
+    "independentQaPending":  46,
+    "limitations":  "Cross-language helper fixtures compile current policy sources; only compiled-policy exercises the actual qualified DLL. Fixtures use inert temp game roots and bounded local writes. No actual display/accessibility or gameplay certification."
+}
