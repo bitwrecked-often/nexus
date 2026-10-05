@@ -1,0 +1,140 @@
+{
+  "schema": "hrs-qa-final-intake-verification/v1",
+  "verifiedUtc": "2026-10-05T23:02:39.0265372Z",
+  "source": "<DEV_HOME>\\Downloads\\HRS_1.2.7-qa.003-QA-to-DEV-20261005",
+  "suppliedTransferChecksumProvenance": "Adjacent internal transfer verification and checksum; not a publication approval.",
+  "manifestSha256": "C876A43FAD383D125BFB8E84883510161873569959CA3DF5A194B19698594F83",
+  "listedFilesVerified": 566,
+  "listedBytesVerified": 38802073,
+  "extraFiles": [],
+  "transferArchive": {
+    "archiveSha256": "BB72B903F9B63A2C65479DB99B94EF90BA86FF84C6CEBBB17B34135E8178263F",
+    "membersVerified": 567,
+    "mismatches": []
+  },
+  "originalPublicBaseline": {
+    "archiveSha256": "8527F11CAAFF4173AB9880FD906E9E7DF4F6C56E45E2B81098F5688C94B27881",
+    "membersVerified": 395,
+    "mismatches": []
+  },
+  "handoffDocumentIdentitiesVerified": 26,
+  "canonicalTextIdentitiesVerified": 21,
+  "mirrorAssessmentBeforePreservation": [
+    {
+      "mirror": "<DEV_REPO>\\QA Return Final 20261005",
+      "exactFiles": 566,
+      "newlineOnlyDifferences": [],
+      "otherDifferences": [],
+      "missingFiles": []
+    },
+    {
+      "mirror": "<DEV_REPO>\\QA Return Final 20261005\\HRS_1.2.7-qa.003-QA-to-DEV-20261005",
+      "exactFiles": 552,
+      "newlineOnlyDifferences": [],
+      "otherDifferences": [],
+      "missingFiles": [
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/FailedApplySticky/apply-failed-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/FailedApplySticky/apply-failed-top.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/installation-and-recovery-errors-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/installation-and-recovery-errors-top.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-current-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-current-top.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-stale-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/result-stale-top.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/runtime-unconfirmed-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/RevisionFreshness/runtime-unconfirmed-top.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-closed-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-closed-top.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-open-actions.png",
+        "Solution - HRS - 1.2.7/Unified Package/1.2.7-qa.003/evidence/qa002/review-repairs/callbacks-final/callback-ux-state-dev/SteamDirtyRefresh/steam-open-top.png"
+      ]
+    }
+  ],
+  "formalCaseCount": 46,
+  "formalStatusCounts": [
+    {
+      "status": "Pending",
+      "count": 46
+    }
+  ],
+  "localRuns": [
+    {
+      "runId": "hrsqa-20261005T203451Z-4f49f231",
+      "caseId": "HRS-QA-009",
+      "status": "Started",
+      "candidateId": "1.2.7-qa.003"
+    },
+    {
+      "runId": "hrsqa-20261005T204825Z-8bb9a881",
+      "caseId": "HRS-BIOME-Manager",
+      "status": "Started",
+      "candidateId": "1.2.7-qa.003"
+    },
+    {
+      "runId": "hrsqa-20261005T210418Z-078e3d5f",
+      "caseId": "HRS-UX-HELP",
+      "status": "Started",
+      "candidateId": "1.2.7-qa.003"
+    },
+    {
+      "runId": "hrsqa-20261005T212523Z-2c81bff8",
+      "caseId": "HRS-UX-GEOMETRY",
+      "status": "Started",
+      "candidateId": "1.2.7-qa.003"
+    },
+    {
+      "runId": "hrsqa-20261005T214907Z-bf6ac6f4",
+      "caseId": "HRS-UX-COPY",
+      "status": "Started",
+      "candidateId": "1.2.7-qa.003"
+    },
+    {
+      "runId": "hrsqa-20261005T221007Z-bf90bfad",
+      "caseId": "HRS-UX-COPY",
+      "status": "Started",
+      "candidateId": "1.2.7-qa.003"
+    }
+  ],
+  "taskIds": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12"
+  ],
+  "ownerFeatureVisualAcceptanceRecorded": false,
+  "gameplayStartedInReturnedRound": false,
+  "publicationApproved": false,
+  "currentInstalledEnvironment": {
+    "expectedAssemblyCSharpSha256": "AA4275991736D276EC75BB4047E45F76E0242AA47D9895890F3761098D4CC146",
+    "installedAssemblyCSharpSha256": "FCEEC27300FFD3A1F97B097E43B60F3B07597F441E7ECBC6E1B59EEBB234C705",
+    "expectedHarmonySha256": "C349E1A3FD13FA5A9FACC9805A5E160161B14489F46F6BDD38202B8E124F78DF",
+    "installedHarmonySha256": "C349E1A3FD13FA5A9FACC9805A5E160161B14489F46F6BDD38202B8E124F78DF",
+    "scope": "Read-only identities; no game was launched or changed. A preserved build reference does not establish a complete runnable qualified game."
+  },
+  "returnedPolicyWatcher": {
+    "snapshots": 12,
+    "consistentReads": 12,
+    "validInventoryAssessments": 12,
+    "installedObservations": 7,
+    "installedPolicyCounts": [
+      1
+    ],
+    "removedPolicyCounts": [
+      0
+    ],
+    "successfulApplyHistoryRecords": 6,
+    "removalTransitions": 4,
+    "watcherStatus": "Stopped",
+    "finalInventoryState": "NotInstalled",
+    "scope": "Settled disk observations only. No UI acknowledgement timing, save-preservation, gameplay success or formal case Pass follows."
+  },
+  "failures": []
+}

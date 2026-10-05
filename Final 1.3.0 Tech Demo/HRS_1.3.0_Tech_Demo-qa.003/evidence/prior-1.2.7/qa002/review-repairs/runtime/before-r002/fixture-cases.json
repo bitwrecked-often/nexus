@@ -1,0 +1,294 @@
+{
+  "total": 20,
+  "passed": 8,
+  "failed": 12,
+  "cases": [
+    {
+      "scenario": "PostPlayerMoveFailure",
+      "pass": false,
+      "error": "Player not returned to original start",
+      "result": "FAILED/PLACEMENT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_FAILED"
+      ]
+    },
+    {
+      "scenario": "PostObserverMoveFailure",
+      "pass": false,
+      "error": "Player not returned to original start",
+      "result": "FAILED/PLACEMENT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_FAILED"
+      ]
+    },
+    {
+      "scenario": "SemanticMismatchRecovery",
+      "pass": false,
+      "error": "Player not returned to original start",
+      "result": "FAILED/SEMANTIC_CHANGED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_CHANGED"
+      ]
+    },
+    {
+      "scenario": "ValidFifthPlacementAndTrader",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:2:2",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:3:3",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:4:4",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:5:5",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "CANDIDATE_ADJUSTED",
+        "CANDIDATE_SURFACE_SETTLED",
+        "INITIAL_BIOME_STORED",
+        "TRADER_ROUTE_READY",
+        "POI_COMPLETED:5",
+        "RELOCATION_COMPLETED",
+        "TRADER_ROUTE_RESERVED",
+        "TRADER_ROUTE_SAME_BIOME",
+        "TRADER_SELECTED",
+        "TRADER_ROUTE_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "FiveUnsafePlacementsFallback",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/POI_SAFETY_EXHAUSTED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:2:2",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:3:3",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:4:4",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:5:5",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "CANDIDATE_LOAD_RESTORED",
+        "POI_SAFETY_EXHAUSTED"
+      ]
+    },
+    {
+      "scenario": "ChangedWorldRecoveryRejected",
+      "pass": false,
+      "error": "Different-world player was moved by recovery",
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_LOAD_RESTORED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "DifferentWorldSameGuidRecoveryRejected",
+      "pass": false,
+      "error": "Different-world player was moved by recovery",
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_LOAD_RESTORED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "ReplacementEntitySameIdRejected",
+      "pass": false,
+      "error": "Replacement entity was not rejected",
+      "result": "RESERVED/PLACEMENT_DEFERRED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED"
+      ]
+    },
+    {
+      "scenario": "SameOwnerContextFailureRestores",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_LOAD_RESTORED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "ValidIntroQuestFilter",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "OtherGameIntroQuestUnchanged",
+      "pass": false,
+      "error": "Objective changed outside eligible target/context",
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "CaseMismatchIntroQuestUnchanged",
+      "pass": false,
+      "error": "Objective changed outside eligible target/context",
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "EacIntroQuestUnchanged",
+      "pass": false,
+      "error": "Objective changed outside eligible target/context",
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "MultiplayerIntroQuestUnchanged",
+      "pass": false,
+      "error": "Objective changed outside eligible target/context",
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "DedicatedIntroQuestUnchanged",
+      "pass": false,
+      "error": "Objective changed outside eligible target/context",
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "IncompatibleIntroQuestUnchanged",
+      "pass": false,
+      "error": "Objective changed outside eligible target/context",
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "UnmarkedIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "OtherGameFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/GAME_NAME_MISMATCH",
+      "logs": [
+        "GAME_NAME_MISMATCH"
+      ]
+    },
+    {
+      "scenario": "LoadedUnmarkedCharacterRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/LIFECYCLE_REJECTED",
+      "logs": [
+        "LIFECYCLE_REJECTED"
+      ]
+    },
+    {
+      "scenario": "NormalRespawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/LIFECYCLE_REJECTED",
+      "logs": [
+        "LIFECYCLE_REJECTED"
+      ]
+    }
+  ]
+}

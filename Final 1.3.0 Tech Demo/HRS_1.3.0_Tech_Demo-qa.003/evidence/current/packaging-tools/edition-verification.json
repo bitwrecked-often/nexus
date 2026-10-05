@@ -1,0 +1,314 @@
+{
+    "schema":  "hrs-tech-demo-packaging-verification/v1",
+    "status":  "Pass",
+    "passed":  34,
+    "checks":  [
+                   {
+                       "name":  "new production candidate starts unused and unregistered",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "release contract declares the exact Tech Demo edition and version",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual new-edition source release gate passes in a disposable lane",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "gate rejects WrongEdition",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "exporter rejects WrongEdition before candidate reservation [observed: HRS_RELEASE_NOT_READY_FOR_EXPORT]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "WrongEdition leaves no reserved identity or export tree",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "gate rejects WrongVersionLabel",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "exporter rejects WrongVersionLabel before candidate reservation [observed: HRS_RELEASE_NOT_READY_FOR_EXPORT]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "WrongVersionLabel leaves no reserved identity or export tree",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "gate rejects LegacyQaManagerLabel",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "exporter rejects LegacyQaManagerLabel before candidate reservation [observed: HRS_RELEASE_NOT_READY_FOR_EXPORT]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "LegacyQaManagerLabel leaves no reserved identity or export tree",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "gate rejects DuplicateVisibleLabel",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "exporter rejects DuplicateVisibleLabel before candidate reservation [observed: HRS_RELEASE_NOT_READY_FOR_EXPORT]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "DuplicateVisibleLabel leaves no reserved identity or export tree",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual exporter creates one registered complete Tech Demo archive",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "Tech Demo export requires no public companion or wrapper ZIP",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "archive contains exactly one owned customer manager",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "exported visible edition is exactly Tech Demo | 1.3.0",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "customer edition contains no DEV or QA release label",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "exported manager uses customer payload mode exactly once",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "single archive includes START.bat",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "single archive includes source/README.md",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "single archive includes history/README.md",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "single archive includes lore/README.md",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "single archive includes evidence/README.md",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "standalone own-checksum bootstrap retains exact complete archive bytes",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "standalone reconstructed receipt equals exporter receipt",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "workspace validates from its own packaged edition-aware tools",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "own packaged release gate accepts customer-mode Tech Demo manager",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "production candidate registry is unchanged",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "production candidate remains unused and unregistered",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "frozen original public qa.003 archive is unchanged",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "all actual lane inputs copied by this fixture remain unchanged",
+                       "status":  "Pass"
+                   }
+               ],
+    "verifiedUtc":  "2026-10-05T23:14:35.7804805Z",
+    "fixture":  "<DEV_TEMP>\\hrs Tech Demo packaging eca9074a2e6b439c9bc5a1b5f1f30211",
+    "candidateId":  "1.3.0-qa.991",
+    "archiveSha256":  "4E3F3F78299CFC5144348094F4233A02E73BAAE6CE3B3BC7DE7C4253571E11CF",
+    "productionCandidateId":  "1.3.0-qa.001",
+    "productionRegistrySha256":  "EB65F4799E5A0691262D13A9BCC831C9EF13217D904BC0D082F1C3B12C8D5D45",
+    "productionLaneInputHashes":  [
+                                      {
+                                          "path":  "LICENSE.md",
+                                          "sha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                                      },
+                                      {
+                                          "path":  "README.md",
+                                          "sha256":  "A550BACA41E3CD20D6D161AA87C26E5F6473CED8A4AEC476FA975AE7E5AE6D72"
+                                      },
+                                      {
+                                          "path":  "START.bat",
+                                          "sha256":  "BCD636A67F7E633D65831E2E85578214EC265ED365621E7A66E6608D418F26B5"
+                                      },
+                                      {
+                                          "path":  "dev/src/launcher/m0160.psm1",
+                                          "sha256":  "BBC87CE995B5C7BFBCCD51AC88CDA371CB9497CFE18177DB7753A242EFA3E53E"
+                                      },
+                                      {
+                                          "path":  "dev/src/launcher/m0161.psm1",
+                                          "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                                      },
+                                      {
+                                          "path":  "dev/src/launcher/m0162.psm1",
+                                          "sha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6"
+                                      },
+                                      {
+                                          "path":  "dev/src/launcher/m0164.psm1",
+                                          "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                                      },
+                                      {
+                                          "path":  "dev/src/launcher/m0166.psm1",
+                                          "sha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                                      },
+                                      {
+                                          "path":  "dev/ui/p0158.ps1",
+                                          "sha256":  "440D6DE1E1C7A1B2621E14EBCF9BFC051BFC201FFD2DF9CF49DDDC3EF8DFFB28"
+                                      },
+                                      {
+                                          "path":  "dev/verified/main/d0163.dll",
+                                          "sha256":  "6E143C99DB7519A4D42B047225E7ADBB1C8D3009EFD8E4E18DCA154719316D32"
+                                      },
+                                      {
+                                          "path":  "dev/verified/main/ModInfo.xml",
+                                          "sha256":  "896451F71AF3B2BF45E09924CBEAD606E0BA2950FD18E1D50B22FE0ACACF69A6"
+                                      },
+                                      {
+                                          "path":  "dev/ui/logo.ico",
+                                          "sha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0140.cs",
+                                          "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0147.cs",
+                                          "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0167.cs",
+                                          "sha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0181.cs",
+                                          "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0184.cs",
+                                          "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0185.cs",
+                                          "sha256":  "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/PolicyV1.cs",
+                                          "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/PolicyV2.cs",
+                                          "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/BiomePreference.cs",
+                                          "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/ResultV1.cs",
+                                          "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0213.cs",
+                                          "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/PlacedPoiResolver.cs",
+                                          "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/PlacedTraderResolver.cs",
+                                          "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0217.cs",
+                                          "sha256":  "426CA849FB77F3AA52E622877EEE0D5A60D6BA19122C7C711D38583FF6BF7A0A"
+                                      },
+                                      {
+                                          "path":  "dev/src/runtime/main/c0218.cs",
+                                          "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                                      },
+                                      {
+                                          "path":  "dev/qa/rel.json",
+                                          "sha256":  "BF932CEE74560B197B0FA4B8F816453A71B4BF9DE5AB3FC7628D7141EE41CB9F"
+                                      },
+                                      {
+                                          "path":  "dev/qa/cases.json",
+                                          "sha256":  "83A9BE314EF25C601D7FAFEF9CB0CC9FB1B38A37ECB4E270E6F30C19D45B67BF"
+                                      },
+                                      {
+                                          "path":  "dev/builds/1.3.0-qa.001/build-record.json",
+                                          "sha256":  "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F"
+                                      }
+                                  ],
+    "scope":  "Disposable software packaging fixtures only. No installed game writes, gameplay, human customer acceptance, real candidate export, publication or commit.",
+    "sourceHashes":  [
+                         {
+                             "path":  "Export-HrsCandidate.ps1",
+                             "sha256":  "9DDE33041389A93F099C0ED0CB8AA4BA4513BA3F2388696CA380DF348895D24F"
+                         },
+                         {
+                             "path":  "HrsQaTools.psm1",
+                             "sha256":  "F56206E14281A5DDFEBFB120FFBC3CA18E00FFD9CBC52A188900C1ADF47A0FA0"
+                         },
+                         {
+                             "path":  "HrsIdentity.ps1",
+                             "sha256":  "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86"
+                         },
+                         {
+                             "path":  "New-HrsQaWorkspace.ps1",
+                             "sha256":  "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA"
+                         },
+                         {
+                             "path":  "Start-HrsQaRun.ps1",
+                             "sha256":  "25C46EE0E37266C3AA25AAC4CA447B3233A2E9D90D513AE60BD475DD0B08200C"
+                         },
+                         {
+                             "path":  "Record-HrsQaObservation.ps1",
+                             "sha256":  "F9EF59FF33222D11DE5F954E6D5F0256D6C87EC9DA4F42D52EC4F79BC5062977"
+                         },
+                         {
+                             "path":  "Export-HrsQaRun.ps1",
+                             "sha256":  "A0AC65FAD74AAC067EF78A732A4E79C6CF8AE88663F3F13A304A968F14514AE3"
+                         },
+                         {
+                             "path":  "Complete-HrsQaCycle.ps1",
+                             "sha256":  "9DB51C2305260FF53F48209C11269F5C764379FF8EDA96B015A3F27A906D8553"
+                         },
+                         {
+                             "path":  "Test-HrsRelease.ps1",
+                             "sha256":  "10FA6C183A6544F9223F50E666D52DD43ABA50761313D5B57F0D0E88A71DFAEB"
+                         },
+                         {
+                             "path":  "Test-HrsTechDemoPackaging.ps1",
+                             "sha256":  "9457E8FFDE4189E3CE3DA1FF9B80508E18B3963A7F322FDCB2F8557ADBCB6376"
+                         }
+                     ]
+}

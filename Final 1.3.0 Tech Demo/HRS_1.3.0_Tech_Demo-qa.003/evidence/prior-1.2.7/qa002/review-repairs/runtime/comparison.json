@@ -1,0 +1,66 @@
+{
+  "schema": "hrs-runtime-review-repair-comparison/v1",
+  "generatedUtc": "2026-10-05T05:00:24.5523979Z",
+  "before": {
+    "failed": 12,
+    "sha256": "7A578F0121720E391D0EF3DF018587BF6B5F37E563C8C8F3F3D8E4FE22E3B7D6",
+    "receipt": "before-r003/verification.json",
+    "total": 20,
+    "passed": 8
+  },
+  "after": {
+    "failed": 0,
+    "sha256": "5030DC1C7AA02107593C50904EF5797145E1239A5AAE68F02617241336BDB9FF",
+    "receipt": "after-r001/verification.json",
+    "total": 20,
+    "passed": 20
+  },
+  "identicalFixtureHarness": true,
+  "changedSources": [
+    {
+      "beforeSha256": "DF08273BA5607D25147C39BDB3AC85B375A95A9E4EFCEBAE295C126FACB00F71",
+      "afterSha256": "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D",
+      "path": "c0167.cs"
+    },
+    {
+      "beforeSha256": "A6B96DF463A28B747835CC88E6DF4074D0E366E7BA4ACCDAC8B18643A77098AE",
+      "afterSha256": "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60",
+      "path": "c0185.cs"
+    }
+  ],
+  "linkedRuntimeSources": 9,
+  "runtimeMainSourceCount": 15,
+  "repairs": [
+    "ArmPositionRecovery before first position mutation; BeginPlacement verification deadline remains after semantic comparison",
+    "Original world reference, GUID and player reference own update and rollback; replacement world/entity is rejected",
+    "Intro quest prefix reuses RuntimeEnvironmentGuard.IsStillApproved before objective mutation"
+  ],
+  "preservedInFixture": [
+    "five distinct POI attempts in one selected biome",
+    "three-second retry delay and chunk-prime schedule",
+    "valid landing and trader route completion",
+    "reserved/completed no-repeat markers",
+    "normal respawn, loaded unmarked character and mismatched Game Name rejection"
+  ],
+  "baselineFailedCases": [
+    "PostPlayerMoveFailure",
+    "PostObserverMoveFailure",
+    "SemanticMismatchRecovery",
+    "ChangedWorldRecoveryRejected",
+    "DifferentWorldSameGuidRecoveryRejected",
+    "ReplacementEntitySameIdRejected",
+    "OtherGameIntroQuestUnchanged",
+    "CaseMismatchIntroQuestUnchanged",
+    "EacIntroQuestUnchanged",
+    "MultiplayerIntroQuestUnchanged",
+    "DedicatedIntroQuestUnchanged",
+    "IncompatibleIntroQuestUnchanged"
+  ],
+  "setupHistory": {
+    "beforeR002": "Preserved earlier baseline run; final comparison uses before-r003 and identical final harness identities",
+    "beforeR001": "Preserved compile log: initial engine/resolver fixture lacked TargetBiomeId; corrected fixture seam before executable baseline cases"
+  },
+  "scope": "Isolated DEV control-flow fixtures using actual source entrypoints and controlled engine/resolver seams. No qualified game build, gameplay/customer QA pass, installation, game launch, export or publication.",
+  "realGameWrites": 0,
+  "independentQaCasesChanged": 0
+}

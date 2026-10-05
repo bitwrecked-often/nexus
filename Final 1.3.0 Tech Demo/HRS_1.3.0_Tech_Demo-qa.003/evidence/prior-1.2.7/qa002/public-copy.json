@@ -1,0 +1,30 @@
+{
+  "schema": "hrs-public-copy/v1",
+  "preparedDate": "2026-10-04",
+  "publicName": "New Player Random Start",
+  "previousPublicName": "Historical Random Start",
+  "game": "7 Days to Die",
+  "gameVersion": "v3.3.0",
+  "author": "Bit Wrecked",
+  "version": "1.2.7",
+  "publicationStatus": "draft-not-published",
+  "managerTitle": "New Player Random Start",
+  "managerIntro": "7 Days to Die v3.3.0 · Random Player Start",
+  "nexus": {
+    "title": "New Player Random Start (Tech Demo)",
+    "summary": "Random starting locations for new characters in 7 Days to Die. Choose a biome or let the mod pick.",
+    "plannedLabel": "Tech Demo"
+  },
+  "website": {
+    "title": "New Player Random Start for 7 Days to Die | Bit Wrecked",
+    "description": "Randomize your new character's starting location in 7 Days to Die. Choose a biome or let the mod pick. By Bit Wrecked."
+  },
+  "meaning": "New Player refers to a fresh character. The world can be new or existing; this name does not promise easier difficulty.",
+  "requirements": "Windows PowerShell 5.1; local single-player; tested target V3.3.0 b17; Navezgane or Random Gen worlds of 8192 or larger; EAC disabled with supplied 0_TFP_Harmony.",
+  "firstSession": "Complete the opening tasks and wait for the Journey to Settlement trader marker before leaving the first Random session.",
+  "stableInternalIdentity": "BitWrecked_HistoricalRandomStart",
+  "compatibilityNote": "The public rename keeps existing HRS installation, state and save identities.",
+  "gameNameLabel": "Game Name",
+  "gameNameHelp": "Use the save's exact Game Name, not the world name.",
+  "usageScope": "A fresh character in a supported new or existing world. Random placement happens on its first spawn and does not relocate already-played characters on reload."
+}

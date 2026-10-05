@@ -1,0 +1,20 @@
+{
+    "status":  "Pass",
+    "assertionCount":  86,
+    "scope":  "Production native manager in isolated fixture; actual current host display only. No gameplay, actual OS-scale matrix, Narrator, High Contrast or newcomer qualification.",
+    "outer":  {
+                  "height":  494,
+                  "width":  712
+              },
+    "contentHeight":  566,
+    "workArea":  {
+                     "height":  912,
+                     "width":  1707
+                 },
+    "checkBounds":  {
+                        "left":  489,
+                        "width":  134,
+                        "top":  0,
+                        "height":  34
+                    }
+}

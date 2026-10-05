@@ -1,0 +1,71 @@
+{
+    "schema":  "hrs-candidate-package-manifest/v1",
+    "candidateId":  "1.3.0-qa.003",
+    "files":  [
+                  {
+                      "path":  "LICENSE.md",
+                      "bytes":  708,
+                      "sha256":  "F083DCF0E20C5752C87516056F89D7AFF7D10C01852E350A5D9F954B4B7ED919"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  7491,
+                      "sha256":  "A550BACA41E3CD20D6D161AA87C26E5F6473CED8A4AEC476FA975AE7E5AE6D72"
+                  },
+                  {
+                      "path":  "START.bat",
+                      "bytes":  553,
+                      "sha256":  "BCD636A67F7E633D65831E2E85578214EC265ED365621E7A66E6608D418F26B5"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0160.psm1",
+                      "bytes":  5783,
+                      "sha256":  "BBC87CE995B5C7BFBCCD51AC88CDA371CB9497CFE18177DB7753A242EFA3E53E"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0161.psm1",
+                      "bytes":  47103,
+                      "sha256":  "B4DFB64207AAE3C602C79D3DA91F65313F813021C307425DFA5B81C9EA6F0509"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0162.psm1",
+                      "bytes":  23442,
+                      "sha256":  "4ECE9E43B15B6AD9C53609405BD42CE58276B3112060267B9C9C57D9C9A549C6"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0164.psm1",
+                      "bytes":  45913,
+                      "sha256":  "6420DE00B294D7E3A3491030CA893606516EA840F38C843C85FC8B475DDB4292"
+                  },
+                  {
+                      "path":  "dev/src/launcher/m0166.psm1",
+                      "bytes":  7230,
+                      "sha256":  "9179A33AA4B24CDB14B392B32166A0ABFC5AB5F0426E47B1C83EFD77E595849E"
+                  },
+                  {
+                      "path":  "dev/ui/p0158.ps1",
+                      "bytes":  139238,
+                      "sha256":  "FD183A536BC99C288A7CBB7AF3229F83C5403526F01FE104843033D67021E653"
+                  },
+                  {
+                      "path":  "dev/verified/main/d0163.dll",
+                      "bytes":  77312,
+                      "sha256":  "6E143C99DB7519A4D42B047225E7ADBB1C8D3009EFD8E4E18DCA154719316D32"
+                  },
+                  {
+                      "path":  "dev/verified/main/ModInfo.xml",
+                      "bytes":  410,
+                      "sha256":  "896451F71AF3B2BF45E09924CBEAD606E0BA2950FD18E1D50B22FE0ACACF69A6"
+                  },
+                  {
+                      "path":  "dev/ui/logo.ico",
+                      "bytes":  125633,
+                      "sha256":  "37560993175094209131A8275E367AE46A282E55E0B4D83FC40686A6EF3D167F"
+                  },
+                  {
+                      "path":  "release_templates/LICENSE-GPL-3.0-or-later.txt",
+                      "bytes":  35823,
+                      "sha256":  "230184F60BAE2FEAF244F10A8BAC053C8FF33A183BCC365B4D8B876D2B7F4809"
+                  }
+              ]
+}

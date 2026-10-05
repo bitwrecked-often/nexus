@@ -1,0 +1,693 @@
+{
+  "total": 58,
+  "passed": 58,
+  "failed": 0,
+  "cases": [
+    {
+      "scenario": "PostPlayerMoveFailure",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/PLACEMENT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "CANDIDATE_LOAD_RESTORED",
+        "PLACEMENT_FAILED"
+      ]
+    },
+    {
+      "scenario": "PostObserverMoveFailure",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/PLACEMENT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "CANDIDATE_LOAD_RESTORED",
+        "PLACEMENT_FAILED"
+      ]
+    },
+    {
+      "scenario": "SemanticMismatchRecovery",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/SEMANTIC_CHANGED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "CANDIDATE_LOAD_RESTORED",
+        "SEMANTIC_CHANGED"
+      ]
+    },
+    {
+      "scenario": "ValidFifthPlacementAndTrader",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:2:2",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:3:3",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:4:4",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:5:5",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "CANDIDATE_ADJUSTED",
+        "CANDIDATE_SURFACE_SETTLED",
+        "INITIAL_BIOME_STORED",
+        "TRADER_ROUTE_READY",
+        "POI_COMPLETED:5",
+        "RELOCATION_COMPLETED",
+        "TRADER_ROUTE_RESERVED",
+        "TRADER_ROUTE_SAME_BIOME",
+        "TRADER_SELECTED",
+        "TRADER_ROUTE_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "FiveUnsafePlacementsFallback",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/POI_SAFETY_EXHAUSTED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:2:2",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:3:3",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:4:4",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "POI_RETRY",
+        "POI_ATTEMPT:5:5",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "CANDIDATE_LOAD_RESTORED",
+        "POI_SAFETY_EXHAUSTED"
+      ]
+    },
+    {
+      "scenario": "ChangedWorldRecoveryRejected",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "DifferentWorldSameGuidRecoveryRejected",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "ReplacementEntitySameIdRejected",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "SameOwnerContextFailureRestores",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_CONTEXT_FAILED",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_LOAD_RESTORED",
+        "VERIFY_CONTEXT_FAILED"
+      ]
+    },
+    {
+      "scenario": "ValidIntroQuestFilter",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "OtherGameIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "CaseMismatchIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "EacIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "MultiplayerIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "DedicatedIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "IncompatibleIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "UnmarkedIntroQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "OtherGameFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/GAME_NAME_MISMATCH",
+      "logs": [
+        "GAME_NAME_MISMATCH"
+      ]
+    },
+    {
+      "scenario": "LoadedUnmarkedCharacterRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/LIFECYCLE_REJECTED",
+      "logs": [
+        "LIFECYCLE_REJECTED"
+      ]
+    },
+    {
+      "scenario": "NormalRespawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/LIFECYCLE_REJECTED",
+      "logs": [
+        "LIFECYCLE_REJECTED"
+      ]
+    },
+    {
+      "scenario": "StandardFreshStartBypasses",
+      "pass": true,
+      "error": null,
+      "result": "BYPASSED/STANDARD_BYPASS",
+      "logs": [
+        "STANDARD_BYPASS"
+      ]
+    },
+    {
+      "scenario": "EacFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "INCOMPATIBLE/RUNTIME_LANE_UNCONFIRMED",
+      "logs": [
+        "RUNTIME_LANE_UNCONFIRMED"
+      ]
+    },
+    {
+      "scenario": "MultiplayerFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/EXECUTION_REJECTED",
+      "logs": [
+        "EXECUTION_REJECTED"
+      ]
+    },
+    {
+      "scenario": "DedicatedFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/EXECUTION_REJECTED",
+      "logs": [
+        "EXECUTION_REJECTED"
+      ]
+    },
+    {
+      "scenario": "ClientFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/NOT_SERVER",
+      "logs": [
+        "NOT_SERVER"
+      ]
+    },
+    {
+      "scenario": "MissingConnectionFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/EXECUTION_REJECTED",
+      "logs": [
+        "EXECUTION_REJECTED"
+      ]
+    },
+    {
+      "scenario": "RemotePlayerFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/EXECUTION_REJECTED",
+      "logs": [
+        "EXECUTION_REJECTED"
+      ]
+    },
+    {
+      "scenario": "IncompatibleFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "INCOMPATIBLE/BUILD_MISMATCH",
+      "logs": [
+        "BUILD_MISMATCH"
+      ]
+    },
+    {
+      "scenario": "CaseMismatchFirstSpawnRejected",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/GAME_NAME_MISMATCH",
+      "logs": [
+        "GAME_NAME_MISMATCH"
+      ]
+    },
+    {
+      "scenario": "CompletedProtectedReturnDoesNotRelocate",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "TRADER_ROUTE_READY",
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "ChangedPreferenceCompletedReturnDoesNotRelocate",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "TRADER_ROUTE_READY",
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "ReservedReturnDoesNotRestart",
+      "pass": true,
+      "error": null,
+      "result": "RESERVED/PLACEMENT_DEFERRED",
+      "logs": [
+        "PLACEMENT_DEFERRED"
+      ]
+    },
+    {
+      "scenario": "InvalidMarkerReturnRejected",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/MARKER_INVALID",
+      "logs": [
+        "MARKER_INVALID"
+      ]
+    },
+    {
+      "scenario": "BurntStoredProtectionReturn",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "DesertStoredProtectionReturn",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "WastelandStoredProtectionReturn",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "SnowStoredProtectionReturn",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "ExplicitProtectionOptOutReturn",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "EmptyTraderPreflightRejectsBeforeMovement",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/TRADER_POOL_EMPTY",
+      "logs": [
+        "BIOME_SELECTED",
+        "TRADER_POOL_EMPTY"
+      ]
+    },
+    {
+      "scenario": "DelayedReadyTraderPreflightCompletes",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "BIOME_SELECTED",
+        "TRADER_METADATA_WAIT",
+        "TRADER_METADATA_READY",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "CANDIDATE_ADJUSTED",
+        "CANDIDATE_SURFACE_SETTLED",
+        "INITIAL_BIOME_STORED",
+        "TRADER_ROUTE_READY",
+        "POI_COMPLETED:1",
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "TraderMetadataTimeoutKeepsNormalStart",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/TRADER_METADATA_UNAVAILABLE",
+      "logs": [
+        "BIOME_SELECTED",
+        "TRADER_METADATA_WAIT",
+        "TRADER_METADATA_UNAVAILABLE"
+      ]
+    },
+    {
+      "scenario": "TraderMetadataBecomesEmptyKeepsNormalStart",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/TRADER_POOL_EMPTY",
+      "logs": [
+        "BIOME_SELECTED",
+        "TRADER_METADATA_WAIT",
+        "TRADER_POOL_EMPTY"
+      ]
+    },
+    {
+      "scenario": "WrongNameDuringTraderPreflightKeepsNormalStart",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/TRADER_METADATA_UNAVAILABLE",
+      "logs": [
+        "BIOME_SELECTED",
+        "TRADER_METADATA_WAIT",
+        "TRADER_METADATA_UNAVAILABLE"
+      ]
+    },
+    {
+      "scenario": "LoadedPendingTraderJournalCompletesOnce",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "TRADER_ROUTE_READY",
+        "TRADER_ROUTE_JOURNAL_NONEMPTY",
+        "TRADER_ROUTE_QUEST_SEEN",
+        "TRADER_ROUTE_RESERVED",
+        "TRADER_ROUTE_SAME_BIOME",
+        "TRADER_SELECTED",
+        "TRADER_ROUTE_COMPLETED",
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "FailedTraderDestinationRestoresAndRetries",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "TRADER_ROUTE_READY",
+        "TRADER_ROUTE_JOURNAL_NONEMPTY",
+        "TRADER_ROUTE_QUEST_SEEN",
+        "TRADER_ROUTE_RESERVED",
+        "TRADER_ROUTE_FALLBACK",
+        "RELOCATION_COMPLETED",
+        "TRADER_ROUTE_SAME_BIOME",
+        "TRADER_SELECTED",
+        "TRADER_ROUTE_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "UnavailableTraderSelectionWaitsAndRetries",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "TRADER_ROUTE_READY",
+        "TRADER_ROUTE_JOURNAL_NONEMPTY",
+        "TRADER_ROUTE_QUEST_SEEN",
+        "TRADER_ROUTE_WAIT_TRADERS",
+        "RELOCATION_COMPLETED",
+        "TRADER_ROUTE_RESERVED",
+        "TRADER_ROUTE_SAME_BIOME",
+        "TRADER_SELECTED",
+        "TRADER_ROUTE_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "CrossBiomeTraderFallbackCompletes",
+      "pass": true,
+      "error": null,
+      "result": "COMPLETED/RELOCATION_COMPLETED",
+      "logs": [
+        "TRADER_ROUTE_READY",
+        "TRADER_ROUTE_JOURNAL_NONEMPTY",
+        "TRADER_ROUTE_QUEST_SEEN",
+        "TRADER_ROUTE_RESERVED",
+        "TRADER_ROUTE_CROSS_BIOME",
+        "TRADER_SELECTED",
+        "TRADER_ROUTE_COMPLETED",
+        "RELOCATION_COMPLETED"
+      ]
+    },
+    {
+      "scenario": "WrongNameCompletedPendingQuestUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "REJECTED/GAME_NAME_MISMATCH",
+      "logs": [
+        "GAME_NAME_MISMATCH"
+      ]
+    },
+    {
+      "scenario": "AmbiguousIntroObjectivesUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FALLBACK"
+      ]
+    },
+    {
+      "scenario": "PositionedIntroObjectiveUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FALLBACK"
+      ]
+    },
+    {
+      "scenario": "OtherPhaseIntroObjectiveUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FALLBACK"
+      ]
+    },
+    {
+      "scenario": "OrdinaryTraderJobUnchanged",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": []
+    },
+    {
+      "scenario": "BurntInitialBiomeIntroFilter",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "DesertInitialBiomeIntroFilter",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "WastelandInitialBiomeIntroFilter",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "ForestInitialBiomeIntroFilter",
+      "pass": true,
+      "error": null,
+      "result": "/",
+      "logs": [
+        "INTRO_ROUTE_FILTER_APPLIED"
+      ]
+    },
+    {
+      "scenario": "ChunkTimeoutRestoresOwnedStart",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_CHUNK_TIMEOUT",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_LOAD_RESTORED",
+        "VERIFY_CHUNK_TIMEOUT"
+      ]
+    },
+    {
+      "scenario": "UnstableSurfaceTimeoutRestoresOwnedStart",
+      "pass": true,
+      "error": null,
+      "result": "FAILED/VERIFY_POSITION_MISMATCH",
+      "logs": [
+        "BIOME_SELECTED",
+        "POI_ATTEMPT:1:1",
+        "PLACEMENT_DEFERRED",
+        "PLACEMENT_CALLED",
+        "CANDIDATE_LOAD_REQUESTED",
+        "SEMANTIC_UNCHANGED",
+        "CANDIDATE_PRIME_WAIT",
+        "CANDIDATE_ADJUSTED",
+        "CANDIDATE_LOAD_RESTORED",
+        "VERIFY_POSITION_MISMATCH"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+    "schema":  "hrs-native-repair-parser-check/v1",
+    "status":  "Pass",
+    "powerShellVersion":  "5.1.26100.9549",
+    "fileCount":  9,
+    "checks":  [
+                   {
+                       "path":  "dev/qa/review-repairs-20261004/Build-QA127Transfer.ps1",
+                       "sha256":  "52BCD9E674BFB09427B2B9ABD50F5B2625964222C663B5119F13097807E8E944",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/qa/review-repairs-20261004/integration-policy/Check-NativeInputs.ps1",
+                       "sha256":  "9DDD5645EE1A555D7713DA2BDC554CD2EBD428A13DBA71F300042A6D7C858DF9",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/qa/review-repairs-20261004/integration-policy/Run-IntegrationPolicy.ps1",
+                       "sha256":  "8B23EE36404A2CF78438B424788541A8C8308264D42F4252F06915DE5BAE40CE",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/qa/review-repairs-20261004/Qualify-Build.ps1",
+                       "sha256":  "6803F3D1140465FBE144916ABACAEE702FF1399F6560EDB63637BE3747E94B77",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/qa/review-repairs-20261004/Verify-CustomerCandidate.ps1",
+                       "sha256":  "0F8FEC82A9C7FA56A3924690B18C131C50383FC9B13837E9DCD1370944143D0B",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/qa/review-repairs-20261004/Verify-ProtectedHistory.ps1",
+                       "sha256":  "13B26A256F34D6C05667F9B2557C2C4A17A33CFA2416F40C3F7E2D801F102D0D",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/tests/Test-ManagerReviewRepairs.ps1",
+                       "sha256":  "8AE67628757ECF32B808FBE9E5A81F320011F68A04156B719249CA0BCA79119C",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/tests/Test-RuntimeReviewRepairs.ps1",
+                       "sha256":  "1CD138CD7698D240EBFC8A2BB1B472C5AF2262326481F2D68912CEB6EFE7342D",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   },
+                   {
+                       "path":  "dev/ui/p0158.ps1",
+                       "sha256":  "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72",
+                       "errorCount":  0,
+                       "unchanged":  true,
+                       "errors":  [
+
+                                  ]
+                   }
+               ]
+}

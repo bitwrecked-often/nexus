@@ -1,0 +1,27 @@
+{
+    "group":  "dev",
+    "branch":  "DevDispatch",
+    "status":  "Pass",
+    "expectedCount":  2,
+    "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "harnessSha256":  "B94CCD22CDE0AA3E8FD8CBAFA7ED07BAB7F2E114F8619F6DED74A9A049A3A3D0",
+    "executable":  "powershell.exe",
+    "arguments":  [
+                      "-NoProfile",
+                      "-STA",
+                      "-ExecutionPolicy",
+                      "Bypass",
+                      "-File",
+                      "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                      "-EvidenceRoot",
+                      "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-dev",
+                      "-Branch",
+                      "DevDispatch"
+                  ],
+    "startedUtc":  "2026-10-05T23:16:54.7720182Z",
+    "exitCode":  0,
+    "scenarioPassCount":  2,
+    "evidence":  "callback-devdispatch.json",
+    "completedUtc":  "2026-10-05T23:17:05.7443011Z"
+}

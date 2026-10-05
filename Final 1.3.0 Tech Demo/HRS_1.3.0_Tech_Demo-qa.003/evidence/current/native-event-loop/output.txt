@@ -1,0 +1,1 @@
+PASS: normal STA file-host event loop, repaint, logo, activation, resize, minimize/restore and clean close.

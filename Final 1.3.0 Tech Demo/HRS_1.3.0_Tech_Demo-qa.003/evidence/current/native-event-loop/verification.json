@@ -1,0 +1,9 @@
+{
+    "schema":  "hrs-manager-native-event-loop/v1",
+    "status":  "Pass",
+    "sourceSha256":  "1C827974BB914030600237070A02A5A5A9E2140AD62168285621F003BE9285FA",
+    "harnessSha256":  "B21F5616DF37DEEDA31AAA2AADE0DE0038E41836DDC866A64C4841BFB90924F6",
+    "host":  "Windows PowerShell 5.1 STA file process",
+    "scope":  "Current actual display and normal blocking ShowDialog; isolated inert game. No Apply, launch, removal, gameplay, Narrator or OS-scale qualification.",
+    "completedUtc":  "2026-10-05T23:43:58.4531800Z"
+}

@@ -1,4 +1,0 @@
-﻿{"schema":"hrs-display-scale-change/v1","observedUtc":"2026-10-04T18:09:50.6274475Z","display":"Display1","before":"200%","after":"100%","requestedPercent":100,"method":"Windows Display Settings selection"}
-{"schema":"hrs-display-scale-change/v1","observedUtc":"2026-10-04T18:15:48.6433966Z","display":"Display1","before":"100%","after":"150% (Recommended)","requestedPercent":150,"method":"Windows Display Settings selection"}
-{"schema":"hrs-display-scale-change/v1","observedUtc":"2026-10-04T18:17:56.6069173Z","display":"Display1","before":"150% (Recommended)","after":"225%","requestedPercent":225,"method":"Windows Display Settings selection"}
-{"schema":"hrs-display-scale-change/v1","observedUtc":"2026-10-04T18:19:57.8660707Z","display":"Display1","before":"225%","after":"200%","requestedPercent":200,"method":"Windows Display Settings selection"}

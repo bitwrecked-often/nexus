@@ -1,0 +1,23 @@
+{
+    "schema":  "hrs-candidate-bookkeeping-verification/v1",
+    "status":  "Pass",
+    "candidateId":  "1.3.0-qa.003",
+    "checkedUtc":  "2026-10-05T23:44:49.7508065Z",
+    "releaseFieldsChangedOnly":  [
+                                     "candidateId",
+                                     "build.candidateId",
+                                     "build.recordPath"
+                                 ],
+    "caseFieldsChangedOnly":  [
+                                  "candidateId"
+                              ],
+    "independentCasesPending":  46,
+    "earlierArchivesAndReceiptsPreserved":  true,
+    "buildRecords001002003ExactBytes":  true,
+    "qualifiedBuildRecordSha256":  "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F",
+    "managerSourceSha256":  "1C827974BB914030600237070A02A5A5A9E2140AD62168285621F003BE9285FA",
+    "runtimeRebuilt":  false,
+    "independentGameplayQaPassed":  false,
+    "candidateReserved":  false,
+    "candidateExported":  false
+}

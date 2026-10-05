@@ -1,0 +1,101 @@
+{
+    "schema":  "hrs-qa-context/v1",
+    "candidateId":  "1.3.0-qa.003",
+    "files":  [
+                  {
+                      "path":  "qa-workspace.json",
+                      "bytes":  80,
+                      "sha256":  "17810A36693AB43CB6B537A1389FC8CB1551C0EB771DC35AA3EAA25D46DA5C43"
+                  },
+                  {
+                      "path":  "dev/builds/1.3.0-qa.003/build-record.json",
+                      "bytes":  7246,
+                      "sha256":  "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F"
+                  },
+                  {
+                      "path":  "dev/qa/cases.json",
+                      "bytes":  89053,
+                      "sha256":  "6D10EAC6FE5E3BAD1BB441694D8C1FE7AA804A8DAD7F365F8BC0A6891D238779"
+                  },
+                  {
+                      "path":  "dev/qa/rel.json",
+                      "bytes":  15441,
+                      "sha256":  "383C2AC7C645618D9C91082431CD2D4E989D341D05A06AC6C8AD0DACA3957088"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/BiomePreference.cs",
+                      "bytes":  3455,
+                      "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0140.cs",
+                      "bytes":  3819,
+                      "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0147.cs",
+                      "bytes":  1293,
+                      "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0167.cs",
+                      "bytes":  40386,
+                      "sha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0181.cs",
+                      "bytes":  5507,
+                      "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0184.cs",
+                      "bytes":  6901,
+                      "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0185.cs",
+                      "bytes":  3861,
+                      "sha256":  "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0213.cs",
+                      "bytes":  24044,
+                      "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0217.cs",
+                      "bytes":  5593,
+                      "sha256":  "426CA849FB77F3AA52E622877EEE0D5A60D6BA19122C7C711D38583FF6BF7A0A"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/c0218.cs",
+                      "bytes":  6069,
+                      "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/PlacedPoiResolver.cs",
+                      "bytes":  16709,
+                      "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/PlacedTraderResolver.cs",
+                      "bytes":  5143,
+                      "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/PolicyV1.cs",
+                      "bytes":  9386,
+                      "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/PolicyV2.cs",
+                      "bytes":  8039,
+                      "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                  },
+                  {
+                      "path":  "dev/src/runtime/main/ResultV1.cs",
+                      "bytes":  5681,
+                      "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                  }
+              ]
+}

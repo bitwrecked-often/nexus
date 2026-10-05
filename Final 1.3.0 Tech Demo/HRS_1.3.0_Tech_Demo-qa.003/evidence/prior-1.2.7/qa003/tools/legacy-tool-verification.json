@@ -1,0 +1,43 @@
+{
+  "schema": "hrs-unified-public-backward-compatibility/v1",
+  "status": "Pass",
+  "checks": [
+    {
+      "script": "Test-HrsCandidateWorkflow.ps1",
+      "passed": 39,
+      "total": 39,
+      "fixture": "SYNTHETIC tool workflow, including actual Start/Record/Export/Complete commands"
+    },
+    {
+      "script": "Test-HrsCandidateBranding.ps1",
+      "passed": 12,
+      "total": 12,
+      "fixture": "Synthetic branded candidate plus preserved legacy candidate identity"
+    },
+    {
+      "script": "Test-HrsQaTools.ps1",
+      "passed": 64,
+      "total": 64,
+      "fixture": "Native Windows PowerShell parsers and generic QA tool fixtures"
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "HrsIdentity.ps1",
+      "sha256": "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86"
+    },
+    {
+      "path": "HrsQaTools.psm1",
+      "sha256": "3F637E9B0D1AB4A91A0505D7B1D063DEC740E2C33FB3C9BDD351701153A2F607"
+    },
+    {
+      "path": "New-HrsQaWorkspace.ps1",
+      "sha256": "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA"
+    },
+    {
+      "path": "Export-HrsCandidate.ps1",
+      "sha256": "F138639FB41D4A40C7E3A2DDF66258E37332AF5C2AF859CD3730B0A59C8B27C9"
+    }
+  ],
+  "scope": "Executed in Windows PowerShell 5.1. Disposable software fixtures only; passing fixture approvals grant no release authority. No installed game execution/writes, no independent 1.2.7 QA cases passed, no publication."
+}

@@ -1,0 +1,283 @@
+{
+  "schema": "hrs-tech-demo-post-export-preservation/v1",
+  "status": "Pass",
+  "completedUtc": "2026-10-05T23:41:51.7890829Z",
+  "protectedHistoricalPaths": 856,
+  "historicalGitFilterSamples": 8,
+  "currentGitFilterSamples": 12,
+  "gitIndexUnchanged": true,
+  "gitIndexSha256": "8A5D72F1EF7C81B4CFF4B57E01F71376400CB44995A610AB938A9C5C56B550E1",
+  "registryUnchanged": true,
+  "registrySha256": "6078833E22FE4DB17CC595852A7B3CB95325E768876D7395C89D3D539F75480E",
+  "candidates": [
+    {
+      "candidateId": "1.3.0-qa.001",
+      "archivePath": "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.001.zip",
+      "archiveBytes": 6979994,
+      "archiveSha256": "1E6DA4C88682508FD74E6A83011D74A86BD90B26C5CFAAFEC0EDB5A5FDC97ADC",
+      "exportReceiptSha256": "A4A40885F474A2122ECBD43A02ECDFE4A500A34DAC29242C46425B677AB68928",
+      "distributionManifestSha256": "6538025672700E2C6573F787DA9D8DD4383B88376530FEF0E4FF2E7BE7B74920",
+      "publicFiles": 576,
+      "registryStatus": "exported-awaiting-live-qa",
+      "releaseRecordSha256": "BF932CEE74560B197B0FA4B8F816453A71B4BF9DE5AB3FC7628D7141EE41CB9F",
+      "contractSha256": "83A9BE314EF25C601D7FAFEF9CB0CC9FB1B38A37ECB4E270E6F30C19D45B67BF",
+      "buildRecordSha256": "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F",
+      "publicReceiptSha256": "C1C2CD3657D3B363E7DEE15F1C0E3B400A5F9D23B406814C0883BF7321C7C965",
+      "everyDistributionFileRehashed": true,
+      "status": "Pass"
+    },
+    {
+      "candidateId": "1.3.0-qa.002",
+      "archivePath": "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.002.zip",
+      "archiveBytes": 7018090,
+      "archiveSha256": "48AD02DF397917C95E7BD27422C030910860824F9B11CE152258DA47FB68DE45",
+      "exportReceiptSha256": "DAE6508B5BAA85E2108D8FE48EB8C35D2EF6DC413DBFBC36CC0759BC2BB9361E",
+      "distributionManifestSha256": "3C880DD7FFB8573489B06BDEDC30ADDB9D44A956DF94CCCC8FB9093C3464A614",
+      "publicFiles": 580,
+      "registryStatus": "exported-awaiting-live-qa",
+      "releaseRecordSha256": "B16F07F2E5B6855B8D2A1D8A2934E41A9D5C35F3EBE938B5E5BF94AC0A90FD55",
+      "contractSha256": "BC29B2BF305E9DB92451763ADFB3F4CBDB44A47D13AD5959DFD2371102441B9B",
+      "buildRecordSha256": "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F",
+      "publicReceiptSha256": "E631D25424A8666B6D22068DF2D980542AF5A7A66A86760FC15D68E0EF3E9231",
+      "everyDistributionFileRehashed": true,
+      "status": "Pass"
+    }
+  ],
+  "sourceAndBuild": {
+    "managerSha256": "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "helperSha256": "D37794DAF883F1958F5426E487A076B1D9E478D39C7BC0E9BD368AC81290095E",
+    "runtimeSha256": "6E143C99DB7519A4D42B047225E7ADBB1C8D3009EFD8E4E18DCA154719316D32",
+    "modInfoSha256": "896451F71AF3B2BF45E09924CBEAD606E0BA2950FD18E1D50B22FE0ACACF69A6",
+    "publicBuildRecordSha256": "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F",
+    "nativeBuildRecordSha256": "07C8B581C781707FA4B127CB7FBBBC6A2333BD3B7471AD182F2EBC5C9CE96EE0",
+    "sourceFilesVerified": 15,
+    "runtimeSources": [
+      {
+        "path": "c0140.cs",
+        "sha256": "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224",
+        "status": "Pass"
+      },
+      {
+        "path": "c0147.cs",
+        "sha256": "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7",
+        "status": "Pass"
+      },
+      {
+        "path": "c0167.cs",
+        "sha256": "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D",
+        "status": "Pass"
+      },
+      {
+        "path": "c0181.cs",
+        "sha256": "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A",
+        "status": "Pass"
+      },
+      {
+        "path": "c0184.cs",
+        "sha256": "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC",
+        "status": "Pass"
+      },
+      {
+        "path": "c0185.cs",
+        "sha256": "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60",
+        "status": "Pass"
+      },
+      {
+        "path": "PolicyV1.cs",
+        "sha256": "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA",
+        "status": "Pass"
+      },
+      {
+        "path": "PolicyV2.cs",
+        "sha256": "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80",
+        "status": "Pass"
+      },
+      {
+        "path": "BiomePreference.cs",
+        "sha256": "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4",
+        "status": "Pass"
+      },
+      {
+        "path": "ResultV1.cs",
+        "sha256": "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356",
+        "status": "Pass"
+      },
+      {
+        "path": "c0213.cs",
+        "sha256": "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2",
+        "status": "Pass"
+      },
+      {
+        "path": "PlacedPoiResolver.cs",
+        "sha256": "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0",
+        "status": "Pass"
+      },
+      {
+        "path": "PlacedTraderResolver.cs",
+        "sha256": "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD",
+        "status": "Pass"
+      },
+      {
+        "path": "c0217.cs",
+        "sha256": "426CA849FB77F3AA52E622877EEE0D5A60D6BA19122C7C711D38583FF6BF7A0A",
+        "status": "Pass"
+      },
+      {
+        "path": "c0218.cs",
+        "sha256": "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD",
+        "status": "Pass"
+      }
+    ]
+  },
+  "currentGitFilters": [
+    {
+      "path": "qa_cycle/HrsQaTools.psm1",
+      "sha256": "F56206E14281A5DDFEBFB120FFBC3CA18E00FFD9CBC52A188900C1ADF47A0FA0",
+      "rawBlobSha1": "157e5d0a8312bebea82f26c0c1fe8e941371747e",
+      "filteredBlobSha1": "157e5d0a8312bebea82f26c0c1fe8e941371747e",
+      "attributes": [
+        "qa_cycle/HrsQaTools.psm1: text: unset",
+        "qa_cycle/HrsQaTools.psm1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/Export-HrsCandidate.ps1",
+      "sha256": "9DDE33041389A93F099C0ED0CB8AA4BA4513BA3F2388696CA380DF348895D24F",
+      "rawBlobSha1": "04cf5a685ab6507ecfcaa7d8c9ccd30fa6418406",
+      "filteredBlobSha1": "04cf5a685ab6507ecfcaa7d8c9ccd30fa6418406",
+      "attributes": [
+        "qa_cycle/Export-HrsCandidate.ps1: text: unset",
+        "qa_cycle/Export-HrsCandidate.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/New-Hrs130TechDemoBaseline.ps1",
+      "sha256": "57E3FCD55149C5880F303293AD85C94518A2D38E05650C5E23310AE0A7883736",
+      "rawBlobSha1": "fd966df3dcaf7b3f5a46e957d8fa8e25932cda5f",
+      "filteredBlobSha1": "fd966df3dcaf7b3f5a46e957d8fa8e25932cda5f",
+      "attributes": [
+        "qa_cycle/New-Hrs130TechDemoBaseline.ps1: text: unset",
+        "qa_cycle/New-Hrs130TechDemoBaseline.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/New-Hrs130TechDemoContract.ps1",
+      "sha256": "10AE533BF43F6617A17427B3F014F1DA2D175FD568A1418C56B2B62CB1E29A6F",
+      "rawBlobSha1": "144562ceaf3cb508beb065c7c09963edc15aaf1c",
+      "filteredBlobSha1": "144562ceaf3cb508beb065c7c09963edc15aaf1c",
+      "attributes": [
+        "qa_cycle/New-Hrs130TechDemoContract.ps1: text: unset",
+        "qa_cycle/New-Hrs130TechDemoContract.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/candidate-registry.json",
+      "sha256": "6078833E22FE4DB17CC595852A7B3CB95325E768876D7395C89D3D539F75480E",
+      "rawBlobSha1": "5da05bc2c86590f7ba8a3f75aade4be3397623ae",
+      "filteredBlobSha1": "5da05bc2c86590f7ba8a3f75aade4be3397623ae",
+      "attributes": [
+        "qa_cycle/candidate-registry.json: text: unset",
+        "qa_cycle/candidate-registry.json: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.001.zip.receipt.json",
+      "sha256": "A4A40885F474A2122ECBD43A02ECDFE4A500A34DAC29242C46425B677AB68928",
+      "rawBlobSha1": "69b7a573a0fbc629c5d62fadfe4a7138be3a3f46",
+      "filteredBlobSha1": "69b7a573a0fbc629c5d62fadfe4a7138be3a3f46",
+      "attributes": [
+        "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.001.zip.receipt.json: text: unset",
+        "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.001.zip.receipt.json: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.002.zip.receipt.json",
+      "sha256": "DAE6508B5BAA85E2108D8FE48EB8C35D2EF6DC413DBFBC36CC0759BC2BB9361E",
+      "rawBlobSha1": "aea7ddda8e45a3c06e2b0f6bfbbf84e6ce9675a2",
+      "filteredBlobSha1": "aea7ddda8e45a3c06e2b0f6bfbbf84e6ce9675a2",
+      "attributes": [
+        "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.002.zip.receipt.json: text: unset",
+        "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.002.zip.receipt.json: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/HrsIdentity.ps1",
+      "sha256": "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86",
+      "rawBlobSha1": "601a310d547f82c1efec8cb2acef1472df560b24",
+      "filteredBlobSha1": "601a310d547f82c1efec8cb2acef1472df560b24",
+      "attributes": [
+        "qa_cycle/HrsIdentity.ps1: text: unset",
+        "qa_cycle/HrsIdentity.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/New-HrsQaWorkspace.ps1",
+      "sha256": "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA",
+      "rawBlobSha1": "0461e114e41b01b10f383920079e4e284208a3d3",
+      "filteredBlobSha1": "0461e114e41b01b10f383920079e4e284208a3d3",
+      "attributes": [
+        "qa_cycle/New-HrsQaWorkspace.ps1: text: unset",
+        "qa_cycle/New-HrsQaWorkspace.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/Test-HrsCheckoutBytes.ps1",
+      "sha256": "99DFFCB2E77A1766688B6C1124C090EEE2E59DD31E044AB78A9B5DC17BBE6E04",
+      "rawBlobSha1": "f62708a69eeff149a23cccfa8d2d161e1e749daa",
+      "filteredBlobSha1": "f62708a69eeff149a23cccfa8d2d161e1e749daa",
+      "attributes": [
+        "qa_cycle/Test-HrsCheckoutBytes.ps1: text: unset",
+        "qa_cycle/Test-HrsCheckoutBytes.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "qa_cycle/Test-HrsTechDemoPackaging.ps1",
+      "sha256": "9457E8FFDE4189E3CE3DA1FF9B80508E18B3963A7F322FDCB2F8557ADBCB6376",
+      "rawBlobSha1": "9cfc7a04d87e8ec070f9c6232348ad0dbbea0e26",
+      "filteredBlobSha1": "9cfc7a04d87e8ec070f9c6232348ad0dbbea0e26",
+      "attributes": [
+        "qa_cycle/Test-HrsTechDemoPackaging.ps1: text: unset",
+        "qa_cycle/Test-HrsTechDemoPackaging.ps1: diff: set"
+      ],
+      "status": "Pass"
+    },
+    {
+      "path": "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/Verify-PublicCandidate.ps1",
+      "sha256": "D37794DAF883F1958F5426E487A076B1D9E478D39C7BC0E9BD368AC81290095E",
+      "rawBlobSha1": "c8a7eefa3017794fc1ab30f4e979a8cb5ca6b554",
+      "filteredBlobSha1": "c8a7eefa3017794fc1ab30f4e979a8cb5ca6b554",
+      "attributes": [
+        "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/Verify-PublicCandidate.ps1: text: unset",
+        "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/Verify-PublicCandidate.ps1: diff: set"
+      ],
+      "status": "Pass"
+    }
+  ],
+  "actualPackageVerification": {
+    "proofPath": "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/final-candidate002-r001/verification.json",
+    "proofSha256": "029EC8750283561B194624BC9EDB5226E237D8DA81CEBD3C1687C9B30F14C2EF",
+    "checkCount": 5152,
+    "windowsPowerShell": true,
+    "unchangedShippedHelper": true,
+    "defaultNativeTemp": true,
+    "environmentOverride": false,
+    "debugCopy": false,
+    "rootStartSmokeExitCode": 0,
+    "rootStartSmokeStderrBytes": 0,
+    "gameInstalled": false,
+    "gameLaunched": false
+  },
+  "independentCasesPending": 46,
+  "publicationApproved": false,
+  "scope": "Post-export read-only archive, manifest, source/build and Git filtering preservation checks. Writes only this fresh append-only evidence folder; no source, registry, case, archive or Git index mutations."
+}

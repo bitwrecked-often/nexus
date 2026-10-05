@@ -1,0 +1,151 @@
+{
+    "schema":  "hrs-public-name-metadata-change/v1",
+    "status":  "Pass",
+    "checkedUtc":  "2026-10-05T04:14:08.673Z",
+    "ownerDecisionDate":  "2026-10-04",
+    "userFacingTimezone":  "America/Los_Angeles",
+    "powershellEdition":  "Desktop",
+    "powershellVersion":  "5.1.26100.9549",
+    "scope":  "Presentation-only metadata and unexported draft product name. No rebuild, export, game installation, game launch or independent QA is claimed.",
+    "publicName":  "New Player Random Start",
+    "beforeSnapshots":  [
+                            {
+                                "originalPath":  "<DEV_REPO>\\hrs_1.2.7\\dev\\src\\runtime\\main\\ModInfo.xml",
+                                "snapshot":  "dev/qa/public-name-20261004/ModInfo.before.xml",
+                                "bytes":  412,
+                                "sha256":  "85EF39A95ECBE2AA22817BB4C30BA470B9D7A5723B6BBAB20C7E02A039D4B33A"
+                            },
+                            {
+                                "originalPath":  "<DEV_REPO>\\hrs_1.2.7\\dev\\qa\\rel.json",
+                                "snapshot":  "dev/qa/public-name-20261004/rel.before.json",
+                                "bytes":  15137,
+                                "sha256":  "CBD0BFE9D4E492CE400EA9731960AFD891C6D87EA13B286273A64E68D979E2F9"
+                            },
+                            {
+                                "originalPath":  "<DEV_REPO>\\qa_cycle\\New-Hrs127Contract.ps1",
+                                "snapshot":  "dev/qa/public-name-20261004/New-Hrs127Contract.before.ps1",
+                                "bytes":  26148,
+                                "sha256":  "3AB52B59AB29C0A17C9ADFC18FA57E2B8D54A21A3BFBE24CD4435207E54CABA1"
+                            },
+                            {
+                                "originalPath":  "<DEV_REPO>\\hrs_1.2.7\\dev\\qa\\QA_BUNDLE_READINESS.md",
+                                "snapshot":  "dev/qa/public-name-20261004/QA_BUNDLE_READINESS.before.md",
+                                "bytes":  1886,
+                                "sha256":  "4A9A2727DC9675D5A2525F1FE2B4C2EC8CD32DF256BA6C9CC1360899AEA131B6"
+                            }
+                        ],
+    "changedXmlFields":  [
+                             {
+                                 "field":  "DisplayName",
+                                 "before":  "Historical Random Start",
+                                 "after":  "New Player Random Start"
+                             },
+                             {
+                                 "field":  "Description",
+                                 "before":  "Placed-world random starts with optional arrival protection and active-world opening-trader routing.",
+                                 "after":  "Random starting locations for new characters in 7 Days to Die. Choose a biome or let the mod pick."
+                             }
+                         ],
+    "unchangedXmlFields":  [
+                               "Name",
+                               "Author",
+                               "Version",
+                               "Website",
+                               "SkipWithAntiCheat"
+                           ],
+    "sourceModInfo":  {
+                          "path":  "dev/src/runtime/main/ModInfo.xml",
+                          "sha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305",
+                          "bytes":  410
+                      },
+    "verifiedModInfo":  {
+                            "path":  "dev/verified/main/ModInfo.xml",
+                            "sha256":  "74F23CCF359E1FE209928ACE6AB272CCDB7711E73FF38FE2FAED7354D196F305",
+                            "bytes":  410
+                        },
+    "sourceAndVerifiedMetadataMatch":  true,
+    "runtimeSha256":  "56DE4592317DB1E114BA3C1D5FED4AF8F22DB05D88B1808B3D005479ADAFBD38",
+    "runtimeUnchanged":  true,
+    "originalBuildRecordSha256":  "53B5BBA5C677C42A2DF992C8F6DE11544866D7B142229BB5845943016E43523E",
+    "originalBuildRecordUnchanged":  true,
+    "compiledSources":  [
+                            {
+                                "path":  "c0140.cs",
+                                "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                            },
+                            {
+                                "path":  "c0147.cs",
+                                "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                            },
+                            {
+                                "path":  "c0167.cs",
+                                "sha256":  "DF08273BA5607D25147C39BDB3AC85B375A95A9E4EFCEBAE295C126FACB00F71"
+                            },
+                            {
+                                "path":  "c0181.cs",
+                                "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                            },
+                            {
+                                "path":  "c0184.cs",
+                                "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                            },
+                            {
+                                "path":  "c0185.cs",
+                                "sha256":  "A6B96DF463A28B747835CC88E6DF4074D0E366E7BA4ACCDAC8B18643A77098AE"
+                            },
+                            {
+                                "path":  "PolicyV1.cs",
+                                "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                            },
+                            {
+                                "path":  "PolicyV2.cs",
+                                "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                            },
+                            {
+                                "path":  "BiomePreference.cs",
+                                "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                            },
+                            {
+                                "path":  "ResultV1.cs",
+                                "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                            },
+                            {
+                                "path":  "c0213.cs",
+                                "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                            },
+                            {
+                                "path":  "PlacedPoiResolver.cs",
+                                "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                            },
+                            {
+                                "path":  "PlacedTraderResolver.cs",
+                                "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                            },
+                            {
+                                "path":  "c0217.cs",
+                                "sha256":  "FE71D6E8EF7E83928F1BA5C3D7C8E32B2C3F279D12C0D14C1136C8E77A8FFAFB"
+                            },
+                            {
+                                "path":  "c0218.cs",
+                                "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                            }
+                        ],
+    "compiledSourcesUnchanged":  true,
+    "draftRelease":  {
+                         "path":  "dev/qa/rel.json",
+                         "sha256":  "352B32C859E118BCBCC526BF967112C1D01AFC144CF46784FA61B8D634652615",
+                         "product":  "New Player Random Start",
+                         "inlineMetadataProvenance":  true,
+                         "candidateId":  "1.2.7-qa.001",
+                         "packageStatus":  "not-exported"
+                     },
+    "contractGenerator":  {
+                              "path":  "qa_cycle/New-Hrs127Contract.ps1",
+                              "sha256":  "6069F9ACB05C9BA3BBC3A0A4B42C6BD8D3F70FE697F530950203BA3E791A781A",
+                              "change":  "product field only",
+                              "nativeParserErrorCount":  0
+                          },
+    "candidateRegistryUnchanged":  true,
+    "publicReleaseMapUnchanged":  true,
+    "currentSourceReleaseGate":  "Awaiting manager metadata pin update; source gate intentionally not run yet."
+}

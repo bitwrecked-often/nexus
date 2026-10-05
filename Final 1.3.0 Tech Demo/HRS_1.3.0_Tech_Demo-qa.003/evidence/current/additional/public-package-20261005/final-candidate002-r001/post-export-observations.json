@@ -1,0 +1,38 @@
+{
+  "schema": "hrs-public-post-export-observations/v1",
+  "candidateId": "1.3.0-qa.002",
+  "archiveSha256": "48AD02DF397917C95E7BD27422C030910860824F9B11CE152258DA47FB68DE45",
+  "verifierExecution": {
+    "windowsPowerShell": true,
+    "defaultNativeTemp": true,
+    "environmentOverride": false,
+    "debugCopy": false,
+    "sourceSha256": "D37794DAF883F1958F5426E487A076B1D9E478D39C7BC0E9BD368AC81290095E",
+    "shippedSha256": "D37794DAF883F1958F5426E487A076B1D9E478D39C7BC0E9BD368AC81290095E"
+  },
+  "rootGitPolicy": {
+    "path": ".gitattributes",
+    "bytes": 202,
+    "sha256": "EB7A76A3624F8952A0A1BD2555658C3F0688540DCA3FE6F9AFD556B20EFF826F",
+    "templateSha256": "EB7A76A3624F8952A0A1BD2555658C3F0688540DCA3FE6F9AFD556B20EFF826F",
+    "exactTemplate": true,
+    "asciiOnly": true,
+    "utf8Bom": false,
+    "fullManifestAuthenticated": true,
+    "projectionOriginalAuthenticated": true,
+    "preservesExactBytes": true
+  },
+  "captureInspection": {
+    "main": "public-manager.png",
+    "weights": "public-manager-weights.png",
+    "pictureOnlyMulticoloredLogo": true,
+    "frontLabel": "Tech Demo | 1.3.0",
+    "nativeControlsRendered": true,
+    "physicalDisplayQualified": false,
+    "accessibilityQualified": false
+  },
+  "workspaceRoot": "<DEV_TEMP>\\hrs130-v-f2e65af5d182405a80e5c8ec582eb6af\\w",
+  "rootStartPath": "<DEV_TEMP>\\hrs130-v-f2e65af5d182405a80e5c8ec582eb6af\\w\\START.bat",
+  "independentCasesPending": 46,
+  "publicationApproved": false
+}

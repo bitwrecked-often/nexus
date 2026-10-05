@@ -1,0 +1,55 @@
+{
+  "schema": "hrs-tech-demo-policy-chain-dev/v1",
+  "status": "Pass",
+  "checks": [
+    {
+      "name": "verified-runtime-codec",
+      "assertions": 8
+    },
+    {
+      "name": "canonical-policy-migration-recovery",
+      "assertions": 71
+    },
+    {
+      "name": "invalid-writer-preserves-prior-policy",
+      "assertions": 11
+    }
+  ],
+  "scope": "Controlled DEV policy tests; these do not qualify in-game save/quest persistence or independent customer QA.",
+  "independentQa": "Pending",
+  "results": [
+    {
+      "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File hrs_1.3.0_Tech_Demo/dev/tests/Test-CompiledPolicy.ps1",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "b315a1",
+        "wall_time_seconds": 0.5040035,
+        "exit_code": 0,
+        "original_token_count": 21,
+        "output": "PASS: 7 canonical vectors and tamper rejection through the verified runtime DLL\r\n"
+      }
+    },
+    {
+      "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File hrs_1.3.0_Tech_Demo/dev/tests/Test-PolicyV2.ps1",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "b1f830",
+        "wall_time_seconds": 1.8900096,
+        "exit_code": 0,
+        "original_token_count": 18,
+        "output": "PASS: 71 policy, migration, recovery and deterministic draw assertions\r\n"
+      }
+    },
+    {
+      "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File hrs_1.3.0_Tech_Demo/dev/tests/Test-PolicyInvalidFixtures.ps1 -EvidenceRoot hrs_1.3.0_Tech_Demo/dev/qa/policy-chain-20261005/invalid-writer",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "3113be",
+        "wall_time_seconds": 1.0163103,
+        "exit_code": 0,
+        "original_token_count": 59,
+        "output": "PASS: 11 invalid policy writer fixtures rejected without changing prior policy; evidence <DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\policy-chain-20261005\\invalid-writer\\writer-invalid-fixtures.json\r\n"
+      }
+    }
+  ]
+}

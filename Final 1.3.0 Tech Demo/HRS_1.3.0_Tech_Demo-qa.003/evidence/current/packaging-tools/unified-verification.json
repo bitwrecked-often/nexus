@@ -1,0 +1,187 @@
+{
+    "schema":  "hrs-unified-public-tool-verification/v1",
+    "status":  "Pass",
+    "checks":  [
+                   {
+                       "name":  "frozen split-format candidate 002 still verifies",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "legacy customer allowlist remains twelve files",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "public payload adds the full GPL license",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "single ZIP verifies runtime plus full public context",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "wrong published ZIP digest rejected [observed: HRS_PUBLIC_ARCHIVE_IDENTITY]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "cross-candidate archive rejected [observed: HRS_PUBLIC_DISTRIBUTION_SCHEMA]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "external archive receipt derives from embedded identities",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "standalone extraction requires published SHA-256 [observed: HRS_PUBLIC_EXPECTED_SHA_REQUIRED: pass the published SHA-256 with -ExpectedArchiveSha256 when this candidate is not in a trusted local registry.]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "rejected unanchored archive creates no workspace",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "standalone workspace preserves the complete original ZIP bytes",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "local derived receipt exactly matches external DEV receipt",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "standalone workspace materializes its archive-bound QA registry",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "all extracted public files verify with the workspace own tools",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "existing workspace is never overwritten [observed: HRS_WORKSPACE_EXISTS]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "public file drift rejected: source/BUILD.md [observed: HRS_TREE_DRIFT: source/BUILD.md]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "public file drift rejected: history/CHECKPOINT.md [observed: HRS_TREE_DRIFT: history/CHECKPOINT.md]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "public file drift rejected: evidence/fixture.txt [observed: HRS_TREE_DRIFT: evidence/fixture.txt]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "public file drift rejected: lore/README.md [observed: HRS_TREE_DRIFT: lore/README.md]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "public file drift rejected: tools/Test-HrsRelease.ps1 [observed: HRS_TREE_DRIFT: tools/Test-HrsRelease.ps1]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "unlisted evidence file rejected [observed: HRS_TREE_EXTRA: evidence/unlisted.txt]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "established private manager state remains permitted outside distribution payload",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual Start-HrsQaRun records the complete public ZIP identity",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual observation and run export accept the unified package workspace",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "missing independent cases cannot receive cycle approval [observed: HRS_QA_APPROVAL_BLOCKED: readiness=True; missing=HRS-QA-001,HRS-QA-002,HRS-QA-003A,HRS-QA-003B,HRS-QA-004,HRS-QA-005,HRS-QA-006,HRS-QA-007,HRS-QA-008,HRS-QA-009,HRS-QA-010,HRS-QA-011,HRS-BIOME-Navezgane-Forest,HRS-BIOME-Navezgane-BurntForest,HRS-BIOME-Navezgane-Desert,HRS-BIOME-Navezgane-Snow,HRS-BIOME-Navezgane-Wasteland,HRS-BIOME-Navezgane-Weighted-Mixed,HRS-BIOME-Navezgane-Weighted-ZeroExclusion,HRS-BIOME-Navezgane-Weighted-SinglePositive,HRS-BIOME-Navezgane-Respawn,HRS-BIOME-RandomGen-Forest,HRS-BIOME-RandomGen-BurntForest,HRS-BIOME-RandomGen-Desert,HRS-BIOME-RandomGen-Snow,HRS-BIOME-RandomGen-Wasteland,HRS-BIOME-RandomGen-Weighted-Mixed,HRS-BIOME-RandomGen-Weighted-ZeroExclusion,HRS-BIOME-RandomGen-Weighted-SinglePositive,HRS-BIOME-RandomGen-Respawn,HRS-BIOME-Weighted-AbsentRenormalized,HRS-BIOME-REQUESTED_BIOME_ABSENT,HRS-BIOME-WEIGHTED_POOL_EMPTY,HRS-BIOME-POI_SAFETY_EXHAUSTED,HRS-BIOME-TRADER_POOL_EMPTY,HRS-BIOME-Manager,HRS-UX-OPERATIONS,HRS-UX-COPY,HRS-UX-GEOMETRY,HRS-UX-HELP,HRS-UX-NEWCOMER,HRS-QA-TRADER-NOTICE,HRS-QA-TRADER-FIRST-SESSION,HRS-QA-TRADER-EARLY-LOGOUT,HRS-QA-TRADER-POST-ASSIGNMENT,HRS-QA-TRADER-CROSS-BIOME]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "QA outputs outside the frozen workspace preserve public content integrity",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "malformed public ZIP rejected: extra [observed: HRS_ZIP_EXTRA_OR_EMPTY]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "malformed public ZIP rejected: traversal [observed: HRS_UNSAFE_PATH]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "malformed public ZIP rejected: duplicate [observed: HRS_ZIP_DUPLICATE]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "malformed public ZIP rejected: evidence-tamper [observed: HRS_ZIP_FILE_IDENTITY: evidence/fixture.txt]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual unified exporter rejects missing contributor entry [observed: HRS_PUBLIC_REQUIRED_INPUT: BUILD-FROM-SOURCE.md]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual unified exporter rejects game reference redistribution [observed: HRS_GAME_REFERENCE_IN_PUBLIC_INPUTS]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual unified exporter creates a registered verified full public ZIP",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual unified export needs no separate engineering companion",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "actual unified exporter rejects reused candidate identity [observed: HRS_CANDIDATE_ID_ALREADY_EXPORTED]",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "registered full ZIP initializes without an additional expected-hash argument",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "registered full workspace validates from its own derived receipt and frozen registry",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "preserved original candidates/1.2.7-qa.002.zip",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "preserved original candidates/1.2.7-qa.002.zip.receipt.json",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "preserved original candidates/1.2.7-qa.002.zip.companion.zip",
+                       "status":  "Pass"
+                   },
+                   {
+                       "name":  "preserved original candidate-registry.json",
+                       "status":  "Pass"
+                   }
+               ],
+    "passed":  40,
+    "fixture":  "<DEV_TEMP>\\hrs unified package 3f7756f230ca48c296fda35983a5cda1",
+    "scope":  "Disposable software fixtures only. No installed game writes, game launch, independent customer QA, release approval or publication.",
+    "sourceHashes":  [
+                         {
+                             "path":  "HrsIdentity.ps1",
+                             "sha256":  "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86"
+                         },
+                         {
+                             "path":  "HrsQaTools.psm1",
+                             "sha256":  "F56206E14281A5DDFEBFB120FFBC3CA18E00FFD9CBC52A188900C1ADF47A0FA0"
+                         },
+                         {
+                             "path":  "New-HrsQaWorkspace.ps1",
+                             "sha256":  "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA"
+                         },
+                         {
+                             "path":  "Test-HrsUnifiedPublicPackage.ps1",
+                             "sha256":  "C0BD12D3AB5EA4B0E9FE8A399A2DEE6A34C91EB7C2512154C0E1F16664C3CFD7"
+                         }
+                     ]
+}

@@ -1,0 +1,8 @@
+# Preserve exact source, contracts, history and evidence in a new Git checkout.
+* -text diff
+*.dll -text -diff
+*.ico -text -diff
+*.png -text -diff
+*.jpg -text -diff
+*.jpeg -text -diff
+*.zip -text -diff

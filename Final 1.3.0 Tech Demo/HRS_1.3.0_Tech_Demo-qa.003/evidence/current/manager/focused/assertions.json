@@ -1,0 +1,346 @@
+[
+    {
+        "name":  "isolated-game-root-enforced",
+        "status":  "Pass"
+    },
+    {
+        "name":  "fresh-standard-remembers-default-on",
+        "status":  "Pass"
+    },
+    {
+        "name":  "front-tech-demo-identity",
+        "status":  "Pass"
+    },
+    {
+        "name":  "name-and-check-accessibility",
+        "status":  "Pass"
+    },
+    {
+        "name":  "no-save-no-policy-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "no-save-no-policy-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "check-does-not-create-save",
+        "status":  "Pass"
+    },
+    {
+        "name":  "verified-matching-before-save-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "verified-matching-before-save-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "matching-full-options-and-installation-applied",
+        "status":  "Pass"
+    },
+    {
+        "name":  "steam-closed-disk-check-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "steam-closed-disk-check-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "steam-requirement-separate-from-saved-settings",
+        "status":  "Pass"
+    },
+    {
+        "name":  "game-running-disk-check-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "game-running-disk-check-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "game-running-operation-guards-preserved",
+        "status":  "Pass"
+    },
+    {
+        "name":  "another-name-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "another-name-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "name-match-required",
+        "status":  "Pass"
+    },
+    {
+        "name":  "same-name-different-options-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "same-name-different-options-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "forest-hides-without-clearing-intent",
+        "status":  "Pass"
+    },
+    {
+        "name":  "weighted-retains-protection-and-hides-inactive-choice",
+        "status":  "Pass"
+    },
+    {
+        "name":  "challenge-opt-out-survives-hidden-transitions",
+        "status":  "Pass"
+    },
+    {
+        "name":  "restored-Standard-preference",
+        "status":  "Pass"
+    },
+    {
+        "name":  "restored-RandomSafe-preference",
+        "status":  "Pass"
+    },
+    {
+        "name":  "restored-Random-preference",
+        "status":  "Pass"
+    },
+    {
+        "name":  "drifted-installation-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "drifted-installation-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "raw-drift-only-in-details",
+        "status":  "Pass"
+    },
+    {
+        "name":  "conflicting-installation-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "conflicting-installation-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "conflict-keeps-support-guidance-and-launch-guard",
+        "status":  "Pass"
+    },
+    {
+        "name":  "missing-policy-broken-package-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "missing-policy-broken-package-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "broken-package-needs-redownload-before-apply",
+        "status":  "Pass"
+    },
+    {
+        "name":  "concurrent-membership-change-rejected",
+        "status":  "Pass"
+    },
+    {
+        "name":  "concurrent-membership-change-closes-verification",
+        "status":  "Pass"
+    },
+    {
+        "name":  "result-attributed-to-applied-policy",
+        "status":  "Pass"
+    },
+    {
+        "name":  "edit-does-not-reattribute-old-outcome",
+        "status":  "Pass"
+    },
+    {
+        "name":  "matching-draft-unverified-installation-is-previous-evidence",
+        "status":  "Pass"
+    },
+    {
+        "name":  "stale-result-does-not-guess-old-name",
+        "status":  "Pass"
+    },
+    {
+        "name":  "invalid-policy-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "invalid-policy-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "invalid-policy-guard-and-diagnostic",
+        "status":  "Pass"
+    },
+    {
+        "name":  "legacy-policy-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "legacy-policy-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "check-does-not-migrate-legacy-policy",
+        "status":  "Pass"
+    },
+    {
+        "name":  "failed-apply-latch-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "failed-apply-latch-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "check-cannot-clear-failed-apply-latch",
+        "status":  "Pass"
+    },
+    {
+        "name":  "check-guard-Applying",
+        "status":  "Pass"
+    },
+    {
+        "name":  "check-guard-Uninstalling",
+        "status":  "Pass"
+    },
+    {
+        "name":  "check-guard-AwaitingAcknowledgement",
+        "status":  "Pass"
+    },
+    {
+        "name":  "invalid-input-message",
+        "status":  "Pass"
+    },
+    {
+        "name":  "invalid-input-preserves-all-bytes-and-draft",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-0-Any-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-0-Chosen-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-0-Weighted-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-1-Any-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-1-Chosen-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-1-Weighted-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-2-Any-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-2-Chosen-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-2-Weighted-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-3-Any-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-3-Chosen-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-3-Weighted-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-4-Any-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-4-Chosen-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-4-Weighted-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-5-Any-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-5-Chosen-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "method-5-Weighted-preserves-outer-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "editor-return-0-preserves-width",
+        "status":  "Pass"
+    },
+    {
+        "name":  "editor-return-1-preserves-width",
+        "status":  "Pass"
+    },
+    {
+        "name":  "editor-return-2-preserves-width",
+        "status":  "Pass"
+    },
+    {
+        "name":  "ordinary-pending-has-no-redundant-row",
+        "status":  "Pass"
+    },
+    {
+        "name":  "prefixed-raw-error-never-leaks-to-main-copy",
+        "status":  "Pass"
+    },
+    {
+        "name":  "plain-input-guidance-preserved",
+        "status":  "Pass"
+    },
+    {
+        "name":  "minimum-Any-preserves-user-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "minimum-Chosen-preserves-user-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "minimum-Weighted-preserves-user-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "minimum-Any-preserves-user-size",
+        "status":  "Pass"
+    },
+    {
+        "name":  "minimum-last-link-reachable-by-scroll",
+        "status":  "Pass"
+    },
+    {
+        "name":  "minimum-check-settings-reachable-by-scroll",
+        "status":  "Pass"
+    }
+]

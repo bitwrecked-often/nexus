@@ -1,0 +1,87 @@
+{
+    "schema":  "hrs-manager-layout-comparison/v1",
+    "status":  "Pass",
+    "completedUtc":  "2026-10-05T23:21:12.8535615Z",
+    "scope":  "Same host and fixed 712x720 outer viewport, disposable no-policy fixture, native DrawToBitmap. Does not qualify other actual OS scales/accessibility/newcomer/gameplay.",
+    "harnessSha256":  "FF462A93605DDEFF4650FD9376B08C5A3C8CB3EC7FBA307A5BF6E85D11945ED2",
+    "records":  [
+                    {
+                        "lane":  "before-1.2.7",
+                        "sourceSha256":  "19525A91A2127B1CA6DE5C5212CAE62405E195C74AB33566190D8F632E67ED72",
+                        "measurements":  [
+                                             {
+                                                 "method":  "Any",
+                                                 "outerWidth":  712,
+                                                 "outerHeight":  720,
+                                                 "contentHeight":  655,
+                                                 "biomeHeight":  189,
+                                                 "chosenVisible":  true,
+                                                 "editorVisible":  true,
+                                                 "workingAreaWidth":  1707,
+                                                 "workingAreaHeight":  912
+                                             },
+                                             {
+                                                 "method":  "Chosen",
+                                                 "outerWidth":  712,
+                                                 "outerHeight":  720,
+                                                 "contentHeight":  655,
+                                                 "biomeHeight":  189,
+                                                 "chosenVisible":  true,
+                                                 "editorVisible":  true,
+                                                 "workingAreaWidth":  1707,
+                                                 "workingAreaHeight":  912
+                                             },
+                                             {
+                                                 "method":  "Weighted",
+                                                 "outerWidth":  712,
+                                                 "outerHeight":  720,
+                                                 "contentHeight":  656,
+                                                 "biomeHeight":  190,
+                                                 "chosenVisible":  true,
+                                                 "editorVisible":  true,
+                                                 "workingAreaWidth":  1707,
+                                                 "workingAreaHeight":  912
+                                             }
+                                         ]
+                    },
+                    {
+                        "lane":  "after-1.3.0",
+                        "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                        "measurements":  [
+                                             {
+                                                 "method":  "Any",
+                                                 "outerWidth":  712,
+                                                 "outerHeight":  720,
+                                                 "contentHeight":  566,
+                                                 "biomeHeight":  122,
+                                                 "chosenVisible":  false,
+                                                 "editorVisible":  false,
+                                                 "workingAreaWidth":  1707,
+                                                 "workingAreaHeight":  912
+                                             },
+                                             {
+                                                 "method":  "Chosen",
+                                                 "outerWidth":  712,
+                                                 "outerHeight":  720,
+                                                 "contentHeight":  595,
+                                                 "biomeHeight":  151,
+                                                 "chosenVisible":  true,
+                                                 "editorVisible":  false,
+                                                 "workingAreaWidth":  1707,
+                                                 "workingAreaHeight":  912
+                                             },
+                                             {
+                                                 "method":  "Weighted",
+                                                 "outerWidth":  712,
+                                                 "outerHeight":  720,
+                                                 "contentHeight":  605,
+                                                 "biomeHeight":  161,
+                                                 "chosenVisible":  false,
+                                                 "editorVisible":  true,
+                                                 "workingAreaWidth":  1707,
+                                                 "workingAreaHeight":  912
+                                             }
+                                         ]
+                    }
+                ]
+}

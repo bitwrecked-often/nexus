@@ -1,0 +1,30 @@
+{
+    "group":  "failure",
+    "branch":  "Verified",
+    "status":  "Pass",
+    "expectedCount":  1,
+    "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "harnessSha256":  "B5B70DD7E44E3FC941EF2B77C78EF1B1E0339F2CD8530E80F547ADB069FDE658",
+    "executable":  "powershell.exe",
+    "arguments":  [
+                      "-NoProfile",
+                      "-STA",
+                      "-ExecutionPolicy",
+                      "Bypass",
+                      "-File",
+                      "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                      "-EvidenceRoot",
+                      "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-failure",
+                      "-Branch",
+                      "Verified",
+                      "-FailureProbe",
+                      "-FailurePoint",
+                      "DuringPolicyReadback"
+                  ],
+    "startedUtc":  "2026-10-05T23:16:48.1088423Z",
+    "exitCode":  0,
+    "scenarioPassCount":  1,
+    "evidence":  "callback-verified-failure-duringpolicyreadback.json",
+    "completedUtc":  "2026-10-05T23:16:54.7680175Z"
+}

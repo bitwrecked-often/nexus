@@ -1,1 +1,0 @@
-PASS: 11 invalid policy writer fixtures rejected without changing prior policy; evidence C:\Users\mobil\OneDrive\Documents\GitHub\QA_fresh\hrs_1.2.7\dev\qa\review-repairs-20261004\integration-policy\writer-invalid-fixtures.json

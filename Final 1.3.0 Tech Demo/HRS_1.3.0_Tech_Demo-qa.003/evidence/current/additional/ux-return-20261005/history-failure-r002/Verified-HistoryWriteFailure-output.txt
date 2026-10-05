@@ -1,0 +1,9 @@
+STATUS=Settings verified; recovery history could not be recorded. Keep Game details for support.
+TECHNICAL_DIAGNOSTIC=
+BADGE_STATE=Changes applied.
+POLICY_EXISTS=True
+FORM_SELECTION=Any
+FORM_CHOSEN=0
+APPLY_ENABLED=True
+LAUNCH_ENABLED=True
+LAUNCH_BLOCKED=False

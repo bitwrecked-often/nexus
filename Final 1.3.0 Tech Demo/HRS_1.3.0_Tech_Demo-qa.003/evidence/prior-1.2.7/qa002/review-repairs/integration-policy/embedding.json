@@ -1,0 +1,14 @@
+{
+    "schema":  "hrs-native-embedding-check/v1",
+    "status":  "Pass",
+    "powerShellVersion":  "5.1.26100.9549",
+    "result":  {
+                   "ManagerPath":  "<DEV_REPO>\\hrs_1.2.7\\dev\\ui\\p0158.ps1",
+                   "RecipeId":  "bitwrecked-quiet",
+                   "RecipeSha256":  "7E80883D7C5E8BE526BAA29A68795E9A55C753E495264E47F46D9A437E5FC16E",
+                   "ControlsSha256":  "7533751906025A9604236CD3DDF1669E953396499E4698965BE52C2CD8B40B69",
+                   "Status":  "Current",
+                   "Changed":  false,
+                   "Embedded":  true
+               }
+}

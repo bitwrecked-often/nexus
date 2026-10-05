@@ -1,0 +1,1 @@
+PASS: real manager controls and selection binding (no install/launch)

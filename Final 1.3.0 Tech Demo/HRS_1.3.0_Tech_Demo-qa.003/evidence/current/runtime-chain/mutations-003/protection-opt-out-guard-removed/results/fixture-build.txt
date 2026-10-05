@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  Restored <DEV_REPO>\hrs_1.3.0_Tech_Demo\dev\tests\RuntimeRepairHarness\RuntimeRepairHarness.csproj (in 63 ms).
+  RuntimeRepairHarness -> <DEV_REPO>\hrs_1.3.0_Tech_Demo\dev\qa\runtime-chain-20261005\mutations-003\protection-opt-out-guard-removed\results\fixture-bin\RuntimeRepairHarness.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.12

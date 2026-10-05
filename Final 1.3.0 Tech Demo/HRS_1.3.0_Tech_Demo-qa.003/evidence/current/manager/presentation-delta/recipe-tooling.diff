@@ -1,0 +1,19 @@
+warning: in the working copy of '<DEV_TEMP>\hrs130-game-name-label-41bd558eeb3f44a386bf96d104b37cf8\baseline-Recipes.psm1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '<DEV_REPO>\hrs_1.3.0_Tech_Demo\dev\tools\NativeGraphics\Recipes.psm1', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/<DEV_TEMP>\\hrs130-game-name-label-41bd558eeb3f44a386bf96d104b37cf8\\baseline-Recipes.psm1" "b/<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tools\\NativeGraphics\\Recipes.psm1"
+index 4a9f451..cf79ae0 100644
+--- "a/<DEV_TEMP>\\hrs130-game-name-label-41bd558eeb3f44a386bf96d104b37cf8\\baseline-Recipes.psm1"
++++ "b/<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tools\\NativeGraphics\\Recipes.psm1"
+@@ -101,8 +101,11 @@ function Test-DesignRecipe {
+         }
+         if (@($Recipe.copy.PSObject.Properties.Name) -cnotcontains 'manager') { throw 'Invalid design recipe: Manager target requires manager copy.' }
+         $managerCopy = @('title','intro','gameNameHelp','anyHelp','chosenHelpTemplate','weightedHelp','protectionHelp')
+-        Assert-RecipeObject $Recipe.copy.manager 'copy.manager' $managerCopy
++        Assert-RecipeObject $Recipe.copy.manager 'copy.manager' $managerCopy @('gameNameLabel')
+         foreach ($field in $managerCopy) { Assert-RecipeText $Recipe.copy.manager.$field "copy.manager.$field" 240 }
++        if (@($Recipe.copy.manager.PSObject.Properties.Name) -ccontains 'gameNameLabel') {
++            Assert-RecipeText $Recipe.copy.manager.gameNameLabel 'copy.manager.gameNameLabel' 80
++        }
+         if ($Recipe.copy.manager.chosenHelpTemplate -notmatch '\{biome\}') { throw 'Invalid design recipe: chosenHelpTemplate requires {biome}.' }
+     } elseif (@($Recipe.PSObject.Properties.Name) -ccontains 'manager') {
+         throw 'Invalid design recipe: manager settings require a Manager target.'

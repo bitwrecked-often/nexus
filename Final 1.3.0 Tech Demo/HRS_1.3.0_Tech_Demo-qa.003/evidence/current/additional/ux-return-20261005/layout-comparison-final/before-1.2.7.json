@@ -1,0 +1,35 @@
+[
+    {
+        "method":  "Any",
+        "outerWidth":  712,
+        "outerHeight":  720,
+        "contentHeight":  655,
+        "biomeHeight":  189,
+        "chosenVisible":  true,
+        "editorVisible":  true,
+        "workingAreaWidth":  1707,
+        "workingAreaHeight":  912
+    },
+    {
+        "method":  "Chosen",
+        "outerWidth":  712,
+        "outerHeight":  720,
+        "contentHeight":  655,
+        "biomeHeight":  189,
+        "chosenVisible":  true,
+        "editorVisible":  true,
+        "workingAreaWidth":  1707,
+        "workingAreaHeight":  912
+    },
+    {
+        "method":  "Weighted",
+        "outerWidth":  712,
+        "outerHeight":  720,
+        "contentHeight":  656,
+        "biomeHeight":  190,
+        "chosenVisible":  true,
+        "editorVisible":  true,
+        "workingAreaWidth":  1707,
+        "workingAreaHeight":  912
+    }
+]

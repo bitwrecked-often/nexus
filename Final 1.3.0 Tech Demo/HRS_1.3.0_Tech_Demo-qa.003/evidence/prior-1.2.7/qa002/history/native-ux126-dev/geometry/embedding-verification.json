@@ -1,0 +1,27 @@
+{
+  "verdict": "Pass",
+  "sourceSha256": "EE2750642C80EBE78EE5627F1AE1003229D9E7FF3B16A8F8EF45EFC894522F3D",
+  "snippetSha256": "DD22A802B73ACEA537C522104A60BB6C0CF5B80E134DE4A8AC21154A968EE024",
+  "checks": [
+    {
+      "function": "Update-HrsTextWidths",
+      "match": true,
+      "normalizedLfSha256": "CE14E23A5333F8CAC7DE029D9BDB0C9C8E357FA3B45DD5EDAB20642824B5DBFF"
+    },
+    {
+      "function": "Limit-HrsNormalWindowBounds",
+      "match": true,
+      "normalizedLfSha256": "15CB37B1577B5CB11BD8920CBFF94ACA6D0B219B3DF883AD413FE949C7973C12"
+    },
+    {
+      "function": "Fit-HrsManagerWindow",
+      "match": true,
+      "normalizedLfSha256": "17612B10C8A92E365F55668AE2F9CBE7980203C4C5DD7D0C51C87AF6F3147E13"
+    },
+    {
+      "function": "Initialize-HrsManagerGeometryEvents",
+      "match": true,
+      "normalizedLfSha256": "6109259F7DA2A017C895C113854372FD43301C8330EC34CF8BD1D87B06B29480"
+    }
+  ]
+}

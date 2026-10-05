@@ -1,0 +1,90 @@
+[
+    {
+        "scenario":  "WeightOver100",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "C3A3F72833907F539AE75F187D46A7069342E3110EB0D148B7D4C98685E2F445",
+        "afterSha256":  "C3A3F72833907F539AE75F187D46A7069342E3110EB0D148B7D4C98685E2F445",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "WeightNegative",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "CBBD1CF309A70578ACBD6520A8528C44646528471596F0245F3CED222D90A37D",
+        "afterSha256":  "CBBD1CF309A70578ACBD6520A8528C44646528471596F0245F3CED222D90A37D",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "WeightString",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "5F3C1AED7A8F9874DB2BCB19790F7BFB0CBC39B982DD943B1405D5E22918C6E8",
+        "afterSha256":  "5F3C1AED7A8F9874DB2BCB19790F7BFB0CBC39B982DD943B1405D5E22918C6E8",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "UnknownBiome",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "B71E8CEC109AA9396234F538E34B6BA095E55166C451AABC2F76323F78F9F83C",
+        "afterSha256":  "B71E8CEC109AA9396234F538E34B6BA095E55166C451AABC2F76323F78F9F83C",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "UnknownMethod",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "49EA2D57828FD6B11BC32F0F55C0D15F5C259554FA23DF7E7DD65183BAF696F7",
+        "afterSha256":  "49EA2D57828FD6B11BC32F0F55C0D15F5C259554FA23DF7E7DD65183BAF696F7",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "UnknownMode",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "890BD1E1DECAAFE04A8072221506AA3B16A574E51030E3526CE4A56FCD7BCD87",
+        "afterSha256":  "890BD1E1DECAAFE04A8072221506AA3B16A574E51030E3526CE4A56FCD7BCD87",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "MalformedTimestamp",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "1A28830AD2A110EB39B188246EE92E433F9E4E3A225B1B07F6FA3091BB5D7384",
+        "afterSha256":  "1A28830AD2A110EB39B188246EE92E433F9E4E3A225B1B07F6FA3091BB5D7384",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "InvalidExactName",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "D53BD20A0AE3A3242F5F4C792AF5ECC90F1EB723B73E31DB6B7BE28F235B1D68",
+        "afterSha256":  "D53BD20A0AE3A3242F5F4C792AF5ECC90F1EB723B73E31DB6B7BE28F235B1D68",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "AllZeroWeighted",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "5EC900360C79649E28112C0CA6D0B7AAE34E9C6FCE9534F07832EC23DE7D1A58",
+        "afterSha256":  "5EC900360C79649E28112C0CA6D0B7AAE34E9C6FCE9534F07832EC23DE7D1A58",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "InactiveWeights",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "23816D248B4774D25773120E7F12FB8ABB6EB329A34C637AD4AC84E7A47CFD5A",
+        "afterSha256":  "23816D248B4774D25773120E7F12FB8ABB6EB329A34C637AD4AC84E7A47CFD5A",
+        "priorRevision":  1
+    },
+    {
+        "scenario":  "InactiveBiome",
+        "rejected":  true,
+        "reason":  "POLICY_REJECTED",
+        "beforeSha256":  "A4F96D876635A5A1DFA2FA6DC508A51382A9E0789DF1CE5A6A5EEAD35D681FF6",
+        "afterSha256":  "A4F96D876635A5A1DFA2FA6DC508A51382A9E0789DF1CE5A6A5EEAD35D681FF6",
+        "priorRevision":  1
+    }
+]

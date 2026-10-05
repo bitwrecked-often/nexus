@@ -1,0 +1,83 @@
+{
+  "schema": "hrs-current-release/v1",
+  "product": "Historical Random Start",
+  "semanticVersion": "1.2.3",
+  "status": "candidate-ready-for-isolated-qa",
+  "source": {
+    "laneRoot": "hrs_1.2.3",
+    "runtimeSource": "hrs_1.2.3/dev/src/runtime/main",
+    "managerSource": "hrs_1.2.3/dev/ui/p0158.ps1",
+    "observedHead": "0064fb17742e4f3da65627e478b374938fcfd26f",
+    "mechanicalMerge": "6c6c8677bcaced6912d0ae320aead1d41ebd9985",
+    "transportMerge": "0138018cdd40bd2b8dda573c7d70acc2c717dca4"
+  },
+  "candidateRuntime": {
+    "path": "d0163.dll",
+    "bytes": 58880,
+    "sha256": "A762CA1A337647A729EDEEDB4C32F8689F70022276310F471C9763CE564B2F75",
+    "mvid": "7b021d74-e5ff-4aec-bfba-3ab97cb22ede",
+    "gameAssemblyCSharpMvid": "229796d0-95ca-4662-b426-1a6f1f1596ed",
+    "modInfoVersion": "1.2.3",
+    "candidateId": "1.2.3-qa.003",
+    "buildId": "r123",
+    "status": "deterministic-build-and-release-gate-passed"
+  },
+  "package": {
+    "currentCandidate": {
+      "candidateId": "1.2.3-qa.003",
+      "path": "qa_cycle/candidates/1.2.3-qa.003.zip",
+      "sha256": "DAC526F54473543A5C7EF53503C69AE18E4961C39F8E5543293F3AC55E2F6BAA",
+      "receipt": "qa_cycle/candidates/1.2.3-qa.003.zip.receipt.json",
+      "companion": "qa_cycle/candidates/1.2.3-qa.003.zip.companion.zip",
+      "registry": "qa_cycle/candidate-registry.json",
+      "status": "tooling-verified-live-qa-pending",
+      "devCheckoutReceiptObservation": {
+        "observedSha256": "9EA106FD58AA845F466ABD96071EB2A25553D50A860740231A0E02B4E6061F50",
+        "registeredSha256": "882078866674E3CF37E6CA1E11670E8E2844E65126C60962A5AD1ADC293291E0",
+        "status": "local-receipt-registry-mismatch; candidate admission fails in this checkout"
+      }
+    },
+    "approvedPromotion": {
+      "name": "HistoricalRandomStart_1.2.3_QA_UPGRADEFIX.zip",
+      "bytes": 55094,
+      "sha256": "B009449CFE9B17AD443B1919C89FD7F5B8FF317EC8A70D8E700E676CEE6C4BB1",
+      "status": "reported-but-not-located-in-this-checkout"
+    },
+    "localObservedCandidate": {
+      "path": "qa_cycle/HRS_1.2.3_CUSTOMER_QA.zip",
+      "bytes": 57028,
+      "sha256": "DE1F2CE9AB60CEC7621CC9EA3AEB656A03FF5E558464F8247478DD4BC33B1001",
+      "containsTestedRuntime": true,
+      "status": "not-equivalent-to-approved-promotion-archive"
+    }
+  },
+  "featureScope": {
+    "randomStart": {
+      "selectedPointCount": 80,
+      "catalogPointCount": 183,
+      "excludedSurveyIds": ["NG01", "NG02", "NG03", "NG04", "NG05", "NG06", "NG07", "NG08", "NG09", "NG10", "NG11", "NG12"],
+      "sourceObservation": "c0213.cs declares the current selector; certification of every selected point is not re-run by this assessment"
+    },
+    "arrivalProtection": {
+      "status": "recorded-source-and-live-test",
+      "boundary": "starting-biome hazard families are maintained and restored; this is not a claim that every biome debuff is removed"
+    },
+    "traderRouting": {
+      "status": "recorded-source-and-live-test",
+      "boundary": "reload resume and intro_buried_supplies biome routing were tested; normal vanilla progression remains outside HRS ownership"
+    }
+  },
+  "evidence": {
+    "candidateContract": "hrs_1.2.3/dev/qa/rel.json",
+    "candidateCases": "hrs_1.2.3/dev/qa/cases.json",
+    "candidateExportTool": "qa_cycle/Export-HrsCandidate.ps1",
+    "mechanicalCloseout": "HRS_1.2.3_CLOSEOUT_2026-09-05.md",
+    "transportQa": "HRS_1.2.3_RELEASE_TRANSPORT_QA_2026-09-06.md",
+    "formalCurrentQaContract": "hrs_1.2.3/dev/qa/rel.json; historical hrs_1.2.1 contracts remain preserved",
+    "sourceHashDiscrepancy": "pending provenance investigation; do not infer a gameplay difference"
+  },
+  "publication": {
+    "status": "not-authorized",
+    "rule": "promote only the exact archive whose complete SHA256 and evidence are located and reconciled"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "schema":  "hrs-qualified-current-build-reuse/v1",
+    "candidateId":  "1.3.0-qa.002",
+    "originCandidateId":  "1.3.0-qa.001",
+    "originArchiveSha256":  "1E6DA4C88682508FD74E6A83011D74A86BD90B26C5CFAAFEC0EDB5A5FDC97ADC",
+    "originBuildRecord":  "alpha-core-1fb58f165715472db359515180d85997",
+    "qualifiedBuildRecordSha256":  "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F",
+    "runtimeSha256":  "6E143C99DB7519A4D42B047225E7ADBB1C8D3009EFD8E4E18DCA154719316D32",
+    "runtimeSourcesUnchanged":  true,
+    "managerSourceUnchanged":  true,
+    "runtimeRebuiltForThisPackagingCorrection":  false,
+    "reason":  "Correct optional public DEV verifier path normalization and shorten its disposable workspace. Product/runtime/manager/tool behavior unchanged; candidate 001 preserved.",
+    "independentCasesPending":  46
+}

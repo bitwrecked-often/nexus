@@ -1,0 +1,71 @@
+{
+    "schema":  "hrs-release-validation/v1",
+    "observedUtc":  "2026-10-05T23:45:12.226Z",
+    "version":  "1.3.0",
+    "buildId":  "r130",
+    "readyForQa":  true,
+    "errorCount":  0,
+    "warningCount":  0,
+    "findings":  [
+                     {
+                         "severity":  "Pass",
+                         "code":  "ARTIFACT_IDENTITY",
+                         "message":  "The two verified artifact identities match rel.json."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "MODINFO_VERSION",
+                         "message":  "ModInfo.xml matches the release version."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "RUNTIME_LOG_IDENTITY",
+                         "message":  "Runtime log version and build ID match rel.json."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_WORLD_SCOPE",
+                         "message":  "Declared supported world categories are explicit."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_WORLD_SIZE",
+                         "message":  "Random Gen minimum world size is explicit and at least 8192."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_POI_ALLOWLIST",
+                         "message":  "Contract matches 79 placed-prefab names."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_POI_SOURCE",
+                         "message":  "Placed-POI source uses the active-world index and geometry."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_POI_RETRY",
+                         "message":  "Retry bound, delay and rollback markers match source."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_TRADER_SOURCE",
+                         "message":  "Placed-trader and starter-objective markers match source."
+                     },
+                     {
+                         "severity":  "Pass",
+                         "code":  "PLACED_IDENTITY_LOG",
+                         "message":  "Dynamic placement and trader identity log fields are present."
+                     }
+                 ],
+    "candidateId":  "1.3.0-qa.003",
+    "supportingCandidateBookkeeping":  {
+                                           "helperPath":  "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/New-Candidate003.ps1",
+                                           "helperSha256":  "E6E8B7FDEE82D03CA9E5B8043E277A9E6C4B9818493FB29137103FF44117718A",
+                                           "verificationPath":  "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/candidate-003-bookkeeping-verification.json",
+                                           "verificationSha256":  "6F9B1D7998F1196A522BCC7B59683A0FA39F4D79D915E345D0928276CF3A5962",
+                                           "reuseReceiptPath":  "hrs_1.3.0_Tech_Demo/dev/qa/public-package-20261005/candidate-003-build-reuse.json",
+                                           "reuseReceiptSha256":  "6E6A6E88C755FCB5EF038118CE8A1B784E78C372C67ED4AC69B124AEFAFA539C",
+                                           "scope":  "Separate bookkeeping proof authenticates the unchanged qualified build and current manager snapshot; release gate does not establish independent gameplay QA."
+                                       }
+}

@@ -1,0 +1,10 @@
+{
+    "schema":  "hrs-manager-qa-return-dev/v1",
+    "status":  "Pass",
+    "completedUtc":  "2026-10-05T23:17:15.1685474Z",
+    "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "harnessSha256":  "0D61F8D90B674431D59074F63EFD8D80FC008833BDD9F5D1A6E2E7E7858A140B",
+    "assertionCount":  86,
+    "fixtureRoot":  "<DEV_TEMP>\\hrs130-manager-return-3d90fc0b25f0440f8d8e343882c623bb",
+    "independentQa":  "Pending"
+}

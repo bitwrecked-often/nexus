@@ -1,0 +1,66 @@
+{
+  "schema": "hrs-tech-demo-legacy-packaging-regression/v1",
+  "verifiedUtc": "2026-10-05T23:07:44.8976189Z",
+  "status": "Pass",
+  "suites": [
+    {
+      "suite": "generic",
+      "status": "Pass",
+      "passed": 67,
+      "total": 67,
+      "log": "generic.txt",
+      "logSha256": "521BF98F512986F8DB38EB1F187C5486CA55575FC05BEC95CE7B483F57035683",
+      "testSource": "qa_cycle\\Test-HrsQaTools.ps1",
+      "testSourceSha256": "4D9F78748C84DF885CB8B476E1714247115504528758223EDAA0DEBA2034AEAC"
+    },
+    {
+      "suite": "workflow",
+      "status": "Pass",
+      "passed": 39,
+      "total": 39,
+      "log": "workflow.txt",
+      "logSha256": "7212B48E946068535B9A05AFEEEEE63BA750E6959CEC2AC3372894185FF807C5",
+      "testSource": "qa_cycle\\Test-HrsCandidateWorkflow.ps1",
+      "testSourceSha256": "E0C97C905F5787D4C7B8818D90211A613A9D622B3B3D2892008F8984E80B64E1"
+    },
+    {
+      "suite": "branding",
+      "status": "Pass",
+      "passed": 12,
+      "total": 12,
+      "log": "branding.txt",
+      "logSha256": "366AF09AD3E51190A10241CEFF988F1B46DA540F482E8B9B0FBF72BF937F0EE4",
+      "testSource": "qa_cycle\\Test-HrsCandidateBranding.ps1",
+      "testSourceSha256": "608CC1E10E8A906F2EC008D2328B55018E68833F8531E3BDBA6085DE3EEE000B"
+    },
+    {
+      "suite": "unified",
+      "status": "Pass",
+      "passed": 40,
+      "total": 40,
+      "log": "unified.txt",
+      "logSha256": "59E42198863F6EB7A38C1094846068C4D5808BCA44CA5F139A27A368A9B1A92F",
+      "testSource": "qa_cycle\\Test-HrsUnifiedPublicPackage.ps1",
+      "testSourceSha256": "C0BD12D3AB5EA4B0E9FE8A399A2DEE6A34C91EB7C2512154C0E1F16664C3CFD7"
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "qa_cycle/Export-HrsCandidate.ps1",
+      "sha256": "9DDE33041389A93F099C0ED0CB8AA4BA4513BA3F2388696CA380DF348895D24F"
+    },
+    {
+      "path": "qa_cycle/HrsQaTools.psm1",
+      "sha256": "F56206E14281A5DDFEBFB120FFBC3CA18E00FFD9CBC52A188900C1ADF47A0FA0"
+    },
+    {
+      "path": "qa_cycle/HrsIdentity.ps1",
+      "sha256": "54C4F1E6716934A0E34B8E9F3EA67366FE89EA7798B12EB95F78F325801E8F86"
+    },
+    {
+      "path": "qa_cycle/New-HrsQaWorkspace.ps1",
+      "sha256": "3F30B132079D99BC20A09C7C91E147DCF504EC08F6BE1DC27C4E5D92DD318CFA"
+    }
+  ],
+  "scope": "Disposable software fixtures only; no product export, game changes, gameplay, customer acceptance, release approval, publication or commit."
+}

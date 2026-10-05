@@ -1,0 +1,114 @@
+{
+    "schema":  "hrs-runtime-chain-mutation-detection/v1",
+    "status":  "Pass",
+    "generatedUtc":  "2026-10-05T23:04:58.6957466Z",
+    "scope":  "Deliberately broken copies under isolated QA evidence only. Expected fixture failures demonstrate detection; these are not production failures or human QA passes.",
+    "total":  3,
+    "detected":  3,
+    "records":  [
+                    {
+                        "mutation":  "completed-return-branch-disabled",
+                        "changedFile":  "c0167.cs",
+                        "originalSha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D",
+                        "mutatedSha256":  "F67296E0C35C1DEF184B2A5320A9666D0017981C6E22A6152531B60CBDE08400",
+                        "expectedScenario":  "CompletedProtectedReturnDoesNotRelocate",
+                        "detected":  true,
+                        "assertion":  "Completed return did not reactivate protection through the loaded callback",
+                        "fixtureTotal":  58,
+                        "fixtureFailed":  10,
+                        "fixtureExitCode":  1,
+                        "evidencePath":  "completed-return-branch-disabled/results/verification.json"
+                    },
+                    {
+                        "mutation":  "protection-opt-out-guard-removed",
+                        "changedFile":  "c0167.cs",
+                        "originalSha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D",
+                        "mutatedSha256":  "6005DC525732DFEA20B4E85CA1E197B9C0F0636E0FA502F55918058535B08758",
+                        "expectedScenario":  "ExplicitProtectionOptOutReturn",
+                        "detected":  true,
+                        "assertion":  "Protection did not preserve its requested enabled/disabled boundary",
+                        "fixtureTotal":  58,
+                        "fixtureFailed":  1,
+                        "fixtureExitCode":  1,
+                        "evidencePath":  "protection-opt-out-guard-removed/results/verification.json"
+                    },
+                    {
+                        "mutation":  "failed-trader-filter-restoration-removed",
+                        "changedFile":  "c0167.cs",
+                        "originalSha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D",
+                        "mutatedSha256":  "24E6CEAAE68D47E2305735AEE9C13D6EC0B0B592DF55FB7FB92CC9BD7012575C",
+                        "expectedScenario":  "FailedTraderDestinationRestoresAndRetries",
+                        "detected":  true,
+                        "assertion":  "Failed destination changed the vanilla objective fields",
+                        "fixtureTotal":  58,
+                        "fixtureFailed":  1,
+                        "fixtureExitCode":  1,
+                        "evidencePath":  "failed-trader-filter-restoration-removed/results/verification.json"
+                    }
+                ],
+    "productionSourceHashes":  [
+                                   {
+                                       "path":  "BiomePreference.cs",
+                                       "sha256":  "314840D22B19A700AAF2BDB5A684FAE5B04DA38424EA975D96E28A316A13AAB4"
+                                   },
+                                   {
+                                       "path":  "c0140.cs",
+                                       "sha256":  "999C13E7C8EF064D977CCA6AF0D4B460383822C77BDB4A1620E40EF5899F6224"
+                                   },
+                                   {
+                                       "path":  "c0147.cs",
+                                       "sha256":  "B2BA06A1745828108442E7CBE5E650EEFFF0FD8F0CF35FE3EED01177F43264F7"
+                                   },
+                                   {
+                                       "path":  "c0167.cs",
+                                       "sha256":  "E3A476531E3895DEA60931EA7D175F8666D7D3DF579D5592C664CA9B965C3A1D"
+                                   },
+                                   {
+                                       "path":  "c0181.cs",
+                                       "sha256":  "0B1D4E91A9186BCC3937E47E62F446F7F2ABCC3D976CBCD3C18932B77A21403A"
+                                   },
+                                   {
+                                       "path":  "c0184.cs",
+                                       "sha256":  "FF3C97727B2FF6236AA0CEF0F95CBDF65F01FF3F620A536F26A4578BDFBF5FAC"
+                                   },
+                                   {
+                                       "path":  "c0185.cs",
+                                       "sha256":  "356416731D1DC0CBC6E052D45ED886750498AAB5A54EFB873BB8D60959181E60"
+                                   },
+                                   {
+                                       "path":  "c0213.cs",
+                                       "sha256":  "C70AD43AFD22BCF81AA8F8E0A5E91D51D195506488EDD1F49F3605BEB224FAA2"
+                                   },
+                                   {
+                                       "path":  "c0217.cs",
+                                       "sha256":  "426CA849FB77F3AA52E622877EEE0D5A60D6BA19122C7C711D38583FF6BF7A0A"
+                                   },
+                                   {
+                                       "path":  "c0218.cs",
+                                       "sha256":  "F4B6E2D8860DF33EE9FA496CD15D66C9426DE11B99A864BB47E4B1EB4DB088FD"
+                                   },
+                                   {
+                                       "path":  "PlacedPoiResolver.cs",
+                                       "sha256":  "9F631197987EEF004B6662F479E81BAB52D2D30B3A27513BB5A030BC6BB57CC0"
+                                   },
+                                   {
+                                       "path":  "PlacedTraderResolver.cs",
+                                       "sha256":  "B8D98F7AA1F28ADF3C95177EB519D2CE71C5DBDB13A522273CF9BC61486B2EDD"
+                                   },
+                                   {
+                                       "path":  "PolicyV1.cs",
+                                       "sha256":  "ADD261C988B4A083863A264F275C47CC752F2B9ACB07B00B2682DE9D674571EA"
+                                   },
+                                   {
+                                       "path":  "PolicyV2.cs",
+                                       "sha256":  "D78D5998BC84C4DDBA3FF554E3C9F8C09E1218AE3CC9DDBBA8CF987E00F20D80"
+                                   },
+                                   {
+                                       "path":  "ResultV1.cs",
+                                       "sha256":  "08D74FC5C7C3A0E3D1316B02FD66A8CACD05AA7EBF51EBC32D239BA149C91356"
+                                   }
+                               ],
+    "productionSourceChanged":  false,
+    "realGameWrites":  0,
+    "independentQaCasesChanged":  0
+}

@@ -1,8 +1,0 @@
-{
-  "observedUtc": "2026-10-03T19:52:51.0515895Z",
-  "installedGameRoot": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die",
-  "installedAssemblySha256": "FCEEC27300FFD3A1F97B097E43B60F3B07597F441E7ECBC6E1B59EEBB234C705",
-  "qualifiedTargetAssemblySha256": "AA4275991736D276EC75BB4047E45F76E0242AA47D9895890F3761098D4CC146",
-  "exactQaEnvironmentMatches": false,
-  "disposition": "Packaging retains authenticated qualified b17 inputs; current installed build is not compatibility or independent-QA evidence."
-}

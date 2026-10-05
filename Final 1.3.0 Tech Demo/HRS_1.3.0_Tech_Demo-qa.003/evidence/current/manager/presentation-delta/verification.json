@@ -1,0 +1,55 @@
+{
+    "schema":  "hrs-manager-label-only-carry/v1",
+    "status":  "Pass",
+    "completedUtc":  "2026-10-05T23:45:45.3378047Z",
+    "baselineCandidateId":  "1.3.0-qa.002",
+    "baselineArchiveSha256":  "48AD02DF397917C95E7BD27422C030910860824F9B11CE152258DA47FB68DE45",
+    "baselineManagerSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "sourceSha256":  "1C827974BB914030600237070A02A5A5A9E2140AD62168285621F003BE9285FA",
+    "expectedTransformedManagerSha256":  "1C827974BB914030600237070A02A5A5A9E2140AD62168285621F003BE9285FA",
+    "baselineRecipeSha256":  "4564D45D2D2DB003F2BA668AB0EE72B61E75D7BF9B22A0B27C44FFE8F728C4C2",
+    "recipeSha256":  "50A017D864CCDDB7EE266183F03D3CBCDE93E2F740E97777395D41769E944E86",
+    "baselineRecipesModuleSha256":  "D090EE4FC7312C00ED30EF1557368798B281785F20C6AF0F26E2B5B42D17EDE1",
+    "recipesModuleSha256":  "3326CF450DD096CFB945C303744921F1196965E9C11F2E372E199271A4155BD3",
+    "controlsSha256":  "7533751906025A9604236CD3DDF1669E953396499E4698965BE52C2CD8B40B69",
+    "managerLabelOnlyEquality":  true,
+    "recipeLabelOnlyEquality":  true,
+    "recipeToolingLabelOnlyEquality":  true,
+    "embeddingCurrent":  true,
+    "nativeLabelPass":  true,
+    "recipeStructuralDiff":  [
+                                 {
+                                     "operation":  "add",
+                                     "path":  "copy.manager.gameNameLabel",
+                                     "value":  "Game Name"
+                                 }
+                             ],
+    "managerTransformations":  [
+                                   {
+                                       "before":  "    $gameLabel.Text = \u0027Game Name for your save\u0027",
+                                       "after":  "    $gameLabel.Text = if (@($recipe.copy.manager.PSObject.Properties.Name) -ccontains \u0027gameNameLabel\u0027) { $recipe.copy.manager.gameNameLabel } else { \u0027Game Name\u0027 }"
+                                   },
+                                   {
+                                       "operation":  "Sync-ManagerDesign.ps1",
+                                       "scope":  "Derived recipe JSON and recipe SHA in existing generated region; NativeControls.cs unchanged"
+                                   }
+                               ],
+    "supportingToolingTransformations":  [
+                                             "Allow optional gameNameLabel; preserve required manager copy fields",
+                                             "Validate supplied label as short plain text, maximum 80; reject non-string, empty, control-bearing and oversized labels"
+                                         ],
+    "preservedSemantics":  "All manager bytes outside declared label assignment and derived recipe embedding equal sealed baseline. Help, confirmation, field control identity and behavior are preserved.",
+    "carriedBaselineEvidence":  [
+                                    "dev/qa/ux-return-20261005/focused-r008/verification.json",
+                                    "dev/qa/ux-return-20261005/manager-review-r004/verification.json",
+                                    "dev/qa/ux-return-20261005/callbacks-final-20261005/callbacks-verification.json"
+                                ],
+    "carriedEvidenceScope":  "Prior 86 focused, 26 review and 97 callback DEV results retain original 5C522 manager hash; carried through exact label-only transformation, not freshly rerun or relabeled.",
+    "nativeReceipt":  "native-loop-receipt.json",
+    "nativeReceiptSha256":  "3635FF81CBC92815C257CD83F26E982C3C7FEF3FC7C52011417CF5725EE40203",
+    "nativeEvidenceRoot":  "dev/qa/native-event-loop-20261005/run-006",
+    "assertionCount":  23,
+    "harnessSha256":  "30EBA022D9C7F6841A8649C555B6C61E8DB0721BFB0E77BBFCB0C52BE7EC0D65",
+    "independentQa":  "Pending",
+    "scope":  "Requested visible label only; current native display, recipe compatibility/validation, embedding and exact delta. No runtime, gameplay, OS-scale matrix or release approval."
+}

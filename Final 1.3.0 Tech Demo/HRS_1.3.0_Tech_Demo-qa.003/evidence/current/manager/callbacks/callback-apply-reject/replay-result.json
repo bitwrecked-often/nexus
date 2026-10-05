@@ -1,0 +1,28 @@
+{
+    "group":  "apply-reject",
+    "branch":  "Verified",
+    "status":  "Pass",
+    "expectedCount":  17,
+    "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "harnessSha256":  "B94CCD22CDE0AA3E8FD8CBAFA7ED07BAB7F2E114F8619F6DED74A9A049A3A3D0",
+    "executable":  "powershell.exe",
+    "arguments":  [
+                      "-NoProfile",
+                      "-STA",
+                      "-ExecutionPolicy",
+                      "Bypass",
+                      "-File",
+                      "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                      "-EvidenceRoot",
+                      "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-apply-reject",
+                      "-Branch",
+                      "Verified",
+                      "-ApplyRejectProbe"
+                  ],
+    "startedUtc":  "2026-10-05T23:20:30.2049125Z",
+    "exitCode":  0,
+    "scenarioPassCount":  17,
+    "evidence":  "callback-verified-apply-reject.json",
+    "completedUtc":  "2026-10-05T23:22:19.7063976Z"
+}

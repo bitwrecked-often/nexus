@@ -1,0 +1,1211 @@
+{
+    "status":  "Pass",
+    "completedUtc":  "2026-10-05T23:22:54.4129496Z",
+    "powerShellVersion":  "5.1.26100.9549",
+    "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "independentCustomerCases":  "Pending",
+    "harnessSha256":  "B94CCD22CDE0AA3E8FD8CBAFA7ED07BAB7F2E114F8619F6DED74A9A049A3A3D0",
+    "replayScript":  "Replay-NativeUxRound2.ps1",
+    "replayScriptSha256":  "5C2C62610799526772CFBA3D4650A268110090095BF8C7A779D5013835DD191A",
+    "groupCount":  18,
+    "callbackCount":  97,
+    "groups":  [
+                   {
+                       "group":  "standard",
+                       "status":  "Pass",
+                       "scenarioPassCount":  2,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-standard/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-standard",
+                                         "-Branch",
+                                         "Verified"
+                                     ]
+                   },
+                   {
+                       "group":  "selection",
+                       "status":  "Pass",
+                       "scenarioPassCount":  8,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-selection/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-selection",
+                                         "-Branch",
+                                         "Verified",
+                                         "-SelectionProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "failure",
+                       "status":  "Pass",
+                       "scenarioPassCount":  1,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-failure/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-failure",
+                                         "-Branch",
+                                         "Verified",
+                                         "-FailureProbe",
+                                         "-FailurePoint",
+                                         "DuringPolicyReadback"
+                                     ]
+                   },
+                   {
+                       "group":  "dev",
+                       "status":  "Pass",
+                       "scenarioPassCount":  2,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-dev/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-dev",
+                                         "-Branch",
+                                         "DevDispatch"
+                                     ]
+                   },
+                   {
+                       "group":  "steam-refresh",
+                       "status":  "Pass",
+                       "scenarioPassCount":  1,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-steam-refresh/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-steam-refresh",
+                                         "-Branch",
+                                         "Verified",
+                                         "-SteamRefreshProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "launch",
+                       "status":  "Pass",
+                       "scenarioPassCount":  16,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-launch/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-launch",
+                                         "-Branch",
+                                         "Verified",
+                                         "-LaunchProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "result",
+                       "status":  "Pass",
+                       "scenarioPassCount":  1,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-result/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-result",
+                                         "-Branch",
+                                         "Verified",
+                                         "-ResultProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "startup",
+                       "status":  "Pass",
+                       "scenarioPassCount":  4,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-startup/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-startup",
+                                         "-Branch",
+                                         "Verified",
+                                         "-StartupProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "uninstall",
+                       "status":  "Pass",
+                       "scenarioPassCount":  6,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-uninstall/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-r004\\callback-uninstall",
+                                         "-Branch",
+                                         "Verified",
+                                         "-UninstallProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "ux-state",
+                       "status":  "Pass",
+                       "scenarioPassCount":  9,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-ux-state/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-ux-state",
+                                         "-Branch",
+                                         "Verified",
+                                         "-UxStateProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "ux-state-dev",
+                       "status":  "Pass",
+                       "scenarioPassCount":  9,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-ux-state-dev/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-ux-state-dev",
+                                         "-Branch",
+                                         "DevDispatch",
+                                         "-UxStateProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "round2",
+                       "status":  "Pass",
+                       "scenarioPassCount":  6,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-round2/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-round2",
+                                         "-Branch",
+                                         "Verified",
+                                         "-Round2Probe"
+                                     ]
+                   },
+                   {
+                       "group":  "round2-dev",
+                       "status":  "Pass",
+                       "scenarioPassCount":  6,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-round2-dev/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-round2-dev",
+                                         "-Branch",
+                                         "DevDispatch",
+                                         "-Round2Probe"
+                                     ]
+                   },
+                   {
+                       "group":  "editor",
+                       "status":  "Pass",
+                       "scenarioPassCount":  2,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-editor/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-editor",
+                                         "-Branch",
+                                         "Verified",
+                                         "-EditorProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "uncertain-recovery",
+                       "status":  "Pass",
+                       "scenarioPassCount":  1,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-uncertain-recovery/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-uncertain-recovery",
+                                         "-Branch",
+                                         "Verified",
+                                         "-FailureProbe",
+                                         "-FailurePoint",
+                                         "AfterDllCopy",
+                                         "-RecoveryFail"
+                                     ]
+                   },
+                   {
+                       "group":  "apply-reject",
+                       "status":  "Pass",
+                       "scenarioPassCount":  17,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-apply-reject/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-apply-reject",
+                                         "-Branch",
+                                         "Verified",
+                                         "-ApplyRejectProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "storage",
+                       "status":  "Pass",
+                       "scenarioPassCount":  3,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-storage/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-storage",
+                                         "-Branch",
+                                         "Verified",
+                                         "-StorageProbe"
+                                     ]
+                   },
+                   {
+                       "group":  "migration",
+                       "status":  "Pass",
+                       "scenarioPassCount":  3,
+                       "exitCode":  0,
+                       "sourceBeforeSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "sourceAfterSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                       "receipt":  "callback-migration/replay-result.json",
+                       "executable":  "powershell.exe",
+                       "arguments":  [
+                                         "-NoProfile",
+                                         "-STA",
+                                         "-ExecutionPolicy",
+                                         "Bypass",
+                                         "-File",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tests\\Test-ManagerCallbackWiring.ps1",
+                                         "-EvidenceRoot",
+                                         "<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\qa\\ux-return-20261005\\callbacks-final-20261005\\callback-migration",
+                                         "-Branch",
+                                         "Verified",
+                                         "-MigrationMatrix"
+                                     ]
+                   }
+               ],
+    "callbackCases":  [
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "Cancel",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-standard/callback-verified.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "Apply",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-standard/callback-verified.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "Any",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ChosenForest",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ChosenBurnt",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ChosenDesert",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ChosenSnow",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ChosenWasteland",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "WeightedMixed",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "WeightedSingle",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-selection/callback-verified-selection.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UpgradeFailure",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-failure/callback-verified-failure-duringpolicyreadback.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "Cancel",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-dev/callback-devdispatch.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "Apply",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-dev/callback-devdispatch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "SteamRefresh",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-steam-refresh/callback-verified-steam-refresh.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "Launch",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "TamperDll",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "TamperModInfo",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "TamperDigest",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "LegacyPolicy",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "MissingPolicy",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "WrongSchema",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "MalformedPolicy",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "AmbiguousPolicy",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StaleResult",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "GameRunning",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "SteamClosed",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ProcessUnknown",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ChangedAssembly",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UntestedApply",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "BeforeApply",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-launch/callback-verified-launch.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ResultCurrentThenStale",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-result/callback-verified-result.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StartupFresh",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-startup/callback-verified-startup.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StartupV2",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-startup/callback-verified-startup.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StartupV1",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-startup/callback-verified-startup.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StartupMalformed",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-startup/callback-verified-startup.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallOwned",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uninstall/callback-verified-uninstall.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallV1",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uninstall/callback-verified-uninstall.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallCancel",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uninstall/callback-verified-uninstall.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallUnknown",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uninstall/callback-verified-uninstall.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallRunning",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uninstall/callback-verified-uninstall.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallProcessUnknown",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uninstall/callback-verified-uninstall.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "FreshValidation",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "DirtyRevert",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "WeightedInactive",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "SteamDirtyRefresh",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "PopupActivation",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "FailedApplySticky",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "VerifiedReopen",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "RevisionFreshness",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UninstallState",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state/callback-verified-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "FreshValidation",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "DirtyRevert",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "WeightedInactive",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "SteamDirtyRefresh",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "PopupActivation",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "FailedApplySticky",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "VerifiedReopen",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "RevisionFreshness",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "UninstallState",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-ux-state-dev/callback-devdispatch-ux-state.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "SelectionProjection",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2/callback-verified-round2.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "BusyGuard",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2/callback-verified-round2.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "CopyMatrix",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2/callback-verified-round2.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "OwnershipAvailability",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2/callback-verified-round2.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "HelpState",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2/callback-verified-round2.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "AckRejected",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2/callback-verified-round2.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "SelectionProjection",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2-dev/callback-devdispatch-round2.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "BusyGuard",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2-dev/callback-devdispatch-round2.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "CopyMatrix",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2-dev/callback-devdispatch-round2.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "OwnershipAvailability",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2-dev/callback-devdispatch-round2.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "HelpState",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2-dev/callback-devdispatch-round2.json"
+                          },
+                          {
+                              "branch":  "DevDispatch",
+                              "scenario":  "AckRejected",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-round2-dev/callback-devdispatch-round2.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "EditorSave",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-editor/callback-verified-editor.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "EditorCancel",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-editor/callback-verified-editor.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UpgradeFailure",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-uncertain-recovery/callback-verified-failure-afterdllcopy-recoveryfailed.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "InvalidName",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ZeroWeights",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "GameRunning",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ProcessUnknown",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "MalformedV2",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "TamperedDigest",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "WrongFilenameSchema",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "PolicyBom",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "PolicyNoncanonical",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "AmbiguousPolicy",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UnknownReleaseFile",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UnknownReleaseDirectory",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ReparseReleaseDirectory",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "UnknownBridgeEntry",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "ExhaustedRevision",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "TamperedDll",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "TamperedModInfo",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-apply-reject/callback-verified-apply-reject.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StorageLinkedRoot",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-storage/callback-verified-storage.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StorageLinkedState",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-storage/callback-verified-storage.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "StorageUnavailable",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-storage/callback-verified-storage.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "MigrateStandard",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-migration/callback-verified-migration-matrix.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "MigrateRandom",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-migration/callback-verified-migration-matrix.json"
+                          },
+                          {
+                              "branch":  "Verified",
+                              "scenario":  "MigrateRandomSafe",
+                              "status":  "Pass",
+                              "sourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+                              "exitCode":  0,
+                              "evidence":  "callback-migration/callback-verified-migration-matrix.json"
+                          }
+                      ],
+    "method":  "Existing real manager callbacks in disposable fixture installations; inert executable, controlled process states, captured launch requests and intercepted modal decisions. No live game action or candidate export."
+}

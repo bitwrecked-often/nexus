@@ -1,0 +1,60 @@
+{
+    "schema":  "hrs-qualified-current-build-reuse/v2",
+    "status":  "Pass",
+    "candidateId":  "1.3.0-qa.003",
+    "preparedUtc":  "2026-10-05T23:44:20.1648364Z",
+    "originCandidateId":  "1.3.0-qa.001",
+    "previousCandidateId":  "1.3.0-qa.002",
+    "preservedExports":  [
+                             {
+                                 "candidateId":  "1.3.0-qa.001",
+                                 "archivePath":  "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.001.zip",
+                                 "archiveSha256":  "1E6DA4C88682508FD74E6A83011D74A86BD90B26C5CFAAFEC0EDB5A5FDC97ADC",
+                                 "receiptSha256":  "A4A40885F474A2122ECBD43A02ECDFE4A500A34DAC29242C46425B677AB68928"
+                             },
+                             {
+                                 "candidateId":  "1.3.0-qa.002",
+                                 "archivePath":  "qa_cycle/candidates/HRS_1.3.0_Tech_Demo-qa.002.zip",
+                                 "archiveSha256":  "48AD02DF397917C95E7BD27422C030910860824F9B11CE152258DA47FB68DE45",
+                                 "receiptSha256":  "DAE6508B5BAA85E2108D8FE48EB8C35D2EF6DC413DBFBC36CC0759BC2BB9361E"
+                             }
+                         ],
+    "originBuildRecord":  "alpha-core-1fb58f165715472db359515180d85997",
+    "qualifiedBuildRecordSha256":  "01CE59B48AEB3DE6A21010206320B84883BAB34A8F04D640C01A4F4FC9BBEB0F",
+    "newBuildRecordPath":  "dev/builds/1.3.0-qa.003/build-record.json",
+    "newBuildRecordExactBytes":  true,
+    "runtimeSha256":  "6E143C99DB7519A4D42B047225E7ADBB1C8D3009EFD8E4E18DCA154719316D32",
+    "runtimeBytes":  77312,
+    "modInfoSha256":  "896451F71AF3B2BF45E09924CBEAD606E0BA2950FD18E1D50B22FE0ACACF69A6",
+    "runtimeSourcesUnchanged":  true,
+    "runtimeSourceCount":  15,
+    "referenceCount":  8,
+    "referencePinsPreserved":  true,
+    "compilerPins":  {
+                         "dotnet":  "C:\\Program Files\\dotnet\\dotnet.exe",
+                         "dotnetSha256":  "21A46F1E5235CF4E844B9DE5429F0E198B9C97A41F0503A66442F1D639CA3EE6",
+                         "csc":  "C:\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\bincore\\csc.dll",
+                         "cscSha256":  "89C788F615634094CC441593D167D9FBA9A9F049A5D1DDEA87D4FDE222D6F42C"
+                     },
+    "deterministicDoubleBuildInherited":  true,
+    "managerSourceUnchanged":  false,
+    "previousManagerSourceSha256":  "5C522439354FEF0E6C370D5C92C99DE74D5453BD2B8F34B432A5394EDD18073D",
+    "managerSourceSha256":  "1C827974BB914030600237070A02A5A5A9E2140AD62168285621F003BE9285FA",
+    "recipeSourceSha256":  "50A017D864CCDDB7EE266183F03D3CBCDE93E2F740E97777395D41769E944E86",
+    "runtimeRebuiltForThisPresentationChange":  false,
+    "runtimeLogIdentity":  "v=1.3.0 build=r130",
+    "edition":  "Tech Demo",
+    "gameNameLabel":  "Game Name",
+    "preservedContractCheckpoint":  "candidate-002-checkpoint",
+    "previousReleaseRecordSha256":  "B16F07F2E5B6855B8D2A1D8A2934E41A9D5C35F3EBE938B5E5BF94AC0A90FD55",
+    "previousContractSha256":  "BC29B2BF305E9DB92451763ADFB3F4CBDB44A47D13AD5959DFD2371102441B9B",
+    "releaseRecordSha256":  "383C2AC7C645618D9C91082431CD2D4E989D341D05A06AC6C8AD0DACA3957088",
+    "contractSha256":  "6D10EAC6FE5E3BAD1BB441694D8C1FE7AA804A8DAD7F365F8BC0A6891D238779",
+    "caseRequirementsUnchanged":  true,
+    "independentCasesPending":  46,
+    "reason":  "Owner shortened the visible Game Name label. New manager snapshot is separately authenticated; qualified 1.3.0 runtime/build/reference/compiler bytes and all case requirements are reused unchanged.",
+    "independentGameplayQaPassed":  false,
+    "gameEnvironmentQualificationChanged":  false,
+    "candidateReserved":  false,
+    "candidateExported":  false
+}

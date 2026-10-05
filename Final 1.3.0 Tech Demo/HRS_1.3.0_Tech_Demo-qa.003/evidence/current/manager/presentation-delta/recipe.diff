@@ -1,0 +1,14 @@
+warning: in the working copy of '<DEV_TEMP>\hrs130-game-name-label-41bd558eeb3f44a386bf96d104b37cf8\baseline-recipe.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '<DEV_REPO>\hrs_1.3.0_Tech_Demo\dev\tools\NativeGraphics\recipes\bitwrecked-quiet.json', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/<DEV_TEMP>\\hrs130-game-name-label-41bd558eeb3f44a386bf96d104b37cf8\\baseline-recipe.json" "b/<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tools\\NativeGraphics\\recipes\\bitwrecked-quiet.json"
+index a691dd6..8a7f5f4 100644
+--- "a/<DEV_TEMP>\\hrs130-game-name-label-41bd558eeb3f44a386bf96d104b37cf8\\baseline-recipe.json"
++++ "b/<DEV_REPO>\\hrs_1.3.0_Tech_Demo\\dev\\tools\\NativeGraphics\\recipes\\bitwrecked-quiet.json"
+@@ -65,6 +65,7 @@
+     "manager": {
+       "title": "New Player Random Start",
+       "intro": "7 Days to Die v3.3.0 · Random Player Start",
++      "gameNameLabel": "Game Name",
+       "gameNameHelp": "Use the save's exact Game Name, not the world name.",
+       "anyHelp": "Equal chance among eligible biomes. If no safe landing is available, use the usual start.",
+       "chosenHelpTemplate": "Try {biome}. If no safe landing is available there, use the usual start.",
